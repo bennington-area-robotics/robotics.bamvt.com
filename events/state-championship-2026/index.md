@@ -75,7 +75,7 @@ The official FIRST Tech Challenge Regional Championship for Vermont.
 | 32473 | Bennington Bolts and Biscuits | Bennington, VT |
 | 32818 | Wired Cats Devo | Saxtons River, VT |
 
-### Qualifying Events
+### Earlier Events
 
 - [Bennington FTC Qualifier](../bennington-qualifier-2026) – January 31, 2026
 - [Northfield FTC Qualifier](../northfield-qualifier-2026) – February 15, 2026
