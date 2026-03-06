@@ -16,9 +16,11 @@ The official FIRST Tech Challenge Regional Championship for Vermont.
 
 **FTC Event Page:** [USVTCMP](https://ftc-events.firstinspires.org/2025/USVTCMP){:target="_blank"} \| [Game Info](https://www.firstinspires.org/programs/ftc/game-and-season){:target="_blank"}
 
-**Teams:** 27 teams from Vermont
+**Teams:** 25 teams from Vermont
 
-**Event Program:** [PDF](vt-rcmp-info-2026-0303.pdf){:target="_blank"}
+**Team Info Packet:** [Google Doc](https://docs.google.com/document/d/1UDRr5PkL8GX31rQu6F0Ud98-ypEw0D788A56uRxnqQ8/edit?tab=t.0){:target="_blank"}
+
+**Event Program:** [PDF](vt-rcmp-info-2026-0305.pdf){:target="_blank"}
 
 ---
 
@@ -66,11 +68,9 @@ The official FIRST Tech Challenge Regional Championship for Vermont.
 | 22683 | JV RedHawks | Hinesburg, VT |
 | 24107 | Trash Pandas | Westford, VT |
 | 24782 | Robo Raiders II | Montpelier, VT |
-| 25206 | Vikings | Lyndon Center, VT |
 | 26726 | Lamoille Robotics | Hyde Park, VT |
 | 28017 | Winooski Middle/High School | Winooski, VT |
 | 30656 | The Interns | South Burlington, VT |
-| 31126 | LCWS Gnomes | Shelburne, VT |
 | 31719 | Flying Tigers | Middlebury, VT |
 | 32473 | Bennington Bolts and Biscuits | Bennington, VT |
 | 32818 | Wired Cats Devo | Saxtons River, VT |
