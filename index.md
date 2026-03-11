@@ -4,7 +4,7 @@ title: Home
 ---
 
 <div class="highlight">
-Team 18650 Cookie Clickers advances to the <strong>FIRST World Championship</strong> in Houston TX, April 29 – May 2!
+Team 18650 Cookie Clickers advances to the <strong>FIRST Championship</strong> in Houston TX, April 29 – May 2!
 <br><br>
 Team 32473 Bennington Bolts and Biscuits advances to the <strong>New England Premier Event</strong> at the Big E in West Springfield MA, April 17–18!
 <br><br>
@@ -65,7 +65,7 @@ Team 32473 Bennington Bolts and Biscuits advances to the <strong>New England Pre
 
 ## Upcoming Events
 
-- **Wed–Sat 4/29–5/2/2026** – [FIRST World Championship](https://www.firstchampionship.org/){:target="_blank"} in Houston TX (18650)
+- **Wed–Sat 4/29–5/2/2026** – [FIRST Championship](https://www.firstchampionship.org/){:target="_blank"} in Houston TX (18650)
 - **Fri–Sat 4/17–18/2026** – [New England Premier Event](https://www.nefirst.org/ftc-premier){:target="_blank"} at the Big E, West Springfield MA (32473)
 
 ## Past Events
@@ -96,7 +96,7 @@ Team 32473 Bennington Bolts and Biscuits advances to the <strong>New England Pre
 
 Bennington Area Robotics is a community-based youth robotics group, drawing middle and high-school aged students from Bennington and surrounding towns, including North Bennington, Shaftsbury, Hoosick Falls and Cambridge.
 
-The students — from southwestern Vermont and neighboring New York — design, build, and program their robots themselves, with guidance from community mentors. Team 18650 Cookie Clickers is the first Bennington-area team ever to qualify for the FIRST World Championship, where they will compete against established programs with years of institutional support behind them.
+The students — from southwestern Vermont and neighboring New York — design, build, and program their robots themselves, with guidance from community mentors. Team 18650 Cookie Clickers is the first Bennington-area team ever to qualify for the FIRST Championship, where they will compete against established programs with years of institutional support behind them.
 
 We participate in [FIRST Tech Challenge](https://www.firstinspires.org/robotics/ftc){:target="_blank"} (FTC), an annual robotics competition where four robots race to collect and score game pieces on a 12'x12' playing field.
 
