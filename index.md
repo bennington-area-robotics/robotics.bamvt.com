@@ -8,7 +8,7 @@ FTC 18650 Cookie Clickers advances to the <strong>FIRST Championship</strong> in
 <br><br>
 FTC 32473 Bennington Bolts and Biscuits advances to the <strong>New England Premier Event</strong> at the Big E in West Springfield MA, April 17–18!
 <br><br>
-<a href="https://www.paypal.com/donate/?business=LU3XQCQ2VQGL8&no_recurring=0&item_name=on+behalf+of+Bennington+Area+Makers+to+support+local+youth+robotics+including+FTC+Team+18650%2C+the+Cookie+Clickers%21&currency_code=USD" target="_blank">Support us with a donation!</a>
+<a href="https://www.paypal.com/donate/?business=LU3XQCQ2VQGL8&no_recurring=0&item_name=on+behalf+of+Bennington+Area+Makers+to+support+local+youth+robotics+including+FTC+Team+18650%2C+the+Cookie+Clickers%21&currency_code=USD" target="_blank">Support us with a tax-deductible donation!</a>
 </div>
 
 <div class="carousel" id="carousel">
@@ -97,6 +97,8 @@ FTC 32473 Bennington Bolts and Biscuits advances to the <strong>New England Prem
 Bennington Area Robotics is a community-based youth robotics group, drawing middle and high-school aged students from Bennington and surrounding towns, including North Bennington, Shaftsbury, Hoosick Falls and Cambridge.
 
 We participate in [FIRST Tech Challenge](https://www.firstinspires.org/robotics/ftc){:target="_blank"} (FTC), an annual robotics competition where four robots race to collect and score game pieces on a 12'x12' playing field.
+
+Bennington Area Robotics is a program of **The Bennington Area Makers, Inc.**, a 501(c)(3) nonprofit organization (EIN 84-5124653). Donations are tax-deductible to the extent permitted by law. To donate by check, make payable to *The Bennington Area Makers, Inc.* and mail to PO Box 4332, Bennington, VT 05201.
 
 Team members design, build, and program their own robots to perform tasks and score points. Along the way, students develop skills in mechanical engineering, programming, planning, design, presentation, collaboration, and gracious professionalism (competing hard while helping other teams succeed).
 

@@ -4,7 +4,8 @@ title: Sponsors
 ---
 
 <div class="highlight">
-<strong>Support youth robotics in Bennington!</strong> <a href="https://www.paypal.com/donate/?business=LU3XQCQ2VQGL8&no_recurring=0&item_name=on+behalf+of+Bennington+Area+Makers+to+support+local+youth+robotics+including+FTC+Team+18650%2C+the+Cookie+Clickers%21&currency_code=USD" target="_blank">Donate via PayPal</a> or <a href="mailto:info@bamvt.com?subject=Donation%20Inquiry">inquire by email</a>
+<strong>Support youth robotics in Bennington!</strong> <a href="https://www.paypal.com/donate/?business=LU3XQCQ2VQGL8&no_recurring=0&item_name=on+behalf+of+Bennington+Area+Makers+to+support+local+youth+robotics+including+FTC+Team+18650%2C+the+Cookie+Clickers%21&currency_code=USD" target="_blank">Donate via PayPal</a> or <a href="mailto:info@bamvt.com?subject=Donation%20Inquiry">inquire by email</a><br>
+<small>The Bennington Area Makers, Inc. is a 501(c)(3) nonprofit. Donations are tax-deductible to the extent permitted by law. EIN 84-5124653. To donate by check, make payable to <em>The Bennington Area Makers, Inc.</em> and mail to PO Box 4332, Bennington, VT 05201.</small>
 </div>
 
 ## Season Sponsors (2025-2026)
