@@ -22,10 +22,6 @@ FTC 32473 Bennington Bolts and Biscuits advances to the <strong>New England Prem
 
     <div class="carousel-slide"><img src="events/state-championship-2026/images/2026_FTC-164.jpg" alt="VT State Championship 2026" loading="lazy"></div>
 
-    <div class="carousel-slide"><img src="events/state-championship-2026/images/2026_FTC-168.jpg" alt="VT State Championship 2026" loading="lazy"></div>
-    <div class="carousel-slide"><img src="events/state-championship-2026/images/2026_FTC-189.jpg" alt="VT State Championship 2026" loading="lazy"></div>
-
-
     <div class="carousel-slide"><img src="events/state-championship-2026/images/2026_FTC-192.jpg" alt="VT State Championship 2026" loading="lazy"></div>
 
     <div class="carousel-slide"><img src="events/state-championship-2026/images/2026_FTC-194.jpg" alt="VT State Championship 2026" loading="lazy"></div>
@@ -33,7 +29,6 @@ FTC 32473 Bennington Bolts and Biscuits advances to the <strong>New England Prem
 
     <div class="carousel-slide"><img src="events/state-championship-2026/images/2026_FTC-197.jpg" alt="VT State Championship 2026" loading="lazy"></div>
 
-    <div class="carousel-slide"><img src="events/state-championship-2026/images/2026_FTC-206.jpg" alt="VT State Championship 2026" loading="lazy"></div>
     <div class="carousel-slide"><img src="events/state-championship-2026/images/2026_FTC-218.jpg" alt="VT State Championship 2026" loading="lazy"></div>
 
     <div class="carousel-slide"><img src="events/state-championship-2026/images/2026_FTC-220.jpg" alt="VT State Championship 2026" loading="lazy"></div>
