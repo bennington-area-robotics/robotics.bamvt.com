@@ -4,7 +4,7 @@ title: Home
 ---
 
 <div class="highlight">
-FTC 18650 Cookie Clickers advances to the <strong>World Championship</strong> in Houston TX, April 29 – May 2!
+FTC 18650 Cookie Clickers advances to the <strong>FIRST Championship</strong> in Houston TX, April 29 – May 2!
 <br><br>
 FTC 32473 Bennington Bolts and Biscuits advances to the <strong>New England Premier Event</strong> at the Big E in West Springfield MA, April 17–18!
 <br><br>
