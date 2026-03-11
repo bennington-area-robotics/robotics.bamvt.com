@@ -96,7 +96,7 @@ Team 32473 Bennington Bolts and Biscuits advances to the <strong>New England Pre
 
 Bennington Area Robotics is a community-based youth robotics group, drawing middle and high-school aged students from Bennington and surrounding towns, including North Bennington, Shaftsbury, Hoosick Falls and Cambridge.
 
-The students — from southwestern Vermont and neighboring New York — design, build, and program their robots themselves, with guidance from community mentors. Team 18650 Cookie Clickers is the first Bennington-area team ever to qualify for the FIRST Championship, where they will compete against established programs with years of institutional support behind them.
+The students — from southwestern Vermont and neighboring New York — design, build, and program their robots themselves, with guidance from community mentors. Team 18650 Cookie Clickers is the first southwestern Vermont team to advance to the FIRST Championship in Houston TX, to compete against other top teams from around the world.
 
 We participate in [FIRST Tech Challenge](https://www.firstinspires.org/robotics/ftc){:target="_blank"} (FTC), an annual robotics competition where four robots race to collect and score game pieces on a 12'x12' playing field.
 
