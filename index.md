@@ -4,10 +4,51 @@ title: Home
 ---
 
 <div class="highlight">
-18650 won the <a href="events/state-championship-2026">Vermont Championship</a> Inspire Award and advances to the <strong>World Championship</strong> in Houston TX, April 29 – May 2!<br>
-32473 advances to the <strong>New England Premier Event</strong> at the Big E in West Springfield MA, April 17–18!<br>
+FTC 18650 Cookie Clickers won the <a href="events/state-championship-2026">Vermont Championship</a> Inspire Award and advances to the <strong>World Championship</strong> in Houston TX, April 29 – May 2!<br>
+FTC 32473 Bennington Bolts and Biscuits advances to the <strong>New England Premier Event</strong> at the Big E in West Springfield MA, April 17–18!<br>
 <a href="https://www.paypal.com/donate/?business=LU3XQCQ2VQGL8&no_recurring=0&item_name=on+behalf+of+Bennington+Area+Makers+to+support+local+youth+robotics+including+FTC+Team+18650%2C+the+Cookie+Clickers%21&currency_code=USD" target="_blank">Support us with a donation!</a>
 </div>
+
+<div class="carousel" id="carousel">
+  <button class="carousel-btn prev" onclick="document.getElementById('carousel-track').scrollBy({left: -document.getElementById('carousel-track').clientWidth, behavior: 'smooth'})">&lsaquo;</button>
+  <div class="carousel-track" id="carousel-track">
+
+    <div class="carousel-slide"><img src="events/state-championship-2026/images/2026_FTC-62.jpg" alt="VT State Championship 2026" loading="lazy"></div>
+    <div class="carousel-slide"><img src="events/state-championship-2026/images/2026_FTC-105.jpg" alt="VT State Championship 2026" loading="lazy"></div>
+    <div class="carousel-slide"><img src="events/state-championship-2026/images/2026_FTC-106.jpg" alt="VT State Championship 2026" loading="lazy"></div>
+    <div class="carousel-slide"><img src="events/state-championship-2026/images/IMG_8748.jpeg" alt="Cookie Clickers 18650 robot close-up" loading="lazy"></div>
+
+    <div class="carousel-slide"><img src="events/state-championship-2026/images/2026_FTC-136.jpg" alt="VT State Championship 2026" loading="lazy"></div>
+    <div class="carousel-slide"><img src="events/state-championship-2026/images/2026_FTC-138.jpg" alt="VT State Championship 2026" loading="lazy"></div>
+
+    <div class="carousel-slide"><img src="events/state-championship-2026/images/2026_FTC-164.jpg" alt="VT State Championship 2026" loading="lazy"></div>
+    <div class="carousel-slide"><img src="events/state-championship-2026/images/IMG_8129.jpeg" alt="Robot on field with game piece" loading="lazy"></div>
+
+    <div class="carousel-slide"><img src="events/state-championship-2026/images/2026_FTC-168.jpg" alt="VT State Championship 2026" loading="lazy"></div>
+    <div class="carousel-slide"><img src="events/state-championship-2026/images/2026_FTC-189.jpg" alt="VT State Championship 2026" loading="lazy"></div>
+
+
+    <div class="carousel-slide"><img src="events/state-championship-2026/images/2026_FTC-192.jpg" alt="VT State Championship 2026" loading="lazy"></div>
+
+    <div class="carousel-slide"><img src="events/state-championship-2026/images/2026_FTC-194.jpg" alt="VT State Championship 2026" loading="lazy"></div>
+
+
+    <div class="carousel-slide"><img src="events/state-championship-2026/images/2026_FTC-197.jpg" alt="VT State Championship 2026" loading="lazy"></div>
+    <div class="carousel-slide"><img src="events/state-championship-2026/images/IMG_2144.jpeg" alt="Students working on robot at the field" loading="lazy"></div>
+
+    <div class="carousel-slide"><img src="events/state-championship-2026/images/2026_FTC-206.jpg" alt="VT State Championship 2026" loading="lazy"></div>
+    <div class="carousel-slide"><img src="events/state-championship-2026/images/2026_FTC-218.jpg" alt="VT State Championship 2026" loading="lazy"></div>
+
+    <div class="carousel-slide"><img src="events/state-championship-2026/images/2026_FTC-220.jpg" alt="VT State Championship 2026" loading="lazy"></div>
+    <div class="carousel-slide"><img src="events/state-championship-2026/images/2026_FTC-228.jpg" alt="VT State Championship 2026" loading="lazy"></div>
+    <div class="carousel-slide"><img src="events/state-championship-2026/images/IMG_8935.jpg" alt="VT State Championship 2026" loading="lazy"></div>
+    <div class="carousel-slide"><img src="events/state-championship-2026/images/IMG_8839.jpeg" alt="Cookie Clickers robot intake mechanism" loading="lazy"></div>
+    <div class="carousel-slide"><img src="events/state-championship-2026/images/IMG_8796.jpeg" alt="Cookie Clickers robot on practice field" loading="lazy"></div>
+    <div class="carousel-slide"><img src="events/state-championship-2026/images/IMG_8480.jpeg" alt="Cookie Clickers robot sample collector" loading="lazy"></div>
+  </div>
+  <button class="carousel-btn next" onclick="document.getElementById('carousel-track').scrollBy({left: document.getElementById('carousel-track').clientWidth, behavior: 'smooth'})">&rsaquo;</button>
+</div>
+<p style="text-align: center; font-style: italic; margin-top: 0;">Photos from the 2026 Vermont FTC State Championship, courtesy of UVM.</p>
 
 ## Upcoming Events
 
