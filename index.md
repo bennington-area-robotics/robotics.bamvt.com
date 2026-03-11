@@ -15,7 +15,7 @@ FTC 32473 Bennington Bolts and Biscuits advances to the <strong>New England Prem
   <button class="carousel-btn prev" onclick="document.getElementById('carousel-track').scrollBy({left: -document.getElementById('carousel-track').clientWidth, behavior: 'smooth'})">&lsaquo;</button>
   <div class="carousel-track" id="carousel-track">
 
-    <div class="carousel-slide"><img src="events/state-championship-2026/images/2026_FTC-62.jpg" alt="VT State Championship 2026" loading="lazy"></div>
+    <div class="carousel-slide"><img src="events/state-championship-2026/images/2026_FTC-192.jpg" alt="VT State Championship 2026" loading="lazy"></div>
     <div class="carousel-slide"><img src="events/state-championship-2026/images/2026_FTC-105.jpg" alt="VT State Championship 2026" loading="lazy"></div>
     <div class="carousel-slide"><img src="events/state-championship-2026/images/2026_FTC-106.jpg" alt="VT State Championship 2026" loading="lazy"></div>
 
@@ -24,7 +24,7 @@ FTC 32473 Bennington Bolts and Biscuits advances to the <strong>New England Prem
 
     <div class="carousel-slide"><img src="events/state-championship-2026/images/2026_FTC-164.jpg" alt="VT State Championship 2026" loading="lazy"></div>
 
-    <div class="carousel-slide"><img src="events/state-championship-2026/images/2026_FTC-192.jpg" alt="VT State Championship 2026" loading="lazy"></div>
+    <div class="carousel-slide"><img src="events/state-championship-2026/images/2026_FTC-62.jpg" alt="VT State Championship 2026" loading="lazy"></div>
 
     <div class="carousel-slide"><img src="events/state-championship-2026/images/2026_FTC-194.jpg" alt="VT State Championship 2026" loading="lazy"></div>
 
