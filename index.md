@@ -48,7 +48,7 @@ Team members design, build, and program their own robots to perform tasks and sc
 
 Students work directly with technical mentors from the local community, including mechanical engineers, automation engineers, and software developers.
 
-<p style="text-align: center; font-style: italic; margin-bottom: 0.5em;">Bennington Cookie Clickers in playoff match 4 of the <a href="https://ftc-events.firstinspires.org/2024/USVTCMP" target="_blank">VT State Championship</a> in Feb 2025.</p>
+<p style="text-align: center; font-style: italic; margin-bottom: 0.5em;">FTC 18650 Cookie Clickers in playoff match 4 of the <a href="https://ftc-events.firstinspires.org/2024/USVTCMP" target="_blank">VT State Championship</a> in Feb 2025.</p>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 1em 0;">
 <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/SjT1XGYhEfc?start=19364" title="2025 VT State Championship Playoff Match" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
