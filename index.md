@@ -8,7 +8,7 @@ FTC 18650 Cookie Clickers advances to the <strong>FIRST Championship</strong> in
 <br><br>
 FTC 32473 Bennington Bolts and Biscuits advances to the <strong>New England Premier Event</strong> at the Big E in West Springfield MA, April 17–18!
 <br><br>
-<a href="https://www.paypal.com/donate/?business=LU3XQCQ2VQGL8&no_recurring=0&item_name=on+behalf+of+Bennington+Area+Makers+to+support+local+youth+robotics+including+FTC+Team+18650%2C+the+Cookie+Clickers%21&currency_code=USD" target="_blank">Support us with a tax-deductible donation!</a>
+<a href="/donate">Support us with a tax-deductible donation!</a>
 </div>
 
 <div class="carousel" id="carousel">

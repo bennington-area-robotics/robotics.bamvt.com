@@ -195,8 +195,9 @@
       <p>{{ site.description }}</p>
       <nav style="margin-top: 0.75rem;">
         <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a>
-        <a href="{{ '/events/state-championship-2026' | relative_url }}" {% if page.url contains 'events/' %}class="active"{% endif %}>Events</a>
+        <a href="{{ '/events' | relative_url }}" {% if page.url contains 'events' %}class="active"{% endif %}>Events</a>
         <a href="{{ '/sponsors' | relative_url }}" {% if page.url == '/sponsors' or page.url == '/sponsors.html' %}class="active"{% endif %}>Sponsors</a>
+        <a href="{{ '/donate' | relative_url }}" {% if page.url == '/donate' or page.url == '/donate.html' %}class="active"{% endif %}>Donate</a>
       </nav>
     </div>
   </header>
