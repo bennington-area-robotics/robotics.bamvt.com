@@ -4,7 +4,7 @@ title: Sponsors
 ---
 
 <div class="highlight">
-<strong>Support youth robotics in Bennington!</strong> <a href="https://www.paypal.com/donate/?business=LU3XQCQ2VQGL8&no_recurring=0&item_name=on+behalf+of+Bennington+Area+Makers+to+support+local+youth+robotics+including+FTC+Team+18650%2C+the+Cookie+Clickers%21&currency_code=USD" target="_blank">Donate via PayPal</a>
+<strong>Support youth robotics in Bennington!</strong> <a href="https://www.paypal.com/donate/?business=LU3XQCQ2VQGL8&no_recurring=0&item_name=on+behalf+of+Bennington+Area+Makers+to+support+local+youth+robotics+including+FTC+Team+18650%2C+the+Cookie+Clickers%21&currency_code=USD" target="_blank">Donate via PayPal</a> or <a href="mailto:info@bamvt.com?subject=Donation%20Inquiry">inquire by email</a>
 </div>
 
 ## Season Sponsors (2025-2026)
