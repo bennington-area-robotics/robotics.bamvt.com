@@ -5,9 +5,9 @@ title: Donate
 
 ## Support Youth Robotics in Bennington
 
-Bennington Area Robotics is a program of **The Bennington Area Makers, Inc.**, a 501(c)(3) nonprofit organization. Your donation helps fund robot parts, competition fees, and educational materials for middle and high school students in the Bennington Vermont area.
+Your donation helps fund robot parts, competition fees, and educational materials for middle and high school students in the Bennington Vermont area. All donations are tax-deductible to the extent permitted by law.
 
-Donations are tax-deductible to the extent permitted by law. EIN 84-5124653.
+Bennington Area Robotics is organized under **The Bennington Area Makers, Inc.** (BAMVT), a 501(c)(3) nonprofit (EIN 84-5124653).
 
 ### Help Send Our Students to the World Championship
 
@@ -21,7 +21,9 @@ Cookie Clickers is heading to Worlds for the first time. Bolts and Biscuits, for
 
 ### Donate Online
 
-[Donate via PayPal](https://www.paypal.com/donate/?business=LU3XQCQ2VQGL8&no_recurring=0&item_name=on+behalf+of+Bennington+Area+Makers+to+support+local+youth+robotics+including+FTC+Team+18650%2C+the+Cookie+Clickers%21&currency_code=USD){:target="_blank"}
+[Donate via PayPal](https://www.paypal.com/donate/?hosted_button_id=HPQY5NA3Z59C2){:target="_blank"} (EIN 84-5124653)
+
+[Donate via Hack Club](https://hcb.hackclub.com/donations/start/bennington-area-robotics){:target="_blank"} (EIN 81-2908499)
 
 ### Donate by Check
 
@@ -30,6 +32,8 @@ Make checks payable to *The Bennington Area Makers, Inc.* and mail to:
 > The Bennington Area Makers, Inc.<br>
 > PO Box 4332<br>
 > Bennington, VT 05201
+
+(EIN 84-5124653)
 
 ### Questions?
 

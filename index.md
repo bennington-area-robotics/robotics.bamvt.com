@@ -100,7 +100,7 @@ The students — from southwestern Vermont and neighboring New York — design, 
 
 We participate in [FIRST Tech Challenge](https://www.firstinspires.org/robotics/ftc){:target="_blank"} (FTC), an annual robotics competition where four robots race to collect and score game pieces on a 12'x12' playing field.
 
-Bennington Area Robotics is a program of **The Bennington Area Makers, Inc.**, a 501(c)(3) nonprofit organization (EIN 84-5124653). Donations are tax-deductible to the extent permitted by law. To donate by check, make payable to *The Bennington Area Makers, Inc.* and mail to PO Box 4332, Bennington, VT 05201.
+Bennington Area Robotics is a program of **The Bennington Area Makers, Inc.**, a 501(c)(3) nonprofit organization. Donations are tax-deductible. [Learn how to donate](/donate).
 
 Team members design, build, and program their own robots to perform tasks and score points. Along the way, students develop skills in mechanical engineering, programming, planning, design, presentation, collaboration, and gracious professionalism (competing hard while helping other teams succeed).
 
