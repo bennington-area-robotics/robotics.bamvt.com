@@ -35,7 +35,7 @@ Make checks payable to *The Bennington Area Makers, Inc.* and mail to:
 > PO Box 4332<br>
 > Bennington, VT 05201
 
-(EIN 84-5124653)
+<small>EIN 84-5124653</small>
 
 ### Questions?
 
