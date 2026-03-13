@@ -21,9 +21,11 @@ Cookie Clickers is heading to Worlds for the first time. Bolts and Biscuits, for
 
 ### Donate Online
 
-[Donate via PayPal](https://www.paypal.com/donate/?hosted_button_id=HPQY5NA3Z59C2){:target="_blank"} (EIN 84-5124653)
+[Donate via PayPal](https://www.paypal.com/donate/?hosted_button_id=HPQY5NA3Z59C2){:target="_blank"}
+<br><small>EIN 84-5124653</small>
 
-[Donate via Hack Club](https://hcb.hackclub.com/donations/start/bennington-area-robotics){:target="_blank"} (EIN 81-2908499)
+[Donate via Hack Club](https://hcb.hackclub.com/donations/start/bennington-area-robotics){:target="_blank"}
+<br><small>EIN 81-2908499</small>
 
 ### Donate by Check
 
