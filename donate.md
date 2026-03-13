@@ -5,7 +5,7 @@ title: Donate
 
 ## Support Youth Robotics in Bennington
 
-Bennington Area Robotics is a program of **The Bennington Area Makers, Inc.**, a 501(c)(3) nonprofit organization. Your donation helps fund robot parts, competition fees, and educational materials for middle and high school students in the greater Bennington area.
+Bennington Area Robotics is a program of **The Bennington Area Makers, Inc.**, a 501(c)(3) nonprofit organization. Your donation helps fund robot parts, competition fees, and educational materials for middle and high school students in the Bennington Vermont area.
 
 Donations are tax-deductible to the extent permitted by law. EIN 84-5124653.
 
