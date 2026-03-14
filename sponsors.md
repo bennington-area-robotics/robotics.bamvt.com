@@ -3,6 +3,10 @@ layout: default
 title: Sponsors
 ---
 
+## Championship Sponsors
+
+*Coming soon — contact us if your business would like to send the first-ever southwestern Vermont team to Worlds!*
+
 ## Season Sponsors (2025-2026)
 
 We are grateful to the following organizations for their support of youth robotics in the Bennington Vermont area.
@@ -31,4 +35,6 @@ We are grateful to the following organizations for their support of youth roboti
 
 ### Become a Sponsor
 
-Interested in supporting youth robotics in our community? Contact us at [info@bamvt.com](mailto:info@bamvt.com?subject=Robotics%20Sponsorship).
+Interested in supporting youth robotics in our community? We're currently seeking sponsors to help send our teams to Worlds and New England. Contact us at [info@bamvt.com](mailto:info@bamvt.com?subject=Robotics%20Sponsorship).
+
+*Want to make a personal donation? Visit our [donate page](/donate).*
