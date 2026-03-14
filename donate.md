@@ -51,7 +51,7 @@ Make checks payable to *The Bennington Area Makers, Inc.* and mail to:
   <li>
     <div class="donation-avatar">A</div>
     <div class="donation-detail">
-      <span class="donor-name">Anonymous</span> donated <span class="donation-amount">$100</span> to the Robotics General Fund
+      <span class="donor-name">Alexandra</span> donated <span class="donation-amount">$100</span> to the Robotics General Fund
       <div class="donation-meta">Mar 14</div>
     </div>
   </li>
