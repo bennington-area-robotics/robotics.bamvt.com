@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Donate
+description: Help send Bennington's youth robotics teams to the FIRST World Championship in Houston. Tax-deductible donations support travel, registration, and meals.
+og_image: /events/state-championship-2026/images/2026_FTC-228.jpg
 ---
 
 ## Support Youth Robotics in Bennington
@@ -51,8 +53,8 @@ Make checks payable to *The Bennington Area Makers, Inc.* and mail to:
   <li>
     <div class="donation-avatar">A</div>
     <div class="donation-detail">
-      <span class="donor-name">Alexandra</span> donated <span class="donation-amount">$100</span> to the Robotics General Fund
-      <div class="donation-meta">Mar 14</div>
+      <span class="donor-name">Alexandra</span> donated <span class="donation-amount">$100</span>
+      <div class="donation-meta">Mar 14 &middot; Robotics General Fund</div>
     </div>
   </li>
   <li>
