@@ -5,7 +5,7 @@ description: Help send Bennington's youth robotics teams to the FIRST World Cham
 og_image: /events/state-championship-2026/images/2026_FTC-228.jpg
 ---
 
-## Support Youth Robotics in Bennington
+## Support Youth Robotics in Southwestern Vermont
 
 <div class="carousel" id="donate-carousel">
   <button class="carousel-btn prev" onclick="document.getElementById('donate-track').scrollBy({left: -document.getElementById('donate-track').clientWidth, behavior: 'smooth'})">&lsaquo;</button>
