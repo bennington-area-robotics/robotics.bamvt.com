@@ -39,6 +39,8 @@ Make checks payable to *The Bennington Area Makers, Inc.* and mail to:
 
 <small>EIN 84-5124653</small>
 
+### Post-Season Advancement Fund
+
 <div class="donation-progress">
   <span class="raised">$1,600 raised</span>
   <span class="goal"> of $23,500 goal &middot; 4 donations</span>
@@ -51,8 +53,8 @@ Make checks payable to *The Bennington Area Makers, Inc.* and mail to:
   <li>
     <div class="donation-avatar">A</div>
     <div class="donation-detail">
-      <span class="donor-name">Alexandra</span> donated <span class="donation-amount">$100</span>
-      <div class="donation-meta">Mar 14 &middot; Robotics General Fund</div>
+      <span class="donor-name">Alexandra</span> donated <span class="donation-amount">$100</span> to Robotics General Fund
+      <div class="donation-meta">Mar 14</div>
     </div>
   </li>
   <li>
