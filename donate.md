@@ -77,4 +77,4 @@ Email us at [info@bamvt.com](mailto:info@bamvt.com?subject=Donation%20Inquiry).
 
 ---
 
-*Want to see who already supports us? View our [sponsors](/sponsors).*
+*We're grateful to our [regular-season sponsors](/sponsors), whose support helped us get this far.*
