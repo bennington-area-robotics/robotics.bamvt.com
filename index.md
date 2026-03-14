@@ -88,7 +88,7 @@ Team 32473 Bennington Bolts and Biscuits advances to the <strong>New England Pre
 
 ## Teams
 
-- **[FTC Team 18650: Cookie Clickers](https://ftc-events.firstinspires.org/team/18650){:target="_blank"}** – formed in 2019, 1st ranked team and Inspire Award winners at the 2026 Vermont Championship.
+- **[FTC Team 18650: Cookie Clickers](https://ftc-events.firstinspires.org/team/18650){:target="_blank"}** – formed in 2019, 1st ranked team and Inspire Award winner at the 2026 Vermont Championship.
 - **[FTC Team 32473: Bennington Bolts and Biscuits](https://ftc-events.firstinspires.org/team/32473){:target="_blank"}** – formed in 2025, 7th ranked team out of 25 at the 2026 Vermont Championship.
 
 ## Links
@@ -99,17 +99,16 @@ Team 32473 Bennington Bolts and Biscuits advances to the <strong>New England Pre
 
 ## About Us
 
-Bennington Area Robotics is a community-based youth robotics group, drawing middle and high-school aged students from Bennington and surrounding towns, including North Bennington, Shaftsbury, Hoosick Falls and Cambridge.
-
-The students — from southwestern Vermont and neighboring New York — design, build, and program their robots themselves, with guidance from community mentors. Team 18650 Cookie Clickers is the first southwestern Vermont team to advance to the FIRST Championship in Houston TX, to compete against other top teams from around the world.
+Bennington Area Robotics is a community-based youth robotics group, drawing middle and high school aged students from Bennington and surrounding towns, including North Bennington and Shaftsbury, Hoosick Falls NY and Cambridge NY.
 
 We participate in [FIRST Tech Challenge](https://www.firstinspires.org/robotics/ftc){:target="_blank"} (FTC), an annual robotics competition where four robots race to collect and score game pieces on a 12'x12' playing field.
 
-Bennington Area Robotics is a program of **The Bennington Area Makers, Inc.**, a 501(c)(3) nonprofit organization. Donations are tax-deductible. [Learn how to donate](/donate).
+Students design, build, and program their own robots to perform tasks and score points, working directly with technical mentors from the local community. They develop skills in mechanical engineering, programming, design, collaboration, and gracious professionalism (competing hard while helping other teams succeed).
 
-Team members design, build, and program their own robots to perform tasks and score points. Along the way, students develop skills in mechanical engineering, programming, planning, design, presentation, collaboration, and gracious professionalism (competing hard while helping other teams succeed).
+Team 18650 Cookie Clickers is the first southwestern Vermont team to advance to the FIRST Championship in Houston TX, to compete against other top teams from around the world.
 
-Students work directly with technical mentors from the local community, including mechanical engineers, automation engineers, and software developers.
+Bennington Area Robotics is a program of **The Bennington Area Makers, Inc.**, a 501(c)(3) nonprofit organization. Donations are tax-deductible. [How to donate](/donate).
+
 
 <p style="text-align: center; font-style: italic; margin-bottom: 0.5em;">Team 18650 Cookie Clickers in playoff match 4 of the <a href="https://ftc-events.firstinspires.org/2024/USVTCMP" target="_blank">2024–2025 VT State Championship</a>.</p>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 1em 0;">
