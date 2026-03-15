@@ -3,10 +3,16 @@
   "donations": [
     {
       "donor": "Anonymous",
+      "amount":100,
+      "recipient": "Robotics General Fund",
+      "date": "2026-03-15"
+    },
+    {
+      "donor": "Jackie Kelly",
       "amount":500,
       "recipient": "18650 Cookie Clickers",
       "date": "2026-03-15",
-      "_memo": "Miss you guys. Hope you have a great competition and great experiences. Best of luck."
+      "memo": "Miss you guys. Hope you have a great competition and great experiences. Best of luck."
     },
     {
       "donor": "Anonymous",
