@@ -99,7 +99,7 @@ Team 32473 Bennington Bolts and Biscuits advances to the <strong>New England Pre
 
 ## About Us
 
-Bennington Area Robotics is a community-based youth robotics group, drawing middle and high school aged students from Bennington and surrounding towns, including North Bennington, Shaftsbury, Hoosick and Cambridge NY.
+Bennington Area Robotics is a community-based youth robotics group, drawing middle and high school aged students from Bennington, North Bennington and Shaftsbury in Vermont, and Hoosick Falls, Cambridge and Petersburg in New York.
 
 We participate in [FIRST Tech Challenge](https://www.firstinspires.org/robotics/ftc){:target="_blank"} (FTC), an annual robotics competition where four robots race to collect and score game pieces on a 12'x12' playing field.
 
