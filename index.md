@@ -5,10 +5,11 @@ title: Home
 
 <div class="highlight">
 Team 18650 Cookie Clickers advances to the <strong>FIRST Championship</strong> in Houston TX, April 29 – May 2!
+<a href="/portfolio">Read our Engineering Portfolio</a>
 <br><br>
 Team 32473 Bennington Bolts and Biscuits advances to the <strong>New England Premier Event</strong> at the Big E in West Springfield MA, April 17–18!
 <br><br>
-<a href="/portfolio">Read our Engineering Portfolio</a> &middot; <a href="/donate">Support us with a tax-deductible donation!</a>
+<a href="/donate">Support us with a tax-deductible donation!</a>
 </div>
 
 <div class="carousel" id="carousel">
