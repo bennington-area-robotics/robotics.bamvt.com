@@ -16,4 +16,4 @@ Their Engineering Portfolio covers the full season — game strategy, iterative 
 <iframe src="https://drive.google.com/file/d/1XD6NRXbu9tq8MP7e6Mqw6j0jJrjJnnw3/preview" style="width: 100%; height: 120vh; border: 1px solid #ddd; border-radius: 4px;" allow="autoplay"></iframe>
 </div>
 
-[Open in Google Drive](https://drive.google.com/file/d/1XD6NRXbu9tq8MP7e6Mqw6j0jJrjJnnw3/view?usp=sharing){:target="_blank"} &middot; [Learn more about FTC awards](https://www.firstinspires.org/resource-library/ftc/judge-manual){:target="_blank"}
+[Open in Google Drive](https://drive.google.com/file/d/1XD6NRXbu9tq8MP7e6Mqw6j0jJrjJnnw3/view?usp=sharing){:target="_blank"} &middot; [Learn more about FTC awards](https://www.firstinspires.org/robotics/ftc/awards){:target="_blank"}
