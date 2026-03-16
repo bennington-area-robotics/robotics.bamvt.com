@@ -2,6 +2,12 @@
   "goal": 23500,
   "donations": [
     {
+      "donor": "Anonymous",
+      "amount": 103.48,
+      "recipient": "Robotics General Fund",
+      "date": "2026-03-16"
+    },
+    {
       "donor": "Betsy V.",
       "amount": 500,
       "recipient": "Cookie Clickers",
