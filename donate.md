@@ -20,7 +20,7 @@ og_image: /events/state-championship-2026/images/2026_FTC-228.jpg
 
 This season, both teams are advancing to out-of-state events.
 
-**Team 18650 Cookie Clickers** won the [Vermont Championship](/events/state-championship-2026) and is advancing to the [FIRST Championship](https://www.firstchampionship.org/){:target="_blank"} in Houston, TX — the first southwestern Vermont team to do so. Getting 6 students and 3 mentors there will cost an estimated **$20,000**, covering registration, flights, hotel, and meals.
+**Team 18650 Cookie Clickers** won the [Vermont Championship](/events/state-championship-2026) and is advancing to the [FIRST Championship](https://www.firstchampionship.org/){:target="_blank"} in Houston, TX — the first southwestern Vermont team to do so. [Read their Engineering Portfolio](/portfolio). Getting 6 students and 3 mentors there will cost an estimated **$20,000**, covering registration, flights, hotel, and meals.
 
 **Team 32473 Bennington Bolts and Biscuits** is advancing to the [New England Premier Event](https://www.nefirst.org/ftc-premier){:target="_blank"} at the Big E in West Springfield, MA. Travel for 5 students and 2 mentors will cost an estimated **$3,500**, covering registration, hotel, and meals.
 
