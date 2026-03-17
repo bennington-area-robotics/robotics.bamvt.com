@@ -2,6 +2,18 @@
   "goal": 23500,
   "donations": [
     {
+      "donor": "Anonymous",
+      "amount": 1030.26,
+      "recipient": "Bolts and Biscuits",
+      "date": "2026-03-17"
+    },
+    {
+      "donor": "Anonymous",
+      "amount": 100.00,
+      "recipient": "Cookie Clickers",
+      "date": "2026-03-17"
+    },
+    {
       "donor": "Sam M.",
       "amount": 26.25,
       "recipient": "Robotics General Fund",
