@@ -27,7 +27,7 @@ Two Bennington Area Robotics teams are advancing to the FIRST Championship and t
 
 Cookie Clickers was formed in 2019 as a middle school team. Some of its founding members are now seniors, and this is their first trip to the World Championship. Bolts and Biscuits was formed in 2025 and qualified for the New England Premier Event in its first season. Your support helps make these trips possible.
 
-[Download our fundraising flyer](https://docs.google.com/document/d/1tulje8SLlxif0cYBxI0OA4WbffCRBLJeBgSGxRxrH1U/edit?usp=sharing){:target="_blank"} to share with friends, family, and local businesses.
+[Download our fundraising flyer (PDF)](https://drive.google.com/file/d/1Av1Eo0pNYhml5obOoKpwOnZBdVepMXR0/view?usp=sharing){:target="_blank"} to share with friends, family, and local businesses.
 
 ### Donate Online
 
