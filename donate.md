@@ -1,11 +1,13 @@
 ---
 layout: default
 title: Donate
-description: Help send Bennington's youth robotics teams to the FIRST World Championship in Houston. Tax-deductible donations support travel, registration, and meals.
+description: Help send student robotics teams from southwestern Vermont and neighboring New York to the FIRST Championship and New England Premier Event. Tax-deductible donations support registration, travel, lodging, and meals.
 og_image: /events/state-championship-2026/images/2026_FTC-228.jpg
 ---
 
-## Support Youth Robotics in Southwestern Vermont
+## Help Send Our Students to Worlds and New England!
+
+Two Bennington Area Robotics teams are advancing to the FIRST Championship and the New England Premier Event. Your donation helps cover registration, travel, lodging, and meals.
 
 <div class="carousel" id="donate-carousel">
   <button class="carousel-btn prev" onclick="document.getElementById('donate-track').scrollBy({left: -document.getElementById('donate-track').clientWidth, behavior: 'smooth'})">&lsaquo;</button>
@@ -16,15 +18,11 @@ og_image: /events/state-championship-2026/images/2026_FTC-228.jpg
   <button class="carousel-btn next" onclick="document.getElementById('donate-track').scrollBy({left: document.getElementById('donate-track').clientWidth, behavior: 'smooth'})">&rsaquo;</button>
 </div>
 
-### Help Send Our Students to Worlds and New England!
+**Team 18650 Cookie Clickers** won the [FTC Vermont Championship](/events/state-championship-2026) and qualified for the [FIRST Championship](https://www.firstchampionship.org/){:target="_blank"} in Houston, TX, becoming the first team from southwestern Vermont to reach Worlds. [Read their Engineering Portfolio](/portfolio). Sending 6 students and 3 mentors to Houston will cost an estimated **$20,000**, covering registration, flights, lodging, and meals.
 
-This season, both teams are advancing to out-of-state events.
+**Team 32473 Bennington Bolts and Biscuits** qualified for the [New England Premier Event](https://www.nefirst.org/ftc-premier){:target="_blank"} at the Big E in West Springfield, MA. Sending 5 students and 2 mentors will cost an estimated **$3,500**, covering registration, lodging, and meals.
 
-**Team 18650 Cookie Clickers** won the [Vermont Championship](/events/state-championship-2026) and is advancing to the [FIRST Championship](https://www.firstchampionship.org/){:target="_blank"} in Houston, TX — the first southwestern Vermont team to do so. [Read their Engineering Portfolio](/portfolio). Getting 6 students and 3 mentors there will cost an estimated **$20,000**, covering registration, flights, hotel, and meals.
-
-**Team 32473 Bennington Bolts and Biscuits** is advancing to the [New England Premier Event](https://www.nefirst.org/ftc-premier){:target="_blank"} at the Big E in West Springfield, MA. Travel for 5 students and 2 mentors will cost an estimated **$3,500**, covering registration, hotel, and meals.
-
-Cookie Clickers was formed in 2019 for middle school students, and some of those founding members are now seniors and heading to Worlds for the first time. Bolts and Biscuits was formed in 2025 and is already advancing to the regional level. Your support makes both possible.
+Cookie Clickers was formed in 2019 as a middle school team. Some of its founding members are now seniors, and this is their first trip to the World Championship. Bolts and Biscuits was formed in 2025 and qualified for the New England Premier Event in its first season. Your support helps make these trips possible.
 
 ### Donate Online
 
@@ -59,7 +57,7 @@ Make checks payable to *The Bennington Area Makers, Inc.* and mail to:
 {% for d in site.data.donations.donations %}  <li>
     <div class="donation-avatar">{{ d.donor | slice: 0 }}</div>
     <div class="donation-detail">
-      <span class="donor-name">{{ d.donor }}</span> donated <span class="donation-amount">${{ d.amount }}</span> to {{ d.recipient }}
+      <span class="donor-name">{{ d.donor }}</span> donated <span class="donation-amount">${{ d.amount | replace: '.0', '' }}</span> to {{ d.recipient }}
       <div class="donation-meta">{{ d.date | date: "%b %-d" }}{% if d.memo %} &middot; {{ d.memo }}{% endif %}</div>
     </div>
   </li>
@@ -85,7 +83,7 @@ Make checks payable to *The Bennington Area Makers, Inc.* and mail to:
 
 ### About Us
 
-Your donation helps fund robot parts, competition fees, travel expenses, and educational materials for middle and high school students in the Bennington Vermont area. All donations are tax-deductible to the extent permitted by law.
+Your donation helps fund robot parts, competition fees, travel, and educational materials for middle and high school students in southwestern Vermont and neighboring New York. All donations are tax-deductible to the extent permitted by law.
 
 Bennington Area Robotics is organized under **The Bennington Area Makers, Inc.** (BAMVT), a 501(c)(3) nonprofit with EIN 84-5124653.
 
