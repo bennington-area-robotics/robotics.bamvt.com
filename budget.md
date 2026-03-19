@@ -32,13 +32,15 @@ Thus we see that FTC Robotics in Vermont is normally quite affordable, until the
 {% for team in budget.post_season.teams %}
   {% if team.estimated_total %}{% assign ps_exp = ps_exp | plus: team.estimated_total %}{% endif %}
 {% endfor %}
+{% assign total_inc = rs_inc | plus: ps_inc %}
+{% assign total_exp = rs_exp | plus: ps_exp %}
 
 <table>
 <thead><tr><th></th><th style="text-align:right">Regular Season</th><th style="text-align:right">Post-Season</th><th style="text-align:right">Total</th></tr></thead>
 <tbody>
-<tr><td>Cash Income</td><td style="text-align:right">${{ rs_inc }}</td><td style="text-align:right">${{ ps_inc | replace: '.0', '' }}</td><td style="text-align:right">${% assign t = rs_inc | plus: ps_inc %}{{ t | replace: '.0', '' }}</td></tr>
-<tr><td>Expenses</td><td style="text-align:right">${{ rs_exp }}</td><td style="text-align:right">~${{ ps_exp | replace: '.0', '' | replace: '000', ',000' }}</td><td style="text-align:right">~${% assign te = rs_exp | plus: ps_exp %}{{ te | replace: '.0', '' | replace: '000', ',000' }}</td></tr>
-<tr><td>In-Kind Support</td><td style="text-align:right">${{ rs_ink }}</td><td style="text-align:right">-</td><td style="text-align:right">${{ rs_ink }}</td></tr>
+<tr><td>Cash Income</td><td style="text-align:right">{% include money.html amount=rs_inc %}</td><td style="text-align:right">{% include money.html amount=ps_inc %}</td><td style="text-align:right">{% include money.html amount=total_inc %}</td></tr>
+<tr><td>Expenses</td><td style="text-align:right">{% include money.html amount=rs_exp %}</td><td style="text-align:right">~{% include money.html amount=ps_exp %}</td><td style="text-align:right">~{% include money.html amount=total_exp %}</td></tr>
+<tr><td>In-Kind Support</td><td style="text-align:right">{% include money.html amount=rs_ink %}</td><td style="text-align:right">-</td><td style="text-align:right">{% include money.html amount=rs_ink %}</td></tr>
 </tbody>
 </table>
 
@@ -62,16 +64,16 @@ Thus we see that FTC Robotics in Vermont is normally quite affordable, until the
 <thead><tr><th></th><th style="text-align:right">Amount</th></tr></thead>
 <tbody>
 <tr><td colspan="2"><strong>Income</strong></td></tr>
-{% if d_firstinvt > 0 %}<tr><td>FIRSTinVT</td><td style="text-align:right">${{ d_firstinvt | replace: '.0', '' }}</td></tr>{% endif %}
-{% if d_individual > 0 %}<tr><td>Individual donations</td><td style="text-align:right">${{ d_individual | replace: '.0', '' }}</td></tr>{% endif %}
-<tr><td><strong>Total Income</strong></td><td style="text-align:right"><strong>${{ d_total | replace: '.0', '' }}</strong></td></tr>
+{% if d_firstinvt > 0 %}<tr><td>FIRSTinVT</td><td style="text-align:right">{% include money.html amount=d_firstinvt %}</td></tr>{% endif %}
+{% if d_individual > 0 %}<tr><td>Individual donations</td><td style="text-align:right">{% include money.html amount=d_individual %}</td></tr>{% endif %}
+<tr><td><strong>Total Income</strong></td><td style="text-align:right"><strong>{% include money.html amount=d_total %}</strong></td></tr>
 {% if team.expenses %}
 <tr><td colspan="2"><strong>Expenses</strong></td></tr>
 {% for e in team.expenses %}
-<tr><td>{{ e.category }}</td><td style="text-align:right">{% if e.amount %}${{ e.amount | replace: '.0', '' }}{% else %}TBD{% endif %}</td></tr>
+<tr><td>{{ e.category }}</td><td style="text-align:right">{% if e.amount %}{% include money.html amount=e.amount %}{% else %}TBD{% endif %}</td></tr>
 {% endfor %}
 {% if team.estimated_total %}
-<tr><td><strong>Estimated Total</strong></td><td style="text-align:right"><strong>~${{ team.estimated_total | replace: '.0', '' | replace: '000', ',000' }}</strong></td></tr>
+<tr><td><strong>Estimated Total</strong></td><td style="text-align:right"><strong>~{% include money.html amount=team.estimated_total %}</strong></td></tr>
 {% endif %}
 {% endif %}
 </tbody>
@@ -103,29 +105,29 @@ Thus we see that FTC Robotics in Vermont is normally quite affordable, until the
 {% if team.income %}
 <tr><td colspan="2"><strong>{% if team.in_kind %}Cash {% endif %}Income</strong></td></tr>
 {% for i in team.income %}
-<tr><td>{{ i.source }}</td><td style="text-align:right">${{ i.amount }}</td></tr>
+<tr><td>{{ i.source }}</td><td style="text-align:right">{% include money.html amount=i.amount %}</td></tr>
 {% endfor %}
-<tr><td><strong>Total{% if team.in_kind %} Cash{% endif %} Income</strong></td><td style="text-align:right"><strong>${{ inc_total }}</strong></td></tr>
+<tr><td><strong>Total{% if team.in_kind %} Cash{% endif %} Income</strong></td><td style="text-align:right"><strong>{% include money.html amount=inc_total %}</strong></td></tr>
 {% endif %}
 {% if team.expenses %}
 <tr><td colspan="2"><strong>Expenses</strong></td></tr>
 {% for e in team.expenses %}
-<tr><td>{{ e.category }}</td><td style="text-align:right">${{ e.amount }}</td></tr>
+<tr><td>{{ e.category }}</td><td style="text-align:right">{% include money.html amount=e.amount %}</td></tr>
 {% endfor %}
-<tr><td><strong>Total Expenses</strong></td><td style="text-align:right"><strong>${{ exp_total }}</strong></td></tr>
+<tr><td><strong>Total Expenses</strong></td><td style="text-align:right"><strong>{% include money.html amount=exp_total %}</strong></td></tr>
 {% if net < 0 %}
-<tr><td><strong>Net</strong></td><td style="text-align:right"><strong style="color:var(--accent)">${{ net }}</strong></td></tr>
+<tr><td><strong>Net</strong></td><td style="text-align:right"><strong style="color:var(--accent)">{% include money.html amount=net %}</strong></td></tr>
 {% else %}
-<tr><td><strong>Net</strong></td><td style="text-align:right"><strong style="color:#2a9d8f">+${{ net }}</strong></td></tr>
+<tr><td><strong>Net</strong></td><td style="text-align:right"><strong style="color:#2a9d8f">+{% include money.html amount=net %}</strong></td></tr>
 {% endif %}
 {% endif %}
 {% if team.in_kind %}
 <tr><td colspan="2"><strong>In-Kind Support</strong></td></tr>
 {% assign ink_total = 0 %}
 {% for k in team.in_kind %}{% assign ink_total = ink_total | plus: k.value %}
-<tr><td>{{ k.source }}</td><td style="text-align:right">${{ k.value }}</td></tr>
+<tr><td>{{ k.source }}</td><td style="text-align:right">{% include money.html amount=k.value %}</td></tr>
 {% endfor %}
-<tr><td><strong>Total In-Kind</strong></td><td style="text-align:right"><strong>${{ ink_total }}</strong></td></tr>
+<tr><td><strong>Total In-Kind</strong></td><td style="text-align:right"><strong>{% include money.html amount=ink_total %}</strong></td></tr>
 {% endif %}
 </tbody>
 </table>
