@@ -36,7 +36,7 @@
       },
       {
         "id": "shared",
-        "name": "Shared (Bennington Area Robotics)",
+        "name": "Shared",
         "income": [
           { "source": "Community organizations", "amount": 500.00 }
         ],
@@ -57,7 +57,7 @@
     "teams": [
       {
         "id": "cookie-clickers",
-        "name": "Cookie Clickers → Houston",
+        "name": "18650 Cookie Clickers → Houston",
         "description": "Advancing to the [FIRST Championship](https://www.firstchampionship.org/) in Houston, TX, as the first team from southwestern Vermont to reach Worlds. Sending 6 students and 3-4 mentors.",
         "donation_recipient": "Cookie Clickers",
         "expenses": [
@@ -72,7 +72,7 @@
       },
       {
         "id": "bolts-and-biscuits",
-        "name": "Bolts and Biscuits → New England",
+        "name": "32473 Bolts and Biscuits → New England",
         "description": "Advancing to the [New England Premier Event](https://www.nefirst.org/ftc-premier) at the Big E in West Springfield, MA. Sending 5 students and 2 mentors.",
         "donation_recipient": "Bolts and Biscuits",
         "expenses": [
