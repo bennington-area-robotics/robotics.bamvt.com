@@ -2,16 +2,17 @@
   "goal": 23500,
   "donations": [
     {
-      "donor": "Anonymous",
+      "donor": "Gemma & Dutch",
       "amount": 1030.26,
       "recipient": "Bolts and Biscuits",
       "date": "2026-03-17"
     },
     {
-      "donor": "Anonymous",
+      "donor": "Pat & Linda",
       "amount": 100.00,
       "recipient": "Cookie Clickers",
-      "date": "2026-03-17"
+      "date": "2026-03-17",
+      "memo": "for Nolan and team"
     },
     {
       "donor": "Sam M.",
