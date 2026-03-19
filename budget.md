@@ -35,7 +35,7 @@ Thus we see that FTC Robotics in Vermont is normally quite affordable, until the
 {% assign total_inc = rs_inc | plus: ps_inc %}
 {% assign total_exp = rs_exp | plus: ps_exp %}
 
-<table>
+<table class="summary-table">
 <thead><tr><th></th><th style="text-align:right">Regular Season</th><th style="text-align:right">Post-Season</th><th style="text-align:right">Total</th></tr></thead>
 <tbody>
 <tr><td>Cash Income</td><td style="text-align:right">{% include money.html amount=rs_inc %}</td><td style="text-align:right">{% include money.html amount=ps_inc %}</td><td style="text-align:right">{% include money.html amount=total_inc %}</td></tr>
