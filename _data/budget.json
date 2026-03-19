@@ -1,0 +1,93 @@
+{
+  "regular_season": {
+    "label": "Regular Season, 2025-26",
+    "teams": [
+      {
+        "id": "cookie-clickers",
+        "name": "Cookie Clickers (18650)",
+        "note": "Estimated robot replacement cost: $3,100",
+        "income": [
+          { "source": "Community organizations", "amount": 350.00 },
+          { "source": "Local businesses", "amount": 1700.00 },
+          { "source": "National foundations", "amount": 200.00 }
+        ],
+        "expenses": [
+          { "category": "Season Registration", "amount": 325.00 },
+          { "category": "Building Supplies", "amount": 316.60 },
+          { "category": "Cameras", "amount": 398.12 },
+          { "category": "Major Parts", "amount": 1327.20 },
+          { "category": "Uniforms", "amount": 700.81 }
+        ]
+      },
+      {
+        "id": "bolts-and-biscuits",
+        "name": "Bolts and Biscuits (32473)",
+        "income": [
+          { "source": "FIRSTinVT", "amount": 2000.00 },
+          { "source": "UVM Ext Ag Eng", "amount": 2107.31 }
+        ],
+        "expenses": [
+          { "category": "Season Registration", "amount": 325.00 },
+          { "category": "Building Supplies", "amount": 470.73 },
+          { "category": "Controls", "amount": 895.00 },
+          { "category": "StarterBot", "amount": 777.31 },
+          { "category": "Uniforms", "amount": 550.43 }
+        ]
+      },
+      {
+        "id": "shared",
+        "name": "Shared (Bennington Area Robotics)",
+        "income": [
+          { "source": "Community organizations", "amount": 500.00 }
+        ],
+        "expenses": [
+          { "category": "3D Printing", "amount": 360.37 },
+          { "category": "DECODE game pieces", "amount": 72.47 }
+        ],
+        "in_kind": [
+          { "source": "Family donations (food)", "value": 1300.00 },
+          { "source": "FIRSTinVT (field set)", "value": 300.00 },
+          { "source": "Local businesses (food, computers)", "value": 542.24 }
+        ]
+      }
+    ]
+  },
+  "post_season": {
+    "label": "Post-Season Advancement, 2026",
+    "teams": [
+      {
+        "id": "cookie-clickers",
+        "name": "Cookie Clickers → Houston",
+        "description": "Advancing to the [FIRST Championship](https://www.firstchampionship.org/) in Houston, TX, as the first team from southwestern Vermont to reach Worlds. Sending 6 students and 3-4 mentors.",
+        "donation_recipient": "Cookie Clickers",
+        "expenses": [
+          { "category": "Event Registration", "amount": 2500.00 },
+          { "category": "Flights", "amount": null },
+          { "category": "Lodging", "amount": null },
+          { "category": "Meals", "amount": null },
+          { "category": "Robot improvements", "amount": 1500.00 },
+          { "category": "Travel equipment (robot & tool cases)", "amount": 800.00 }
+        ],
+        "estimated_total": 20000
+      },
+      {
+        "id": "bolts-and-biscuits",
+        "name": "Bolts and Biscuits → New England",
+        "description": "Advancing to the [New England Premier Event](https://www.nefirst.org/ftc-premier) at the Big E in West Springfield, MA. Sending 5 students and 2 mentors.",
+        "donation_recipient": "Bolts and Biscuits",
+        "expenses": [
+          { "category": "Event Registration", "amount": 1500.00 },
+          { "category": "Lodging", "amount": null },
+          { "category": "Meals", "amount": null },
+          { "category": "Robot improvements", "amount": 1000.00 }
+        ],
+        "estimated_total": 3500
+      },
+      {
+        "id": "shared",
+        "name": "Shared (Post-Season)",
+        "donation_recipient": "Robotics General Fund"
+      }
+    ]
+  }
+}
