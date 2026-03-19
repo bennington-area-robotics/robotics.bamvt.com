@@ -2,6 +2,13 @@
   "goal": 23500,
   "donations": [
     {
+      "donor": "MSK Engineers",
+      "amount": 500,
+      "recipient": "Cookie Clickers",
+      "date": "2026-03-19",
+      "type": "organization"
+    },
+    {
       "donor": "David L.",
       "amount": 103.48,
       "recipient": "Cookie Clickers",
@@ -94,14 +101,16 @@
       "amount": 500,
       "recipient": "Cookie Clickers",
       "date": "2026-03-07",
-      "memo": "Event registration support"
+      "memo": "Event registration support",
+      "type": "organization"
     },
     {
       "donor": "FIRSTinVT",
       "amount": 500,
       "recipient": "Bolts and Biscuits",
       "date": "2026-03-07",
-      "memo": "Event registration support"
+      "memo": "Event registration support",
+      "type": "organization"
     }
   ]
 }

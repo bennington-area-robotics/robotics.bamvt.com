@@ -60,12 +60,13 @@ Thus we see that FTC Robotics in Vermont is normally quite affordable, until the
 {% if team.donation_recipient %}
 {% assign d_total = 0 %}
 {% assign d_individual = 0 %}
-{% assign d_firstinvt = 0 %}
+{% assign d_orgs = "" %}
 {% for d in site.data.donations.donations %}
   {% if d.recipient == team.donation_recipient %}
     {% assign d_total = d_total | plus: d.amount %}
-    {% if d.donor == "FIRSTinVT" %}
-      {% assign d_firstinvt = d_firstinvt | plus: d.amount %}
+    {% if d.type == "organization" %}
+      {% if d_orgs != "" %}{% assign d_orgs = d_orgs | append: "|" %}{% endif %}
+      {% assign d_orgs = d_orgs | append: d.donor | append: ":" | append: d.amount %}
     {% else %}
       {% assign d_individual = d_individual | plus: d.amount %}
     {% endif %}
@@ -75,7 +76,13 @@ Thus we see that FTC Robotics in Vermont is normally quite affordable, until the
 <thead><tr><th></th><th style="text-align:right">Amount</th></tr></thead>
 <tbody>
 <tr><td colspan="2"><strong>Income</strong></td></tr>
-{% if d_firstinvt > 0 %}<tr><td>FIRSTinVT</td><td style="text-align:right">{% include money.html amount=d_firstinvt %}</td></tr>{% endif %}
+{% if d_orgs != "" %}
+{% assign org_entries = d_orgs | split: "|" %}
+{% for entry in org_entries %}
+{% assign parts = entry | split: ":" %}
+<tr><td>{{ parts[0] }}</td><td style="text-align:right">{% include money.html amount=parts[1] %}</td></tr>
+{% endfor %}
+{% endif %}
 {% if d_individual > 0 %}<tr><td>Individual donations</td><td style="text-align:right">{% include money.html amount=d_individual %}</td></tr>{% endif %}
 <tr><td><strong>Total Income</strong></td><td style="text-align:right"><strong>{% include money.html amount=d_total %}</strong></td></tr>
 {% if team.expenses %}
