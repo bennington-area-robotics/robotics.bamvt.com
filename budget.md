@@ -70,7 +70,7 @@ Thus we see that FTC Robotics in Vermont is normally quite affordable, until the
 {% if team.expenses %}
 <tr><td colspan="2"><strong>Expenses</strong></td></tr>
 {% for e in team.expenses %}
-<tr><td>{{ e.category }}</td><td style="text-align:right">{% if e.amount %}{% include money.html amount=e.amount %}{% else %}TBD{% endif %}</td></tr>
+<tr><td>{{ e.category }}</td><td style="text-align:right">{% if e.amount %}{% if e.estimated %}~{% endif %}{% include money.html amount=e.amount %}{% else %}TBD{% endif %}</td></tr>
 {% endfor %}
 {% if team.estimated_total %}
 <tr><td><strong>Total Expenses</strong></td><td style="text-align:right"><strong>~{% include money.html amount=team.estimated_total %}</strong></td></tr>
@@ -112,7 +112,7 @@ Thus we see that FTC Robotics in Vermont is normally quite affordable, until the
 {% if team.expenses %}
 <tr><td colspan="2"><strong>Expenses</strong></td></tr>
 {% for e in team.expenses %}
-<tr><td>{{ e.category }}</td><td style="text-align:right">{% include money.html amount=e.amount %}</td></tr>
+<tr><td>{{ e.category }}</td><td style="text-align:right">{% if e.estimated %}~{% endif %}{% include money.html amount=e.amount %}</td></tr>
 {% endfor %}
 <tr><td><strong>Total Expenses</strong></td><td style="text-align:right"><strong>{% include money.html amount=exp_total %}</strong></td></tr>
 {% if net < 0 %}
