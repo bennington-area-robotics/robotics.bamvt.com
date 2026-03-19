@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Budget
-description: Season budgets for Bennington Area Robotics FTC teams — Cookie Clickers (18650) and Bolts and Biscuits (32473).
+description: Season budgets for Bennington Area Robotics FTC teams — 18650 Cookie Clickers 18650 and 32473 Bolts and Biscuits.
 ---
 
 Bennington Area Robotics runs two FTC teams on a combined regular-season cash budget of roughly $6,900, funded by local businesses, community organizations, and foundations, plus about $2,100 in in-kind support (equipment, food, and discounts).

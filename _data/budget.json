@@ -4,7 +4,7 @@
     "teams": [
       {
         "id": "cookie-clickers",
-        "name": "Cookie Clickers (18650)",
+        "name": "18650 Cookie Clickers",
         "note": "Estimated robot replacement cost: $3,100",
         "income": [
           { "source": "Community organizations", "amount": 350.00 },
@@ -21,7 +21,7 @@
       },
       {
         "id": "bolts-and-biscuits",
-        "name": "Bolts and Biscuits (32473)",
+        "name": "32473 Bolts and Biscuits",
         "income": [
           { "source": "FIRSTinVT", "amount": 2000.00 },
           { "source": "UVM Ext Ag Eng", "amount": 2107.31 }
