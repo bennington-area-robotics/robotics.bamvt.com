@@ -73,7 +73,7 @@ Thus we see that FTC Robotics in Vermont is normally quite affordable, until the
 <tr><td>{{ e.category }}</td><td style="text-align:right">{% if e.amount %}{% include money.html amount=e.amount %}{% else %}TBD{% endif %}</td></tr>
 {% endfor %}
 {% if team.estimated_total %}
-<tr><td><strong>Estimated Total</strong></td><td style="text-align:right"><strong>~{% include money.html amount=team.estimated_total %}</strong></td></tr>
+<tr><td><strong>Total Expenses</strong></td><td style="text-align:right"><strong>~{% include money.html amount=team.estimated_total %}</strong></td></tr>
 {% endif %}
 {% endif %}
 </tbody>
