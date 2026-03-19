@@ -77,7 +77,7 @@ Thus we see that FTC Robotics in Vermont is normally quite affordable, until the
 <tbody>
 <tr><td colspan="2"><strong>Income</strong></td></tr>
 {% if d_orgs != "" %}
-{% assign org_entries = d_orgs | split: "|" %}
+{% assign org_entries = d_orgs | split: "|" | reverse %}
 {% for entry in org_entries %}
 {% assign parts = entry | split: ":" %}
 {% assign org_name = parts[0] %}{% assign org_amount = parts[1] %}
