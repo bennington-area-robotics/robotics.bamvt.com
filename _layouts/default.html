@@ -450,6 +450,49 @@
     .portfolio-viewer.fullscreen .portfolio-page canvas {
       cursor: pointer;
     }
+    /* Banner / hero image */
+    .has-banner {
+      position: relative;
+    }
+    .has-banner header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 2;
+      background: linear-gradient(rgba(0,0,0,0.45), transparent);
+      margin-bottom: 0;
+    }
+    .banner {
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      background: var(--primary);
+      overflow: hidden;
+    }
+    .banner img {
+      width: 100%;
+      max-width: 1920px;
+      height: 568px;
+      object-fit: cover;
+      object-position: 50% 25%;
+      display: block;
+    }
+    @media (min-width: 768px) {
+      .banner img { height: 624px; }
+    }
+    .banner-title {
+      margin-top: 1.5rem;
+      margin-bottom: 0;
+      font-size: 2rem;
+      color: var(--text);
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 0.3rem;
+    }
+    @media (min-width: 600px) {
+      .banner-title { font-size: 2.5rem; }
+    }
     /* Defeat Safari data detectors on EIN */
     .no-detect { unicode-bidi: isolate; }
     /* Donate button */
@@ -542,6 +585,7 @@
   </style>
 </head>
 <body>
+  {% if page.banner_image %}<div class="has-banner">{% endif %}
   <header>
     <div class="container">
       <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
@@ -563,7 +607,13 @@
       </nav>
     </div>
   </header>
+  {% if page.banner_image %}
+  <div class="banner">
+    <img src="{{ page.banner_image }}" alt="{{ page.title }}">
+  </div>
+  </div>{% endif %}
   <main class="container">
+    {% if page.banner_image %}<h2 class="banner-title">{{ page.title }}</h2>{% endif %}
     {{ content }}
   </main>
   <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">

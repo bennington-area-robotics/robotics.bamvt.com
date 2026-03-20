@@ -1,18 +1,18 @@
 ---
 layout: default
 title: FIRST Championship 2026
-description: Team 18650 Cookie Clickers at the FIRST Championship in Houston TX, April 29 – May 2, 2026 — the first southwestern Vermont FTC team to compete at Worlds.
+description: Team 18650 Cookie Clickers competes at the FIRST Championship in Houston TX, April 29 – May 2, 2026. The first southwestern Vermont FTC team at Worlds.
 ---
 
 ## FIRST Championship 2026
 
-The [FIRST Championship](https://www.firstchampionship.org/){:target="_blank"} — known as "Worlds" — is the annual world championship for FIRST robotics programs. Over 19,000 students on 1,000+ teams from more than 60 countries compete across four days of matches, judging, and awards at the George R. Brown Convention Center. Team 18650 Cookie Clickers is the first southwestern Vermont FTC team to qualify.
+The [FIRST Championship](https://www.firstchampionship.org/){:target="_blank"} is the world's largest K-12 robotics event, drawing over 19,000 students from over 60 countries to compete across four days of matches, judging, and awards in Houston, TX. 18650 Cookie Clickers is the first FTC team from southwestern Vermont to qualify.
 
-**Dates:** Wednesday – Saturday, April 29 – May 2, 2026
+**Dates:** Wednesday - Saturday, April 29 - May 2, 2026
 
 **Location:** George R. Brown Convention Center, Houston, TX
 
-**FTC Event Page:** [CMPTX](https://ftc-events.firstinspires.org/2025/CMPTX){:target="_blank"} \| [Event Info](https://www.firstchampionship.org/){:target="_blank"}
+**FTC Event Page:** [CMPTX](https://ftc-events.firstinspires.org/2025/CMPTX){:target="_blank"} \| [Event Info](https://www.firstchampionship.org/){:target="_blank"} \| [Event Guide (PDF)](https://www.firstinspires.org/hubfs/web/event/2026/cmp/all/event-guide.pdf?hsLang=en){:target="_blank"}
 
 ---
 
@@ -26,9 +26,9 @@ Cookie Clickers won the **Inspire Award** at the [2026 Vermont Championship](../
 
 ### Support Our Trip
 
-Competing at Worlds adds an estimated $20,000 to our season budget — registration fees, travel, lodging, and shipping our robot to Houston.
+Competing at Worlds adds an estimated $20,000 to our season budget, from registration fees, travel, lodging, shipping, and improvements to the robot.
 
-[Donate to support our trip](/donate) — all donations are tax-deductible through Bennington Area Makers, a 501(c)(3) nonprofit.
+[Donate to support our trip](/donate): all donations are tax-deductible through Bennington Area Makers, a 501(c)(3) nonprofit.
 
 [See our full budget](/budget) \| [Our sponsors](/sponsors)
 
@@ -36,9 +36,9 @@ Competing at Worlds adds an estimated $20,000 to our season budget — registrat
 
 ### Earlier Events
 
-- [Vermont Championship](../state-championship-2026) – March 7, 2026
-- [Northfield Qualifier](../northfield-qualifier-2026) – February 15, 2026
-- [Bennington Qualifier](../bennington-qualifier-2026) – January 31, 2026
+- [Vermont Championship](../state-championship-2026), March 7, 2026
+- [Northfield Qualifier](../northfield-qualifier-2026), February 15, 2026
+- [Bennington Qualifier](../bennington-qualifier-2026), January 31, 2026
 
 ### What is FTC?
 

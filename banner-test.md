@@ -2,6 +2,8 @@
 layout: default
 title: Vermont FTC State Championship 2026
 description: FTC State Championship on March 7, 2026 at South Burlington High School in South Burlington VT.
+banner_image: events/state-championship-2026/images/2026-FTC-Header-2100x1181.jpg
+sitemap: false
 ---
 
 The official FIRST Tech Challenge Regional Championship for Vermont.
@@ -18,7 +20,7 @@ The official FIRST Tech Challenge Regional Championship for Vermont.
 
 **Team Info Packet:** [Google Doc](https://docs.google.com/document/d/1UDRr5PkL8GX31rQu6F0Ud98-ypEw0D788A56uRxnqQ8/edit?tab=t.0){:target="_blank"}
 
-**Event Program:** [PDF](vt-rcmp-info-2026-0305.pdf){:target="_blank"}
+**Event Program:** [PDF](events/state-championship-2026/vt-rcmp-info-2026-0305.pdf){:target="_blank"}
 
 ---
 
@@ -83,8 +85,8 @@ The official FIRST Tech Challenge Regional Championship for Vermont.
 
 ### Earlier Events
 
-- [Bennington FTC Qualifier](../bennington-qualifier-2026) – January 31, 2026
-- [Northfield FTC Qualifier](../northfield-qualifier-2026) – February 15, 2026
+- [Bennington FTC Qualifier](events/bennington-qualifier-2026) – January 31, 2026
+- [Northfield FTC Qualifier](events/northfield-qualifier-2026) – February 15, 2026
 
 ### What is FTC?
 

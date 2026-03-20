@@ -21,7 +21,7 @@ Two Bennington Area Robotics teams are advancing to the FIRST Championship and t
   <button class="carousel-btn pause" title="Pause slideshow">⏸</button>
 </div>
 
-**Team 18650 Cookie Clickers** won the [FTC Vermont Championship](/events/state-championship-2026) and qualified for the [FIRST Championship](https://www.firstchampionship.org/){:target="_blank"} in Houston, TX, becoming the first team from southwestern Vermont to reach Worlds. [Read their Engineering Portfolio](/portfolio). Sending 6 students and 3 mentors to Houston will cost an estimated **$20,000**, covering registration, flights, lodging, and meals.
+**Team 18650 Cookie Clickers** won the [FTC Vermont Championship](/events/state-championship-2026) and qualified for the [FIRST Championship](/events/first-championship-2026) in Houston, TX, becoming the first team from southwestern Vermont to reach Worlds. [Read their Engineering Portfolio](/portfolio). Sending 6 students and 3 mentors to Houston will cost an estimated **$20,000**, covering registration, flights, lodging, and meals.
 
 **Team 32473 Bennington Bolts and Biscuits** qualified for the [New England Premier Event](https://www.nefirst.org/ftc-premier){:target="_blank"} at the Big E in West Springfield, MA. Sending 5 students and 2 mentors will cost an estimated **$3,500**, covering registration, lodging, and meals.
 

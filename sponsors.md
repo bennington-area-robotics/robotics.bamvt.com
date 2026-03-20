@@ -6,6 +6,7 @@ title: Sponsors
 ## Post-Season Sponsors
 
 - [MSK Engineers](https://www.mskeng.com){:target="_blank"}
+- [Goldstone Architecture](https://www.goldstonearchitecture.com/){:target="_blank"}
 
 *Contact us to sponsor the first-ever southwestern Vermont team at Worlds!*
 

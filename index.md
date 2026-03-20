@@ -69,7 +69,7 @@ Students design, build, and program their own robots to perform tasks and score 
 Bennington Area Robotics is a program of **The Bennington Area Makers, Inc.**, a 501(c)(3) nonprofit organization. Donations are tax-deductible. [How to donate](/donate). [See our budget](/budget).
 
 
-<p style="text-align: center; font-style: italic; margin-bottom: 0.5em;">Team 18650 Cookie Clickers in playoff match 4 of the <a href="https://ftc-events.firstinspires.org/2024/USVTCMP" target="_blank">2024–2025 VT State Championship</a>.</p>
+<p style="text-align: center; font-style: italic; margin-bottom: 0.5em;">Team 18650 Cookie Clickers at the <a href="/events/state-championship-2026">2026 Vermont FTC State Championship</a>.</p>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 1em 0;">
-<iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/SjT1XGYhEfc?start=19364" title="2025 VT State Championship Playoff Match" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/uh6c8jXycks?start=2660" title="2026 VT State Championship" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
