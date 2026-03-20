@@ -663,8 +663,12 @@
     var pdfDoc = null;
     var current = 0;
     var rendering = false;
-    var scale = 2;
     var isFullscreen = false;
+    var pageCache = {};
+    var SCALE_INLINE = 1.5;
+    var SCALE_FULL = 2.5;
+
+    function getScale() { return isFullscreen ? SCALE_FULL : SCALE_INLINE; }
 
     function updateControls() {
       var n = pdfDoc ? pdfDoc.numPages : 0;
@@ -675,21 +679,59 @@
       sideNext.disabled = current === n - 1;
     }
 
-    function renderPage(idx) {
-      if (!pdfDoc || rendering) return;
-      rendering = true;
-      current = idx;
-      updateControls();
-      pdfDoc.getPage(idx + 1).then(function(page) {
+    function renderToCanvas(idx, scale) {
+      return pdfDoc.getPage(idx + 1).then(function(page) {
         var viewport = page.getViewport({scale: scale});
-        var canvas = pageContainer.querySelector('canvas') || document.createElement('canvas');
-        var ctx = canvas.getContext('2d');
+        var canvas = document.createElement('canvas');
         canvas.width = viewport.width;
         canvas.height = viewport.height;
-        if (!canvas.parentElement) pageContainer.appendChild(canvas);
-        return page.render({canvasContext: ctx, viewport: viewport}).promise;
-      }).then(function() {
+        var ctx = canvas.getContext('2d');
+        return page.render({canvasContext: ctx, viewport: viewport}).promise.then(function() {
+          return canvas;
+        });
+      });
+    }
+
+    function showCached(idx, scale) {
+      var key = idx + '_' + scale;
+      if (pageCache[key]) {
+        var display = pageContainer.querySelector('canvas');
+        if (display) pageContainer.removeChild(display);
+        pageContainer.appendChild(pageCache[key]);
+        return true;
+      }
+      return false;
+    }
+
+    function prefetch(idx) {
+      if (!pdfDoc || idx < 0 || idx >= pdfDoc.numPages) return;
+      var scale = getScale();
+      var key = idx + '_' + scale;
+      if (pageCache[key]) return;
+      renderToCanvas(idx, scale).then(function(canvas) {
+        pageCache[key] = canvas;
+      });
+    }
+
+    function renderPage(idx) {
+      if (!pdfDoc || rendering) return;
+      current = idx;
+      updateControls();
+      var scale = getScale();
+      if (showCached(idx, scale)) {
+        prefetch(idx + 1);
+        return;
+      }
+      rendering = true;
+      renderToCanvas(idx, scale).then(function(canvas) {
+        pageCache[idx + '_' + scale] = canvas;
+        if (current === idx) {
+          var display = pageContainer.querySelector('canvas');
+          if (display) pageContainer.removeChild(display);
+          pageContainer.appendChild(canvas);
+        }
         rendering = false;
+        prefetch(idx + 1);
       });
     }
 
@@ -697,12 +739,14 @@
       isFullscreen = true;
       viewer.classList.add('fullscreen');
       document.body.style.overflow = 'hidden';
+      renderPage(current);
     }
 
     function exitFullscreen() {
       isFullscreen = false;
       viewer.classList.remove('fullscreen');
       document.body.style.overflow = '';
+      renderPage(current);
     }
 
     pageContainer.addEventListener('click', function() {
@@ -730,7 +774,7 @@
     script.src = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js';
     script.onload = function() {
       pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
-      pdfjsLib.getDocument(pdfUrl).promise.then(function(pdf) {
+      pdfjsLib.getDocument({url: pdfUrl, rangeChunkSize: 65536, disableAutoFetch: true}).promise.then(function(pdf) {
         pdfDoc = pdf;
         if (loading) loading.remove();
         renderPage(0);
