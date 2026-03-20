@@ -63,11 +63,11 @@
         "donation_recipient": "Cookie Clickers",
         "expenses": [
           { "category": "Event Registration", "amount": 2500.00 },
+          { "category": "Robot improvements", "amount": 1500.00 },
+          { "category": "Travel gear (robot & tool cases)", "amount": 800.00, "estimated": true },
           { "category": "Flights", "amount": null },
           { "category": "Lodging", "amount": null },
-          { "category": "Meals", "amount": null },
-          { "category": "Robot improvements", "amount": 1500.00 },
-          { "category": "Travel gear (robot & tool cases)", "amount": 800.00, "estimated": true }
+          { "category": "Meals", "amount": null }
         ],
         "estimated_total": 20000
       },
@@ -78,9 +78,9 @@
         "donation_recipient": "Bolts and Biscuits",
         "expenses": [
           { "category": "Event Registration", "amount": 1500.00 },
+          { "category": "Robot improvements", "amount": 1000.00 },
           { "category": "Lodging", "amount": null },
-          { "category": "Meals", "amount": null },
-          { "category": "Robot improvements", "amount": 1000.00 }
+          { "category": "Meals", "amount": null }
         ],
         "estimated_total": 3500
       },
