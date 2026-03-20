@@ -10,7 +10,7 @@ We are now hoping to raise an additional $23,500 for post-season advancement. Co
 
 Their success has created entirely new budget needs 3-4x the size of our regular season spending. Cookie Clickers alone went from a $3,100 regular season to an estimated $20,000 post-season budget. Aside from travel and lodging, post-season registration fees alone ($4,000) could easily fund a third team for next year. Event registration fees in Vermont are often waived in exchange for outreach and participation; out-of-state registration fees are not!
 
-Thus we see that FTC Robotics in Vermont is normally quite affordable, until the teams do well enough to advance out of state, where budgets are larger, teams are more competitive, and everyone travels further to more events. Despite the cost, advancement is a good experience for the students, to see their same activity pursued at higher levels of accomplishment, and understand themselves as peers on the national and international level.
+Thus we see that FTC Robotics in Vermont is normally quite affordable, until the teams do well enough to advance out of state, where budgets are larger, teams are more competitive, and everyone travels further to attend more events. Despite the cost, advancement is a good experience for the students, to see their same activity pursued at higher levels of accomplishment, and understand themselves as peers on the national and international level.
 
 ### About Us
 
