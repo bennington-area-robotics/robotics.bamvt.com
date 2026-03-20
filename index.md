@@ -4,7 +4,7 @@ title: Home
 ---
 
 <div class="highlight">
-Team 18650 Cookie Clickers advances to the <strong>FIRST Championship</strong> in Houston TX, April 29 – May 2!
+Team 18650 Cookie Clickers advances to the <strong><a href="/events/first-championship-2026">FIRST Championship</a></strong> in Houston TX, April 29 – May 2!
 <a href="/portfolio">Read our Engineering Portfolio</a>
 <br><br>
 Team 32473 Bennington Bolts and Biscuits advances to the <strong>New England Premier Event</strong> at the Big E in West Springfield MA, April 17–18!
@@ -25,7 +25,7 @@ Team 32473 Bennington Bolts and Biscuits advances to the <strong>New England Pre
 
 ## Upcoming Events
 
-- **Wed–Sat 4/29–5/2/2026** – [FIRST Championship](https://www.firstchampionship.org/){:target="_blank"} in Houston TX (18650)
+- **Wed–Sat 4/29–5/2/2026** – [FIRST Championship](/events/first-championship-2026) in Houston TX (18650)
 - **Fri–Sat 4/17–18/2026** – [New England Premier Event](https://www.nefirst.org/ftc-premier){:target="_blank"} at the Big E, West Springfield MA (32473)
 
 ## Past Events

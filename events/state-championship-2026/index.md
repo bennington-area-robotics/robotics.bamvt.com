@@ -26,7 +26,7 @@ The official FIRST Tech Challenge Regional Championship for Vermont.
 
 ### Results
 
-**Inspire Award (State Champion):** 18650 Cookie Clickers – advances to the FIRST Championship in Houston TX, April 29 – May 2 \| [Engineering Portfolio](https://drive.google.com/file/d/1XD6NRXbu9tq8MP7e6Mqw6j0jJrjJnnw3/view?usp=sharing){:target="_blank"}
+**Inspire Award (State Champion):** 18650 Cookie Clickers – advances to the [FIRST Championship](/events/first-championship-2026) in Houston TX, April 29 – May 2 \| [Engineering Portfolio](https://drive.google.com/file/d/1XD6NRXbu9tq8MP7e6Mqw6j0jJrjJnnw3/view?usp=sharing){:target="_blank"}
 
 **Advancement to New England Premier Event** (April 17–18, Big E, West Springfield MA)**:** 32473 Bennington Bolts and Biscuits
 
