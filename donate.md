@@ -25,7 +25,7 @@ Two Bennington Area Robotics teams are advancing to the FIRST Championship and t
 
 **Team 32473 Bennington Bolts and Biscuits** qualified for the [New England Premier Event](https://www.nefirst.org/ftc-premier){:target="_blank"} at the Big E in West Springfield, MA. Sending 5 students and 2 mentors will cost an estimated **$3,500**, covering registration, lodging, and meals.
 
-Cookie Clickers was formed in 2019 as a middle school team. Some of its founding members are now seniors, and this is their first trip to the World Championship. Bolts and Biscuits was formed in 2025 and qualified for the New England Premier Event in its first season. Your support helps make these trips possible.
+Cookie Clickers was formed in 2019 as a middle school team. Some of its founding members are now seniors, and this is their first trip to the World Championship. Bolts and Biscuits was formed in 2025 and qualified for the New England Premier Event in its first season. Your support makes these trips possible.
 
 [Download our fundraising flyer (PDF)](https://drive.google.com/file/d/1Av1Eo0pNYhml5obOoKpwOnZBdVepMXR0/view?usp=sharing){:target="_blank"} to share with friends, family, and local businesses.
 
@@ -95,7 +95,7 @@ Make checks payable to *The Bennington Area Makers, Inc.* and mail to:
 
 ### About Us
 
-Your donation helps fund robot parts, competition fees, travel, and educational materials for middle and high school students in southwestern Vermont and neighboring New York. All donations are tax-deductible to the extent permitted by law.
+Your donation funds robot parts, competition fees, travel, and educational materials for middle and high school students in southwestern Vermont and neighboring New York. All donations are tax-deductible to the extent permitted by law.
 
 Bennington Area Robotics is organized under **The Bennington Area Makers, Inc.** (BAMVT), a 501(c)(3) nonprofit with EIN 84-5124653.
 

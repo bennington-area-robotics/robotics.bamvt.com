@@ -26,6 +26,7 @@ No local build tooling required. Jekyll builds run automatically on GitHub Pages
 - Images live alongside their event pages in `events/<event>/images/` or in the root `images/` directory.
 - The `jekyll-redirect-from` plugin is available for URL redirects via front matter.
 - Pages can use `{#anchor-id}` kramdown syntax for heading anchors.
+- Fundraising and call-to-action copy should use confident, active language — avoid hedging ("hoping to", "trying to", "would like to").
 
 ## Key Files
 

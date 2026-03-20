@@ -3,9 +3,11 @@ layout: default
 title: Sponsors
 ---
 
-## Championship Sponsors
+## Post-Season Sponsors
 
-*Coming soon — contact us if your business would like to send the first-ever southwestern Vermont team to Worlds!*
+- [MSK Engineers](https://www.mskeng.com){:target="_blank"}
+
+*Contact us to sponsor the first-ever southwestern Vermont team at Worlds!*
 
 ## Season Sponsors (2025-2026)
 
@@ -35,6 +37,6 @@ We are grateful to the following organizations for their support of youth roboti
 
 ### Become a Sponsor
 
-Interested in supporting youth robotics in our community? We're currently seeking sponsors to help send our teams to Worlds and New England. See our [budget](/budget) to understand how funds are used. Contact us at [info@bamvt.com](mailto:info@bamvt.com?subject=Robotics%20Sponsorship).
+Interested in supporting youth robotics in our community? Sponsor our teams' trips to Worlds and New England. See our [budget](/budget) to understand how funds are used. Contact us at [info@bamvt.com](mailto:info@bamvt.com?subject=Robotics%20Sponsorship).
 
 *Want to make a personal donation? Visit our [donate page](/donate).*
