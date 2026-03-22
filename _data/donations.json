@@ -2,6 +2,12 @@
   "goal": 23500,
   "donations": [
     {
+      "donor": "Anonymous",
+      "amount": 50,
+      "recipient": "Robotics General Fund",
+      "date": "2026-03-21"
+    },
+    {
       "donor": "Goldstone Architecture",
       "amount": 200,
       "recipient": "Cookie Clickers",
@@ -9,7 +15,7 @@
       "type": "organization"
     },
     {
-      "donor": "Anonymous",
+      "donor": "Sasha B.",
       "amount": 103.48,
       "recipient": "Robotics General Fund",
       "date": "2026-03-20"
