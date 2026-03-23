@@ -2,6 +2,13 @@
   "goal": 23500,
   "donations": [
     {
+      "donor": "Eben R.",
+      "amount": 103.48,
+      "recipient": "Cookie Clickers",
+      "date": "2026-03-22",
+      "memo": "Have fun in Houston"
+    },
+    {
       "donor": "Anonymous",
       "amount": 5000,
       "recipient": "Cookie Clickers",
