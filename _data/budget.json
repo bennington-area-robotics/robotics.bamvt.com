@@ -71,8 +71,7 @@
           { "category": "Groceries", "amount": 350 },
           { "category": "Meals", "amount": 1750 },
           { "category": "Contingency", "amount": 500 }
-        ],
-        "estimated_total": 20000
+        ]
       },
       {
         "id": "bolts-and-biscuits",
@@ -85,8 +84,7 @@
           { "category": "Robot parts and equipment", "amount": 730 },
           { "category": "Team food", "amount": 200 },
           { "category": "Contingency", "amount": 270 }
-        ],
-        "estimated_total": 3500
+        ]
       },
       {
         "id": "shared",

@@ -37,7 +37,7 @@ Bennington Area Robotics is a program of **The Bennington Area Makers, Inc.** (B
 {% endfor %}
 {% assign ps_exp = 0 %}
 {% for team in budget.post_season.teams %}
-  {% if team.estimated_total %}{% assign ps_exp = ps_exp | plus: team.estimated_total %}{% endif %}
+  {% for e in team.expenses %}{% assign ps_exp = ps_exp | plus: e.amount %}{% endfor %}
 {% endfor %}
 
 {% assign total_inc = rs_inc | plus: ps_inc %}
@@ -47,7 +47,7 @@ Bennington Area Robotics is a program of **The Bennington Area Makers, Inc.** (B
 <thead><tr><th></th><th style="text-align:right">Regular Season</th><th style="text-align:right">Post-Season</th><th style="text-align:right">Total</th></tr></thead>
 <tbody>
 <tr><td>Cash Income</td><td style="text-align:right">{% include money.html amount=rs_inc %}</td><td style="text-align:right">{% include money.html amount=ps_inc %}</td><td style="text-align:right">{% include money.html amount=total_inc %}</td></tr>
-<tr><td>Expenses</td><td style="text-align:right">{% include money.html amount=rs_exp %}</td><td style="text-align:right">~{% include money.html amount=ps_exp %}</td><td style="text-align:right">~{% include money.html amount=total_exp %}</td></tr>
+<tr><td>Expenses</td><td style="text-align:right">{% include money.html amount=rs_exp %}</td><td style="text-align:right">{% include money.html amount=ps_exp %}</td><td style="text-align:right">{% include money.html amount=total_exp %}</td></tr>
 <tr><td>In-Kind Support</td><td style="text-align:right">{% include money.html amount=rs_ink %}</td><td style="text-align:right">-</td><td style="text-align:right">{% include money.html amount=rs_ink %}</td></tr>
 </tbody>
 </table>
@@ -93,8 +93,10 @@ Bennington Area Robotics is a program of **The Bennington Area Makers, Inc.** (B
 {% for e in team.expenses %}
 <tr><td>{{ e.category }}</td><td style="text-align:right">{% if e.amount %}{% if e.estimated %}~{% endif %}{% include money.html amount=e.amount %}{% else %}TBD{% endif %}</td></tr>
 {% endfor %}
-{% if team.estimated_total %}
-<tr><td><strong>Total Expenses</strong></td><td style="text-align:right"><strong>~{% include money.html amount=team.estimated_total %}</strong></td></tr>
+{% assign ps_team_exp = 0 %}
+{% for e in team.expenses %}{% assign ps_team_exp = ps_team_exp | plus: e.amount %}{% endfor %}
+{% if ps_team_exp > 0 %}
+<tr><td><strong>Total Expenses</strong></td><td style="text-align:right"><strong>{% include money.html amount=ps_team_exp %}</strong></td></tr>
 {% endif %}
 {% endif %}
 </tbody>
