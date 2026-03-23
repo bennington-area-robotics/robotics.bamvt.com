@@ -63,11 +63,14 @@
         "donation_recipient": "Cookie Clickers",
         "expenses": [
           { "category": "Event Registration", "amount": 2500.00 },
-          { "category": "Robot improvements", "amount": 1500.00 },
-          { "category": "Travel gear (robot & tool cases)", "amount": 800.00, "estimated": true },
-          { "category": "Flights", "amount": null },
-          { "category": "Lodging", "amount": null },
-          { "category": "Meals", "amount": null }
+          { "category": "Robot parts", "amount": 1500.00 },
+          { "category": "Travel gear", "amount": 800.00 },
+          { "category": "Flights", "amount": 6600 },
+          { "category": "Ground transportation", "amount": 1000 },
+          { "category": "Lodging", "amount": 5000 },
+          { "category": "Groceries", "amount": 350 },
+          { "category": "Meals", "amount": 1750 },
+          { "category": "Contingency", "amount": 500 }
         ],
         "estimated_total": 20000
       },
@@ -77,10 +80,11 @@
         "description": "Advancing to the [New England Premier Event](https://www.nefirst.org/ftc-premier) at the Big E in West Springfield, MA. Sending 5 students and 2 mentors.",
         "donation_recipient": "Bolts and Biscuits",
         "expenses": [
-          { "category": "Event Registration", "amount": 1500.00 },
-          { "category": "Robot improvements", "amount": 1000.00 },
-          { "category": "Lodging", "amount": null },
-          { "category": "Meals", "amount": null }
+          { "category": "Event registration", "amount": 1500.00 },
+          { "category": "Accommodation", "amount": 800 },
+          { "category": "Robot parts and equipment", "amount": 730 },
+          { "category": "Team food", "amount": 200 },
+          { "category": "Contingency", "amount": 270 }
         ],
         "estimated_total": 3500
       },
