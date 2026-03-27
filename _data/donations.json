@@ -3,15 +3,22 @@
   "donations": [
     {
       "donor": "Anonymous",
+      "amount": 50,
+      "recipient": "Cookie Clickers",
+      "date": "2026-03-27"
+    },
+    {
+      "donor": "Anonymous",
       "amount": 10,
       "recipient": "Robotics General Fund",
       "date": "2026-03-26"
     },
     {
-      "donor": "Anonymous",
+      "donor": "Statewide Public Affairs, Inc.",
       "amount": 200,
       "recipient": "Cookie Clickers",
-      "date": "2026-03-26"
+      "date": "2026-03-26",
+      "type": "organization"
     },
     {
       "donor": "Dowd",
