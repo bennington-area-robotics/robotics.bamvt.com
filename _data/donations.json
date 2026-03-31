@@ -2,7 +2,7 @@
   "goal": 23500,
   "donations": [
     {
-      "donor": "Donnamarie B.",
+      "donor": "Consulting Services, Inc.",
       "amount": 300,
       "recipient": "Cookie Clickers",
       "date": "2026-03-31"
@@ -39,10 +39,11 @@
       "type": "organization"
     },
     {
-      "donor": "Dowd",
+      "donor": "The Dowd Agencies",
       "amount": 150,
       "recipient": "Cookie Clickers",
-      "date": "2026-03-26"
+      "date": "2026-03-26",
+      "type": "organization"
     },
     {
       "donor": "Mariah and Jeff Siegel",
