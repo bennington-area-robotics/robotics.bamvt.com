@@ -85,11 +85,6 @@
           { "category": "Team food", "amount": 200 },
           { "category": "Contingency", "amount": 270 }
         ]
-      },
-      {
-        "id": "shared",
-        "name": "Shared (Post-Season)",
-        "donation_recipient": "Robotics General Fund"
       }
     ]
   }
