@@ -1,13 +1,13 @@
 ---
 layout: default
 title: Donate
-description: Help send student robotics teams from southwestern Vermont and neighboring New York to the FIRST Championship and New England Premier Event. Tax-deductible donations support registration, travel, lodging, and meals.
+description: Team 18650 Cookie Clickers is representing Vermont at the FIRST Championship in Houston. Help send these students to the world stage with a tax-deductible donation.
 og_image: /events/state-championship-2026/images/2026_FTC-228.jpg
 ---
 
 ## Help Send Our Students to Worlds and New England!
 
-Two Bennington Area Robotics teams are advancing to the FIRST Championship and the New England Premier Event. Your donation helps cover registration, travel, lodging, and meals. See our [full budget](/budget) for details. 
+Team 18650 Cookie Clickers is representing Vermont at the FIRST Championship in Houston. Your donation helps cover registration, travel, lodging, and meals. See our [full budget](/budget) for details.
 
 <!-- <a href="https://www.paypal.com/donate/?hosted_button_id=HPQY5NA3Z59C2" target="_blank" class="btn-donate">Donate Online</a>
 <br><small style="display:block; margin-bottom:1.5rem;">or <a href="#donate-by-check">by check</a> &mdash; 501(c)(3) nonprofit, EIN <span class="no-detect">84&#x2011;5124653</span></small> -->
@@ -21,7 +21,7 @@ Two Bennington Area Robotics teams are advancing to the FIRST Championship and t
   <button class="carousel-btn pause" title="Pause slideshow">⏸</button>
 </div>
 
-**Team 18650 Cookie Clickers** won the [FTC Vermont Championship](/events/state-championship-2026) and qualified for the [FIRST Championship](/events/first-championship-2026) in Houston, TX, becoming the first team from southwestern Vermont to reach Worlds. [Read their Engineering Portfolio](/portfolio). Sending 6 students and 3 mentors to Houston will cost an estimated **$20,000**, covering registration, flights, lodging, and meals.
+**Team 18650 Cookie Clickers** won the [FTC Vermont Championship](/events/state-championship-2026) and is representing Vermont at the [FIRST Championship](/events/first-championship-2026) in Houston, TX, becoming the first team from southwestern Vermont to reach Worlds. [Read their Engineering Portfolio](/portfolio). Sending 6 students and 3 mentors to Houston will cost an estimated **$20,000**, covering registration, flights, lodging, and meals.
 
 **Team 32473 Bennington Bolts and Biscuits** qualified for the [New England Premier Event](https://www.nefirst.org/ftc-premier){:target="_blank"} at the Big E in West Springfield, MA. Sending 5 students and 2 mentors will cost an estimated **$3,500**, covering registration, lodging, and meals.
 
