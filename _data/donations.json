@@ -2,6 +2,14 @@
   "goal": 23500,
   "donations": [
     {
+      "donor": "Mack Molding",
+      "amount": 2500,
+      "recipient": "Cookie Clickers",
+      "date": "2026-04-07",
+      "type": "organization",
+      "url": "https://www.mack.com/"
+    },
+    {
       "donor": "Crystal IS, Inc.",
       "amount": 2000,
       "recipient": "Cookie Clickers",
