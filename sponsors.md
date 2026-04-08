@@ -19,7 +19,6 @@ title: Sponsors
 {% assign seen = "" %}
 
 {% for d in site.data.donations.donations %}
-  {% if d.type == "family" %}{% continue %}{% endif %}
   {% if d.donor == "Anonymous" %}
     {% if d.amount >= tier_floor and d.amount <= tier_cap %}
       {% assign anon_count = anon_count | plus: 1 %}
