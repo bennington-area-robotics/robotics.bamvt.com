@@ -62,7 +62,7 @@
         "description": "Advancing to the [FIRST Championship](/events/first-championship-2026) in Houston, TX, as the first team from southwestern Vermont to reach Worlds. Sending 6 students and 3-4 mentors.",
         "donation_recipient": "Cookie Clickers",
         "expenses": [
-          { "category": "Event Registration", "amount": 2500.00 },
+          { "category": "Event Registration", "amount": 2500.00, "actual": 2500.00 },
           { "category": "Robot parts", "amount": 1500.00 },
           { "category": "Travel gear", "amount": 800.00, "actual": 519.35 },
           { "category": "Flights", "amount": 6600, "actual": 3681.60 },
