@@ -81,31 +81,43 @@ Bennington Area Robotics is a program of **The Bennington Area Makers, Inc.** (B
   {% endif %}
 {% endfor %}
 <table>
-<thead><tr><th></th><th style="text-align:right">Amount</th></tr></thead>
+<thead><tr><th></th><th style="text-align:right">Budget</th><th style="text-align:right">Actual</th></tr></thead>
 <tbody>
-<tr><td colspan="2"><strong>Income</strong></td></tr>
-{% if d_family > 0 %}<tr><td>Family</td><td style="text-align:right">{% include money.html amount=d_family %}</td></tr>{% endif %}
-{% if d_community > 0 %}<tr><td>Community</td><td style="text-align:right">{% include money.html amount=d_community %}</td></tr>{% endif %}
-{% if d_alumni > 0 %}<tr><td>Alumni</td><td style="text-align:right">{% include money.html amount=d_alumni %}</td></tr>{% endif %}
+<tr><td colspan="3"><strong>Income</strong></td></tr>
+{% if d_family > 0 %}<tr><td>Family</td><td></td><td style="text-align:right">{% include money.html amount=d_family %}</td></tr>{% endif %}
+{% if d_community > 0 %}<tr><td>Community</td><td></td><td style="text-align:right">{% include money.html amount=d_community %}</td></tr>{% endif %}
+{% if d_alumni > 0 %}<tr><td>Alumni</td><td></td><td style="text-align:right">{% include money.html amount=d_alumni %}</td></tr>{% endif %}
 {% if d_orgs != "" %}
 {% assign org_entries = d_orgs | split: "|" | reverse %}
 {% for entry in org_entries %}
 {% assign parts = entry | split: ":" %}
 {% assign org_name = parts[0] %}{% assign org_amount = parts[1] %}
-<tr><td>{{ org_name }}</td><td style="text-align:right">{% include money.html amount=org_amount %}</td></tr>
+<tr><td>{{ org_name }}</td><td></td><td style="text-align:right">{% include money.html amount=org_amount %}</td></tr>
 {% endfor %}
 {% endif %}
-<tr><td><strong>Total Income</strong></td><td style="text-align:right"><strong>{% include money.html amount=d_total %}</strong></td></tr>
+<tr><td><strong>Total Income</strong></td><td></td><td style="text-align:right"><strong>{% include money.html amount=d_total %}</strong></td></tr>
 {% if team.expenses %}
-<tr><td colspan="2"><strong>Expenses</strong></td></tr>
-{% for e in team.expenses %}
-<tr><td>{{ e.category }}</td><td style="text-align:right">{% if e.amount %}{% if e.estimated %}~{% endif %}{% include money.html amount=e.amount %}{% else %}TBD{% endif %}</td></tr>
-{% endfor %}
+<tr><td colspan="3"><strong>Expenses</strong></td></tr>
 {% assign ps_team_exp = 0 %}
-{% for e in team.expenses %}{% assign ps_team_exp = ps_team_exp | plus: e.amount %}{% endfor %}
+{% assign ps_team_act = 0 %}
+{% assign has_any_actual = false %}
+{% for e in team.expenses %}
+{% assign ps_team_exp = ps_team_exp | plus: e.amount %}
+{% if e.actual %}{% assign ps_team_act = ps_team_act | plus: e.actual %}{% assign has_any_actual = true %}{% endif %}
+<tr><td>{{ e.category }}</td><td style="text-align:right">{% if e.amount %}{% if e.estimated %}~{% endif %}{% include money.html amount=e.amount %}{% else %}TBD{% endif %}</td><td style="text-align:right">{% if e.actual %}{% include money.html amount=e.actual %}{% endif %}</td></tr>
+{% endfor %}
 {% if ps_team_exp > 0 %}
-<tr><td><strong>Total Expenses</strong></td><td style="text-align:right"><strong>{% include money.html amount=ps_team_exp %}</strong></td></tr>
+<tr><td><strong>Total Expenses</strong></td><td style="text-align:right"><strong>{% include money.html amount=ps_team_exp %}</strong></td><td style="text-align:right">{% if has_any_actual %}<strong>{% include money.html amount=ps_team_act %}</strong>{% endif %}</td></tr>
 {% endif %}
+{% endif %}
+{% if team.in_kind %}
+{% assign ps_team_ink = 0 %}
+{% for k in team.in_kind %}{% assign ps_team_ink = ps_team_ink | plus: k.value %}{% endfor %}
+<tr><td colspan="3"><strong>In-Kind Support</strong></td></tr>
+{% for k in team.in_kind %}
+<tr><td>{{ k.source }}</td><td></td><td style="text-align:right">{% include money.html amount=k.value %}</td></tr>
+{% endfor %}
+<tr><td><strong>Total In-Kind</strong></td><td></td><td style="text-align:right"><strong>{% include money.html amount=ps_team_ink %}</strong></td></tr>
 {% endif %}
 </tbody>
 </table>
