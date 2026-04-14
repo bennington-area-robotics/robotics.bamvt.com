@@ -129,7 +129,9 @@ Bennington Area Robotics is a program of **The Bennington Area Makers, Inc.** (B
 {% assign inkind_entries = d_inkind | split: "|" %}
 {% for entry in inkind_entries %}
 {% assign parts = entry | split: ":" %}
-<tr><td>{{ parts[0] }}</td><td></td><td style="text-align:right">{% include money.html amount=parts[1] %}</td></tr>
+{% assign ink_name = parts[0] %}
+{% assign ink_amount = parts[1] %}
+<tr><td>{{ ink_name }}</td><td></td><td style="text-align:right">{% include money.html amount=ink_amount %}</td></tr>
 {% endfor %}
 <tr><td><strong>Total In-Kind</strong></td><td></td><td style="text-align:right"><strong>{% include money.html amount=d_inkind_total %}</strong></td></tr>
 {% endif %}
