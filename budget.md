@@ -32,8 +32,13 @@ Bennington Area Robotics is a program of **The Bennington Area Makers, Inc.** (B
 
 {% comment %}Compute post-season totals{% endcomment %}
 {% assign ps_inc = 0 %}
+{% assign ps_ink = 0 %}
 {% for d in site.data.donations.donations %}
-  {% assign ps_inc = ps_inc | plus: d.amount %}
+  {% if d.type == "in-kind" %}
+    {% assign ps_ink = ps_ink | plus: d.amount %}
+  {% else %}
+    {% assign ps_inc = ps_inc | plus: d.amount %}
+  {% endif %}
 {% endfor %}
 {% assign ps_exp = 0 %}
 {% for team in budget.post_season.teams %}
@@ -48,7 +53,8 @@ Bennington Area Robotics is a program of **The Bennington Area Makers, Inc.** (B
 <tbody>
 <tr><td>Cash Income</td><td style="text-align:right">{% include money.html amount=rs_inc %}</td><td style="text-align:right">{% include money.html amount=ps_inc %}</td><td style="text-align:right">{% include money.html amount=total_inc %}</td></tr>
 <tr><td>Expenses</td><td style="text-align:right">{% include money.html amount=rs_exp %}</td><td style="text-align:right">{% include money.html amount=ps_exp %}</td><td style="text-align:right">{% include money.html amount=total_exp %}</td></tr>
-<tr><td>In-Kind Support</td><td style="text-align:right">{% include money.html amount=rs_ink %}</td><td style="text-align:right">-</td><td style="text-align:right">{% include money.html amount=rs_ink %}</td></tr>
+{% assign total_ink = rs_ink | plus: ps_ink %}
+<tr><td>In-Kind Support</td><td style="text-align:right">{% include money.html amount=rs_ink %}</td><td style="text-align:right">{% include money.html amount=ps_ink %}</td><td style="text-align:right">{% include money.html amount=total_ink %}</td></tr>
 </tbody>
 </table>
 
@@ -65,18 +71,26 @@ Bennington Area Robotics is a program of **The Bennington Area Makers, Inc.** (B
 {% assign d_community = 0 %}
 {% assign d_alumni = 0 %}
 {% assign d_orgs = "" %}
+{% assign d_inkind = "" %}
+{% assign d_inkind_total = 0 %}
 {% for d in site.data.donations.donations %}
   {% if d.recipient == team.donation_recipient %}
-    {% assign d_total = d_total | plus: d.amount %}
-    {% if d.type == "organization" %}
-      {% if d_orgs != "" %}{% assign d_orgs = d_orgs | append: "|" %}{% endif %}
-      {% assign d_orgs = d_orgs | append: d.donor | append: ":" | append: d.amount %}
-    {% elsif d.type == "family" %}
-      {% assign d_family = d_family | plus: d.amount %}
-    {% elsif d.type == "alumni" %}
-      {% assign d_alumni = d_alumni | plus: d.amount %}
+    {% if d.type == "in-kind" %}
+      {% if d_inkind != "" %}{% assign d_inkind = d_inkind | append: "|" %}{% endif %}
+      {% assign d_inkind = d_inkind | append: d.donor | append: ":" | append: d.amount %}
+      {% assign d_inkind_total = d_inkind_total | plus: d.amount %}
     {% else %}
-      {% assign d_community = d_community | plus: d.amount %}
+      {% assign d_total = d_total | plus: d.amount %}
+      {% if d.type == "organization" %}
+        {% if d_orgs != "" %}{% assign d_orgs = d_orgs | append: "|" %}{% endif %}
+        {% assign d_orgs = d_orgs | append: d.donor | append: ":" | append: d.amount %}
+      {% elsif d.type == "family" %}
+        {% assign d_family = d_family | plus: d.amount %}
+      {% elsif d.type == "alumni" %}
+        {% assign d_alumni = d_alumni | plus: d.amount %}
+      {% else %}
+        {% assign d_community = d_community | plus: d.amount %}
+      {% endif %}
     {% endif %}
   {% endif %}
 {% endfor %}
@@ -110,14 +124,14 @@ Bennington Area Robotics is a program of **The Bennington Area Makers, Inc.** (B
 <tr><td><strong>Total Expenses</strong></td><td style="text-align:right"><strong>{% include money.html amount=ps_team_exp %}</strong></td><td style="text-align:right">{% if has_any_actual %}<strong>{% include money.html amount=ps_team_act %}</strong>{% endif %}</td></tr>
 {% endif %}
 {% endif %}
-{% if team.in_kind %}
-{% assign ps_team_ink = 0 %}
-{% for k in team.in_kind %}{% assign ps_team_ink = ps_team_ink | plus: k.value %}{% endfor %}
+{% if d_inkind != "" %}
 <tr><td colspan="3"><strong>In-Kind Support</strong></td></tr>
-{% for k in team.in_kind %}
-<tr><td>{{ k.source }}</td><td></td><td style="text-align:right">{% include money.html amount=k.value %}</td></tr>
+{% assign inkind_entries = d_inkind | split: "|" %}
+{% for entry in inkind_entries %}
+{% assign parts = entry | split: ":" %}
+<tr><td>{{ parts[0] }}</td><td></td><td style="text-align:right">{% include money.html amount=parts[1] %}</td></tr>
 {% endfor %}
-<tr><td><strong>Total In-Kind</strong></td><td></td><td style="text-align:right"><strong>{% include money.html amount=ps_team_ink %}</strong></td></tr>
+<tr><td><strong>Total In-Kind</strong></td><td></td><td style="text-align:right"><strong>{% include money.html amount=d_inkind_total %}</strong></td></tr>
 {% endif %}
 </tbody>
 </table>

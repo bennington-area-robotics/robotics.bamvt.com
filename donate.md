@@ -54,7 +54,7 @@ Make checks payable to *The Bennington Area Makers, Inc.* and mail to:
 {% assign count = donations | size %}
 {% assign total = 0 %}
 {% for d in donations %}
-  {% assign total = total | plus: d.amount %}
+  {% unless d.type == "in-kind" %}{% assign total = total | plus: d.amount %}{% endunless %}
 {% endfor %}
 {% assign pct = total | times: 100 | divided_by: goal %}
 <div class="donation-progress">
