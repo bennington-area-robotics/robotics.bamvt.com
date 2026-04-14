@@ -79,7 +79,7 @@
         "description": "Advancing to the [New England Premier Event](https://www.nefirst.org/ftc-premier) at the Big E in West Springfield, MA. Sending 5 students and 2 mentors.",
         "donation_recipient": "Bolts and Biscuits",
         "expenses": [
-          { "category": "Event registration", "amount": 1500.00 },
+          { "category": "Event registration", "amount": 1500.00, "actual": 1500.00 },
           { "category": "Accommodation", "amount": 800 },
           { "category": "Robot parts and equipment", "amount": 730 },
           { "category": "Team food", "amount": 200 },
