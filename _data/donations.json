@@ -9,6 +9,14 @@
       "type": "organization"
     },
     {
+      "donor": "Mack Molding",
+      "amount": 2500,
+      "recipient": "Cookie Clickers",
+      "date": "2026-04-14",
+      "type": "organization",
+      "url": "https://www.mack.com/"
+    },
+    {
       "donor": "Turner Restoration",
       "amount": 250,
       "recipient": "Cookie Clickers",
@@ -39,6 +47,20 @@
       "type": "in-kind"
     },
     {
+      "donor": "Alyssa F.",
+      "amount": 206.46,
+      "recipient": "Robotics General Fund",
+      "date": "2026-04-09",
+      "type": "community"
+    },
+    {
+      "donor": "Daniel Giglotti",
+      "amount": 206.46,
+      "recipient": "Cookie Clickers",
+      "date": "2026-04-07",
+      "type": "family"
+    },
+    {
       "donor": "Comprehensive Computing",
       "amount": 1500,
       "recipient": "Cookie Clickers",
@@ -52,14 +74,6 @@
       "recipient": "Cookie Clickers",
       "date": "2026-04-07",
       "type": "family"
-    },
-    {
-      "donor": "Mack Molding",
-      "amount": 2500,
-      "recipient": "Cookie Clickers",
-      "date": "2026-04-07",
-      "type": "organization",
-      "url": "https://www.mack.com/"
     },
     {
       "donor": "Crystal IS, Inc.",
