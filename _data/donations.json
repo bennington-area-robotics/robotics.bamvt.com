@@ -48,17 +48,10 @@
     },
     {
       "donor": "Alyssa F.",
-      "amount": 206.46,
+      "amount": 26.25,
       "recipient": "Robotics General Fund",
       "date": "2026-04-09",
       "type": "community"
-    },
-    {
-      "donor": "Daniel Giglotti",
-      "amount": 206.46,
-      "recipient": "Cookie Clickers",
-      "date": "2026-04-07",
-      "type": "family"
     },
     {
       "donor": "Comprehensive Computing",
