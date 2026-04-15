@@ -4,14 +4,14 @@
     {
       "donor": "Stark Hose Company #1",
       "amount": 100,
-      "recipient": "Cookie Clickers",
+      "designation": "Cookie Clickers",
       "date": "2026-04-15",
       "type": "organization"
     },
     {
       "donor": "Mack Molding",
       "amount": 2500,
-      "recipient": "Cookie Clickers",
+      "designation": "Cookie Clickers",
       "date": "2026-04-14",
       "type": "organization",
       "url": "https://www.mack.com/"
@@ -19,14 +19,14 @@
     {
       "donor": "Turner Restoration",
       "amount": 250,
-      "recipient": "Cookie Clickers",
+      "designation": "Cookie Clickers",
       "date": "2026-04-14",
       "type": "organization"
     },
     {
       "donor": "Repeat Business Systems",
       "amount": 100,
-      "recipient": "Cookie Clickers",
+      "designation": "Cookie Clickers",
       "date": "2026-04-14",
       "type": "organization",
       "url": "https://www.rbs-usa.com/"
@@ -34,7 +34,7 @@
     {
       "donor": "Gene Haas Foundation",
       "amount": 2000,
-      "recipient": "Cookie Clickers",
+      "designation": "Cookie Clickers",
       "date": "2026-04-14",
       "type": "organization",
       "url": "https://ghassfoundation.org/"
@@ -42,21 +42,22 @@
     {
       "donor": "Anonymous in-kind donation of airfare",
       "amount": 5400,
-      "recipient": "Cookie Clickers",
+      "designation": "Cookie Clickers",
       "date": "2026-04-13",
       "type": "in-kind"
     },
     {
       "donor": "Alyssa F.",
       "amount": 26.25,
-      "recipient": "Bolts and Biscuits",
+      "designation": "Shared",
+      "assignment": "Bolts and Biscuits",
       "date": "2026-04-09",
       "type": "community"
     },
     {
       "donor": "Comprehensive Computing",
       "amount": 1500,
-      "recipient": "Cookie Clickers",
+      "designation": "Cookie Clickers",
       "date": "2026-04-08",
       "type": "organization",
       "url": "https://www.comprehensive-computing.com/"
@@ -64,14 +65,14 @@
     {
       "donor": "Daniel Giglotti",
       "amount": 206.46,
-      "recipient": "Cookie Clickers",
+      "designation": "Cookie Clickers",
       "date": "2026-04-07",
       "type": "family"
     },
     {
       "donor": "Crystal IS, Inc.",
       "amount": 2000,
-      "recipient": "Cookie Clickers",
+      "designation": "Cookie Clickers",
       "date": "2026-04-03",
       "type": "organization",
       "url": "https://www.cisuvc.com/"
@@ -79,21 +80,22 @@
     {
       "donor": "Roy",
       "amount": 5,
-      "recipient": "Cookie Clickers",
+      "designation": "Cookie Clickers",
       "date": "2026-04-02",
       "type": "community"
     },
     {
       "donor": "Lucia T.",
       "amount": 21.10,
-      "recipient": "Bolts and Biscuits",
+      "designation": "Shared",
+      "assignment": "Bolts and Biscuits",
       "date": "2026-04-01",
       "type": "community"
     },
     {
       "donor": "Consulting Services, Inc.",
       "amount": 300,
-      "recipient": "Cookie Clickers",
+      "designation": "Cookie Clickers",
       "date": "2026-03-31",
       "type": "organization",
       "url": "https://www.csi4usa.com/"
@@ -101,42 +103,44 @@
     {
       "donor": "Sam & Gail",
       "amount": 1000,
-      "recipient": "Cookie Clickers",
+      "designation": "Cookie Clickers",
       "date": "2026-03-31",
       "type": "community"
     },
     {
       "donor": "Steve and Deana Mallory",
       "amount": 50,
-      "recipient": "Bolts and Biscuits",
+      "designation": "Shared",
+      "assignment": "Bolts and Biscuits",
       "date": "2026-03-29",
       "type": "family"
     },
     {
       "donor": "Anonymous",
       "amount": 50,
-      "recipient": "Cookie Clickers",
+      "designation": "Cookie Clickers",
       "date": "2026-03-27",
       "type": "community"
     },
     {
       "donor": "Anonymous",
       "amount": 10,
-      "recipient": "Bolts and Biscuits",
+      "designation": "Shared",
+      "assignment": "Bolts and Biscuits",
       "date": "2026-03-26",
       "type": "community"
     },
     {
       "donor": "Statewide Public Affairs, Inc.",
       "amount": 200,
-      "recipient": "Cookie Clickers",
+      "designation": "Cookie Clickers",
       "date": "2026-03-26",
       "type": "organization"
     },
     {
       "donor": "The Dowd Agencies",
       "amount": 150,
-      "recipient": "Cookie Clickers",
+      "designation": "Cookie Clickers",
       "date": "2026-03-26",
       "type": "organization",
       "url": "https://www.dowd.com/"
@@ -144,35 +148,37 @@
     {
       "donor": "Mariah and Jeff Siegel",
       "amount": 500,
-      "recipient": "Cookie Clickers",
+      "designation": "Shared",
+      "assignment": "Cookie Clickers",
       "date": "2026-03-24",
       "type": "community"
     },
     {
       "donor": "Anonymous",
       "amount": 500,
-      "recipient": "Cookie Clickers",
+      "designation": "Shared",
+      "assignment": "Cookie Clickers",
       "date": "2026-03-23",
       "type": "family"
     },
     {
       "donor": "Radocchia Family Donation",
       "amount": 2000,
-      "recipient": "Cookie Clickers",
+      "designation": "Cookie Clickers",
       "date": "2026-03-23",
       "type": "family"
     },
     {
       "donor": "Anonymous",
       "amount": 51.99,
-      "recipient": "Cookie Clickers",
+      "designation": "Cookie Clickers",
       "date": "2026-03-23",
       "type": "community"
     },
     {
       "donor": "Eben R.",
       "amount": 103.48,
-      "recipient": "Cookie Clickers",
+      "designation": "Cookie Clickers",
       "date": "2026-03-22",
       "memo": "Have fun in Houston",
       "type": "alumni"
@@ -180,14 +186,14 @@
     {
       "donor": "Anonymous gift (Houston trip)",
       "amount": 5000,
-      "recipient": "Cookie Clickers",
+      "designation": "Cookie Clickers",
       "date": "2026-03-22",
       "type": "organization"
     },
     {
       "donor": "Anonymous",
       "amount": 103.48,
-      "recipient": "Cookie Clickers",
+      "designation": "Cookie Clickers",
       "date": "2026-03-22",
       "memo": "Good luck",
       "type": "community"
@@ -195,14 +201,15 @@
     {
       "donor": "Carrie B.",
       "amount": 50,
-      "recipient": "Cookie Clickers",
+      "designation": "Shared",
+      "assignment": "Cookie Clickers",
       "date": "2026-03-21",
       "type": "community"
     },
     {
       "donor": "Goldstone Architecture",
       "amount": 200,
-      "recipient": "Cookie Clickers",
+      "designation": "Cookie Clickers",
       "date": "2026-03-20",
       "type": "organization",
       "url": "https://www.goldstonearchitecture.com/"
@@ -210,14 +217,15 @@
     {
       "donor": "Sasha B.",
       "amount": 103.48,
-      "recipient": "Cookie Clickers",
+      "designation": "Shared",
+      "assignment": "Cookie Clickers",
       "date": "2026-03-20",
       "type": "family"
     },
     {
       "donor": "MSK Engineers",
       "amount": 500,
-      "recipient": "Cookie Clickers",
+      "designation": "Cookie Clickers",
       "date": "2026-03-19",
       "type": "organization",
       "url": "https://www.mskeng.com"
@@ -225,21 +233,21 @@
     {
       "donor": "David L.",
       "amount": 103.48,
-      "recipient": "Cookie Clickers",
+      "designation": "Cookie Clickers",
       "date": "2026-03-18",
       "type": "community"
     },
     {
       "donor": "Gemma & Dutch",
       "amount": 1030.26,
-      "recipient": "Bolts and Biscuits",
+      "designation": "Bolts and Biscuits",
       "date": "2026-03-17",
       "type": "family"
     },
     {
       "donor": "Pat & Linda",
       "amount": 100.00,
-      "recipient": "Cookie Clickers",
+      "designation": "Cookie Clickers",
       "date": "2026-03-17",
       "memo": "for Nolan and team",
       "type": "family"
@@ -247,7 +255,8 @@
     {
       "donor": "Sam M.",
       "amount": 26.25,
-      "recipient": "Cookie Clickers",
+      "designation": "Shared",
+      "assignment": "Cookie Clickers",
       "date": "2026-03-16",
       "memo": "Cookie Clickers alum",
       "type": "alumni"
@@ -255,14 +264,15 @@
     {
       "donor": "Anonymous",
       "amount": 103.48,
-      "recipient": "Bolts and Biscuits",
+      "designation": "Shared",
+      "assignment": "Bolts and Biscuits",
       "date": "2026-03-16",
       "type": "community"
     },
     {
       "donor": "Betsy V.",
       "amount": 500,
-      "recipient": "Cookie Clickers",
+      "designation": "Cookie Clickers",
       "date": "2026-03-15",
       "memo": "Texas trip",
       "type": "family"
@@ -270,14 +280,15 @@
     {
       "donor": "Nancy Schuster",
       "amount": 100,
-      "recipient": "Cookie Clickers",
+      "designation": "Shared",
+      "assignment": "Cookie Clickers",
       "date": "2026-03-15",
       "type": "community"
     },
     {
       "donor": "Jackie Kelly",
       "amount": 500,
-      "recipient": "Cookie Clickers",
+      "designation": "Cookie Clickers",
       "date": "2026-03-15",
       "memo": "Miss you guys. Hope you have a great competition and great experiences. Best of luck.",
       "type": "alumni"
@@ -285,28 +296,31 @@
     {
       "donor": "Shirley A.",
       "amount": 100,
-      "recipient": "Bolts and Biscuits",
+      "designation": "Shared",
+      "assignment": "Bolts and Biscuits",
       "date": "2026-03-15",
       "type": "community"
     },
     {
       "donor": "Nina W.",
       "amount": 50,
-      "recipient": "Bolts and Biscuits",
+      "designation": "Shared",
+      "assignment": "Bolts and Biscuits",
       "date": "2026-03-14",
       "type": "community"
     },
     {
       "donor": "Anonymous",
       "amount": 100,
-      "recipient": "Bolts and Biscuits",
+      "designation": "Shared",
+      "assignment": "Bolts and Biscuits",
       "date": "2026-03-14",
       "type": "community"
     },
     {
       "donor": "Alexandra R.",
       "amount": 103.48,
-      "recipient": "Cookie Clickers",
+      "designation": "Cookie Clickers",
       "date": "2026-03-14",
       "memo": "For Texas!",
       "type": "family"
@@ -314,21 +328,21 @@
     {
       "donor": "Brian S.",
       "amount": 100,
-      "recipient": "Cookie Clickers",
+      "designation": "Cookie Clickers",
       "date": "2026-03-13",
       "type": "family"
     },
     {
       "donor": "Family donation",
       "amount": 500,
-      "recipient": "Bolts and Biscuits",
+      "designation": "Bolts and Biscuits",
       "date": "2026-03-12",
       "type": "family"
     },
     {
       "donor": "FIRSTinVT",
       "amount": 500,
-      "recipient": "Cookie Clickers",
+      "designation": "Cookie Clickers",
       "date": "2026-03-07",
       "memo": "Event registration support",
       "type": "organization",
@@ -337,7 +351,7 @@
     {
       "donor": "FIRSTinVT",
       "amount": 500,
-      "recipient": "Bolts and Biscuits",
+      "designation": "Bolts and Biscuits",
       "date": "2026-03-07",
       "memo": "Event registration support",
       "type": "organization",
