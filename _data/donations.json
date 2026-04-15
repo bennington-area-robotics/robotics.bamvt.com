@@ -2,6 +2,13 @@
   "goal": 23500,
   "donations": [
     {
+      "donor": "Stark Hose Company #1",
+      "amount": 100,
+      "recipient": "Cookie Clickers",
+      "date": "2026-04-15",
+      "type": "organization"
+    },
+    {
       "donor": "Turner Restoration",
       "amount": 250,
       "recipient": "Cookie Clickers",
