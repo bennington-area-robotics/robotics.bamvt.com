@@ -45,9 +45,9 @@
           { "category": "DECODE game pieces", "amount": 72.47 }
         ],
         "in_kind": [
-          { "source": "Family donations (food)", "value": 1300.00, "actual": 1593.51 },
+          { "source": "Family donations (food)", "value": 1593.51 },
           { "source": "FIRSTinVT (field set)", "value": 300.00 },
-          { "source": "Local businesses (food, computers)", "value": 542.24 }
+          { "source": "Local businesses (computers)", "value": 542.24 }
         ]
       }
     ]
