@@ -40,11 +40,13 @@
       "url": "https://ghassfoundation.org/"
     },
     {
-      "donor": "Anonymous in-kind donation of airfare",
+      "donor": "Anonymous",
       "amount": 5400,
       "designation": "Cookie Clickers",
       "date": "2026-04-13",
-      "type": "in-kind"
+      "memo": "In-kind student airfare.",
+      "type": "organization",
+      "method": "in-kind"
     },
     {
       "donor": "Alyssa F.",
@@ -184,11 +186,11 @@
       "type": "alumni"
     },
     {
-      "donor": "Anonymous gift (Houston trip)",
+      "donor": "Anonymous",
       "amount": 5000,
       "designation": "Cookie Clickers",
       "date": "2026-03-22",
-      "type": "organization"
+      "type": "community"
     },
     {
       "donor": "Anonymous",

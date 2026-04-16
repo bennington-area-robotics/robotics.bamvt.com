@@ -34,7 +34,7 @@ Bennington Area Robotics is a program of **The Bennington Area Makers, Inc.** (B
 {% assign ps_inc = 0 %}
 {% assign ps_ink = 0 %}
 {% for d in site.data.donations.donations %}
-  {% if d.type == "in-kind" %}
+  {% if d.method == "in-kind" %}
     {% assign ps_ink = ps_ink | plus: d.amount %}
   {% else %}
     {% assign ps_inc = ps_inc | plus: d.amount %}
@@ -76,7 +76,7 @@ Bennington Area Robotics is a program of **The Bennington Area Makers, Inc.** (B
 {% for d in site.data.donations.donations %}
   {% assign d_team = d.assignment | default: d.designation %}
   {% if d_team == team.donation_recipient %}
-    {% if d.type == "in-kind" %}
+    {% if d.method == "in-kind" %}
       {% if d_inkind != "" %}{% assign d_inkind = d_inkind | append: "|" %}{% endif %}
       {% assign d_inkind = d_inkind | append: d.donor | append: ":" | append: d.amount %}
       {% assign d_inkind_total = d_inkind_total | plus: d.amount %}

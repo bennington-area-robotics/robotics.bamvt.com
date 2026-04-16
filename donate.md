@@ -53,8 +53,9 @@ Make checks payable to *The Bennington Area Makers, Inc.* and mail to:
 {% assign goal = site.data.donations.goal %}
 {% assign count = donations | size %}
 {% assign total = 0 %}
+{% assign inkind_total = 0 %}
 {% for d in donations %}
-  {% unless d.type == "in-kind" %}{% assign total = total | plus: d.amount %}{% endunless %}
+  {% if d.method == "in-kind" %}{% assign inkind_total = inkind_total | plus: d.amount %}{% else %}{% assign total = total | plus: d.amount %}{% endif %}
 {% endfor %}
 {% assign pct = total | times: 100 | divided_by: goal %}
 <div class="donation-progress">
@@ -63,13 +64,14 @@ Make checks payable to *The Bennington Area Makers, Inc.* and mail to:
   <div class="donation-progress-bar">
     <div class="fill" style="width: {{ pct }}%"></div>
   </div>
+  {% if inkind_total > 0 %}<span class="inkind">plus ${{ inkind_total | replace: '.0', '' }} in in-kind support</span>{% endif %}
 </div>
 
 <ul class="donation-feed">
 {% for d in donations %}  <li>
     <div class="donation-avatar">{{ d.donor | slice: 0 }}</div>
     <div class="donation-detail">
-      <span class="donor-name">{{ d.donor }}</span> donated <span class="donation-amount">${{ d.amount | replace: '.0', '' }}</span> to {% if d.designation == "Shared" %}both teams{% else %}{{ d.designation }}{% endif %}
+      <span class="donor-name">{{ d.donor }}</span> donated <span class="donation-amount">${{ d.amount | replace: '.0', '' }}</span> to {% if d.designation == "Shared" %}Robotics General Fund{% else %}{{ d.designation }}{% endif %}
       <div class="donation-meta">{{ d.date | date: "%b %-d" }}{% if d.memo %} &middot; {{ d.memo }}{% endif %}</div>
     </div>
   </li>
