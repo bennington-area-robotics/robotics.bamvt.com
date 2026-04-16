@@ -80,7 +80,7 @@
         "donation_recipient": "Bolts and Biscuits",
         "expenses": [
           { "category": "Event registration", "amount": 1500.00, "actual": 1500.00 },
-          { "category": "Accommodation", "amount": 800 },
+          { "category": "Accommodation", "amount": 800, "actual": 675 },
           { "category": "Robot parts and equipment", "amount": 730, "actual": 284.92 },
           { "category": "Team food", "amount": 200 },
           { "category": "Contingency", "amount": 270 }
