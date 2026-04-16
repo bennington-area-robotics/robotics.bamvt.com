@@ -63,9 +63,9 @@
         "donation_recipient": "Cookie Clickers",
         "expenses": [
           { "category": "Event Registration", "amount": 2500.00, "actual": 2500.00 },
-          { "category": "Robot parts", "amount": 1500.00 },
+          { "category": "Robot parts", "amount": 1500.00, "actual": 743.97 },
           { "category": "Travel gear", "amount": 800.00, "actual": 519.35 },
-          { "category": "Flights", "amount": 6600, "actual": 3681.60 },
+          { "category": "Flights", "amount": 6600, "actual": 3694.40 },
           { "category": "Ground transportation", "amount": 1000, "actual": 160 },
           { "category": "Lodging", "amount": 5000, "actual": 5826.60 },
           { "category": "Groceries", "amount": 350 },
@@ -81,7 +81,7 @@
         "expenses": [
           { "category": "Event registration", "amount": 1500.00, "actual": 1500.00 },
           { "category": "Accommodation", "amount": 800 },
-          { "category": "Robot parts and equipment", "amount": 730 },
+          { "category": "Robot parts and equipment", "amount": 730, "actual": 284.92 },
           { "category": "Team food", "amount": 200 },
           { "category": "Contingency", "amount": 270 }
         ]
