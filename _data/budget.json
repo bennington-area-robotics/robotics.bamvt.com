@@ -45,7 +45,7 @@
           { "category": "DECODE game pieces", "amount": 72.47 }
         ],
         "in_kind": [
-          { "source": "Family donations (food)", "value": 1300.00 },
+          { "source": "Family donations (food)", "value": 1300.00, "actual": 1593.51 },
           { "source": "FIRSTinVT (field set)", "value": 300.00 },
           { "source": "Local businesses (food, computers)", "value": 542.24 }
         ]
@@ -63,6 +63,7 @@
         "expenses": [
           { "category": "Event Registration", "amount": 2500.00, "actual": 2500.00 },
           { "category": "Robot parts", "amount": 1500.00, "actual": 743.97 },
+          { "category": "Merch", "actual": 582.02 },
           { "category": "Travel gear", "amount": 800.00, "actual": 519.35 },
           { "category": "Flights", "amount": 6600, "actual": 3694.40 },
           { "category": "Ground transportation", "amount": 1000, "actual": 160 },
