@@ -62,7 +62,7 @@
         "donation_recipient": "Cookie Clickers",
         "expenses": [
           { "category": "Event Registration", "amount": 2500.00, "actual": 2500.00 },
-          { "category": "Robot parts", "amount": 1500.00, "actual": 743.97 },
+          { "category": "Robot parts", "amount": 1500.00, "actual": 1572.80 },
           { "category": "Merch", "amount": 0, "actual": 582.02 },
           { "category": "Travel gear", "amount": 800.00, "actual": 519.35 },
           { "category": "Flights", "amount": 6600, "actual": 3694.40 },
