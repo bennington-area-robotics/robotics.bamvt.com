@@ -4,7 +4,7 @@ title: Budget
 description: Season budgets for Bennington Area Robotics FTC teams, 18650 Cookie Clickers 18650 and 32473 Bolts and Biscuits.
 ---
 
-Bennington Area Robotics runs two FTC teams on a combined regular-season cash budget of roughly $6,900, funded by local businesses, community organizations, and foundations, plus about $2,100 in in-kind support (equipment, food, and discounts).
+Bennington Area Robotics runs two FTC teams on a combined regular-season cash budget of roughly $6,900, funded by local businesses, community organizations, and foundations, plus about $2,100 of in-kind support (equipment, food, and discounts).
 
 We are now raising $23,500 for post-season advancement. Cookie Clickers won the [Vermont Championship](/events/state-championship-2026) and is now advancing to "Worlds", the [FIRST Championship](/events/first-championship-2026) in Houston TX from April 29-May 2. First-year team Bolts and Biscuits placed 7th overall and is advancing to the New England Premier Event from April 17-18.
 

@@ -64,7 +64,7 @@ Make checks payable to *The Bennington Area Makers, Inc.* and mail to:
   <div class="donation-progress-bar">
     <div class="fill" style="width: {{ pct }}%"></div>
   </div>
-  {% if inkind_total > 0 %}<span class="inkind">plus ${{ inkind_total | replace: '.0', '' }} in in-kind support</span>{% endif %}
+  {% if inkind_total > 0 %}<span class="inkind">plus ${{ inkind_total | replace: '.0', '' }} of in-kind support</span>{% endif %}
 </div>
 
 <ul class="donation-feed">
