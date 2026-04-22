@@ -2,6 +2,14 @@
   "goal": 23500,
   "donations": [
     {
+      "donor": "Nina Jewelry",
+      "amount": 206.46,
+      "designation": "Shared",
+      "assignment": "Cookie Clickers",
+      "date": "2026-04-20",
+      "type": "organization"
+    },
+    {
       "donor": "Stark Hose Company #1",
       "amount": 100,
       "designation": "Cookie Clickers",
