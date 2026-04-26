@@ -2,6 +2,22 @@
   "goal": 23500,
   "donations": [
     {
+      "donor": "Anna Radocchia",
+      "amount": 1000,
+      "designation": "Cookie Clickers",
+      "date": "2026-04-25",
+      "type": "family"
+    },
+    {
+      "donor": "Erika F.",
+      "amount": 206.46,
+      "designation": "Shared",
+      "assignment": "Cookie Clickers",
+      "date": "2026-04-24",
+      "type": "community",
+      "memo": "Good luck everyone!"
+    },
+    {
       "donor": "Nina Jewelry",
       "amount": 206.46,
       "designation": "Shared",
