@@ -42,7 +42,8 @@
         ],
         "expenses": [
           { "category": "3D Printing", "amount": 360.37 },
-          { "category": "DECODE game pieces", "amount": 72.47 }
+          { "category": "DECODE game pieces", "amount": 72.47 },
+          { "category": "Volunteer food (Bennington qualifier)", "amount": 527.60 }
         ],
         "in_kind": [
           { "source": "Family donations (food)", "value": 1593.51 },
@@ -67,7 +68,7 @@
           { "category": "Travel gear", "amount": 800.00, "actual": 519.35 },
           { "category": "Flights", "amount": 6600, "actual": 3694.40 },
           { "category": "Ground transportation", "amount": 1000, "actual": 160 },
-          { "category": "Lodging", "amount": 5000, "actual": 5826.60 },
+          { "category": "Lodging", "amount": 5000, "actual": 5865.40 },
           { "category": "Groceries", "amount": 350 },
           { "category": "Meals", "amount": 1750 },
           { "category": "Contingency", "amount": 500 }
