@@ -4,6 +4,7 @@ url: https://robotics.bamvt.com
 
 # Build settings
 markdown: kramdown
+permalink: /blog/:slug/
 
 plugins:
   - jekyll-redirect-from

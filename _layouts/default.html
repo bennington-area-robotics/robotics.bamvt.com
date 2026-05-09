@@ -474,13 +474,36 @@
     .banner img {
       width: 100%;
       max-width: 1920px;
-      height: 568px;
+      height: 380px;
       object-fit: cover;
       object-position: 50% 25%;
       display: block;
     }
     @media (min-width: 768px) {
       .banner img { height: 624px; }
+    }
+    .banner-overlay {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 2.5rem 1.5rem 1.25rem;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
+      color: white;
+      pointer-events: none;
+    }
+    .banner-overlay-title {
+      margin: 0;
+      font-size: 1.65rem;
+      line-height: 1.15;
+      font-weight: 700;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    }
+    .banner-overlay-date {
+      margin: 0.4rem 0 0;
+      font-size: 0.95rem;
+      opacity: 0.9;
+      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
     }
     .banner-title {
       margin-top: 1.5rem;
@@ -490,8 +513,20 @@
       border-bottom: 2px solid var(--primary);
       padding-bottom: 0.3rem;
     }
+    .banner-date {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin: 0.5rem 0 0;
+    }
     @media (min-width: 600px) {
       .banner-title { font-size: 2.5rem; }
+    }
+    @media (min-width: 768px) {
+      .banner-overlay { display: none; }
+    }
+    @media (max-width: 767.98px) {
+      .banner-title,
+      .banner-date { display: none; }
     }
     /* Defeat Safari data detectors on EIN */
     .no-detect { unicode-bidi: isolate; }
@@ -597,7 +632,7 @@
       <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
       <p>{{ site.description }}</p>
       <nav>
-        {% assign nav_items = "Home:/,Events:/events,Portfolio:/portfolio,Sponsors:/sponsors,Budget:/budget,Donate:/donate" | split: "," %}
+        {% assign nav_items = "Home:/,Events:/events,Blog:/blog,Portfolio:/portfolio,Sponsors:/sponsors,Budget:/budget,Donate:/donate" | split: "," %}
         {% for item in nav_items %}
           {% assign parts = item | split: ":" %}
           {% assign label = parts[0] %}
@@ -616,10 +651,17 @@
   {% if page.banner_image %}
   <div class="banner">
     <img src="{{ page.banner_image }}" alt="{{ page.title }}">
+    <div class="banner-overlay">
+      <h2 class="banner-overlay-title">{{ page.title }}</h2>
+      {% if page.date %}<p class="banner-overlay-date">{{ page.date | date: "%B %-d, %Y" }}</p>{% endif %}
+    </div>
   </div>
   </div>{% endif %}
   <main class="container">
-    {% if page.banner_image %}<h2 class="banner-title">{{ page.title }}</h2>{% endif %}
+    {% if page.banner_image %}
+    <h2 class="banner-title">{{ page.title }}</h2>
+    {% if page.date %}<p class="banner-date">{{ page.date | date: "%B %-d, %Y" }}</p>{% endif %}
+    {% endif %}
     {{ content }}
   </main>
   <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
