@@ -4,10 +4,10 @@ title: Home
 ---
 
 <div class="highlight">
-Team 18650 Cookie Clickers is <strong>representing Vermont</strong> at the <strong><a href="/events/first-championship-2026">FIRST Championship</a></strong> in Houston TX, April 29 – May 2!
-<a href="/portfolio">Read our Engineering Portfolio</a>
+Team 18650 Cookie Clickers <strong>represented Vermont</strong> at the <strong><a href="/events/first-championship-2026">FIRST Championship</a></strong> in Houston TX, April 29 – May 2, 2026.
+<a href="/blog/houston-2026/">Read about the trip</a>
 <br><br>
-Team 32473 Bennington Bolts and Biscuits advances to the <strong>New England Premier Event</strong> at the Big E in West Springfield MA, April 17–18!
+Team 32473 Bennington Bolts and Biscuits competed at the <strong>New England Premier Event</strong> at the Big E in West Springfield MA, April 17–18, 2026.
 <br><br>
 <a href="/donate">Support us with a tax-deductible donation!</a> <a href="/budget">See our budget</a>
 </div>
@@ -23,13 +23,10 @@ Team 32473 Bennington Bolts and Biscuits advances to the <strong>New England Pre
 
 <p style="text-align: center; font-style: italic; margin-top: 0;">Photos from the 2026 Vermont FTC State Championship, courtesy of UVM.</p>
 
-## Upcoming Events
+## Past Events
 
 - **Wed–Sat 4/29–5/2/2026** – [FIRST Championship](/events/first-championship-2026) in Houston TX (18650)
 - **Fri–Sat 4/17–18/2026** – [New England Premier Event](https://www.nefirst.org/ftc-premier){:target="_blank"} at the Big E, West Springfield MA (32473)
-
-## Past Events
-
 - **Sat 3/7/2026** – [Vermont Championship](events/state-championship-2026) at South Burlington HS
 - **Sun 2/15/2026** – [Northfield Qualifier](events/northfield-qualifier-2026) at Norwich University
 - **Sat 1/31/2026** – [Bennington Qualifier](events/bennington-qualifier-2026) at [MAUMS](https://maps.app.goo.gl/zE9WbCbWNENq3pGUA){:target="_blank"}

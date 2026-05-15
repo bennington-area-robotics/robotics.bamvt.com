@@ -1,12 +1,14 @@
 ---
 layout: default
 title: FIRST Championship 2026
-description: Team 18650 Cookie Clickers competes at the FIRST Championship in Houston TX, April 29 – May 2, 2026. The first southwestern Vermont FTC team at Worlds.
+description: Team 18650 Cookie Clickers competed at the FIRST Championship in Houston TX, April 29 – May 2, 2026. The first southwestern Vermont FTC team at Worlds.
 ---
 
 ## FIRST Championship 2026
 
-The [FIRST Championship](https://www.firstchampionship.org/){:target="_blank"} is the world's largest K-12 robotics event, drawing over 19,000 students from over 60 countries to compete across four days of matches, judging, and awards in Houston, TX. 18650 Cookie Clickers is the first FTC team from southwestern Vermont to qualify.
+The [FIRST Championship](https://www.firstchampionship.org/){:target="_blank"} is the world's largest K-12 robotics event, drawing over 19,000 students from over 60 countries to compete across four days of matches, judging, and awards in Houston, TX. 18650 Cookie Clickers was the first FTC team from southwestern Vermont to qualify.
+
+Read about the trip: [FTC 18650 at FIRST Championship](/blog/houston-2026/).
 
 **Dates:** Wednesday - Saturday, April 29 - May 2, 2026
 
@@ -26,7 +28,7 @@ Cookie Clickers won the **Inspire Award** at the [2026 Vermont Championship](../
 
 ### Support Our Trip
 
-Competing at Worlds adds an estimated $20,000 to our season budget, from registration fees, travel, lodging, shipping, and improvements to the robot.
+Competing at Worlds added an estimated $20,000 to our season budget, from registration fees, travel, lodging, shipping, and improvements to the robot.
 
 [Donate to support our trip](/donate): all donations are tax-deductible through Bennington Area Makers, a 501(c)(3) nonprofit.
 
