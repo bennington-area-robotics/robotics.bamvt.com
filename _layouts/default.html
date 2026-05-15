@@ -505,6 +505,12 @@
       opacity: 0.9;
       text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
     }
+    .banner-overlay-author {
+      margin: 0.15rem 0 0;
+      font-size: 0.9rem;
+      opacity: 0.85;
+      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    }
     .banner-title {
       margin-top: 1.5rem;
       margin-bottom: 0;
@@ -518,6 +524,11 @@
       font-size: 0.95rem;
       margin: 0.5rem 0 0;
     }
+    .banner-author {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin: 0.2rem 0 0;
+    }
     @media (min-width: 600px) {
       .banner-title { font-size: 2.5rem; }
     }
@@ -526,7 +537,8 @@
     }
     @media (max-width: 767.98px) {
       .banner-title,
-      .banner-date { display: none; }
+      .banner-date,
+      .banner-author { display: none; }
     }
     /* Defeat Safari data detectors on EIN */
     .no-detect { unicode-bidi: isolate; }
@@ -632,7 +644,7 @@
       <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
       <p>{{ site.description }}</p>
       <nav>
-        {% assign nav_items = "Home:/,Events:/events,Blog:/blog,Portfolio:/portfolio,Sponsors:/sponsors,Budget:/budget,Donate:/donate" | split: "," %}
+        {% assign nav_items = "Home:/,Events:/events,Portfolio:/portfolio,Sponsors:/sponsors,Budget:/budget,Donate:/donate" | split: "," %}
         {% for item in nav_items %}
           {% assign parts = item | split: ":" %}
           {% assign label = parts[0] %}
@@ -654,6 +666,7 @@
     <div class="banner-overlay">
       <h2 class="banner-overlay-title">{{ page.title }}</h2>
       {% if page.date %}<p class="banner-overlay-date">{{ page.date | date: "%B %-d, %Y" }}</p>{% endif %}
+      {% if page.author %}<p class="banner-overlay-author">{{ page.author }}</p>{% endif %}
     </div>
   </div>
   </div>{% endif %}
@@ -661,6 +674,7 @@
     {% if page.banner_image %}
     <h2 class="banner-title">{{ page.title }}</h2>
     {% if page.date %}<p class="banner-date">{{ page.date | date: "%B %-d, %Y" }}</p>{% endif %}
+    {% if page.author %}<p class="banner-author">{{ page.author }}</p>{% endif %}
     {% endif %}
     {{ content }}
   </main>

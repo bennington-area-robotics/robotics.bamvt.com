@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Local dev server. Pass extra args through, e.g. --port 4001.
+exec bundle exec jekyll serve --livereload "$@"

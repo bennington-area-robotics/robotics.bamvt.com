@@ -41,5 +41,7 @@ This is a [Jekyll](https://jekyllrb.com/) site hosted on GitHub Pages. Pages are
 ### Local Preview (Optional)
 
 ```bash
-bundle exec jekyll serve
+bin/serve
 ```
+
+This wraps `bundle exec jekyll serve --livereload`. Pass extra Jekyll flags through, e.g. `bin/serve --port 4001` if 4000 is in use.
