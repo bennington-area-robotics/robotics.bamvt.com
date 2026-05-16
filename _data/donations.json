@@ -36,7 +36,7 @@
       "donor": "Mack Molding",
       "amount": 2500,
       "designation": "Cookie Clickers",
-      "date": "2026-04-14",
+      "date": "2026-04-10",
       "type": "organization",
       "url": "https://www.mack.com/"
     },
@@ -44,14 +44,14 @@
       "donor": "Turner Restoration",
       "amount": 250,
       "designation": "Cookie Clickers",
-      "date": "2026-04-14",
+      "date": "2026-04-07",
       "type": "organization"
     },
     {
       "donor": "Repeat Business Systems",
       "amount": 100,
       "designation": "Cookie Clickers",
-      "date": "2026-04-14",
+      "date": "2026-04-03",
       "type": "organization",
       "url": "https://www.rbs-usa.com/"
     },
@@ -59,7 +59,7 @@
       "donor": "Gene Haas Foundation",
       "amount": 2000,
       "designation": "Cookie Clickers",
-      "date": "2026-04-14",
+      "date": "2026-04-01",
       "type": "organization",
       "url": "https://ghassfoundation.org/"
     },
@@ -67,7 +67,7 @@
       "donor": "Anonymous",
       "amount": 5432.40,
       "designation": "Cookie Clickers",
-      "date": "2026-04-13",
+      "date": "2026-04-14",
       "memo": "In-kind student airfare",
       "type": "organization",
       "method": "in-kind"
@@ -145,7 +145,7 @@
       "donor": "Anonymous",
       "amount": 50,
       "designation": "Cookie Clickers",
-      "date": "2026-03-27",
+      "date": "2026-03-26",
       "type": "community"
     },
     {
@@ -184,14 +184,14 @@
       "amount": 500,
       "designation": "Shared",
       "assignment": "Cookie Clickers",
-      "date": "2026-03-23",
+      "date": "2026-03-17",
       "type": "family"
     },
     {
       "donor": "Radocchia Family",
       "amount": 2000,
       "designation": "Cookie Clickers",
-      "date": "2026-03-23",
+      "date": "2026-03-20",
       "type": "family"
     },
     {
@@ -213,7 +213,7 @@
       "donor": "Anonymous",
       "amount": 5000,
       "designation": "Cookie Clickers",
-      "date": "2026-03-22",
+      "date": "2026-04-13",
       "type": "community"
     },
     {
@@ -236,7 +236,7 @@
       "donor": "Goldstone Architecture",
       "amount": 200,
       "designation": "Cookie Clickers",
-      "date": "2026-03-20",
+      "date": "2026-03-27",
       "type": "organization",
       "url": "https://www.goldstonearchitecture.com/"
     },
@@ -252,7 +252,7 @@
       "donor": "MSK Engineers",
       "amount": 500,
       "designation": "Cookie Clickers",
-      "date": "2026-03-19",
+      "date": "2026-03-23",
       "type": "organization",
       "url": "https://www.mskeng.com"
     },
@@ -369,7 +369,7 @@
       "donor": "FIRSTinVT",
       "amount": 500,
       "designation": "Cookie Clickers",
-      "date": "2026-03-07",
+      "date": "2026-04-23",
       "memo": "Event registration support",
       "type": "organization",
       "url": "https://www.firstinvermont.org/"
@@ -378,7 +378,7 @@
       "donor": "FIRSTinVT",
       "amount": 500,
       "designation": "Bolts and Biscuits",
-      "date": "2026-03-07",
+      "date": "2026-04-23",
       "memo": "Event registration support",
       "type": "organization",
       "url": "https://www.firstinvermont.org/"
