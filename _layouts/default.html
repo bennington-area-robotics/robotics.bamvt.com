@@ -705,7 +705,7 @@
       <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
       <p>{{ site.description }}</p>
       <nav>
-        {% assign nav_items = "Home:/,Events:/events,Portfolio:/portfolio,Sponsors:/sponsors,Budget:/budget,Donate:/donate" | split: "," %}
+        {% assign nav_items = "Home:/,Events:/events,Blog:/blog,Portfolio:/portfolio,Sponsors:/sponsors,Budget:/budget,Donate:/donate" | split: "," %}
         {% for item in nav_items %}
           {% assign parts = item | split: ":" %}
           {% assign label = parts[0] %}
@@ -748,6 +748,8 @@
   <footer class="container">
     <p>
       &copy; {{ 'now' | date: "%Y" }} Bennington Area Robotics
+      &nbsp;&middot;&nbsp;
+      <a href="https://www.instagram.com/ftc18650" target="_blank" rel="noopener">Instagram</a>
       &nbsp;&middot;&nbsp;
       <a href="https://www.youtube.com/@bennington-area-robotics" target="_blank" rel="noopener">YouTube</a>
       &nbsp;&middot;&nbsp;
