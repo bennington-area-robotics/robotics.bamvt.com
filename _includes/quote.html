@@ -1,0 +1,10 @@
+{%- comment -%}
+Pull quote / testimonial. Params:
+  text   - quote text (required)
+  author - attribution name (required)
+  role   - author's role or title (optional)
+{%- endcomment -%}
+<blockquote class="pullquote">
+<p>{{ include.text }}</p>
+<footer><cite>{{ include.author }}</cite>{%- if include.role %}<span>{{ include.role }}</span>{%- endif %}</footer>
+</blockquote>

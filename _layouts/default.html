@@ -330,6 +330,55 @@
         margin-right: 0;
       }
     }
+    /* Pull quotes */
+    blockquote.pullquote {
+      position: relative;
+      margin: 2rem 0;
+      padding: 1.5rem 1.75rem;
+      background: var(--row-alt);
+      border-left: 4px solid var(--primary);
+      border-radius: 0 6px 6px 0;
+      overflow: hidden;
+    }
+    blockquote.pullquote::before {
+      content: "\201C";
+      position: absolute;
+      top: -0.6rem;
+      right: 0.9rem;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 6rem;
+      line-height: 1;
+      color: var(--primary);
+      opacity: 0.16;
+      pointer-events: none;
+    }
+    blockquote.pullquote p {
+      position: relative;
+      margin: 0;
+      font-size: 1.15rem;
+      line-height: 1.65;
+      color: var(--text);
+    }
+    blockquote.pullquote footer {
+      margin-top: 1.1rem;
+      padding-top: 0.85rem;
+      border-top: 1px solid var(--border);
+    }
+    blockquote.pullquote cite {
+      display: block;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--primary);
+    }
+    blockquote.pullquote footer span {
+      display: block;
+      margin-top: 0.15rem;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: var(--muted);
+    }
     /* Budget tables */
     main table { }
     main h3 + table,
