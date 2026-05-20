@@ -60,6 +60,8 @@ Bennington Area Robotics is a program of **The Bennington Area Makers, Inc.** (B
 
 ## {{ budget.post_season.label }}
 
+*Note: Post-season actual expenses are not yet final — we are still working through receipts from Houston (FIRST Championship) and the New England Premier Event. The "Actual" figures below will be updated as totals are confirmed.*
+
 {% for team in budget.post_season.teams %}
 ### {{ team.name }}
 
