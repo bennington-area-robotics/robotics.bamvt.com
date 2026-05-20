@@ -1,0 +1,14 @@
+{%- comment -%}
+Inline article figure. Params:
+  src     - image URL (required)
+  alt     - alt text (required)
+  caption - figcaption text (optional)
+  align   - "center" (default), "left", or "right" (float)
+{%- endcomment -%}
+{%- assign fig_align = include.align | default: "center" -%}
+<figure class="post-figure post-figure--{{ fig_align }}">
+<img src="{{ include.src }}" alt="{{ include.alt | escape }}" loading="lazy">
+{%- if include.caption %}
+<figcaption>{{ include.caption }}</figcaption>
+{%- endif %}
+</figure>
