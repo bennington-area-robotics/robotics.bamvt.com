@@ -8,7 +8,7 @@ description: Team 18650 Cookie Clickers competed at the FIRST Championship in Ho
 
 The [FIRST Championship](https://www.firstchampionship.org/){:target="_blank"} is the world's largest K-12 robotics event, drawing over 19,000 students from over 60 countries to compete across four days of matches, judging, and awards in Houston, TX. 18650 Cookie Clickers was the first FTC team from southwestern Vermont to qualify.
 
-Read about the trip: [FTC 18650 at FIRST Championship](/blog/houston-2026/).
+**Read about the trip:** [FTC 18650 at FIRST Championship](/blog/houston-2026/)
 
 **Dates:** Wednesday - Saturday, April 29 - May 2, 2026
 

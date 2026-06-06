@@ -21,7 +21,7 @@ Thanks to your support, both teams competed in their post-season events — Cook
   <button class="carousel-btn pause" title="Pause slideshow">⏸</button>
 </div>
 
-**Team 18650 Cookie Clickers** won the [FTC Vermont Championship](/events/state-championship-2026) and represented Vermont at the [FIRST Championship](/events/first-championship-2026) in Houston, TX, becoming the first team from southwestern Vermont to reach Worlds. [Read their Engineering Portfolio](/portfolio). Sending 6 students and 3 mentors to Houston cost an estimated **$20,000**, covering registration, flights, lodging, and meals.
+**Team 18650 Cookie Clickers** won the [FTC Vermont Championship](/events/state-championship-2026) and represented Vermont at the [FIRST Championship](/events/first-championship-2026) in Houston, TX, becoming the first team from southwestern Vermont to reach Worlds. [Read about the trip](/blog/houston-2026/) and their [Engineering Portfolio](/portfolio). Sending 6 students and 3 mentors to Houston cost an estimated **$20,000**, covering registration, flights, lodging, and meals.
 
 **Team 32473 Bennington Bolts and Biscuits** qualified for the [New England Premier Event](https://www.nefirst.org/ftc-premier){:target="_blank"} at the Big E in West Springfield, MA. Sending 5 students and 2 mentors cost an estimated **$3,500**, covering registration, lodging, and meals.
 
@@ -99,7 +99,7 @@ Make checks payable to *The Bennington Area Makers, Inc.* and mail to:
 
 ### Looking Ahead
 
-Preparation for 2026–27 starts in over the summer. We'll open a new campaign in late summer to fund registration, parts, and travel for both teams. To support next season or discuss sustaining sponsorship, [email us](mailto:info@bamvt.com?subject=2026-27%20Season%20Support).
+Preparation for 2026–27 starts over the summer. We'll open a new campaign in late summer to fund registration, parts, and travel for both teams. To support next season or discuss sustaining sponsorship, [email us](mailto:info@bamvt.com?subject=2026-27%20Season%20Support).
 
 ### About Us
 
