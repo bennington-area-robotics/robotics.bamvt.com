@@ -1,13 +1,13 @@
 ---
 layout: default
 title: Donate
-description: Team 18650 Cookie Clickers represented Vermont at the FIRST Championship in Houston. Help send these students to the world stage with a tax-deductible donation.
+description: Thanks to your support, Team 18650 Cookie Clickers represented Vermont at the FIRST Championship in Houston and Team 32473 Bennington Bolts and Biscuits competed at the New England Premier Event.
 og_image: /events/state-championship-2026/images/2026_FTC-228.jpg
 ---
 
-## Help Send Our Students to Worlds and New England!
+## Thank You — We Made It to Worlds and the Big E!
 
-Team 18650 Cookie Clickers represented Vermont at the FIRST Championship in Houston. Your donation helps cover registration, travel, lodging, and meals. See our [full budget](/budget) for details.
+Thanks to your support, both teams competed in their post-season events — Cookie Clickers at the FIRST Championship in Houston, and Bolts and Biscuits at the New England Premier Event at the Big E. Your donations covered registration, travel, lodging, and meals. See our [full budget](/budget) for the breakdown.
 
 <!-- <a href="https://www.paypal.com/donate/?hosted_button_id=HPQY5NA3Z59C2" target="_blank" class="btn-donate">Donate Online</a>
 <br><small style="display:block; margin-bottom:1.5rem;">or <a href="#donate-by-check">by check</a> &mdash; 501(c)(3) nonprofit, EIN <span class="no-detect">84&#x2011;5124653</span></small> -->
@@ -29,6 +29,8 @@ Cookie Clickers was formed in 2019 as a middle school team. Some of its founding
 
 [Download our fundraising flyer (PDF)](https://drive.google.com/file/d/1XhRbnHisUfao6Agjsfpq1ygs2BoNN96o/view?usp=sharing){:target="_blank"} to share with friends, family, and local businesses.
 
+Donations made now roll forward to our 2026–27 build season and travel fund.
+
 ### Donate Online
 
 [Donate via PayPal or Venmo](https://www.paypal.com/donate/?hosted_button_id=HPQY5NA3Z59C2){:target="_blank"}
@@ -47,7 +49,7 @@ Make checks payable to *The Bennington Area Makers, Inc.* and mail to:
 
 <small>EIN 84-5124653</small>
 
-### Post-Season Advancement Fund
+### 2025–26 Post-Season Advancement Fund — Final Tally
 
 {% assign donations = site.data.donations.donations %}
 {% assign goal = site.data.donations.goal %}
@@ -94,6 +96,10 @@ Make checks payable to *The Bennington Area Makers, Inc.* and mail to:
   }
 })();
 </script>
+
+### Looking Ahead
+
+Preparation for 2026–27 starts in over the summer. We'll open a new campaign in late summer to fund registration, parts, and travel for both teams. To support next season or discuss sustaining sponsorship, [email us](mailto:info@bamvt.com?subject=2026-27%20Season%20Support).
 
 ### About Us
 
