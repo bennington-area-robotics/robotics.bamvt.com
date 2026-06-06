@@ -1,27 +1,12 @@
 ---
 layout: default
-title: Who does what — our summer 2026 RACI chart
+title: Who does what? Our summer 2026 RACI chart
 date: 2026-06-06
 author: Peter Radocchia, Head Coach
 description: How responsibility, accountability, consultation, and information flow are distributed across Bennington Area Robotics this off-season.
 ---
 
-We're organizing ourselves for the summer and preparing for fall, before we know much about the next FTC season. Here's the chart we're using, and what we put it together for:
-
-1. **Identify what we want to do.**
-2. **Identify who wants to do what.**
-3. **Hold ourselves accountable for getting it done.**
-
-Worth doing for its own sake — not only as runway to the next competition. Summer is FTC's off-season; the 2026–27 game won't be revealed until September, and we have limited information about what the robot will need to do. This frees us up to focus on skills, infrastructure, team norms, and deeper CAD and code work before the regular season starts in September.
-
-RACI is a four-letter convention for assigning roles on a piece of work:
-
-- **R — Responsible.** Does the work. There can be more than one R per task.
-- **A — Accountable.** Owns the outcome. Exactly one A per task. The buck stops here.
-- **C — Consulted.** Two-way conversation. Their input shapes the result.
-- **I — Informed.** One-way notification. They need to know it's happening or done.
-
-Student initials run along the top, mentor initials on the right. Most due dates are targets we want closed before September.
+How we're organizing for the summer and preparing for fall:
 
 <style>
 .raci-wrap { overflow-x: auto; margin: 1.5rem 0 0.5rem; border: 1px solid var(--border); border-radius: 4px; }
@@ -147,4 +132,21 @@ Student initials run along the top, mentor initials on the right. Most due dates
   <span class="C">C · Consulted</span>
   <span class="I">I · Informed</span>
 </div>
+
+Student initials run along the top, mentor initials on the right. Most due dates are targets we want closed before September.
+
+RACI is a four-letter convention for assigning roles on a piece of work:
+
+- **R — Responsible.** Does the work. There can be more than one R per task.
+- **A — Accountable.** Owns the outcome. Exactly one A per task. The buck stops here.
+- **C — Consulted.** Two-way conversation. Their input shapes the result.
+- **I — Informed.** One-way notification. They need to know it's happening or done.
+
+We're organizing ourselves for the summer and preparing for fall, before we know much about the next FTC season. We put the chart together to:
+
+1. Identify what we want to do.
+2. Identify who wants to do what.
+3. Hold ourselves accountable for getting it done.
+
+Worth doing for its own sake — not only as runway to the next competition. Summer is FTC's off-season; the 2026–27 game won't be revealed until September, and we have limited information about what the robot will need to do. This frees us up to focus on skills, infrastructure, team norms, and deeper CAD and code work before the regular season starts in September.
 
