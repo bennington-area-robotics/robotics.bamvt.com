@@ -15,7 +15,7 @@ How we're organizing for the summer and preparing for fall:
 .raci thead th { background: var(--primary); color: white; font-weight: 600; font-size: 0.78rem; }
 .raci thead th.group-due { background: #2a9d8f; }
 .raci thead th.group-mentor { background: #4a5a7a; }
-.raci td.task, .raci th.task { text-align: left; min-width: 10rem; font-weight: 600; background: #f7f7f9; }
+.raci td.task, .raci th.task { text-align: left; min-width: 10rem; font-weight: 600; background: #f7f7f9; color: #333; }
 .raci td.task .sub { display: block; font-weight: normal; font-size: 0.72rem; color: #555; margin-top: 0.15rem; line-height: 1.3; }
 .raci td.due { white-space: nowrap; font-size: 0.78rem; color: #2a4a45; }
 .raci td.due .sub { display: block; font-size: 0.72rem; color: #555; }
