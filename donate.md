@@ -73,7 +73,7 @@ Make checks payable to *The Bennington Area Makers, Inc.* and mail to:
 {% for d in donations %}  <li>
     <div class="donation-avatar">{{ d.donor | slice: 0 }}</div>
     <div class="donation-detail">
-      <span class="donor-name">{{ d.donor }}</span> donated <span class="donation-amount">${{ d.amount | replace: '.0', '' }}</span> to {% if d.designation == "Shared" %}Robotics General Fund{% else %}{{ d.designation }}{% endif %}
+      <span class="donor-name">{{ d.donor }}</span> donated <span class="donation-amount">{% include money.html amount=d.amount %}</span> to {% if d.designation == "Shared" %}Robotics General Fund{% else %}{{ d.designation }}{% endif %}
       <div class="donation-meta">{{ d.date | date: "%b %-d" }}{% if d.memo %} &middot; {{ d.memo }}{% endif %}</div>
     </div>
   </li>

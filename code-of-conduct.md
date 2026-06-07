@@ -10,7 +10,11 @@ description: How members of Bennington Area Robotics conduct themselves — atte
 
 ## Code of Conduct
 
-Bennington Area Robotics is a place where students design, build, and compete. Our founder Chris Callahan envisioned it as a *third place* — not home, not school, but a place of its own — and we have come to think of it that way too. Alongside the technical work, students pick up habits that carry into the rest of their lives. The habits worth keeping are easier to build at fifteen than to repair at thirty, and that is part of what we are doing here. This page lays out what we work toward together, and what families can expect us to ask of their students. It is how the coaches see the program; we welcome the conversation about whether we have it right.
+Bennington Area Robotics is a place where students design, build, and compete. Our founder Chris Callahan envisioned it as a *third place* — not home, not school, but a place of its own — and we have come to think of it that way too.
+
+The robot matters. So do the habits that make the robot possible: showing up, taking initiative, taking direction, noticing other people, and owning the work in front of you. The habits worth keeping are easier to build at fifteen than to repair at thirty, and that is part of what we are doing here.
+
+This is the standard we are trying to teach.
 
 The standard we work toward is FIRST's: **Gracious Professionalism**.
 
@@ -19,12 +23,12 @@ The standard we work toward is FIRST's: **Gracious Professionalism**.
    author="Dr. Woodie Flowers"
    role="FIRST National Advisor" %}
 
-This is our standard of conduct, and we hold each other to it. In short:
+We hold each other to that. In short:
 
-1. **Show up; attend meetings consistently.**
+1. **Attend meetings consistently.**
 2. **Bring your best self.**
 3. **Make yourself useful.**
-4. **Mean what you say; let your yes mean yes and your no mean no.**
+4. **Mean what you say.**
 5. **Find the cause, not the culprit.**
 6. **Own your mistakes.**
 7. **Ambition needs discipline.**
@@ -32,24 +36,26 @@ This is our standard of conduct, and we hold each other to it. In short:
 9. **Notice the people around you.**
 10. **Robotics first, socializing second.**
 
-The rest of this page expands on each.
+The rest of this page spells out what that means.
 
-### Attendance: be there, or say so
+### Attend meetings consistently
 
-Regular meetings are Sundays 2–5 and Wednesdays 5–8. The season runs in pulses, and the pulses are when attendance matters most:
+Regular meetings are Sundays 2–5 and Wednesdays 5:30–7:30. The season runs in pulses, and during those pulses we meet three or four times a week. This is when attendance matters most:
 
-- **September build week** — about 30 hours over a few days, immediately after the competition is revealed.
+- **September build week** — about 30 hours over a couple weeks, immediately after the competition is revealed.
 - **Competition prep** — the weeks leading up to each tournament, when reliability work compounds and every missed hour shows up at the field.
 
 A student who is present at regular meetings but absent during the pulses has not really been on the team. The build is when the team becomes a team.
 
-If you can come, say yes. If you can't, say no. An old adage applies, with strong cultural precedent: *let your yes be yes, and your no be no.*
+#### Mean what you say
 
-We know the pressure often runs the other way — toward positive affirmation in the moment, away from saying no out loud, with the common pattern of saying yes today and no the day before. We are asking you not to do that. It is unfair to teammates who planned around your yes, and it costs the team real hours and real morale.
+If you can come, say yes. If you can't, say no. If you are unsure, say maybe.
 
-**"Yes" means yes. "Maybe" means "I don't know yet, and here is when I will know."** "Maybe" is not a polite way to say no, and it is not a way to keep your options open while teammates plan around you.
+It is tempting to say yes because yes feels easier in the moment. Then the night before, the yes turns into a no. Do not do this. It is unfair to teammates who planned around you, and it costs the team time and morale. Let your yes be yes, and your no be no!
 
-### Root cause, not blame
+### Find the cause, not the culprit
+
+*Root cause before blame*
 
 When something goes wrong — the robot won't run, a part doesn't fit, the code does the wrong thing — the first instinct in the room is often to find the person at fault. The harder and more useful instinct is to find the cause.
 
@@ -57,15 +63,15 @@ Blame is fast and it feels good. It does not fix the problem, it does not preven
 
 ### Own your mistakes
 
-Everyone forgets things. Everyone misses a meeting time, miscounts a part, forgets to start a 3D print the night before. None of that is disqualifying on its own — it is the texture of working on hard things alongside school and life.
+Everyone forgets things. Everyone misses a meeting time, miscounts a part, or forgets to start a 3D print the night before. None of that is disqualifying on its own. It is part of doing hard things alongside school and life.
 
-What matters is what you do next. We learn from mistake by naming them: *I forgot. I miscounted. I didn't write it down.* From there we can fix it, build a habit that prevents it, or work out a system that catches it. None of that can happen until you acknowledge the mistake.
+What matters is what you do next. We learn from mistakes by naming them: *I forgot. I miscounted. I didn't write it down.* From there we can fix the problem, build a habit that prevents it, or make a system that catches it. None of that can happen until you acknowledge the mistake.
 
 The opposite — minimizing, deflecting, getting defensive, pretending it didn't happen — does not protect you. It just guarantees the same mistake will happen again, in front of more people.
 
 ### Make yourself useful
 
-The shop runs on people who see what needs doing and do it. Tools go back where they belong. Parts get sorted. Scrap gets cleared. The printer gets reloaded. None of this is glamorous, and none of it requires permission.
+The shop runs on people who see what needs doing and do it. Tools go back where they belong. Parts get sorted. Scrap gets cleared. The printer gets reloaded. None of this is glamorous. None of it requires permission.
 
 When a mentor or a senior student gives you direction, take it. "Sure" beats "why me?", every time. Even if you would rather be doing something else, even if you think you know a better way — do the thing that was asked, and make the case for the other way afterward.
 
@@ -79,26 +85,26 @@ When no one is directing you, don't stand around. Find the next thing yourself. 
 
 ### Ambition needs discipline
 
-Bring your ideas. We want students who want to do hard things, and we have seen what stubborn vision can produce. We are not here to suppress ambition.
+Bring your ideas. We want students who want to do hard things. Robotics should be fun and interesting, and competition should help focus the mind, not make the work small.
 
-But the build is shared. If your idea fails, it doesn't only fail for you — it fails for every teammate who was counting on the robot to work. One student's unbridled ambition risking the build for everyone else is unfair, no matter how hard that student works. We have learned this the hard way:
+But the build is shared. If your idea fails, it doesn't only fail for you — it fails for every teammate who was counting on the robot to work. Failure is the risk of ambition, but one student's ambition should not put the whole build at risk. We have learned this the hard way:
 
 - At the 2025 Vermont State Championship, ambitious redesigns nearly broke the build. We got to the field in time, barely.
 - At the 2026 FIRST Championship in Houston, ambitious redesigns did break the build. We went 0-10-0 in qualifying.
 
-These were not the fault of lazy students. They were the work of some of our hardest workers, who put in long hours and held high visions of what the robot could do. Hard work and good intent are not enough on their own.
+These were not the fault of lazy students. They came from some of our hardest workers, students with a stubborn fixation on visions of excellence. Hard work and good intent are not enough on their own.
 
-So: pitch your ideas. If we take them on, they get a scope, a deadline, and a fallback. If the deadline slips, we cut scope and ship what works. "Trust me, I'll get it done" is not a plan. A plan has dates, fallbacks, and a definition of done that includes testing under realistic conditions.
+So: pitch your ideas. If we take them on, they get a scope, a deadline, and a fallback. If the deadline slips, we cut scope and ship what works. "Trust me, I'll get it done" is not a plan. A plan has dates, guardrails, and a definition of done that includes testing under realistic conditions.
 
-And if you see a risk to the build — your own or someone else's — and you don't raise it, the failure is partly yours. De-risking the build is everyone's job, not just the mentors'.
+And if you see a risk to the build — your own or someone else's — say so. Protecting the build is everyone's job, not just the mentors'.
 
 ### Bring your best self
 
-Every student should walk through the door ready to show their best side. The shop is not the place to bring whatever you brought from somewhere else.
+Walk through the door ready to show your best side. The shop is not the place to bring whatever you brought from somewhere else.
 
 - **Language.** No swearing, no vulgar jokes. The standard is what you would be comfortable with a younger student or a parent overhearing.
 - **Frustration.** When a print fails or the code breaks late at night, it is fair to be frustrated. It is not fair to take it out on equipment or on teammates. No slamming tools, no flicking things away, no snapping at the person nearest to you. Step away, walk it off, come back.
-- **Humility.** Engineering is the practice of being wrong and finding out why. The students who learn fastest are the ones who can say "I don't know" without flinching, and "I was wrong about that" without it costing them anything. Arrogance and insecurity are two sides of the same coin, and both keep you from learning.
+- **Humility.** Engineering is the practice of being wrong and finding out why. The students who learn fastest can say "I don't know" without flinching, and "I was wrong about that" without it costing them anything. Arrogance and insecurity both keep you from learning.
 - **Leave your baggage at the door.** Some of you know each other from school and don't get along there. Inside the shop, that history is set aside. We are here for the same purpose, and the team only works if everyone is working with everyone else.
 - **No politics.** Leave politics at the door. This is not the place for it.
 
@@ -106,9 +112,9 @@ Every student should walk through the door ready to show their best side. The sh
 
 The team runs on the time of adults who are not getting paid to be there — the technical mentors, the parents driving carpools, the volunteers helping at events, and the parents who coach. All of them deserve the same respect.
 
-For students whose parent is a coach: respect your parent here as much as you respect any other coach. On the floor, they are a mentor first.
+For students whose parent is a coach: respect your parent here as much as you respect any other coach. On the floor, they are doing the job.
 
-For students who are new to the team: defer to the students who have been here longer. Watch how they work, ask questions, and find ways to be useful. Standing matters here, and it is earned by showing up and contributing.
+For students who are new to the team: learn from the students who have been here longer. Watch how they work, ask questions, and find ways to be useful. Standing matters here, and it is earned by showing up and contributing.
 
 ### Awareness of others
 
@@ -121,7 +127,7 @@ We share a shop, and away from the shop we share hotels, vans, and convention ha
 
 ### Stay focused
 
-Our time together is short, and the work is harder than people realize from the outside. While we work, aim for **80% robotics, 20% socializing.** Socializing helps build the team, but it is not the main event.
+Our time together is short, and the work is harder than it looks from the outside. While we work, aim for **80% robotics, 20% socializing.** Socializing helps build the team, but it is not the main event.
 
 Sharing videos, social media posts, or other content that doesn't pertain to robotics is not allowed during meetings. Phones are for build references and build photos, not for entertainment.
 
@@ -164,7 +170,7 @@ We don't want to see:
 
 ### Hard rules
 
-The principles above are how we try to work. The rules below are not optional. They protect students, protect the program, and reflect what the law and FIRST require of us.
+The principles above are how we try to work. The rules below are not optional. They protect students, protect the program, and meet the requirements we are responsible for.
 
 **Travel and competitions.** When we travel to events, especially overnight:
 
@@ -188,26 +194,26 @@ The principles above are how we try to work. The rules below are not optional. T
 
 Severity, repetition, and willingness to own the mistake all factor in. Coaches make the call, and parents are involved at step 2 and beyond. For serious infractions — substances, weapons, harassment, anything that endangers another person — the process can begin at step 3 or 4.
 
-**Signing and reading.** New members and their parents read this document and sign it before joining. New students also read the creed aloud — the ten principles at the top of this page — in front of a coach and a senior student, as a rite of joining the team. Returning students re-affirm the creed at the start of each season.
+**Signing and reading.** New members and their parents read this document and sign it before joining. New students also read the creed aloud — the ten principles at the top of this page — in front of a coach and a senior student. Returning students re-affirm the creed at the start of each season.
 
 ### What we hold ourselves to
 
-The standards above apply to mentors first. We cannot ask of students what we do not practice ourselves.
+The standards above apply to mentors first. We do not get to ask students for habits we are not practicing ourselves.
 
 **To students.** We will show up prepared, on time, and ready to teach. We will tell you what we know and admit what we don't. We share hands-on work on the robot with you, and we keep trying to push more of it into your hands. We will keep our promises about practices, travel, and the things we said the program would provide.
 
-**To families.** We will communicate clearly about schedules, expectations, costs, and any safety-relevant issue. We will treat conversations about your student with discretion. We will not put your student in situations we would not put our own.
+**To families.** We will communicate clearly about schedules, expectations, costs, and safety. We will treat conversations about your student with discretion. We will not put your student in situations we would not put our own.
 
 **To each other.** We will back each other up in front of students, and disagree with each other in private. We will tell each other when we see a mistake coming, and hear it when someone tells us. No mentor is above being corrected.
 
-Coaches get tired too. At the FIRST Championship in Houston one night I knew I was running low and thought to myself: I will probably make a bad call tomorrow. The next morning I did not say this to anyone — and sure enough I made one. Had I told the team — *I am tired today, watch for bad calls* — the students could have pushed back when it came, and probably would have. 
+Coaches get tired too. At the FIRST Championship in Houston one night I knew I was running low and thought to myself: I will probably make a bad call tomorrow. The next morning I did not say this to anyone — and sure enough I made one. Had I told the team — *I am tired today, watch for bad calls* — the students could have pushed back when it came, and probably would have.
 
 When a mentor is off, they will say so, and the team has standing permission to question their decisions until they recover. The same standing permission applies to anyone on the team who sees a mentor making a bad call.
 
 ### A word for families
 
-Robotics is a place where your student's habits — for better and for worse — show up in plain view. We work on them here alongside the technical work, because in our experience the two go together. Adults who do excellent work are usually adults who show up when they said they would, take responsibility for what they touched, and treat the people around them with respect. The same is true of students.
+Robotics is a place where your student's habits — for better and for worse — show up in plain view. We work on those habits here alongside the technical work, because in our experience the two go together. People who do excellent work usually show up when they said they would, take responsibility for what they touched, and treat the people around them with respect. The same is true of students.
 
-If you can reinforce attendance commitments and honest communication at home, the season will go better for everyone. And if you ever want to talk about something difficult — your student's, ours, or the program's — please reach out. We would rather hear it.
+If you can reinforce attendance commitments and honest communication at home, the season will go better for everyone. And if you ever want to talk about something difficult — your student's, ours, or the program's — please reach out. We would rather hear it than miss it.
 
 — Peter Radocchia, Head Coach
