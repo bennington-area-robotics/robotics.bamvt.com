@@ -14,9 +14,7 @@ Bennington Area Robotics is a place where students design, build, and compete. O
 
 The robot matters. So do the habits that make the robot possible: showing up, taking initiative, taking direction, noticing other people, and owning the work in front of you. The habits worth keeping are easier to build at fifteen than to repair at thirty, and that is part of what we are doing here.
 
-This is the standard we are trying to teach.
-
-The standard we work toward is FIRST's: **Gracious Professionalism**.
+The standard we are trying to teach is FIRST's: **Gracious Professionalism**.
 
 {% include quote.html
    text="Gracious professionals learn and compete like crazy, but treat one another with respect and kindness in the process. They avoid treating anyone like losers. No chest thumping tough talk, but no sticky-sweet platitudes either. Knowledge, competition, and empathy are comfortably blended."
@@ -47,27 +45,15 @@ Regular meetings are Sundays 2–5 and Wednesdays 5:30–7:30. The season runs i
 
 A student who is present at regular meetings but absent during the pulses has not really been on the team. The build is when the team becomes a team.
 
-#### Mean what you say
+### Bring your best self
 
-If you can come, say yes. If you can't, say no. If you are unsure, say maybe.
+Walk through the door ready to show your best side. The shop is not the place to bring whatever you brought from somewhere else.
 
-It is tempting to say yes because yes feels easier in the moment. Then the night before, the yes turns into a no. Do not do this. It is unfair to teammates who planned around you, and it costs the team time and morale. Let your yes be yes, and your no be no!
-
-### Find the cause, not the culprit
-
-*Root cause before blame*
-
-When something goes wrong — the robot won't run, a part doesn't fit, the code does the wrong thing — the first instinct in the room is often to find the person at fault. The harder and more useful instinct is to find the cause.
-
-Blame is fast and it feels good. It does not fix the problem, it does not prevent the next one, and it makes the team worse at working together. We do root cause analysis instead: what happened, what conditions made it possible, and what we change so it doesn't happen again. Sometimes the cause is a person's mistake — and if so, we name it without theatrics, fix it, and move on.
-
-### Own your mistakes
-
-Everyone forgets things. Everyone misses a meeting time, miscounts a part, or forgets to start a 3D print the night before. None of that is disqualifying on its own. It is part of doing hard things alongside school and life.
-
-What matters is what you do next. We learn from mistakes by naming them: *I forgot. I miscounted. I didn't write it down.* From there we can fix the problem, build a habit that prevents it, or make a system that catches it. None of that can happen until you acknowledge the mistake.
-
-The opposite — minimizing, deflecting, getting defensive, pretending it didn't happen — does not protect you. It just guarantees the same mistake will happen again, in front of more people.
+- **Language.** No swearing, no vulgar jokes. The standard is what you would be comfortable with a younger student or a parent overhearing.
+- **Frustration.** When a print fails or the code breaks late at night, it is fair to be frustrated. It is not fair to take it out on equipment or on teammates. No slamming tools, no flicking things away, no snapping at the person nearest to you. Step away, walk it off, come back.
+- **Humility.** Engineering is the practice of being wrong and finding out why. The students who learn fastest can say "I don't know" without flinching, and "I was wrong about that" without it costing them anything. Arrogance and insecurity both keep you from learning.
+- **Leave your baggage at the door.** Some of you know each other from school and don't get along there. Inside the shop, that history is set aside. We are here for the same purpose, and the team only works if everyone is working with everyone else.
+- **No politics.** Leave politics at the door. This is not the place for it.
 
 ### Make yourself useful
 
@@ -77,11 +63,31 @@ When a mentor or a senior student gives you direction, take it. "Sure" beats "wh
 
 When no one is directing you, don't stand around. Find the next thing yourself. Look at what the team is trying to do today, pick a piece you can move forward, and move it forward. If you genuinely can't find anything, ask. "What can I do?" is always a welcome question.
 
-### Arriving and leaving
+When you arrive, find a coach or senior student and check in. Look around for what's underway, find a task or ask for one, and get to work. Save the socializing for while you are working, not before.
 
-**When you arrive.** Find a coach or senior student and check in. Look around for what's underway, find a task or ask for one, and get to work. Save the socializing for while you are working, not before.
+Before you leave, clean your station. Return tools to where they belong. Tell a coach or senior student that you are heading out, and confirm when you will be back. If you have something running — a 3D print, a battery on the charger — make sure someone knows.
 
-**Before you leave.** Clean your station. Return tools to where they belong. Tell a coach or senior student that you are heading out, and confirm when you will be back. If you have something running — a 3D print, a battery on the charger — make sure someone knows.
+### Mean what you say
+
+If you can come, say yes. If you can't, say no. If you are unsure, say maybe.
+
+It is tempting to say yes because yes feels easier in the moment. Then the night before, the yes turns into a no. Do not do this. It is unfair to teammates who planned around you, and it costs the team time and morale. Let your yes be yes, and your no be no!
+
+### Find the cause, not the culprit
+
+When something goes wrong — the robot won't run, a part doesn't fit, the code does the wrong thing — the first instinct in the room is often to find the person at fault. The harder and more useful instinct is to find the cause.
+
+Blame is fast and it feels good. It does not fix the problem, it does not prevent the next one, and it makes the team worse at working together. We ask the slower questions instead: what happened, what conditions made it possible, and what we change so it doesn't happen again. Sometimes the cause is a person's mistake — and if so, we name it without theatrics, fix it, and move on.
+
+### Own your mistakes
+
+Everyone forgets things. Everyone misses a meeting time, miscounts a part, or forgets to start a 3D print the night before. None of that is disqualifying on its own. It is part of doing hard things alongside school and life.
+
+What matters is what you do next. We learn from mistakes by naming them: *I forgot. I miscounted. I didn't write it down.* From there we can fix the problem, build a habit that prevents it, or make a system that catches it. None of that can happen until you acknowledge the mistake.
+
+This includes accidents with equipment. If you drop a driver station, a control hub, a laptop, a battery, or any other piece of team gear, say plainly what happened and let a coach or senior student check it. *It was an accident* is not an answer; of course it was an accident. The point is that shared equipment matters. Some of it is gear we cannot easily replace, and the team depends on it working. A driver station might survive six drops and break on the seventh, but all seven drops helped break it. If it was in your hands, own it. Do not make the accident smaller than it was, argue about whether it broke, or blame someone else. Pick it up, report it, check it, and handle it more carefully next time.
+
+The opposite — minimizing, deflecting, getting defensive, pretending it didn't happen — does not protect you. It just guarantees the same mistake will happen again, in front of more people.
 
 ### Ambition needs discipline
 
@@ -98,16 +104,6 @@ So: pitch your ideas. If we take them on, they get a scope, a deadline, and a fa
 
 And if you see a risk to the build — your own or someone else's — say so. Protecting the build is everyone's job, not just the mentors'.
 
-### Bring your best self
-
-Walk through the door ready to show your best side. The shop is not the place to bring whatever you brought from somewhere else.
-
-- **Language.** No swearing, no vulgar jokes. The standard is what you would be comfortable with a younger student or a parent overhearing.
-- **Frustration.** When a print fails or the code breaks late at night, it is fair to be frustrated. It is not fair to take it out on equipment or on teammates. No slamming tools, no flicking things away, no snapping at the person nearest to you. Step away, walk it off, come back.
-- **Humility.** Engineering is the practice of being wrong and finding out why. The students who learn fastest can say "I don't know" without flinching, and "I was wrong about that" without it costing them anything. Arrogance and insecurity both keep you from learning.
-- **Leave your baggage at the door.** Some of you know each other from school and don't get along there. Inside the shop, that history is set aside. We are here for the same purpose, and the team only works if everyone is working with everyone else.
-- **No politics.** Leave politics at the door. This is not the place for it.
-
 ### Respect everyone in the room
 
 The team runs on the time of adults who are not getting paid to be there — the technical mentors, the parents driving carpools, the volunteers helping at events, and the parents who coach. All of them deserve the same respect.
@@ -116,16 +112,16 @@ For students whose parent is a coach: respect your parent here as much as you re
 
 For students who are new to the team: learn from the students who have been here longer. Watch how they work, ask questions, and find ways to be useful. Standing matters here, and it is earned by showing up and contributing.
 
-### Awareness of others
+### Notice the people around you
 
-We share a shop, and away from the shop we share hotels, vans, and convention halls. Awareness of others is not optional in shared space.
+We share a shop, and away from the shop we share hotels, vans, and convention halls. Everyone gets through those spaces more easily when people notice the effect they are having on the room.
 
 - **Volume.** A conversation at full volume in a shared room forces everyone else to listen. Match your volume to the space and the moment.
 - **Airtime.** If you are talking, someone else is not. Notice whether you are taking more than your share, and pull back when you are.
 - **Presence.** Look up from what you are doing often enough to notice what is happening around you — who needs help, who is being left out, what the team is trying to do.
 - **Awareness.** You should know the names of everyone on both teams.
 
-### Stay focused
+### Robotics first, socializing second
 
 Our time together is short, and the work is harder than it looks from the outside. While we work, aim for **80% robotics, 20% socializing.** Socializing helps build the team, but it is not the main event.
 
@@ -139,6 +135,8 @@ We expect to see:
 - Showing up to the September build and to competition prep, on time, ready to work.
 - Asking "why did this happen?" before asking "whose fault was it?"
 - Saying "I forgot" or "I was wrong" plainly when it's true.
+- Treating shared equipment like it matters, especially after an accident.
+- Saying what happened when equipment is dropped or mishandled.
 - Seeing what needs doing and doing it, without being asked.
 - Taking direction the first time, without making the asker work for it.
 - Checking in when you arrive, and saying goodbye before you leave.
@@ -156,6 +154,8 @@ We don't want to see:
 - Skipping a pulsed event without prior notice or a real reason.
 - Reflexive blaming when something breaks.
 - Minimizing or deflecting when you've made a mistake.
+- Shrugging off dropped equipment because it was an accident or because it did not break.
+- Blaming someone else for equipment that was in your hands.
 - Standing around waiting to be told what to do.
 - Grumbling at a task you were asked to do.
 - Slipping out without telling anyone, or leaving your station a mess.
@@ -170,7 +170,7 @@ We don't want to see:
 
 ### Hard rules
 
-The principles above are how we try to work. The rules below are not optional. They protect students, protect the program, and meet the requirements we are responsible for.
+The principles above are how we try to work. The rules below are not optional. They protect students, protect the program, and meet the obligations we have taken on.
 
 **Travel and competitions.** When we travel to events, especially overnight:
 
