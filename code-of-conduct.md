@@ -93,10 +93,7 @@ The opposite — minimizing, deflecting, getting defensive, pretending it didn't
 
 Bring your ideas. We want students who want to do hard things. Robotics should be fun and interesting, and competition should help focus the mind, not make the work small.
 
-But the build is shared. If your idea fails, it doesn't only fail for you — it fails for every teammate who was counting on the robot to work. Failure is the risk of ambition, but one student's ambition should not put the whole build at risk. We have learned this the hard way:
-
-- At the 2025 Vermont State Championship, ambitious redesigns nearly broke the build. We got to the field in time, barely.
-- At the 2026 FIRST Championship in Houston, ambitious redesigns did break the build. We went 0-10-0 in qualifying.
+But the build is shared. If your idea fails, it doesn't only fail for you — it fails for every teammate who was counting on the robot to work. Failure is the risk of ambition, but one student's ambition should not put the whole build at risk. We have learned this the hard way.
 
 These were not the fault of lazy students. They came from some of our hardest workers, students with a stubborn fixation on visions of excellence. Hard work and good intent are not enough on their own.
 
