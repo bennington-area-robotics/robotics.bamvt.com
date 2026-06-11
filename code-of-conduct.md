@@ -14,7 +14,7 @@ Bennington Area Robotics is a place where students design, build, and compete. O
 
 Students come to robotics for many reasons: the robot itself, programming, CAD, building things, competition, and the chance to work with other students who like the same things. That shared interest is the draw. We use it to build the habits that make the work possible: reliability, honesty, humility, discipline, focus, respect, and care for the people and equipment around you. These habits are easier to build at fifteen than to repair at thirty, and will compound for life.
 
-The standard we are trying to teach is FIRST's: **Gracious Professionalism**.
+We teach by FIRST's standard of **Gracious Professionalism**.
 
 {% include quote.html
    text="Gracious professionals learn and compete like crazy, but treat one another with respect and kindness in the process. They avoid treating anyone like losers. No chest thumping tough talk, but no sticky-sweet platitudes either. Knowledge, competition, and empathy are comfortably blended."
@@ -38,7 +38,7 @@ The rest of this page spells out what that means.
 
 ### Attend meetings consistently
 
-Regular meetings are Sundays 2–5 and Wednesdays 5:30–7:30. The season runs in pulses, and during those pulses we meet three or four times a week. This is when attendance matters most:
+The regular meeting schedule is posted on the [home page](/#meeting-schedule). The season runs in pulses, and during those pulses we meet three or four times a week. This is when attendance matters most:
 
 - **September build sprint** — about 30 hours over a couple weeks, immediately after the competition is revealed.
 - **Competition prep** — the weeks leading up to each tournament, when reliability work compounds and every missed hour shows up at the field.

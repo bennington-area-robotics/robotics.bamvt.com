@@ -8,6 +8,82 @@ Status key: **DONE** (in the draft) · **PARTIAL** (touched, needs more) · **MI
 
 ---
 
+## Round 2a review — core content
+
+From the four-perspective review (students, families, coaches, FIRST/other teams) plus
+voice check against the Houston post. Address these before the operational gaps below.
+
+### Content gaps
+
+- [ ] **Senior students: authority without reciprocal duty.** New students are told to
+  take direction from seniors and that "standing matters here" — but nothing binds senior
+  students in return (teach, don't boss; the duty to the younger student). Mentors get a
+  whole obligations section; seniors get power and no reciprocal clause. Write the
+  obligation side down.
+- [ ] **No safety exception to "do the thing that was asked, argue afterward."** The
+  mentor section gets this right ("except on safety, which gets raised on the spot");
+  the student-direction section in *Make yourself useful* doesn't. One clause fixes it.
+  Matters more once the PPE section exists.
+- [ ] **Rebuild *Respect everyone in the room* to earn its title.** Broadest title in the
+  document, thinnest section: two special cases (parent-coaches, new students) plus unpaid
+  adult time. Natural home for the non-discrimination line (item 7 below) — especially
+  since "leave politics at the door" sits nearby with no welcome-sentence counterweight.
+
+### Naming and framing decisions
+
+- [ ] **Decide what the ten principles are called.** "Creed" appears exactly once, in
+  *Signing and reading* — Opus vocabulary that crept in, not necessarily ours. Either own
+  the word and introduce it where the ten principles appear at the top, or strip it and
+  have the signing rite say "the ten principles" plainly. Don't introduce a name on the
+  last page.
+- [ ] **Confirm "coaches make the call" is deliberate.** Board escalation exists only for
+  concerns *about a coach*; there's no stated recourse if a family disputes a disciplinary
+  call about their student. May well be the feature you want — just decide it on purpose.
+- [ ] **"Standing permission to question their decisions" is fuzzy.** Who declares a
+  mentor "off"? As written it only works if the mentor self-reports — which the Houston
+  anecdote shows is exactly what tired people fail to do.
+- [ ] **Attendance flexibility lives only in the don'ts list.** "Without prior notice or
+  a real reason" implies legitimate conflicts are fine, but a multi-activity family reading
+  the *Attend* section first won't find it there. Decide whether to point to it from the
+  section — without softening "has not really been on the team," which stays.
+
+### Voice
+
+- [x] **"The standard we are trying to teach"** — a hedge. "The standard we teach" is the
+  voice. (Intro, GP paragraph.) *Fixed in the Google Docs version; synced to the web version.*
+- [ ] **Seven-noun abstraction list in the intro** ("reliability, honesty, humility,
+  discipline, focus, respect, and care…"). The blog lists Pelican cases and METRO passes,
+  not abstractions. Three concrete habits land harder than seven abstract ones.
+- [ ] ***Notice the people around you* label-bullets** (Volume. Airtime. Presence.
+  Awareness.) read like a facilitation handout. Content is right; format isn't the voice.
+- [ ] **Creed items 8 and 9 are near-synonyms read aloud** (*Respect everyone in the
+  room* / *Notice the people around you*). The sections distinguish them; the one-line
+  versions don't. Read-aloud test with a student.
+
+### Mechanical
+
+- [x] **Woodie Flowers quote formatting.** Runs in as body text with attribution dangling
+  below; needs blockquote formatting or it reads as if we wrote it. *Blockquoted in the
+  Google Docs version; web version already used the quote include.*
+- [x] **Hardcoded meeting times** ("Sundays 2-5, Wednesdays 5:30-7:30") force re-editing a
+  signed document when the schedule shifts. *Both versions now point to the home page's
+  Meeting Schedule section. Note: the index says Wednesdays 5:00–8:00 PM where the code
+  of conduct said 5:30–7:30 — the index is now authoritative; confirm it's current.*
+- [x] **Google Docs export artifacts** (`\-` escaped hyphens throughout) — don't let them
+  leak into the Jekyll version. *Removed; prose dashes converted to em dashes matching
+  the web version.*
+
+### Confirmed — keep as-is
+
+Not action items; guard rails against future softening. The sharp lines ("has not really
+been on the team," "'Sure' beats 'why me?'"), the Houston 0-10 story, the tired-coach
+anecdote, and the self-implicating "I" moments are the document's authenticity anchors.
+The architecture (creed → principles → observable behaviors → hard rules → mentor
+obligations → letter to families) is right; *What this looks like* is what makes the
+document enforceable rather than aspirational.
+
+---
+
 ## Already covered — no action needed
 
 These were the top operational gaps the research flagged. The draft now handles them:
