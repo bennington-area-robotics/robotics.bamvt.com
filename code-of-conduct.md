@@ -114,7 +114,7 @@ And if you see a risk to the build — your own or someone else's — say so. Pr
 
 ### Respect everyone in the room
 
-This is a team of people who came for the same thing — the robot, the build, the competition — and that shared work is what earns you a place here. It doesn't matter where you go to school, what you look like, who your family is, or what you believe outside this room. Show up, do the work, and treat the people around you well, and you belong.
+This is a team of people who came for the same thing — the robot, the build, the competition — and that shared work is what earns you a place here. It doesn't matter where you go to school, what you look like, who your family is, or what you believe outside this room. Show up, do the work, and treat the people around you well, and you belong. Treat others the way you would want to be treated.
 
 Start with the adults. The team runs on the time of people who are not getting paid to be there — the technical mentors, the parents driving carpools, the volunteers helping at events, and the parents who coach. All of them deserve the same respect. For students whose parent is a coach: respect your parent here as much as you respect any other coach. On the floor, they are doing the job.
 
@@ -124,7 +124,7 @@ Respect runs between students too, and in both directions. If you are new, learn
 
 We share a shop, and away from the shop we share hotels, vans, and convention halls. Everyone gets through those spaces more easily when people notice the effect they are having on the room.
 
-A conversation at full volume forces everyone else to listen; match your volume to the space and the moment. If you are talking, someone else is not — notice when you are taking more than your share, and pull back. Look up from your own work often enough to see what is happening around you: who needs help, who is being left out, what the team is trying to get done. And learn people's names — all of them. You should know the name of everyone in the program.
+A conversation at full volume forces everyone else to listen; match your volume to the space and the moment. If you are talking, someone else is not — notice when you are taking more than your share, and pull back. Allow silence between comments. Look up from your own work often enough to see what is happening around you: who needs help, who is being left out, what the team is trying to get done. And learn people's names — all of them. You should know the name of everyone in the program.
 
 ### Robotics first, socializing second
 
@@ -185,7 +185,7 @@ The principles above are how we try to work. The rules below are not optional. T
 - Eye protection goes on whenever a machine is running — the bandsaw, the miter saw, the drill press, the CNC — and whenever you are within reach of someone else running one. Safety glasses live by the door. There is no "I'm just doing one cut."
 - No one operates a power tool until a coach has trained them on that specific tool and signed off. The bandsaw, the miter saw, the drill press, the metal brake, and the CNC each get their own sign-off, logged on the sign-off sheet on the shop wall — tools down the rows, students across the columns, a mentor's initials in the cell. Knowing the drill does not mean you know the bandsaw.
 - Closed-toe shoes in the shop, always. Tie back long hair, push up or remove loose sleeves, and take off dangling drawstrings, lanyards, and jewelry before you step up to anything that spins or cuts.
-- Only one student is allowed to operate a machine at a time, and only their hands should be near it. If you want to learn, watch from where you can see, not from where you can reach.
+- Only one student is allowed to operate a machine at a time, and only their hands should be near it. Everyone else watches from a safe distance — close enough to see, not to reach.
 - The 3D printers run hot and often run unattended. Don't reach into a printing A1, don't cancel or move someone else's print, and if you start a print that will outlast the meeting, tell a coach so someone knows it's running — the same rule as a battery left on the charger.
 - If a tool is broken, tagged out, or mid-repair, it stays off. Don't be the one who decides it's fine. Report it if you're the first to notice.
 - When in doubt, stop and ask. No one has ever been in trouble here for asking whether something is safe.
