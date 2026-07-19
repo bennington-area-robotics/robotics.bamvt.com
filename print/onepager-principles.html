@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Code of Conduct — Bennington Area Robotics (one-pager)</title>
+<style>
+  :root {
+    --primary: #6d87b8;
+    --accent: #e63946;
+    --ink: #222;
+    --muted: #666;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: var(--ink);
+    background: #fff;
+    line-height: 1.3;
+  }
+  .page {
+    width: 8.5in;
+    min-height: 11in;
+    margin: 0 auto;
+    padding: 0.55in 0.6in 0.45in;
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    border-bottom: 3px solid var(--primary);
+    padding-bottom: 14px;
+  }
+  header img { width: 74px; height: 74px; border-radius: 50%; }
+  .titles { flex: 1; }
+  .team { font-size: 15px; letter-spacing: 2.5px; text-transform: uppercase; color: var(--primary); font-weight: 700; }
+  h1 { font-size: 38px; line-height: 1; margin-top: 3px; color: var(--ink); }
+  .gp { text-align: right; font-size: 13px; color: var(--muted); max-width: 2.4in; font-style: italic; }
+  .gp strong { color: var(--accent); font-style: normal; }
+
+  .grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px 26px;
+    flex: 1;
+    align-content: space-between;
+  }
+  .item { display: grid; grid-template-columns: 38px 1fr; gap: 14px; align-items: start; }
+  .num {
+    width: 38px; height: 38px; border-radius: 50%;
+    background: var(--primary); color: #fff;
+    font-weight: 700; font-size: 19px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .item h2 { font-size: 19px; line-height: 1.15; color: var(--ink); }
+  .item p { font-size: 15px; color: var(--muted); margin-top: 3px; }
+
+  footer {
+    margin-top: 20px;
+    border-top: 2px solid var(--primary);
+    padding-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 13px;
+    color: var(--muted);
+  }
+  footer .quote { max-width: 5.4in; }
+  footer .handles { text-align: right; white-space: nowrap; }
+
+  @page { size: letter portrait; margin: 0; }
+  @media print { body { margin: 0; } .page { margin: 0; } }
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <img src="../images/chip-180x180-round.png" alt="Bennington Area Robotics">
+    <div class="titles">
+      <div class="team">Bennington Area Robotics</div>
+      <h1>Code of Conduct</h1>
+    </div>
+    <div class="gp">We teach by FIRST's standard of <strong>Gracious Professionalism</strong>.</div>
+  </header>
+
+  <div class="grid">
+    <div class="item"><div class="num">1</div><div><h2>Attend meetings consistently.</h2><p>Show up! Working together is how a team becomes a team.</p></div></div>
+    <div class="item"><div class="num">2</div><div><h2>Show your best side.</h2><p>Use clean language, show courtesy, practice humility. Leave school and politics at the door.</p></div></div>
+    <div class="item"><div class="num">3</div><div><h2>Make yourself useful.</h2><p>See what needs doing and do it. "Sure" beats "why me?"</p></div></div>
+    <div class="item"><div class="num">4</div><div><h2>Mean what you say.</h2><p>Let your yes be yes. An honest maybe beats a soft yes.</p></div></div>
+    <div class="item"><div class="num">5</div><div><h2>Find the cause, not the culprit.</h2><p>Work the fix, not the fault. "My part works" is a hypothesis to test. Instead of pointing fingers, focus on solutions.</p></div></div>
+    <div class="item"><div class="num">6</div><div><h2>Own your mistakes.</h2><p>Name the mistake, and build new habits that prevent it.</p></div></div>
+    <div class="item"><div class="num">7</div><div><h2>Ambition needs discipline.</h2><p>Big ideas need a scope, a deadline, and a fallback.</p></div></div>
+    <div class="item"><div class="num">8</div><div><h2>Respect everyone in the room.</h2><p>Show up and do the work, and you belong. Teach, don't boss. Treat others as you would like them to treat you.</p></div></div>
+    <div class="item"><div class="num">9</div><div><h2>Notice the people around you.</h2><p>Mind your volume and presence. Allow silence between comments. Know everyone's name.</p></div></div>
+    <div class="item"><div class="num">10</div><div><h2>Robotics first, socializing second.</h2><p>Use phones for build references, not entertainment.</p></div></div>
+  </div>
+
+  <footer>
+    <div class="quote">"Gracious professionals learn and compete like crazy, but treat one another with respect and kindness in the process." — Dr. Woodie Flowers</div>
+    <div class="handles">Cookie Clickers 18650<br>Bolts &amp; Biscuits 32473</div>
+  </footer>
+</div>
+</body>
+</html>

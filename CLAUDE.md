@@ -28,6 +28,11 @@ No local build tooling required. Jekyll builds run automatically on GitHub Pages
 - Pages can use `{#anchor-id}` kramdown syntax for heading anchors.
 - Fundraising and call-to-action copy should use confident, active language — avoid hedging ("hoping to", "trying to", "would like to").
 
+## Editorial & Review Process
+
+- **Fable advisor pattern.** At key junctures in substantive writing work — a major edit, a structural decision, before finalizing a document — consult the **Fable model** (`claude-fable-5`) as an advisor, not just as a final proofread. Spawn Fable subagents (`Agent` with `model: "fable"`) to critique the current draft; Fable's perception surfaces how prose and decisions will actually land. For stakeholder-facing documents (e.g. the code of conduct), run one Fable advisor per audience lens (student, family, coach, FIRST/other teams) in parallel, ask each for concise prioritized findings rather than a rewrite, then synthesize across lenses.
+- **Voice is intentionally sharp.** Do not reflexively soften direct, sharp language in the prose. Discomfort that serves the message stays; advisors should flag only where sharpness genuinely *misfires* for a reader, not wherever it stings.
+
 ## Key Files
 
 | File | Purpose |

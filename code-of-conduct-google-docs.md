@@ -4,13 +4,13 @@
 
 Bennington Area Robotics is a place where students design, build, and compete. Our founder Chris Callahan envisioned it as a *third place* — not home, not school, but a place of its own.
 
-Students come to robotics for many reasons: the robot itself, programming, CAD, building things, competition, and the chance to work with other students who like the same things. That shared interest is the draw. We use it to build the habits that make the work possible: reliability, honesty, humility, discipline, focus, respect, and care for the people and equipment around you. These habits are easier to build at fifteen than to repair at thirty, and will compound for life.
+Students come to robotics for many reasons: the robot itself, programming, CAD, building things, competition, and the chance to work with other students of shared interest. This is the draw. We then use their interests to build the habits that make the work possible: perseverance, collaboration, overcoming failure, learning from mistakes, showing up when you said you would, putting the tools back before you leave. These habits are easier to build at fifteen than to repair at thirty, and will compound for life.
 
 We teach by FIRST's standard of **Gracious Professionalism**.
 
 > Gracious professionals learn and compete like crazy, but treat one another with respect and kindness in the process. They avoid treating anyone like losers. No chest thumping tough talk, but no sticky-sweet platitudes either. Knowledge, competition, and empathy are comfortably blended.
 >
-> — Dr. Woodie Flowers, FIRST National Advisor
+> — Dr. Woodie Flowers (1943–2019), FIRST Distinguished Advisor
 
 We hold each other to that. In short:
 
@@ -34,14 +34,15 @@ The regular meeting schedule is posted on [our home page](https://robotics.bamvt
 - **September build sprint** — about 30 hours over a couple weeks, immediately after the competition is revealed.  
 - **Competition prep** — the weeks leading up to each tournament, when reliability work compounds and every missed hour shows up at the field.
 
-A student who is present at regular meetings but absent during the pulses has not really been on the team. The build is when the team becomes a team.
+A student who is present at regular meetings but absent during the pulses has not really been on the team. The build is when the team becomes a team. When you miss it, the team misses more than a pair of hands — it misses whatever only you would have thought of or caught. If work, family, or a ride problem makes a pulse genuinely hard, tell a coach early and we will find a way — unexpected no-shows hurt the team, not the honest conflict.
 
 ## Show your best side
 
 Walk through the door ready to show your best side.
 
 - **Language.** No swearing, no vulgar jokes. The standard is what you would be comfortable with a younger student or a parent overhearing.  
-- **Frustration.** When a print fails or the code breaks late at night, it is fair to be frustrated. It is not fair to take it out on equipment or on teammates. No slamming tools, no tossing parts across the table, no snapping at the person nearest to you. Step away, walk it off, come back.  
+- **Courtesy.** Be friendly and courteous. A hello when you arrive, a thank-you, holding the door, learning a new student's name — the small courtesies are most of what respect looks like day to day.  
+- **Frustration.** When a print fails or the code breaks late at night, it is fair to be frustrated. It is not fair to take it out on equipment or on teammates. No slamming tools, no tossing parts across the table, no snapping at the person nearest to you. Step away, walk it off, come back. If you don't catch it yourself, expect a coach or senior student to step in and ask you to take a break — that is not a punishment, and you come back when you're ready.  
 - **Humility.** Engineering is the practice of being wrong and finding out why. Failure is only useful if you are willing to learn from it. The students who learn fastest can say "I don't know" without flinching, and "I was wrong about that" without ceremony, and get back to work. Arrogance and insecurity both keep you from learning.  
 - **Leave school at the door.** What you build here should follow you to school — not the other way around.  
 - **Leave politics at the door.** Save your arguments for what the field and bench can referee.
@@ -50,9 +51,9 @@ Walk through the door ready to show your best side.
 
 The shop runs on people who see what needs doing and do it. Tools go back where they belong. Parts get sorted. Scrap gets cleared. The printer gets reloaded. None of this is glamorous. None of it requires permission.
 
-When a mentor or a senior student gives you direction, take it. "Sure" beats "why me?", every time. Even if you would rather be doing something else, even if you think you know a better way — do the thing that was asked, and make the case for the other way afterward.
+When a mentor or a senior student gives you direction, take it. "Sure" beats "why me?", every time. Even if you would rather be doing something else, even if you think you know a better way — do the thing that was asked, and make the case for the other way afterward. The exception is safety: if something looks unsafe, say so on the spot, before it gets done — and you do not have to do it until a coach has looked.
 
-When no one is directing you, don't stand around. Find the next thing yourself. Look at what the team is trying to do today, pick a piece you can move forward, and move it forward. If you genuinely can't find anything, ask. "What can I do?" is always a welcome question.
+When no one is directing you, don't stand around. Find the next thing yourself. Look at what the team is trying to do today, pick a piece you can move forward, and move it forward. It helps to keep more than one task in your pocket, so when you get blocked on one you switch to the next instead of stopping. If you genuinely can't find anything, ask. "What can I do?" is always a welcome question.
 
 When you arrive, find a coach or senior student and check in. Look around for what's underway, find a task or ask for one, and get to work. Save the socializing for while you are working, not before.
 
@@ -70,7 +71,7 @@ Promise what is in your hands. You can promise to show up, to do the work, to te
 
 ## Find the cause, not the culprit
 
-When something goes wrong — the robot won't run, a part doesn't fit, the code does the wrong thing — do not cast blame. First, find the cause.
+When something goes wrong — the robot won't run, a part doesn't fit, the code does the wrong thing — do not cast blame. First, find the cause, then work toward the fix. The energy spent deciding whose fault it was is energy not spent on the solution.
 
 Blame is fast and feels like an answer. It does not fix the problem, it does not prevent the next one, and it makes the team worse at working together.
 
@@ -104,26 +105,29 @@ And if you see a risk to the build — your own or someone else's — say so. Pr
 
 ## Respect everyone in the room
 
-The team runs on the time of adults who are not getting paid to be there — the technical mentors, the parents driving carpools, the volunteers helping at events, and the parents who coach. All of them deserve the same respect.
+This is a team of people who came for the same thing — the robot, the build, the competition — and that shared work is what earns you a place here. It doesn't matter where you go to school, what you look like, who your family is, or what you believe outside this room. Show up, do the work, and treat the people around you well, and you belong.
 
-For students whose parent is a coach: respect your parent here as much as you respect any other coach. On the floor, they are doing the job.
+Start with the adults. The team runs on the time of people who are not getting paid to be there — the technical mentors, the parents driving carpools, the volunteers helping at events, and the parents who coach. All of them deserve the same respect. For students whose parent is a coach: respect your parent here as much as you respect any other coach. On the floor, they are doing the job.
 
-For students who are new to the team: learn from the students who have been here longer. Watch how they work, ask questions, and find ways to be useful. Standing matters here, and it is earned by showing up and contributing.
+Respect runs between students too, and in both directions. If you are new, learn from the students who have been here longer — watch how they work, ask questions, and find ways to be useful. Standing matters here, and it is earned by showing up and contributing. If you are one of those senior students, that standing is a responsibility, not a privilege. You direct newer students because you know the shop, not because you outrank them. Teach, don't boss. Explain the why when there's time. The younger student watching you is learning how this team treats people — from you.
 
 ## Notice the people around you
 
 We share a shop, and away from the shop we share hotels, vans, and convention halls. Everyone gets through those spaces more easily when people notice the effect they are having on the room.
 
-- Volume: a conversation at full volume in a shared room forces everyone else to listen. Match your volume to the space and the moment.  
-- Airtime: if you are talking, someone else is not. Notice whether you are taking more than your share, and pull back when you are.  
-- Presence: look up from what you are doing often enough to notice what is happening around you — who needs help, who is being left out, what the team is trying to do.  
-- Awareness: you should know the names of everyone in the program.
+A conversation at full volume forces everyone else to listen; match your volume to the space and the moment. If you are talking, someone else is not — notice when you are taking more than your share, and pull back. Look up from your own work often enough to see what is happening around you: who needs help, who is being left out, what the team is trying to get done. And learn people's names — all of them. You should know the name of everyone in the program.
 
 ## Robotics first, socializing second
 
 Our time together is short, and the work is harder than it looks from the outside. While we work, aim for **80% robotics, 20% socializing.** Socializing helps build the team, but it is not the main event.
 
 Sharing videos, social media posts, or other content that doesn't pertain to robotics is not allowed during meetings. Phones are for build references and build photos, not for entertainment.
+
+## Captains and leads
+
+Some roles carry extra responsibility — team captain, drive team, sub-team leads. They are earned, not owed, and they are not popularity contests. Coaches appoint captains and leads, weighing the same things this whole document asks for: reliability, ownership, how you treat the people around you, and how much you lift the team up — not just how good you are at the robot. Where it makes sense, we will put it to a student vote and confirm the result; a vote gathers the team's read on who leads well, and the coaches make the final call.
+
+Leadership here means responsibility, not rank. A captain's job is to make the team better — to teach, to keep people moving, to take the hard task first — not to boss. If you want one of these roles, the way in is the same as everything else here: show up, own your work, and help the people next to you.
 
 ## What this looks like
 
@@ -143,7 +147,7 @@ We expect to see:
 - Pitching ambitious ideas with a scope, a deadline, and a fallback.  
 - Treating parent-coaches and non-technical volunteers with the same respect as any other adult.  
 - Noticing when your voice is the loudest in the room, and adjusting.  
-- Helping other teams at competition, including the ones you're about to play against.
+- Helping other teams at competition — the ones you're about to play against, and especially the rookie or struggling teams who need a hand. This is what FIRST calls Coopertition.
 
 We don't want to see:
 
@@ -167,6 +171,16 @@ We don't want to see:
 
 The principles above are how we try to work. The rules below are not optional. They protect students, protect the program, and meet the obligations we have taken on.
 
+**Shop safety.** The shop has real tools, and real tools bite.
+
+- Eye protection goes on whenever a machine is running — the bandsaw, the miter saw, the drill press, the CNC — and whenever you are within reach of someone else running one. Safety glasses live by the door. There is no "I'm just doing one cut."  
+- No one operates a power tool until a coach has trained them on that specific tool and signed off. The bandsaw, the miter saw, the drill press, the metal brake, and the CNC each get their own sign-off, logged on the sign-off sheet on the shop wall — tools down the rows, students across the columns, a mentor's initials in the cell. Knowing the drill does not mean you know the bandsaw.  
+- Closed-toe shoes in the shop, always. Tie back long hair, push up or remove loose sleeves, and take off dangling drawstrings, lanyards, and jewelry before you step up to anything that spins or cuts.  
+- Only one student is allowed to operate a machine at a time, and only their hands should be near it. If you want to learn, watch from where you can see, not from where you can reach.  
+- The 3D printers run hot and often run unattended. Don't reach into a printing A1, don't cancel or move someone else's print, and if you start a print that will outlast the meeting, tell a coach so someone knows it's running — the same rule as a battery left on the charger.  
+- If a tool is broken, tagged out, or mid-repair, it stays off. Don't be the one who decides it's fine. Report it if you're the first to notice.  
+- When in doubt, stop and ask. No one has ever been in trouble here for asking whether something is safe.
+
 **Travel and competitions.** When we travel to events, especially overnight:
 
 - Room assignments are made by the coaches. No co-ed rooms. No student rooms with a non-guardian adult.  
@@ -176,11 +190,11 @@ The principles above are how we try to work. The rules below are not optional. T
 
 **Two adults, always.** At every meeting and every team activity, at least two adults are present. Students should never find themselves alone with a single adult on team time. If a second adult is delayed or unavailable, the meeting ends and we reconvene when one arrives. This is also a requirement of FIRST's Youth Protection Program.
 
-**Substances and weapons.** Alcohol, cannabis, nicotine, vape, and non-prescribed medication are banned at all team activities, including travel. Firearms and other weapons are not permitted at the shop, at events, or in team transportation. Prescribed medication a student carries should be disclosed to a coach at the start of the season and again before any trip.
+**Substances and weapons.** Alcohol, cannabis, nicotine, and vape are banned at all team activities, including travel, as is the misuse or sharing of any medication. Firearms and other weapons are not permitted at the shop, at events, or in team transportation. Over-the-counter medication a student needs is fine with a parent's knowledge. Prescription medication a student carries should be disclosed to a coach at the start of the season and again before any trip.
 
-**Harassment.** Harassment of any kind — verbal, physical, social, sexual, or online — is grounds for removal from the program. This applies to students, to parents, and to coaches and mentors.
+**Harassment.** Harassment of any kind — verbal, physical, social, sexual, or online — is grounds for removal from the program. This applies to students, to parents, and to coaches and mentors. If you experience or witness it, tell any coach — or the Bennington Area Makers board directly if the concern is about a coach. Reports are handled with discretion, and no one will face retaliation for raising one in good faith. Anything that suggests a student's safety is at risk goes beyond team discipline — to the student's family, to the appropriate authorities, and through FIRST's Youth Protection Program.
 
-**When a rule is broken.** The response scales with what happened:
+**When a rule is broken.** This ladder covers the whole code, not just the hard rules — the same scale applies to missing pulses, bossing instead of teaching, or blaming instead of fixing. Most problems never reach it. Before these formal steps, expect the everyday responses: a coach or senior student names the problem on the spot, asks you to step away and come back when you're ready, or has you sit out the task or the rest of the session. When that isn't enough, the response scales with what happened:
 
 1. A private conversation with the student, usually resolving it on the spot.  
 2. A written notice to the student and family, with a specific change requested and a timeline.  
@@ -191,7 +205,7 @@ Severity, repetition, and willingness to own the mistake all factor in. Coaches 
 
 Concerns about a coach or mentor can be brought to any other coach, or directly to the Bennington Area Makers board, our parent nonprofit.
 
-**Signing and reading.** New members and their parents read this document and sign it before joining. New students also read the creed aloud — the ten principles at the top of this page — in front of a coach and a senior student. Returning students re-affirm the creed at the start of each season.
+**Signing and reading.** New members and their parents read this document and sign it before joining. New students also read the ten principles at the top of this page aloud, in front of a coach and a senior student — and the coach or senior student reads *What we hold ourselves to* back, so it is both sides signing on, not a test the new student has to pass. If reading aloud in front of others is hard, a student can do it privately or affirm it another way; the commitment matters, not the performance. Returning students re-affirm the ten principles at the start of each season.
 
 ## What we hold ourselves to
 
@@ -209,10 +223,79 @@ When a mentor is off, they will say so, and the team has standing permission to 
 
 ## A word for families
 
-Robotics is a place where your student's habits, both good and bad, show up in plain view. We work on those habits alongside the technical work, as the two complement each other: better habits improve the work, and better work makes the habits easier to keep. A team that builds well can afford to say "that was a bad idea," to hand the wheel to a younger student, to stop and help a rival team.
+Robotics is a place where your student's habits, both good and bad, show up in plain view. We work on those habits alongside the technical work, as the two complement each other: better habits improve the work, and better work makes the habits easier to keep. A team that builds well can afford to say "that was a bad idea," to hand the wheel to a younger student, to stop and help a rival or a struggling rookie team. Ask your student what it feels like to work on a high-functioning team — calm under a deadline, honest about what's broken, quick to trust each other. That feeling is the reward, and it is built from the same small habits this document asks for.
 
 The same habits work at home. When your student commits to a build day, hold them to their yes. When something goes wrong, ask what happened before asking whose fault it was. And when they admit a mistake without being cornered, notice it — that took practice!
 
+Joining involves a one-time onboarding fee, and scholarships are available — cost should never be the reason a student can't be here. If that is a concern for your family, tell us; we will sort it out, and we will keep it between us.
+
 If something difficult comes up — about your student, about us, or about the program — tell us early. We would rather hear it than miss it.
 
-Peter Radocchia, Head Coach  
+Peter Radocchia, Head Coach
+
+---
+
+# Appendix — Tony's feedback (coach review)
+
+Raw feedback from Tony (coach), captured verbatim, with our interpretation of each note and where
+it landed in the draft. **[edited]** = folded in · **[open]** = needs input before drafting.
+
+## Tony's thoughts (original notes)
+
+> - Kindness, add the word friendly and courteous
+> - How do we vote for a captain
+> - Procedures
+> - One-time on-boarding fees
+> - With scholarships
+> - Instead of pinning blame, think and work towards a solution
+> - "what does it feel like to work on a high-functioning team"
+> - Have multiple tasks
+> - Consequences
+>   - Expect intervention from coaches or senior students
+>   - You may be to leave and come back when you think you are ready
+> - Add more gracious professionalism, for example to weaker teams.
+> - We miss out on student contribution
+
+## Interpretation and disposition
+
+**1. "Kindness, add the word friendly and courteous" — [edited].** New **Courtesy** bullet in
+*Show your best side*: "Be friendly and courteous… the small courtesies are most of what respect
+looks like day to day."
+
+**2. "How do we vote for a captain / Procedures" — [edited; driver selection still open].** New
+**Captains and leads** section — coaches appoint against the document's own criteria, with the
+option to put it to a student vote the coaches confirm. Driver-team selection specifically remains
+deferred to the senior-student round.
+
+**3. "One-time on-boarding fees / With scholarships" — [edited; amount open].** Values-level line in
+*A word for families*: "Joining involves a one-time onboarding fee, and scholarships are available —
+cost should never be the reason a student can't be here." *Open:* the fee amount and how scholarships
+are requested — decide doc vs. signing packet.
+
+**4. "Instead of pinning blame… work towards a solution" — [edited].** *Find the cause* now: "find
+the cause, then work toward the fix. The energy spent deciding whose fault it was is energy not spent
+on the solution."
+
+**5. "What does it feel like to work on a high-functioning team" — [edited].** Folded into the
+families letter: "Ask your student what it feels like to work on a high-functioning team — calm under
+a deadline, honest about what's broken, quick to trust each other."
+
+**6. "Have multiple tasks" — [edited].** *Make yourself useful*: "keep more than one task in your
+pocket, so when you get blocked on one you switch to the next instead of stopping."
+
+**7. "Consequences" (expect intervention; may be asked to leave and come back when ready) — [edited].**
+Landed in two places. *Frustration* bullet: a coach or senior student may step in and ask you to take
+a break — "not a punishment, and you come back when you're ready." *When a rule is broken*: the ladder
+now "covers the whole code, not just the hard rules," and names the everyday responses below the
+formal steps — name it on the spot, cool-off-and-return, or sit out the task or the rest of the session.
+
+**8. "Add more gracious professionalism… to weaker teams" — [edited].** Coopertition bullet and the
+families line now name rookie/struggling teams explicitly.
+
+**9. "We miss out on student contribution" — [edited].** Attendance rationale: "the team misses more
+than a pair of hands — it misses whatever only you would have thought of or caught."
+
+## Open items
+
+- **Onboarding fee amount** and scholarship request process — confirm; decide doc vs. packet.
+- **Driver-team selection criteria** — deferred to the senior-student feedback round.  

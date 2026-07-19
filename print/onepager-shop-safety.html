@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shop Safety — Bennington Area Robotics (shop one-pager)</title>
+<style>
+  :root {
+    --primary: #6d87b8;
+    --accent: #e63946;
+    --ink: #1a1a1a;
+    --muted: #555;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: var(--ink);
+    background: #fff;
+    line-height: 1.3;
+  }
+  .page {
+    width: 8.5in;
+    min-height: 11in;
+    margin: 0 auto;
+    padding: 0.55in 0.65in 0.45in;
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    border-bottom: 5px solid var(--accent);
+    padding-bottom: 14px;
+  }
+  header img { width: 74px; height: 74px; border-radius: 50%; }
+  .titles { flex: 1; }
+  .team { font-size: 15px; letter-spacing: 2.5px; text-transform: uppercase; color: var(--primary); font-weight: 700; }
+  h1 { font-size: 50px; line-height: 0.95; margin-top: 3px; color: var(--accent); letter-spacing: 1px; }
+  .sub { font-size: 16px; color: var(--muted); margin-top: 5px; }
+
+  .rules { margin-top: 22px; flex: 1; display: flex; flex-direction: column; justify-content: space-between; gap: 16px; }
+  .rule { display: grid; grid-template-columns: auto 1fr; gap: 16px; align-items: start; }
+  .tag {
+    background: var(--primary); color: #fff;
+    font-weight: 700; font-size: 14px; letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 6px 11px; border-radius: 4px;
+    white-space: nowrap; min-width: 140px; text-align: center;
+  }
+  .rule p { font-size: 18px; line-height: 1.32; padding-top: 2px; }
+  .rule strong { color: var(--ink); }
+
+  .banner {
+    margin-top: 22px;
+    background: var(--accent); color: #fff;
+    text-align: center; font-weight: 700; font-size: 23px;
+    padding: 16px; border-radius: 6px;
+    letter-spacing: 0.3px;
+  }
+  footer { margin-top: 12px; text-align: center; font-size: 13px; color: var(--muted); }
+
+  @page { size: letter portrait; margin: 0; }
+  @media print { body { margin: 0; } .page { margin: 0; } }
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <img src="../images/chip-180x180-round.png" alt="Bennington Area Robotics">
+    <div class="titles">
+      <div class="team">Bennington Area Robotics</div>
+      <h1>SHOP SAFETY</h1>
+      <div class="sub">The shop has real tools, and real tools bite.</div>
+    </div>
+  </header>
+
+  <div class="rules">
+    <div class="rule"><span class="tag">Safety Glasses</span><p><strong>Safety glasses whenever a machine is running</strong> — and whenever you are within reach of someone running one. There is no "I'm just doing one cut."</p></div>
+    <div class="rule"><span class="tag">Tool Training</span><p><strong>No power tool until a coach signs you off on that tool.</strong> Bandsaw, miter saw, drill press, metal brake, and CNC each get their own sign-off, logged on the sheet on the shop wall. Knowing the drill does not mean you know the bandsaw.</p></div>
+    <div class="rule"><span class="tag">Dress and Hair</span><p><strong>Closed-toe shoes.</strong> Tie back long hair. No loose sleeves, drawstrings, lanyards, or jewelry near anything that spins or cuts.</p></div>
+    <div class="rule"><span class="tag">Single Operator</span><p><strong>Only one student operates a machine at a time</strong>, and only their hands should be near it. Other students should watch from a safe distance.</p></div>
+    <div class="rule"><span class="tag">3D Prints</span><p><strong>Don't reach into a running printer</strong> or move someone else's print. If a print will outlast the meeting, tell a coach so someone knows it's running.</p></div>
+    <div class="rule"><span class="tag">Broken = off</span><p><strong>If a tool is broken, tagged out, or mid-repair, it stays off.</strong> Don't be the one who decides it's fine. Report it if you're the first to notice.</p></div>
+  </div>
+
+  <div class="banner">When in doubt, stop and ask.<br>No one has ever been in trouble here for asking whether something is safe.</div>
+  <footer>Cookie Clickers 18650 &nbsp;·&nbsp; Bolts &amp; Biscuits 32473</footer>
+</div>
+</body>
+</html>
