@@ -1,22 +1,20 @@
 ---
 layout: default
 title: Budget
-description: Season budgets for Bennington Area Robotics FTC teams, 18650 Cookie Clickers 18650 and 32473 Bolts and Biscuits.
+description: Season budgets for Bennington Area Robotics FTC teams, 18650 Cookie Clickers and 32473 Bennington Bolts and Biscuits.
 ---
 
-Bennington Area Robotics runs two FTC teams on a combined regular-season cash budget of roughly $6,900, funded by local businesses, community organizations, and foundations, plus about $2,100 of in-kind support (equipment, food, and discounts).
+Bennington Area Robotics ran two FTC teams in 2025-26 on a combined regular-season cash budget of roughly $7,200, funded by local businesses, community organizations, foundations, and family co-pays, plus about $2,400 of in-kind support (equipment, food, and discounts).
 
-We are now raising $23,500 for post-season advancement. Cookie Clickers won the [Vermont Championship](/events/state-championship-2026) and is now advancing to "Worlds", the [FIRST Championship](/events/first-championship-2026) in Houston TX from April 29-May 2. First-year team Bolts and Biscuits placed 7th overall and is advancing to the New England Premier Event from April 17-18.
+Then came the post-season. Cookie Clickers won the [Vermont Championship](/events/state-championship-2026) and advanced to "Worlds", the [FIRST Championship](/events/first-championship-2026) in Houston TX, April 29-May 2. First-year team Bolts and Biscuits placed 7th overall and advanced to the New England Premier Event, April 17-18. Our community responded: nearly 50 donations totaling over $24,000 — past our $23,500 goal — arrived in the weeks before the events, and an airline donated the students' flights in-kind. Thank you. You sent them.
 
-Their success has created entirely new budget needs 3-4x the size of our regular season spending. Cookie Clickers alone went from a $3,100 regular season to an estimated $20,000 post-season budget. Aside from travel and lodging, post-season registration fees alone ($4,000) could easily fund a third team for next year. Event registration fees in Vermont are often waived in exchange for outreach and participation; out-of-state registration fees are not!
+Advancement created entirely new budget needs 3-4x the size of our regular season spending. Cookie Clickers alone went from a $3,500 regular season to a $20,000 post-season budget — and closed the books under it, at $18,515. Aside from travel and lodging, post-season registration fees alone ($4,000) could easily fund a third team for next year. Event registration fees in Vermont are often waived in exchange for outreach and participation; out-of-state registration fees are not!
 
-Thus we see that FTC Robotics in Vermont is normally quite affordable, until the teams do well enough to advance out of state, where budgets are larger, teams are more competitive, and everyone travels further to attend more events. Despite the cost, advancement is a good experience for the students, to see their same activity pursued at higher levels of accomplishment, and understand themselves as peers on the national and international level.
+Thus we see that FTC Robotics in Vermont is normally quite affordable, until the teams do well enough to advance out of state, where budgets are larger, teams are more competitive, and everyone travels further to attend more events. Despite the cost, advancement is a good experience for the students, to see their same activity pursued at higher levels of accomplishment, and understand themselves as peers on the national and international level. The post-season surplus of roughly $3,400 covered the regular season's small deficit and carries about $3,140 into the 2026-27 season.
 
 ### About Us
 
 Bennington Area Robotics is a program of **The Bennington Area Makers, Inc.** (BAMVT), a 501(c)(3) nonprofit organization with EIN 84-5124653. All donations are tax-deductible to the extent permitted by law. [How to donate](/donate).
-
-*Note: These budgets do not include family out-of-pocket costs for event travel, food, and lodging for Vermont events before post-season advancement.*
 
 {% assign budget = site.data.budget %}
 
@@ -42,7 +40,7 @@ Bennington Area Robotics is a program of **The Bennington Area Makers, Inc.** (B
 {% endfor %}
 {% assign ps_exp = 0 %}
 {% for team in budget.post_season.teams %}
-  {% for e in team.expenses %}{% assign ps_exp = ps_exp | plus: e.amount %}{% endfor %}
+  {% for e in team.expenses %}{% if e.actual %}{% assign ps_exp = ps_exp | plus: e.actual %}{% endif %}{% endfor %}
 {% endfor %}
 
 {% assign total_inc = rs_inc | plus: ps_inc %}
@@ -55,12 +53,18 @@ Bennington Area Robotics is a program of **The Bennington Area Makers, Inc.** (B
 <tr><td>Expenses</td><td style="text-align:right">{% include money.html amount=rs_exp %}</td><td style="text-align:right">{% include money.html amount=ps_exp %}</td><td style="text-align:right">{% include money.html amount=total_exp %}</td></tr>
 {% assign total_ink = rs_ink | plus: ps_ink %}
 <tr><td>In-Kind Support</td><td style="text-align:right">{% include money.html amount=rs_ink %}</td><td style="text-align:right">{% include money.html amount=ps_ink %}</td><td style="text-align:right">{% include money.html amount=total_ink %}</td></tr>
+{% assign rs_net = rs_inc | minus: rs_exp %}
+{% assign ps_net = ps_inc | minus: ps_exp %}
+{% assign total_net = total_inc | minus: total_exp %}
+<tr><td><strong>Net (cash)</strong></td><td style="text-align:right"><strong>{% if rs_net < 0 %}<span style="color:var(--accent)">{% include money.html amount=rs_net %}</span>{% else %}+{% include money.html amount=rs_net %}{% endif %}</strong></td><td style="text-align:right"><strong>{% if ps_net < 0 %}<span style="color:var(--accent)">{% include money.html amount=ps_net %}</span>{% else %}<span style="color:#2a9d8f">+{% include money.html amount=ps_net %}</span>{% endif %}</strong></td><td style="text-align:right"><strong>{% if total_net < 0 %}<span style="color:var(--accent)">{% include money.html amount=total_net %}</span>{% else %}<span style="color:#2a9d8f">+{% include money.html amount=total_net %}</span>{% endif %}</strong></td></tr>
 </tbody>
 </table>
 
+Budgets are pooled at the organization level: BAMVT covers any one team's shortfall from shared funds, and the post-season surplus absorbed the regular season's combined deficit of about $240.
+
 ## {{ budget.post_season.label }}
 
-*Note: Post-season actual expenses are not yet final — we are still working through receipts from Houston (FIRST Championship) and the New England Premier Event. The "Actual" figures below will be updated as totals are confirmed.*
+*Note: All receipts are reconciled and totals are final. "Actual" shows what BAM paid; a blank Actual means no BAM funds were spent on that line — unused contingency, or costs families covered directly. Students' airfare to Houston was donated in-kind and appears under In-Kind Support, which is why the cash Flights line came in well under budget. Every gift is listed in the [donor feed](/donate).*
 
 {% for team in budget.post_season.teams %}
 ### {{ team.name }}
@@ -126,6 +130,10 @@ Bennington Area Robotics is a program of **The Bennington Area Makers, Inc.** (B
 {% endfor %}
 {% if ps_team_exp > 0 %}
 <tr><td><strong>Total Expenses</strong></td><td style="text-align:right"><strong>{% include money.html amount=ps_team_exp %}</strong></td><td style="text-align:right">{% if has_any_actual %}<strong>{% include money.html amount=ps_team_act %}</strong>{% endif %}</td></tr>
+{% if has_any_actual %}
+{% assign ps_team_net = d_total | minus: ps_team_act %}
+<tr><td><strong>Net</strong></td><td></td><td style="text-align:right"><strong>{% if ps_team_net < 0 %}<span style="color:var(--accent)">{% include money.html amount=ps_team_net %}</span>{% else %}<span style="color:#2a9d8f">+{% include money.html amount=ps_team_net %}</span>{% endif %}</strong></td></tr>
+{% endif %}
 {% endif %}
 {% endif %}
 {% if d_inkind != "" %}

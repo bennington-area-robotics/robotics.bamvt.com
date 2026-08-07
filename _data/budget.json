@@ -9,14 +9,15 @@
         "income": [
           { "source": "Catamount Rotary", "amount": 350.00 },
           { "source": "Comprehensive Computing", "amount": 1400.00 },
-          { "source": "Local businesses", "amount": 300.00 }
+          { "source": "Local businesses", "amount": 300.00 },
+          { "source": "Uniform co-pays (families)", "amount": 560.00 }
         ],
         "expenses": [
           { "category": "Season Registration", "amount": 325.00 },
           { "category": "Building Supplies", "amount": 316.60 },
           { "category": "Cameras", "amount": 398.12 },
           { "category": "Major Parts", "amount": 1327.20 },
-          { "category": "Uniforms", "amount": 700.81 }
+          { "category": "Uniforms", "amount": 1110.20 }
         ]
       },
       {
@@ -59,25 +60,25 @@
       {
         "id": "cookie-clickers",
         "name": "18650 Cookie Clickers → Houston",
-        "description": "Advancing to the [FIRST Championship](/events/first-championship-2026) in Houston, TX, as the first team from southwestern Vermont to reach Worlds. Sending 6 students and 3-4 mentors.",
+        "description": "Competed at the [FIRST Championship](/events/first-championship-2026) in Houston, TX, April 29-May 2, as the first team from southwestern Vermont to reach Worlds. Sent 6 students and 5 mentors and chaperones.",
         "donation_recipient": "Cookie Clickers",
         "expenses": [
           { "category": "Event Registration", "amount": 2500.00, "actual": 2500.00 },
           { "category": "Robot parts", "amount": 1500.00, "actual": 1646.86 },
-          { "category": "Merch", "amount": 0, "actual": 610.63 },
-          { "category": "Travel gear", "amount": 800.00, "actual": 519.35 },
-          { "category": "Flights", "amount": 6600, "actual": 3694.40 },
-          { "category": "Ground transportation", "amount": 1000, "actual": 160 },
+          { "category": "Merch (Worlds shirts, banner, trading buttons)", "amount": 0, "actual": 610.63 },
+          { "category": "Travel gear", "amount": 800.00, "actual": 1031.57 },
+          { "category": "Flights", "amount": 6600, "actual": 3894.40 },
+          { "category": "Ground transportation", "amount": 1000, "actual": 369.21 },
           { "category": "Lodging", "amount": 5000, "actual": 5865.40 },
-          { "category": "Groceries", "amount": 350 },
-          { "category": "Meals", "amount": 1750 },
+          { "category": "Groceries", "amount": 350, "actual": 174.15 },
+          { "category": "Meals", "amount": 1750, "actual": 2423.00 },
           { "category": "Contingency", "amount": 500 }
         ]
       },
       {
         "id": "bolts-and-biscuits",
         "name": "32473 Bolts and Biscuits → New England",
-        "description": "Advancing to the [New England Premier Event](https://www.nefirst.org/ftc-premier) at the Big E in West Springfield, MA. Sending 5 students and 2 mentors.",
+        "description": "Competed at the [New England Premier Event](https://www.nefirst.org/ftc-premier) at the Big E in West Springfield, MA, April 17-18. Sent 5 students and 2 mentors.",
         "donation_recipient": "Bolts and Biscuits",
         "expenses": [
           { "category": "Event registration", "amount": 1500.00, "actual": 1500.00 },

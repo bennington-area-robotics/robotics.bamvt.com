@@ -21,9 +21,9 @@ Thanks to your support, both teams competed in their post-season events — Cook
   <button class="carousel-btn pause" title="Pause slideshow">⏸</button>
 </div>
 
-**Team 18650 Cookie Clickers** won the [FTC Vermont Championship](/events/state-championship-2026) and represented Vermont at the [FIRST Championship](/events/first-championship-2026) in Houston, TX, becoming the first team from southwestern Vermont to reach Worlds. [Read about the trip](/blog/houston-2026/) and their [Engineering Portfolio](/portfolio). Sending 6 students and 3 mentors to Houston cost an estimated **$20,000**, covering registration, flights, lodging, and meals.
+**Team 18650 Cookie Clickers** won the [FTC Vermont Championship](/events/state-championship-2026) and represented Vermont at the [FIRST Championship](/events/first-championship-2026) in Houston, TX, becoming the first team from southwestern Vermont to reach Worlds. [Read about the trip](/blog/houston-2026/) and their [Engineering Portfolio](/portfolio). Sending 6 students and 5 mentors and chaperones to Houston cost nearly **$24,000** — $18,515 in cash against a $20,000 budget, plus $5,432 of donated airfare — covering registration, flights, lodging, and meals.
 
-**Team 32473 Bennington Bolts and Biscuits** qualified for the [New England Premier Event](https://www.nefirst.org/ftc-premier){:target="_blank"} at the Big E in West Springfield, MA. Sending 5 students and 2 mentors cost an estimated **$3,500**, covering registration, lodging, and meals.
+**Team 32473 Bennington Bolts and Biscuits** qualified for the [New England Premier Event](https://www.nefirst.org/ftc-premier){:target="_blank"} at the Big E in West Springfield, MA. Sending 5 students and 2 mentors cost **$2,460** against a $3,500 budget, covering registration, lodging, and robot parts.
 
 Cookie Clickers was formed in 2019 as a middle school team. Some of its founding members are now seniors, and this was their first trip to the World Championship. Bolts and Biscuits was formed in 2025 and qualified for the New England Premier Event in its first season. Your support made these trips possible.
 
