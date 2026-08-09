@@ -25,12 +25,12 @@ principles:
   - slug: Ambition needs discipline.
     summary: >-
       Big ideas require a scope, a deadline, and a fallback. "Trust me, I'll get it done" is not a plan.
-  - slug: Respect everyone in the room.
+  - slug: Respect runs both ways.
     summary: >-
-      Show up and do the work, and you belong. Share what you know, and lead through example. Learn everyone's name.
+      Treat others the way you want to be treated. Learn everyone's name. Share what you know, and lead through example.
   - slug: Leave room for others.
     summary: >-
-      Match your volume to the room. Let other people speak. 
+      Match your volume to the room. Allow silence between comments.
   - slug: Keep robotics first.
     summary: >-
       Phones are for build references and build photos, not entertainment.
@@ -176,7 +176,7 @@ And if you see a risk to the build — your own or someone else's — say so. Pr
 
 ### {{ page.principles[7].slug }}
 
-This is a team of people who came for the same thing — the robot, the build, the competition — and that shared work is what earns you a place here. It doesn't matter where you go to school, what you look like, who your family is, or what you believe outside this room. Show up, do the work, and treat the people around you well, and you belong. Treat others the way you would want to be treated.
+This is a team of people who came for the same thing — the robot, the build, the competition — and that shared work is what earns you a place here. It doesn't matter where you go to school, what you look like, who your family is, or what you believe outside this room. Show up, do the work, and treat the people around you well, and you belong. Treat others the way you would want to be treated. Learn people's names — all of them. Look up often enough to notice who needs help or is being left out.
 
 Start with the adults. The team runs on the time of people who are not getting paid to be there — the technical mentors, the parents driving carpools, the volunteers helping at events, and the parents who coach. All of them deserve the same respect. For students whose parent is a coach: respect your parent here as much as you respect any other coach. On the floor, they are doing the job.
 
@@ -186,7 +186,7 @@ Respect runs between students too, and in both directions. If you are new, learn
 
 We share a shop, and away from the shop we share hotels, vans, and convention halls. Everyone gets through those spaces more easily when people notice the effect they are having on the room.
 
-A conversation at full volume forces everyone else to listen; match your volume to the space and the moment. If you are talking, someone else is not — notice when you are taking more than your share, and pull back. Allow silence between comments. Look up from your own work often enough to see what is happening around you: who needs help, who is being left out, what the team is trying to get done. And learn people's names — all of them. You should know the name of everyone in the program.
+A conversation at full volume forces everyone else to listen; match your volume to the space and the moment. If you are talking, someone else is not — notice when you are taking more than your share, and pull back. Allow silence between comments.
 
 ### {{ page.principles[9].slug }}
 
