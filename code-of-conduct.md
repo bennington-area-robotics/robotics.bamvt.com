@@ -2,6 +2,76 @@
 layout: default
 title: Code of Conduct
 description: How members of Bennington Area Robotics conduct themselves — attendance, ownership, ambition, respect, and the standard of Gracious Professionalism set by FIRST.
+# Canonical short-form copy used by this page and the printable fliers.
+principles:
+  - slug: Attend meetings consistently.
+    summary: >-
+      Show up! Being present and engaged is how a team become a team. If work, family, or a ride gets in the way, tell a coach early.
+  - slug: Show your best side.
+    summary: >-
+      Be friendly and courteous. Use clean language. Practice humility. Say "I don't know" and "I was wrong" when they're true. Leave school and politics at the door.
+  - slug: Make yourself useful.
+    summary: >-
+      See what needs doing and do it. If you cannot find the next thing, ask. Put tools away, sort parts, clean up scraps.
+  - slug: Mean what you say.
+    summary: >-
+      Say yes, no, or an honest maybe — and then follow through on your yes. Robotics is hard! Be dependable and make it easier.
+  - slug: Debug the problem, not the person.
+    summary: >-
+      "My part works" is a hypothesis, not a defense. Ask what happened and where our assumptions disagreed.
+  - slug: Own your mistakes.
+    summary: >-
+      "I forgot." "I miscounted." "I dropped it." Make a mental note and prevent the next one.
+  - slug: Ambition needs discipline.
+    summary: >-
+      Big ideas require a scope, a deadline, and a fallback. "Trust me, I'll get it done" is not a plan.
+  - slug: Respect everyone in the room.
+    summary: >-
+      Show up and do the work, and you belong. Share what you know, and lead through example.
+  - slug: Leave room for others.
+    summary: >-
+      Match your volume to the room. Let other people speak. Learn everyone's name.
+  - slug: Keep robotics first.
+    summary: >-
+      Phones are for build references and build photos, not entertainment.
+shop_safety:
+  - slug: Protect Your Eyes
+    short: >-
+      **Eye protection goes on whenever a machine is running** — and whenever you are within reach of someone running one. There is no "I'm just doing one cut."
+    full: >-
+      **Eye protection goes on whenever a machine is running** — the bandsaw, the miter saw, the drill press, the CNC — and whenever you are within reach of someone else running one. Safety glasses live by the door. There is no "I'm just doing one cut."
+  - slug: Train on Each Tool
+    short: >-
+      **No power tool until a coach trains you and signs you off on that specific tool.** Each sign-off goes on the shop wall. Knowing the drill does not mean you know the bandsaw.
+    full: >-
+      **No one operates a power tool until a coach has trained them on that specific tool and signed off.** The bandsaw, the miter saw, the drill press, the metal brake, and the CNC each get their own sign-off, logged on the sign-off sheet on the shop wall — tools down the rows, students across the columns, a mentor's initials in the cell. Knowing the drill does not mean you know the bandsaw.
+  - slug: Dress for the Tool
+    short: >-
+      **Closed-toe shoes, every time.** Tie back long hair. Remove loose sleeves, drawstrings, lanyards, and jewelry before stepping up to anything that spins or cuts.
+    full: >-
+      **Closed-toe shoes in the shop, always.** Tie back long hair, push up or remove loose sleeves, and take off dangling drawstrings, lanyards, and jewelry before you step up to anything that spins or cuts.
+  - slug: One Operator
+    short: >-
+      **One student operates a machine at a time.** Everyone else stays close enough to see, not to reach.
+    full: >-
+      **Only one student is allowed to operate a machine at a time,** and only their hands should be near it. Everyone else watches from a safe distance — close enough to see, not to reach.
+  - slug: Hands Off Prints
+    short: >-
+      **Don't reach into a running printer** or touch someone else's print. If it will run after the meeting, tell a coach — the same rule as a battery on the charger.
+    full: >-
+      **The 3D printers run hot and often run unattended.** Don't reach into a printing A1, don't cancel or move someone else's print, and if you start a print that will outlast the meeting, tell a coach so someone knows it's running — the same rule as a battery left on the charger.
+  - slug: Broken Stays Off
+    full: >-
+      **If a tool is broken, tagged out, or mid-repair, it stays off.** Don't be the one who decides it's fine. Report it if you're the first to notice.
+flier_copy:
+  principles_standard: We teach by FIRST's standard of Gracious Professionalism.
+  principles_quote: >-
+    Gracious professionals learn and compete like crazy, but treat one another with respect and kindness in the process.
+  principles_quote_author: Dr. Woodie Flowers
+  safety_subtitle: The shop has real tools, and real tools bite.
+  safety_banner: When in doubt, stop and ask.
+  safety_reassurance: >-
+    No one has ever been in trouble here for asking whether something is safe.
 ---
 
 <div class="highlight">
@@ -23,20 +93,12 @@ We teach by FIRST's standard of **Gracious Professionalism**.
 
 We hold each other to that. In short:
 
-1. **Attend meetings consistently.**
-2. **Show your best side.**
-3. **Make yourself useful.**
-4. **Mean what you say.**
-5. **Find the cause, not the culprit.**
-6. **Own your mistakes.**
-7. **Ambition needs discipline.**
-8. **Respect everyone in the room.**
-9. **Notice the people around you.**
-10. **Robotics first, socializing second.**
+{% for principle in page.principles %}{{ forloop.index }}. **{{ principle.slug }}.**
+{% endfor %}
 
 The rest of this page spells out what that means.
 
-### Attend meetings consistently
+### {{ page.principles[0].slug }}
 
 The regular meeting schedule is posted on the [home page](/#meeting-schedule). The season runs in pulses, and during those pulses we meet three or four times a week. This is when attendance matters most:
 
@@ -45,7 +107,7 @@ The regular meeting schedule is posted on the [home page](/#meeting-schedule). T
 
 A student who is present at regular meetings but absent during the pulses has not really been on the team. The build is when the team becomes a team. When you miss it, the team misses more than a pair of hands — it misses whatever only you would have thought of or caught. If work, family, or a ride problem makes a pulse genuinely hard, tell a coach early and we will find a way. It's the unexpected no show that hurts the team, not the honest conflict.
 
-### Show your best side
+### {{ page.principles[1].slug }}
 
 Walk through the door ready to show your best side.
 
@@ -56,7 +118,7 @@ Walk through the door ready to show your best side.
 - **Leave school at the door.** What you build here should follow you to school — not the other way around.
 - **Leave politics at the door.** Save your arguments for what the field and bench can referee.
 
-### Make yourself useful
+### {{ page.principles[2].slug }}
 
 The shop runs on people who see what needs doing and do it. Tools go back where they belong. Parts get sorted. Scrap gets cleared. The printer gets reloaded. None of this is glamorous. None of it requires permission.
 
@@ -68,7 +130,7 @@ When you arrive, find a coach or senior student and check in. Look around for wh
 
 Before you leave, clean your station. Return tools to where they belong. Tell a coach or senior student that you are heading out, and confirm when you will be back. If you have something running — a 3D print, a battery on the charger — make sure someone knows.
 
-### Mean what you say
+### {{ page.principles[3].slug }}
 
 As a team we depend on each other, so let your yes be yes and your no be no. The robot is hard enough without teammates you cannot count on.
 
@@ -78,7 +140,7 @@ When circumstances genuinely change, say so as early as you can. If you simply c
 
 Promise what is in your hands. You can promise to show up, to do the work, to test before the deadline. You cannot promise the robot will win — no one can. We hold each other to conduct and effort, not to outcomes.
 
-### Find the cause, not the culprit
+### {{ page.principles[4].slug }}
 
 When something goes wrong — the robot won't run, a part doesn't fit, the code does the wrong thing — do not cast blame. First, find the cause, then work toward the fix. The energy spent deciding whose fault it was is energy not spent on the solution.
 
@@ -90,7 +152,7 @@ The subtlest blame is "my part works" — it assigns the fault to everyone else 
 
 Treat "my part works" as a hypothesis, not a defense: put the part back on the bench and test it under the conditions where the robot failed. The useful question is not "whose part?" but "where did our assumptions disagree?"
 
-### Own your mistakes
+### {{ page.principles[5].slug }}
 
 Everyone forgets things. Everyone misses a meeting time, miscounts a part, or forgets to start a 3D print the night before. None of that is disqualifying on its own. It is part of doing hard things alongside school and life.
 
@@ -100,7 +162,7 @@ This includes accidents with equipment. If you drop a driver station, a control 
 
 The opposite — minimizing, deflecting, getting defensive, pretending it didn't happen — does not protect you. It just guarantees the same mistake will happen again, in front of more people.
 
-### Ambition needs discipline
+### {{ page.principles[6].slug }}
 
 Bring your ideas. We want students who want to do hard things. Robotics should be fun and interesting, and competition should help focus the mind, not make the work small.
 
@@ -112,7 +174,7 @@ Three redesigns are not three risks; every joint between them is a risk too. So:
 
 And if you see a risk to the build — your own or someone else's — say so. Protecting the build is everyone's job, not just the mentors'.
 
-### Respect everyone in the room
+### {{ page.principles[7].slug }}
 
 This is a team of people who came for the same thing — the robot, the build, the competition — and that shared work is what earns you a place here. It doesn't matter where you go to school, what you look like, who your family is, or what you believe outside this room. Show up, do the work, and treat the people around you well, and you belong. Treat others the way you would want to be treated.
 
@@ -120,13 +182,13 @@ Start with the adults. The team runs on the time of people who are not getting p
 
 Respect runs between students too, and in both directions. If you are new, learn from the students who have been here longer — watch how they work, ask questions, and find ways to be useful. Standing matters here, and it is earned by showing up and contributing. If you are one of those senior students, that standing is a responsibility, not a privilege. You direct newer students because you know the shop, not because you outrank them. Teach, don't boss. Explain the why when there's time. The younger student watching you is learning how this team treats people — from you.
 
-### Notice the people around you
+### {{ page.principles[8].slug }}
 
 We share a shop, and away from the shop we share hotels, vans, and convention halls. Everyone gets through those spaces more easily when people notice the effect they are having on the room.
 
 A conversation at full volume forces everyone else to listen; match your volume to the space and the moment. If you are talking, someone else is not — notice when you are taking more than your share, and pull back. Allow silence between comments. Look up from your own work often enough to see what is happening around you: who needs help, who is being left out, what the team is trying to get done. And learn people's names — all of them. You should know the name of everyone in the program.
 
-### Robotics first, socializing second
+### {{ page.principles[9].slug }}
 
 Our time together is short, and the work is harder than it looks from the outside. While we work, aim for **80% robotics, 20% socializing.** Socializing helps build the team, but it is not the main event.
 
@@ -182,13 +244,8 @@ The principles above are how we try to work. The rules below are not optional. T
 
 **Shop safety.** The shop has real tools, and real tools bite.
 
-- Eye protection goes on whenever a machine is running — the bandsaw, the miter saw, the drill press, the CNC — and whenever you are within reach of someone else running one. Safety glasses live by the door. There is no "I'm just doing one cut."
-- No one operates a power tool until a coach has trained them on that specific tool and signed off. The bandsaw, the miter saw, the drill press, the metal brake, and the CNC each get their own sign-off, logged on the sign-off sheet on the shop wall — tools down the rows, students across the columns, a mentor's initials in the cell. Knowing the drill does not mean you know the bandsaw.
-- Closed-toe shoes in the shop, always. Tie back long hair, push up or remove loose sleeves, and take off dangling drawstrings, lanyards, and jewelry before you step up to anything that spins or cuts.
-- Only one student is allowed to operate a machine at a time, and only their hands should be near it. Everyone else watches from a safe distance — close enough to see, not to reach.
-- The 3D printers run hot and often run unattended. Don't reach into a printing A1, don't cancel or move someone else's print, and if you start a print that will outlast the meeting, tell a coach so someone knows it's running — the same rule as a battery left on the charger.
-- If a tool is broken, tagged out, or mid-repair, it stays off. Don't be the one who decides it's fine. Report it if you're the first to notice.
-- When in doubt, stop and ask. No one has ever been in trouble here for asking whether something is safe.
+{% for rule in page.shop_safety %}- {{ rule.full }}
+{% endfor %}- **{{ page.flier_copy.safety_banner }}** {{ page.flier_copy.safety_reassurance }}
 
 **Travel and competitions.** When we travel to events, especially overnight:
 

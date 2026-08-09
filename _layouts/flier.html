@@ -1,0 +1,206 @@
+{% assign source_page = site.pages | where: "path", page.source_path | first %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }} — Bennington Area Robotics (one-pager)</title>
+<style>
+  :root {
+    --primary: #6d87b8;
+    --accent: #e63946;
+    --ink: #222;
+    --muted: #666;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: var(--ink);
+    background: #fff;
+    line-height: 1.3;
+  }
+  .page {
+    width: 8.5in;
+    min-height: 11in;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding-bottom: 14px;
+  }
+  header img { width: 74px; height: 74px; border-radius: 50%; }
+  .titles { flex: 1; }
+  .team {
+    font-size: 15px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--primary);
+    font-weight: 700;
+  }
+
+  .principles .page { padding: 0.55in 0.6in 0.45in; }
+  .principles header { border-bottom: 3px solid var(--primary); }
+  .principles h1 {
+    font-size: 38px;
+    line-height: 1;
+    margin-top: 3px;
+    color: var(--ink);
+  }
+  .principles .standard {
+    text-align: right;
+    font-size: 13px;
+    color: var(--muted);
+    max-width: 2.4in;
+    font-style: italic;
+  }
+  .principles .standard strong { color: var(--accent); font-style: normal; }
+  .principles .items {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px 26px;
+    flex: 1;
+    align-content: space-between;
+  }
+  .principles .item {
+    display: grid;
+    grid-template-columns: 38px 1fr;
+    gap: 14px;
+    align-items: start;
+  }
+  .principles .num {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: #fff;
+    font-weight: 700;
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .principles .item h2 { font-size: 19px; line-height: 1.15; color: var(--ink); }
+  .principles .item p { font-size: 15px; color: var(--muted); margin-top: 3px; }
+  .principles footer {
+    margin-top: 20px;
+    border-top: 2px solid var(--primary);
+    padding-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 13px;
+    color: var(--muted);
+  }
+  .principles footer .quote { max-width: 5.4in; }
+  .principles footer .teams { text-align: right; white-space: nowrap; }
+
+  .safety { --ink: #1a1a1a; --muted: #555; }
+  .safety .page { padding: 0.55in 0.65in 0.45in; }
+  .safety header { border-bottom: 5px solid var(--accent); }
+  .safety h1 {
+    font-size: 50px;
+    line-height: 0.95;
+    margin-top: 3px;
+    color: var(--accent);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .safety .subtitle { font-size: 16px; color: var(--muted); margin-top: 5px; }
+  .safety .rules {
+    margin-top: 22px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .safety .rule {
+    display: grid;
+    grid-template-columns: 168px 1fr;
+    gap: 16px;
+    align-items: start;
+  }
+  .safety .tag {
+    background: var(--primary);
+    color: #fff;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.35px;
+    text-transform: uppercase;
+    padding: 6px 9px;
+    border-radius: 4px;
+    white-space: nowrap;
+    width: 100%;
+    text-align: center;
+  }
+  .safety .rule p { font-size: 18px; line-height: 1.32; padding-top: 2px; }
+  .safety .rule strong { color: var(--ink); }
+  .safety .banner {
+    margin-top: 22px;
+    background: var(--accent);
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 23px;
+    padding: 16px;
+    border-radius: 6px;
+    letter-spacing: 0.3px;
+  }
+  .safety footer {
+    margin-top: 12px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--muted);
+  }
+
+  @page { size: letter portrait; margin: 0; }
+  @media print { body { margin: 0; } .page { margin: 0; } }
+</style>
+</head>
+<body class="{{ page.flier_type }}">
+<div class="page">
+  <header>
+    <img src="{{ '/images/chip-180x180-round.png' | relative_url }}" alt="Bennington Area Robotics">
+    <div class="titles">
+      <div class="team">Bennington Area Robotics</div>
+      <h1>{{ page.title }}</h1>
+      {% if page.flier_type == "safety" %}
+      <div class="subtitle">{{ source_page.flier_copy.safety_subtitle }}</div>
+      {% endif %}
+    </div>
+    {% if page.flier_type == "principles" %}
+    <div class="standard">{{ source_page.flier_copy.principles_standard | replace: "Gracious Professionalism", "<strong>Gracious Professionalism</strong>" }}</div>
+    {% endif %}
+  </header>
+
+  {% if page.flier_type == "principles" %}
+  <div class="items">
+    {% for principle in source_page.principles %}
+    <div class="item"><div class="num">{{ forloop.index }}</div><div><h2>{{ principle.slug }}.</h2><p>{{ principle.summary }}</p></div></div>
+    {% endfor %}
+  </div>
+
+  <footer>
+    <div class="quote">&ldquo;{{ source_page.flier_copy.principles_quote }}&rdquo; — {{ source_page.flier_copy.principles_quote_author }}</div>
+    <div class="teams">Cookie Clickers 18650<br>Bolts &amp; Biscuits 32473</div>
+  </footer>
+  {% else %}
+  <div class="rules">
+    {% for rule in source_page.shop_safety %}
+    {% assign rule_copy = rule.short | default: rule.full %}
+    <div class="rule"><span class="tag">{{ rule.slug }}</span>{{ rule_copy | markdownify }}</div>
+    {% endfor %}
+  </div>
+
+  <div class="banner">{{ source_page.flier_copy.safety_banner }}<br>{{ source_page.flier_copy.safety_reassurance }}</div>
+  <footer>Cookie Clickers 18650 &nbsp;·&nbsp; Bolts &amp; Biscuits 32473</footer>
+  {% endif %}
+</div>
+</body>
+</html>
