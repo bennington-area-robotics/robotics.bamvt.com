@@ -12,25 +12,25 @@ principles:
       Be friendly and courteous. Use clean language. Practice humility. Say "I don't know" and "I was wrong" when they're true. Leave school and politics at the door.
   - slug: Make yourself useful.
     summary: >-
-      See what needs doing and do it. If you cannot find the next thing, ask. Put tools away, sort parts, clean up scraps.
+      See what needs doing and do it. If you cannot find the next task, ask. When in doubt, put tools away, sort parts, clean up scraps.
   - slug: Mean what you say.
     summary: >-
-      Say yes, no, or an honest maybe — and then follow through on your yes. Robotics is hard! Be dependable and make it easier.
-  - slug: Debug the problem, not the person.
+      Let your yes be yes, your no be no, and your maybe have a reason. Robotics is hard enough as it is. Be dependable and make it easier.
+  - slug: Find the root cause before casting blame.
     summary: >-
-      "My part works" is a hypothesis, not a defense. Ask what happened and where our assumptions disagreed.
+      "My part works" is a hypothesis to test. Ask what happened and where our assumptions disagreed.
   - slug: Own your mistakes.
     summary: >-
-      "I forgot." "I miscounted." "I dropped it." Make a mental note and prevent the next one.
+      "I forgot." "I miscounted." "I dropped it." Make a mental note and prevent the next mistake.
   - slug: Ambition needs discipline.
     summary: >-
       Big ideas require a scope, a deadline, and a fallback. "Trust me, I'll get it done" is not a plan.
   - slug: Respect everyone in the room.
     summary: >-
-      Show up and do the work, and you belong. Share what you know, and lead through example.
+      Show up and do the work, and you belong. Share what you know, and lead through example. Learn everyone's name.
   - slug: Leave room for others.
     summary: >-
-      Match your volume to the room. Let other people speak. Learn everyone's name.
+      Match your volume to the room. Let other people speak. 
   - slug: Keep robotics first.
     summary: >-
       Phones are for build references and build photos, not entertainment.
@@ -93,7 +93,7 @@ We teach by FIRST's standard of **Gracious Professionalism**.
 
 We hold each other to that. In short:
 
-{% for principle in page.principles %}{{ forloop.index }}. **{{ principle.slug }}.**
+{% for principle in page.principles %}{{ forloop.index }}. **{{ principle.slug }}**
 {% endfor %}
 
 The rest of this page spells out what that means.
