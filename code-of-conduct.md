@@ -1,12 +1,13 @@
 ---
 layout: default
 title: Code of Conduct
+version: "1.0"
 description: How members of Bennington Area Robotics conduct themselves — attendance, ownership, ambition, respect, and the standard of Gracious Professionalism set by FIRST.
 # Canonical short-form copy used by this page and the printable fliers.
 principles:
   - slug: Attend meetings consistently.
     summary: >-
-      Show up! Being present and engaged is how a team become a team. If work, family, or a ride gets in the way, tell a coach early.
+      Show up! Being present and engaged is how a team becomes a team. If work, family, or a ride gets in the way, tell a coach early.
   - slug: Show your best side.
     summary: >-
       Be friendly and courteous. Use clean language. Practice humility. Say "I don't know" and "I was wrong" when they're true. Leave school and politics at the door.
@@ -75,7 +76,7 @@ flier_copy:
 ---
 
 <div class="highlight">
-<strong>DRAFT</strong> — this code of conduct is a working draft, circulating for feedback from senior students, coaches, and families. Nothing on this page is in effect yet.
+<strong>Version {{ page.version }}</strong>
 </div>
 
 ## Code of Conduct
@@ -150,7 +151,7 @@ Ask the slower questions instead: what happened, what conditions made it possibl
 
 The subtlest blame is "my part works" — it assigns the fault to everyone else by exclusion. But the robot does not run on the sum of perfect parts; it runs on parts that work together, and the joints between them are where most failures live. If your care ends at the edge of your own subsystem, the place where the robot actually breaks belongs to no one.
 
-Treat "my part works" as a hypothesis, not a defense: put the part back on the bench and test it under the conditions where the robot failed. The useful question is not "whose part?" but "where did our assumptions disagree?"
+Treat "my part works" as a hypothesis to test, not a defense: put the part back on the bench and test it under the conditions where the robot failed. The useful question is not "whose part?" but "where did our assumptions disagree?"
 
 ### {{ page.principles[5].slug }}
 
