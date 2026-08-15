@@ -16,7 +16,7 @@ principles:
       See what needs doing and do it. If you cannot find the next task, ask. When in doubt, put tools away, sort parts, clean up scraps.
   - slug: Mean what you say.
     summary: >-
-      Let your yes be yes, your no be no, and your maybe have a reason. Robotics is hard enough as it is. Be dependable and make it easier.
+      Let your "yes" be yes, your "no" be no, and your "maybe" have a clear reason. Robotics is hard enough as it is. Be dependable and make it easier.
   - slug: Find the root cause before casting blame.
     summary: >-
       "My part works" is a hypothesis to test. Ask what happened and where our assumptions disagreed.
