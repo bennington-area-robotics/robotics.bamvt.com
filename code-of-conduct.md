@@ -65,7 +65,7 @@ shop_safety:
     full: >-
       **If a tool is broken, tagged out, or mid-repair, it stays off.** Don't be the one who decides it's fine. Report it if you're the first to notice.
 flier_copy:
-  principles_standard: We teach by FIRST's standard of Gracious Professionalism.
+  principles_standard: We follow FIRST's standard of Gracious Professionalism.
   principles_quote: >-
     Gracious professionals learn and compete like crazy, but treat one another with respect and kindness in the process.
   principles_quote_author: Dr. Woodie Flowers
@@ -85,7 +85,7 @@ Bennington Area Robotics is a place where students design, build, and compete. O
 
 Students come to robotics for many reasons: the robot itself, programming, CAD, building things, competition, and the chance to work with other students of shared interest. This is the draw. We then use their interests to build the habits that make the work possible: perseverance, collaboration, overcoming failure, learning from mistakes, showing up when you said you would, putting the tools back before you leave. These habits are easier to build at fifteen than to repair at thirty, and will compound for life.
 
-We teach by FIRST's standard of **Gracious Professionalism**.
+We follow FIRST's standard of **Gracious Professionalism**.
 
 {% include quote.html
    text="Gracious professionals learn and compete like crazy, but treat one another with respect and kindness in the process. They avoid treating anyone like losers. No chest thumping tough talk, but no sticky-sweet platitudes either. Knowledge, competition, and empathy are comfortably blended."
