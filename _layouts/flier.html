@@ -17,13 +17,15 @@
   body {
     font-family: "Helvetica Neue", Arial, sans-serif;
     color: var(--ink);
-    background: #fff;
+    background: #eef1f5;
     line-height: 1.3;
   }
   .page {
     width: 8.5in;
+    max-width: 100%;
     min-height: 11in;
     margin: 0 auto;
+    background: #fff;
     display: flex;
     flex-direction: column;
   }
@@ -159,8 +161,88 @@
     color: var(--muted);
   }
 
+  @media screen {
+    .page { box-shadow: 0 3px 18px rgba(24, 35, 52, 0.14); }
+  }
+
+  @media screen and (max-width: 700px) {
+    .page {
+      width: 100%;
+      min-height: 100vh;
+    }
+    .principles .page,
+    .safety .page { padding: 24px 20px; }
+    header {
+      align-items: flex-start;
+      gap: 12px;
+      padding-bottom: 12px;
+      flex-wrap: wrap;
+    }
+    header img { width: 52px; height: 52px; }
+    .team { font-size: 11px; letter-spacing: 1.7px; }
+    .principles h1 { font-size: clamp(30px, 10vw, 38px); }
+    .principles .standard {
+      flex-basis: 100%;
+      max-width: none;
+      padding-left: 64px;
+      text-align: left;
+      font-size: 12px;
+    }
+    .principles .items {
+      margin-top: 18px;
+      gap: 18px;
+      align-content: start;
+    }
+    .principles .item {
+      grid-template-columns: 32px minmax(0, 1fr);
+      gap: 11px;
+    }
+    .principles .num {
+      width: 32px;
+      height: 32px;
+      font-size: 16px;
+    }
+    .principles .item h2 { font-size: 17px; }
+    .principles .item p { font-size: 14px; line-height: 1.4; }
+    .principles footer {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .principles footer .quote { max-width: none; }
+    .principles footer .teams {
+      text-align: left;
+      white-space: normal;
+    }
+    .safety h1 { font-size: clamp(34px, 12vw, 50px); }
+    .safety .subtitle { font-size: 14px; }
+    .safety .rules { margin-top: 18px; gap: 22px; }
+    .safety .rule {
+      grid-template-columns: 1fr;
+      gap: 7px;
+    }
+    .safety .tag { width: fit-content; }
+    .safety .rule p { font-size: 16px; }
+    .safety .banner {
+      margin-top: 24px;
+      padding: 14px 12px;
+      font-size: 19px;
+    }
+  }
+
   @page { size: letter portrait; margin: 0; }
-  @media print { body { margin: 0; } .page { margin: 0; } }
+  @media print {
+    body { margin: 0; background: #fff; }
+    .page {
+      width: 8.5in;
+      max-width: none;
+      min-height: 11in;
+      margin: 0;
+      box-shadow: none;
+    }
+    .principles .page { padding: 0.55in 0.6in 0.45in; }
+    .safety .page { padding: 0.55in 0.65in 0.45in; }
+  }
 </style>
 </head>
 <body class="{{ page.flier_type }}">
