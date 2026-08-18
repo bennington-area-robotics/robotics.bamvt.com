@@ -23,6 +23,19 @@ Team 32473 Bennington Bolts and Biscuits competed at the <strong>New England Pre
 
 <p style="text-align: center; font-style: italic; margin-top: 0;">Photos from the 2026 Vermont FTC State Championship, courtesy of UVM.</p>
 
+## Meeting Schedule
+
+- **Off-season summer meetings:** Sundays, 3:00 – 5:00 PM
+- **Regular season:** Sundays, 3:00 – 5:00 PM, and Wednesdays, 5:30 – 7:30 PM, beginning Sunday, September 13 after the season kickoff on Saturday, September 12
+
+**Location:** Beech Street School, 246 South Stream Road, Bennington VT 05201
+
+## Student Membership
+
+Regular-season membership for 2026–27 is **$250 per student**. The fee covers regular-season registration, uniforms, and pizza on Wednesday nights. It does not cover transportation or lodging for out-of-town events.
+
+<small>A sliding scale is available.</small>
+
 ## Upcoming Events
 
 - **Sat 9/12/2026** – Season Kickoff at Manchester Community Library, co-hosted with Manchester Machine Makers
@@ -35,12 +48,6 @@ Team 32473 Bennington Bolts and Biscuits competed at the <strong>New England Pre
 - **Sat 3/7/2026** – [Vermont Championship](events/state-championship-2026) at South Burlington HS
 - **Sun 2/15/2026** – [Northfield Qualifier](events/northfield-qualifier-2026) at Norwich University
 - **Sat 1/31/2026** – [Bennington Qualifier](events/bennington-qualifier-2026) at [MAUMS](https://maps.app.goo.gl/zE9WbCbWNENq3pGUA){:target="_blank"}
-
-## Meeting Schedule
-
-- **Off-season summer meetings:** Sundays, 3:00 – 5:00 PM
-
-**Location:** Beech Street School, 246 South Stream Road, Bennington VT 05201
 
 ## Teams
 

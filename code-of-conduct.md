@@ -294,7 +294,9 @@ Robotics is a place where your student's habits, both good and bad, show up in p
 
 The same habits work at home. When your student commits to a build day, hold them to their yes. When something goes wrong, ask what happened before asking whose fault it was. And when they admit a mistake without being cornered, notice it — that took practice!
 
-Joining involves a one-time onboarding fee, and scholarships are available — cost should never be the reason a student can't be here. If that is a concern for your family, tell us; we will sort it out, and we will keep it between us.
+Regular-season membership for 2026–27 is $250 per student. The fee covers regular-season registration, uniforms, and pizza on Wednesday nights. It does not cover transportation or lodging for out-of-town events.
+
+<small>A sliding scale is available.</small>
 
 If something difficult comes up — about your student, about us, or about the program — tell us early. We would rather hear it than miss it.
 
