@@ -228,6 +228,10 @@
       scroll-snap-type: x mandatory;
       scrollbar-width: none;
     }
+    .lightbox.viewport-zoomed .lightbox-stage {
+      overflow-x: hidden;
+      scroll-snap-type: none;
+    }
     .lightbox-stage::-webkit-scrollbar { display: none; }
     .lightbox-slide {
       flex: 0 0 100%;
@@ -260,7 +264,11 @@
     .lightbox-close {
       top: 1rem;
       right: 1rem;
+      top: max(1rem, env(safe-area-inset-top));
+      right: max(1rem, env(safe-area-inset-right));
       font-size: 1.5rem;
+      min-width: 44px;
+      min-height: 44px;
       padding: 0.4rem 0.75rem;
     }
     .lightbox-prev, .lightbox-next {
@@ -269,8 +277,14 @@
       font-size: 2.5rem;
       padding: 0.5rem 0.75rem;
     }
-    .lightbox-prev { left: 1rem; }
-    .lightbox-next { right: 1rem; }
+    .lightbox-prev {
+      left: 1rem;
+      left: max(1rem, env(safe-area-inset-left));
+    }
+    .lightbox-next {
+      right: 1rem;
+      right: max(1rem, env(safe-area-inset-right));
+    }
     .lightbox.single .lightbox-prev,
     .lightbox.single .lightbox-next { display: none; }
     .lightbox.single .lightbox-stage { overflow-x: hidden; }
@@ -812,6 +826,16 @@
   var currentImages = [];
   var currentSyncFn = null;
 
+  function syncViewportZoom() {
+    var zoomed = lightbox.classList.contains('open') &&
+      window.visualViewport && window.visualViewport.scale > 1.01;
+    lightbox.classList.toggle('viewport-zoomed', !!zoomed);
+  }
+
+  if (window.visualViewport) {
+    window.visualViewport.addEventListener('resize', syncViewportZoom);
+  }
+
   function makeSlide(src, alt) {
     var slide = document.createElement('div');
     slide.className = 'lightbox-slide';
@@ -839,6 +863,7 @@
     fragment.appendChild(firstClone);
     stage.appendChild(fragment);
     lightbox.classList.add('open');
+    syncViewportZoom();
     document.body.style.overflow = 'hidden';
     requestAnimationFrame(function() {
       stage.scrollTo({left: (index + 1) * stage.clientWidth, behavior: 'auto'});
@@ -847,6 +872,7 @@
 
   function closeLightbox() {
     lightbox.classList.remove('open');
+    lightbox.classList.remove('viewport-zoomed');
     document.body.style.overflow = '';
     stage.innerHTML = '';
   }
@@ -872,8 +898,7 @@
 
   document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
   lightbox.addEventListener('click', function(e) {
-    if (e.target.closest('button')) return;
-    closeLightbox();
+    if (e.target === lightbox) closeLightbox();
   });
   document.getElementById('lightbox-prev').addEventListener('click', function(e) {
     e.stopPropagation();
