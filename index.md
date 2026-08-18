@@ -23,6 +23,11 @@ Team 32473 Bennington Bolts and Biscuits competed at the <strong>New England Pre
 
 <p style="text-align: center; font-style: italic; margin-top: 0;">Photos from the 2026 Vermont FTC State Championship, courtesy of UVM.</p>
 
+## Upcoming Events
+
+- **Sat 9/12/2026** – Season Kickoff at Manchester Community Library, co-hosted with Manchester Machine Makers
+- **Sat 1/23/2027** – Bennington Qualifier at MAUMS
+
 ## Past Events
 
 - **Wed–Sat 4/29–5/2/2026** – [FIRST Championship](/events/first-championship-2026) in Houston TX (18650)
@@ -33,8 +38,7 @@ Team 32473 Bennington Bolts and Biscuits competed at the <strong>New England Pre
 
 ## Meeting Schedule
 
-- **Sundays** 2:00 – 5:00 PM
-- **Wednesdays** 5:00 – 8:00 PM
+- **Off-season summer meetings:** Sundays, 3:00 – 5:00 PM
 
 **Location:** Beech Street School, 246 South Stream Road, Bennington VT 05201
 

@@ -3,6 +3,11 @@ layout: default
 title: Events
 ---
 
+## Upcoming Events
+
+- **Sat 9/12/2026** — Season Kickoff at Manchester Community Library, co-hosted with Manchester Machine Makers
+- **Sat 1/23/2027** — Bennington Qualifier at MAUMS, Bennington
+
 ## 2025–2026 Season Events
 
 - **Wed–Sat 4/29–5/2/2026** — [FIRST Championship](/events/first-championship-2026) in Houston TX *(18650)*
