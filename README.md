@@ -38,6 +38,24 @@ This is a [Jekyll](https://jekyllrb.com/) site hosted on GitHub Pages. Pages are
 2. Add navigation link in `_layouts/default.html` within the `<nav>` element
 3. Commit to `main`
 
+### Adding a Header Image
+
+Any page or blog post can use the shared responsive hero by adding these front matter fields:
+
+```yaml
+banner_image: /images/example.jpg
+og_image: /images/example.jpg
+banner_position: 50% 40%
+banner_position_mobile: 65% 50%
+```
+
+`banner_position` controls the crop's focal point on wider screens. Use
+`banner_position_mobile` when the subject needs a different crop on phones. The first
+percentage moves the image left/right and the second moves it up/down. Keep important
+subjects away from the image edges and verify the result at phone, tablet, and desktop
+widths. `og_image` is optional but recommended so the same image appears in social
+previews.
+
 ### Local Preview (Optional)
 
 ```bash

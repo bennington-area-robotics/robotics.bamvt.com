@@ -68,14 +68,15 @@
     }
     header nav {
       margin-top: 0.75rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem 1.25rem;
     }
     nav a {
       color: rgba(255, 255, 255, 0.8);
       text-decoration: none;
-      margin-right: 1.25rem;
       padding-bottom: 0.25rem;
-      display: inline-block;
-      margin-top: 0.4rem;
+      display: block;
       border-bottom: 2px solid transparent;
       transition: color 0.2s, border-color 0.2s;
     }
@@ -573,94 +574,70 @@
       cursor: pointer;
     }
     /* Banner / hero image */
-    .has-banner {
+    .site-hero {
       position: relative;
+      min-height: clamp(30rem, 56vw, 39rem);
+      display: flex;
+      flex-direction: column;
+      color: white;
+      background-color: #1f2c22;
+      background-image:
+        linear-gradient(to bottom, rgba(5, 7, 12, 0.72) 0, rgba(5, 7, 12, 0.22) 46%, rgba(5, 7, 12, 0.82) 100%),
+        var(--banner-image);
+      background-size: cover;
+      background-position: var(--banner-position, 50% 50%);
     }
-    .has-banner header {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 2;
-      background: linear-gradient(rgba(0,0,0,0.45), transparent);
+    .site-hero header {
+      position: relative;
+      z-index: 1;
+      background: transparent;
       margin-bottom: 0;
     }
-    .banner {
+    .hero-content {
       position: relative;
-      width: 100%;
+      z-index: 1;
+      flex: 1;
       display: flex;
-      justify-content: center;
-      background: var(--primary);
-      overflow: hidden;
-    }
-    .banner img {
+      flex-direction: column;
+      justify-content: flex-end;
       width: 100%;
-      max-width: 1920px;
-      height: 380px;
-      object-fit: cover;
-      object-position: 50% 25%;
-      display: block;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
     }
-    @media (min-width: 768px) {
-      .banner img { height: 624px; }
-    }
-    .banner-overlay {
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      padding: 2.5rem 1.5rem 1.25rem;
-      background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
-      color: white;
-      pointer-events: none;
-    }
-    .banner-overlay-title {
+    .hero-title {
       margin: 0;
-      font-size: 1.65rem;
-      line-height: 1.15;
-      font-weight: 700;
-      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+      max-width: 18ch;
+      color: white;
+      border: 0;
+      padding: 0;
+      font-size: clamp(2rem, 6vw, 3rem);
+      line-height: 1.08;
+      text-wrap: balance;
+      text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7);
     }
-    .banner-overlay-date {
-      margin: 0.4rem 0 0;
+    .hero-date {
+      margin: 0.65rem 0 0;
+      font-size: 1rem;
+      opacity: 0.95;
+    }
+    .hero-author {
+      margin: 0.15rem 0 0;
       font-size: 0.95rem;
       opacity: 0.9;
-      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
     }
-    .banner-overlay-author {
-      margin: 0.15rem 0 0;
-      font-size: 0.9rem;
-      opacity: 0.85;
-      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    .hero-date, .hero-author {
+      text-shadow: 0 1px 6px rgba(0, 0, 0, 0.8);
     }
-    .banner-title {
-      margin-top: 1.5rem;
-      margin-bottom: 0;
-      font-size: 2rem;
-      color: var(--text);
-      border-bottom: 2px solid var(--primary);
-      padding-bottom: 0.3rem;
-    }
-    .banner-date {
-      color: var(--muted);
-      font-size: 0.95rem;
-      margin: 0.5rem 0 0;
-    }
-    .banner-author {
-      color: var(--muted);
-      font-size: 0.9rem;
-      margin: 0.2rem 0 0;
-    }
-    @media (min-width: 600px) {
-      .banner-title { font-size: 2.5rem; }
-    }
-    @media (min-width: 768px) {
-      .banner-overlay { display: none; }
-    }
-    @media (max-width: 767.98px) {
-      .banner-title,
-      .banner-date,
-      .banner-author { display: none; }
+    @media (max-width: 600px) {
+      .site-hero {
+        min-height: min(36rem, 100svh);
+        background-position: var(--banner-position-mobile, var(--banner-position, 50% 50%));
+      }
+      .site-hero header h1 { font-size: 1.5rem; }
+      .site-hero header p { font-size: 0.95rem; line-height: 1.45; }
+      .site-hero header nav { gap: 0.3rem 1rem; }
+      .site-hero nav a { font-size: 0.95rem; }
+      .hero-content { padding-top: 1.25rem; padding-bottom: 1.5rem; }
     }
     /* Defeat Safari data detectors on EIN */
     .no-detect { unicode-bidi: isolate; }
@@ -762,7 +739,9 @@
           async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
-  {% if page.banner_image %}<div class="has-banner">{% endif %}
+  {% if page.banner_image %}
+  <section class="site-hero" aria-labelledby="page-title" style="--banner-image: url('{{ page.banner_image }}'); --banner-position: {{ page.banner_position | default: '50% 50%' }}; --banner-position-mobile: {{ page.banner_position_mobile | default: page.banner_position | default: '50% 50%' }};">
+  {% endif %}
   <header>
     <div class="container">
       <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
@@ -785,21 +764,14 @@
     </div>
   </header>
   {% if page.banner_image %}
-  <div class="banner">
-    <img src="{{ page.banner_image }}" alt="{{ page.title }}">
-    <div class="banner-overlay">
-      <h2 class="banner-overlay-title">{{ page.title }}</h2>
-      {% if page.date %}<p class="banner-overlay-date">{{ page.date | date: "%B %-d, %Y" }}</p>{% endif %}
-      {% if page.author %}<p class="banner-overlay-author">{{ page.author }}</p>{% endif %}
+    <div class="hero-content container">
+      <h2 class="hero-title" id="page-title">{{ page.title }}</h2>
+      {% if page.date %}<p class="hero-date">{{ page.date | date: "%B %-d, %Y" }}</p>{% endif %}
+      {% if page.author %}<p class="hero-author">{{ page.author }}</p>{% endif %}
     </div>
-  </div>
-  </div>{% endif %}
+  </section>
+  {% endif %}
   <main class="container">
-    {% if page.banner_image %}
-    <h2 class="banner-title">{{ page.title }}</h2>
-    {% if page.date %}<p class="banner-date">{{ page.date | date: "%B %-d, %Y" }}</p>{% endif %}
-    {% if page.author %}<p class="banner-author">{{ page.author }}</p>{% endif %}
-    {% endif %}
     {{ content }}
   </main>
   <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
