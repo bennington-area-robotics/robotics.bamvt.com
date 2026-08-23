@@ -32,9 +32,11 @@ Team 32473 Bennington Bolts and Biscuits competed at the <strong>New England Pre
 
 ## Student Membership
 
-Regular-season membership for 2026–27 is **$250 per student**. The fee covers regular-season registration, uniforms, and pizza on Wednesday nights. It does not cover transportation or lodging for out-of-town events.
+Regular-season membership for 2026–27 is **$250 per student**. The fee covers regular-season registration, uniforms, and pizza on Wednesday nights. Out-of-town events are an additional cost of participation and are not covered by the membership fee. Depending on the event and available fundraising, additional costs may include registration, transportation, lodging, and meals.
 
 <small>A sliding scale is available.</small>
+
+Students and families are expected to follow our [Code of Conduct](/code-of-conduct/).
 
 ## Upcoming Events
 

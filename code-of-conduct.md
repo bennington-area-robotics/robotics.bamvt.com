@@ -1,13 +1,14 @@
 ---
 layout: default
 title: Code of Conduct
-version: "1.0"
+version: "1.1"
+document_date: 2026-08-23
 description: How members of Bennington Area Robotics conduct themselves — attendance, ownership, ambition, respect, and the standard of Gracious Professionalism set by FIRST.
 # Canonical short-form copy used by this page and the printable fliers.
 principles:
   - slug: Attend meetings consistently.
     summary: >-
-      Show up! Being present and engaged is how a team becomes a team. If work, family, or a ride gets in the way, tell a coach early.
+      Regular participation is how a team becomes a team. If work, family, or transportation affects your availability, tell a coach early.
   - slug: Show your best side.
     summary: >-
       Be friendly and courteous. Use clean language. Practice humility. Say "I don't know" and "I was wrong" when they're true. Leave school and politics at the door.
@@ -16,19 +17,19 @@ principles:
       See what needs doing and do it. If you cannot find the next task, ask. When in doubt, put tools away, sort parts, clean up scraps.
   - slug: Mean what you say.
     summary: >-
-      Let your "yes" be yes, your "no" be no, and your "maybe" have a clear reason. Robotics is hard enough as it is. Be dependable and make it easier.
+      Let your "yes" be yes, your "no" be no, and your "maybe" have a clear reason. Be dependable so teammates can plan around your commitments.
   - slug: Find the root cause before casting blame.
     summary: >-
       "My part works" is a hypothesis to test. Ask what happened and where our assumptions disagreed.
   - slug: Own your mistakes.
     summary: >-
-      "I forgot." "I miscounted." "I dropped it." Make a mental note and prevent the next mistake.
+      "I forgot." "I miscounted." "I dropped it." Report the mistake, correct what you can, and help prevent it from happening again.
   - slug: Ambition needs discipline.
     summary: >-
       Big ideas require a scope, a deadline, and a fallback. "Trust me, I'll get it done" is not a plan.
   - slug: Respect runs both ways.
     summary: >-
-      Treat others the way you want to be treated. Learn everyone's name. Share what you know, and lead through example.
+      Treat everyone with respect. Learn people's names, share what you know, and lead by example.
   - slug: Leave room for others.
     summary: >-
       Match your volume to the room. Allow silence between comments.
@@ -76,14 +77,16 @@ flier_copy:
 ---
 
 <div class="highlight">
-<strong>Version {{ page.version }}</strong>
+<strong>Version {{ page.version }}</strong> &middot; {{ page.document_date | date: "%B %-d, %Y" }}
 </div>
+
+Printable copies: [one-page principles summary](/print/onepager-principles.html) · [shop-safety poster](/print/onepager-shop-safety.html)
 
 ## Code of Conduct
 
 Bennington Area Robotics is a place where students design, build, and compete. Our founder Chris Callahan envisioned it as a *third place* — not home, not school, but a place of its own.
 
-Students come to robotics for many reasons: the robot itself, programming, CAD, building things, competition, and the chance to work with other students of shared interest. This is the draw. We then use their interests to build the habits that make the work possible: perseverance, collaboration, overcoming failure, learning from mistakes, showing up when you said you would, putting the tools back before you leave. These habits are easier to build at fifteen than to repair at thirty, and will compound for life.
+Students come to robotics for many reasons: the robot itself, programming, CAD, building things, competition, and the chance to work with other students of shared interest. That work depends on perseverance, collaboration, learning from failure, keeping commitments, and caring for shared tools and spaces. This document describes the standards that make the program safe, productive, and welcoming.
 
 We follow FIRST's standard of **Gracious Professionalism**.
 
@@ -106,16 +109,16 @@ The regular meeting schedule is posted on the [home page](/#meeting-schedule). T
 - **September build sprint** — about 30 hours over a couple weeks, immediately after the competition is revealed.
 - **Competition prep** — the weeks leading up to each tournament, when reliability work compounds and every missed hour shows up at the field.
 
-A student who is present at regular meetings but absent during the pulses has not really been on the team. The build is when the team becomes a team. When you miss it, the team misses more than a pair of hands — it misses whatever only you would have thought of or caught. If work, family, or a ride problem makes a pulse genuinely hard, tell a coach early and we will find a way. It's the unexpected no show that hurts the team, not the honest conflict.
+Attendance at regular meetings alone is not enough; participation during these pulses is a core team expectation. The build is when teammates learn to rely on one another, and absences affect both the work and the perspectives available to the team. If work, family, or transportation makes a pulse difficult, tell a coach early so the team can plan and look for options. An honest conflict can be accommodated more readily than an unexpected no-show.
 
 ### {{ page.principles[1].slug }}
 
-Walk through the door ready to show your best side.
+At meetings, events, and team travel, the following expectations apply:
 
 - **Language.** No swearing, no vulgar jokes. The standard is what you would be comfortable with a younger student or a parent overhearing.
 - **Courtesy.** Be friendly and courteous. A hello when you arrive, a thank-you, holding the door, learning a new student's name — the small courtesies are most of what respect looks like day to day.
 - **Frustration.** When a print fails or the code breaks late at night, it is fair to be frustrated. It is not fair to take it out on equipment or on teammates. No slamming tools, no tossing parts across the table, no snapping at the person nearest to you. Step away, walk it off, come back. If you don't catch it yourself, expect a coach or senior student to step in and ask you to take a break — that is not a punishment, and you come back when you're ready.
-- **Humility.** Engineering is the practice of being wrong and finding out why. Failure is only useful if you are willing to learn from it. The students who learn fastest can say "I don't know" without flinching, and "I was wrong about that" without ceremony, and get back to work. Arrogance and insecurity both keep you from learning.
+- **Humility.** Engineering requires acknowledging uncertainty and revising conclusions when the evidence changes. Say "I don't know" or "I was wrong about that" when either is true, then use what you learned to improve the work.
 - **Leave school at the door.** What you build here should follow you to school — not the other way around.
 - **Leave politics at the door.** Save your arguments for what the field and bench can referee.
 
@@ -123,7 +126,7 @@ Walk through the door ready to show your best side.
 
 The shop runs on people who see what needs doing and do it. Tools go back where they belong. Parts get sorted. Scrap gets cleared. The printer gets reloaded. None of this is glamorous. None of it requires permission.
 
-When a mentor or a senior student gives you direction, take it. "Sure" beats "why me?", every time. Even if you would rather be doing something else, even if you think you know a better way — do the thing that was asked, and make the case for the other way afterward. The exception is safety: if something looks unsafe, say so on the spot, before it gets done — and you do not have to do it until a coach has looked.
+When a mentor or senior student gives you direction, follow it first and discuss alternatives afterward. The exception is safety: if something looks unsafe, say so before it is done. You do not have to proceed until a coach has reviewed the concern.
 
 When no one is directing you, don't stand around. Find the next thing yourself. Look at what the team is trying to do today, pick a piece you can move forward, and move it forward. It helps to keep more than one task in your pocket, so when you get blocked on one you switch to the next instead of stopping. If you genuinely can't find anything, ask. "What can I do?" is always a welcome question.
 
@@ -159,9 +162,9 @@ Everyone forgets things. Everyone misses a meeting time, miscounts a part, or fo
 
 What matters is what you do next. We learn from mistakes by naming them: *I forgot. I miscounted. I didn't write it down.* From there we can fix the problem, build a habit that prevents it, or make a system that catches it. None of that can happen until you acknowledge the mistake.
 
-This includes accidents with equipment. If you drop a driver station, a control hub, a laptop, a battery, or any other piece of team gear, say plainly what happened and let a coach or senior student check it. *It was an accident* is not an answer; of course it was an accident. The point is that shared equipment matters. Some of it is gear we cannot easily replace, and the team depends on it working. A driver station might survive six drops and break on the seventh, but all seven drops helped break it. If it was in your hands, own it. Do not make the accident smaller than it was, argue about whether it broke, or blame someone else. Pick it up, report it, check it, and handle it more carefully next time.
+This includes accidents with equipment. If you drop a driver station, control hub, laptop, battery, or any other team equipment, report what happened and let a coach or senior student inspect it. Accidental damage still needs to be reported: shared equipment may be difficult to replace, and damage may not be immediately visible. If it was in your hands, take responsibility for reporting it, checking it, and handling it more carefully next time.
 
-The opposite — minimizing, deflecting, getting defensive, pretending it didn't happen — does not protect you. It just guarantees the same mistake will happen again, in front of more people.
+Minimizing, deflecting, or concealing a mistake prevents the team from learning from it and increases the chance that it will happen again.
 
 ### {{ page.principles[6].slug }}
 
@@ -169,7 +172,7 @@ Bring your ideas. We want students who want to do hard things. Robotics should b
 
 But the build is shared. If your idea fails, it doesn't only fail for you — it fails for every teammate who was counting on the robot to work. Failure is the risk of ambition, but one student's ambition should not put the whole build at risk. We have learned this the hard way.
 
-Before Houston, we redesigned the intake, the launcher, and the turret all at once, raising the ceiling on what the robot could do — and we barely finished in time to leave, with no chance to practice or improve reliability. We went 0–10. Those redesigns were not the work of lazy students. They came from some of our hardest workers, students with a stubborn fixation on visions of excellence — the same fixation that got us to Houston in the first place. Nor was the failure only theirs: the coaches did not put up strong enough guardrails. Hard work and good intent are not enough on their own.
+Before the 2026 FIRST Championship in Houston, we redesigned the intake, launcher, and turret at the same time. The robot was completed too late for meaningful practice or reliability testing, and the team finished 0–10. The students worked hard, but the project lacked sufficient scope controls and coaching guardrails. Hard work and good intent were not enough on their own.
 
 Three redesigns are not three risks; every joint between them is a risk too. So: pitch your ideas. If we take them on, they get a scope, a deadline, and a fallback. If the deadline slips, we cut scope and ship what works. "Trust me, I'll get it done" is not a plan. A plan has dates, guardrails, and a definition of done that includes testing under realistic conditions.
 
@@ -177,11 +180,11 @@ And if you see a risk to the build — your own or someone else's — say so. Pr
 
 ### {{ page.principles[7].slug }}
 
-This is a team of people who came for the same thing — the robot, the build, the competition — and that shared work is what earns you a place here. It doesn't matter where you go to school, what you look like, who your family is, or what you believe outside this room. Show up, do the work, and treat the people around you well, and you belong. Treat others the way you would want to be treated. Learn people's names — all of them. Look up often enough to notice who needs help or is being left out.
+This team brings together students through the shared work of designing, building, and competing. It does not matter where you go to school, what you look like, who your family is, or what you believe outside this room. Participate in the work and treat the people around you with respect. Learn people's names, and notice who needs help or is being left out.
 
-Start with the adults. The team runs on the time of people who are not getting paid to be there — the technical mentors, the parents driving carpools, the volunteers helping at events, and the parents who coach. All of them deserve the same respect. For students whose parent is a coach: respect your parent here as much as you respect any other coach. On the floor, they are doing the job.
+Respect applies to adults and volunteers as well as students. Technical mentors, parents driving carpools, event volunteers, and parent-coaches contribute their time to make the program possible. During team activities, parent-coaches serve in the same role as other coaches and should be treated accordingly.
 
-Respect runs between students too, and in both directions. If you are new, learn from the students who have been here longer — watch how they work, ask questions, and find ways to be useful. Standing matters here, and it is earned by showing up and contributing. If you are one of those senior students, that standing is a responsibility, not a privilege. You direct newer students because you know the shop, not because you outrank them. Teach, don't boss. Explain the why when there's time. The younger student watching you is learning how this team treats people — from you.
+Respect also runs between students in both directions. New students are expected to learn from those with more experience by observing their work, asking questions, and contributing where they can. Experienced students may be asked to guide others because they know the shop and the team's practices. That responsibility does not confer rank: teach rather than boss, and explain the reasoning when time allows.
 
 ### {{ page.principles[8].slug }}
 
@@ -197,9 +200,9 @@ Sharing videos, social media posts, or other content that doesn't pertain to rob
 
 ### Captains and leads
 
-Some roles carry extra responsibility — team captain, drive team, sub-team leads. They are earned, not owed, and they are not popularity contests. Coaches appoint captains and leads, weighing the same things this whole document asks for: reliability, ownership, how you treat the people around you, and how much you lift the team up — not just how good you are at the robot. Where it makes sense, we will put it to a student vote and confirm the result; a vote gathers the team's read on who leads well, and the coaches make the final call.
+Some roles carry extra responsibility, including team captain, drive team, and sub-team leads. Coaches appoint captains and leads based on reliability, ownership, treatment of others, and contribution to the team—not technical ability alone. Coaches may use a student vote as one source of input, but retain responsibility for the final decision.
 
-Leadership here means responsibility, not rank. A captain's job is to make the team better — to teach, to keep people moving, to take the hard task first — not to boss. If you want one of these roles, the way in is the same as everything else here: show up, own your work, and help the people next to you.
+Leadership means responsibility, not rank. Captains and leads are expected to teach, keep work moving, take on difficult tasks, and support the people around them.
 
 ### What this looks like
 
@@ -245,6 +248,8 @@ The principles above are how we try to work. The rules below are not optional. T
 
 **Shop safety.** The shop has real tools, and real tools bite.
 
+[Print the shop-safety poster](/print/onepager-shop-safety.html).
+
 {% for rule in page.shop_safety %}- {{ rule.full }}
 {% endfor %}- **{{ page.flier_copy.safety_banner }}** {{ page.flier_copy.safety_reassurance }}
 
@@ -280,24 +285,20 @@ The standards above apply to mentors first. We do not get to ask students for ha
 
 **To students.** We will show up prepared, on time, and ready to teach. We will tell you what we know and admit what we don't. We share hands-on work on the robot with you, and we keep trying to push more of it into your hands. We will keep our promises about practices, travel, and the things we said the program would provide.
 
-**To families.** We will communicate clearly about schedules, expectations, costs, and safety. We will treat conversations about your student with discretion. We will not put your student in situations we would not put our own.
+**To families.** We will communicate clearly about schedules, expectations, costs, and safety. We will treat conversations about students with discretion and avoid unnecessary risk in team activities.
 
-**To each other.** We will back each other up in front of students, and disagree with each other in private — except on safety, which gets raised on the spot, in front of whoever is there. We will tell each other when we see a mistake coming, and hear it when someone tells us. No mentor is above being corrected.
+**To each other.** We will back each other up in front of students, and disagree with each other in private — except on safety, which is always raised on the spot. We will tell each other when we see a mistake coming, and hear it when someone tells us. No mentor is above being corrected.
 
-Coaches get tired too. At the FIRST Championship in Houston one night I knew I was running low and thought to myself: I will probably make a bad call tomorrow. The next morning I did not say this to anyone — and sure enough I made one. Had I told the team — *I am tired today, watch for bad calls* — the students could have pushed back when it came, and probably would have.
+Fatigue and stress affect adult judgment as well as student judgment. When a coach or mentor recognizes that they are not at their best, they are expected to say so and ask another adult to review consequential decisions. Students and adults may raise concerns about a mentor's decision, especially when safety is involved, without being treated as disrespectful.
 
-When a mentor is off, they will say so, and the team has standing permission to question their decisions until they recover. The same standing permission applies to anyone on the team who sees a mentor making a bad call.
+### Cost of participation
 
-### A word for families
-
-Robotics is a place where your student's habits, both good and bad, show up in plain view. We work on those habits alongside the technical work, as the two complement each other: better habits improve the work, and better work makes the habits easier to keep. A team that builds well can afford to say "that was a bad idea," to hand the wheel to a younger student, to stop and help a rival or a struggling rookie team. Ask your student what it feels like to work on a high-functioning team — calm under a deadline, honest about what's broken, quick to trust each other. That feeling is the reward, and it is built from the same small habits this document asks for.
-
-The same habits work at home. When your student commits to a build day, hold them to their yes. When something goes wrong, ask what happened before asking whose fault it was. And when they admit a mistake without being cornered, notice it — that took practice!
-
-Regular-season membership for 2026–27 is $250 per student. The fee covers regular-season registration, uniforms, and pizza on Wednesday nights. It does not cover transportation or lodging for out-of-town events.
+Regular-season membership for 2026–27 is $250 per student. The fee covers regular-season registration, uniforms, and pizza on Wednesday nights. Out-of-town events are an additional cost of participation and are not covered by the membership fee. Depending on the event and available fundraising, additional costs may include registration, transportation, lodging, and meals.
 
 <small>A sliding scale is available.</small>
 
-If something difficult comes up — about your student, about us, or about the program — tell us early. We would rather hear it than miss it.
+### For families
 
-— Peter Radocchia, Head Coach
+Robotics combines technical instruction with shared commitments to attendance, safety, accountability, and respectful teamwork. Families can support participation by helping students communicate schedule conflicts early and understand the commitments they make to the team. Coaches will communicate schedules, costs, travel requirements, and significant concerns as clearly and promptly as possible.
+
+If a concern arises about a student, a coach, or the program, please raise it early so it can be addressed before it becomes more difficult to resolve.

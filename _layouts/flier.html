@@ -1,4 +1,6 @@
 {% assign source_page = site.pages | where: "path", page.source_path | first %}
+{% assign document_version = page.version | default: source_page.version %}
+{% assign document_date = page.document_date | default: source_page.document_date %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -270,7 +272,7 @@
 
   <footer>
     <div class="quote">&ldquo;{{ source_page.flier_copy.principles_quote }}&rdquo; — {{ source_page.flier_copy.principles_quote_author }}</div>
-    <div class="teams">Bennington Area Robotics<br>Version {{ source_page.version }}</div>
+    <div class="teams">Bennington Area Robotics<br>Version {{ document_version }} &middot; {{ document_date | date: "%B %-d, %Y" }}</div>
   </footer>
   {% else %}
   <div class="rules">
@@ -281,7 +283,7 @@
   </div>
 
   <div class="banner">{{ source_page.flier_copy.safety_banner }}<br>{{ source_page.flier_copy.safety_reassurance }}</div>
-  <footer>Bennington Area Robotics &nbsp;·&nbsp; Version {{ source_page.version }}</footer>
+  <footer>Bennington Area Robotics &nbsp;·&nbsp; Version {{ document_version }} &nbsp;·&nbsp; {{ document_date | date: "%B %-d, %Y" }}</footer>
   {% endif %}
 </div>
 </body>

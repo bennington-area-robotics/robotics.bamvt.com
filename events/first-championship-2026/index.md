@@ -26,13 +26,13 @@ Cookie Clickers won the **Inspire Award** at the [2026 Vermont Championship](../
 
 ---
 
-### Support Our Trip
+### Trip Budget and Support
 
-Competing at Worlds added an estimated $20,000 to our season budget, from registration fees, travel, lodging, shipping, and improvements to the robot.
+Competing at Worlds added $18,515 in cash expenses, plus $5,432 of donated airfare, for registration, travel, lodging, meals, and work on the robot.
 
-[Donate to support our trip](/donate): all donations are tax-deductible through Bennington Area Makers, a 501(c)(3) nonprofit.
+Community donations and in-kind support funded the trip through Bennington Area Makers, a 501(c)(3) nonprofit.
 
-[See our full budget](/budget) \| [Our sponsors](/sponsors)
+[See the full budget](/budget) \| [Donors and sponsors](/sponsors)
 
 ---
 
