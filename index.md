@@ -16,10 +16,14 @@ Team 32473 Bennington Bolts and Biscuits competed at the <strong>New England Pre
   <button class="carousel-btn prev">&lsaquo;</button>
   <div class="carousel-track" id="carousel-track">
     <div class="carousel-slide"><img src="https://bamvt.curlycabbage.com/ftc-18650/worlds-2026/portraits/team-1.jpeg" alt="Cookie Clickers team with their robot outside the FIRST Championship venue in Houston, 2026" loading="eager" fetchpriority="high"></div>
+    <div class="carousel-slide"><img src="https://bamvt.curlycabbage.com/ftc-18650/worlds-2026/pits/pits-2.JPG" alt="Cookie Clickers team member showing the pit banner with Mack Molding's logo at FIRST Championship in Houston" loading="lazy"></div>
+    <div class="carousel-slide"><img src="https://bamvt.curlycabbage.com/ftc-18650/worlds-2026/pits/pits-3.jpg" alt="Cookie Clickers in their Houston pit beneath the team banner displaying Crystal IS, Comprehensive Computing, and Mack Molding logos" loading="lazy"></div>
     <div class="carousel-slide"><img src="https://bamvt.curlycabbage.com/ftc-18650/worlds-2026/competition/match-play-red-2.jpg" alt="Cookie Clickers drive team competing at FIRST Championship in Houston" loading="lazy"></div>
+    <div class="carousel-slide"><img src="https://bamvt.curlycabbage.com/ftc-18650/worlds-2026/portraits/team-2.jpg" alt="Cookie Clickers team portrait in the Houston pit with Mack Molding's logo visible on the banner behind them" loading="lazy"></div>
     <div class="carousel-slide"><img src="https://bamvt.curlycabbage.com/ftc-18650/worlds-2026/competition/match-prep-2.jpg" alt="Cookie Clickers carrying their robot onto the field before a match in Houston" loading="lazy"></div>
     <div class="carousel-slide"><img src="https://bamvt.curlycabbage.com/ftc-18650/worlds-2026/pits/visitors-2.jpg" alt="Cookie Clickers welcoming visitors to their pit at FIRST Championship" loading="lazy"></div>
     <div class="carousel-slide"><img src="https://bamvt.curlycabbage.com/ftc-18650/worlds-2026/competition/big-board-2.jpg" alt="Cookie Clickers drive team featured on the big screen above the competition field in Houston" loading="lazy"></div>
+    <div class="carousel-slide"><img src="https://bamvt.curlycabbage.com/ftc-18650/worlds-2026/portraits/nolan-jenna-althea.jpg" alt="Three Cookie Clickers team members seated beneath the sponsor banner featuring Mack Molding in their Houston pit" loading="lazy"></div>
     <div class="carousel-slide"><img src="https://bamvt.curlycabbage.com/ftc-18650/worlds-2026/venue/competition-area-2.jpg" alt="Competition fields and crowds under colorful lights at FIRST Championship in Houston" loading="lazy"></div>
     {% include carousel-slides.html %}
   </div>
