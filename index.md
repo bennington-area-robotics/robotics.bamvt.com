@@ -15,13 +15,19 @@ Team 32473 Bennington Bolts and Biscuits competed at the <strong>New England Pre
 <div class="carousel" id="carousel">
   <button class="carousel-btn prev">&lsaquo;</button>
   <div class="carousel-track" id="carousel-track">
+    <div class="carousel-slide"><img src="https://bamvt.curlycabbage.com/ftc-18650/worlds-2026/portraits/team-1.jpeg" alt="Cookie Clickers team with their robot outside the FIRST Championship venue in Houston, 2026" loading="eager" fetchpriority="high"></div>
+    <div class="carousel-slide"><img src="https://bamvt.curlycabbage.com/ftc-18650/worlds-2026/competition/match-play-red-2.jpg" alt="Cookie Clickers drive team competing at FIRST Championship in Houston" loading="lazy"></div>
+    <div class="carousel-slide"><img src="https://bamvt.curlycabbage.com/ftc-18650/worlds-2026/competition/match-prep-2.jpg" alt="Cookie Clickers carrying their robot onto the field before a match in Houston" loading="lazy"></div>
+    <div class="carousel-slide"><img src="https://bamvt.curlycabbage.com/ftc-18650/worlds-2026/pits/visitors-2.jpg" alt="Cookie Clickers welcoming visitors to their pit at FIRST Championship" loading="lazy"></div>
+    <div class="carousel-slide"><img src="https://bamvt.curlycabbage.com/ftc-18650/worlds-2026/competition/big-board-2.jpg" alt="Cookie Clickers drive team featured on the big screen above the competition field in Houston" loading="lazy"></div>
+    <div class="carousel-slide"><img src="https://bamvt.curlycabbage.com/ftc-18650/worlds-2026/venue/competition-area-2.jpg" alt="Competition fields and crowds under colorful lights at FIRST Championship in Houston" loading="lazy"></div>
     {% include carousel-slides.html %}
   </div>
   <button class="carousel-btn next">&rsaquo;</button>
   <button class="carousel-btn pause" id="carousel-pause" title="Pause slideshow">⏸</button>
 </div>
 
-<p style="text-align: center; font-style: italic; margin-top: 0;">Photos from the 2026 Vermont FTC State Championship, courtesy of UVM.</p>
+<p style="text-align: center; font-style: italic; margin-top: 0;">Cookie Clickers at the 2026 FIRST Championship in Houston, followed by photos from the Vermont FTC State Championship and our season. Vermont championship photos courtesy of UVM. <a href="/blog/houston-2026/">Read about the Houston trip</a>.</p>
 
 ## Meeting Schedule
 
