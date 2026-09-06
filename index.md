@@ -47,6 +47,9 @@ Regular-season membership for 2026–27 is **$250 per student**. The fee covers 
 
 Students and families are expected to follow our [Code of Conduct](/code-of-conduct/).
 
+See how Bennington Area Robotics organizes student participation in
+[Roles and Responsibilities](/roles).
+
 ## Upcoming Events
 
 - **Sat 9/12/2026** – Season Kickoff at Manchester Community Library, co-hosted with Manchester Machine Makers
