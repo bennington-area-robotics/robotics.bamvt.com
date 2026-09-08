@@ -4,12 +4,10 @@ title: Home
 ---
 
 <div class="highlight">
-Team 18650 Cookie Clickers <strong>represented Vermont</strong> at the <strong><a href="/events/first-championship-2026">FIRST Championship</a></strong> in Houston TX, April 29 – May 2, 2026.
-<a href="/blog/houston-2026/">Read about the trip</a>
+Join us for the <strong><a href="/events/season-kickoff-2026/">BIOBUZZ Season Kickoff</a></strong> on <strong>Saturday, September 12, 2026, starting at 11:30 AM</strong> at Manchester Community Library, co-hosted with Manchester Machine Makers.
+Watch the <strong>game reveal at noon</strong>, then brainstorm with robots on the new game field. Students, families, and community members are welcome.
 <br><br>
-Team 32473 Bennington Bolts and Biscuits competed at the <strong>New England Premier Event</strong> at the Big E in West Springfield MA, April 17–18, 2026.
-<br><br>
-<a href="/donate">Support us with a tax-deductible donation!</a> <a href="/budget">See our budget</a>
+<a href="/events/season-kickoff-2026/">Kickoff details and team RSVP</a>
 </div>
 
 <div class="carousel" id="carousel">
@@ -35,7 +33,7 @@ Team 32473 Bennington Bolts and Biscuits competed at the <strong>New England Pre
 ## Meeting Schedule
 
 - **Off-season summer meetings:** Sundays, 3:00 – 5:00 PM
-- **Regular season:** Sundays, 3:00 – 5:00 PM, and Wednesdays, 5:30 – 7:30 PM, beginning Sunday, September 13 after the season kickoff on Saturday, September 12
+- **Regular season:** Sundays, 3:00 – 5:00 PM, and Wednesdays, 5:30 – 7:30 PM, beginning Sunday, September 13 after the [season kickoff on Saturday, September 12](/events/season-kickoff-2026/)
 
 **Location:** Beech Street School, 246 South Stream Road, Bennington VT 05201
 
@@ -52,7 +50,7 @@ See how Bennington Area Robotics organizes student participation in
 
 ## Upcoming Events
 
-- **Sat 9/12/2026** – Season Kickoff at Manchester Community Library, co-hosted with Manchester Machine Makers
+- **Sat 9/12/2026, 11:30 AM** — [BIOBUZZ Season Kickoff](/events/season-kickoff-2026/) at Manchester Community Library, co-hosted with Manchester Machine Makers; game reveal at noon
 - **Sat 1/23/2027** – Bennington Qualifier at MAUMS
 
 ## Past Events
