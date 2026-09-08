@@ -2,7 +2,10 @@
 layout: default
 title: BIOBUZZ Season Kickoff 2026
 description: Join Bennington Area Robotics and Manchester Machine Makers for the FIRST Tech Challenge BIOBUZZ season kickoff on September 12, 2026, starting at 11:30 AM at Manchester Community Library.
+og_image: /events/season-kickoff-2026/images/kickoff-social.png
 ---
+
+<img src="/events/season-kickoff-2026/images/biobuzz-banner.png" alt="FIRST Tech Challenge — FIRST CANOPY: BIOBUZZ presented by RTX" width="1201" height="631" style="display: block; width: 100%; height: auto;" fetchpriority="high">
 
 ## FIRST Tech Challenge Season Kickoff 2026
 
