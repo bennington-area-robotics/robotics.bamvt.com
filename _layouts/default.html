@@ -2,21 +2,29 @@
 <html lang="en">
 <head>
   {% assign page_title = page.title | default: site.title %}
+  {% if page.seo_title %}
+    {% assign page_title = page.seo_title %}
+  {% elsif page_title != site.title %}
+    {% assign page_title = page_title | append: ' | ' | append: site.title %}
+  {% endif %}
   {% assign page_desc = page.description | default: site.description %}
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page_title }}</title>
-  <meta name="description" content="{{ page_desc }}">
-  <meta property="og:title" content="{{ page_title }}">
-  <meta property="og:description" content="{{ page_desc }}">
+  <title>{{ page_title | escape }}</title>
+  <meta name="description" content="{{ page_desc | escape }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <meta property="og:site_name" content="{{ site.title | escape }}">
+  <meta property="og:title" content="{{ page_title | escape }}">
+  <meta property="og:description" content="{{ page_desc | escape }}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ page.url | absolute_url }}">
   {% if page.og_image %}<meta property="og:image" content="{{ page.og_image | absolute_url }}">{% endif %}
   <meta name="twitter:card" content="{% if page.og_image %}summary_large_image{% else %}summary{% endif %}">
-  <meta name="twitter:title" content="{{ page_title }}">
-  <meta name="twitter:description" content="{{ page_desc }}">
+  <meta name="twitter:title" content="{{ page_title | escape }}">
+  <meta name="twitter:description" content="{{ page_desc | escape }}">
   {% if page.og_image %}<meta name="twitter:image" content="{{ page.og_image | absolute_url }}">{% endif %}
   <meta name="format-detection" content="telephone=no">
+  {% if page.url == '/' %}{% include organization-schema.html %}{% endif %}
   <link rel="icon" type="image/png" href="/images/chip-32x32-round.png">
   <link rel="apple-touch-icon" href="/images/chip-180x180-round.png">
   <style>

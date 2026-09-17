@@ -1,6 +1,6 @@
 # Bennington Area Robotics
 
-Source for the [Bennington Area Robotics website](https://bennington-area-robotics.github.io).
+Source for the [Bennington Area Robotics website](https://robotics.bamvt.com).
 
 ## Editing the Site
 

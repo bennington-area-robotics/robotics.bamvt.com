@@ -1,7 +1,15 @@
 ---
 layout: default
 title: Home
+seo_title: Bennington Area Robotics | Youth Robotics in Bennington, VT
+description: "Bennington Area Robotics (BAM Robotics) brings middle and high school students together in Bennington, Vermont, to build robots for FIRST Tech Challenge."
 ---
+
+Bennington Area Robotics (BAM Robotics) is the youth robotics program of
+[Bennington Area Makers (BAM)](https://www.bamvt.com){:target="_blank"} in
+Bennington, Vermont. Our middle and high school students design, build, and
+program robots for FIRST Tech Challenge as **Team 18650 Cookie Clickers** and
+**Team 32473 Bennington Bolts and Biscuits**.
 
 <div class="highlight">
 The <strong>BIOBUZZ season is underway!</strong> Review the kickoff video, game animation, field walkthrough, and companion slides from the season launch.

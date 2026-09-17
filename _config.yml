@@ -6,5 +6,16 @@ url: https://robotics.bamvt.com
 markdown: kramdown
 permalink: /blog/:slug/
 
+# Repository documentation is not website content.
+exclude:
+  - vendor/
+  - node_modules/
+  - Gemfile
+  - Gemfile.lock
+  - AGENTS.md
+  - README.md
+  - events/season-kickoff-2026/images/README.md
+
 plugins:
   - jekyll-redirect-from
+  - jekyll-sitemap

@@ -1,0 +1,32 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": {{ '/#website' | absolute_url | jsonify }},
+      "url": {{ '/' | absolute_url | jsonify }},
+      "name": {{ site.title | jsonify }},
+      "alternateName": "BAM Robotics",
+      "publisher": { "@id": {{ '/#organization' | absolute_url | jsonify }} }
+    },
+    {
+      "@type": "Organization",
+      "@id": {{ '/#organization' | absolute_url | jsonify }},
+      "name": {{ site.title | jsonify }},
+      "alternateName": "BAM Robotics",
+      "url": {{ '/' | absolute_url | jsonify }},
+      "description": {{ page.description | default: site.description | jsonify }},
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "The Bennington Area Makers, Inc.",
+        "url": "https://www.bamvt.com/"
+      },
+      "sameAs": [
+        "https://www.youtube.com/@bennington-area-robotics",
+        "https://github.com/bennington-area-robotics"
+      ]
+    }
+  ]
+}
+</script>
