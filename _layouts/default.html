@@ -79,6 +79,17 @@
       color: white;
       text-decoration: none;
     }
+    .site-title a {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .site-logo {
+      display: block;
+      flex-shrink: 0;
+      width: 2.5rem;
+      height: 2.5rem;
+    }
     .site-description {
       margin: 0.9rem 0 0;
       color: #e0e7f1;
@@ -157,19 +168,33 @@
         grid-template-columns: 17rem minmax(0, 1fr);
         background: var(--bg);
       }
-      .site-header-inner {
-        position: sticky;
-        top: 0;
-        max-height: 100vh;
-        max-height: 100dvh;
-        overflow-y: auto;
+      .site-header {
         padding: 2.75rem 1.75rem;
       }
+      .site-header-inner { display: contents; }
       .site-title { font-size: 1.8rem; }
+      .site-title a {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+      .site-logo {
+        width: 6rem;
+        height: 6rem;
+        align-self: center;
+      }
       .site-nav { margin-top: 2rem; }
       .menu-toggle { display: none; }
       .site-content > .container, .site-footer > .container, .hero-content.container {
         padding: 2.75rem clamp(2rem, 4vw, 4rem);
+      }
+    }
+    /* Keep the links available after the branding scrolls away. Short windows
+       use normal page scrolling so every link remains reachable. */
+    @media (min-width: 64rem) and (min-height: 32rem) {
+      .site-header .site-nav {
+        position: sticky;
+        top: 1rem;
       }
     }
     main h2 {
@@ -842,7 +867,12 @@
   <div class="site-shell">
   <header class="site-header" id="site-header">
     <div class="site-header-inner">
-      <h1 class="site-title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+      <h1 class="site-title">
+        <a href="{{ '/' | relative_url }}">
+          <img class="site-logo" src="{{ '/images/chip-180x180-round.png' | relative_url }}" alt="" width="180" height="180">
+          <span>{{ site.title }}</span>
+        </a>
+      </h1>
       <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="site-nav" hidden>Menu</button>
       <p class="site-description">{{ site.description }}</p>
       <nav class="site-nav" id="site-nav" aria-label="Main navigation">

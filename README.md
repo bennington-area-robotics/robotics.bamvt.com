@@ -9,7 +9,7 @@ This is a [Jekyll](https://jekyllrb.com/) site hosted on GitHub Pages. Pages are
 ### Architecture
 
 - **Content pages**: Markdown with YAML front matter, usually specifying `layout: default`. Top-level pages live in the root; event pages live under `events/<event-name>/index.md` alongside their images and documents.
-- **Main layout** (`_layouts/default.html`): Template with HTML structure, inline CSS, and JavaScript. Provides a sticky left sidebar on desktop, an expandable navigation menu on smaller screens, main content, and a footer that repeats navigation in a blue section on smaller screens. Page banners appear in the content column. Navigation comes from its comma-separated `nav_items` assignment (`Label:/path`).
+- **Main layout** (`_layouts/default.html`): Template with HTML structure, inline CSS, and JavaScript. Provides a desktop sidebar whose branding scrolls away while navigation links stay visible (short windows use normal page scrolling), an expandable navigation menu on smaller screens, main content, and a footer that repeats navigation in a blue section on smaller screens. Page banners appear in the content column. Navigation comes from its comma-separated `nav_items` assignment (`Label:/path`).
 - **Printable flyers** (`_layouts/flier.html`, `print/`): A separate layout and entry pages render the principles and shop-safety flyers from canonical content in `code-of-conduct.md`.
 - **Blog** (`_posts/`, `blog/index.md`): Dated Markdown posts and the blog index. Post URLs use `/blog/:slug/`, as configured in `_config.yml`.
 - **Shared content** (`_includes/`, `_data/`): Reusable Liquid fragments and structured public data.

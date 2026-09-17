@@ -53,7 +53,7 @@ title: Sponsors
 
 {% for name in org_list %}{% assign url = nil %}{% for d in site.data.donations.donations %}{% if d.donor == name and d.url %}{% assign url = d.url %}{% endif %}{% endfor %}- {% if url %}[{{ name }}]({{ url }}){:target="_blank"}{% else %}{{ name }}{% endif %}
 {% endfor %}{% for name in other_list %}- {{ name }}
-{% endfor %}{% if anon_count > 0 %}- *and {{ anon_count }} anonymous donation{% if anon_count > 1 %}s{% endif %}*
+{% endfor %}{% if anon_count > 0 %}- *{% if org_list.size > 0 or other_list.size > 0 %}and {% endif %}{{ anon_count }} anonymous donation{% if anon_count > 1 %}s{% endif %}*
 {% endif %}
 {% endif %}
 {% endfor %}
