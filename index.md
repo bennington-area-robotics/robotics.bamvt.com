@@ -4,10 +4,9 @@ title: Home
 ---
 
 <div class="highlight">
-Join us for the <strong><a href="/events/season-kickoff-2026/">BIOBUZZ Season Kickoff</a></strong> on <strong>Saturday, September 12, 2026, starting at 11:30 AM</strong> at Manchester Community Library, co-hosted with Manchester Machine Makers.
-Watch the <strong>game reveal at noon</strong>, then brainstorm with robots on the new game field. Students, families, and community members are welcome.
+The <strong>BIOBUZZ season is underway!</strong> Review the kickoff video, game animation, field walkthrough, and companion slides from the season launch.
 <br><br>
-<a href="/events/season-kickoff-2026/">Kickoff details and team RSVP</a>
+<a href="/events/season-kickoff-2026/#kickoff-materials">Watch the kickoff videos and view the slides</a>
 </div>
 
 <div class="carousel" id="carousel">
@@ -32,8 +31,7 @@ Watch the <strong>game reveal at noon</strong>, then brainstorm with robots on t
 
 ## Meeting Schedule
 
-- **Off-season summer meetings:** Sundays, 3:00 – 5:00 PM
-- **Regular season:** Sundays, 3:00 – 5:00 PM, and Wednesdays, 5:30 – 7:30 PM, beginning Sunday, September 13 after the [season kickoff on Saturday, September 12](/events/season-kickoff-2026/)
+- **Regular season:** Sundays, 3:00 – 5:00 PM, and Wednesdays, 5:30 – 7:30 PM
 
 **Location:** Beech Street School, 246 South Stream Road, Bennington VT 05201
 
@@ -50,11 +48,11 @@ See how Bennington Area Robotics organizes student participation in
 
 ## Upcoming Events
 
-- **Sat 9/12/2026, 11:30 AM** — [BIOBUZZ Season Kickoff](/events/season-kickoff-2026/) at Manchester Community Library, co-hosted with Manchester Machine Makers; game reveal at noon
 - **Sat 1/23/2027** – Bennington Qualifier at MAUMS
 
 ## Past Events
 
+- **Sat 9/12/2026** — [BIOBUZZ Season Kickoff](/events/season-kickoff-2026/) at Manchester Community Library, co-hosted with Manchester Machine Makers. [Videos and slides](/events/season-kickoff-2026/#kickoff-materials)
 - **Wed–Sat 4/29–5/2/2026** – [FIRST Championship](/events/first-championship-2026) in Houston TX (18650)
 - **Fri–Sat 4/17–18/2026** – [New England Premier Event](https://www.nefirst.org/ftc-premier){:target="_blank"} at the Big E, West Springfield MA (32473)
 - **Sat 3/7/2026** – [Vermont Championship](events/state-championship-2026) at South Burlington HS
@@ -69,7 +67,7 @@ See how Bennington Area Robotics organizes student participation in
 ## Links
 
 - [Bennington Area Makers](https://www.bamvt.com){:target="_blank"}, our host organization.
-- [FTC Decode](https://www.firstinspires.org/programs/ftc/game-and-season){:target="_blank"}, our competition for 2025-2026.
+- [FTC BIOBUZZ](https://www.firstinspires.org/programs/ftc/game-and-season){:target="_blank"}, our competition for 2026–2027.
 - [FIRST Tech Challenge](https://www.firstinspires.org/robotics/ftc){:target="_blank"}, the robotics league we compete in.
 
 ## In the News {#news-coverage}

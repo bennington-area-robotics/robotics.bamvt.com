@@ -5,8 +5,11 @@ title: Events
 
 ## Upcoming Events
 
-- **Sat 9/12/2026, 11:30 AM** — [BIOBUZZ Season Kickoff](/events/season-kickoff-2026/) at Manchester Community Library, co-hosted with Manchester Machine Makers; game reveal at noon
 - **Sat 1/23/2027** — Bennington Qualifier at MAUMS, Bennington
+
+## 2026–2027 Past Events
+
+- **Sat 9/12/2026** — [BIOBUZZ Season Kickoff](/events/season-kickoff-2026/) at Manchester Community Library, co-hosted with Manchester Machine Makers. [Videos and slides](/events/season-kickoff-2026/#kickoff-materials)
 
 ## 2025–2026 Season Events
 
