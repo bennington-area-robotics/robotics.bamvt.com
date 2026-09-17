@@ -6,6 +6,8 @@ author: Peter Radocchia, Head Coach
 description: How responsibility, accountability, consultation, and information flow are distributed across Bennington Area Robotics this off-season.
 ---
 
+*By {{ page.author }}*
+
 How we're organizing for the summer and preparing for fall:
 
 <style>

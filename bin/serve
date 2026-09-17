@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-# Local dev server. Pass extra args through, e.g. --port 4001.
-exec bundle exec jekyll serve --livereload "$@"
+# Local dev server. Port 4000 does not work in the maintainer's setup.
+# Default to 4001; pass extra args through, e.g. --port 4002.
+exec bundle exec jekyll serve --livereload --port 4001 "$@"

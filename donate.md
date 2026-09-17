@@ -1,13 +1,21 @@
 ---
 layout: default
 title: Donate
-description: Thanks to your support, Team 18650 Cookie Clickers represented Vermont at the FIRST Championship in Houston and Team 32473 Bennington Bolts and Biscuits competed at the New England Premier Event.
+description: Support Bennington Area Robotics in the 2026–27 season, with plans for a new swerve drive and a new season budget in development.
 og_image: /events/state-championship-2026/images/2026_FTC-228.jpg
 ---
 
-## Thank You — We Made It to Worlds and the Big E!
+## Help Build Our 2026–27 Season
 
-Thanks to your support, both teams competed in their post-season events — Cookie Clickers at the FIRST Championship in Houston, and Bolts and Biscuits at the New England Premier Event at the Big E. Your donations covered registration, travel, lodging, and meals. See our [full budget](/budget) for the breakdown.
+The 2026–27 season is underway, and we have big plans for Cookie Clickers and Bennington Bolts and Biscuits, including a new swerve drive. Your support helps students turn those plans into robots they can build, test, and take to competition.
+
+We're developing the new season's budget for robot parts, registration, and travel. We'll publish the budget and fundraising goal when they're ready. Donations made now support our 2026–27 build season and travel fund.
+
+[Donate online](#donate-online), [give by check](#donate-by-check), or [contact us about sponsorship](mailto:info@bamvt.com?subject=2026-27%20Season%20Support).
+
+### Thank You for Our 2025–26 Season
+
+Thanks to your support, both teams competed in their post-season events — Cookie Clickers at the FIRST Championship in Houston, and Bolts and Biscuits at the New England Premier Event at the Big E. Your donations covered registration, travel, lodging, and meals. See our [2025–26 budget](/budget) for the breakdown.
 
 <!-- <a href="https://www.paypal.com/donate/?hosted_button_id=HPQY5NA3Z59C2" target="_blank" class="btn-donate">Donate Online</a>
 <br><small style="display:block; margin-bottom:1.5rem;">or <a href="#donate-by-check">by check</a> &mdash; 501(c)(3) nonprofit, EIN <span class="no-detect">84&#x2011;5124653</span></small> -->
@@ -27,9 +35,7 @@ Thanks to your support, both teams competed in their post-season events — Cook
 
 Cookie Clickers was formed in 2019 as a middle school team. Some of its founding members are now seniors, and this was their first trip to the World Championship. Bolts and Biscuits was formed in 2025 and qualified for the New England Premier Event in its first season. Your support made these trips possible.
 
-[Download our fundraising flyer (PDF)](https://drive.google.com/file/d/1XhRbnHisUfao6Agjsfpq1ygs2BoNN96o/view?usp=sharing){:target="_blank"} to share with friends, family, and local businesses.
-
-Donations made now roll forward to our 2026–27 build season and travel fund.
+[2025–26 fundraising flyer (PDF)](https://drive.google.com/file/d/1XhRbnHisUfao6Agjsfpq1ygs2BoNN96o/view?usp=sharing){:target="_blank"}
 
 ### Donate Online
 
@@ -97,10 +103,6 @@ Make checks payable to *The Bennington Area Makers, Inc.* and mail to:
 })();
 </script>
 
-### Looking Ahead
-
-Preparation for 2026–27 starts over the summer. We'll open a new campaign in late summer to fund registration, parts, and travel for both teams. To support next season or discuss sustaining sponsorship, [email us](mailto:info@bamvt.com?subject=2026-27%20Season%20Support).
-
 ### About Us
 
 Your donation funds robot parts, competition fees, travel, and educational materials for middle and high school students in southwestern Vermont and neighboring New York. All donations are tax-deductible to the extent permitted by law.
@@ -117,4 +119,4 @@ Email us at [info@bamvt.com](mailto:info@bamvt.com?subject=Donation%20Inquiry).
 
 ---
 
-*We're grateful to our [regular-season sponsors](/sponsors), whose support helped us get this far. See our [full budget](/budget).*
+*We're grateful to our [2025–26 sponsors](/sponsors), whose support helped us get this far. See our [2025–26 budget](/budget).*

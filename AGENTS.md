@@ -18,10 +18,19 @@ contact information, or internal code-of-conduct review notes into this reposito
 
 ## Build and Preview
 
-- Run `bin/serve` for a local preview with live reload.
+- Run `bin/serve` for a local preview with live reload on port **4001**.
+  Port **4000 does not work in the maintainer's setup**; do not use bare
+  `jekyll serve` or assume its default port is usable. Extra flags pass through,
+  e.g. `bin/serve --port 4002`. See **Build and Local Preview** in `README.md`
+  for setup and remote port forwarding.
+- Reuse an existing preview for this repository before starting another server.
+  Live reload also needs port **35729**; a second instance needs both a different
+  site port and a different `--livereload-port` (see the README).
 - Run `bundle exec jekyll build` to verify a change without starting a server.
 - Treat a successful local build as the minimum check for content, layout, Liquid,
   or navigation changes.
+- Keep this guidance and the README aligned with changes to the preview script,
+  site structure, and editing conventions.
 
 ## Architecture
 
@@ -31,19 +40,26 @@ contact information, or internal code-of-conduct review notes into this reposito
 - Root-level Markdown files become top-level pages. Event pages live under
   `events/<event-name>/index.md`, usually with nearby images and documents.
 - Shared fragments live in `_includes/`. Structured site content lives in `_data/`.
+- Blog posts live in `_posts/`; `blog/index.md` lists them. Post URLs use
+  `/blog/:slug/`, as configured in `_config.yml`.
 - Navigation is the comma-separated `nav_items` assignment in
   `_layouts/default.html`.
 - `code-of-conduct.md` is the canonical source for the long code, the principles
   summary, and the shop-safety copy. The files under `print/` select flyer layouts;
   they do not duplicate the substantive wording.
+- See **Shared Content and Data** in `README.md` for data consumers and manually
+  duplicated content. In particular, donation data feeds `donate.md`, `sponsors.md`,
+  and `budget.md`; event listings appear in both `index.md` and `events/index.md`.
 
 ## Conventions
 
 - Markdown uses kramdown syntax. External links normally use
   `{:target="_blank"}`; internal links do not.
-- Styles and scripts are kept in the relevant layout rather than separate asset
-  bundles.
-- Images live beside their event pages or in the root `images/` directory.
+- Shared styles and scripts are kept in the relevant layout rather than separate
+  asset bundles. Some pages also contain styles or scripts specific to that page.
+- Local images live beside their event pages or in the root `images/` directory.
+  Houston photos and the portfolio PDF use external hosting; preserve media credits
+  and source notes. See **Images and Page Features** in `README.md`.
 - Use `{#anchor-id}` for explicit heading anchors.
 - The `jekyll-redirect-from` plugin is available for URL redirects.
 - Preserve existing user changes in the working tree and keep unrelated edits out
@@ -62,6 +78,10 @@ Follow the **Editorial Style Guide** section in `README.md`. In particular:
 - Keep safety and other consequential requirements concrete and unambiguous.
 - Fundraising copy should be confident and active, but never obscure costs,
   restrictions, or how funds will be used.
+
+Bylined essays and retrospectives may use first-person narration, personal reflection,
+and a more familiar voice, as described in the README. Preserve that distinction from
+institutional or policy copy.
 
 For substantive stakeholder documents, review the result from the perspectives of
 the people affected—for example students, families, coaches, volunteers, and other
