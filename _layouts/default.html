@@ -37,6 +37,7 @@
       --border: #ddd;
       --row-alt: #f5f5f5;
       --row-hover: #e8f4f8;
+      --sidebar: #405c85;
     }
     html { overflow-y: scroll; }
     * { box-sizing: border-box; }
@@ -49,52 +50,127 @@
       padding: 0;
     }
     .container {
-      max-width: 800px;
+      width: 100%;
+      max-width: 64rem;
       margin: 0 auto;
       padding: 2rem 1.5rem;
     }
-    header {
-      background: var(--primary);
+    .site-shell {
+      max-width: 88rem;
+      margin: 0 auto;
+      min-height: 100vh;
+    }
+    .site-content { min-width: 0; }
+    .site-header {
+      background: var(--sidebar);
       color: white;
-      margin-bottom: 1rem;
     }
-    header .container {
-      padding-top: 1rem;
-      padding-bottom: 1rem;
+    .site-header-inner {
+      padding: 1.25rem 1.5rem;
     }
-    header h1 {
+    .site-title {
       margin: 0;
-      font-size: 1.75rem;
+      font-size: 1.4rem;
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.025em;
     }
-    header h1 a, header h1 a:hover {
+    .site-title a, .site-title a:hover {
       color: white;
       text-decoration: none;
     }
-    header p {
-      margin: 0.5rem 0 0;
-      opacity: 0.9;
+    .site-description {
+      margin: 0.9rem 0 0;
+      color: #e0e7f1;
+      font-size: 0.9rem;
+      line-height: 1.6;
     }
-    header nav {
-      margin-top: 0.75rem;
+    .site-nav {
+      margin-top: 1.25rem;
       display: flex;
-      flex-wrap: wrap;
-      gap: 0.4rem 1.25rem;
+      flex-direction: column;
+      gap: 0.25rem;
     }
-    nav a {
-      color: rgba(255, 255, 255, 0.8);
+    .site-nav a {
+      color: #e0e7f1;
       text-decoration: none;
-      padding-bottom: 0.25rem;
+      padding: 0.55rem 0.85rem;
+      min-height: 44px;
       display: block;
-      border-bottom: 2px solid transparent;
-      transition: color 0.2s, border-color 0.2s;
+      border-left: 3px solid transparent;
+      border-radius: 0 4px 4px 0;
     }
-    nav a:hover {
+    .site-nav a:hover {
       color: white;
-      border-bottom-color: rgba(255, 255, 255, 0.5);
+      background: rgba(255, 255, 255, 0.1);
     }
-    nav a.active {
+    .site-nav a.active {
       color: white;
-      border-bottom-color: white;
+      background: rgba(255, 255, 255, 0.15);
+      border-left-color: white;
+      font-weight: 600;
+    }
+    .menu-toggle {
+      font: inherit;
+      color: white;
+      background: transparent;
+      border: 1px solid #a8b8d0;
+      border-radius: 4px;
+      min-height: 44px;
+      padding: 0.4rem 0.75rem;
+      cursor: pointer;
+    }
+    .menu-toggle[hidden] { display: none; }
+    a:focus-visible, button:focus-visible {
+      outline: 3px solid currentColor;
+      outline-offset: 3px;
+    }
+    .skip-link {
+      position: fixed;
+      top: 0.75rem;
+      left: 0.75rem;
+      z-index: 1100;
+      background: white;
+      color: var(--sidebar);
+      padding: 0.75rem 1rem;
+      transform: translateY(-200%);
+    }
+    .skip-link:focus { transform: translateY(0); }
+    main > p, main > ul, main > ol { max-width: 75ch; }
+    main > :first-child { margin-top: 0; }
+    @media (max-width: 63.99rem) {
+      .site-header-inner {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        align-items: center;
+        gap: 0 1rem;
+      }
+      .site-description { display: none; }
+      .site-nav { grid-column: 1 / -1; }
+      .site-header.menu-ready .site-nav { display: none; }
+      .site-header.menu-ready .site-nav.is-open { display: flex; }
+    }
+    @media (min-width: 64rem) {
+      body { background: #eef1f5; }
+      .site-shell {
+        display: grid;
+        grid-template-columns: 17rem minmax(0, 1fr);
+        background: var(--bg);
+      }
+      .site-header-inner {
+        position: sticky;
+        top: 0;
+        max-height: 100vh;
+        max-height: 100dvh;
+        overflow-y: auto;
+        padding: 2.75rem 1.75rem;
+      }
+      .site-title { font-size: 1.8rem; }
+      .site-nav { margin-top: 2rem; }
+      .menu-toggle { display: none; }
+      .site-content > .container, .site-footer > .container, .hero-content.container {
+        padding: 2.75rem clamp(2rem, 4vw, 4rem);
+      }
     }
     main h2 {
       color: var(--primary);
@@ -131,11 +207,36 @@
       font-size: 0.9rem;
       color: var(--muted);
     }
+    .site-footer { padding-top: 0; }
+    .footer-nav { display: none; }
+    @media (max-width: 63.99rem) {
+      .site-footer {
+        background: var(--sidebar);
+        color: #e0e7f1;
+        border-top: 0;
+      }
+      .footer-nav {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.25rem 0.75rem;
+        margin: 0 0 1.5rem;
+        font-size: 1rem;
+      }
+      .site-footer p a { color: white; }
+    }
     table {
       width: 100%;
       border-collapse: collapse;
       margin: 1rem 0;
       font-size: 0.95rem;
+    }
+    .table-scroll {
+      max-width: 100%;
+      overflow-x: auto;
+    }
+    .table-scroll:focus-visible {
+      outline: 3px solid var(--sidebar);
+      outline-offset: 3px;
     }
     th, td {
       padding: 0.75rem 1rem;
@@ -584,7 +685,7 @@
     /* Banner / hero image */
     .site-hero {
       position: relative;
-      min-height: clamp(30rem, 56vw, 39rem);
+      min-height: clamp(24rem, 40vw, 34rem);
       display: flex;
       flex-direction: column;
       color: white;
@@ -594,12 +695,6 @@
         var(--banner-image);
       background-size: cover;
       background-position: var(--banner-position, 50% 50%);
-    }
-    .site-hero header {
-      position: relative;
-      z-index: 1;
-      background: transparent;
-      margin-bottom: 0;
     }
     .hero-content {
       position: relative;
@@ -641,10 +736,6 @@
         min-height: min(36rem, 100svh);
         background-position: var(--banner-position-mobile, var(--banner-position, 50% 50%));
       }
-      .site-hero header h1 { font-size: 1.5rem; }
-      .site-hero header p { font-size: 0.95rem; line-height: 1.45; }
-      .site-hero header nav { gap: 0.3rem 1rem; }
-      .site-hero nav a { font-size: 0.95rem; }
       .hero-content { padding-top: 1.25rem; padding-bottom: 1.5rem; }
     }
     /* Defeat Safari data detectors on EIN */
@@ -747,14 +838,15 @@
           async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
-  {% if page.banner_image %}
-  <section class="site-hero" aria-labelledby="page-title" style="--banner-image: url('{{ page.banner_image }}'); --banner-position: {{ page.banner_position | default: '50% 50%' }}; --banner-position-mobile: {{ page.banner_position_mobile | default: page.banner_position | default: '50% 50%' }};">
-  {% endif %}
-  <header>
-    <div class="container">
-      <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
-      <p>{{ site.description }}</p>
-      <nav>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="site-shell">
+  <header class="site-header" id="site-header">
+    <div class="site-header-inner">
+      <h1 class="site-title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="site-nav" hidden>Menu</button>
+      <p class="site-description">{{ site.description }}</p>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        {% capture nav_links %}
         {% assign nav_items = "Home:/,Events:/events,Blog:/blog,Portfolio:/portfolio,Roles:/roles,Conduct:/code-of-conduct,Sponsors:/sponsors,Budget:/budget,Donate:/donate" | split: "," %}
         {% for item in nav_items %}
           {% assign parts = item | split: ":" %}
@@ -766,12 +858,16 @@
           {% elsif page.url contains path %}
             {% assign is_active = true %}
           {% endif %}
-          <a href="{{ path | relative_url }}" {% if is_active %}class="active"{% endif %}>{{ label }}</a>
+          <a href="{{ path | relative_url }}"{% if is_active %} class="active" aria-current="page"{% endif %}>{{ label }}</a>
         {% endfor %}
+        {% endcapture %}
+        {{ nav_links }}
       </nav>
     </div>
   </header>
+  <div class="site-content">
   {% if page.banner_image %}
+  <section class="site-hero" aria-labelledby="page-title" style="--banner-image: url('{{ page.banner_image }}'); --banner-position: {{ page.banner_position | default: '50% 50%' }}; --banner-position-mobile: {{ page.banner_position_mobile | default: page.banner_position | default: '50% 50%' }};">
     <div class="hero-content container">
       <h2 class="hero-title" id="page-title">{{ page.title }}</h2>
       {% if page.date %}<p class="hero-date">{{ page.date | date: "%B %-d, %Y" }}</p>{% endif %}
@@ -779,8 +875,8 @@
     </div>
   </section>
   {% endif %}
-  <main class="container">
-    {{ content }}
+  <main class="container" id="main-content" tabindex="-1">
+    {{ content | replace: '<table', '<div class="table-scroll" role="region" aria-label="Scrollable table" tabindex="0"><table' | replace: '</table>', '</table></div>' }}
   </main>
   <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
     <button class="lightbox-close" id="lightbox-close" title="Close" aria-label="Close lightbox">&times;</button>
@@ -788,7 +884,11 @@
     <div class="lightbox-stage" id="lightbox-stage"></div>
     <button class="lightbox-next" id="lightbox-next" title="Next" aria-label="Next image">&rsaquo;</button>
   </div>
-  <footer class="container">
+  <footer class="site-footer">
+    <div class="container">
+    <nav class="site-nav footer-nav" aria-label="Footer navigation">
+      {{ nav_links }}
+    </nav>
     <p>
       &copy; {{ 'now' | date: "%Y" }} Bennington Area Robotics
       &nbsp;&middot;&nbsp;
@@ -798,8 +898,31 @@
       &nbsp;&middot;&nbsp;
       <a href="https://github.com/bennington-area-robotics" target="_blank" rel="noopener">GitHub</a>
     </p>
+    </div>
   </footer>
+  </div>
+  </div>
 <script>
+(function() {
+  var header = document.getElementById('site-header');
+  var toggle = document.getElementById('menu-toggle');
+  var nav = document.getElementById('site-nav');
+  function setOpen(open) {
+    nav.classList.toggle('is-open', open);
+    toggle.setAttribute('aria-expanded', String(open));
+  }
+  toggle.hidden = false;
+  header.classList.add('menu-ready');
+  toggle.addEventListener('click', function() {
+    setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+  });
+  header.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+      setOpen(false);
+      toggle.focus();
+    }
+  });
+})();
 (function() {
   var lightbox = document.getElementById('lightbox');
   var stage = document.getElementById('lightbox-stage');

@@ -4,7 +4,7 @@ title: Roles and Responsibilities
 description: How Bennington Area Robotics organizes student participation across mechanical, controls, and operations, with shared responsibilities and student leadership.
 ---
 
-# Roles and Responsibilities
+## Roles and Responsibilities
 
 Bennington Area Robotics organizes its work around three functions: **mechanical, controls,
 and operations**. Each function includes three capabilities the team develops and

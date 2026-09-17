@@ -4,6 +4,8 @@ title: Vermont FTC State Championship 2026
 description: FTC State Championship on March 7, 2026 at South Burlington High School in South Burlington VT.
 ---
 
+## Vermont FTC State Championship 2026
+
 The official FIRST Tech Challenge Regional Championship for Vermont.
 
 **Date:** Saturday, March 7, 2026
