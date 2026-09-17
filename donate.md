@@ -5,11 +5,9 @@ description: Support Bennington Area Robotics in the 2026–27 season, with plan
 og_image: /events/state-championship-2026/images/2026_FTC-228.jpg
 ---
 
-## Help Build Our 2026–27 Season
+## Support the 2026–27 Season
 
-The 2026–27 season is underway, and we have big plans for Cookie Clickers and Bennington Bolts and Biscuits, including a new swerve drive. Your support helps students turn those plans into robots they can build, test, and take to competition.
-
-We're developing the new season's budget for robot parts, registration, and travel. We'll publish the budget and fundraising goal when they're ready. Donations made now support our 2026–27 build season and travel fund.
+The 2026–27 season is underway. Plans include a new swerve drive, and we're developing the budget for parts, registration, and travel. We'll publish the budget and fundraising goal when they're ready. Donations now support the new season.
 
 [Donate online](#donate-online), [give by check](#donate-by-check), or [contact us about sponsorship](mailto:info@bamvt.com?subject=2026-27%20Season%20Support).
 
