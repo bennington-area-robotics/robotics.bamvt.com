@@ -38,6 +38,11 @@ the sibling `../robotics` repository.
 
 ### Shared Content and Data
 
+Keep private data outside `_data/`, including `_data/local/`: Jekyll loads supported
+data files there even when Git ignores them or they appear in Jekyll's `exclude` list.
+Git ignore rules do not control site output; `_config.yml` excludes local working
+directories (`scratch/` and `resources/`) and development tools (`bin/`) from builds.
+
 Some edits affect several pages. Check the consumers when changing these sources:
 
 | Source | Used by / editing notes |
