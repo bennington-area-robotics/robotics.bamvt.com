@@ -6,8 +6,11 @@ url: https://robotics.bamvt.com
 markdown: kramdown
 permalink: /blog/:slug/
 
-# Repository documentation is not website content.
+# Local working files, development tools, and repository documentation are not website content.
 exclude:
+  - scratch/
+  - resources/
+  - bin/
   - vendor/
   - node_modules/
   - Gemfile
