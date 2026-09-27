@@ -41,7 +41,14 @@ The <strong>BIOBUZZ season is underway!</strong> Review the kickoff video, game 
 
 ## Meeting Schedule
 
-- **Regular season:** Sundays, 3:00 – 5:00 PM, and Wednesdays, 5:30 – 7:30 PM
+**Build sprint (through approximately mid-October):**
+
+- Sundays, 3:00 – 5:00 PM
+- Mondays, 5:30 – 7:30 PM
+- Wednesdays, 5:30 – 7:30 PM
+- Thursdays, 3:30 – 5:30 PM
+
+**Regular season:** Sundays, 3:00 – 5:00 PM, and Wednesdays, 5:30 – 7:30 PM
 
 **Location:** Beech Street School, 246 South Stream Road, Bennington VT 05201
 
