@@ -2,7 +2,7 @@
 layout: default
 title: Donate
 description: Support Bennington Area Robotics in the 2026–27 season, with plans for a new swerve drive and a new season budget in development.
-og_image: /events/state-championship-2026/images/2026_FTC-228.jpg
+og_image: https://assets.bamvt.com/robotics.bamvt.com/events/state-championship-2026/images/2026_FTC-228.jpg
 ---
 
 ## Support the 2026–27 Season

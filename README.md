@@ -8,7 +8,7 @@ This is a [Jekyll](https://jekyllrb.com/) site hosted on GitHub Pages. Pages are
 
 ### Architecture
 
-- **Content pages**: Markdown with YAML front matter, usually specifying `layout: default`. Top-level pages live in the root; event pages live under `events/<event-name>/index.md` alongside their images and documents.
+- **Content pages**: Markdown with YAML front matter, usually specifying `layout: default`. Top-level pages live in the root; event pages live under `events/<event-name>/index.md` alongside their documents and image source notes.
 - **Main layout** (`_layouts/default.html`): Template with HTML structure, inline CSS, and JavaScript. Provides a desktop sidebar whose branding scrolls away while navigation links stay visible (short windows use normal page scrolling), an expandable navigation menu on smaller screens, main content, and a footer that repeats navigation in a blue section on smaller screens. Page banners appear in the content column. Navigation comes from its comma-separated `nav_items` assignment (`Label:/path`).
 - **Printable flyers** (`_layouts/flier.html`, `print/`): A separate layout and entry pages render the principles and shop-safety flyers from canonical content in `code-of-conduct.md`.
 - **Blog** (`_posts/`, `blog/index.md`): Dated Markdown posts and the blog index. Post URLs use `/blog/:slug/`, as configured in `_config.yml`.
@@ -131,9 +131,17 @@ Preserve old URLs with `redirect_from` when moving a published page or post.
 
 ### Images and Page Features
 
-Local images live in `images/` or beside event pages. Houston photos and the portfolio
-PDF are hosted at `assets.bamvt.com`; they are not stored in this repository.
-Preserve media credits and source notes, including the kickoff artwork README.
+Images are hosted in the BAMVT Cloudflare R2 `assets` bucket at `assets.bamvt.com`,
+not stored in this repository. Site images use the `robotics.bamvt.com/` prefix,
+followed by their former repository path (for example,
+`https://assets.bamvt.com/robotics.bamvt.com/images/chip-180x180-round.png`).
+Houston photos and the portfolio PDF keep their existing `ftc-18650/` paths.
+
+Upload new images to this bucket with the correct image content type, then use their
+full HTTPS URLs in Markdown, HTML, and front matter. Verify public downloads before
+publishing references or removing source files. Preserve media credits and source
+notes in the repository, including the kickoff artwork README. Existing event PDFs
+remain beside their pages.
 
 Use `_includes/figure.html` for article images (`src`, `alt`, optional `caption` and
 `align`) and `_includes/quote.html` for attributed quotes (`text`, `author`, optional
@@ -149,8 +157,8 @@ include the RACI post's inline styles and the donation feed's inline script.
 Any page or blog post can use the shared responsive hero by adding these front matter fields:
 
 ```yaml
-banner_image: /images/example.jpg
-og_image: /images/example.jpg
+banner_image: https://assets.bamvt.com/robotics.bamvt.com/images/example.jpg
+og_image: https://assets.bamvt.com/robotics.bamvt.com/images/example.jpg
 banner_position: 50% 40%
 banner_position_mobile: 65% 50%
 ```

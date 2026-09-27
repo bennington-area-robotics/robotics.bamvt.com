@@ -1,5 +1,8 @@
 # Kickoff artwork
 
+Hosted files: [banner](https://assets.bamvt.com/robotics.bamvt.com/events/season-kickoff-2026/images/biobuzz-banner.png)
+and [social image](https://assets.bamvt.com/robotics.bamvt.com/events/season-kickoff-2026/images/kickoff-social.png).
+
 The banner is the unmodified `canopy_ftc_biobuzz_social_fb_post.png` from
 [FIRST's official season brand downloads](https://www.firstinspires.org/resources/library/season-brand-downloads).
 The social image uses the yellow `canopy_ftc_biobuzz_social_fb_post_blank.png`

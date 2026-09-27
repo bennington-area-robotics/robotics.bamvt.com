@@ -38,7 +38,7 @@ contact information, or internal code-of-conduct review notes into this reposito
   and JavaScript.
 - `_layouts/flier.html` renders the printable principles and shop-safety flyers.
 - Root-level Markdown files become top-level pages. Event pages live under
-  `events/<event-name>/index.md`, usually with nearby images and documents.
+  `events/<event-name>/index.md`, usually with nearby documents and image source notes.
 - Shared fragments live in `_includes/`. Structured site content lives in `_data/`.
 - Blog posts live in `_posts/`; `blog/index.md` lists them. Post URLs use
   `/blog/:slug/`, as configured in `_config.yml`.
@@ -57,9 +57,11 @@ contact information, or internal code-of-conduct review notes into this reposito
   `{:target="_blank"}`; internal links do not.
 - Shared styles and scripts are kept in the relevant layout rather than separate
   asset bundles. Some pages also contain styles or scripts specific to that page.
-- Local images live beside their event pages or in the root `images/` directory.
-  Houston photos and the portfolio PDF use external hosting; preserve media credits
-  and source notes. See **Images and Page Features** in `README.md`.
+- Images live in the BAMVT Cloudflare R2 `assets` bucket at `assets.bamvt.com`.
+  Site images use `robotics.bamvt.com/` followed by their former repository path;
+  Houston photos and the portfolio PDF retain their existing external URLs.
+  Use full HTTPS image URLs and preserve media credits and source notes in the repo.
+  See **Images and Page Features** in `README.md`.
 - Use `{#anchor-id}` for explicit heading anchors.
 - The `jekyll-redirect-from` plugin is available for URL redirects.
 - Preserve existing user changes in the working tree and keep unrelated edits out

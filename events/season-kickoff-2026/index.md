@@ -2,10 +2,10 @@
 layout: default
 title: BIOBUZZ Season Kickoff 2026
 description: Videos and companion slides for the 2026–2027 FIRST Tech Challenge BIOBUZZ season, following the September 12 kickoff at Manchester Community Library.
-og_image: /events/season-kickoff-2026/images/biobuzz-banner.png
+og_image: https://assets.bamvt.com/robotics.bamvt.com/events/season-kickoff-2026/images/biobuzz-banner.png
 ---
 
-<img src="/events/season-kickoff-2026/images/biobuzz-banner.png" alt="FIRST Tech Challenge — FIRST CANOPY: BIOBUZZ presented by RTX" width="1201" height="631" style="display: block; width: 100%; height: auto;" fetchpriority="high">
+<img src="https://assets.bamvt.com/robotics.bamvt.com/events/season-kickoff-2026/images/biobuzz-banner.png" alt="FIRST Tech Challenge — FIRST CANOPY: BIOBUZZ presented by RTX" width="1201" height="631" style="display: block; width: 100%; height: auto;" fetchpriority="high">
 
 ## FIRST Tech Challenge Season Kickoff 2026
 
