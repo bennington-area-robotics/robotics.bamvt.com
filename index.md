@@ -22,15 +22,15 @@ The <strong>BIOBUZZ season is underway!</strong> Review the kickoff video, game 
 <div class="carousel" id="carousel">
   <button class="carousel-btn prev">&lsaquo;</button>
   <div class="carousel-track" id="carousel-track">
-    <div class="carousel-slide"><img src="https://bamvt.curlycabbage.com/ftc-18650/worlds-2026/portraits/team-1.jpeg" alt="Cookie Clickers team with their robot outside the FIRST Championship venue in Houston, 2026" loading="eager" fetchpriority="high"></div>
-    <div class="carousel-slide"><img src="https://bamvt.curlycabbage.com/ftc-18650/worlds-2026/pits/pits-3.jpg" alt="Cookie Clickers taking a break in their pit beneath blue and yellow balloons" loading="lazy"></div>
-    <div class="carousel-slide"><img src="https://bamvt.curlycabbage.com/ftc-18650/worlds-2026/pits/repair-1.jpg" alt="Cookie Clickers students and a coach working together on the robot in their Houston pit" loading="lazy"></div>
-    <div class="carousel-slide"><img src="https://bamvt.curlycabbage.com/ftc-18650/worlds-2026/competition/match-play-blue-2.jpg" alt="Cookie Clickers drive team competing at FIRST Championship in Houston" loading="lazy"></div>
-    <div class="carousel-slide"><img src="https://bamvt.curlycabbage.com/ftc-18650/worlds-2026/portraits/callam-eben-1.jpg" alt="Two Cookie Clickers teammates posing with their robot and travel cases in the hotel lobby" loading="lazy"></div>
-    <div class="carousel-slide"><img src="https://bamvt.curlycabbage.com/ftc-18650/worlds-2026/pits/visitors-2.jpg" alt="Cookie Clickers welcoming visitors to their pit at FIRST Championship" loading="lazy"></div>
-    <div class="carousel-slide"><img src="https://bamvt.curlycabbage.com/ftc-18650/worlds-2026/portraits/nolan-jenna-althea.jpg" alt="Three Cookie Clickers teammates relaxing in camp chairs in their Houston pit" loading="lazy"></div>
-    <div class="carousel-slide"><img src="https://bamvt.curlycabbage.com/ftc-18650/worlds-2026/portraits/nolan-fanglai-tony.jpeg" alt="Cookie Clickers students and supporters in the stands at FIRST Championship" loading="lazy"></div>
-    <div class="carousel-slide"><img src="https://bamvt.curlycabbage.com/ftc-18650/worlds-2026/venue/competition-area-2.jpg" alt="Competition fields and crowds under colorful lights at FIRST Championship in Houston" loading="lazy"></div>
+    <div class="carousel-slide"><img src="https://assets.bamvt.com/ftc-18650/worlds-2026/portraits/team-1.jpeg" alt="Cookie Clickers team with their robot outside the FIRST Championship venue in Houston, 2026" loading="eager" fetchpriority="high"></div>
+    <div class="carousel-slide"><img src="https://assets.bamvt.com/ftc-18650/worlds-2026/pits/pits-3.jpg" alt="Cookie Clickers taking a break in their pit beneath blue and yellow balloons" loading="lazy"></div>
+    <div class="carousel-slide"><img src="https://assets.bamvt.com/ftc-18650/worlds-2026/pits/repair-1.jpg" alt="Cookie Clickers students and a coach working together on the robot in their Houston pit" loading="lazy"></div>
+    <div class="carousel-slide"><img src="https://assets.bamvt.com/ftc-18650/worlds-2026/competition/match-play-blue-2.jpg" alt="Cookie Clickers drive team competing at FIRST Championship in Houston" loading="lazy"></div>
+    <div class="carousel-slide"><img src="https://assets.bamvt.com/ftc-18650/worlds-2026/portraits/callam-eben-1.jpg" alt="Two Cookie Clickers teammates posing with their robot and travel cases in the hotel lobby" loading="lazy"></div>
+    <div class="carousel-slide"><img src="https://assets.bamvt.com/ftc-18650/worlds-2026/pits/visitors-2.jpg" alt="Cookie Clickers welcoming visitors to their pit at FIRST Championship" loading="lazy"></div>
+    <div class="carousel-slide"><img src="https://assets.bamvt.com/ftc-18650/worlds-2026/portraits/nolan-jenna-althea.jpg" alt="Three Cookie Clickers teammates relaxing in camp chairs in their Houston pit" loading="lazy"></div>
+    <div class="carousel-slide"><img src="https://assets.bamvt.com/ftc-18650/worlds-2026/portraits/nolan-fanglai-tony.jpeg" alt="Cookie Clickers students and supporters in the stands at FIRST Championship" loading="lazy"></div>
+    <div class="carousel-slide"><img src="https://assets.bamvt.com/ftc-18650/worlds-2026/venue/competition-area-2.jpg" alt="Competition fields and crowds under colorful lights at FIRST Championship in Houston" loading="lazy"></div>
     {% include carousel-slides.html %}
   </div>
   <button class="carousel-btn next">&rsaquo;</button>

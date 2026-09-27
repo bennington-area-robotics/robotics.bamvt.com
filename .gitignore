@@ -8,3 +8,4 @@ scratch/
 _data/local/
 vendor/
 .bundle/
+.env*

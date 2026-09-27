@@ -12,7 +12,7 @@ At the 2026 Vermont FTC State Championship, Team 18650 Cookie Clickers won the I
 
 Their Engineering Portfolio covers the full season: game strategy, iterative mechanical design, CAD and 3D printing, autonomous and teleop software, community outreach, and reflections from each team member.
 
-<div class="portfolio-viewer" data-pdf="https://bamvt.curlycabbage.com/ftc-18650/engineering-portfolio-worlds-2026-0406.pdf">
+<div class="portfolio-viewer" data-pdf="https://assets.bamvt.com/ftc-18650/engineering-portfolio-worlds-2026-0406.pdf">
   <button class="portfolio-close" title="Close" aria-label="Close fullscreen">&times;</button>
   <button class="portfolio-side-prev" title="Previous page" aria-label="Previous page" disabled>&lsaquo;</button>
   <button class="portfolio-side-next" title="Next page" aria-label="Next page" disabled>&rsaquo;</button>
@@ -24,4 +24,4 @@ Their Engineering Portfolio covers the full season: game strategy, iterative mec
   </div>
 </div>
 
-[Open PDF](https://bamvt.curlycabbage.com/ftc-18650/engineering-portfolio-worlds-2026-0406.pdf){:target="_blank"} &middot; [Learn more about FTC awards](https://www.firstinspires.org/robotics/ftc/awards){:target="_blank"}
+[Open PDF](https://assets.bamvt.com/ftc-18650/engineering-portfolio-worlds-2026-0406.pdf){:target="_blank"} &middot; [Learn more about FTC awards](https://www.firstinspires.org/robotics/ftc/awards){:target="_blank"}
