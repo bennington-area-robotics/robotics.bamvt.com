@@ -132,7 +132,7 @@ Preserve old URLs with `redirect_from` when moving a published page or post.
 ### Images and Page Features
 
 Local images live in `images/` or beside event pages. Houston photos and the portfolio
-PDF are hosted at `bamvt.curlycabbage.com`; they are not stored in this repository.
+PDF are hosted at `assets.bamvt.com`; they are not stored in this repository.
 Preserve media credits and source notes, including the kickoff artwork README.
 
 Use `_includes/figure.html` for article images (`src`, `alt`, optional `caption` and
