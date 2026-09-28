@@ -5,13 +5,13 @@ description: Support Bennington Area Robotics in the 2026–27 season, with plan
 og_image: https://assets.bamvt.com/robotics.bamvt.com/events/state-championship-2026/images/2026_FTC-228.jpg
 ---
 
-## Support the 2026–27 Season
+# Support the 2026–27 Season
 
 The 2026–27 season is underway. Plans include a new swerve drive, and we're developing the budget for parts, registration, and travel. We'll publish the budget and fundraising goal when they're ready. Donations now support the new season.
 
 [Donate online](#donate-online), [give by check](#donate-by-check), or [contact us about sponsorship](mailto:info@bamvt.com?subject=2026-27%20Season%20Support).
 
-### Thank You for Our 2025–26 Season
+## Thank You for Our 2025–26 Season
 
 Thanks to your support, both teams competed in their post-season events — Cookie Clickers at the FIRST Championship in Houston, and Bolts and Biscuits at the New England Premier Event at the Big E. Your donations covered registration, travel, lodging, and meals. See our [2025–26 budget](/budget) for the breakdown.
 
@@ -35,7 +35,7 @@ Cookie Clickers was formed in 2019 as a middle school team. Some of its founding
 
 [2025–26 fundraising flyer (PDF)](https://drive.google.com/file/d/1XhRbnHisUfao6Agjsfpq1ygs2BoNN96o/view?usp=sharing){:target="_blank"}
 
-### Donate Online
+## Donate Online
 
 [Donate via PayPal or Venmo](https://www.paypal.com/donate/?hosted_button_id=HPQY5NA3Z59C2){:target="_blank"}
 <br><small>501(c)(3): The Bennington Area Makers, Inc, EIN 84-5124653</small>
@@ -43,7 +43,7 @@ Cookie Clickers was formed in 2019 as a middle school team. Some of its founding
 <!-- [Donate via Hack Club](https://hcb.hackclub.com/donations/start/bennington-area-robotics){:target="_blank"}
 <br><small>501(c)(3): Hack Club, EIN 81-2908499</small> -->
 
-### Donate by Check {#donate-by-check}
+## Donate by Check {#donate-by-check}
 
 Make checks payable to *The Bennington Area Makers, Inc.* and mail to:
 
@@ -53,7 +53,7 @@ Make checks payable to *The Bennington Area Makers, Inc.* and mail to:
 
 <small>EIN 84-5124653</small>
 
-### 2025–26 Post-Season Advancement Fund — Final Tally
+## 2025–26 Post-Season Advancement Fund — Final Tally
 
 {% assign donations = site.data.donations.donations %}
 {% assign goal = site.data.donations.goal %}
@@ -101,17 +101,17 @@ Make checks payable to *The Bennington Area Makers, Inc.* and mail to:
 })();
 </script>
 
-### About Us
+## About Us
 
 Your donation funds robot parts, competition fees, travel, and educational materials for middle and high school students in southwestern Vermont and neighboring New York. All donations are tax-deductible to the extent permitted by law.
 
 Bennington Area Robotics is organized under **The Bennington Area Makers, Inc.** (BAMVT), a 501(c)(3) nonprofit with EIN 84-5124653.
 
-### In the News
+## In the News
 
 {% include news-coverage.html %}
 
-### Questions?
+## Questions?
 
 Email us at [info@bamvt.com](mailto:info@bamvt.com?subject=Donation%20Inquiry).
 

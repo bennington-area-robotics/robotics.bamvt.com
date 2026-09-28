@@ -3,6 +3,8 @@ layout: default
 title: Events
 ---
 
+# Events
+
 ## Upcoming Events
 
 - **Sat 1/23/2027** — Bennington Qualifier at MAUMS, Bennington

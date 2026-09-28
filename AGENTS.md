@@ -62,6 +62,8 @@ contact information, or internal code-of-conduct review notes into this reposito
   Houston photos and the portfolio PDF retain their existing external URLs.
   Use full HTTPS image URLs and preserve media credits and source notes in the repo.
   See **Images and Page Features** in `README.md`.
+- Use one `#` page title, `##` sections, and `###` subsections. For pages with
+  `banner_image`, the layout supplies the `h1`; start body sections at `##`.
 - Use `{#anchor-id}` for explicit heading anchors.
 - The `jekyll-redirect-from` plugin is available for URL redirects.
 - Preserve existing user changes in the working tree and keep unrelated edits out

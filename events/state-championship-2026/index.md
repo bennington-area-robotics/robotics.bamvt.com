@@ -4,7 +4,7 @@ title: Vermont FTC State Championship 2026
 description: FTC State Championship on March 7, 2026 at South Burlington High School in South Burlington VT.
 ---
 
-## Vermont FTC State Championship 2026
+# Vermont FTC State Championship 2026
 
 The official FIRST Tech Challenge Regional Championship for Vermont.
 
@@ -24,7 +24,7 @@ The official FIRST Tech Challenge Regional Championship for Vermont.
 
 ---
 
-### Results
+## Results
 
 **Inspire Award (State Champion):** 18650 Cookie Clickers – advanced to the [FIRST Championship](/events/first-championship-2026) in Houston TX, April 29 – May 2 \| [Engineering Portfolio](https://drive.google.com/file/d/1XD6NRXbu9tq8MP7e6Mqw6j0jJrjJnnw3/view?usp=sharing){:target="_blank"} \| [Read about the trip](/blog/houston-2026/)
 
@@ -32,7 +32,7 @@ The official FIRST Tech Challenge Regional Championship for Vermont.
 
 ---
 
-### Schedule
+## Schedule
 
 | Time | Event |
 |------|-------|
@@ -49,11 +49,11 @@ The official FIRST Tech Challenge Regional Championship for Vermont.
 | **3:00 PM** | **Alliance Selection** |
 | **4:00 – 6:00 PM** | **Playoff Matches & Awards** |
 
-### Keynote Speaker
+## Keynote Speaker
 
 **Colin Riggs** – Founder and CEO of Rigorous Technology, an industrial robotics company focused on bringing advanced robotic software technology to US manufacturers. Previously led product development at Greensea IQ, a Vermont-based marine robotics company.
 
-### Participating Teams
+## Participating Teams
 
 | Team | Name | Location |
 |------|------|----------|
@@ -83,12 +83,12 @@ The official FIRST Tech Challenge Regional Championship for Vermont.
 | 32473 | Bennington Bolts and Biscuits | Bennington, VT |
 | 32818 | Wired Cats Devo | Saxtons River, VT |
 
-### Earlier Events
+## Earlier Events
 
 - [Bennington FTC Qualifier](../bennington-qualifier-2026) – January 31, 2026
 - [Northfield FTC Qualifier](../northfield-qualifier-2026) – February 15, 2026
 
-### What is FTC?
+## What is FTC?
 
 FIRST Tech Challenge is a robotics program for students grades 7-12. Teams design, build, and program robots to compete on a 12'x12' field in alliance-based matches.
 

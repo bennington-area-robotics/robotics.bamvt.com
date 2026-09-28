@@ -4,7 +4,7 @@ title: Budget
 description: Season budgets for Bennington Area Robotics FTC teams, 18650 Cookie Clickers and 32473 Bennington Bolts and Biscuits.
 ---
 
-## Budget
+# Budget
 
 Bennington Area Robotics ran two FTC teams in 2025-26 on a combined regular-season cash budget of roughly $7,200, funded by local businesses, community organizations, foundations, and family co-pays, plus about $2,400 of in-kind support (equipment, food, and discounts).
 
@@ -14,7 +14,7 @@ Advancement created entirely new budget needs 3-4x the size of our regular seaso
 
 FTC in Vermont can operate on a comparatively modest regular-season budget, but costs rise sharply when teams advance to out-of-state events with registration, travel, and lodging expenses. Advancement gave both teams direct experience competing alongside programs from a broader regional, national, and international field. The post-season surplus of roughly $3,400 covered the regular season's small deficit and carries about $3,140 into the 2026-27 season.
 
-### About Us
+## About Us
 
 Bennington Area Robotics is a program of **The Bennington Area Makers, Inc.** (BAMVT), a 501(c)(3) nonprofit organization with EIN 84-5124653. All donations are tax-deductible to the extent permitted by law. [How to donate](/donate).
 

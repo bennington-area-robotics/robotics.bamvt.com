@@ -4,7 +4,7 @@ title: Vermont FTC State Championship 2025
 description: FTC State Championship for the 2024-2025 season at South Burlington High School in South Burlington VT.
 ---
 
-## Vermont FTC State Championship 2025
+# Vermont FTC State Championship 2025
 
 The official FIRST Tech Challenge Regional Championship for Vermont for the 2024-2025 season.
 
@@ -12,7 +12,7 @@ The official FIRST Tech Challenge Regional Championship for Vermont for the 2024
 
 ---
 
-### 18650 Cookie Clickers Matches
+## 18650 Cookie Clickers Matches
 
 **Qualification Matches**
 

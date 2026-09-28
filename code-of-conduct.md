@@ -82,7 +82,7 @@ flier_copy:
 
 Printable copies: [one-page principles summary](/print/onepager-principles.html) · [shop-safety poster](/print/onepager-shop-safety.html)
 
-## Code of Conduct
+# Code of Conduct
 
 Bennington Area Robotics is a place where students design, build, and compete. Our founder Chris Callahan envisioned it as a *third place* — not home, not school, but a place of its own.
 
@@ -102,7 +102,7 @@ We hold each other to that. In short:
 
 The rest of this page spells out what that means.
 
-### {{ page.principles[0].slug }}
+## {{ page.principles[0].slug }}
 
 The regular meeting schedule is posted on the [home page](/#meeting-schedule). The season runs in pulses, and during those pulses we meet three or four times a week. This is when attendance matters most:
 
@@ -111,7 +111,7 @@ The regular meeting schedule is posted on the [home page](/#meeting-schedule). T
 
 Attendance at regular meetings alone is not enough; participation during these pulses is a core team expectation. The build is when teammates learn to rely on one another, and absences affect both the work and the perspectives available to the team. If work, family, or transportation makes a pulse difficult, tell a coach early so the team can plan and look for options. An honest conflict can be accommodated more readily than an unexpected no-show.
 
-### {{ page.principles[1].slug }}
+## {{ page.principles[1].slug }}
 
 At meetings, events, and team travel, the following expectations apply:
 
@@ -122,7 +122,7 @@ At meetings, events, and team travel, the following expectations apply:
 - **Leave school at the door.** What you build here should follow you to school — not the other way around.
 - **Leave politics at the door.** Save your arguments for what the field and bench can referee.
 
-### {{ page.principles[2].slug }}
+## {{ page.principles[2].slug }}
 
 The shop runs on people who see what needs doing and do it. Tools go back where they belong. Parts get sorted. Scrap gets cleared. The printer gets reloaded. None of this is glamorous. None of it requires permission.
 
@@ -134,7 +134,7 @@ When you arrive, find a coach or senior student and check in. Look around for wh
 
 Before you leave, clean your station. Return tools to where they belong. Tell a coach or senior student that you are heading out, and confirm when you will be back. If you have something running — a 3D print, a battery on the charger — make sure someone knows.
 
-### {{ page.principles[3].slug }}
+## {{ page.principles[3].slug }}
 
 As a team we depend on each other, so let your yes be yes and your no be no. The robot is hard enough without teammates you cannot count on.
 
@@ -144,7 +144,7 @@ When circumstances genuinely change, say so as early as you can. If you simply c
 
 Promise what is in your hands. You can promise to show up, to do the work, to test before the deadline. You cannot promise the robot will win — no one can. We hold each other to conduct and effort, not to outcomes.
 
-### {{ page.principles[4].slug }}
+## {{ page.principles[4].slug }}
 
 When something goes wrong — the robot won't run, a part doesn't fit, the code does the wrong thing — do not cast blame. First, find the cause, then work toward the fix. The energy spent deciding whose fault it was is energy not spent on the solution.
 
@@ -156,7 +156,7 @@ The subtlest blame is "my part works" — it assigns the fault to everyone else 
 
 Treat "my part works" as a hypothesis to test, not a defense: put the part back on the bench and test it under the conditions where the robot failed. The useful question is not "whose part?" but "where did our assumptions disagree?"
 
-### {{ page.principles[5].slug }}
+## {{ page.principles[5].slug }}
 
 Everyone forgets things. Everyone misses a meeting time, miscounts a part, or forgets to start a 3D print the night before. None of that is disqualifying on its own. It is part of doing hard things alongside school and life.
 
@@ -166,7 +166,7 @@ This includes accidents with equipment. If you drop a driver station, control hu
 
 Minimizing, deflecting, or concealing a mistake prevents the team from learning from it and increases the chance that it will happen again.
 
-### {{ page.principles[6].slug }}
+## {{ page.principles[6].slug }}
 
 Bring your ideas. We want students who want to do hard things. Robotics should be fun and interesting, and competition should help focus the mind, not make the work small.
 
@@ -178,7 +178,7 @@ Three redesigns are not three risks; every joint between them is a risk too. So:
 
 And if you see a risk to the build — your own or someone else's — say so. Protecting the build is everyone's job, not just the mentors'.
 
-### {{ page.principles[7].slug }}
+## {{ page.principles[7].slug }}
 
 This team brings together students through the shared work of designing, building, and competing. It does not matter where you go to school, what you look like, who your family is, or what you believe outside this room. Participate in the work and treat the people around you with respect. Learn people's names, and notice who needs help or is being left out.
 
@@ -186,25 +186,25 @@ Respect applies to adults and volunteers as well as students. Technical mentors,
 
 Respect also runs between students in both directions. New students are expected to learn from those with more experience by observing their work, asking questions, and contributing where they can. Experienced students may be asked to guide others because they know the shop and the team's practices. That responsibility does not confer rank: teach rather than boss, and explain the reasoning when time allows.
 
-### {{ page.principles[8].slug }}
+## {{ page.principles[8].slug }}
 
 We share a shop, and away from the shop we share hotels, vans, and convention halls. Everyone gets through those spaces more easily when people notice the effect they are having on the room.
 
 A conversation at full volume forces everyone else to listen; match your volume to the space and the moment. If you are talking, someone else is not — notice when you are taking more than your share, and pull back. Allow silence between comments.
 
-### {{ page.principles[9].slug }}
+## {{ page.principles[9].slug }}
 
 Our time together is short, and the work is harder than it looks from the outside. While we work, aim for **80% robotics, 20% socializing.** Socializing helps build the team, but it is not the main event.
 
 Sharing videos, social media posts, or other content that doesn't pertain to robotics is not allowed during meetings. Phones are for build references and build photos, not for entertainment.
 
-### Captains and leads
+## Captains and leads
 
 Some roles carry extra responsibility, including team captain, drive team, and sub-team leads. Coaches appoint captains and leads based on reliability, ownership, treatment of others, and contribution to the team—not technical ability alone. Coaches may use a student vote as one source of input, but retain responsibility for the final decision.
 
 Leadership means responsibility, not rank. Captains and leads are expected to teach, keep work moving, take on difficult tasks, and support the people around them.
 
-### What this looks like
+## What this looks like
 
 We expect to see:
 
@@ -242,7 +242,7 @@ We don't want to see:
 - Phones out for entertainment, or videos and social posts shared during meetings.
 - Treating other teams as opponents to be beaten rather than competitors to be respected.
 
-### Hard rules
+## Hard rules
 
 The principles above are how we try to work. The rules below are not optional. They protect students, protect the program, and meet the obligations we have taken on.
 
@@ -279,7 +279,7 @@ Concerns about a coach or mentor can be brought to any other coach, or directly 
 
 **Signing and reading.** New members and their parents read this document and sign it before joining. New students also read the ten principles at the top of this page aloud, in front of a coach and a senior student — and the coach or senior student reads *What we hold ourselves to* back, so it is both sides signing on, not a test the new student has to pass. If reading aloud in front of others is hard, a student can do it privately or affirm it another way; the commitment matters, not the performance. Returning students re-affirm the ten principles at the start of each season.
 
-### What we hold ourselves to
+## What we hold ourselves to
 
 The standards above apply to mentors first. We do not get to ask students for habits we are not practicing ourselves.
 
@@ -291,13 +291,13 @@ The standards above apply to mentors first. We do not get to ask students for ha
 
 Fatigue and stress affect adult judgment as well as student judgment. When a coach or mentor recognizes that they are not at their best, they are expected to say so and ask another adult to review consequential decisions. Students and adults may raise concerns about a mentor's decision, especially when safety is involved, without being treated as disrespectful.
 
-### Cost of participation
+## Cost of participation
 
 Regular-season membership for 2026–27 is $250 per student. The fee covers regular-season registration, uniforms, and pizza on Wednesday nights. Out-of-town events are an additional cost of participation and are not covered by the membership fee. Depending on the event and available fundraising, additional costs may include registration, transportation, lodging, and meals.
 
 <small>A sliding scale is available.</small>
 
-### For families
+## For families
 
 Robotics combines technical instruction with shared commitments to attendance, safety, accountability, and respectful teamwork. Families can support participation by helping students communicate schedule conflicts early and understand the commitments they make to the team. Coaches will communicate schedules, costs, travel requirements, and significant concerns as clearly and promptly as possible.
 
