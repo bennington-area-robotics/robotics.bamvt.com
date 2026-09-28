@@ -16,7 +16,7 @@ program robots for FIRST Tech Challenge as **Team 18650 Cookie Clickers** and
 <div class="highlight">
 The <strong>BIOBUZZ season is underway!</strong> Review the kickoff video, game animation, field walkthrough, and companion slides from the season launch.
 <br><br>
-<a href="/events/season-kickoff-2026/#kickoff-materials">Watch the kickoff videos and view the slides</a>
+<a href="/events/season-kickoff-2026">Watch the kickoff videos and view the slides</a>
 </div>
 
 <div class="carousel" id="carousel">
