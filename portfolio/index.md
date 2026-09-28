@@ -4,7 +4,7 @@ title: Engineering Portfolio
 description: Team 18650 Cookie Clickers' Engineering Portfolio for the 2025–2026 FTC DECODE season.
 ---
 
-## Engineering Portfolio
+# Engineering Portfolio
 
 In FIRST Tech Challenge, an Engineering Portfolio documents a team's journey through the season: the design process, engineering decisions, outreach, and growth along the way. It's a key part of the **Inspire Award**, FTC's top award, given to the team that best serves as a role model and ambassador for the FIRST program.
 

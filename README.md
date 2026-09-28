@@ -9,7 +9,7 @@ This is a [Jekyll](https://jekyllrb.com/) site hosted on GitHub Pages. Pages are
 ### Architecture
 
 - **Content pages**: Markdown with YAML front matter, usually specifying `layout: default`. Top-level pages live in the root; event pages live under `events/<event-name>/index.md` alongside their documents and image source notes.
-- **Main layout** (`_layouts/default.html`): Template with HTML structure, inline CSS, and JavaScript. Provides a desktop sidebar whose branding scrolls away while navigation links stay visible (short windows use normal page scrolling), an expandable navigation menu on smaller screens, main content, and a footer that repeats navigation in a blue section on smaller screens. Page banners appear in the content column. Navigation comes from its comma-separated `nav_items` assignment (`Label:/path`).
+- **Main layout** (`_layouts/default.html`): Template with HTML structure, inline CSS, and JavaScript. Provides a desktop sidebar whose branding scrolls away while navigation links stay visible (short windows use normal page scrolling), an expandable navigation menu on smaller screens, main content, and a footer that repeats navigation in a blue section on smaller screens. Page banners appear in the content column. Blue accent bars frame the desktop sidebar and mobile header/footer; the active navigation item uses a solid pale-blue background. The footer includes contact details, social links, and a Donate button, and sits at the bottom of the content column on short desktop pages. Navigation comes from its comma-separated `nav_items` assignment (`Label:/path`).
 - **Printable flyers** (`_layouts/flier.html`, `print/`): A separate layout and entry pages render the principles and shop-safety flyers from canonical content in `code-of-conduct.md`.
 - **Blog** (`_posts/`, `blog/index.md`): Dated Markdown posts and the blog index. Post URLs use `/blog/:slug/`, as configured in `_config.yml`.
 - **Shared content** (`_includes/`, `_data/`): Reusable Liquid fragments and structured public data.
@@ -120,8 +120,9 @@ the safety flyer's metadata lives in `print/onepager-shop-safety.md`.
    ---
    ```
 2. If the page belongs in the main navigation, add a `Label:/path` entry to the comma-separated `nav_items` assignment in `_layouts/default.html`.
-3. Run `bundle exec jekyll build` and preview the page.
-4. Commit to `main`.
+3. Begin the page body with one `# Page Title`, then use `##` for sections and `###` for subsections. The site branding is not a heading. Pages with `banner_image` get their primary heading from the layout, so start their body sections at `##` instead.
+4. Run `bundle exec jekyll build` and preview the page.
+5. Commit to `main`.
 
 For blog posts, use `_posts/YYYY-MM-DD-slug.md` with `layout`, `title`, `date`,
 `author`, and `description` in front matter. The blog index lists posts automatically.

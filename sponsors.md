@@ -3,6 +3,8 @@ layout: default
 title: Sponsors
 ---
 
+# Sponsors
+
 ## Post-Season Donors
 
 {% assign tiers = "5000,1000,500,200,100,0" | split: "," %}

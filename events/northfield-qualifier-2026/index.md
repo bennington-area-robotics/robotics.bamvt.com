@@ -4,7 +4,7 @@ title: Northfield Qualifier
 description: FTC Level 1 Qualifying Tournament on February 15, 2026 at Norwich University in Northfield VT.
 ---
 
-## Northfield FTC Qualifier 2026
+# Northfield FTC Qualifier 2026
 
 *This event has been completed. Thank you to all the teams, volunteers, and sponsors who made it possible!*
 
@@ -22,7 +22,7 @@ An official FIRST Tech Challenge Level 1 Qualifying Tournament, with advancement
 
 ---
 
-### Schedule
+## Schedule
 
 | Time | Event |
 |------|-------|
@@ -40,7 +40,7 @@ An official FIRST Tech Challenge Level 1 Qualifying Tournament, with advancement
 
 **Note:** Competition fields and team pits are located in Plumley Armory. Judging sessions take place in Mack Hall (rooms 305, 306, 307), a separate building. Teams will need to carry their robots between buildings for judging.
 
-### Participating Teams
+## Participating Teams
 
 | Team | Name |
 |------|------|
@@ -60,7 +60,7 @@ An official FIRST Tech Challenge Level 1 Qualifying Tournament, with advancement
 | 31719 | Flying Tigers |
 | 32473 | Bennington Bolts and Biscuits |
 
-### What is FTC?
+## What is FTC?
 
 FIRST Tech Challenge is a robotics program for students grades 7-12. Teams design, build, and program robots to compete on a 12'x12' field in alliance-based matches.
 

@@ -4,7 +4,7 @@ title: FIRST Championship 2026
 description: Team 18650 Cookie Clickers competed at the FIRST Championship in Houston TX, April 29 – May 2, 2026. The first southwestern Vermont FTC team at Worlds.
 ---
 
-## FIRST Championship 2026
+# FIRST Championship 2026
 
 The [FIRST Championship](https://www.firstchampionship.org/){:target="_blank"} is the world's largest K-12 robotics event, drawing over 19,000 students from over 60 countries to compete across four days of matches, judging, and awards in Houston, TX. 18650 Cookie Clickers was the first FTC team from southwestern Vermont to qualify.
 
@@ -18,7 +18,7 @@ The [FIRST Championship](https://www.firstchampionship.org/){:target="_blank"} i
 
 ---
 
-### How We Got Here
+## How We Got Here
 
 Cookie Clickers won the **Inspire Award** at the [2026 Vermont Championship](../state-championship-2026), earning a direct advancement to the FIRST Championship. The Inspire Award is the top award in FTC, recognizing a team that embodies the mission of FIRST across all aspects of the program.
 
@@ -26,7 +26,7 @@ Cookie Clickers won the **Inspire Award** at the [2026 Vermont Championship](../
 
 ---
 
-### Trip Budget and Support
+## Trip Budget and Support
 
 Competing at Worlds added $18,515 in cash expenses, plus $5,432 of donated airfare, for registration, travel, lodging, meals, and work on the robot.
 
@@ -36,13 +36,13 @@ Community donations and in-kind support funded the trip through Bennington Area 
 
 ---
 
-### Earlier Events
+## Earlier Events
 
 - [Vermont Championship](../state-championship-2026), March 7, 2026
 - [Northfield Qualifier](../northfield-qualifier-2026), February 15, 2026
 - [Bennington Qualifier](../bennington-qualifier-2026), January 31, 2026
 
-### What is FTC?
+## What is FTC?
 
 FIRST Tech Challenge is a robotics program for students grades 7-12. Teams design, build, and program robots to compete on a 12'x12' field in alliance-based matches.
 

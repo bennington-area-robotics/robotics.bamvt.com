@@ -6,7 +6,7 @@ author: Peter Radocchia, Head Coach
 description: How responsibility, accountability, consultation, and information flow are distributed across Bennington Area Robotics this off-season.
 ---
 
-## Who does what? Our summer 2026 RACI chart
+# Who does what? Our summer 2026 RACI chart
 
 *By {{ page.author }}*
 

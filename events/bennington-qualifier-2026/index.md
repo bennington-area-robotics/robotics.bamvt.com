@@ -4,7 +4,7 @@ title: Bennington Qualifier
 description: FTC Level 1 Qualifying Tournament on January 31, 2026 at MAUMS in Bennington VT.
 ---
 
-## Bennington FTC Qualifier 2026
+# Bennington FTC Qualifier 2026
 
 *This event has been completed. Thank you to all the teams, volunteers, and sponsors who made it possible!*
 
@@ -24,13 +24,13 @@ An official FIRST Tech Challenge Level 1 Qualifying Tournament, with advancement
 
 ---
 
-### Host Teams
+## Host Teams
 
 - **[Team 18650: Cookie Clickers](https://ftc-events.firstinspires.org/team/18650){:target="_blank"}** – Bennington
 - **[Team 32473: Bennington Bolts and Biscuits](https://ftc-events.firstinspires.org/team/32473){:target="_blank"}** – Bennington
 - **[Team 16221: Manchester Machine Makers](https://ftc-events.firstinspires.org/team/16221){:target="_blank"}** – Manchester ([Team Site](https://manchestermachinemakers.org){:target="_blank"})
 
-### Schedule
+## Schedule
 
 | Time | Event |
 |------|-------|
@@ -44,7 +44,7 @@ An official FIRST Tech Challenge Level 1 Qualifying Tournament, with advancement
 | **1:55 – 2:20 PM** | **Alliance Selection** |
 | **2:25 – 3:30 PM** | **Playoffs & Awards** |
 
-### Registered Teams
+## Registered Teams
 
 | Team | Name | Location |
 |------|------|----------|
@@ -60,14 +60,14 @@ An official FIRST Tech Challenge Level 1 Qualifying Tournament, with advancement
 | 32473 | Bennington Bolts and Biscuits | Bennington, VT |
 | 32818 | Wired Cats Devo | Saxtons River, VT |
 
-### What is FTC?
+## What is FTC?
 
 FIRST Tech Challenge is a robotics program for students grades 7-12. Teams design, build, and program robots to compete on a 12'x12' field in alliance-based matches.
 
 - [Introduction to FTC](https://youtu.be/y5NPp_5KHuk){:target="_blank"}
 - [DECODE Game Video](https://youtu.be/LCqWA6gSCXA){:target="_blank"}
 
-### Event Sponsors
+## Event Sponsors
 
 **Financial support from:**
 - [Bennington Rotary Club](https://www.benningtonrotary.org/){:target="_blank"}
