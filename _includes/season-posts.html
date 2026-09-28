@@ -1,0 +1,11 @@
+{% assign season_posts = site.posts | where: 'season', page.season %}
+{% for post in season_posts %}
+## [{{ post.title }}]({{ post.url | relative_url }})
+{: .post-list-title}
+
+*{{ post.date | date: "%B %-d, %Y" }}*
+
+{% if post.description %}{{ post.description }}{% endif %}
+{% endfor %}
+
+[All blog posts](/blog/)

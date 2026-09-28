@@ -1,9 +1,13 @@
 ---
 layout: default
+redirect_from: /sponsors/
+season: "2025-2026"
 title: Sponsors
 ---
 
 # Sponsors
+
+Part of our [2025–2026 DECODE season](/seasons/2025-2026/).
 
 ## Post-Season Donors
 
@@ -90,6 +94,6 @@ We are grateful to the following organizations for their support of youth roboti
 
 ### Become a Sponsor
 
-Interested in supporting youth robotics in our community? Sponsorship helps fund registration, robot parts, educational materials, and travel for both teams. See our [budget](/budget) to understand how funds are used. Contact us at [info@bamvt.com](mailto:info@bamvt.com?subject=Robotics%20Sponsorship).
+Interested in supporting youth robotics in our community? Sponsorship helps fund registration, robot parts, educational materials, and travel for both teams. See our [budget](/seasons/budgets/) to understand how funds are used. Contact us at [info@bamvt.com](mailto:info@bamvt.com?subject=Robotics%20Sponsorship).
 
 *Want to make a personal donation? Visit our [donate page](/donate).*

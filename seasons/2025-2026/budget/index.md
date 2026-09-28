@@ -1,10 +1,16 @@
 ---
 layout: default
-title: Budget
-description: Season budgets for Bennington Area Robotics FTC teams, 18650 Cookie Clickers and 32473 Bennington Bolts and Biscuits.
+redirect_from: /budget/2025-2026/
+title: 2025–2026 DECODE Budget
+budget_season: "2025-2026"
+budget_label: 2025–2026 DECODE
+budget_status: Completed season
+description: Completed 2025–2026 DECODE season accounts for Bennington Area Robotics FTC teams, 18650 Cookie Clickers and 32473 Bennington Bolts and Biscuits.
 ---
 
-# Budget
+# 2025–2026 DECODE Budget
+
+{% include budget-seasons.html %}
 
 Bennington Area Robotics ran two FTC teams in 2025-26 on a combined regular-season cash budget of roughly $7,200, funded by local businesses, community organizations, foundations, and family co-pays, plus about $2,400 of in-kind support (equipment, food, and discounts).
 
@@ -14,7 +20,7 @@ Advancement created entirely new budget needs 3-4x the size of our regular seaso
 
 FTC in Vermont can operate on a comparatively modest regular-season budget, but costs rise sharply when teams advance to out-of-state events with registration, travel, and lodging expenses. Advancement gave both teams direct experience competing alongside programs from a broader regional, national, and international field. The post-season surplus of roughly $3,400 covered the regular season's small deficit and carries about $3,140 into the 2026-27 season.
 
-{% assign budget = site.data.budget %}
+{% assign budget = site.data.budgets[page.budget_season] %}
 
 {% comment %}Compute regular-season totals{% endcomment %}
 {% assign rs_inc = 0 %}

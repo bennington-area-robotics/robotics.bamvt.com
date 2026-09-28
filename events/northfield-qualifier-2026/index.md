@@ -1,5 +1,7 @@
 ---
 layout: default
+season: "2025-2026"
+nav_section: /events/
 title: Northfield Qualifier
 description: FTC Level 1 Qualifying Tournament on February 15, 2026 at Norwich University in Northfield VT.
 ---

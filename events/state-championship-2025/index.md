@@ -1,5 +1,6 @@
 ---
 layout: default
+nav_section: /events/
 title: Vermont FTC State Championship 2025
 description: FTC State Championship for the 2024-2025 season at South Burlington High School in South Burlington VT.
 ---

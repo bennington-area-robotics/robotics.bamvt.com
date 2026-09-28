@@ -1,5 +1,7 @@
 ---
 layout: default
+season: "2025-2026"
+nav_section: /events/
 title: FIRST Championship 2026
 description: Team 18650 Cookie Clickers competed at the FIRST Championship in Houston TX, April 29 – May 2, 2026. The first southwestern Vermont FTC team at Worlds.
 ---
@@ -32,7 +34,7 @@ Competing at Worlds added $18,515 in cash expenses, plus $5,432 of donated airfa
 
 Community donations and in-kind support funded the trip through Bennington Area Makers, a 501(c)(3) nonprofit.
 
-[See the full budget](/budget) \| [Donors and sponsors](/sponsors)
+[See the full budget](/seasons/2025-2026/budget/) \| [Donors and sponsors](/seasons/2025-2026/sponsors/)
 
 ---
 

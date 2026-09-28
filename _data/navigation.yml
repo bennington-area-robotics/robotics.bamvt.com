@@ -1,0 +1,30 @@
+seasons:
+  - id: "2026-2027"
+    label: BIOBUZZ
+    years: 2026–27
+    url: /seasons/2026-2027/
+    links:
+      - label: Budget
+        url: /seasons/2026-2027/budget/
+  - id: "2025-2026"
+    label: DECODE
+    years: 2025–26
+    url: /seasons/2025-2026/
+    links:
+      - label: Budget
+        url: /seasons/2025-2026/budget/
+      - label: Portfolio
+        url: /seasons/2025-2026/portfolio/
+      - label: Sponsors
+        url: /seasons/2025-2026/sponsors/
+program:
+  - label: Blog
+    url: /blog/
+  - label: Events
+    url: /events/
+  - label: Roles
+    url: /roles/
+  - label: Conduct
+    url: /code-of-conduct/
+  - label: Donate
+    url: /donate/

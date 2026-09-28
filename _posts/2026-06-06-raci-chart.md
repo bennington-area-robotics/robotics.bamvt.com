@@ -1,5 +1,7 @@
 ---
 layout: default
+season: "2026-2027"
+nav_section: /blog/
 title: Who does what? Our summer 2026 RACI chart
 date: 2026-06-06
 author: Peter Radocchia, Head Coach

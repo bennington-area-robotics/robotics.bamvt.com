@@ -33,6 +33,7 @@
       --accent: #e63946;
       --bg: #fafafa;
       --text: #333;
+      --heading: var(--sidebar);
       --muted: #666;
       --border: #ddd;
       --row-alt: #f5f5f5;
@@ -126,6 +127,25 @@
       font-weight: 700;
     }
     .site-nav a:focus-visible { outline-color: #e0e7f1; }
+    .site-nav ul { list-style: none; padding: 0; margin: 0; }
+    .site-nav li { margin: 0; }
+    .nav-root { display: flex; flex-direction: column; gap: 0.25rem; }
+    .nav-group > a { font-weight: 650; }
+    .nav-years {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 400;
+      letter-spacing: 0.025em;
+      opacity: 0.8;
+    }
+    .nav-group.has-current > a { color: white; }
+    .nav-group.has-current > a.active { color: var(--sidebar); }
+    .site-nav .nav-children {
+      margin: 0.1rem 0 0.5rem 0.85rem;
+      padding-left: 0.45rem;
+      border-left: 1px solid rgba(224, 231, 241, 0.28);
+    }
+    .nav-children a { padding: 0.4rem 0.65rem; font-size: 0.9rem; }
     .menu-toggle {
       font: inherit;
       color: white;
@@ -203,6 +223,10 @@
       .site-header .site-nav {
         position: sticky;
         top: 1rem;
+        max-height: calc(100dvh - 2rem);
+        overflow-y: auto;
+        scrollbar-width: thin;
+        scrollbar-color: #a8b8d0 transparent;
       }
     }
     @media (max-width: 360px) {
@@ -212,8 +236,8 @@
       .site-logo { width: 2rem; height: 2rem; }
       .container { padding: 1.5rem 1rem; }
     }
-    main h1, main h2, main h3 {
-      color: var(--sidebar);
+    main :is(h1, h2, h3, h4, h5, h6) {
+      color: var(--heading);
       line-height: 1.25;
     }
     main h1 {
@@ -221,27 +245,18 @@
       letter-spacing: -0.035em;
       margin-bottom: 1.5rem;
     }
-    main h1::after {
-      content: "";
-      display: block;
-      width: 4rem;
-      height: 4px;
-      background: var(--primary);
-      margin-top: 1rem;
-    }
     main h2 {
       font-size: 1.5rem;
-      border-bottom: 2px solid var(--primary);
-      padding-bottom: 0.3rem;
       margin-top: 2rem;
     }
     main h2:first-child { margin-top: 0; }
     main h3 { font-size: 1.15rem; }
-    main h2.post-list-title { border-bottom: 0; padding-bottom: 0; }
-    .post-list-title a { text-decoration: none; }
-    .post-list-title a:hover, .post-list-title a:focus-visible {
-      text-decoration: underline;
-      text-underline-offset: 0.18em;
+    main :is(h1, h2, h3, h4, h5, h6) a {
+      color: inherit;
+      text-decoration: none;
+    }
+    main :is(h1, h2, h3, h4, h5, h6) a:hover {
+      color: var(--sidebar);
     }
     a {
       color: var(--primary);
@@ -304,9 +319,7 @@
       .footer-donate { background: #e0e7f1; border-color: #e0e7f1; color: var(--sidebar); }
       .footer-donate:hover { background: white; border-color: white; color: var(--sidebar); }
       .footer-nav {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 0.25rem 0.75rem;
+        display: block;
         margin: 0 0 1.5rem;
         font-size: 1rem;
       }
@@ -591,6 +604,17 @@
       letter-spacing: 0.07em;
       color: var(--muted);
     }
+    /* Season navigation */
+    .budget-seasons ul, .season-nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.25rem;
+      list-style: none;
+      padding: 0;
+      margin: 0 0 2rem;
+    }
+    .budget-seasons a, .season-nav a { display: inline-block; padding: 0.4rem 0; }
+    .budget-seasons a[aria-current="page"], .season-nav a[aria-current="page"] { font-weight: 700; color: var(--text); }
     /* Budget tables */
     main table { }
     main h3 + table,
@@ -939,22 +963,7 @@
       <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="site-nav" hidden>Menu</button>
       <p class="site-description">{{ site.description }}</p>
       <nav class="site-nav" id="site-nav" aria-label="Main navigation">
-        {% capture nav_links %}
-        {% assign nav_items = "Home:/,Events:/events,Blog:/blog,Portfolio:/portfolio,Roles:/roles,Conduct:/code-of-conduct,Sponsors:/sponsors,Budget:/budget,Donate:/donate" | split: "," %}
-        {% for item in nav_items %}
-          {% assign parts = item | split: ":" %}
-          {% assign label = parts[0] %}
-          {% assign path = parts[1] %}
-          {% assign is_active = false %}
-          {% if path == '/' %}
-            {% if page.url == '/' %}{% assign is_active = true %}{% endif %}
-          {% elsif page.url contains path %}
-            {% assign is_active = true %}
-          {% endif %}
-          <a href="{{ path | relative_url }}"{% if is_active %} class="active" aria-current="page"{% endif %}>{{ label }}</a>
-        {% endfor %}
-        {% endcapture %}
-        {{ nav_links }}
+        {% include navigation.html %}
       </nav>
     </div>
   </header>
@@ -980,7 +989,7 @@
   <footer class="site-footer">
     <div class="container">
     <nav class="site-nav footer-nav" aria-label="Footer navigation">
-      {{ nav_links }}
+      {% include navigation.html %}
     </nav>
     <div class="footer-details">
       <div>

@@ -42,14 +42,26 @@ contact information, or internal code-of-conduct review notes into this reposito
 - Shared fragments live in `_includes/`. Structured site content lives in `_data/`.
 - Blog posts live in `_posts/`; `blog/index.md` lists them. Post URLs use
   `/blog/:slug/`, as configured in `_config.yml`.
-- Navigation is the comma-separated `nav_items` assignment in
-  `_layouts/default.html`.
+- Season landing pages live under `seasons/YYYY-YYYY/index.md`. The season index
+  and `season-nav.html` include use `season_year`, `season_label`, and
+  `season_summary` front matter. Shared event lists live in `_includes/season-events/`.
+  `season` associates posts and pages with a season; `nav_section` highlights a
+  shared Blog or Events section for its individual posts or events.
+- Budgets, sponsors, and portfolios live under
+  `seasons/YYYY-YYYY/{budget,sponsors,portfolio}/index.md`; preserve former URLs
+  with `redirect_from`. Budget data lives in `_data/budgets/YYYY-YYYY.json` when
+  available. `seasons/budgets/index.md` and the shared
+  `budget-seasons.html` include discover seasons from page front matter.
+- Navigation is defined in `_data/navigation.yml` and rendered by
+  `_includes/navigation.html`. Keep the menu at two fixed levels, with no season
+  expansion or collapse controls. Both season groups are top-level items, followed
+  by Blog, Events, and program links. The mobile Menu button toggles the whole menu.
 - `code-of-conduct.md` is the canonical source for the long code, the principles
   summary, and the shop-safety copy. The files under `print/` select flyer layouts;
   they do not duplicate the substantive wording.
 - See **Shared Content and Data** in `README.md` for data consumers and manually
-  duplicated content. In particular, donation data feeds `donate.md`, `sponsors.md`,
-  and `budget.md`; event listings appear in both `index.md` and `events/index.md`.
+  duplicated content. In particular, donation data feeds `donate.md`, `seasons/2025-2026/sponsors/index.md`,
+  and `seasons/2025-2026/budget/index.md`; event listings are maintained in `index.md` and `_includes/season-events/`.
 
 ## Conventions
 
@@ -107,6 +119,7 @@ the shop-safety flyer have independent version metadata.
 | `code-of-conduct.md` | Canonical conduct, principles, and shop-safety content |
 | `print/onepager-principles.md` | Principles flyer entry point and metadata |
 | `print/onepager-shop-safety.md` | Shop-safety flyer entry point and metadata |
-| `budget.md` | Public financial summary |
+| `seasons/` | Season archive and landing pages |
+| `seasons/budgets/` and `seasons/<season>/budget/` | Budget index and individual season accounts |
 | `donate.md` | Donation page and calls to action |
 | `_data/` | Structured public data used by site pages and includes |

@@ -1,0 +1,9 @@
+{% assign budget_pages = site.pages | where_exp: "item", "item.budget_season" | sort: "budget_season" | reverse %}
+<nav class="budget-seasons" aria-label="Budget seasons">
+  <ul>
+    <li><a href="{{ '/seasons/budgets/' | relative_url }}">All budgets</a></li>
+    {% for season in budget_pages %}
+    <li><a href="{{ season.url | relative_url }}"{% if page.url == season.url %} aria-current="page"{% endif %}>{{ season.budget_label }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>

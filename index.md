@@ -78,7 +78,7 @@ See how Bennington Area Robotics organizes student participation in
 
 ## Teams
 
-- **[FTC Team 18650: Cookie Clickers](https://ftc-events.firstinspires.org/team/18650){:target="_blank"}** – formed in 2019, 1st ranked team and Inspire Award winner at the 2026 Vermont Championship. [Engineering Portfolio](/portfolio).
+- **[FTC Team 18650: Cookie Clickers](https://ftc-events.firstinspires.org/team/18650){:target="_blank"}** – formed in 2019, 1st ranked team and Inspire Award winner at the 2026 Vermont Championship. [Engineering Portfolio](/seasons/2025-2026/portfolio/).
 - **[FTC Team 32473: Bennington Bolts and Biscuits](https://ftc-events.firstinspires.org/team/32473){:target="_blank"}** – formed in 2025, 7th ranked team out of 25 at the 2026 Vermont Championship.
 
 ## Links
@@ -99,7 +99,7 @@ We participate in [FIRST Tech Challenge](https://www.firstinspires.org/robotics/
 
 Students design, build, and program their own robots to perform tasks and score points, working directly with technical mentors from the local community. They develop skills in mechanical engineering, programming, design, collaboration, and gracious professionalism (competing hard while helping other teams succeed).
 
-Bennington Area Robotics is a program of **The Bennington Area Makers, Inc.**, a 501(c)(3) nonprofit organization with EIN 84-5124653. Donations are tax-deductible. [How to donate](/donate). [See our budget](/budget).
+Bennington Area Robotics is a program of **The Bennington Area Makers, Inc.**, a 501(c)(3) nonprofit organization with EIN 84-5124653. Donations are tax-deductible. [How to donate](/donate). [See our budget](/seasons/budgets/).
 
 
 <p style="text-align: center; font-style: italic; margin-bottom: 0.5em;">Team 18650 Cookie Clickers at the <a href="/events/state-championship-2026">2026 Vermont FTC State Championship</a>.</p>
