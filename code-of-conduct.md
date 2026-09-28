@@ -76,13 +76,13 @@ flier_copy:
     No one has ever been in trouble here for asking whether something is safe.
 ---
 
+# Code of Conduct
+
 <div class="highlight">
 <strong>Version {{ page.version }}</strong> &middot; {{ page.document_date | date: "%B %-d, %Y" }}
 </div>
 
 Printable copies: [one-page principles summary](/print/onepager-principles.html) · [shop-safety poster](/print/onepager-shop-safety.html)
-
-# Code of Conduct
 
 Bennington Area Robotics is a place where students design, build, and compete. Our founder Chris Callahan envisioned it as a *third place* — not home, not school, but a place of its own.
 
