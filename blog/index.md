@@ -8,6 +8,7 @@ description: News and updates from Bennington Area Robotics teams 18650 Cookie C
 
 {% for post in site.posts %}
 ## [{{ post.title }}]({{ post.url | relative_url }})
+{: .post-list-title}
 
 *{{ post.date | date: "%B %-d, %Y" }}*
 
