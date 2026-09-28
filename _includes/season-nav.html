@@ -1,0 +1,9 @@
+{% assign season_pages = site.pages | where_exp: "item", "item.season_year" | sort: "season_year" | reverse %}
+<nav class="season-nav" aria-label="Seasons">
+  <ul>
+    <li><a href="{{ '/seasons/' | relative_url }}">All seasons</a></li>
+    {% for season in season_pages %}
+    <li><a href="{{ season.url | relative_url }}"{% if page.url == season.url %} aria-current="page"{% endif %}>{{ season.season_label }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>

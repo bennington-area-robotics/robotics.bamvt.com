@@ -1,5 +1,7 @@
 ---
 layout: default
+season: "2025-2026"
+nav_section: /events/
 title: Vermont FTC State Championship 2026
 description: FTC State Championship on March 7, 2026 at South Burlington High School in South Burlington VT.
 ---

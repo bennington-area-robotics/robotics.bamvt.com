@@ -1,0 +1,3 @@
+{% assign nav_page_url = page.url | append: '/' | replace: '//', '/' %}
+{% assign nav_link_url = include.url | append: '/' | replace: '//', '/' %}
+<a href="{{ include.url | relative_url }}"{% if nav_page_url == nav_link_url %} class="active" aria-current="page"{% elsif page.nav_section == include.url %} class="active" aria-current="location"{% endif %}>{{ include.label }}{% if include.years %}<span class="nav-years">{{ include.years }}</span>{% endif %}</a>

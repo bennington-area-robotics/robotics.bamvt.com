@@ -1,0 +1,17 @@
+{% assign nav_season = page.season | default: page.season_year | default: page.budget_season %}
+<ul class="nav-root">
+  <li>{% include nav-link.html url='/' label='Home' %}</li>
+  {% for season in site.data.navigation.seasons %}
+  <li class="nav-group{% if nav_season == season.id %} has-current{% endif %}">
+    {% include nav-link.html url=season.url label=season.label years=season.years %}
+    <ul class="nav-children">
+      {% for link in season.links %}
+      <li>{% include nav-link.html url=link.url label=link.label %}</li>
+      {% endfor %}
+    </ul>
+  </li>
+  {% endfor %}
+  {% for link in site.data.navigation.program %}
+  <li>{% include nav-link.html url=link.url label=link.label %}</li>
+  {% endfor %}
+</ul>
