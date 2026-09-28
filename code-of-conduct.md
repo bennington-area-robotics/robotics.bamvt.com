@@ -97,7 +97,7 @@ We follow FIRST's standard of **Gracious Professionalism**.
 
 We hold each other to that. In short:
 
-{% for principle in page.principles %}{{ forloop.index }}. **{{ principle.slug }}**
+{% for principle in page.principles %}{{ forloop.index }}. {{ principle.slug }}
 {% endfor %}
 
 The rest of this page spells out what that means.
@@ -106,7 +106,7 @@ The rest of this page spells out what that means.
 
 The regular meeting schedule is posted on the [home page](/#meeting-schedule). The season runs in pulses, and during those pulses we meet three or four times a week. This is when attendance matters most:
 
-- **September build sprint** — about 30 hours over a couple weeks, immediately after the competition is revealed.
+- **September/October build sprint** — about 30 hours over a couple weeks, immediately after the competition is revealed.
 - **Competition prep** — the weeks leading up to each tournament, when reliability work compounds and every missed hour shows up at the field.
 
 Attendance at regular meetings alone is not enough; participation during these pulses is a core team expectation. The build is when teammates learn to rely on one another, and absences affect both the work and the perspectives available to the team. If work, family, or transportation makes a pulse difficult, tell a coach early so the team can plan and look for options. An honest conflict can be accommodated more readily than an unexpected no-show.
