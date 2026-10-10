@@ -1,5 +1,6 @@
 ---
-last_modified_at: 2026-10-10T17:01:22Z
+last_modified_at: 2026-10-10T17:38:18Z
+sitemap: false
 layout: default
 title: 2026–2027 BIOBUZZ Sponsors
 description: Sponsorship information for the 2026–2027 BIOBUZZ season.
