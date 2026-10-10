@@ -34,7 +34,7 @@ Competing at Worlds added $18,515 in cash expenses, plus $5,432 of donated airfa
 
 Community donations and in-kind support funded the trip through Bennington Area Makers, a 501(c)(3) nonprofit.
 
-[See the full budget](/seasons/2025-2026/budget/) \| [Donors and sponsors](/seasons/2025-2026/sponsors/)
+[See the full budget](/budget/) \| [Donors and sponsors](/sponsors/)
 
 ---
 

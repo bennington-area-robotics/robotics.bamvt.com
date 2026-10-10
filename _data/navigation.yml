@@ -2,21 +2,21 @@ seasons:
   - id: "2026-2027"
     label: BIOBUZZ
     years: 2026–27
-    url: /seasons/2026-2027/
+    url: /seasons/biobuzz/
     links:
       - label: Budget
-        url: /seasons/2026-2027/budget/
+        url: /seasons/biobuzz/budget/
   - id: "2025-2026"
     label: DECODE
     years: 2025–26
-    url: /seasons/2025-2026/
+    url: /seasons/decode/
     links:
       - label: Budget
-        url: /seasons/2025-2026/budget/
+        url: /budget/
       - label: Portfolio
-        url: /seasons/2025-2026/portfolio/
+        url: /portfolio/
       - label: Sponsors
-        url: /seasons/2025-2026/sponsors/
+        url: /sponsors/
 program:
   - label: Blog
     url: /blog/

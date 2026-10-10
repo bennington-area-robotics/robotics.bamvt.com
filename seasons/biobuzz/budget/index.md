@@ -1,6 +1,8 @@
 ---
+redirect_from:
+  - /budget/2026-2027/
+  - /seasons/2026-2027/budget/
 layout: default
-redirect_from: /budget/2026-2027/
 title: 2026–2027 BIOBUZZ Budget
 budget_season: "2026-2027"
 budget_label: 2026–2027 BIOBUZZ
@@ -20,4 +22,4 @@ We'll publish the budget and fundraising goal here when they're ready. Donations
 
 ## Previous Season
 
-The [2025–2026 DECODE budget](/seasons/2025-2026/budget/) records regular-season spending and the completed post-season trips to Houston and the New England Premier Event, including the surplus carried into this season.
+The [2025–2026 DECODE budget](/budget/) records regular-season spending and the completed post-season trips to Houston and the New England Premier Event, including the surplus carried into this season.

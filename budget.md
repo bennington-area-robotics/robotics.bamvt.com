@@ -1,6 +1,8 @@
 ---
+redirect_from:
+  - /budget/2025-2026/
+  - /seasons/2025-2026/budget/
 layout: default
-redirect_from: /budget/2025-2026/
 title: 2025–2026 DECODE Budget
 budget_season: "2025-2026"
 budget_label: 2025–2026 DECODE

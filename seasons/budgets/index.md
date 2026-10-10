@@ -1,6 +1,5 @@
 ---
 layout: default
-redirect_from: /budget/
 title: Budgets
 description: Season budgets and completed financial accounts for Bennington Area Robotics.
 ---

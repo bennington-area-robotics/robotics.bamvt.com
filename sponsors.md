@@ -1,13 +1,14 @@
 ---
+redirect_from:
+  - /seasons/2025-2026/sponsors/
 layout: default
-redirect_from: /sponsors/
 season: "2025-2026"
 title: Sponsors
 ---
 
 # Sponsors
 
-Part of our [2025–2026 DECODE season](/seasons/2025-2026/).
+Part of our [2025–2026 DECODE season](/seasons/decode/).
 
 ## Post-Season Donors
 

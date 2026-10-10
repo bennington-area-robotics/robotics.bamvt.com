@@ -84,4 +84,4 @@ FIRST Tech Challenge is a robotics program for students grades 7-12. Teams desig
 - [SVSU](https://www.svsu.org/){:target="_blank"}
 - [MAUMS](https://maums.svsu.org/){:target="_blank"}
 
-*We are also grateful to our [season sponsors](/seasons/2025-2026/sponsors/) for 2025-2026.*
+*We are also grateful to our [season sponsors](/sponsors/) for 2025-2026.*
