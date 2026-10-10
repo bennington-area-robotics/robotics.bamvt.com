@@ -16,7 +16,7 @@ The official FIRST Tech Challenge Regional Championship for Vermont.
 
 **Location:** South Burlington High School, South Burlington, VT
 
-**FTC Event Page:** [USVTCMP](https://ftc-events.firstinspires.org/2025/USVTCMP){:target="_blank"} \| [Game Info](https://www.firstinspires.org/programs/ftc/game-and-season){:target="_blank"}
+**FTC Event Page:** [USVTCMP](https://ftc-events.firstinspires.org/2025/USVTCMP){:target="_blank"} \| [DECODE Game Info](https://ftc-resources.firstinspires.org/ftc/archive/2026){:target="_blank"}
 
 **Teams:** 25 teams from Vermont
 

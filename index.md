@@ -71,7 +71,7 @@ See how Bennington Area Robotics organizes student participation in
 
 - **Sat 9/12/2026** — [BIOBUZZ Season Kickoff](/events/season-kickoff-2026/) at Manchester Community Library, co-hosted with Manchester Machine Makers. [Videos and slides](/events/season-kickoff-2026/#kickoff-materials)
 - **Wed–Sat 4/29–5/2/2026** – [FIRST Championship](/events/first-championship-2026) in Houston TX (18650)
-- **Fri–Sat 4/17–18/2026** – [New England Premier Event](https://www.nefirst.org/ftc-premier){:target="_blank"} at the Big E, West Springfield MA (32473)
+- **Fri–Sat 4/17–18/2026** – [New England Premier Event](https://www.nefirst.org/premier){:target="_blank"} at the Big E, West Springfield MA (32473)
 - **Sat 3/7/2026** – [Vermont Championship](events/state-championship-2026) at South Burlington HS
 - **Sun 2/15/2026** – [Northfield Qualifier](events/northfield-qualifier-2026) at Norwich University
 - **Sat 1/31/2026** – [Bennington Qualifier](events/bennington-qualifier-2026) at [MAUMS](https://maps.app.goo.gl/zE9WbCbWNENq3pGUA){:target="_blank"}
@@ -85,7 +85,7 @@ See how Bennington Area Robotics organizes student participation in
 
 - [Bennington Area Makers](https://www.bamvt.com){:target="_blank"}, our host organization.
 - [FTC BIOBUZZ](https://www.firstinspires.org/programs/ftc/game-and-season){:target="_blank"}, our competition for 2026–2027.
-- [FIRST Tech Challenge](https://www.firstinspires.org/robotics/ftc){:target="_blank"}, the robotics league we compete in.
+- [FIRST Tech Challenge](https://www.firstinspires.org/programs/ftc/){:target="_blank"}, the robotics league we compete in.
 
 ## In the News {#news-coverage}
 
@@ -95,7 +95,7 @@ See how Bennington Area Robotics organizes student participation in
 
 Bennington Area Robotics is a community-based youth robotics group, drawing middle and high school aged students from Bennington, North Bennington and Shaftsbury in Vermont, and Hoosick Falls, Cambridge and Petersburg in New York.
 
-We participate in [FIRST Tech Challenge](https://www.firstinspires.org/robotics/ftc){:target="_blank"} (FTC), an annual robotics competition where four robots race to collect and score game pieces on a 12'x12' playing field.
+We participate in [FIRST Tech Challenge](https://www.firstinspires.org/programs/ftc/){:target="_blank"} (FTC), an annual robotics competition where four robots race to collect and score game pieces on a 12'x12' playing field.
 
 Students design, build, and program their own robots to perform tasks and score points, working directly with technical mentors from the local community. They develop skills in mechanical engineering, programming, design, collaboration, and gracious professionalism (competing hard while helping other teams succeed).
 

@@ -78,7 +78,7 @@
       {
         "id": "bolts-and-biscuits",
         "name": "32473 Bolts and Biscuits → New England",
-        "description": "Competed at the [New England Premier Event](https://www.nefirst.org/ftc-premier) at the Big E in West Springfield, MA, April 17-18. Sent 5 students and 2 mentors.",
+        "description": "Competed at the [New England Premier Event](https://www.nefirst.org/premier) at the Big E in West Springfield, MA, April 17-18. Sent 5 students and 2 mentors.",
         "donation_recipient": "Bolts and Biscuits",
         "expenses": [
           { "category": "Event registration", "amount": 1500.00, "actual": 1500.00 },

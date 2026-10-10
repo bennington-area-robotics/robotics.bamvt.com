@@ -29,4 +29,4 @@ Their Engineering Portfolio covers the full season: game strategy, iterative mec
   </div>
 </div>
 
-[Open PDF](https://assets.bamvt.com/ftc-18650/engineering-portfolio-worlds-2026-0406.pdf){:target="_blank"} &middot; [Learn more about FTC awards](https://www.firstinspires.org/robotics/ftc/awards){:target="_blank"}
+[Open PDF](https://assets.bamvt.com/ftc-18650/engineering-portfolio-worlds-2026-0406.pdf){:target="_blank"} &middot; [Learn more about FTC awards](https://www.firstinspires.org/resources/library/first-tech-challenge-awards){:target="_blank"}

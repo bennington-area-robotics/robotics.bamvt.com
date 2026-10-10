@@ -15,7 +15,7 @@ The September 12 kickoff at Manchester Community Library marked the start of the
 
 ## Kickoff Materials {#kickoff-materials}
 
-- [Full kickoff video](https://drive.google.com/file/d/1UuUYv2xr_jd3HkIiIghSUX4mEPpkPp44/view?usp=drive_link){:target="_blank"} (Google Drive)
+- [Full kickoff video](https://www.youtube.com/watch?v=gO98TkgY0kI){:target="_blank"} (YouTube)
 - [Game animation only](https://www.youtube.com/watch?v=sUH3z5a5S9I){:target="_blank"} (YouTube)
 - [Field walkthrough only](https://www.youtube.com/watch?v=47X9sYnPijw){:target="_blank"} (YouTube)
 - [Companion slideshow](https://drive.google.com/file/d/1xyNo0hKROWqo1eQdiMD4dg8kCbkZ43p5/view?usp=drive_link){:target="_blank"} (Google Drive)
