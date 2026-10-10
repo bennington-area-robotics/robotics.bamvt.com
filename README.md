@@ -368,3 +368,10 @@ legacy redirects remain excluded as before. No `noindex` directive is needed.
 The root `favicon.ico` is derived from the existing 180px round chip logo and
 contains 48px and 96px images. The layout retains the existing PNG and Apple icons
 and declares both ICO sizes.
+
+The local `sitemap.xml` overrides jekyll-sitemap's default template and uses only
+explicit `last_modified_at` values for `lastmod`. These are maintained by the
+content timestamp hook described above. Pages without a recorded content timestamp
+omit `lastmod`; static files never use filesystem modification times. Do not add a
+fallback to post dates, file modification times, or build time. Existing sitemap
+exclusions and redirect behavior remain unchanged.

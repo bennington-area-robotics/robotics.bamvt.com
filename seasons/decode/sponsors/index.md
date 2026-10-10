@@ -1,5 +1,6 @@
 ---
-last_modified_at: 2026-10-10T17:01:22Z
+last_modified_at: 2026-10-10T18:18:50Z
+description: "Meet the sponsors and donors who supported Bennington Area Robotics during DECODE, including the 2026 post-season competition trips."
 redirect_from:
   - /seasons/2025-2026/sponsors/
 layout: default

@@ -1,5 +1,6 @@
 ---
-last_modified_at: 2026-10-10T10:35:16-04:00
+last_modified_at: 2026-10-10T18:18:50Z
+description: "Find Bennington Area Robotics events for the BIOBUZZ and DECODE seasons, including kickoff, qualifiers, and championship competitions."
 layout: default
 title: Events
 ---
