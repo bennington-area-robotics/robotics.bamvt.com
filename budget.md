@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-10-10T17:35:32Z
+last_modified_at: 2026-10-10T17:39:59Z
 layout: default
 title: 2026–2027 BIOBUZZ Budget
 description: Budget planning for Bennington Area Robotics's 2026–2027 BIOBUZZ season.

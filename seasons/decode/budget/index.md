@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-10-10T17:35:32Z
+last_modified_at: 2026-10-10T17:39:59Z
 redirect_from:
   - /budget/2025-2026/
   - /seasons/2025-2026/budget/

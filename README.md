@@ -350,3 +350,21 @@ second instance, choose unused ports for both, for example:
 ```bash
 bin/serve --port 4002 --livereload-port 35730
 ```
+
+### Sitemap inclusion
+
+`jekyll-sitemap` submits substantive canonical HTML pages. Verification files,
+printable copies, PDF downloads, and pages marked `sitemap: false` remain available
+at their existing URLs. Static PDFs lack canonical metadata and are excluded using
+front-matter defaults in `_config.yml`; the Google verification file is also excluded
+through defaults so its bytes remain unchanged.
+
+Season and budget indexes, seasonal blog listings, the BIOBUZZ events listing,
+BIOBUZZ budget/sponsor/portfolio placeholders, and the 2025 state championship
+page are currently excluded. Remove `sitemap: false` when these pages contain
+substantial original content. Root budget/sponsor/portfolio copies and generated
+legacy redirects remain excluded as before. No `noindex` directive is needed.
+
+The root `favicon.ico` is derived from the existing 180px round chip logo and
+contains 48px and 96px images. The layout retains the existing PNG and Apple icons
+and declares both ICO sizes.

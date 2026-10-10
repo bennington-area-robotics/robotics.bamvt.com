@@ -1,5 +1,6 @@
 ---
-last_modified_at: 2026-09-28T16:02:57-04:00
+last_modified_at: 2026-10-10T17:38:18Z
+sitemap: false
 layout: default
 nav_section: /events/
 title: Vermont FTC State Championship 2025

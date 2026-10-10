@@ -22,3 +22,14 @@ exclude:
 plugins:
   - jekyll-redirect-from
   - jekyll-sitemap
+
+# Keep verification and downloadable documents available, but out of search submissions.
+defaults:
+  - scope:
+      path: "google971153aeec0ee7b8.html"
+    values:
+      sitemap: false
+  - scope:
+      path: "**/*.pdf"
+    values:
+      sitemap: false
