@@ -296,6 +296,12 @@
     }
     .footer-details p { margin: 0 0 0.4rem; }
     .footer-details strong { color: var(--text); }
+    .footer-locations {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem 2rem;
+      margin: 1rem 0;
+    }
     .footer-copyright { margin: 1.5rem 0 0; font-size: 0.8rem; }
     .page-updated { margin: 2rem 0 0; color: var(--muted); font-size: 0.85rem; }
     .footer-donate {
@@ -1002,6 +1008,17 @@
         <p><strong>Bennington Area Robotics</strong></p>
         <p>A program of <a href="https://www.bamvt.com" target="_blank" rel="noopener">Bennington Area Makers</a></p>
         <p><a href="mailto:info@bamvt.com">info@bamvt.com</a></p>
+        <div class="footer-locations">
+          <div>
+            <p><strong>Meeting location</strong></p>
+            <p>Beech Street School<br>246 South Stream Road<br>Bennington, VT 05201</p>
+            <p><a href="https://www.google.com/maps/dir/?api=1&amp;destination=246+South+Stream+Road+Bennington+VT+05201" target="_blank" rel="noopener">Directions</a> &middot; <a href="{{ '/' | relative_url }}#meeting-schedule">Meeting schedule</a></p>
+          </div>
+          <div>
+            <p><strong>Mailing address</strong></p>
+            <p>The Bennington Area Makers, Inc.<br>PO Box 4332<br>Bennington, VT 05201</p>
+          </div>
+        </div>
         <p>
           <a href="https://www.instagram.com/ftc18650" target="_blank" rel="noopener">Instagram</a>
           &nbsp;&middot;&nbsp;

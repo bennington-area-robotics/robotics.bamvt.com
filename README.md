@@ -69,6 +69,10 @@ update both when adding an event or moving it into past events. Membership costs
 both `index.md` and `code-of-conduct.md`. Financial summaries in page prose are also
 manual: changing JSON data does not update those sentences.
 
+The footer in `_layouts/default.html` repeats the meeting location from `index.md`
+and mailing address from `donate.md`; keep those copies aligned when an address
+changes. Its meeting schedule link points to the homepage so times stay in one place.
+
 ### Season Navigation
 
 The main menu has two fixed levels: Home; BIOBUZZ and DECODE as top-level season
