@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-09-27T21:28:49-04:00
 layout: default
 title: Code of Conduct
 version: "1.1"

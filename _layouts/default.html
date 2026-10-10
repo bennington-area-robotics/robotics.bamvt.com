@@ -295,6 +295,7 @@
     .footer-details p { margin: 0 0 0.4rem; }
     .footer-details strong { color: var(--text); }
     .footer-copyright { margin: 1.5rem 0 0; font-size: 0.8rem; }
+    .page-updated { margin: 2rem 0 0; color: var(--muted); font-size: 0.85rem; }
     .footer-donate {
       display: inline-block;
       background: var(--sidebar);
@@ -979,6 +980,9 @@
   {% endif %}
   <main class="container" id="main-content" tabindex="-1">
     {{ content | replace: '<table', '<div class="table-scroll" role="region" aria-label="Scrollable table" tabindex="0"><table' | replace: '</table>', '</table></div>' }}
+    {% if page.last_modified_at %}
+    <p class="page-updated">Last updated <time datetime="{{ page.last_modified_at | date_to_xmlschema }}">{{ page.last_modified_at | date: "%B %-d, %Y" }}</time></p>
+    {% endif %}
   </main>
   <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
     <button class="lightbox-close" id="lightbox-close" title="Close" aria-label="Close lightbox">&times;</button>

@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-10-10T10:35:16-04:00
 layout: default
 title: Donate
 description: Support Bennington Area Robotics in the 2026–27 season, with plans for a new swerve drive and a new season budget in development.

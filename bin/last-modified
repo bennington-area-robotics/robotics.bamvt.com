@@ -1,0 +1,225 @@
+#!/usr/bin/env ruby
+# Maintain page timestamps without staging unrelated working-tree changes.
+require 'date'
+require 'open3'
+require 'set'
+require 'time'
+require 'yaml'
+
+module LastModified
+  FIELD = /^last_modified_at:[^\r\n]*\r?\n/
+  FRONT = /\A---\r?\n(.*?)^---[ \t]*\r?\n/m
+  # These includes provide presentation/navigation, not shared editorial content.
+  PRESENTATION = %w[navigation.html nav-link.html season-nav.html budget-seasons.html
+                    figure.html quote.html money.html organization-schema.html].freeze
+
+  def self.git(*args, input: nil)
+    output, error, status = Open3.capture3('git', *args, stdin_data: input)
+    raise "git #{args.first}: #{error.strip}" unless status.success?
+    output
+  end
+
+  def self.front(text)
+    match = FRONT.match(text.to_s)
+    return {} unless match
+    YAML.safe_load(match[1], permitted_classes: [Date, Time], aliases: false) || {}
+  end
+
+  def self.without_stamp(text)
+    return text unless text && (match = FRONT.match(text))
+    text.sub(match[0], match[0].gsub(FIELD, ''))
+  end
+
+  def self.stamp(text, value)
+    raise 'Missing YAML front matter' unless FRONT.match?(text)
+    clean = without_stamp(text)
+    newline = clean.start_with?("---\r\n") ? "\r\n" : "\n"
+    clean.sub(/\A---\r?\n/, "---#{newline}last_modified_at: #{value}#{newline}")
+  end
+
+  def self.timestamp(text)
+    value = front(text)['last_modified_at']
+    return value if value.is_a?(Time)
+    Time.iso8601(value.to_s) if value.to_s.match?(/T.*(?:Z|[+-]\d\d:\d\d)\z/)
+  rescue ArgumentError
+    nil
+  end
+
+  class Snapshot
+    attr_reader :paths
+
+    def initialize(ref)
+      @ref = ref
+      @paths = if ref == 'working'
+                 LastModified.git('ls-files', '--cached', '--others', '--exclude-standard', '-z').split("\0").uniq
+               elsif ref == 'index'
+                 LastModified.git('ls-files', '-z').split("\0").uniq
+               else
+                 LastModified.git('ls-tree', '-r', '--name-only', '-z', ref).split("\0")
+               end
+      @texts = {}
+      @dependencies = {}
+    end
+
+    def text(path)
+      return nil unless paths.include?(path)
+      return @texts[path] if @texts.key?(path)
+      @texts[path] = if @ref == 'working'
+                       File.file?(path) ? File.read(path) : nil
+                     else
+                       LastModified.git('show', "#{@ref == 'index' ? '' : @ref}:#{path}")
+                     end
+    end
+
+    def meta(path)
+      LastModified.front(text(path))
+    end
+
+    def pages
+      @pages ||= paths.select do |path|
+        next false unless path.match?(/\.(md|markdown|html)\z/)
+        next false if path.start_with?('.') || (path.start_with?('_') && !path.start_with?('_posts/'))
+        meta(path)['layout'] == 'default' && !meta(path)['redirect_to']
+      end
+    end
+
+    def dependencies(page)
+      @dependencies[page] ||= begin
+        found = Set[page]
+        pending = [page]
+        until pending.empty?
+          path = pending.shift
+          source = text(path).to_s
+          includes = source.scan(/{%-?\s*include\s+([\w.\/-]+)/).flatten
+                           .reject { |name| PRESENTATION.include?(name) }
+                           .map { |name| "_includes/#{name}" }
+          data = source.scan(/site\.data\.([\w-]+)/).flatten.flat_map do |name|
+            budget_season = meta(page)['budget_season'] || meta(page)['season']
+            if name == 'budgets' && budget_season
+              paths.select { |p| p.match?(%r{\A_data/budgets/#{Regexp.escape(budget_season.to_s)}\.(json|ya?ml|csv)\z}) }
+            else
+              paths.select { |p| p.start_with?("_data/#{name}/") || p.match?(%r{\A_data/#{Regexp.escape(name)}\.(json|ya?ml|csv)\z}) }
+            end
+          end
+          # Listings depend on their source pages, including newly added/deleted posts.
+          listings = []
+          if source.include?('site.posts')
+            listings = pages.select { |p| p.start_with?('_posts/') }
+            listings.select! { |p| meta(p)['season'] == meta(page)['season'] } if path == '_includes/season-posts.html'
+          end
+          %w[budget_season season_year].each do |key|
+            listings.concat(pages.select { |p| meta(p)[key] }) if source.include?("item.#{key}")
+          end
+          (includes + data + listings).each do |dependency|
+            next if found.include?(dependency)
+            found.add(dependency)
+            pending << dependency
+          end
+        end
+        found
+      end
+    end
+  end
+
+  def self.affected(before, after)
+    changed = (before.paths | after.paths).select do |path|
+      # Only content sources can affect these timestamps. Avoid reading binary assets.
+      path.match?(/\.(md|markdown|html|json|ya?ml|csv)\z/) &&
+        without_stamp(before.text(path)) != without_stamp(after.text(path))
+    end.to_set
+    after.pages.select do |page|
+      dependencies = after.dependencies(page)
+      dependencies |= before.dependencies(page) if before.pages.include?(page)
+      !(dependencies & changed).empty?
+    end
+  end
+
+  def self.update_index(base = 'HEAD')
+    # Path-limited commits use a disposable index. Updating it would leave reverse
+    # timestamp changes staged in the real index after Git finishes the commit.
+    if File.basename(ENV.fetch('GIT_INDEX_FILE', '')).start_with?('next-index-')
+      raise 'Stage the desired files, then run git commit without file/path arguments so dependent timestamps stay in sync.'
+    end
+    raise 'Resolve merge conflicts before updating timestamps' unless git('ls-files', '-u').empty?
+    before = Snapshot.new(base)
+    after = Snapshot.new('index')
+    pages = affected(before, after)
+    now = Time.now.utc
+    # Preflight every working file before changing the index or any working file.
+    updates = pages.map do |page|
+      raise "#{page}: restore the working file before committing" unless File.file?(page) && !File.symlink?(page)
+      working = File.read(page)
+      raise "#{page}: keep valid front matter in the working file" unless front(working)['layout'] == 'default'
+      old = timestamp(before.text(page))
+      value = [now, old ? old + 1 : now].max.iso8601
+      [page, stamp(after.text(page), value), stamp(working, value)]
+    end
+    entries = git('ls-files', '--stage', '-z').split("\0").to_h do |entry|
+      attributes, path = entry.split("\t", 2)
+      [path, attributes.split.first]
+    end
+    index_info = updates.map do |page, staged, _working|
+      blob = git('hash-object', '-w', '--stdin', input: staged).strip
+      "#{entries.fetch(page)} #{blob}\t#{page}\0"
+    end.join
+    git('update-index', '-z', '--index-info', input: index_info) unless updates.empty?
+    updates.each do |page, _staged, working|
+      File.write(page, working)
+      puts "Updated last_modified_at: #{page}"
+    end
+  end
+
+  def self.backfill
+    snapshot = Snapshot.new('working')
+    snapshot.pages.each do |page|
+      next if timestamp(snapshot.text(page))
+      value = git('log', '-1', '--format=%cI', 'HEAD', '--', *snapshot.dependencies(page).to_a).strip
+      value = Time.now.utc.iso8601 if value.empty?
+      File.write(page, stamp(snapshot.text(page), value))
+      puts "Initialized last_modified_at: #{page} (#{value})"
+    end
+  end
+
+  def self.check(base, head)
+    before = Snapshot.new(base)
+    after = Snapshot.new(head)
+    changed = affected(before, after).to_set
+    failures = after.pages.filter_map do |page|
+      current = timestamp(after.text(page))
+      previous = timestamp(before.text(page))
+      if !current
+        "#{page}: missing or invalid last_modified_at (use ISO 8601 with a timezone)"
+      elsif changed.include?(page) && previous && current <= previous
+        "#{page}: content changed without advancing last_modified_at"
+      end
+    end
+    raise failures.join("\n") unless failures.empty?
+    puts "Page timestamps OK (#{changed.size} affected pages)."
+  end
+
+  def self.main(args)
+    Dir.chdir(git('rev-parse', '--show-toplevel').strip)
+    case args.shift
+    when '--staged'
+      raise 'Usage: bin/last-modified --staged [BASE]' if args.size > 1
+      update_index(args.first || 'HEAD')
+    when '--backfill'
+      raise 'Usage: bin/last-modified --backfill' unless args.empty?
+      backfill
+    when '--check'
+      raise 'Usage: bin/last-modified --check BASE [HEAD]' unless (1..2).cover?(args.size)
+      check(args[0], args[1] || 'HEAD')
+    else
+      raise 'Usage: bin/last-modified --staged [BASE] | --backfill | --check BASE [HEAD]'
+    end
+  end
+end
+
+if $PROGRAM_NAME == __FILE__
+  begin
+    LastModified.main(ARGV)
+  rescue StandardError => e
+    warn "last-modified: #{e.message}"
+    exit 1
+  end
+end
