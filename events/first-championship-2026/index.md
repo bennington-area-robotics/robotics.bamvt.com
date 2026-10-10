@@ -8,7 +8,7 @@ description: Team 18650 Cookie Clickers competed at the FIRST Championship in Ho
 
 # FIRST Championship 2026
 
-The [FIRST Championship](https://www.firstchampionship.org/){:target="_blank"} is the world's largest K-12 robotics event, drawing over 19,000 students from over 60 countries to compete across four days of matches, judging, and awards in Houston, TX. 18650 Cookie Clickers was the first FTC team from southwestern Vermont to qualify.
+The [FIRST Championship](https://www.firstinspires.org/programs/first-championship){:target="_blank"} is the world's largest K-12 robotics event, drawing over 19,000 students from over 60 countries to compete across four days of matches, judging, and awards in Houston, TX. 18650 Cookie Clickers was the first FTC team from southwestern Vermont to qualify.
 
 **Read about the trip:** [FTC 18650 at FIRST Championship](/blog/houston-2026/)
 
@@ -16,7 +16,7 @@ The [FIRST Championship](https://www.firstchampionship.org/){:target="_blank"} i
 
 **Location:** George R. Brown Convention Center, Houston, TX
 
-**FTC Event Page:** [CMPTX](https://ftc-events.firstinspires.org/2025/CMPTX){:target="_blank"} \| [Event Info](https://www.firstchampionship.org/){:target="_blank"} \| [Event Guide (PDF)](https://www.firstinspires.org/hubfs/web/event/2026/cmp/all/event-guide.pdf?hsLang=en){:target="_blank"}
+**FTC Event Page:** [FTCCMP1](https://ftc-events.firstinspires.org/2025/FTCCMP1){:target="_blank"} \| [Event Info](https://www.firstinspires.org/programs/first-championship){:target="_blank"} \| [Event Guide (PDF)](https://www.firstinspires.org/hubfs/web/event/2026/cmp/all/event-guide.pdf?hsLang=en){:target="_blank"}
 
 ---
 

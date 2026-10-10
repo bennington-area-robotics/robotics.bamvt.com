@@ -18,7 +18,7 @@ An official FIRST Tech Challenge Level 1 Qualifying Tournament, with advancement
 
 **Location:** Mount Anthony Union Middle School (MAUMS), 747 East Rd, Bennington, VT 05201 \| [Venue Map](venue-map.pdf){:target="_blank"} \| [Directions](https://maps.app.goo.gl/zE9WbCbWNENq3pGUA){:target="_blank"}
 
-**FTC Event Page:** [USVTBEQ](https://ftc-events.firstinspires.org/2025/USVTBEQ){:target="_blank"} \| [Game Info](https://www.firstinspires.org/programs/ftc/game-and-season){:target="_blank"}
+**FTC Event Page:** [USVTBEQ](https://ftc-events.firstinspires.org/2025/USVTBEQ){:target="_blank"} \| [DECODE Game Info](https://ftc-resources.firstinspires.org/ftc/archive/2026){:target="_blank"}
 
 **Teams:** 11 teams from Vermont and Massachusetts
 
