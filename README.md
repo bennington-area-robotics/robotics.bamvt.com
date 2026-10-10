@@ -146,8 +146,10 @@ budget_label: 2026–2027 BIOBUZZ
 budget_status: Budget in development
 ```
 
-Include `{% include budget-seasons.html %}` after the page heading. The index and
-season navigation discover these pages automatically and sort newest first. Give
+After the page heading, link to the season overview with “Part of our
+[2026–2027 BIOBUZZ season](/seasons/biobuzz/).”, matching the sponsors and portfolio
+pages. The all-season budget index discovers budget pages automatically and sorts
+newest first. Give
 financial data its own `_data/budgets/YYYY-YYYY.json` file when figures are ready.
 For shared budget bodies, use `page.budget_season | default: page.season` as the
 key into `site.data.budgets`, since root entry points use `season` metadata. Keep

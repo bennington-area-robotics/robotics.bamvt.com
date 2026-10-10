@@ -1,6 +1,6 @@
 # 2026–2027 BIOBUZZ Budget
 
-{% include budget-seasons.html %}
+Part of our [2026–2027 BIOBUZZ season](/seasons/biobuzz/).
 
 ## Budget in Development
 
