@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /seasons/2026-2027/blog/
 layout: default
 nav_section: /blog/
 title: 2026–2027 BIOBUZZ Blog
@@ -8,6 +10,6 @@ description: Updates and reflections from Bennington Area Robotics's 2026–2027
 
 # 2026–2027 BIOBUZZ Blog
 
-[Season overview](/seasons/2026-2027/)
+[Season overview](/seasons/biobuzz/)
 
 {% include season-posts.html %}

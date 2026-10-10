@@ -16,6 +16,18 @@ internal working notes, and unfinished review material belong in the sibling
 `../robotics` repository. In particular, do not move bank records, donor
 contact information, or internal code-of-conduct review notes into this repository.
 
+## Resuming Work
+
+- Start with `git status --short --branch`, recent commits, and `git diff`. Inspect
+  untracked files too: a budget page may depend on a new JSON file that is not yet
+  included in the diff. Preserve existing changes before switching branches.
+- Check the associated PR's current state before continuing a branch; local work
+  may extend a season reorganization that has already merged. Distinguish committed
+  navigation changes from later, uncommitted budget and copy updates.
+- Read **Season Navigation** and **Budget Seasons** in `README.md` before changing
+  season structure. Keep session transcripts and internal handoff notes in
+  `../robotics`, outside this public repository.
+
 ## Build and Preview
 
 - Run `bin/serve` for a local preview with live reload on port **4001**.
@@ -42,14 +54,23 @@ contact information, or internal code-of-conduct review notes into this reposito
 - Shared fragments live in `_includes/`. Structured site content lives in `_data/`.
 - Blog posts live in `_posts/`; `blog/index.md` lists them. Post URLs use
   `/blog/:slug/`, as configured in `_config.yml`.
-- Season landing pages live under `seasons/YYYY-YYYY/index.md`. The season index
+- Season landing pages live under `seasons/<season-name>/index.md`, using lowercase
+  game names (`biobuzz`, `decode`) rather than years in URLs. Keep year ranges in
+  metadata and data filenames for sorting and association. The season index
   and `season-nav.html` include use `season_year`, `season_label`, and
   `season_summary` front matter. Shared event lists live in `_includes/season-events/`.
   `season` associates posts and pages with a season; `nav_section` highlights a
   shared Blog or Events section for its individual posts or events.
-- Budgets, sponsors, and portfolios live under
-  `seasons/YYYY-YYYY/{budget,sponsors,portfolio}/index.md`; preserve former URLs
-  with `redirect_from`. Budget data lives in `_data/budgets/YYYY-YYYY.json` when
+  Season overview blog links are curated manually; seasonal blog listings use
+  `season-posts.html` to select posts by `season`, not publication date. Event
+  lists are maintained manually in the shared includes, not generated from pages.
+- Preserve original top-level URLs: `budget.md`, `sponsors.md`, and `portfolio.md`
+  retain their DECODE content at `/budget/`, `/sponsors/`, and `/portfolio/`.
+  Season overviews link to those pages rather than relocating them. New seasonal
+  content uses `seasons/<season-name>/<section>/index.md`; BIOBUZZ's budget is at
+  `/seasons/biobuzz/budget/`. Keep redirects from the published year-based season
+  paths and older `/budget/YYYY-YYYY/` paths pointing directly to canonical pages.
+  Budget data lives in `_data/budgets/YYYY-YYYY.json` when
   available. `seasons/budgets/index.md` and the shared
   `budget-seasons.html` include discover seasons from page front matter.
 - Navigation is defined in `_data/navigation.yml` and rendered by
@@ -60,8 +81,22 @@ contact information, or internal code-of-conduct review notes into this reposito
   summary, and the shop-safety copy. The files under `print/` select flyer layouts;
   they do not duplicate the substantive wording.
 - See **Shared Content and Data** in `README.md` for data consumers and manually
-  duplicated content. In particular, donation data feeds `donate.md`, `seasons/2025-2026/sponsors/index.md`,
-  and `seasons/2025-2026/budget/index.md`; event listings are maintained in `index.md` and `_includes/season-events/`.
+  duplicated content. `_data/donations.json` feeds `donate.md`,
+  `sponsors.md`, and `budget.md`.
+  It records the completed DECODE post-season campaign; keep new-season gifts
+  separate so they cannot change those accounts. Event listings are maintained
+  in both `index.md` and `_includes/season-events/`.
+
+## Season Budget Updates
+
+- BIOBUZZ's public budget page is a placeholder marked "Budget in development".
+  Do not publish unfinished budget data or copy as part of path or navigation work.
+- Keep planned income distinct from received funds when publishing a budget.
+  Review related copy in `donate.md` and the season overview at the same time.
+- Keep private data out of `_data/`, including ignored subdirectories: Jekyll loads
+  data independently of Git ignore rules.
+- When moving historical pages, check redirects and confirm completed DECODE
+  figures remain unchanged.
 
 ## Conventions
 
@@ -69,6 +104,8 @@ contact information, or internal code-of-conduct review notes into this reposito
   `{:target="_blank"}`; internal links do not.
 - Shared styles and scripts are kept in the relevant layout rather than separate
   asset bundles. Some pages also contain styles or scripts specific to that page.
+- Content headings use the shared dark blue `--heading` color without decorative
+  lines or underlines; linked headings match. Banner titles remain white.
 - Images live in the BAMVT Cloudflare R2 `assets` bucket at `assets.bamvt.com`.
   Site images use `robotics.bamvt.com/` followed by their former repository path;
   Houston photos and the portfolio PDF retain their existing external URLs.
@@ -120,6 +157,7 @@ the shop-safety flyer have independent version metadata.
 | `print/onepager-principles.md` | Principles flyer entry point and metadata |
 | `print/onepager-shop-safety.md` | Shop-safety flyer entry point and metadata |
 | `seasons/` | Season archive and landing pages |
-| `seasons/budgets/` and `seasons/<season>/budget/` | Budget index and individual season accounts |
+| `budget.md`, `sponsors.md`, `portfolio.md` | Original top-level DECODE pages |
+| `seasons/budgets/` and `seasons/biobuzz/budget/` | Budget index and BIOBUZZ budget placeholder |
 | `donate.md` | Donation page and calls to action |
 | `_data/` | Structured public data used by site pages and includes |

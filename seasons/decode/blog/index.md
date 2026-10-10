@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /seasons/2025-2026/blog/
 layout: default
 nav_section: /blog/
 title: 2025–2026 DECODE Blog
@@ -8,6 +10,6 @@ description: Updates and reflections from Bennington Area Robotics's 2025–2026
 
 # 2025–2026 DECODE Blog
 
-[Season overview](/seasons/2025-2026/)
+[Season overview](/seasons/decode/)
 
 {% include season-posts.html %}
