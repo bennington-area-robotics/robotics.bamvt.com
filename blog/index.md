@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-10-10T10:23:21-04:00
+last_modified_at: 2026-10-10T17:01:22Z
 layout: default
 title: Blog
 description: News and updates from Bennington Area Robotics teams 18650 Cookie Clickers and 32473 Bennington Bolts and Biscuits.

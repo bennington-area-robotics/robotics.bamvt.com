@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-10-10T10:35:16-04:00
+last_modified_at: 2026-10-10T17:01:22Z
 layout: default
 season: "2025-2026"
 nav_section: /events/
@@ -35,7 +35,7 @@ Competing at Worlds added $18,515 in cash expenses, plus $5,432 of donated airfa
 
 Community donations and in-kind support funded the trip through Bennington Area Makers, a 501(c)(3) nonprofit.
 
-[See the full budget](/budget/) \| [Donors and sponsors](/sponsors/)
+[See the full budget](/seasons/decode/budget/) \| [Donors and sponsors](/seasons/decode/sponsors/)
 
 ---
 
