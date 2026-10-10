@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-10-10T17:01:22Z
+last_modified_at: 2026-10-10T17:39:59Z
 redirect_from:
   - /budget/2025-2026/
   - /seasons/2025-2026/budget/
@@ -13,7 +13,7 @@ description: Completed 2025–2026 DECODE season accounts for Bennington Area Ro
 
 # 2025–2026 DECODE Budget
 
-{% include budget-seasons.html %}
+Part of our [2025–2026 DECODE season](/seasons/decode/).
 
 Bennington Area Robotics ran two FTC teams in 2025-26 on a combined regular-season cash budget of roughly $7,200, funded by local businesses, community organizations, foundations, and family co-pays, plus about $2,400 of in-kind support (equipment, food, and discounts).
 
