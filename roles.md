@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-09-27T20:43:26-04:00
 layout: default
 title: Roles and Responsibilities
 description: How Bennington Area Robotics organizes student participation across mechanical, controls, and operations, with shared responsibilities and student leadership.

@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-10-10T10:35:16-04:00
 layout: default
 season: "2026-2027"
 nav_section: /events/

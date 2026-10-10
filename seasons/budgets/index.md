@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-10-10T10:23:21-04:00
 layout: default
 title: Budgets
 description: Season budgets and completed financial accounts for Bennington Area Robotics.

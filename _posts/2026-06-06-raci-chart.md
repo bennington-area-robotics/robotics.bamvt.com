@@ -1,4 +1,5 @@
 ---
+last_modified_at: 2026-09-28T16:02:57-04:00
 layout: default
 season: "2026-2027"
 nav_section: /blog/

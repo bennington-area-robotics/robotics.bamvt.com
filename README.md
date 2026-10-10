@@ -136,10 +136,52 @@ states that its budget is in development; no BIOBUZZ financial snapshot is publi
 
 ### To Make Changes
 
-1. Edit the relevant `.md` file directly on GitHub or clone the repo locally
+1. Edit the relevant `.md` file directly on GitHub or clone the repo locally. After cloning, run `bin/install-hooks` once to enable automatic page timestamps.
 2. For local work, run `bundle exec jekyll build`; a successful build is the minimum check for content, layout, Liquid, or navigation changes. Preview visual changes using the instructions below.
 3. Commit your changes to `main`
 4. GitHub Pages will automatically rebuild the site (usually within a few minutes)
+
+### Page Update Dates
+
+Pages and posts using `layout: default` display `last_modified_at` below their
+content. Store a full ISO 8601 timestamp with a timezone in front matter; readers
+see the calendar date. These dates record content edits, including small corrections,
+and do not imply a policy review or a new financial reporting period.
+
+Run `bin/install-hooks` in each checkout. The pre-commit hook runs
+`bin/last-modified --staged`, stamps affected pages in the index, and updates only
+the timestamp in their working copies. Partially staged edits stay partially staged;
+shared-content changes may stage timestamp-only updates in dependent pages.
+Stage the desired changes first, then use `git commit` without file/path arguments.
+The hook rejects path-limited commits (`git commit FILE` or `--only`) because Git's
+temporary index would otherwise leave inconsistent timestamp changes staged.
+The installer preserves existing hooks and explains how to integrate with one.
+Ruby is required, as it is for the local Jekyll build.
+
+The script follows literal content includes, `site.data.NAME` references (with
+season-specific budget data), and blog/season/budget listings. It considers both
+the old and new content so removals and season changes update the former consumers
+too. Layouts, the main navigation, in-page season navigation, and presentation-only
+includes do not advance dates. Add support in `bin/last-modified` and a regression
+test when introducing dynamic includes, a different data-access syntax, or a new
+kind of generated listing. Remote asset changes at the same URL are not detected.
+
+`bin/last-modified --backfill` initializes missing timestamps from the latest Git
+commit affecting each page or its content sources; it does not stage files. New
+pages with no source history get the current time. Existing timestamps are
+preserved. Printable flyers keep their explicit document versions
+and dates; the hook never changes `document_date`, `version`, or budget reporting dates.
+
+GitHub's **Page timestamps** workflow checks pull requests and pushes to `main`.
+It flags missing/invalid timestamps and affected pages whose timestamps did not
+advance compared with the change's base. It does not write commits or gate the
+existing Pages deployment by itself. For GitHub web edits, update `last_modified_at`
+on the page and any affected consumers in the same change. To repair missed updates
+locally, stage the content and run `bin/last-modified --staged BASE`, where `BASE`
+is the commit before the missed edits, then commit the generated timestamps.
+Run `bin/last-modified --check BASE HEAD` to reproduce the check.
+
+Automation regression tests run with `ruby bin/tests/last_modified_test.rb`.
 
 ### Editorial Style Guide
 

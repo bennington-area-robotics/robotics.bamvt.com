@@ -100,6 +100,13 @@ contact information, or internal code-of-conduct review notes into this reposito
 
 ## Conventions
 
+- Pages and posts using `layout: default` carry an ISO 8601 `last_modified_at`.
+  Run `bin/install-hooks` once per checkout; the pre-commit hook updates affected
+  staged pages and shared-content consumers while preserving unstaged edits.
+  Keep dependency handling and tests in `bin/last-modified` aligned with new
+  content includes, data access, and generated listings. See **Page Update Dates**
+  in the README for backfilling, GitHub web edits, and checks. These timestamps do
+  not replace policy version dates or budget reporting dates.
 - Markdown uses kramdown syntax. External links normally use
   `{:target="_blank"}`; internal links do not.
 - Shared styles and scripts are kept in the relevant layout rather than separate
