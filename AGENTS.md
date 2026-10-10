@@ -64,15 +64,21 @@ contact information, or internal code-of-conduct review notes into this reposito
   Season overview blog links are curated manually; seasonal blog listings use
   `season-posts.html` to select posts by `season`, not publication date. Event
   lists are maintained manually in the shared includes, not generated from pages.
-- Preserve original top-level URLs: `budget.md`, `sponsors.md`, and `portfolio.md`
-  retain their DECODE content at `/budget/`, `/sponsors/`, and `/portfolio/`.
-  Season overviews link to those pages rather than relocating them. New seasonal
-  content uses `seasons/<season-name>/<section>/index.md`; BIOBUZZ's budget is at
-  `/seasons/biobuzz/budget/`. Keep redirects from the published year-based season
-  paths and older `/budget/YYYY-YYYY/` paths pointing directly to canonical pages.
-  Budget data lives in `_data/budgets/YYYY-YYYY.json` when
-  available. `seasons/budgets/index.md` and the shared
-  `budget-seasons.html` include discover seasons from page front matter.
+- `/budget/`, `/sponsors/`, and `/portfolio/` render the current season directly
+  from root-level Markdown files. Permanent seasonal pages live under
+  `seasons/<season-name>/<section>/index.md`; DECODE's accounts, sponsors, and
+  portfolio are archived there. Keep historical links season-specific.
+- Current top-level pages and their seasonal counterparts share Markdown bodies
+  in `_includes/season-content/<season-name>/`. The top-level pages use `season`
+  metadata, `canonical_url` pointing to the permanent seasonal page, and
+  `sitemap: false`. They are rendered pages, not redirects. Only permanent budget
+  pages carry `budget_season`, `budget_label`, and `budget_status`, so budget
+  indexes list each season once. Do not duplicate body copy between entry points.
+- When advancing the current season, update all three root pages' metadata,
+  canonical URLs, and includes, plus the current navigation links. Retain prior
+  season pages and their includes. Use clear placeholders when current content is
+  not ready. Keep year-based legacy redirects on the corresponding seasonal pages.
+  Budget data remains in `_data/budgets/YYYY-YYYY.json` when available.
 - Navigation is defined in `_data/navigation.yml` and rendered by
   `_includes/navigation.html`. Keep the menu at two fixed levels, with no season
   expansion or collapse controls. Both season groups are top-level items, followed
@@ -82,7 +88,7 @@ contact information, or internal code-of-conduct review notes into this reposito
   they do not duplicate the substantive wording.
 - See **Shared Content and Data** in `README.md` for data consumers and manually
   duplicated content. `_data/donations.json` feeds `donate.md`,
-  `sponsors.md`, and `budget.md`.
+  `seasons/decode/sponsors/index.md`, and `seasons/decode/budget/index.md`.
   It records the completed DECODE post-season campaign; keep new-season gifts
   separate so they cannot change those accounts. Event listings are maintained
   in both `index.md` and `_includes/season-events/`.
@@ -90,7 +96,8 @@ contact information, or internal code-of-conduct review notes into this reposito
 ## Season Budget Updates
 
 - BIOBUZZ's public budget page is a placeholder marked "Budget in development".
-  Do not publish unfinished budget data or copy as part of path or navigation work.
+  Its shared body is `_includes/season-content/biobuzz/budget.md`. Do not publish
+  unfinished budget data or copy as part of path or navigation work.
 - Keep planned income distinct from received funds when publishing a budget.
   Review related copy in `donate.md` and the season overview at the same time.
 - Keep private data out of `_data/`, including ignored subdirectories: Jekyll loads
@@ -164,7 +171,9 @@ the shop-safety flyer have independent version metadata.
 | `print/onepager-principles.md` | Principles flyer entry point and metadata |
 | `print/onepager-shop-safety.md` | Shop-safety flyer entry point and metadata |
 | `seasons/` | Season archive and landing pages |
-| `budget.md`, `sponsors.md`, `portfolio.md` | Original top-level DECODE pages |
+| `budget.md`, `sponsors.md`, `portfolio.md` | Current-season entry points (rendered directly) |
+| `_includes/season-content/` | Shared bodies for current and permanent seasonal pages |
+| `seasons/decode/{budget,sponsors,portfolio}/` | Completed DECODE content |
 | `seasons/budgets/` and `seasons/biobuzz/budget/` | Budget index and BIOBUZZ budget placeholder |
 | `donate.md` | Donation page and calls to action |
 | `_data/` | Structured public data used by site pages and includes |

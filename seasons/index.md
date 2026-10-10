@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-10-10T10:35:16-04:00
+last_modified_at: 2026-10-10T17:01:22Z
 layout: default
 title: Seasons
 description: Explore Bennington Area Robotics seasons, with events, budgets, sponsors, and engineering portfolios.

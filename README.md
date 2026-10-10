@@ -21,9 +21,9 @@ This is a [Jekyll](https://jekyllrb.com/) site hosted on GitHub Pages. Pages are
 - `seasons/index.md` and `seasons/<season>/index.md` – Season archive and landing pages
 - `events/index.md` – Event listing; individual events live under `events/`
 - `blog/index.md` and `_posts/` – Blog listing and posts
-- `sponsors.md` – DECODE sponsors and donors at the original `/sponsors/` URL
-- `portfolio.md` – DECODE engineering portfolio at the original `/portfolio/` URL
-- `budget.md` – Completed DECODE accounts at the original `/budget/` URL
+- `budget.md`, `sponsors.md`, and `portfolio.md` – Current-season pages at the stable top-level URLs
+- `_includes/season-content/<season>/` – Shared Markdown bodies for current and permanent seasonal pages
+- `seasons/decode/{budget,sponsors,portfolio}/index.md` – Completed DECODE accounts, sponsors, and portfolio
 - `seasons/budgets/index.md` and `seasons/biobuzz/budget/index.md` – Budget index and BIOBUZZ budget placeholder
 - `donate.md` – Donation page
 - `code-of-conduct.md` – Canonical conduct, principles, and shop-safety content
@@ -54,9 +54,10 @@ Some edits affect several pages. Check the consumers when changing these sources
 | `_data/navigation.yml` | `_includes/navigation.html` and `nav-link.html`: season groups and program links in the header and mobile footer. |
 | `_includes/season-events/*.md` | All-season events page, season event pages, and season overviews. The homepage event list is maintained separately. |
 | Post `season` front matter | `_includes/season-posts.html`: season-specific blog listings. Assign by subject, not publication date. |
-| `_data/budgets/2025-2026.json` | `budget.md`: regular-season income and expenses, plus post-season budgets and actual expenses. |
+| `_data/budgets/2025-2026.json` | `seasons/decode/budget/index.md`: regular-season income and expenses, plus post-season budgets and actual expenses. |
+| `_includes/season-content/biobuzz/*.md` | Shared body copy for `/budget/`, `/sponsors/`, `/portfolio/`, and their permanent BIOBUZZ counterparts. Edit these includes rather than duplicating copy. |
 | Budget page front matter | `seasons/budgets/index.md` and `_includes/budget-seasons.html`: season listings, newest first, from `budget_season`, `budget_label`, and `budget_status`. |
-| `_data/donations.json` | `donate.md`, `sponsors.md`, and `budget.md`: the completed 2025–2026 post-season campaign; do not add new-season gifts to this file. `method: in-kind` separates donated goods/services from cash; `assignment` overrides `designation` for team budget allocation. The donor feed follows file order. |
+| `_data/donations.json` | `donate.md`, `seasons/decode/sponsors/index.md`, and `seasons/decode/budget/index.md`: the completed 2025–2026 post-season campaign; do not add new-season gifts to this file. `method: in-kind` separates donated goods/services from cash; `assignment` overrides `designation` for team budget allocation. The donor feed follows file order. |
 | `_includes/money.html` | Shared dollar formatting for budget tables and individual donations. |
 | `_includes/news-coverage.html` | Press links on the homepage and donation page. `news-coverage.md` redirects to the homepage's news section. |
 | `_includes/carousel-slides.html` | State-championship/season photos shared by the homepage and donation page. |
@@ -71,9 +72,9 @@ manual: changing JSON data does not update those sentences.
 ### Season Navigation
 
 The main menu has two fixed levels: Home; BIOBUZZ and DECODE as top-level season
-groups; then Blog, Events, Roles, Conduct, and Donate. Each season has a Budget
-link; DECODE also has Portfolio and Sponsors. Blog and Events link to their
-all-season listings.
+groups; then Blog, Events, Roles, Conduct, and Donate. Both seasons have Budget,
+Portfolio, and Sponsors links. BIOBUZZ links to the current top-level pages;
+DECODE links to its archives. Blog and Events link to their all-season listings.
 All season links stay visible, with no expansion or collapse controls. The mobile
 Menu button still shows or hides the complete navigation.
 
@@ -95,15 +96,32 @@ individual events and seasonal event listings, set `nav_section: /events/` to
 highlight the shared Events section.
 Exact page links use `aria-current="page"`; section links use `aria-current="location"`.
 
-Existing top-level, event, and blog URLs remain in place. In particular, `/donate/`
-stays the donation page, while `/budget/`, `/sponsors/`, and `/portfolio/` retain
-their original DECODE content in root-level Markdown files. Season overviews
-organize and link to this content without moving it. New seasonal content uses
-`seasons/<season-name>/<section>/index.md`, such as `/seasons/biobuzz/budget/`.
-The published `/seasons/YYYY-YYYY/` paths (including their subpages) and older
-`/budget/YYYY-YYYY/` paths redirect directly to the canonical pages through
-`redirect_from` front matter. Do not turn an original top-level page into a redirect
-or automatically replace its content when a new season starts. Seasonal blog
+Existing top-level, event, and blog URLs remain available. `/donate/` stays the
+donation page. `/budget/`, `/sponsors/`, and `/portfolio/` render the **current
+season** directly, without redirects. Their permanent seasonal counterparts live
+under `seasons/<season-name>/<section>/index.md`. DECODE's content is archived at
+`/seasons/decode/budget/`, `/seasons/decode/sponsors/`, and
+`/seasons/decode/portfolio/`. Links in historical posts, event recaps, and donation
+summaries must point to those permanent pages, not the changing current pages.
+
+Current root pages and their season-specific counterparts include the same Markdown
+body from `_includes/season-content/<season-name>/`. The root pages carry `season`
+metadata and a `canonical_url` pointing to the permanent season URL; the layout uses
+that URL for canonical and Open Graph metadata. `sitemap: false` keeps the duplicate
+root pages out of the sitemap. All six URLs still render their content directly.
+Only permanent budget pages carry `budget_season`, `budget_label`, and
+`budget_status`, keeping budget indexes free of duplicate entries.
+
+When a new season starts, create its permanent pages and shared includes, then
+update the three root entry points' titles, descriptions, `season`, `canonical_url`,
+and include paths. Update navigation so the new current season uses the top-level
+URLs and previous seasons use their permanent URLs. Keep old seasonal pages and
+includes in place. If new content is not ready, publish a clearly labeled
+current-season placeholder linking to the previous season.
+
+Published year-based season paths and older `/budget/YYYY-YYYY/` paths redirect
+directly to the corresponding permanent seasonal pages via `redirect_from`.
+These are Jekyll HTML redirects, not HTTP 301 or 302 responses. Seasonal blog
 listings select posts by their `season` metadata. Seasonal event listings and
 landing pages share `_includes/season-events/YYYY-YYYY.md` with the all-season
 events page. The summer 2026 planning post belongs to BIOBUZZ; the Houston
@@ -113,10 +131,11 @@ remain accessible from the season overviews.
 ### Budget Seasons
 
 The all-season budget index is `/seasons/budgets/`. DECODE's completed accounts
-remain at `/budget/`; BIOBUZZ's budget placeholder is `/seasons/biobuzz/budget/`.
-Both are linked from their main-menu season groups and overviews. Historical event
-and recap links point to the relevant season's accounts; general budget links
-point to the index.
+are at `/seasons/decode/budget/`. BIOBUZZ's budget placeholder renders at both
+`/budget/` and `/seasons/biobuzz/budget/`, using the shared body in
+`_includes/season-content/biobuzz/budget.md`. Historical links point to permanent
+season accounts; current-budget links use `/budget/`, and all-season links use
+the index.
 
 To add a season, create `seasons/<season-name>/budget/index.md` with `layout: default`, a title
 and description, and these front matter fields:
@@ -129,9 +148,10 @@ budget_status: Budget in development
 
 Include `{% include budget-seasons.html %}` after the page heading. The index and
 season navigation discover these pages automatically and sort newest first. Give
-financial data its own `_data/budgets/YYYY-YYYY.json` file when figures are ready;
-access it with `site.data.budgets[page.budget_season]`. Keep each season's donations
-separate so later gifts cannot change completed accounts. The BIOBUZZ page currently
+financial data its own `_data/budgets/YYYY-YYYY.json` file when figures are ready.
+For shared budget bodies, use `page.budget_season | default: page.season` as the
+key into `site.data.budgets`, since root entry points use `season` metadata. Keep
+each season's donations separate so later gifts cannot change completed accounts. The BIOBUZZ page currently
 states that its budget is in development; no BIOBUZZ financial snapshot is published.
 
 ### To Make Changes
@@ -263,7 +283,7 @@ remain beside their pages.
 Use `_includes/figure.html` for article images (`src`, `alt`, optional `caption` and
 `align`) and `_includes/quote.html` for attributed quotes (`text`, `author`, optional
 `role`). The main layout provides the figure lightbox, carousels, and portfolio viewer.
-The portfolio's `data-pdf` and **Open PDF** link in `portfolio.md` should match;
+The portfolio's `data-pdf` and **Open PDF** link in `seasons/decode/portfolio/index.md` should match;
 its viewer loads PDF.js from a CDN.
 
 Content headings use the shared dark blue `--heading` color without decorative rules or

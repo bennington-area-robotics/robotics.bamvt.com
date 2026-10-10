@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-10-10T10:23:21-04:00
+last_modified_at: 2026-10-10T17:01:22Z
 redirect_from:
   - /seasons/2026-2027/
 layout: default
@@ -21,6 +21,8 @@ Team 18650 Cookie Clickers and Team 32473 Bennington Bolts and Biscuits are taki
 ## Budget and Support
 
 The [2026–2027 budget](/seasons/biobuzz/budget/) is in development, with plans for robot parts, registration, and travel, including a new swerve drive.
+
+[Sponsorship information](/seasons/biobuzz/sponsors/) · [Engineering portfolio](/seasons/biobuzz/portfolio/).
 
 [Support this season](/donate) or [contact us about sponsorship](mailto:info@bamvt.com?subject=2026-27%20Season%20Support).
 

@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-10-10T10:35:16-04:00
+last_modified_at: 2026-10-10T17:01:22Z
 layout: default
 title: Home
 seo_title: Bennington Area Robotics | Youth Robotics in Bennington, VT
@@ -79,7 +79,7 @@ See how Bennington Area Robotics organizes student participation in
 
 ## Teams
 
-- **[FTC Team 18650: Cookie Clickers](https://ftc-events.firstinspires.org/team/18650){:target="_blank"}** – formed in 2019, 1st ranked team and Inspire Award winner at the 2026 Vermont Championship. [Engineering Portfolio](/portfolio/).
+- **[FTC Team 18650: Cookie Clickers](https://ftc-events.firstinspires.org/team/18650){:target="_blank"}** – formed in 2019, 1st ranked team and Inspire Award winner at the 2026 Vermont Championship. [Engineering Portfolio](/seasons/decode/portfolio/).
 - **[FTC Team 32473: Bennington Bolts and Biscuits](https://ftc-events.firstinspires.org/team/32473){:target="_blank"}** – formed in 2025, 7th ranked team out of 25 at the 2026 Vermont Championship.
 
 ## Links
@@ -102,8 +102,10 @@ Students design, build, and program their own robots to perform tasks and score 
 
 Bennington Area Robotics is a program of **The Bennington Area Makers, Inc.**, a 501(c)(3) nonprofit organization with EIN 84-5124653. Donations are tax-deductible. [How to donate](/donate). [See our budget](/seasons/budgets/).
 
+## Watch Us at the 2026 Vermont FTC State Championship
 
-<p style="text-align: center; font-style: italic; margin-bottom: 0.5em;">Team 18650 Cookie Clickers at the <a href="/events/state-championship-2026">2026 Vermont FTC State Championship</a>.</p>
+Watch Team 18650 Cookie Clickers at the [2026 Vermont FTC State Championship](/events/state-championship-2026).
+
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 1em 0;">
 <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/uh6c8jXycks?start=2660" title="2026 VT State Championship" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
