@@ -403,6 +403,11 @@
     }
     .home a.home-contact:hover { background: #304665; }
     .home-photo { margin: 0; }
+    .home-photo a { display: block; }
+    .home-photo figcaption a { display: inline; }
+    .home-teams { margin-top: 2rem; }
+    .home-teams h2 { margin-top: 0; }
+    .home-teams p:last-child { margin-bottom: 0; }
     .home-photo img {
       display: block;
       width: 100%;
@@ -439,6 +444,29 @@
     }
     @media (min-width: 64rem) {
       .home-details { gap: 3rem; }
+    }
+    /* Season photo albums retain the full image in each thumbnail. */
+    .photo-gallery {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.75rem;
+      margin: 1.5rem 0 2rem;
+    }
+    .photo-gallery a {
+      display: block;
+      background: #17202c;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .photo-gallery img {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 3 / 2;
+      object-fit: contain;
+    }
+    @media (min-width: 48rem) {
+      .photo-gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
     }
     /* Carousel */
     .carousel {
@@ -1061,7 +1089,7 @@
     <p class="page-updated">Last updated <time datetime="{{ page.last_modified_at | date_to_xmlschema }}">{{ page.last_modified_at | date: "%B %-d, %Y" }}</time></p>
     {% endif %}
   </main>
-  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
     <button class="lightbox-close" id="lightbox-close" title="Close" aria-label="Close lightbox">&times;</button>
     <button class="lightbox-prev" id="lightbox-prev" title="Previous" aria-label="Previous image">&lsaquo;</button>
     <div class="lightbox-stage" id="lightbox-stage"></div>
@@ -1076,6 +1104,7 @@
       <div>
         <p><strong>Bennington Area Robotics</strong></p>
         <p>A program of <a href="https://www.bamvt.com" target="_blank" rel="noopener">Bennington Area Makers</a></p>
+        <p>EIN <span class="no-detect">84&#x2011;5124653</span></p>
         <p><a href="mailto:info@bamvt.com">info@bamvt.com</a></p>
         <div class="footer-locations">
           <div>
@@ -1129,6 +1158,8 @@
   var stage = document.getElementById('lightbox-stage');
   var currentImages = [];
   var currentSyncFn = null;
+  var lightboxTrigger = null;
+  var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   function syncViewportZoom() {
     var zoomed = lightbox.classList.contains('open') &&
@@ -1144,6 +1175,7 @@
     var slide = document.createElement('div');
     slide.className = 'lightbox-slide';
     var img = document.createElement('img');
+    img.loading = 'lazy';
     img.src = src;
     img.alt = alt;
     img.draggable = false;
@@ -1152,6 +1184,7 @@
   }
 
   function openLightbox(images, index, syncFn) {
+    lightboxTrigger = document.activeElement;
     currentImages = images;
     currentSyncFn = syncFn;
     var n = images.length;
@@ -1169,6 +1202,7 @@
     lightbox.classList.add('open');
     syncViewportZoom();
     document.body.style.overflow = 'hidden';
+    document.getElementById('lightbox-close').focus({preventScroll: true});
     requestAnimationFrame(function() {
       stage.scrollTo({left: (index + 1) * stage.clientWidth, behavior: 'auto'});
     });
@@ -1179,6 +1213,7 @@
     lightbox.classList.remove('viewport-zoomed');
     document.body.style.overflow = '';
     stage.innerHTML = '';
+    if (lightboxTrigger) lightboxTrigger.focus({preventScroll: true});
   }
 
   function normalizeStage() {
@@ -1206,17 +1241,37 @@
   });
   document.getElementById('lightbox-prev').addEventListener('click', function(e) {
     e.stopPropagation();
-    stage.scrollBy({left: -stage.clientWidth, behavior: 'smooth'});
+    stage.scrollBy({left: -stage.clientWidth, behavior: reducedMotion ? 'auto' : 'smooth'});
   });
   document.getElementById('lightbox-next').addEventListener('click', function(e) {
     e.stopPropagation();
-    stage.scrollBy({left: stage.clientWidth, behavior: 'smooth'});
+    stage.scrollBy({left: stage.clientWidth, behavior: reducedMotion ? 'auto' : 'smooth'});
   });
   document.addEventListener('keydown', function(e) {
     if (!lightbox.classList.contains('open')) return;
-    if (e.key === 'Escape') closeLightbox();
-    else if (e.key === 'ArrowLeft') stage.scrollBy({left: -stage.clientWidth, behavior: 'smooth'});
-    else if (e.key === 'ArrowRight') stage.scrollBy({left: stage.clientWidth, behavior: 'smooth'});
+    if (e.key === 'Escape') { e.preventDefault(); closeLightbox(); }
+    else if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+      e.preventDefault();
+      stage.scrollBy({left: (e.key === 'ArrowLeft' ? -1 : 1) * stage.clientWidth, behavior: reducedMotion ? 'auto' : 'smooth'});
+    } else if (e.key === 'Tab') {
+      var controls = Array.from(lightbox.querySelectorAll('button')).filter(function(button) { return button.offsetParent !== null; });
+      var first = controls[0], last = controls[controls.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
+  });
+
+  // Album links also work as ordinary image links when JavaScript is unavailable.
+  document.querySelectorAll('.photo-gallery').forEach(function(gallery) {
+    var links = Array.from(gallery.querySelectorAll('a'));
+    var images = links.map(function(link) { return {src: link.href, alt: link.querySelector('img').alt}; });
+    links.forEach(function(link, index) {
+      link.addEventListener('click', function(e) {
+        if (e.button !== 0 || e.ctrlKey || e.metaKey || e.shiftKey || e.altKey) return;
+        e.preventDefault();
+        openLightbox(images, index);
+      });
+    });
   });
 
   // Inline article figures open in the lightbox

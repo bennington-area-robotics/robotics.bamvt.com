@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-10-10T17:01:22Z
+last_modified_at: 2026-10-17T14:50:57Z
 redirect_from:
   - /seasons/2025-2026/
 layout: default
@@ -25,6 +25,7 @@ Team 18650 Cookie Clickers won the Vermont Championship and Inspire Award and ad
 
 ## Engineering and Reflections
 
+- [Season photo album](/seasons/decode/photos/) — Vermont competition, robots in the workshop, and the Houston trip.
 - [Cookie Clickers Engineering Portfolio](/seasons/decode/portfolio/) — design, programming, outreach, and student reflections from the DECODE season.
 - [FTC 18650 at FIRST Championship](/blog/houston-2026/) — the head coach's account of the Houston trip.
 

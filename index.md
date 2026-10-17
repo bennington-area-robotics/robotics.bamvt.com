@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-10-17T14:31:32Z
+last_modified_at: 2026-10-17T14:50:57Z
 layout: default
 title: Home
 seo_title: Bennington Area Robotics | Youth Robotics in Bennington, VT
@@ -24,8 +24,8 @@ We are a youth program of [Bennington Area Makers](https://www.bamvt.com){:targe
 
 </div>
 <figure class="home-photo">
-  <img src="https://assets.bamvt.com/ftc-18650/worlds-2026/portraits/team-1.jpeg" alt="Cookie Clickers team outside the FIRST Championship venue in Houston" width="2000" height="1333" fetchpriority="high">
-  <figcaption>Cookie Clickers in Houston, 2026. <a href="/blog/houston-2026/">Photos &amp; reflections</a></figcaption>
+  <a href="/seasons/decode/photos/#vermont-championship"><img src="https://assets.bamvt.com/robotics.bamvt.com/events/state-championship-2026/images/2026_FTC-105.jpg" alt="Cookie Clickers robot at the Vermont Championship; see more season photos" width="1600" height="1066" fetchpriority="high"></a>
+  <figcaption>Our robot at the 2026 Vermont Championship. Photo courtesy of UVM. <a href="/seasons/decode/photos/">More photos from the DECODE season</a></figcaption>
 </figure>
 </div>
 
@@ -55,7 +55,7 @@ Bennington, VT 05201
 
 **$250 per student for 2026–27. A sliding scale is available.**
 
-Includes regular-season registration, uniforms, and Wednesday pizza. Out-of-town events cost extra; depending on the event and fundraising, families may need to cover registration, transportation, lodging, and meals.
+The fee helps defray the cost of participation. Out-of-town events cost extra; depending on the event and fundraising, families may need to cover registration, transportation, lodging, and meals.
 
 Students and families are expected to follow our [Code of Conduct](/code-of-conduct/). [Roles and Responsibilities](/roles/) explains how students participate.
 
@@ -83,12 +83,22 @@ Saturday, January 23, 2027 · MAUMS, Bennington
 </div>
 </section>
 
+<section class="home-intro home-teams" aria-labelledby="teams" markdown="1">
+<div markdown="1">
+
 ## Our Teams {#teams}
 
 - **[18650 Cookie Clickers](https://ftc-events.firstinspires.org/team/18650){:target="_blank"}** — Founded in 2019. First-ranked team and Inspire Award winner at the 2026 Vermont Championship; competed at FIRST Championship in Houston.
 - **[32473 Bennington Bolts and Biscuits](https://ftc-events.firstinspires.org/team/32473){:target="_blank"}** — Founded in 2025. Seventh of 25 teams at the 2026 Vermont Championship; advanced to the New England Premier Event.
 
 [Explore the 2025–26 season](/seasons/decode/) for results, the engineering portfolio, and team reflections.
+
+</div>
+<figure class="home-photo">
+  <a href="/seasons/decode/photos/#houston"><img src="https://assets.bamvt.com/ftc-18650/worlds-2026/portraits/team-1.jpeg" alt="Cookie Clickers team outside the FIRST Championship venue in Houston; see more trip photos" width="2000" height="1333" loading="lazy"></a>
+  <figcaption>Cookie Clickers in Houston, 2026. <a href="/seasons/decode/photos/#houston">More Houston photos</a></figcaption>
+</figure>
+</section>
 
 <p class="home-more" id="news-coverage"><a href="/news-coverage/">In the news</a> · <a href="/blog/">From the blog</a> · <a href="/donate/">Support the teams</a></p>
 
