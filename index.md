@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-10-17T14:55:55Z
+last_modified_at: 2026-10-17T15:16:07Z
 layout: default
 title: Home
 seo_title: Bennington Area Robotics | Youth Robotics in Bennington, VT
@@ -8,12 +8,14 @@ description: "Bennington Area Robotics (BAM Robotics) brings middle and high sch
 
 <div class="home" markdown="1">
 
-# Building competence through robotics
+# Building competence and learning teamwork through robotics
 
 <div class="home-intro" markdown="1">
 <div markdown="1">
 
 Bennington Area Robotics brings **middle and high school students** together to design, build, and program robots with local technical mentors. We compete in [FIRST Tech Challenge](https://www.firstinspires.org/programs/ftc/){:target="_blank"} and welcome students from the Bennington area and neighboring New York communities.
+
+Students learn to build productive working relationships on complex technical projects. They practice working reliably and respectfully with others, including people whose approaches differ from their own.
 
 We are a youth program of [Bennington Area Makers](https://www.bamvt.com){:target="_blank"} in Bennington, Vermont.
 
