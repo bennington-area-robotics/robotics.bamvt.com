@@ -6,6 +6,7 @@ load File.expand_path('../last-modified', __dir__)
 class LastModifiedTest < Minitest::Test
   SCRIPT = File.expand_path('../last-modified', __dir__)
   OLD = '2026-01-01T12:00:00Z'
+  ASCII_ENV = { 'LC_ALL' => 'C', 'LANG' => 'C', 'RUBYOPT' => '-EUS-ASCII' }.freeze
 
   def setup
     @original = Dir.pwd
@@ -73,6 +74,41 @@ class LastModifiedTest < Minitest::Test
     assert_includes File.read('donate.md'), 'Unstaged copy'
     assert_equal Time.iso8601(OLD), LastModified.timestamp(git('show', ':index.md'))
     assert LastModified.timestamp(git('show', ':donate.md')) > Time.iso8601(OLD)
+  end
+
+  def test_ascii_locale_commit_preserves_utf8_and_partially_staged_content
+    write('.git/hooks/pre-commit', "#!/bin/sh\nexec ruby '#{SCRIPT}' --staged\n")
+    File.chmod(0o755, '.git/hooks/pre-commit')
+    staged_body = 'Café — students’ robots'
+    unstaged_body = "#{staged_body}\nUnstaged résumé"
+    write('index.md', page('Équipe', staged_body))
+    git('add', 'index.md')
+    write('index.md', page('Équipe', unstaged_body))
+
+    output, error, status = Open3.capture3(ASCII_ENV, 'git', 'commit', '-qm', 'UTF-8 content')
+    assert status.success?, "#{output}\n#{error}"
+    committed = git('show', 'HEAD:index.md')
+    assert_equal LastModified.without_stamp(page('Équipe', staged_body)), LastModified.without_stamp(committed)
+    assert_equal LastModified.without_stamp(page('Équipe', unstaged_body)), LastModified.without_stamp(File.read('index.md'))
+    assert_equal LastModified.timestamp(committed), LastModified.timestamp(File.read('index.md'))
+    assert LastModified.timestamp(committed) > Time.iso8601(OLD)
+    assert_equal '', git('diff', '--cached')
+
+    output, error, status = Open3.capture3(ASCII_ENV, 'ruby', SCRIPT, '--check', 'HEAD^', 'HEAD')
+    assert status.success?, "#{output}\n#{error}"
+  end
+
+  def test_ascii_locale_backfill_preserves_utf8
+    source = LastModified.without_stamp(page('Équipe', 'Café — students’ robots'))
+    write('index.md', source)
+    git('add', 'index.md')
+    git('commit', '-qm', 'UTF-8 page without timestamp')
+    output, error, status = Open3.capture3(ASCII_ENV, 'ruby', SCRIPT, '--backfill')
+    assert status.success?, "#{output}\n#{error}"
+    updated = File.read('index.md')
+    assert_equal source, LastModified.without_stamp(updated)
+    assert LastModified.timestamp(updated)
+    assert_equal '', git('diff', '--cached')
   end
 
   def test_commit_only_is_rejected_without_changing_either_index

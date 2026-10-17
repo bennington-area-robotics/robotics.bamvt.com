@@ -14,7 +14,10 @@ module LastModified
                     figure.html quote.html money.html organization-schema.html].freeze
 
   def self.git(*args, input: nil)
-    output, error, status = Open3.capture3('git', *args, stdin_data: input)
+    # Site content is UTF-8 even when an editor launches Git with an ASCII locale.
+    output, error, status = Open3.capture3('git', *args, stdin_data: input, binmode: true)
+    output.force_encoding(Encoding::UTF_8)
+    error.force_encoding(Encoding::UTF_8)
     raise "git #{args.first}: #{error.strip}" unless status.success?
     output
   end
@@ -65,7 +68,7 @@ module LastModified
       return nil unless paths.include?(path)
       return @texts[path] if @texts.key?(path)
       @texts[path] = if @ref == 'working'
-                       File.file?(path) ? File.read(path) : nil
+                       File.file?(path) ? File.read(path, encoding: 'UTF-8') : nil
                      else
                        LastModified.git('show', "#{@ref == 'index' ? '' : @ref}:#{path}")
                      end
@@ -148,7 +151,7 @@ module LastModified
     # Preflight every working file before changing the index or any working file.
     updates = pages.map do |page|
       raise "#{page}: restore the working file before committing" unless File.file?(page) && !File.symlink?(page)
-      working = File.read(page)
+      working = File.read(page, encoding: 'UTF-8')
       raise "#{page}: keep valid front matter in the working file" unless front(working)['layout'] == 'default'
       old = timestamp(before.text(page))
       value = [now, old ? old + 1 : now].max.iso8601
@@ -164,7 +167,7 @@ module LastModified
     end.join
     git('update-index', '-z', '--index-info', input: index_info) unless updates.empty?
     updates.each do |page, _staged, working|
-      File.write(page, working)
+      File.write(page, working, encoding: 'UTF-8')
       puts "Updated last_modified_at: #{page}"
     end
   end
@@ -175,7 +178,7 @@ module LastModified
       next if timestamp(snapshot.text(page))
       value = git('log', '-1', '--format=%cI', 'HEAD', '--', *snapshot.dependencies(page).to_a).strip
       value = Time.now.utc.iso8601 if value.empty?
-      File.write(page, stamp(snapshot.text(page), value))
+      File.write(page, stamp(snapshot.text(page), value), encoding: 'UTF-8')
       puts "Initialized last_modified_at: #{page} (#{value})"
     end
   end

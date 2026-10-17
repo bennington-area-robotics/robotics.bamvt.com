@@ -200,6 +200,8 @@ The hook rejects path-limited commits (`git commit FILE` or `--only`) because Gi
 temporary index would otherwise leave inconsistent timestamp changes staged.
 The installer preserves existing hooks and explains how to integrate with one.
 Ruby is required, as it is for the local Jekyll build.
+The script reads and writes site content as UTF-8, including when an editor runs
+Git with an ASCII locale.
 
 The script follows literal content includes, `site.data.NAME` references (with
 season-specific budget data), and blog/season/budget listings. It considers both
