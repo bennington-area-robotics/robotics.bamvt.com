@@ -259,8 +259,11 @@ the safety flyer's metadata lives in `print/onepager-shop-safety.md`.
    ---
    layout: default
    title: Page Title
+   description: A concise description of this page.
+   last_modified_at: 2026-10-17T12:00:00-04:00
    ---
    ```
+   Use the actual edit time for `last_modified_at`. The local pre-commit hook updates it when committing; GitHub web edits need a manual timestamp (see **Page Update Dates**).
 2. If the page belongs in the main navigation, add its label and URL to the appropriate section of `_data/navigation.yml`. For seasonal pages, set `season` and, when needed, `nav_section` as described above.
 3. Begin the page body with one `# Page Title`, then use `##` for sections and `###` for subsections. The site branding is not a heading. Pages with `banner_image` get their primary heading from the layout, so start their body sections at `##` instead.
 4. Run `bundle exec jekyll build` and preview the page.
@@ -319,7 +322,8 @@ previews.
 ### Build and Local Preview
 
 With Ruby and Bundler installed, run `bundle install` to install the dependencies
-from `Gemfile`. Run commands from the repository root.
+from `Gemfile` at the versions in `Gemfile.lock`. Run it again after pulling
+dependency updates. Run commands from the repository root.
 
 To verify the site without starting a server:
 

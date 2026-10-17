@@ -92,6 +92,9 @@ contact information, or internal code-of-conduct review notes into this reposito
   It records the completed DECODE post-season campaign; keep new-season gifts
   separate so they cannot change those accounts. Event listings are maintained
   in both `index.md` and `_includes/season-events/`.
+- The footer in `_layouts/default.html` repeats the meeting location from
+  `index.md` and mailing address from `donate.md`. Update both copies when an
+  address changes; keep meeting times on the homepage, linked from the footer.
 
 ## Season Budget Updates
 
@@ -114,6 +117,12 @@ contact information, or internal code-of-conduct review notes into this reposito
   content includes, data access, and generated listings. See **Page Update Dates**
   in the README for backfilling, GitHub web edits, and checks. These timestamps do
   not replace policy version dates or budget reporting dates.
+- `sitemap.xml` overrides the plugin template and uses only explicit
+  `last_modified_at` values for `lastmod`; do not substitute post dates, filesystem
+  modification times, or build time. Keep duplicate root pages, redirects,
+  printable copies, PDFs, and verification files out of the sitemap. Remove
+  `sitemap: false` from placeholders only when they have substantial original
+  content. See **Sitemap inclusion** in the README for current exclusions.
 - Markdown uses kramdown syntax. External links normally use
   `{:target="_blank"}`; internal links do not.
 - Shared styles and scripts are kept in the relevant layout rather than separate
@@ -164,6 +173,7 @@ the shop-safety flyer have independent version metadata.
 | File | Purpose |
 |------|---------|
 | `_config.yml` | Site metadata, URL, Markdown settings, and plugins |
+| `sitemap.xml` | Sitemap template with explicit content modification dates |
 | `_layouts/default.html` | Main site HTML, CSS, JavaScript, and navigation |
 | `_layouts/flier.html` | Screen and print layout for one-page flyers |
 | `index.md` | Homepage, schedule, membership, events, and team overview |
