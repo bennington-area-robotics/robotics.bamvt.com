@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-10-10T10:35:16-04:00
+last_modified_at: 2026-10-17T14:24:07Z
 layout: default
 season: "2025-2026"
 nav_section: /events/
@@ -34,6 +34,14 @@ The official FIRST Tech Challenge Regional Championship for Vermont.
 **Advanced to New England Premier Event** (April 17–18, Big E, West Springfield MA)**:** 32473 Bennington Bolts and Biscuits
 
 ---
+
+## Watch the Championship
+
+Watch Team 18650 Cookie Clickers at the 2026 Vermont FTC State Championship.
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 1em 0;">
+<iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/uh6c8jXycks?start=2660" title="2026 VT State Championship" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
 ## Schedule
 

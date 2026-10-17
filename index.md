@@ -1,111 +1,95 @@
 ---
-last_modified_at: 2026-10-10T17:01:22Z
+last_modified_at: 2026-10-17T14:31:32Z
 layout: default
 title: Home
 seo_title: Bennington Area Robotics | Youth Robotics in Bennington, VT
 description: "Bennington Area Robotics (BAM Robotics) brings middle and high school students together in Bennington, Vermont, to build robots for FIRST Tech Challenge."
 ---
 
+<div class="home" markdown="1">
+
 # Building competence through robotics
 
-Bennington Area Robotics (BAM Robotics) is the youth robotics program of
-[Bennington Area Makers (BAM)](https://www.bamvt.com){:target="_blank"} in
-Bennington, Vermont. Our middle and high school students design, build, and
-program robots for FIRST Tech Challenge as **Team 18650 Cookie Clickers** and
-**Team 32473 Bennington Bolts and Biscuits**.
+<div class="home-intro" markdown="1">
+<div markdown="1">
 
-<div class="highlight">
-The <strong>BIOBUZZ season is underway!</strong> Review the kickoff video, game animation, field walkthrough, and companion slides from the season launch.
-<br><br>
-<a href="/events/season-kickoff-2026">Watch the kickoff videos and view the slides</a>
+Bennington Area Robotics brings **middle and high school students** together to design, build, and program robots with local technical mentors. We compete in [FIRST Tech Challenge](https://www.firstinspires.org/programs/ftc/){:target="_blank"} and welcome students from the Bennington area and neighboring New York communities.
+
+We are a youth program of [Bennington Area Makers](https://www.bamvt.com){:target="_blank"} in Bennington, Vermont.
+
+<div class="home-actions">
+  <a class="home-contact" href="mailto:info@bamvt.com?subject=Joining%20BAM%20Robotics">Ask about joining</a>
+  <a href="#meeting-schedule">Meeting times &amp; location</a>
 </div>
 
-<div class="carousel" id="carousel">
-  <button class="carousel-btn prev">&lsaquo;</button>
-  <div class="carousel-track" id="carousel-track">
-    <div class="carousel-slide"><img src="https://assets.bamvt.com/ftc-18650/worlds-2026/portraits/team-1.jpeg" alt="Cookie Clickers team with their robot outside the FIRST Championship venue in Houston, 2026" loading="eager" fetchpriority="high"></div>
-    <div class="carousel-slide"><img src="https://assets.bamvt.com/ftc-18650/worlds-2026/pits/pits-3.jpg" alt="Cookie Clickers taking a break in their pit beneath blue and yellow balloons" loading="lazy"></div>
-    <div class="carousel-slide"><img src="https://assets.bamvt.com/ftc-18650/worlds-2026/pits/repair-1.jpg" alt="Cookie Clickers students and a coach working together on the robot in their Houston pit" loading="lazy"></div>
-    <div class="carousel-slide"><img src="https://assets.bamvt.com/ftc-18650/worlds-2026/competition/match-play-blue-2.jpg" alt="Cookie Clickers drive team competing at FIRST Championship in Houston" loading="lazy"></div>
-    <div class="carousel-slide"><img src="https://assets.bamvt.com/ftc-18650/worlds-2026/portraits/callam-eben-1.jpg" alt="Two Cookie Clickers teammates posing with their robot and travel cases in the hotel lobby" loading="lazy"></div>
-    <div class="carousel-slide"><img src="https://assets.bamvt.com/ftc-18650/worlds-2026/pits/visitors-2.jpg" alt="Cookie Clickers welcoming visitors to their pit at FIRST Championship" loading="lazy"></div>
-    <div class="carousel-slide"><img src="https://assets.bamvt.com/ftc-18650/worlds-2026/portraits/nolan-jenna-althea.jpg" alt="Three Cookie Clickers teammates relaxing in camp chairs in their Houston pit" loading="lazy"></div>
-    <div class="carousel-slide"><img src="https://assets.bamvt.com/ftc-18650/worlds-2026/portraits/nolan-fanglai-tony.jpeg" alt="Cookie Clickers students and supporters in the stands at FIRST Championship" loading="lazy"></div>
-    <div class="carousel-slide"><img src="https://assets.bamvt.com/ftc-18650/worlds-2026/venue/competition-area-2.jpg" alt="Competition fields and crowds under colorful lights at FIRST Championship in Houston" loading="lazy"></div>
-    {% include carousel-slides.html %}
-  </div>
-  <button class="carousel-btn next">&rsaquo;</button>
-  <button class="carousel-btn pause" id="carousel-pause" title="Pause slideshow">⏸</button>
+</div>
+<figure class="home-photo">
+  <img src="https://assets.bamvt.com/ftc-18650/worlds-2026/portraits/team-1.jpeg" alt="Cookie Clickers team outside the FIRST Championship venue in Houston" width="2000" height="1333" fetchpriority="high">
+  <figcaption>Cookie Clickers in Houston, 2026. <a href="/blog/houston-2026/">Photos &amp; reflections</a></figcaption>
+</figure>
 </div>
 
-<p style="text-align: center; font-style: italic; margin-top: 0;">Cookie Clickers at the 2026 FIRST Championship in Houston, followed by photos from the Vermont FTC State Championship and our season. Vermont championship photos courtesy of UVM. <a href="/blog/houston-2026/">Read about the Houston trip</a>.</p>
+<div class="home-details" markdown="1">
+<section aria-labelledby="meeting-schedule" markdown="1">
 
 ## Meeting Schedule
 
-**Build sprint (through approximately mid-October):**
+**Regular meetings**
 
-- Sundays, 3:00 – 5:00 PM
-- Mondays, 5:30 – 7:30 PM
-- Wednesdays, 5:30 – 7:30 PM
-- Thursdays, 3:30 – 5:30 PM
+- **Sundays:** 3:00–5:00 PM
+- **Wednesdays:** 5:30–7:30 PM
 
-**Regular season:** Sundays, 3:00 – 5:00 PM, and Wednesdays, 5:30 – 7:30 PM
+**Add-on sessions**
 
-**Location:** Beech Street School, 246 South Stream Road, Bennington VT 05201
+- **Mondays:** 5:30–7:30 PM
+- **Thursdays:** 3:30–5:30 PM
+
+**Beech Street School**<br>
+246 South Stream Road<br>
+Bennington, VT 05201
+
+</section>
+<section aria-labelledby="student-membership" markdown="1">
 
 ## Student Membership
 
-Regular-season membership for 2026–27 is **$250 per student**. The fee covers regular-season registration, uniforms, and pizza on Wednesday nights. Out-of-town events are an additional cost of participation and are not covered by the membership fee. Depending on the event and available fundraising, additional costs may include registration, transportation, lodging, and meals.
+**$250 per student for 2026–27. A sliding scale is available.**
 
-<small>A sliding scale is available.</small>
+Includes regular-season registration, uniforms, and Wednesday pizza. Out-of-town events cost extra; depending on the event and fundraising, families may need to cover registration, transportation, lodging, and meals.
 
-Students and families are expected to follow our [Code of Conduct](/code-of-conduct/).
+Students and families are expected to follow our [Code of Conduct](/code-of-conduct/). [Roles and Responsibilities](/roles/) explains how students participate.
 
-See how Bennington Area Robotics organizes student participation in
-[Roles and Responsibilities](/roles).
+Contact [info@bamvt.com](mailto:info@bamvt.com?subject=Joining%20BAM%20Robotics) to ask about joining or the sliding scale.
 
-## Upcoming Events
+</section>
+</div>
 
-- **Sat 1/23/2027** – Bennington Qualifier at MAUMS
+<section class="home-season" aria-labelledby="this-season" markdown="1">
 
-## Past Events
+## This Season: BIOBUZZ {#this-season}
 
-- **Sat 9/12/2026** — [BIOBUZZ Season Kickoff](/events/season-kickoff-2026/) at Manchester Community Library, co-hosted with Manchester Machine Makers. [Videos and slides](/events/season-kickoff-2026/#kickoff-materials)
-- **Wed–Sat 4/29–5/2/2026** – [FIRST Championship](/events/first-championship-2026) in Houston TX (18650)
-- **Fri–Sat 4/17–18/2026** – [New England Premier Event](https://www.nefirst.org/premier){:target="_blank"} at the Big E, West Springfield MA (32473)
-- **Sat 3/7/2026** – [Vermont Championship](events/state-championship-2026) at South Burlington HS
-- **Sun 2/15/2026** – [Northfield Qualifier](events/northfield-qualifier-2026) at Norwich University
-- **Sat 1/31/2026** – [Bennington Qualifier](events/bennington-qualifier-2026) at [MAUMS](https://maps.app.goo.gl/zE9WbCbWNENq3pGUA){:target="_blank"}
+<div class="home-season-details" markdown="1">
+<div markdown="1">
 
-## Teams
+**Next event: Bennington Qualifier**<br>
+Saturday, January 23, 2027 · MAUMS, Bennington
 
-- **[FTC Team 18650: Cookie Clickers](https://ftc-events.firstinspires.org/team/18650){:target="_blank"}** – formed in 2019, 1st ranked team and Inspire Award winner at the 2026 Vermont Championship. [Engineering Portfolio](/seasons/decode/portfolio/).
-- **[FTC Team 32473: Bennington Bolts and Biscuits](https://ftc-events.firstinspires.org/team/32473){:target="_blank"}** – formed in 2025, 7th ranked team out of 25 at the 2026 Vermont Championship.
+</div>
+<div markdown="1">
 
-## Links
+[2026–27 season overview](/seasons/biobuzz/) · [Kickoff videos & slides](/events/season-kickoff-2026/#kickoff-materials) · [All events & results](/events/)
 
-- [Bennington Area Makers](https://www.bamvt.com){:target="_blank"}, our host organization.
-- [FTC BIOBUZZ](https://www.firstinspires.org/programs/ftc/game-and-season){:target="_blank"}, our competition for 2026–2027.
-- [FIRST Tech Challenge](https://www.firstinspires.org/programs/ftc/){:target="_blank"}, the robotics league we compete in.
+</div>
+</div>
+</section>
 
-## In the News {#news-coverage}
+## Our Teams {#teams}
 
-{% include news-coverage.html %}
+- **[18650 Cookie Clickers](https://ftc-events.firstinspires.org/team/18650){:target="_blank"}** — Founded in 2019. First-ranked team and Inspire Award winner at the 2026 Vermont Championship; competed at FIRST Championship in Houston.
+- **[32473 Bennington Bolts and Biscuits](https://ftc-events.firstinspires.org/team/32473){:target="_blank"}** — Founded in 2025. Seventh of 25 teams at the 2026 Vermont Championship; advanced to the New England Premier Event.
 
-## About Us
+[Explore the 2025–26 season](/seasons/decode/) for results, the engineering portfolio, and team reflections.
 
-Bennington Area Robotics is a community-based youth robotics group, drawing middle and high school aged students from Bennington, North Bennington and Shaftsbury in Vermont, and Hoosick Falls, Cambridge and Petersburg in New York.
+<p class="home-more" id="news-coverage"><a href="/news-coverage/">In the news</a> · <a href="/blog/">From the blog</a> · <a href="/donate/">Support the teams</a></p>
 
-We participate in [FIRST Tech Challenge](https://www.firstinspires.org/programs/ftc/){:target="_blank"} (FTC), an annual robotics competition where four robots race to collect and score game pieces on a 12'x12' playing field.
-
-Students design, build, and program their own robots to perform tasks and score points, working directly with technical mentors from the local community. They develop skills in mechanical engineering, programming, design, collaboration, and gracious professionalism (competing hard while helping other teams succeed).
-
-Bennington Area Robotics is a program of **The Bennington Area Makers, Inc.**, a 501(c)(3) nonprofit organization with EIN 84-5124653. Donations are tax-deductible. [How to donate](/donate). [See our budget](/seasons/budgets/).
-
-## Watch Us at the 2026 Vermont FTC State Championship
-
-Watch Team 18650 Cookie Clickers at the [2026 Vermont FTC State Championship](/events/state-championship-2026).
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 1em 0;">
-<iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/uh6c8jXycks?start=2660" title="2026 VT State Championship" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
