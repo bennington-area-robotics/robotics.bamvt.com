@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-10-17T15:07:08Z
+last_modified_at: 2026-10-17T15:09:50Z
 layout: default
 title: Home
 seo_title: Bennington Area Robotics | Youth Robotics in Bennington, VT
@@ -8,7 +8,7 @@ description: "Bennington Area Robotics (BAM Robotics) brings middle and high sch
 
 <div class="home" markdown="1">
 
-# Building competence and friendship through robotics
+# Building competence and learning teamwork through robotics
 
 <div class="home-intro" markdown="1">
 <div markdown="1">
