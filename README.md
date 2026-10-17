@@ -60,8 +60,9 @@ Some edits affect several pages. Check the consumers when changing these sources
 | `_data/donations.json` | `donate.md`, `seasons/decode/sponsors/index.md`, and `seasons/decode/budget/index.md`: the completed 2025–2026 post-season campaign; do not add new-season gifts to this file. `method: in-kind` separates donated goods/services from cash; `assignment` overrides `designation` for team budget allocation. The donor feed follows file order. |
 | `_includes/money.html` | Shared dollar formatting for budget tables and individual donations. |
 | `_includes/news-coverage.html` | Press links on `/news-coverage/` and the donation page. The homepage links to the press page, retaining `/#news-coverage` for older links. |
-| `_includes/carousel-slides.html` | State-championship/season photos on the donation page. |
-| `_data/houston_photos.json` | Houston retrospective carousel via `_includes/houston-2026-slides.html`; the homepage uses one static Houston team photo. |
+| `_data/decode_photos.json` | Vermont Championship and workshop/team photos for the DECODE album. `_includes/carousel-slides.html` uses the same ordered list for the donation slideshow. Preserve photo credits and the ordering used by its `data-start` index. |
+| `_data/houston_photos.json` | Houston retrospective carousel via `_includes/houston-2026-slides.html` and the Houston collection in the DECODE photo album. |
+| `_includes/photo-gallery.html` | Album thumbnail grids with lazy-loaded images and full-image links; the main layout adds a shared photo viewer. |
 | `code-of-conduct.md` front matter | `principles`, `shop_safety`, and `flier_copy` supply the conduct page and printable flyers. Keep the long-form explanations consistent with the short copy. |
 
 The homepage's next-event summary in `index.md` and full listings in
@@ -71,8 +72,8 @@ both `index.md` and `code-of-conduct.md`. Financial summaries in page prose are 
 manual: changing JSON data does not update those sentences.
 
 The footer in `_layouts/default.html` repeats the meeting location from `index.md`
-and mailing address from `donate.md`; keep those copies aligned when an address
-changes. Its meeting schedule link points to the homepage so times stay in one place.
+and mailing address and BAM EIN from `donate.md`; keep those copies aligned when
+they change. Its meeting schedule link points to the homepage so times stay in one place.
 
 The homepage prioritizes new students and families: a brief introduction, joining
 contact, regular and add-on meeting times, membership costs, the next event, and
@@ -80,15 +81,23 @@ team summaries. Keep essential participation details visible. Use season pages,
 the event archive, the blog, and `/news-coverage/` for longer material. The 2026
 championship video lives on its event page. Homepage styles are scoped with
 `home` classes in `_layouts/default.html`; detail columns stack on small screens.
+Two fixed photos show the robot beside the introduction and the Houston team beside
+the team summaries. Both link to the DECODE album; keep slideshows off the homepage.
 
 ### Season Navigation
 
 The main menu has two fixed levels: Home; BIOBUZZ and DECODE as top-level season
 groups; then Blog, Events, Roles, Conduct, and Donate. Both seasons have Budget,
-Portfolio, and Sponsors links. BIOBUZZ links to the current top-level pages;
+Portfolio, and Sponsors links; DECODE also has Photos. BIOBUZZ links to the current top-level pages;
 DECODE links to its archives. Blog and Events link to their all-season listings.
 All season links stay visible, with no expansion or collapse controls. The mobile
 Menu button still shows or hides the complete navigation.
+
+Season photo albums live at `/seasons/<season>/photos/`. Add a Photos navigation
+link when a season has a collection to show; do not add empty album placeholders.
+DECODE's album groups Vermont Championship, workshop/team, and Houston photos.
+The homepage links directly to the relevant collection anchors. Keep the full
+image visible in album thumbnails and retain credits alongside each collection.
 
 Edit `_data/navigation.yml` to change menu entries. The `seasons` list sets the
 season groups and their order; `program` sets the top-level links that follow them.

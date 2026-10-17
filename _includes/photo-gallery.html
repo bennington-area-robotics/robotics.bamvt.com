@@ -1,0 +1,7 @@
+<div class="photo-gallery" role="group" aria-label="{{ include.label | escape }}">
+{% for photo in include.photos %}
+  <a href="{{ photo.src | escape }}" target="_blank" rel="noopener">
+    <img src="{{ photo.src | escape }}" alt="{{ photo.alt | escape }}"{% if photo.width %} width="{{ photo.width }}" height="{{ photo.height }}"{% endif %} loading="lazy" decoding="async">
+  </a>
+{% endfor %}
+</div>

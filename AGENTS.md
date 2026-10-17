@@ -97,9 +97,15 @@ contact information, or internal code-of-conduct review notes into this reposito
   on its event page. The homepage prioritizes joining, meeting times, membership,
   and brief season and team summaries. Preserve its `meeting-schedule`,
   `student-membership`, and `news-coverage` anchors.
+- Season photo albums live at `seasons/<season>/photos/index.md`; add a Photos
+  navigation link only when a collection is available. DECODE uses
+  `_data/decode_photos.json` and `_data/houston_photos.json` with
+  `_includes/photo-gallery.html`. The donation slideshow also uses the ordered
+  DECODE data through `carousel-slides.html`. Preserve image credits. The homepage
+  uses two fixed photos linking to the album, with no slideshow.
 - The footer in `_layouts/default.html` repeats the meeting location from
-  `index.md` and mailing address from `donate.md`. Update both copies when an
-  address changes; keep meeting times on the homepage, linked from the footer.
+  `index.md` and mailing address and BAM EIN from `donate.md`. Update both copies
+  when these details change; keep meeting times on the homepage, linked from the footer.
 
 ## Season Budget Updates
 
