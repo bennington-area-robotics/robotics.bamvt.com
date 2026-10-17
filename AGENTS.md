@@ -90,8 +90,13 @@ contact information, or internal code-of-conduct review notes into this reposito
   duplicated content. `_data/donations.json` feeds `donate.md`,
   `seasons/decode/sponsors/index.md`, and `seasons/decode/budget/index.md`.
   It records the completed DECODE post-season campaign; keep new-season gifts
-  separate so they cannot change those accounts. Event listings are maintained
-  in both `index.md` and `_includes/season-events/`.
+  separate so they cannot change those accounts. The next-event summary in
+  `index.md` and full listings in `_includes/season-events/` are maintained
+  separately; update both when the next event changes. Keep past events in the
+  full listings, press coverage at `/news-coverage/`, and the championship video
+  on its event page. The homepage prioritizes joining, meeting times, membership,
+  and brief season and team summaries. Preserve its `meeting-schedule`,
+  `student-membership`, and `news-coverage` anchors.
 - The footer in `_layouts/default.html` repeats the meeting location from
   `index.md` and mailing address from `donate.md`. Update both copies when an
   address changes; keep meeting times on the homepage, linked from the footer.

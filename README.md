@@ -59,19 +59,27 @@ Some edits affect several pages. Check the consumers when changing these sources
 | Budget page front matter | `seasons/budgets/index.md` and `_includes/budget-seasons.html`: season listings, newest first, from `budget_season`, `budget_label`, and `budget_status`. |
 | `_data/donations.json` | `donate.md`, `seasons/decode/sponsors/index.md`, and `seasons/decode/budget/index.md`: the completed 2025–2026 post-season campaign; do not add new-season gifts to this file. `method: in-kind` separates donated goods/services from cash; `assignment` overrides `designation` for team budget allocation. The donor feed follows file order. |
 | `_includes/money.html` | Shared dollar formatting for budget tables and individual donations. |
-| `_includes/news-coverage.html` | Press links on the homepage and donation page. `news-coverage.md` redirects to the homepage's news section. |
-| `_includes/carousel-slides.html` | State-championship/season photos shared by the homepage and donation page. |
-| `_data/houston_photos.json` | Houston carousel via `_includes/houston-2026-slides.html`; the homepage's opening Houston photos are maintained separately in `index.md`. |
+| `_includes/news-coverage.html` | Press links on `/news-coverage/` and the donation page. The homepage links to the press page, retaining `/#news-coverage` for older links. |
+| `_includes/carousel-slides.html` | State-championship/season photos on the donation page. |
+| `_data/houston_photos.json` | Houston retrospective carousel via `_includes/houston-2026-slides.html`; the homepage uses one static Houston team photo. |
 | `code-of-conduct.md` front matter | `principles`, `shop_safety`, and `flier_copy` supply the conduct page and printable flyers. Keep the long-form explanations consistent with the short copy. |
 
-Event listings in `index.md` and `_includes/season-events/` are maintained separately;
-update both when adding an event or moving it into past events. Membership costs appear in
+The homepage's next-event summary in `index.md` and full listings in
+`_includes/season-events/` are maintained separately; update both when the next
+event changes. Past events stay in the full listings. Membership costs appear in
 both `index.md` and `code-of-conduct.md`. Financial summaries in page prose are also
 manual: changing JSON data does not update those sentences.
 
 The footer in `_layouts/default.html` repeats the meeting location from `index.md`
 and mailing address from `donate.md`; keep those copies aligned when an address
 changes. Its meeting schedule link points to the homepage so times stay in one place.
+
+The homepage prioritizes new students and families: a brief introduction, joining
+contact, regular and add-on meeting times, membership costs, the next event, and
+team summaries. Keep essential participation details visible. Use season pages,
+the event archive, the blog, and `/news-coverage/` for longer material. The 2026
+championship video lives on its event page. Homepage styles are scoped with
+`home` classes in `_layouts/default.html`; detail columns stack on small screens.
 
 ### Season Navigation
 
