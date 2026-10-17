@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-10-17T14:50:57Z
+last_modified_at: 2026-10-17T14:55:55Z
 layout: default
 title: Home
 seo_title: Bennington Area Robotics | Youth Robotics in Bennington, VT
@@ -24,8 +24,8 @@ We are a youth program of [Bennington Area Makers](https://www.bamvt.com){:targe
 
 </div>
 <figure class="home-photo">
-  <a href="/seasons/decode/photos/#vermont-championship"><img src="https://assets.bamvt.com/robotics.bamvt.com/events/state-championship-2026/images/2026_FTC-105.jpg" alt="Cookie Clickers robot at the Vermont Championship; see more season photos" width="1600" height="1066" fetchpriority="high"></a>
-  <figcaption>Our robot at the 2026 Vermont Championship. Photo courtesy of UVM. <a href="/seasons/decode/photos/">More photos from the DECODE season</a></figcaption>
+  <a href="/seasons/decode/photos/#vermont-championship"><img src="https://assets.bamvt.com/robotics.bamvt.com/events/state-championship-2026/images/2026_FTC-192.jpg" alt="Cookie Clickers students driving during a match, with robots in the foreground at the Vermont Championship; see more season photos" width="1600" height="1067" fetchpriority="high"></a>
+  <figcaption>Robots and drivers at the 2026 Vermont Championship. Photo courtesy of UVM. <a href="/seasons/decode/photos/">More photos from the DECODE season</a></figcaption>
 </figure>
 </div>
 
