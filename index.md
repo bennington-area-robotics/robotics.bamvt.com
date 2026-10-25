@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-10-25T16:06:01Z
+last_modified_at: 2026-10-25T16:07:07Z
 layout: default
 title: Home
 seo_title: Bennington Area Robotics | Youth Robotics in Bennington, VT
@@ -56,6 +56,8 @@ Bennington, VT 05201
 ## Joining {#student-membership}
 
 Joining begins with a visit to a team meeting. Contact [info@bamvt.com](mailto:info@bamvt.com?subject=Joining%20BAM%20Robotics) to arrange a visit or ask about the program.
+
+After the visit, students who join must pay the program fee and register with FIRST.
 
 **The regular-season program fee is $250 per student for 2026–27. A sliding scale is available.**
 
