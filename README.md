@@ -10,7 +10,7 @@ This is a [Jekyll](https://jekyllrb.com/) site hosted on GitHub Pages. Pages are
 
 - **Content pages**: Markdown with YAML front matter, usually specifying `layout: default`. Top-level pages live in the root; event pages live under `events/<event-name>/index.md` alongside their documents and image source notes.
 - **Main layout** (`_layouts/default.html`): Template with HTML structure, inline CSS, and JavaScript. Provides a desktop sidebar whose branding scrolls away while navigation links stay visible (short windows use normal page scrolling), an expandable navigation menu on smaller screens, main content, and a footer that repeats navigation in a blue section on smaller screens. Page banners appear in the content column. Blue accent bars frame the desktop sidebar and mobile header/footer; the active navigation item uses a solid pale-blue background. The footer includes contact details, social links, and a Donate button, and sits at the bottom of the content column on short desktop pages. Navigation comes from `_data/navigation.yml` and `_includes/navigation.html`, with a fixed two-level list. Navigation scrolls within tall desktop viewports so every link stays reachable.
-- **Printable flyers** (`_layouts/flier.html`, `print/`): A separate layout and entry pages render the principles and shop-safety flyers from canonical content in `code-of-conduct.md`.
+- **Printable flyers** (`_layouts/flier.html`, `print/`): A separate layout and entry pages render the principles and shop-safety flyers from canonical content in `code-of-conduct.md`. `print/program-fee-receipt.html` is a standalone fill-in receipt linked from `/program-fee/`; filled-in receipts stay out of this repository.
 - **Blog** (`_posts/`, `blog/index.md`): Dated Markdown posts and the blog index. Post URLs use `/blog/:slug/`, as configured in `_config.yml`.
 - **Shared content** (`_includes/`, `_data/`): Reusable Liquid fragments and structured public data.
 - **Config** (`_config.yml`): Site metadata (title, description, URL) and kramdown markdown settings.
@@ -26,6 +26,7 @@ This is a [Jekyll](https://jekyllrb.com/) site hosted on GitHub Pages. Pages are
 - `seasons/decode/{budget,sponsors,portfolio}/index.md` – Completed DECODE accounts, sponsors, and portfolio
 - `seasons/budgets/index.md` and `seasons/biobuzz/budget/index.md` – Budget index and BIOBUZZ budget placeholder
 - `donate.md` – Donation page
+- `program-fee.md` and `print/program-fee-receipt.html` – Program fee, payment, and printable receipt
 - `code-of-conduct.md` – Canonical conduct, principles, and shop-safety content
 - `print/onepager-principles.md` and `print/onepager-shop-safety.md` – Flyer entry points
 - `_config.yml` – Site configuration (title, description, URL)
@@ -67,8 +68,9 @@ Some edits affect several pages. Check the consumers when changing these sources
 
 The homepage's next-event summary in `index.md` and full listings in
 `_includes/season-events/` are maintained separately; update both when the next
-event changes. Past events stay in the full listings. Membership costs appear in
-both `index.md` and `code-of-conduct.md`. Financial summaries in page prose are also
+event changes. Past events stay in the full listings. The program fee appears in
+`index.md`, `code-of-conduct.md`, and `program-fee.md`; the receipt form in
+`print/program-fee-receipt.html` names the season. Financial summaries in page prose are also
 manual: changing JSON data does not update those sentences.
 
 The footer in `_layouts/default.html` repeats the meeting location from `index.md`
@@ -76,7 +78,7 @@ and mailing address and BAM EIN from `donate.md`; keep those copies aligned when
 they change. Its meeting schedule link points to the homepage so times stay in one place.
 
 The homepage prioritizes new students and families: a brief introduction, joining
-contact, regular and add-on meeting times, membership costs, the next event, and
+contact, regular and add-on meeting times, the program fee, the next event, and
 team summaries. Keep essential participation details visible. Use season pages,
 the event archive, the blog, and `/news-coverage/` for longer material. The 2026
 championship video lives on its event page. Homepage styles are scoped with

@@ -49,6 +49,10 @@ contact information, or internal code-of-conduct review notes into this reposito
 - `_layouts/default.html` provides the main site structure, navigation, inline CSS,
   and JavaScript.
 - `_layouts/flier.html` renders the printable principles and shop-safety flyers.
+  `print/program-fee-receipt.html` is a standalone fill-in receipt linked from
+  `/program-fee/`. Call the student fee a "program fee", not membership, to
+  distinguish it from BAM membership and charitable gifts; filled-in receipts stay
+  out of this repository.
 - Root-level Markdown files become top-level pages. Event pages live under
   `events/<event-name>/index.md`, usually with nearby documents and image source notes.
 - Shared fragments live in `_includes/`. Structured site content lives in `_data/`.
@@ -94,7 +98,7 @@ contact information, or internal code-of-conduct review notes into this reposito
   `index.md` and full listings in `_includes/season-events/` are maintained
   separately; update both when the next event changes. Keep past events in the
   full listings, press coverage at `/news-coverage/`, and the championship video
-  on its event page. The homepage prioritizes joining, meeting times, membership,
+  on its event page. The homepage prioritizes joining, meeting times, the program fee,
   and brief season and team summaries. Preserve its `meeting-schedule`,
   `student-membership`, and `news-coverage` anchors.
 - Season photo albums live at `seasons/<season>/photos/index.md`; add a Photos
@@ -197,4 +201,5 @@ the shop-safety flyer have independent version metadata.
 | `seasons/decode/{budget,sponsors,portfolio}/` | Completed DECODE content |
 | `seasons/budgets/` and `seasons/biobuzz/budget/` | Budget index and BIOBUZZ budget placeholder |
 | `donate.md` | Donation page and calls to action |
+| `program-fee.md` | Program fee, payment, and link to the printable receipt |
 | `_data/` | Structured public data used by site pages and includes |
