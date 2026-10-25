@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-10-25T15:49:28Z
+last_modified_at: 2026-10-25T15:59:18Z
 layout: default
 title: Home
 seo_title: Bennington Area Robotics | Youth Robotics in Bennington, VT
@@ -57,9 +57,9 @@ Bennington, VT 05201
 
 Contact [info@bamvt.com](mailto:info@bamvt.com?subject=Joining%20BAM%20Robotics) to ask about joining or arrange a visit.
 
-**The program fee is $250 per student for 2026–27. A sliding scale is available.**
+**The regular-season program fee is $250 per student for 2026–27. A sliding scale is available.**
 
-The fee helps defray the cost of participation. Out-of-town events cost extra; depending on the event and fundraising, families may need to cover registration, transportation, lodging, and meals.
+The fee includes regular-season event registration. It does not cover transportation, lodging, or meals. Post-season participation may require an additional program fee. Fundraising may help cover these additional costs.
 
 Students and families are expected to follow our [Code of Conduct](/code-of-conduct/). [Roles and Responsibilities](/roles/) explains how students participate.
 
