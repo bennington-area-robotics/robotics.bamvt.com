@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-10-25T15:06:12Z
+last_modified_at: 2026-10-25T15:49:28Z
 layout: default
 title: Program Fee
 description: Student program fee, payment, and receipts for Bennington Area Robotics.
@@ -17,21 +17,24 @@ transportation, lodging, and meals.
 
 ## Paying the Fee {#paying}
 
-The program fee is due once a student has visited and joined the team. Coaches
-will send payment instructions, including an online payment link, at that time.
+The program fee is due after a student has visited and joined the team. Coaches
+will provide payment instructions at that time.
 
-Families may also pay by check or cash. Give cash to a coach in person. Make checks payable to
+**Cash or check is preferred.** Give cash to a coach in person. Make checks payable to
 *The Bennington Area Makers, Inc.* and give them to a coach or mail them to:
 
 > The Bennington Area Makers, Inc.<br>
 > PO Box 4332<br>
 > Bennington, VT 05201
 
+Coaches can also provide a PayPal link for online payment.
+
 ## Receipts {#receipts}
 
-PayPal emails a receipt for online payments. Coaches provide a receipt for check
-and cash payments using the [printable receipt form](/print/program-fee-receipt.html).
+Coaches provide a receipt for cash and check payments using the
+[printable receipt form](/print/program-fee-receipt.html). PayPal emails a receipt
+for online payments.
 
 The program fee pays for participation and is not a tax-deductible charitable
 contribution. If you pay more than the fee and want the additional amount treated
-as a donation, say so; the receipt will list it separately.
+as a donation, please let a coach know so it can be listed separately on the receipt.
