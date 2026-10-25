@@ -49,8 +49,9 @@ contact information, or internal code-of-conduct review notes into this reposito
 - `_layouts/default.html` provides the main site structure, navigation, inline CSS,
   and JavaScript.
 - `_layouts/flier.html` renders the printable principles and shop-safety flyers.
-  `print/program-fee-receipt.html` is a standalone fill-in receipt linked from
-  `/program-fee/`. Call the student fee a "program fee", not membership, to
+  `print/program-fee-receipt.html` is a blank receipt for printing and completing
+  by hand, linked from `/program-fee/`. Keep its US Letter layout and one-inch
+  left margin for binder holes. Call the student fee a "program fee", not membership, to
   distinguish it from BAM membership and charitable gifts; filled-in receipts stay
   out of this repository.
 - Root-level Markdown files become top-level pages. Event pages live under
