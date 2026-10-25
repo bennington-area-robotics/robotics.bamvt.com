@@ -116,7 +116,7 @@ permalink: /print/program-fee-receipt.html
     <label for="student">Student</label><input id="student">
     <label for="fee">2026–27 program fee</label><input id="fee" value="$">
     <label for="donation">Donation (optional)</label><input id="donation" value="$">
-    <label for="method">Paid by</label><input id="method" placeholder="Check no. or cash">
+    <label for="method">Paid by</label><input id="method" placeholder="Check no., cash, or PayPal">
     <label for="received-by">Received by</label><input id="received-by">
   </div>
 
