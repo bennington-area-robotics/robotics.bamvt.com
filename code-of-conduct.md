@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-10-25T15:59:18Z
+last_modified_at: 2026-10-25T16:00:34Z
 layout: default
 title: Code of Conduct
 version: "1.3"
@@ -294,7 +294,7 @@ Fatigue and stress affect adult judgment as well as student judgment. When a coa
 
 ## Cost of participation
 
-The regular-season program fee for 2026–27 is $250 per student. The fee includes regular-season event registration. It does not cover transportation, lodging, or meals. Post-season participation may require an additional program fee. Fundraising may help cover these additional costs.
+The regular-season program fee for 2026–27 is $250 per student. The fee includes regular-season event registration. It does not cover transportation, lodging, or meals. Fundraising may cover some or all of these costs. Post-season participation may require an additional program fee.
 
 <small>A sliding scale is available.</small>
 

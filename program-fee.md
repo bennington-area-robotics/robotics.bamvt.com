@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-10-25T15:59:18Z
+last_modified_at: 2026-10-25T16:00:34Z
 layout: default
 title: Program Fee
 description: Student program fee, payment, and receipts for Bennington Area Robotics.
@@ -12,8 +12,8 @@ is available; contact [info@bamvt.com](mailto:info@bamvt.com?subject=Program%20f
 to discuss it.
 
 The fee includes regular-season event registration. It does not cover transportation,
-lodging, or meals. Post-season participation may require an additional program fee.
-Fundraising may help cover these additional costs.
+lodging, or meals. Fundraising may cover some or all of these costs. Post-season
+participation may require an additional program fee.
 
 ## Paying the Fee {#paying}
 
