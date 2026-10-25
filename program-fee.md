@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-10-25T15:04:47Z
+last_modified_at: 2026-10-25T15:06:12Z
 layout: default
 title: Program Fee
 description: Student program fee, payment, and receipts for Bennington Area Robotics.
@@ -17,11 +17,10 @@ transportation, lodging, and meals.
 
 ## Paying the Fee {#paying}
 
-**Online:** [Pay with PayPal](https://www.paypal.com/ncp/payment/TCQP9LAT5P9XS){:target="_blank"}.
-Enter each student's name at checkout. For a sliding-scale amount, contact
-[info@bamvt.com](mailto:info@bamvt.com?subject=Program%20fee) for an invoice.
+The program fee is due once a student has visited and joined the team. Coaches
+will send payment instructions, including an online payment link, at that time.
 
-**Check or cash:** Give cash to a coach in person. Make checks payable to
+Families may also pay by check or cash. Give cash to a coach in person. Make checks payable to
 *The Bennington Area Makers, Inc.* and give them to a coach or mail them to:
 
 > The Bennington Area Makers, Inc.<br>
