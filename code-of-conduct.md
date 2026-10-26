@@ -1,9 +1,9 @@
 ---
-last_modified_at: 2026-10-25T16:00:34Z
+last_modified_at: 2026-10-26T14:26:37Z
 layout: default
 title: Code of Conduct
-version: "1.3"
-document_date: 2026-10-25
+version: "1.4"
+document_date: 2026-10-26
 description: How members of Bennington Area Robotics conduct themselves — attendance, ownership, ambition, respect, and the standard of Gracious Professionalism set by FIRST.
 # Canonical short-form copy used by this page and the printable fliers.
 principles:
@@ -294,7 +294,10 @@ Fatigue and stress affect adult judgment as well as student judgment. When a coa
 
 ## Cost of participation
 
-The regular-season program fee for 2026–27 is $250 per student. The fee includes regular-season event registration. It does not cover transportation, lodging, or meals. Fundraising may cover some or all of these costs. Post-season participation may require an additional program fee.
+The regular-season program fee for 2026–27 is $250 per student. The fee helps cover regular-season program costs, including event registration, robot parts, shop supplies, team merch, and food on Wednesday nights. It does not cover event transportation, lodging, or meals. Fundraising may cover some or all of these costs. 
+
+Post-season participation in out-of-state events may require an additional program fee.
+
 
 <small>A sliding scale is available.</small>
 

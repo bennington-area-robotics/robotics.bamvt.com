@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-10-26T01:13:23Z
+last_modified_at: 2026-10-26T14:26:37Z
 layout: default
 title: Program Fee
 description: Student program fee, payment, and receipts for Bennington Area Robotics.
@@ -11,9 +11,10 @@ The regular-season program fee for 2026–27 is **$250 per student**. A sliding 
 is available; contact [info@bamvt.com](mailto:info@bamvt.com?subject=Program%20fee)
 to discuss it.
 
-The fee includes regular-season event registration. It does not cover transportation,
-lodging, or meals. Fundraising may cover some or all of these costs. Post-season
-participation may require an additional program fee.
+The fee helps cover regular-season program costs, including event registration,
+robot parts, shop supplies, team merch, and food on Wednesday nights. It does not cover event transportation, lodging, or meals. Fundraising may cover some or all of these costs. 
+
+Post-season participation in out-of-state events may require an additional program fee.
 
 ## Payment {#paying}
 
