@@ -1,10 +1,12 @@
 ---
-last_modified_at: 2026-09-28T16:02:57-04:00
+last_modified_at: 2026-10-26T13:58:20Z
 layout: default
 season: "2026-2027"
 nav_section: /blog/
 title: Who does what? Our summer 2026 RACI chart
 date: 2026-06-06
+slug: raci-chart-summer-2026
+redirect_from: /blog/raci-chart/
 author: Peter Radocchia, Head Coach
 description: How responsibility, accountability, consultation, and information flow are distributed across Bennington Area Robotics this off-season.
 ---
