@@ -82,7 +82,9 @@ contact, regular and add-on meeting times, the program fee, the next event, and
 team summaries. Keep essential participation details visible. Use season pages,
 the event archive, the blog, and `/news-coverage/` for longer material. The 2026
 championship video lives on its event page. Homepage styles are scoped with
-`home` classes in `_layouts/default.html`; detail columns stack on small screens.
+`home` classes in `_layouts/default.html`. Meeting Schedule and Joining sit side by
+side on larger screens, with Program Fee spanning the row below; all three sections
+stack on small screens.
 Two fixed photos show the robot beside the introduction and the Houston team beside
 the team summaries. Both link to the DECODE album; keep slideshows off the homepage.
 
