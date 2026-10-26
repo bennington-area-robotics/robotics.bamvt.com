@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-10-26T01:01:02Z
+last_modified_at: 2026-10-26T01:13:23Z
 layout: default
 title: Home
 seo_title: Bennington Area Robotics | Youth Robotics in Bennington, VT
@@ -57,7 +57,7 @@ Bennington, VT 05201
 
 Joining begins with a visit to a team meeting. Contact [info@bamvt.com](mailto:info@bamvt.com?subject=Joining%20BAM%20Robotics) to arrange a visit or ask about the program.
 
-After the visit and coach approval, enrollment requires both [program fee](/program-fee/) payment and FIRST registration.
+After the visit and coach approval, enrollment requires both payment of the [program fee](/program-fee/) to Bennington Area Makers and registration with FIRST.
 
 Students may join during the season when space and coaching capacity allow. Participation in competitions and trips depends on attendance, preparation, and following team expectations. Coaches will discuss available opportunities before enrollment.
 

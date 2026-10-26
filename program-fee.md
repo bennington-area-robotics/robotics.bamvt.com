@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-10-25T16:00:34Z
+last_modified_at: 2026-10-26T01:13:23Z
 layout: default
 title: Program Fee
 description: Student program fee, payment, and receipts for Bennington Area Robotics.
@@ -15,7 +15,7 @@ The fee includes regular-season event registration. It does not cover transporta
 lodging, or meals. Fundraising may cover some or all of these costs. Post-season
 participation may require an additional program fee.
 
-## Paying the Fee {#paying}
+## Payment {#paying}
 
 The program fee is due after a student has visited and joined the team. Coaches
 will provide payment instructions at that time.
