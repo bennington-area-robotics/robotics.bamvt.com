@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-10-10T17:01:22Z
+last_modified_at: 2026-10-26T00:12:32Z
 redirect_from:
   - /seasons/2026-2027/
 layout: default

@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-10-25T20:20:59Z
+last_modified_at: 2026-10-26T00:15:55Z
 layout: default
 title: Home
 seo_title: Bennington Area Robotics | Youth Robotics in Bennington, VT
@@ -84,7 +84,7 @@ See [Program Fee](/program-fee/) for payment details and receipts.
 <div class="home-season-details" markdown="1">
 <div markdown="1">
 
-**Next event: Bennington Qualifier**<br>
+**Next event: [Southern Vermont Qualifier](/events/southern-vermont-qualifier-2027/)**<br>
 Saturday, January 23, 2027 · MAUMS, Bennington
 
 </div>
