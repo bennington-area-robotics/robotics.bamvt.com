@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-10-26T00:12:32Z
+last_modified_at: 2026-10-26T01:01:02Z
 layout: default
 season: "2026-2027"
 nav_section: /events/
@@ -9,15 +9,15 @@ description: The Southern Vermont Qualifier (SoVT Qualifier, also known as the B
 
 # Southern Vermont Qualifier 2027
 
-The **Southern Vermont Qualifier**, also known as the **SoVT Qualifier** or **Bennington Qualifier**, is a FIRST Tech Challenge qualifying tournament in the 2026–2027 BIOBUZZ season.
+The **SoVT Qualifier** is a FIRST Tech Challenge qualifying tournament in the 2026–2027 BIOBUZZ season, co-hosted by Bennington Area Robotics and Manchester Machine Makers.
 
 **Date:** Saturday, January 23, 2027
 
 **Time:** To be announced
 
-**Location:** Mount Anthony Union Middle School (MAUMS), 747 East Rd, Bennington, VT 05201 \| [Directions](https://maps.app.goo.gl/zE9WbCbWNENq3pGUA){:target="_blank"}
+**Venue:** Mount Anthony Union Middle School (MAUMS), 747 East Rd, Bennington, VT 05201 \| [Directions](https://maps.app.goo.gl/zE9WbCbWNENq3pGUA){:target="_blank"}
 
-**Contact:** [info@bamvt.com](mailto:info@bamvt.com?subject=Southern%20Vermont%20Qualifier)
+**Contact:** [info@bamvt.com](mailto:info@bamvt.com?subject=SoVT%20Qualifier)
 
 ## Schedule
 

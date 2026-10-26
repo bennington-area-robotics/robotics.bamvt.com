@@ -68,8 +68,9 @@ Some edits affect several pages. Check the consumers when changing these sources
 
 The homepage's next-event summary in `index.md` and full listings in
 `_includes/season-events/` are maintained separately; update both when the next
-event changes. Past events stay in the full listings. The program fee appears in
-`index.md`, `code-of-conduct.md`, and `program-fee.md`; the receipt form in
+event changes. Past events stay in the full listings. The program fee amount appears in
+`code-of-conduct.md` and `program-fee.md`; `index.md` links to the fee page from
+the Joining paragraph. The receipt form in
 `print/program-fee-receipt.html` names the season. Financial summaries in page prose are also
 manual: changing JSON data does not update those sentences.
 
@@ -83,8 +84,8 @@ team summaries. Keep essential participation details visible. Use season pages,
 the event archive, the blog, and `/news-coverage/` for longer material. The 2026
 championship video lives on its event page. Homepage styles are scoped with
 `home` classes in `_layouts/default.html`. Meeting Schedule and Joining sit side by
-side on larger screens, with Program Fee spanning the row below; all three sections
-stack on small screens.
+side on larger screens and stack on small screens. The program fee is linked within
+the Joining paragraph.
 Two fixed photos show the robot beside the introduction and the Houston team beside
 the team summaries. Both link to the DECODE album; keep slideshows off the homepage.
 
