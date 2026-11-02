@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-10-26T14:26:37Z
+last_modified_at: 2026-11-02T00:03:51Z
 layout: default
 title: Program Fee
 description: Student program fee, payment, and receipts for Bennington Area Robotics.
@@ -28,7 +28,9 @@ will provide payment instructions at that time.
 > PO Box 4332<br>
 > Bennington, VT 05201
 
-Coaches can also provide a PayPal link for online payment.
+**Online:** [Pay the program fee with PayPal](https://www.paypal.com/ncp/payment/TCQP9LAT5P9XS){:target="_blank"}.
+Enter each student's name at checkout. For a sliding-scale amount, contact
+[info@bamvt.com](mailto:info@bamvt.com?subject=Program%20fee) before paying.
 
 ## Receipts {#receipts}
 
