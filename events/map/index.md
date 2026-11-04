@@ -1,7 +1,9 @@
 ---
-last_modified_at: 2026-11-04T21:32:21Z
+last_modified_at: 2026-11-04T21:33:05Z
 layout: default
 nav_section: /events/
+redirect_from:
+  - /seasons/biobuzz/events/map/
 title: Northeast FTC Events Map, 2026–2027
 season: "2026-2027"
 description: Map of 2026–2027 BIOBUZZ FIRST Tech Challenge events in New England, New York, New Jersey, and Pennsylvania, with distances from Bennington, Vermont.
