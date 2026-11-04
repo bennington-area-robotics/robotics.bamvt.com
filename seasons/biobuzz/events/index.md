@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-11-01T04:56:08Z
+last_modified_at: 2026-11-04T20:25:52Z
 sitemap: false
 redirect_from:
   - /seasons/2026-2027/events/
@@ -16,4 +16,4 @@ description: Events for Bennington Area Robotics's 2026–2027 BIOBUZZ season.
 
 {% include season-events/2026-2027.md %}
 
-[All seasons' events](/events/)
+[Map of northeast FTC events](/seasons/biobuzz/events/map/) · [All seasons' events](/events/)

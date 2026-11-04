@@ -55,6 +55,7 @@ Some edits affect several pages. Check the consumers when changing these sources
 | `_data/navigation.yml` | `_includes/navigation.html` and `nav-link.html`: season groups and program links in the header and mobile footer. |
 | `_includes/season-events/*.md` | All-season events page, season event pages, and season overviews. The homepage event list is maintained separately. |
 | Post `season` front matter | `_includes/season-posts.html`: season-specific blog listings. Assign by subject, not publication date. |
+| `_data/ftc_events/2026-2027.json` | `seasons/biobuzz/events/map/index.md`: public FTC events in New England, New York, New Jersey, and Pennsylvania. Regenerate with `bin/ftc-events` (season year as an optional argument) rather than editing by hand; add city coordinates to its `FALLBACK` table when an event is published without a location. |
 | `_data/budgets/2025-2026.json` | `seasons/decode/budget/index.md`: regular-season income and expenses, plus post-season budgets and actual expenses. |
 | `_includes/season-content/biobuzz/*.md` | Shared body copy for `/budget/`, `/sponsors/`, `/portfolio/`, and their permanent BIOBUZZ counterparts. Edit these includes rather than duplicating copy. |
 | Budget page front matter | `seasons/budgets/index.md` and `_includes/budget-seasons.html`: season listings, newest first, from `budget_season`, `budget_label`, and `budget_status`. |
