@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-11-04T20:25:52Z
+last_modified_at: 2026-11-04T20:44:18Z
 layout: default
 nav_section: /events/
 title: Northeast FTC Events Map, 2026–2027
@@ -84,7 +84,8 @@ This map shows {{ ftc.events | size }} FIRST Tech Challenge events in New Englan
   var typeColor = {}, typeRank = {};
   types.forEach(function (t, i) { typeColor[t.name] = t.color; typeRank[t.name] = i; });
   var states = ['VT', 'NH', 'ME', 'MA', 'CT', 'RI', 'NY', 'NJ', 'PA'];
-  var today = new Date().toISOString().slice(0, 10);
+  // Covered events are all in Eastern time; keep same-day events visible until local midnight there.
+  var today = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/New_York' }).format(new Date());
   var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
   function esc(s) {
@@ -144,11 +145,16 @@ This map shows {{ ftc.events | size }} FIRST Tech Challenge events in New Englan
     return Array.prototype.map.call(document.querySelectorAll('input[name="' + name + '"]:checked'), function (i) { return i.value; });
   }
 
-  function popupItem(e) {
+  function placeOf(e) {
+    return esc(e.venue) + '<br>' + esc(e.address) + (e.address ? ', ' : '') + esc(e.city) + ', ' + esc(e.state) +
+      (e.location_approximate ? '<br><em>Approximate location (city only)</em>' : '');
+  }
+
+  function popupItem(e, showPlace) {
     var links = '<a href="' + esc(e.ftc_events_url) + '" target="_blank">FTC event page</a>';
     if (e.website) links += ' · <a href="' + esc(e.website) + '" target="_blank">Event website</a>';
     return '<li>' + swatch(e.type) + ' <strong>' + esc(e.name) + '</strong><br>' + esc(when(e)) + ' · ' + esc(e.type) +
-      (e.remote ? ' (remote)' : e.hybrid ? ' (hybrid)' : '') + '<br>' + links + '</li>';
+      (e.remote ? ' (remote)' : e.hybrid ? ' (hybrid)' : '') + (showPlace ? '<br>' + placeOf(e) : '') + '<br>' + links + '</li>';
   }
 
   function render(fit) {
@@ -168,12 +174,13 @@ This map shows {{ ftc.events | size }} FIRST Tech Challenge events in New Englan
       var list = groups[key];
       var lead = list.slice().sort(function (a, b) { return typeRank[a.type] - typeRank[b.type]; })[0];
       var first = list[0];
-      var place = esc(first.venue) + '<br>' + esc(first.address) + (first.address ? ', ' : '') + esc(first.city) + ', ' + esc(first.state) +
-        (first.location_approximate ? '<br><em>Approximate location (city only)</em>' : '');
+      // Events can share coordinates but use different buildings; give each its own venue then.
+      var sameVenue = list.every(function (e) { return e.venue === first.venue && e.address === first.address; });
       var m = L.circleMarker([first.lat, first.lon], {
         radius: list.length > 1 ? 9 : 7, color: '#222', weight: 1, fillColor: typeColor[lead.type], fillOpacity: 0.9
       }).bindPopup('<div class="event-map-popup"><h4>' + esc(first.city) + ', ' + esc(first.state) + ' · ' +
-        Math.round(first.miles) + ' mi</h4>' + place + '<ul>' + list.map(popupItem).join('') + '</ul></div>', { maxWidth: 320 });
+        Math.round(first.miles) + ' mi</h4>' + (sameVenue ? placeOf(first) : '') + '<ul>' +
+        list.map(function (e) { return popupItem(e, !sameVenue); }).join('') + '</ul></div>', { maxWidth: 320 });
       m.bindTooltip(list.length > 1 ? esc(first.city) + ': ' + list.length + ' events' : esc(first.name));
       m.addTo(layer);
       markers[key] = m;
