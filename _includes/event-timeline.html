@@ -1,0 +1,51 @@
+{%- comment -%}
+Season event timeline from _data/events.yml.
+Parameters: season (e.g. "2026-2027").
+Past/upcoming status is set at build time and refreshed in the browser by the
+event-status script in _layouts/default.html.
+{%- endcomment -%}
+{%- assign season = site.data.events.seasons | where: "id", include.season | first -%}
+{%- assign today = site.time | date: "%Y-%m-%d" -%}
+{%- assign next_marked = false -%}
+<ol class="event-timeline" data-event-list>
+{%- for e in season.events -%}
+  {%- if e.end < today -%}{%- assign status = "past" -%}{%- else -%}{%- assign status = "upcoming" -%}{%- endif -%}
+  {%- assign is_next = false -%}
+  {%- if status == "upcoming" and next_marked == false -%}{%- assign is_next = true -%}{%- assign next_marked = true -%}{%- endif -%}
+  <li class="event-item is-{{ status }}{% if is_next %} is-next{% endif %}{% if e.host %} is-hosted{% endif %}" data-event-end="{{ e.end }}">
+    {% include event-date.html event=e %}
+    <div class="event-card">
+      <p class="event-tags">
+        <span class="event-tag event-tag--{{ e.type | slugify }}">{{ e.type }}</span>
+        {%- if e.host %} <span class="event-tag event-tag--host">{% if e.host contains "Co-hosted" %}Co-host{% else %}Host{% endif %}</span>{% endif -%}
+        {%- for t in e.teams %} <span class="event-tag event-tag--team">{{ t }}{% if t == 18650 %} Cookie Clickers{% elsif t == 32473 %} Bolts and Biscuits{% endif %}</span>{% endfor -%}
+        <span class="event-tag event-tag--next" aria-hidden="true">Next</span>
+      </p>
+      <h3 class="event-title">
+        {%- if e.url -%}<a href="{{ e.url | relative_url }}">{{ e.title }}</a>
+        {%- elsif e.external_url -%}<a href="{{ e.external_url }}" target="_blank">{{ e.title }}</a>
+        {%- else -%}{{ e.title }}{%- endif -%}
+      </h3>
+      <p class="event-place">{{ e.venue }}{% if e.place %} · {{ e.place }}{% endif %}</p>
+      {%- if e.host %}<p class="event-host">{{ e.host }}</p>{% endif -%}
+      {%- if e.results %}
+      <ul class="event-results">
+        {%- for r in e.results %}<li>{{ r }}</li>{% endfor -%}
+      </ul>
+      {%- endif -%}
+      {%- assign has_links = false -%}
+      {%- if e.links or e.ftc or e.directions -%}{%- assign has_links = true -%}{%- endif -%}
+      {%- if has_links %}
+      <p class="event-links">
+        {%- for l in e.links -%}
+          {%- assign first_char = l.url | slice: 0 -%}
+          <a href="{% if first_char == '/' %}{{ l.url | relative_url }}{% else %}{{ l.url }}{% endif %}"{% if first_char != '/' %} target="_blank"{% endif %}>{{ l.label }}</a>
+        {%- endfor -%}
+        {%- if e.directions -%}<a href="{{ e.directions }}" target="_blank">Directions</a>{%- endif -%}
+        {%- if e.ftc -%}<a href="https://ftc-events.firstinspires.org/{{ e.ftc_season }}/{{ e.ftc }}" target="_blank">FTC event page</a>{%- endif -%}
+      </p>
+      {%- endif %}
+    </div>
+  </li>
+{%- endfor %}
+</ol>

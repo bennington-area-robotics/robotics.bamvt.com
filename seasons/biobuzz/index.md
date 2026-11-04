@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-11-01T04:56:08Z
+last_modified_at: 2026-11-04T21:32:21Z
 redirect_from:
   - /seasons/2026-2027/
 layout: default
@@ -16,7 +16,9 @@ description: Follow Bennington Area Robotics through the 2026–2027 FTC BIOBUZZ
 
 Team 18650 Cookie Clickers and Team 32473 Bennington Bolts and Biscuits are taking part in the BIOBUZZ season. Find our current [meeting schedule](/#meeting-schedule) and [membership information](/#student-membership) on the homepage.
 
-{% include season-events/2026-2027.md %}
+## Events {#events}
+
+{% include event-timeline.html season="2026-2027" %}
 
 ## Budget and Support
 
@@ -30,4 +32,4 @@ The [2026–2027 budget](/seasons/biobuzz/budget/) is in development, with plans
 
 [Season updates and planning](/seasons/biobuzz/blog/).
 
-[All season budgets](/seasons/budgets/) · [All blog posts](/blog/) · [All events](/events/)
+[All season budgets](/seasons/budgets/) · [All blog posts](/blog/) · [All events](/events/) · [Northeast FTC events map](/events/map/)

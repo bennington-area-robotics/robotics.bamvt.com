@@ -1,0 +1,24 @@
+{%- comment -%}
+Static SVG preview of FTC events in _data/ftc_events/<season>.json, linking to /events/map/.
+Parameters: season (e.g. "2026-2027").
+Projection: x = (lon + 80.6) * 74.3, y = (45.2 - lat) * 100, so one degree of
+latitude is 100 units and distances are roughly true near 42°N (100 miles ≈ 145 units).
+{%- endcomment -%}
+{%- assign ftc = site.data.ftc_events[include.season] -%}
+{%- assign today = site.time | date: "%Y-%m-%d" -%}
+<svg class="event-dot-map" viewBox="0 0 803 600" role="img" aria-labelledby="event-dot-map-title">
+  <title id="event-dot-map-title">Dot map of upcoming FTC events across the northeast, centered on Bennington, Vermont, with 100- and 200-mile rings</title>
+  <circle class="ring" cx="550.1" cy="232.2" r="289.4"/>
+  <circle class="ring" cx="550.1" cy="232.2" r="144.7"/>
+  <text class="ring-label" x="550.1" y="368">100 mi</text>
+  <text class="ring-label" x="550.1" y="513">200 mi</text>
+  {%- for e in ftc.events -%}
+    {%- if e.lat and e.remote != true and e.end >= today and e.type != "Kickoff" -%}
+      {%- assign x = e.lon | plus: 80.6 | times: 74.3 | round: 1 -%}
+      {%- assign y = 45.2 | minus: e.lat | times: 100 | round: 1 %}
+  <circle class="dot dot--{{ e.type | slugify }}" cx="{{ x }}" cy="{{ y }}" r="7"/>
+    {%- endif -%}
+  {%- endfor %}
+  <path class="dot-home" d="M550.1 214.2l5.3 11 12.1 1.6-8.8 8.4 2.2 12-10.8-5.8-10.8 5.8 2.2-12-8.8-8.4 12.1-1.6z"/>
+  <text class="dot-home-label" x="572" y="226">Bennington</text>
+</svg>

@@ -1,0 +1,31 @@
+{%- comment -%}
+Featured card for the next upcoming event in _data/events.yml, chosen at build time.
+The event-status script hides it after the event ends until the site is rebuilt.
+{%- endcomment -%}
+{%- assign today = site.time | date: "%Y-%m-%d" -%}
+{%- assign soonest = nil -%}
+{%- for s in site.data.events.seasons -%}
+  {%- for e in s.events -%}
+    {%- if e.end >= today -%}
+      {%- if soonest == nil or e.start < soonest.start -%}{%- assign soonest = e -%}{%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endfor -%}
+{%- if soonest -%}
+<section class="event-next" data-event-end="{{ soonest.end }}" aria-labelledby="event-next-title">
+  <p class="event-next-label">Next event <span class="event-next-countdown" data-countdown="{{ soonest.start }}"></span></p>
+  <div class="event-next-body">
+    {% include event-date.html event=soonest %}
+    <div>
+      <p class="event-next-title" id="event-next-title">{% if soonest.url %}<a href="{{ soonest.url | relative_url }}">{{ soonest.title }}</a>{% else %}{{ soonest.title }}{% endif %}</p>
+      <p class="event-next-place">{{ soonest.venue }}{% if soonest.place %}<br>{{ soonest.place }}{% endif %}</p>
+      {%- if soonest.host %}<p class="event-next-host">{{ soonest.host }}</p>{% endif %}
+    </div>
+  </div>
+  <p class="event-next-actions">
+    {%- if soonest.url %}<a class="event-button" href="{{ soonest.url | relative_url }}">Event details</a>{% endif -%}
+    {%- if soonest.directions %}<a href="{{ soonest.directions }}" target="_blank">Directions</a>{% endif -%}
+    {%- if soonest.ftc %}<a href="https://ftc-events.firstinspires.org/{{ soonest.ftc_season }}/{{ soonest.ftc }}" target="_blank">FTC event page</a>{% endif -%}
+  </p>
+</section>
+{%- endif -%}
