@@ -1,0 +1,125 @@
+#!/usr/bin/env ruby
+# Refresh _data/ftc_events/<season>.json from the public FTC events listing.
+#
+#   bin/ftc-events                 # season 2026 -> _data/ftc_events/2026-2027.json
+#   bin/ftc-events 2027            # a later season
+#   bin/ftc-events 2026 saved.html # parse a saved copy of the listing page
+#
+# The listing at https://ftc-events.firstinspires.org/<season> embeds every
+# event as JSON. This keeps New England, New York, New Jersey, and Pennsylvania
+# events, normalizes field names, and fills missing coordinates from FALLBACK.
+require 'json'
+require 'net/http'
+require 'time'
+
+STATES = %w[CT MA ME NH RI VT NY NJ PA].freeze
+
+TYPES = {
+  0 => 'Scrimmage',
+  1000 => 'League Meet',
+  1001 => 'League Tournament',
+  1004 => 'Qualifier',
+  1007 => 'Super Qualifier',
+  1010 => 'Championship',
+  1016 => 'Kickoff'
+}.freeze
+
+# City-level coordinates for events published without a location.
+FALLBACK = {
+  'Windham, NH' => [42.8007, -71.3042],
+  'Basking Ridge, NJ' => [40.7062, -74.5493],
+  'Bayonne, NJ' => [40.6687, -74.1143],
+  'Corning, NY' => [42.1429, -77.0547],
+  'Utica, NY' => [43.0798, -75.2696],
+  'Potsdam, NY' => [44.6634, -74.9988]
+}.freeze
+
+season = Integer(ARGV[0] || 2026)
+url = "https://ftc-events.firstinspires.org/#{season}"
+html = if ARGV[1]
+         File.read(ARGV[1])
+       else
+         res = Net::HTTP.get_response(URI(url))
+         abort "Fetching #{url} failed: #{res.code}" unless res.is_a?(Net::HTTPSuccess)
+         res.body.force_encoding('UTF-8')
+       end
+
+def embedded(html, name)
+  start = html.index(/window\.#{name}\s*=\s*/) or abort "window.#{name} not found"
+  start = html.index('[', start)
+  depth = 0
+  in_str = false
+  esc = false
+  (start...html.length).each do |i|
+    c = html[i]
+    if in_str
+      if esc then esc = false
+      elsif c == '\\' then esc = true
+      elsif c == '"' then in_str = false
+      end
+    elsif c == '"' then in_str = true
+    elsif c == '[' || c == '{' then depth += 1
+    elsif c == ']' || c == '}'
+      depth -= 1
+      return JSON.parse(html[start..i]) if depth.zero?
+    end
+  end
+  abort "window.#{name} is not terminated"
+end
+
+groups = %w[KickoffEvents OtherEvents DistrictChampionshipWeek FIRSTChampionshipWeek OffSeasonEvents PremierEvents]
+raw = groups.flat_map { |g| embedded(html, g).flat_map { |week| week['E'] } }
+
+seen = {}
+events = raw.filter_map do |e|
+  next unless e['Ect'] == 'USA' && STATES.include?(e['Es'])
+  next if seen[e['Tc']]
+
+  seen[e['Tc']] = true
+  city = e['Ec'].to_s.strip
+  state = e['Es']
+  # The listing stores longitude in "lat" and latitude in "lon".
+  lat = e['lon']
+  lon = e['lat']
+  approximate = false
+  if lat.nil? || lon.nil?
+    lat, lon = FALLBACK["#{city}, #{state}"]
+    approximate = true
+    warn "No coordinates for #{e['Tc']} (#{city}, #{state}); add it to FALLBACK" if lat.nil?
+  end
+  website = e['Ew'].to_s.strip
+  {
+    'code' => e['Tc'],
+    'name' => e['En'].to_s.strip.squeeze(' '),
+    'type' => TYPES.fetch(e['eventType'], "Other (#{e['eventType']})"),
+    'start' => e['Sd'][0, 10],
+    'end' => e['Ed'][0, 10],
+    'venue' => e['Ev'].to_s.strip.sub(/,\z/, ''),
+    'address' => e['Ea'].to_s.strip.sub(/,\z/, ''),
+    'city' => city,
+    'state' => state,
+    'region' => e['Rn'],
+    'website' => website.empty? ? nil : website,
+    'ftc_events_url' => "https://ftc-events.firstinspires.org/#{season}/#{e['Tc']}",
+    'lat' => lat,
+    'lon' => lon,
+    'location_approximate' => approximate,
+    'remote' => e['Isr'],
+    'hybrid' => e['IsHybrid']
+  }
+end
+
+events.sort_by! { |e| [e['start'], e['state'], e['name']] }
+
+data = {
+  'season' => "#{season}-#{season + 1}",
+  'source' => url,
+  'retrieved' => Time.now.utc.strftime('%Y-%m-%d'),
+  'states' => STATES,
+  'events' => events
+}
+
+path = File.expand_path("../_data/ftc_events/#{season}-#{season + 1}.json", __dir__)
+Dir.mkdir(File.dirname(path)) unless Dir.exist?(File.dirname(path))
+File.write(path, JSON.pretty_generate(data) + "\n")
+puts "Wrote #{events.size} events to #{path}"
