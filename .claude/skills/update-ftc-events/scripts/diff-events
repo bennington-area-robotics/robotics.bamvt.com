@@ -1,0 +1,47 @@
+#!/usr/bin/env ruby
+# Summarize changes between two versions of an _data/ftc_events/*.json file.
+#
+#   diff-events OLD.json NEW.json
+#   diff-events _data/ftc_events/2026-2027.json            # compare with HEAD
+require 'json'
+require 'open3'
+
+FIELDS = %w[name type start end venue address city state website lat lon location_approximate remote hybrid].freeze
+
+def load(source)
+  JSON.parse(source)['events'].to_h { |e| [e['code'], e] }
+end
+
+if ARGV.size == 1
+  old_src, status = Open3.capture2('git', 'show', "HEAD:#{ARGV[0]}")
+  abort "#{ARGV[0]} is not in HEAD" unless status.success?
+  old = load(old_src)
+  new = load(File.read(ARGV[0]))
+elsif ARGV.size == 2
+  old = load(File.read(ARGV[0]))
+  new = load(File.read(ARGV[1]))
+else
+  abort 'usage: diff-events [OLD.json] NEW.json'
+end
+
+def label(e) = "#{e['start']} #{e['code']} #{e['type']}: #{e['name']} (#{e['city']}, #{e['state']})"
+
+added = new.keys - old.keys
+removed = old.keys - new.keys
+changed = (old.keys & new.keys).filter_map do |code|
+  diffs = FIELDS.filter_map do |f|
+    a, b = old[code][f], new[code][f]
+    next if a == b
+    next if %w[lat lon].include?(f) && a.is_a?(Numeric) && b.is_a?(Numeric) && (a - b).abs < 0.001
+
+    "    #{f}: #{a.inspect} -> #{b.inspect}"
+  end
+  [code, diffs] unless diffs.empty?
+end
+
+puts "Added (#{added.size}):", added.map { |c| "  #{label(new[c])}" }.sort
+puts "Removed (#{removed.size}):", removed.map { |c| "  #{label(old[c])}" }.sort
+puts "Changed (#{changed.size}):"
+changed.sort_by { |c, _| new[c]['start'] }.each { |c, d| puts "  #{label(new[c])}", d }
+approx = new.values.select { |e| e['location_approximate'] }
+puts "Approximate locations (#{approx.size}):", approx.map { |e| "  #{label(e)}" }

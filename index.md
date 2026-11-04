@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-10-26T01:13:23Z
+last_modified_at: 2026-11-04T21:32:21Z
 layout: default
 title: Home
 seo_title: Bennington Area Robotics | Youth Robotics in Bennington, VT
@@ -79,7 +79,7 @@ Saturday, January 23, 2027 · MAUMS, Bennington
 </div>
 <div markdown="1">
 
-[2026–27 season overview](/seasons/biobuzz/) · [Kickoff videos & slides](/events/season-kickoff-2026/#kickoff-materials) · [All events & results](/events/)
+[2026–27 season overview](/seasons/biobuzz/) · [Kickoff videos & slides](/events/season-kickoff-2026/#kickoff-materials) · [All events & results](/events/) · [Map of northeast FTC events](/events/map/)
 
 </div>
 </div>
