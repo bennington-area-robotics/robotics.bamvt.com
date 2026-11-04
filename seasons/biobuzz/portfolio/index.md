@@ -1,6 +1,7 @@
 ---
-last_modified_at: 2026-10-10T17:38:18Z
+last_modified_at: 2026-11-04T22:07:13Z
 sitemap: false
+noindex: true
 layout: default
 title: 2026–2027 BIOBUZZ Engineering Portfolio
 description: Engineering portfolio updates for the 2026–2027 BIOBUZZ season.

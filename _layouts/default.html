@@ -14,6 +14,7 @@
   <title>{{ page_title | escape }}</title>
   <meta name="description" content="{{ page_desc | escape }}">
   <link rel="canonical" href="{{ canonical_url | absolute_url }}">
+  {% if page.noindex %}<meta name="robots" content="noindex">{% endif %}
   <meta property="og:site_name" content="{{ site.title | escape }}">
   <meta property="og:title" content="{{ page_title | escape }}">
   <meta property="og:description" content="{{ page_desc | escape }}">
