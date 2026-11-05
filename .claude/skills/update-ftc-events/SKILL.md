@@ -1,6 +1,6 @@
 ---
 name: update-ftc-events
-description: Refresh the northeast FTC events data behind /events/map/ (_data/ftc_events/YYYY-YYYY.json) from the public FTC event listing, review what changed, fix missing locations, and check related event pages. Use when asked to update, refresh, re-pull, or check the FTC events map or event data, or when starting a new season's events map.
+description: Refresh the northeast FTC events and teams data behind /events/map/ (_data/ftc_events/YYYY-YYYY.json) from the public FTC event listing, review what changed, fix missing locations, and check related event pages. Use when asked to update, refresh, re-pull, or check the FTC events map or event data, or when starting a new season's events map.
 ---
 
 # Update FTC Events Data
@@ -37,6 +37,16 @@ bin/ftc-events            # current season (2026 -> 2026-2027.json)
   names and add it to `TYPES`; also add it, with a color, to the `types` list in
   `events/map/index.md`, and a `.dot--<type>` color to the event styles in
   `_layouts/default.html`.
+
+### Teams layer
+
+Refresh the teams shown on the map with `bin/ftc-teams` (same season argument).
+It reads the team tables on FIRST's region pages for the nine states and looks up
+only towns that are not already in the file's `places` table (about one second
+each, from OpenStreetMap). If it warns `No location found for <Town, ST>`, add
+`"Town, ST": [lat, lon]` to `places` by hand and rerun. If a region warns that it
+lists no teams, check whether FIRST renamed or split the region and update
+`REGIONS`. Report the change in team count; FIRST adds teams throughout the season.
 
 ## 3. Review the changes
 

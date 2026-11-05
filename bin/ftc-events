@@ -149,7 +149,7 @@ events.sort_by! { |e| [e['start'], e['state'], e['name']] }
 data = {
   'season' => "#{season}-#{season + 1}",
   'source' => url,
-  'retrieved' => Time.now.utc.strftime('%Y-%m-%d'),
+  'retrieved' => Time.now.getlocal('-05:00').strftime('%Y-%m-%d'), # Eastern (standard) date
   'states' => STATES,
   'events' => events
 }

@@ -1,20 +1,23 @@
 ---
-last_modified_at: 2026-11-04T21:33:05Z
+last_modified_at: 2026-11-05T02:34:14Z
 layout: default
 nav_section: /events/
 redirect_from:
   - /seasons/biobuzz/events/map/
-title: Northeast FTC Events Map, 2026–2027
+title: Northeast FTC Events and Teams Map, 2026–2027
 season: "2026-2027"
-description: Map of 2026–2027 BIOBUZZ FIRST Tech Challenge events in New England, New York, New Jersey, and Pennsylvania, with distances from Bennington, Vermont.
+description: Map of 2026–2027 BIOBUZZ FIRST Tech Challenge events and teams in New England, New York, New Jersey, and Pennsylvania, with distances from Bennington, Vermont.
 ---
 {% assign ftc = site.data.ftc_events["2026-2027"] %}
+{% assign ftc_teams = site.data.ftc_teams["2026-2027"] %}
 
-# Northeast FTC Events Map
+# Northeast FTC Events and Teams Map
 
 [All events](/events/)
 
 This map shows {{ ftc.events | size }} FIRST Tech Challenge events in New England, New York, New Jersey, and Pennsylvania for the 2026–2027 BIOBUZZ season. Distances are straight-line miles from Bennington; driving distances are longer. Event details come from the [FTC event listing]({{ ftc.source }}){:target="_blank"}, retrieved {{ ftc.retrieved | date: "%B %-d, %Y" }}. Confirm dates and registration with each event before planning travel: league meets and league tournaments are generally limited to teams in that league, and qualifiers may give priority to teams from their own region.
+
+Turn on **Show teams** (or open [this link](#teams)) to add the {{ ftc_teams.teams | size }} teams registered in the same states, from FIRST's [region team lists](https://ftc-events.firstinspires.org/2026/region/USVT){:target="_blank"} (retrieved {{ ftc_teams.retrieved | date: "%B %-d, %Y" }}). FIRST lists each team's town rather than an address, so teams appear at the center of their town.
 
 <style>
 .event-map-filters { display: flex; flex-wrap: wrap; gap: 0.75rem 1.5rem; margin: 1.25rem 0 0.75rem; font-size: 0.9rem; }
@@ -35,6 +38,9 @@ This map shows {{ ftc.events | size }} FIRST Tech Challenge events in New Englan
 .event-map-list tbody tr { cursor: pointer; }
 .event-map-list .event-type { display: inline-flex; align-items: center; gap: 0.3rem; white-space: nowrap; }
 .event-map-list .event-place { color: var(--muted); font-size: 0.82rem; }
+.event-team-swatch { display: inline-block; width: 0.8rem; height: 0.8rem; border-radius: 50%; border: 2px solid #1d3557; background: white; }
+.event-map-list .team-number { font-variant-numeric: tabular-nums; white-space: nowrap; }
+#team-list-section[hidden] { display: none; }
 .event-map-ours { display: inline-block; padding: 0 0.35rem; border-radius: 3px; background: #fff3c4; color: #5a4500; font-size: 0.72rem; font-weight: 700; white-space: nowrap; }
 </style>
 
@@ -56,9 +62,13 @@ This map shows {{ ftc.events | size }} FIRST Tech Challenge events in New Englan
     </label>
     <label><input type="checkbox" id="filter-past"> Include past events</label>
   </fieldset>
+  <fieldset><legend>Teams</legend>
+    <label><input type="checkbox" id="filter-teams"> <span class="event-team-swatch"></span> Show teams</label>
+    <label><input type="checkbox" id="filter-rookies"> New this season only</label>
+  </fieldset>
 </form>
 
-<div id="event-map" role="region" aria-label="Map of northeast FTC events"></div>
+<div id="event-map" role="region" aria-label="Map of northeast FTC events and teams"></div>
 <p class="event-map-count" id="event-map-count" aria-live="polite"></p>
 
 ## Event List {#event-list}
@@ -70,10 +80,27 @@ This map shows {{ ftc.events | size }} FIRST Tech Challenge events in New Englan
 </table>
 </div>
 
+<section id="team-list-section" hidden markdown="1">
+
+## Team List {#team-list}
+
+Teams matching the state and distance filters, nearest first. Distances are measured to the center of each team's town.
+
+<div class="table-scroll" tabindex="0">
+<table class="event-map-list">
+  <thead><tr><th>Team</th><th>Name</th><th>Town</th><th>Rookie year</th><th>Miles</th></tr></thead>
+  <tbody id="team-map-rows"></tbody>
+</table>
+</div>
+
+</section>
+
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script>
 (function () {
   var data = {{ ftc | jsonify }};
+  var teamData = {{ ftc_teams | jsonify }};
+  var ourTeams = [18650, 32473];
   // FTC codes of events on our own calendar (_data/events.yml) for this season.
   {%- assign our_season = site.data.events.seasons | where: "id", ftc.season | first -%}
   {%- assign our_codes = our_season.events | map: "ftc" | compact %}
@@ -126,6 +153,16 @@ This map shows {{ ftc.events | size }} FIRST Tech Challenge events in New Englan
     if (!(e.type in typeColor)) { typeColor[e.type] = '#666666'; typeRank[e.type] = 99; }
   });
 
+  var rookieYear = +data.season.slice(0, 4);
+  var teams = teamData.teams.filter(function (t) { return teamData.places[t.place]; });
+  teams.forEach(function (t) {
+    var ll = teamData.places[t.place];
+    t.lat = ll[0]; t.lon = ll[1];
+    t.miles = miles(t.lat, t.lon);
+    t.ours = ourTeams.indexOf(t.number) >= 0;
+  });
+  teams.sort(function (a, b) { return a.miles - b.miles || a.number - b.number; });
+
   var typeBox = document.getElementById('filter-types');
   types.forEach(function (t) {
     if (!events.some(function (e) { return e.type === t.name; })) return;
@@ -134,7 +171,7 @@ This map shows {{ ftc.events | size }} FIRST Tech Challenge events in New Englan
   });
   var stateBox = document.getElementById('filter-states');
   states.forEach(function (s) {
-    if (!events.some(function (e) { return e.state === s; })) return;
+    if (!events.some(function (e) { return e.state === s; }) && !teams.some(function (t) { return t.state === s; })) return;
     stateBox.insertAdjacentHTML('beforeend', '<label><input type="checkbox" name="state" value="' + s + '" checked> ' + s + '</label>');
   });
 
@@ -147,8 +184,11 @@ This map shows {{ ftc.events | size }} FIRST Tech Challenge events in New Englan
   map.on('blur', function () { map.scrollWheelZoom.disable(); });
   L.marker([home.lat, home.lon], { title: home.name, zIndexOffset: 1000 }).addTo(map)
     .bindPopup('<div class="event-map-popup"><h4>Bennington Area Robotics</h4>Bennington, VT</div>');
+  // Teams sit in a pane below the event markers so events stay clickable.
+  map.createPane('teams').style.zIndex = 390;
+  var teamLayer = L.layerGroup().addTo(map);
   var layer = L.layerGroup().addTo(map);
-  var markers = {};
+  var markers = {}, teamMarkers = {};
 
   function checked(name) {
     return Array.prototype.map.call(document.querySelectorAll('input[name="' + name + '"]:checked'), function (i) { return i.value; });
@@ -166,6 +206,42 @@ This map shows {{ ftc.events | size }} FIRST Tech Challenge events in New Englan
     return '<li>' + swatch(e.type) + ' <strong>' + esc(e.name) + '</strong>' +
       (e.ours ? ' <span class="event-map-ours">On our calendar</span>' : '') + '<br>' + esc(when(e)) + ' · ' + esc(e.type) +
       (e.remote ? ' (remote)' : e.hybrid ? ' (hybrid)' : '') + (showPlace ? '<br>' + placeOf(e) : '') + '<br>' + links + '</li>';
+  }
+
+  function teamUrl(t) { return 'https://ftc-events.firstinspires.org/' + rookieYear + '/team/' + t.number; }
+
+  function renderTeams(showStates, maxMiles) {
+    var on = document.getElementById('filter-teams').checked;
+    var rookies = document.getElementById('filter-rookies').checked;
+    var shown = !on ? [] : teams.filter(function (t) {
+      return showStates.indexOf(t.state) >= 0 && t.miles <= maxMiles && (!rookies || t.rookie_year >= rookieYear);
+    });
+    teamLayer.clearLayers();
+    teamMarkers = {};
+    var towns = {};
+    shown.forEach(function (t) { (towns[t.place] = towns[t.place] || []).push(t); });
+    Object.keys(towns).forEach(function (place) {
+      var list = towns[place], first = list[0];
+      var mine = list.some(function (t) { return t.ours; });
+      var m = L.circleMarker([first.lat, first.lon], {
+        pane: 'teams', radius: 4 + Math.sqrt(list.length) * 2.2, color: mine ? '#e9b600' : '#1d3557',
+        weight: mine ? 4 : 2, fillColor: 'white', fillOpacity: 0.85
+      }).bindPopup('<div class="event-map-popup"><h4>' + esc(place) + ' · ' + Math.round(first.miles) + ' mi</h4>' +
+        list.length + (list.length === 1 ? ' team' : ' teams') + '<ul>' + list.map(function (t) {
+          return '<li><a href="' + teamUrl(t) + '" target="_blank">' + t.number + '</a> ' + esc(t.name) +
+            ' <span class="event-place">since ' + t.rookie_year + '</span></li>';
+        }).join('') + '</ul></div>', { maxWidth: 320 });
+      m.bindTooltip(esc(place) + ': ' + list.length + (list.length === 1 ? ' team' : ' teams'));
+      m.addTo(teamLayer);
+      teamMarkers[place] = m;
+    });
+    document.getElementById('team-list-section').hidden = !on;
+    document.getElementById('team-map-rows').innerHTML = shown.map(function (t) {
+      return '<tr data-place="' + esc(t.place) + '"><td class="team-number"><a href="' + teamUrl(t) + '" target="_blank">' +
+        t.number + '</a></td><td>' + esc(t.name) + (t.ours ? ' <span class="event-map-ours">Our team</span>' : '') +
+        '</td><td>' + esc(t.place) + '</td><td>' + t.rookie_year + '</td><td class="miles">' + Math.round(t.miles) + '</td></tr>';
+    }).join('') || '<tr><td colspan="5">No teams match these filters.</td></tr>';
+    return { teams: shown.length, towns: Object.keys(towns).length, points: shown };
   }
 
   function render(fit) {
@@ -202,17 +278,20 @@ This map shows {{ ftc.events | size }} FIRST Tech Challenge events in New Englan
     var rows = shown.map(function (e, i) {
       return '<tr data-key="' + e.key + '"><td class="when">' + esc(when(e)) + '</td><td><a href="' + esc(e.ftc_events_url) +
         '" target="_blank">' + esc(e.name) + '</a>' +
-        (e.ours ? ' <span class="event-map-ours">On our calendar</span>' : '') + '<br><span class="event-place">' + esc(e.venue) + ', ' + esc(e.city) + ', ' + esc(e.state) +
+        (e.ours ? ' <span class="event-map-ours">On our calendar</span>' : '') + '<br><span class="event-place">' + esc([e.venue, e.city, e.state].filter(Boolean).join(', ')) +
         '</span></td><td><span class="event-type">' + swatch(e.type) + esc(e.type) + '</span></td><td class="miles">' +
         Math.round(e.miles) + '</td></tr>';
     });
     document.getElementById('event-map-rows').innerHTML = rows.join('') ||
       '<tr><td colspan="4">No events match these filters.</td></tr>';
-    document.getElementById('event-map-count').textContent = 'Showing ' + shown.length + ' of ' + events.length +
-      ' events. Larger circles mark venues with more than one event; gold rings mark events on our calendar.';
+    var t = renderTeams(showStates, maxMiles);
+    document.getElementById('event-map-count').textContent = 'Showing ' + shown.length + ' of ' + events.length + ' events' +
+      (document.getElementById('filter-teams').checked ? ' and ' + t.teams + ' teams in ' + t.towns + ' towns (white circles, sized by team count)' : '') +
+      '. Larger event circles mark venues with more than one event; gold rings mark our events and teams.';
 
-    if (fit && shown.length) {
-      var bounds = L.latLngBounds(shown.map(function (e) { return [e.lat, e.lon]; })).extend([home.lat, home.lon]);
+    var points = shown.concat(t.points);
+    if (fit && points.length) {
+      var bounds = L.latLngBounds(points.map(function (e) { return [e.lat, e.lon]; })).extend([home.lat, home.lon]);
       map.fitBounds(bounds, { padding: [20, 20], maxZoom: 10 });
     }
   }
@@ -227,6 +306,21 @@ This map shows {{ ftc.events | size }} FIRST Tech Challenge events in New Englan
     map.setView(m.getLatLng(), Math.max(map.getZoom(), 9));
     m.openPopup();
   });
+  document.getElementById('team-map-rows').addEventListener('click', function (ev) {
+    if (ev.target.closest('a')) return;
+    var row = ev.target.closest('tr[data-place]');
+    var m = row && teamMarkers[row.getAttribute('data-place')];
+    if (!m) return;
+    document.getElementById('event-map').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    map.setView(m.getLatLng(), Math.max(map.getZoom(), 10));
+    m.openPopup();
+  });
+  // /events/map/#teams opens the map with the teams layer on.
+  function teamsFromHash() {
+    if (/\bteams\b/.test(location.hash)) document.getElementById('filter-teams').checked = true;
+  }
+  window.addEventListener('hashchange', function () { teamsFromHash(); render(true); });
+  teamsFromHash();
   render(true);
 })();
 </script>
