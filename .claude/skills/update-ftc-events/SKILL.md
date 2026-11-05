@@ -22,6 +22,13 @@ belong in the script so they survive the next refresh.
 
 ## 2. Refresh
 
+> **Check before running.** FIRST's [website terms of use](https://www.firstinspires.org/about/website-terms-of-use)
+> prohibit scripts and scrapers on its sites. `bin/ftc-events` and `bin/ftc-teams`
+> currently read the public web pages, so confirm with the user before running
+> them. FIRST's sanctioned route is the free [FTC Events API](https://ftc-events.firstinspires.org/services/API)
+> (registration token, non-commercial use, link back to the API page); prefer it
+> once the scripts support it.
+
 ```sh
 bin/ftc-events            # current season (2026 -> 2026-2027.json)
 ```
