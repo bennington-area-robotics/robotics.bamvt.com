@@ -5,14 +5,14 @@
 #   bin/ftc-events 2027   # a later season
 #
 # Needs FTC_API_USERNAME and FTC_API_TOKEN (see bin/lib/ftc_api.rb). Keeps New
-# England, New York, New Jersey, and Pennsylvania events, normalizes field names,
+# England, New York, and New Jersey events, normalizes field names,
 # fills missing coordinates from VENUES, and applies CORRECTIONS confirmed
 # against regional organizers.
 require 'json'
 require 'time'
 require_relative 'lib/ftc_api'
 
-STATES = %w[CT MA ME NH RI VT NY NJ PA].freeze
+STATES = %w[CT MA ME NH RI VT NY NJ].freeze
 
 # The API's typeName, renamed where the map uses a shorter or plainer label.
 TYPE_NAMES = {
@@ -40,14 +40,7 @@ FALLBACK = {}.freeze
 
 # Corrections where the regional organizer's published details differ from
 # FIRST's record, keyed like VENUES.
-CORRECTIONS = {
-  # https://www.ftcpenn.org/ftc-events/2026-2027-season/pennsylvania-ftc-season-kickoff-exton
-  '2026/USPAEXKO' => {
-    'venue' => 'Downingtown Area Robotics Meeting Space',
-    'address' => '241 Welsh Pool Rd, Suite 110',
-    'lat' => 40.06214, 'lon' => -75.64403
-  }
-}.freeze
+CORRECTIONS = {}.freeze
 
 VIRTUAL = /\A(virtual|remote|online)\b/i
 

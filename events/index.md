@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-11-05T03:14:33Z
+last_modified_at: 2026-11-05T03:32:26Z
 description: "Events Bennington Area Robotics hosts and competes in, season by season, with results, plus a map of FTC events across the northeast."
 layout: default
 title: Events
@@ -24,7 +24,7 @@ Bennington Area Robotics competes in FIRST Tech Challenge events across Vermont 
   {% include event-dot-map.html season="2026-2027" %}
   <span class="event-map-callout-text">
     <strong>Northeast FTC events map</strong>
-    {{ ftc.events | size }} BIOBUZZ events in New England, New York, New Jersey, and Pennsylvania, with distances from Bennington.
+    {{ ftc.events | size }} BIOBUZZ events in New England, New York, and New Jersey, with distances from Bennington.
     <span class="event-map-callout-cta">Open the map</span>
   </span>
 </a>
