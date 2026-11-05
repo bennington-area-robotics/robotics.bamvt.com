@@ -36,11 +36,19 @@ def text(cell) = CGI.unescapeHTML(cell.gsub(/<[^>]+>/, '')).strip.squeeze(' ')
 
 teams = REGIONS.flat_map do |region|
   html = get("https://ftc-events.firstinspires.org/#{season}/region/#{region}")
-  rows = html.scan(%r{<tr>\s*<td class="team-rank">(.*?)</tr>}m).map(&:first)
+  # The page also lists the region's events in rows styled like team rows; read
+  # only the team table.
+  table = html[%r{<table[^>]*id="teamtable".*?</table>}m]
+  abort "#{region}: team table not found; FIRST may have changed the page" unless table
+  rows = table.scan(%r{<tr>\s*<td class="team-rank">(.*?)</tr>}m).map(&:first)
   warn "#{region}: no teams listed" if rows.empty?
   rows.filter_map do |row|
     cells = row.split(%r{</td>\s*<td[^>]*>}).map { |c| text(c.sub(%r{</td>\s*\z}, '')) }
     number, name, location, rookie = cells
+    unless number.to_s.match?(/\A\d+\z/) && rookie.to_s.match?(/\A\d{4}\z/)
+      warn "#{region}: skipping row that is not a team: #{cells.join(' | ')}"
+      next
+    end
     city, state, country = location.to_s.split(',').map(&:strip)
     next unless country == 'USA' && STATES.include?(state)
     # Some towns are entered in capitals; title-case them so they group with others.

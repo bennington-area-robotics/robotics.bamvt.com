@@ -1384,10 +1384,6 @@
       40.58346,
       -74.1496
     ],
-    "Storrs, CT": [
-      41.80843,
-      -72.24952
-    ],
     "Stow, MA": [
       42.43659,
       -71.505
@@ -1622,15 +1618,6 @@
     ]
   },
   "teams": [
-    {
-      "number": 0,
-      "name": "Husky Scrimmage",
-      "city": "Storrs",
-      "state": "CT",
-      "region": "USCT",
-      "rookie_year": 11,
-      "place": "Storrs, CT"
-    },
     {
       "number": 18,
       "name": "Techno Chix",
