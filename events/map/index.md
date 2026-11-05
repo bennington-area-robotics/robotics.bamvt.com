@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-11-05T03:02:08Z
+last_modified_at: 2026-11-05T03:14:33Z
 layout: default
 nav_section: /events/
 redirect_from:
@@ -15,9 +15,9 @@ description: Map of 2026–2027 BIOBUZZ FIRST Tech Challenge events and teams in
 
 [All events](/events/)
 
-This map shows {{ ftc.events | size }} FIRST Tech Challenge events in New England, New York, New Jersey, and Pennsylvania for the 2026–2027 BIOBUZZ season. Distances are straight-line miles from Bennington; driving distances are longer. Event details come from the [FTC event listing]({{ ftc.source }}){:target="_blank"}, retrieved {{ ftc.retrieved | date: "%B %-d, %Y" }}. Confirm dates and registration with each event before planning travel: league meets and league tournaments are generally limited to teams in that league, and qualifiers may give priority to teams from their own region.
+This map shows {{ ftc.events | size }} FIRST Tech Challenge events in New England, New York, New Jersey, and Pennsylvania for the 2026–2027 BIOBUZZ season. Distances are straight-line miles from Bennington; driving distances are longer. Event details come from FIRST's [FTC Events API](https://ftc-events.firstinspires.org/services/API){:target="_blank"}, retrieved {{ ftc.retrieved | date: "%B %-d, %Y" }}. Confirm dates and registration with each event before planning travel: league meets and league tournaments are generally limited to teams in that league, and qualifiers may give priority to teams from their own region.
 
-Turn on **Show teams** (or open [this link](#teams)) to add the {{ ftc_teams.teams | size }} teams registered in the same states, from FIRST's [region team lists](https://ftc-events.firstinspires.org/2026/region/USVT){:target="_blank"} (retrieved {{ ftc_teams.retrieved | date: "%B %-d, %Y" }}). FIRST lists each team's town rather than an address, so teams appear at the center of their town.
+Turn on **Show teams** (or open [this link](#teams)) to add the {{ ftc_teams.teams | size }} teams that FIRST lists in the same states for this season, also from the FTC Events API (retrieved {{ ftc_teams.retrieved | date: "%B %-d, %Y" }}). FIRST lists each team's town rather than an address, so teams appear at the center of their town.
 
 <style>
 .event-map-filters { display: flex; flex-wrap: wrap; gap: 0.75rem 1.5rem; margin: 1.25rem 0 0.75rem; font-size: 0.9rem; }
@@ -71,7 +71,7 @@ Turn on **Show teams** (or open [this link](#teams)) to add the {{ ftc_teams.tea
 
 <div id="event-map" role="region" aria-label="Map of northeast FTC events and teams"></div>
 <p class="event-map-count" id="event-map-count" aria-live="polite"></p>
-<p class="event-map-credit">Event and team data: <a href="https://ftc-events.firstinspires.org/" target="_blank">FIRST Tech Challenge Events</a>. Venue and town locations: &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap contributors</a>, available under the Open Database License, via Nominatim. Map tiles: &copy; OpenStreetMap contributors.</p>
+<p class="event-map-credit">Event and team data: <a href="https://ftc-events.firstinspires.org/services/API" target="_blank">FIRST Tech Challenge Events API</a>. Venue and town locations: &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap contributors</a>, available under the Open Database License, via Nominatim. Map tiles: &copy; OpenStreetMap contributors.</p>
 
 ## Event List {#event-list}
 
@@ -116,7 +116,8 @@ Teams matching the state and distance filters, nearest first. Distances are meas
     { name: 'Scrimmage', color: '#2a9d8f', on: true },
     { name: 'League Meet', color: '#9b72cf', on: false },
     { name: 'League Tournament', color: '#5e3c99', on: false },
-    { name: 'Kickoff', color: '#999999', on: false }
+    { name: 'Kickoff', color: '#999999', on: false },
+    { name: 'Demo', color: '#b08968', on: false }
   ];
   var typeColor = {}, typeRank = {};
   types.forEach(function (t, i) { typeColor[t.name] = t.color; typeRank[t.name] = i; });
@@ -226,7 +227,7 @@ Teams matching the state and distance filters, nearest first. Distances are meas
       var list = towns[place], first = list[0];
       var mine = list.some(function (t) { return t.ours; });
       var m = L.circleMarker([first.lat, first.lon], {
-        pane: 'teams', radius: 4 + Math.sqrt(list.length) * 2.2, color: mine ? '#e9b600' : '#1d3557',
+        pane: 'teams', radius: Math.min(16, 4 + Math.sqrt(list.length) * 2.2), color: mine ? '#e9b600' : '#1d3557',
         weight: mine ? 4 : 2, fillColor: 'white', fillOpacity: 0.85
       }).bindPopup('<div class="event-map-popup"><h4>' + esc(place) + ' · ' + Math.round(first.miles) + ' mi</h4>' +
         list.length + (list.length === 1 ? ' team' : ' teams') + '<ul>' + list.map(function (t) {

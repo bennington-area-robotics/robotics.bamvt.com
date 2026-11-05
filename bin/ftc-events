@@ -1,32 +1,26 @@
 #!/usr/bin/env ruby
-# Refresh _data/ftc_events/<season>.json from the public FTC events listing.
+# Refresh _data/ftc_events/<season>.json from the FTC Events API.
 #
-#   bin/ftc-events                 # season 2026 -> _data/ftc_events/2026-2027.json
-#   bin/ftc-events 2027            # a later season
-#   bin/ftc-events 2026 saved.html # parse a saved copy of the listing page
+#   bin/ftc-events        # season 2026 -> _data/ftc_events/2026-2027.json
+#   bin/ftc-events 2027   # a later season
 #
-# The listing at https://ftc-events.firstinspires.org/<season> embeds every
-# event as JSON. This keeps New England, New York, New Jersey, and Pennsylvania
-# events, normalizes field names, fills missing coordinates from VENUES, and
-# applies CORRECTIONS confirmed against regional organizers.
+# Needs FTC_API_USERNAME and FTC_API_TOKEN (see bin/lib/ftc_api.rb). Keeps New
+# England, New York, New Jersey, and Pennsylvania events, normalizes field names,
+# fills missing coordinates from VENUES, and applies CORRECTIONS confirmed
+# against regional organizers.
 require 'json'
-require 'net/http'
 require 'time'
+require_relative 'lib/ftc_api'
 
 STATES = %w[CT MA ME NH RI VT NY NJ PA].freeze
 
-TYPES = {
-  0 => 'Scrimmage',
-  1000 => 'League Meet',
-  1001 => 'League Tournament',
-  1004 => 'Qualifier',
-  1007 => 'Super Qualifier',
-  1010 => 'Championship',
-  1016 => 'Kickoff',
-  1017 => 'Premier Event'
+# The API's typeName, renamed where the map uses a shorter or plainer label.
+TYPE_NAMES = {
+  'Non-Advancement' => 'Scrimmage',
+  'Demo / Exhibition' => 'Demo'
 }.freeze
 
-# Venue coordinates for events FIRST publishes without a location, keyed by
+# Venue coordinates for events the API publishes without coordinates, keyed by
 # "<season>/<code>" because codes repeat across seasons. Sources: OpenStreetMap
 # (Nominatim) venue lookups, 2026-11-04.
 VENUES = {
@@ -58,56 +52,19 @@ CORRECTIONS = {
 VIRTUAL = /\A(virtual|remote|online)\b/i
 
 season = Integer(ARGV[0] || 2026)
-url = "https://ftc-events.firstinspires.org/#{season}"
-html = if ARGV[1]
-         File.read(ARGV[1])
-       else
-         res = Net::HTTP.get_response(URI(url))
-         abort "Fetching #{url} failed: #{res.code}" unless res.is_a?(Net::HTTPSuccess)
-         res.body.force_encoding('UTF-8')
-       end
+raw = FtcApi.get("#{season}/events").fetch('events')
 
-def embedded(html, name)
-  start = html.index(/window\.#{name}\s*=\s*/) or abort "window.#{name} not found"
-  start = html.index('[', start)
-  depth = 0
-  in_str = false
-  esc = false
-  (start...html.length).each do |i|
-    c = html[i]
-    if in_str
-      if esc then esc = false
-      elsif c == '\\' then esc = true
-      elsif c == '"' then in_str = false
-      end
-    elsif c == '"' then in_str = true
-    elsif c == '[' || c == '{' then depth += 1
-    elsif c == ']' || c == '}'
-      depth -= 1
-      return JSON.parse(html[start..i]) if depth.zero?
-    end
-  end
-  abort "window.#{name} is not terminated"
-end
-
-groups = %w[KickoffEvents OtherEvents DistrictChampionshipWeek FIRSTChampionshipWeek OffSeasonEvents PremierEvents]
-raw = groups.flat_map { |g| embedded(html, g).flat_map { |week| week['E'] } }
-
-seen = {}
 events = raw.filter_map do |e|
-  next unless e['Ect'] == 'USA' && STATES.include?(e['Es'])
-  next if seen[e['Tc']]
+  next unless e['country'] == 'USA' && STATES.include?(e['stateprov'])
 
-  seen[e['Tc']] = true
-  key = "#{season}/#{e['Tc']}"
-  city = e['Ec'].to_s.strip
-  state = e['Es']
+  key = "#{season}/#{e['code']}"
+  city = e['city'].to_s.strip
+  state = e['stateprov']
   # FIRST sometimes appends " ()  City, ST" or a trailing comma to venue names.
-  venue = e['Ev'].to_s.sub(/\s*\(\s*\).*\z/, '').strip.sub(/,\z/, '').squeeze(' ')
-  address = e['Ea'].to_s.strip.sub(/,\z/, '').squeeze(' ')
-  # The listing stores longitude in "lat" and latitude in "lon".
-  lat = e['lon']
-  lon = e['lat']
+  venue = e['venue'].to_s.sub(/\s*\(\s*\).*\z/, '').strip.sub(/,\z/, '').squeeze(' ')
+  address = e['address'].to_s.strip.sub(/,\z/, '').squeeze(' ')
+  # GeoJSON order: [longitude, latitude].
+  lon, lat = e.dig('coordinates', 'coordinates')
   # Without a published venue, FIRST's coordinates are only a city centroid.
   approximate = venue.empty? || venue == '-'
   if lat.nil? || lon.nil?
@@ -115,40 +72,42 @@ events = raw.filter_map do |e|
     approximate = lat.nil?
     lat, lon = FALLBACK["#{city}, #{state}"] if lat.nil?
     warn "No coordinates for #{key} (#{city}, #{state}); add the venue to VENUES" if lat.nil?
+  elsif VENUES.key?(key)
+    warn "#{key}: the API now has coordinates; remove it from VENUES"
   end
   correction = CORRECTIONS.fetch(key, {})
-  website = e['Ew'].to_s.strip
+  website = e['website'].to_s.strip
   {
-    'code' => e['Tc'],
-    'name' => e['En'].to_s.strip.squeeze(' '),
-    'type' => TYPES.fetch(e['eventType'], "Other (#{e['eventType']})"),
-    'start' => e['Sd'][0, 10],
-    'end' => e['Ed'][0, 10],
+    'code' => e['code'],
+    'name' => e['name'].to_s.strip.squeeze(' '),
+    'type' => TYPE_NAMES.fetch(e['typeName'], e['typeName']),
+    'start' => e['dateStart'][0, 10],
+    'end' => e['dateEnd'][0, 10],
     'venue' => venue,
     'address' => address,
     'city' => city,
     'state' => state,
-    'region' => e['Rn'],
+    'region' => e['regionCode'],
     'website' => website.empty? ? nil : website,
-    'ftc_events_url' => "https://ftc-events.firstinspires.org/#{season}/#{e['Tc']}",
-    'lat' => lat,
-    'lon' => lon,
+    'ftc_events_url' => "https://ftc-events.firstinspires.org/#{season}/#{e['code']}",
+    'lat' => lat&.round(5),
+    'lon' => lon&.round(5),
     'location_approximate' => approximate,
-    'remote' => e['Isr'] || venue.match?(VIRTUAL),
-    'hybrid' => e['IsHybrid']
+    'remote' => e['remote'] || venue.match?(VIRTUAL),
+    'hybrid' => e['hybrid']
   }.merge(correction)
 end
 
 used = events.map { |e| "#{season}/#{e['code']}" }
 (VENUES.keys + CORRECTIONS.keys).select { |k| k.start_with?("#{season}/") && !used.include?(k) }.each do |k|
-  warn "#{k} is in VENUES or CORRECTIONS but no longer in the listing; remove it"
+  warn "#{k} is in VENUES or CORRECTIONS but no longer in the API; remove it"
 end
 
 events.sort_by! { |e| [e['start'], e['state'], e['name']] }
 
 data = {
   'season' => "#{season}-#{season + 1}",
-  'source' => url,
+  'source' => FtcApi::INFO_URL,
   'retrieved' => Time.now.getlocal('-05:00').strftime('%Y-%m-%d'), # Eastern (standard) date
   'states' => STATES,
   'events' => events

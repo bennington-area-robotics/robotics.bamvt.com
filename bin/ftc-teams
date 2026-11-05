@@ -1,21 +1,26 @@
 #!/usr/bin/env ruby
-# Refresh _data/ftc_teams/<season>.json from the public FTC region team lists.
+# Refresh _data/ftc_teams/<season>.json from the FTC Events API.
 #
 #   bin/ftc-teams          # season 2026 -> _data/ftc_teams/2026-2027.json
 #   bin/ftc-teams 2027     # a later season
 #
-# FIRST publishes each team's number, name, town, and rookie year, not an address,
-# so teams are mapped at the town level. Town coordinates come from OpenStreetMap
-# Nominatim (at most one request per second) and are kept in the output's "places"
-# table, so later runs only look up towns that are new.
-require 'cgi'
+# Needs FTC_API_USERNAME and FTC_API_TOKEN (see bin/lib/ftc_api.rb). FIRST
+# publishes each team's town, not an address, so teams are mapped at the town
+# level and only the number, short name, town, region, and rookie year are kept.
+# Town coordinates come from OpenStreetMap Nominatim (at most one request per
+# second) and are kept in the output's "places" table, so later runs only look up
+# towns that are new.
 require 'json'
 require 'net/http'
 require 'time'
+require_relative 'lib/ftc_api'
 
 STATES = %w[CT MA ME NH RI VT NY NJ PA].freeze
-# Maine has no FTC region of its own; its teams register in New Hampshire.
-REGIONS = %w[USCT USMA USNH USRI USVT USNYEX USNYLI USNYNY USNJ USPA].freeze
+STATE_NAMES = {
+  'CT' => 'Connecticut', 'MA' => 'Massachusetts', 'ME' => 'Maine', 'NH' => 'New Hampshire',
+  'RI' => 'Rhode Island', 'VT' => 'Vermont', 'NY' => 'New York', 'NJ' => 'New Jersey',
+  'PA' => 'Pennsylvania'
+}.freeze
 USER_AGENT = 'robotics.bamvt.com ftc-teams refresh (https://robotics.bamvt.com/events/map/)'
 
 season = Integer(ARGV[0] || 2026)
@@ -23,6 +28,7 @@ path = File.expand_path("../_data/ftc_teams/#{season}-#{season + 1}.json", __dir
 previous = File.exist?(path) ? JSON.parse(File.read(path)) : {}
 places = previous.fetch('places', {})
 
+# Nominatim lookups only; FIRST data comes from the API.
 def get(url)
   uri = URI(url)
   res = Net::HTTP.start(uri.host, uri.port, use_ssl: true) do |http|
@@ -32,30 +38,29 @@ def get(url)
   res.body.force_encoding('UTF-8')
 end
 
-def text(cell) = CGI.unescapeHTML(cell.gsub(/<[^>]+>/, '')).strip.squeeze(' ')
+teams = STATES.flat_map do |state|
+  page = 1
+  rows = []
+  loop do
+    res = FtcApi.get("#{season}/teams", state: state, page: page)
+    rows.concat(res.fetch('teams'))
+    break if page >= res.fetch('pageTotal', 1)
 
-teams = REGIONS.flat_map do |region|
-  html = get("https://ftc-events.firstinspires.org/#{season}/region/#{region}")
-  # The page also lists the region's events in rows styled like team rows; read
-  # only the team table.
-  table = html[%r{<table[^>]*id="teamtable".*?</table>}m]
-  abort "#{region}: team table not found; FIRST may have changed the page" unless table
-  rows = table.scan(%r{<tr>\s*<td class="team-rank">(.*?)</tr>}m).map(&:first)
-  warn "#{region}: no teams listed" if rows.empty?
-  rows.filter_map do |row|
-    cells = row.split(%r{</td>\s*<td[^>]*>}).map { |c| text(c.sub(%r{</td>\s*\z}, '')) }
-    number, name, location, rookie = cells
-    unless number.to_s.match?(/\A\d+\z/) && rookie.to_s.match?(/\A\d{4}\z/)
-      warn "#{region}: skipping row that is not a team: #{cells.join(' | ')}"
-      next
-    end
-    city, state, country = location.to_s.split(',').map(&:strip)
-    next unless country == 'USA' && STATES.include?(state)
+    page += 1
+  end
+  warn "#{state}: no teams listed" if rows.empty?
+  rows.filter_map do |r|
+    next unless r['country'] == 'USA' && r['stateProv'] == state
+
+    city = r['city'].to_s.strip.squeeze(' ')
+    # Drop a repeated state ("East Greenwich RI") and keep the first of joint
+    # towns ("Northborough/Southborough").
+    city = city.sub(/,?\s+#{state}\z/, '').split('/').first.to_s.strip
     # Some towns are entered in capitals; title-case them so they group with others.
     city = city.split(/(\s+|-)/).map { |w| w.match?(/\A[A-Z]{2,}\z/) ? w.capitalize : w }.join if city == city.upcase
-
-    { 'number' => number.to_i, 'name' => name, 'city' => city, 'state' => state,
-      'region' => region, 'rookie_year' => rookie.to_i, 'place' => "#{city}, #{state}" }
+    { 'number' => r['teamNumber'], 'name' => r['nameShort'].to_s.strip.squeeze(' '), 'city' => city,
+      'state' => state, 'region' => r['homeRegion'], 'rookie_year' => r['rookieYear'],
+      'place' => "#{city}, #{state}" }
   end
 end
 teams = teams.uniq { |t| t['number'] }.sort_by { |t| t['number'] }
@@ -73,6 +78,10 @@ missing.each do |place|
     hit = JSON.parse(get("https://nominatim.openstreetmap.org/search?#{free}")).first
     warn "#{place}: matched #{hit['display_name']}; check it" if hit
   end
+  if hit && !hit['display_name'].to_s.include?(STATE_NAMES[state])
+    warn "#{place}: rejected a match outside #{STATE_NAMES[state]} (#{hit['display_name']})"
+    hit = nil
+  end
   if hit
     places[place] = [hit['lat'].to_f.round(5), hit['lon'].to_f.round(5)]
   else
@@ -84,8 +93,7 @@ end
 used = teams.map { |t| t['place'] }.uniq
 data = {
   'season' => "#{season}-#{season + 1}",
-  'source' => "https://ftc-events.firstinspires.org/#{season}/region/<code>",
-  'regions' => REGIONS,
+  'source' => FtcApi::INFO_URL,
   'retrieved' => Time.now.getlocal('-05:00').strftime('%Y-%m-%d'), # Eastern (standard) date
   'note' => 'Team locations are town centers from OpenStreetMap, not team addresses.',
   'places' => places.slice(*used).sort.to_h,

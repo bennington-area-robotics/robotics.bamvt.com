@@ -1,18 +1,6 @@
 {
   "season": "2026-2027",
-  "source": "https://ftc-events.firstinspires.org/2026/region/<code>",
-  "regions": [
-    "USCT",
-    "USMA",
-    "USNH",
-    "USRI",
-    "USVT",
-    "USNYEX",
-    "USNYLI",
-    "USNYNY",
-    "USNJ",
-    "USPA"
-  ],
+  "source": "https://ftc-events.firstinspires.org/services/API",
   "retrieved": "2026-11-04",
   "note": "Team locations are town centers from OpenStreetMap, not team addresses.",
   "places": {
@@ -28,6 +16,14 @@
       42.65117,
       -73.75497
     ],
+    "Alden, NY": [
+      42.90006,
+      -78.49197
+    ],
+    "Aliquippa, PA": [
+      40.61024,
+      -80.26773
+    ],
     "Amesbury, MA": [
       42.85795,
       -70.93009
@@ -35,6 +31,10 @@
     "Amherst, MA": [
       42.37319,
       -72.51988
+    ],
+    "Amherst, NH": [
+      42.86429,
+      -71.62525
     ],
     "Amherst, NY": [
       42.97839,
@@ -47,6 +47,14 @@
     "Andover, NH": [
       43.43666,
       -71.81975
+    ],
+    "Ardsley, NY": [
+      41.0114,
+      -73.84664
+    ],
+    "Arlington, MA": [
+      42.41537,
+      -71.15644
     ],
     "Ashland, MA": [
       42.25996,
@@ -88,9 +96,17 @@
       43.00091,
       -73.84901
     ],
+    "Barrington, RI": [
+      41.74077,
+      -71.30846
+    ],
     "Basking Ridge, NJ": [
       40.70641,
       -74.54927
+    ],
+    "Bayonne, NJ": [
+      40.66871,
+      -74.11431
     ],
     "Bayport, NY": [
       40.73843,
@@ -103,6 +119,14 @@
     "Bedford, NH": [
       42.94647,
       -71.5159
+    ],
+    "Belle Mead, NJ": [
+      40.46677,
+      -74.66071
+    ],
+    "Bellingham, MA": [
+      42.08695,
+      -71.47464
     ],
     "Belmont, MA": [
       42.39593,
@@ -144,6 +168,18 @@
       40.98316,
       -74.9603
     ],
+    "Bloomfield, CT": [
+      41.8313,
+      -72.73703
+    ],
+    "Bloomfield, NJ": [
+      40.79348,
+      -74.19793
+    ],
+    "Bloomfield, NY": [
+      42.89506,
+      -77.43471
+    ],
     "Bloomsburg, PA": [
       41.0045,
       -76.45373
@@ -180,9 +216,21 @@
       41.14565,
       -73.82375
     ],
+    "Bridgeport, CT": [
+      41.17927,
+      -73.18879
+    ],
     "Bridgeton, NJ": [
       39.42697,
       -75.23416
+    ],
+    "Bridgewater, NJ": [
+      40.59312,
+      -74.60495
+    ],
+    "Bristol, CT": [
+      41.67118,
+      -72.94301
     ],
     "Bristol, RI": [
       41.67705,
@@ -191,6 +239,10 @@
     "Bronx, NY": [
       40.84665,
       -73.87859
+    ],
+    "Brookhaven, NY": [
+      40.77927,
+      -72.91538
     ],
     "Brookline, MA": [
       42.33292,
@@ -204,9 +256,21 @@
       40.02199,
       -75.31939
     ],
+    "Budd Lake, NJ": [
+      40.87115,
+      -74.73418
+    ],
     "Buffalo, NY": [
       42.88642,
       -78.87815
+    ],
+    "Burlington, MA": [
+      42.50482,
+      -71.19561
+    ],
+    "Burlington, VT": [
+      44.47616,
+      -73.21291
     ],
     "Burnt Hills, NY": [
       42.90983,
@@ -224,6 +288,14 @@
       40.69455,
       -73.73847
     ],
+    "Cambridge, MA": [
+      42.36563,
+      -71.104
+    ],
+    "Cambridge, NY": [
+      43.00799,
+      -73.43926
+    ],
     "Canonsburg, PA": [
       40.25882,
       -80.18672
@@ -236,9 +308,25 @@
       44.59562,
       -75.16909
     ],
+    "Cape Ann, MA": [
+      42.6253,
+      -70.71511
+    ],
+    "Carle Place, NY": [
+      40.7526,
+      -73.61041
+    ],
     "Center Valley, PA": [
       40.5292,
       -75.39396
+    ],
+    "Central Falls, RI": [
+      41.88737,
+      -71.38765
+    ],
+    "Central Islip, NY": [
+      40.79064,
+      -73.20176
     ],
     "Chadds Ford, PA": [
       39.87203,
@@ -259,6 +347,18 @@
     "Chatham, NY": [
       42.36425,
       -73.59484
+    ],
+    "Cherry Hill, NJ": [
+      39.93484,
+      -75.03073
+    ],
+    "Cherry Plain, NY": [
+      42.62925,
+      -73.35816
+    ],
+    "Chester Springs, PA": [
+      40.0951,
+      -75.61687
     ],
     "Cinnaminson, NJ": [
       39.99678,
@@ -312,6 +412,14 @@
       42.46052,
       -71.3489
     ],
+    "Concord, NH": [
+      43.20718,
+      -71.53748
+    ],
+    "Contoocook, NH": [
+      43.22241,
+      -71.71355
+    ],
     "Corning, NY": [
       42.14353,
       -77.05434
@@ -324,6 +432,10 @@
       41.24465,
       -73.92596
     ],
+    "Cranberry Township, PA": [
+      40.70993,
+      -80.10605
+    ],
     "Cresskill, NJ": [
       40.94149,
       -73.9593
@@ -335,6 +447,14 @@
     "Dallas, PA": [
       41.33617,
       -75.96326
+    ],
+    "Dallastown, PA": [
+      39.90011,
+      -76.64028
+    ],
+    "Dalton, MA": [
+      42.47417,
+      -73.15997
     ],
     "Danbury, CT": [
       41.39482,
@@ -360,6 +480,10 @@
       40.95732,
       -73.96347
     ],
+    "Denville, NJ": [
+      40.89227,
+      -74.47743
+    ],
     "Devon, PA": [
       40.04928,
       -75.42908
@@ -367,6 +491,18 @@
     "Dexter, NY": [
       44.00784,
       -76.04437
+    ],
+    "Dix Hills, NY": [
+      40.80482,
+      -73.33623
+    ],
+    "Dobbs Ferry, NY": [
+      41.01454,
+      -73.87264
+    ],
+    "Dorchester, MA": [
+      42.29732,
+      -71.0745
     ],
     "Douglas, MA": [
       42.05317,
@@ -384,6 +520,10 @@
       40.31004,
       -75.13046
     ],
+    "Dublin, NH": [
+      42.90594,
+      -72.06198
+    ],
     "Dumont, NJ": [
       40.94065,
       -73.99681
@@ -396,17 +536,45 @@
       41.48176,
       -72.68121
     ],
+    "Duxbury, MA": [
+      42.04177,
+      -70.67226
+    ],
     "East Brunswick, NJ": [
       40.42788,
       -74.41598
+    ],
+    "East Elmhurst, NY": [
+      40.76121,
+      -73.86514
+    ],
+    "East Greenwich, RI": [
+      41.66038,
+      -71.45589
     ],
     "East Haddam, CT": [
       41.45286,
       -72.46133
     ],
+    "East Hampton, NY": [
+      40.96339,
+      -72.18476
+    ],
+    "East Hanover, NJ": [
+      40.8201,
+      -74.36487
+    ],
+    "East Hartford, CT": [
+      41.76791,
+      -72.64451
+    ],
     "East Lansdowne, PA": [
       39.94565,
       -75.26134
+    ],
+    "East Montpelier, VT": [
+      44.27153,
+      -72.48576
     ],
     "East Orange, NJ": [
       40.76424,
@@ -424,6 +592,10 @@
       40.92097,
       -73.09371
     ],
+    "East Williston, NY": [
+      40.75848,
+      -73.6348
+    ],
     "Easton, PA": [
       40.69161,
       -75.20999
@@ -439,6 +611,10 @@
     "Edison, NJ": [
       40.50054,
       -74.39839
+    ],
+    "Egg Harbor City, NJ": [
+      39.52873,
+      -74.64794
     ],
     "Egg Harbor Township, NJ": [
       39.38207,
@@ -484,6 +660,10 @@
       44.49068,
       -73.11136
     ],
+    "Everett, MA": [
+      42.40859,
+      -71.0542
+    ],
     "Exeter, NH": [
       42.98148,
       -70.94783
@@ -499,6 +679,10 @@
     "Fairfield, CT": [
       41.14121,
       -73.26373
+    ],
+    "Fall River, MA": [
+      41.70106,
+      -71.15464
     ],
     "Far Rockaway, NY": [
       40.60538,
@@ -524,9 +708,33 @@
       40.84565,
       -74.69488
     ],
+    "Floral Park, NY": [
+      40.7247,
+      -73.7048
+    ],
+    "Florence, MA": [
+      42.33557,
+      -72.67195
+    ],
+    "Flushing, NY": [
+      40.76543,
+      -73.81743
+    ],
     "Forest Hills, NY": [
       40.72141,
       -73.84383
+    ],
+    "Fort Washington, PA": [
+      40.13783,
+      -75.21183
+    ],
+    "Foxboro, MA": [
+      42.06538,
+      -71.24783
+    ],
+    "Foxborough, MA": [
+      42.06538,
+      -71.24783
     ],
     "Frankfort, NY": [
       43.03896,
@@ -552,9 +760,17 @@
       40.2026,
       -75.83632
     ],
+    "Gilford, NH": [
+      43.54805,
+      -71.40701
+    ],
     "Glastonbury, CT": [
       41.71232,
       -72.60815
+    ],
+    "Glen Head, NY": [
+      40.83541,
+      -73.6236
     ],
     "Glen Mills, PA": [
       39.9197,
@@ -568,6 +784,10 @@
       39.9197,
       -75.49043
     ],
+    "Glenolden, PA": [
+      39.90003,
+      -75.28923
+    ],
     "Glenside, PA": [
       40.10019,
       -75.15391
@@ -575,6 +795,18 @@
     "Goffstown, NH": [
       43.02045,
       -71.60026
+    ],
+    "Gorham, NH": [
+      44.38786,
+      -71.173
+    ],
+    "Granby, MA": [
+      42.25702,
+      -72.51648
+    ],
+    "Gray, ME": [
+      43.88609,
+      -70.33036
     ],
     "Great Neck, NY": [
       40.80292,
@@ -587,6 +819,14 @@
     "Greenland, NH": [
       43.0362,
       -70.83283
+    ],
+    "Greenlawn, NY": [
+      40.86899,
+      -73.36512
+    ],
+    "Greenville, NY": [
+      41.36065,
+      -74.61655
     ],
     "Groton, CT": [
       41.34655,
@@ -616,6 +856,10 @@
       42.71629,
       -78.82872
     ],
+    "Hamilton, NY": [
+      42.82688,
+      -75.54442
+    ],
     "Hanover, NH": [
       43.70235,
       -72.28922
@@ -627,6 +871,18 @@
     "Harmony, PA": [
       40.80201,
       -80.12745
+    ],
+    "Harrisburg, PA": [
+      40.26631,
+      -76.88611
+    ],
+    "Hartford, CT": [
+      41.76616,
+      -72.67327
+    ],
+    "Harvard, MA": [
+      42.50142,
+      -71.58458
     ],
     "Havertown, PA": [
       39.98095,
@@ -684,6 +940,10 @@
       40.34511,
       -74.18403
     ],
+    "Holyoke, MA": [
+      42.20712,
+      -72.60759
+    ],
     "Hopewell Junction, NY": [
       41.58398,
       -73.80874
@@ -696,13 +956,29 @@
       42.30204,
       -70.90782
     ],
+    "Huntington Station, NY": [
+      40.85343,
+      -73.41151
+    ],
+    "Huntington, NY": [
+      40.86815,
+      -73.42568
+    ],
     "Huntington, VT": [
       44.32519,
       -72.98681
     ],
+    "Hyde Park, MA": [
+      42.25565,
+      -71.1245
+    ],
     "Hyde Park, VT": [
       44.5936,
       -72.6171
+    ],
+    "Irvington, NJ": [
+      40.72641,
+      -74.22895
     ],
     "Jackson Heights, NY": [
       40.75566,
@@ -716,9 +992,21 @@
       40.70092,
       -73.79085
     ],
+    "Jericho, NY": [
+      40.79204,
+      -73.53985
+    ],
+    "Jericho, VT": [
+      44.50438,
+      -72.99793
+    ],
     "Jersey City, NJ": [
       40.72157,
       -74.04746
+    ],
+    "Keene, NH": [
+      42.9336,
+      -72.27843
     ],
     "Kendall Park, NJ": [
       40.42094,
@@ -744,6 +1032,10 @@
       41.92878,
       -74.00238
     ],
+    "Kingston, PA": [
+      41.26201,
+      -75.8972
+    ],
     "Kinnelon, NJ": [
       41.00176,
       -74.3671
@@ -751,6 +1043,10 @@
     "Kittery, ME": [
       43.08567,
       -70.74366
+    ],
+    "Lagrangeville, NY": [
+      41.65045,
+      -73.76425
     ],
     "Lakeville, CT": [
       41.96454,
@@ -780,6 +1076,14 @@
       40.28775,
       -74.71234
     ],
+    "Lawrence, NY": [
+      40.61566,
+      -73.72958
+    ],
+    "Lee, MA": [
+      42.30735,
+      -73.25049
+    ],
     "Lenox, MA": [
       42.35682,
       -73.28509
@@ -791,6 +1095,10 @@
     "Lincoln, MA": [
       42.42593,
       -71.30395
+    ],
+    "Lincoln, RI": [
+      41.95292,
+      -71.46639
     ],
     "Lisbon, NY": [
       44.72747,
@@ -804,6 +1112,10 @@
       41.51011,
       -71.17116
     ],
+    "Little Neck, NY": [
+      40.76205,
+      -73.73819
+    ],
     "Littleton, MA": [
       42.53759,
       -71.51201
@@ -811,6 +1123,10 @@
     "Littleton, NH": [
       44.30639,
       -71.77107
+    ],
+    "Liverpool, NY": [
+      43.10646,
+      -76.21771
     ],
     "Livingston, NJ": [
       40.79593,
@@ -832,17 +1148,49 @@
       42.05045,
       -72.58246
     ],
+    "Lowell, MA": [
+      42.64144,
+      -71.30853
+    ],
     "Lowville, NY": [
       43.78671,
       -75.4922
+    ],
+    "Lynbrook, NY": [
+      40.65483,
+      -73.6718
     ],
     "Machias, ME": [
       44.71436,
       -67.45827
     ],
+    "Malden, MA": [
+      42.42685,
+      -71.06837
+    ],
+    "Malone, NY": [
+      44.84881,
+      -74.29504
+    ],
     "Mamaroneck, NY": [
       40.94873,
       -73.73314
+    ],
+    "Manahawkin, NJ": [
+      39.6954,
+      -74.25875
+    ],
+    "Manalapan, NJ": [
+      40.28529,
+      -74.3335
+    ],
+    "Manchester Center, VT": [
+      43.17691,
+      -73.05687
+    ],
+    "Manchester, CT": [
+      41.7834,
+      -72.5232
     ],
     "Manchester, NH": [
       42.99564,
@@ -852,9 +1200,17 @@
       43.17691,
       -73.05687
     ],
+    "Manhasset, NY": [
+      40.79569,
+      -73.69891
+    ],
     "Maplewood, NJ": [
       40.73121,
       -74.27348
+    ],
+    "Marblehead, MA": [
+      42.5001,
+      -70.85783
     ],
     "Marlborough, MA": [
       42.34686,
@@ -872,6 +1228,14 @@
       44.93008,
       -74.89224
     ],
+    "Mattapan, MA": [
+      42.27232,
+      -71.087
+    ],
+    "Mays Landing, NJ": [
+      39.45233,
+      -74.72766
+    ],
     "McKeesport, PA": [
       40.34785,
       -79.86422
@@ -879,6 +1243,10 @@
     "Mechanicsburg, PA": [
       40.2102,
       -77.00473
+    ],
+    "Mechanicville, NY": [
+      42.90285,
+      -73.68734
     ],
     "Medfield, MA": [
       42.18656,
@@ -892,6 +1260,10 @@
       40.79343,
       -73.41512
     ],
+    "Merrimack, NH": [
+      42.86654,
+      -71.49366
+    ],
     "Metuchen, NJ": [
       40.54316,
       -74.3632
@@ -900,6 +1272,10 @@
       43.45951,
       -76.22882
     ],
+    "Middle Island, NY": [
+      40.88427,
+      -72.93733
+    ],
     "Middlebury, VT": [
       44.0143,
       -73.16723
@@ -907,6 +1283,22 @@
     "Middletown, CT": [
       41.56232,
       -72.65091
+    ],
+    "Middletown, NY": [
+      41.45011,
+      -74.41648
+    ],
+    "Millburn, NJ": [
+      40.72444,
+      -74.30691
+    ],
+    "Millis, MA": [
+      42.16751,
+      -71.35728
+    ],
+    "Millstone Township, NJ": [
+      40.20237,
+      -74.40797
     ],
     "Milton, MA": [
       42.25014,
@@ -932,6 +1324,10 @@
       40.4564,
       -74.65948
     ],
+    "Montpelier, VT": [
+      44.26022,
+      -72.57504
+    ],
     "Moorestown, NJ": [
       39.96706,
       -74.94267
@@ -947,6 +1343,14 @@
     "Morristown, NJ": [
       40.79704,
       -74.48099
+    ],
+    "Moultonborough, NH": [
+      43.75524,
+      -71.39602
+    ],
+    "Mount Laurel, NJ": [
+      39.934,
+      -74.891
     ],
     "Mountain Lakes, NJ": [
       40.89482,
@@ -976,6 +1380,10 @@
       42.28026,
       -71.23606
     ],
+    "New Bedford, MA": [
+      41.63622,
+      -70.93421
+    ],
     "New Hartford, NY": [
       43.07311,
       -75.28793
@@ -988,6 +1396,14 @@
       40.73522,
       -73.68832
     ],
+    "New Ipswich, NH": [
+      42.74814,
+      -71.85424
+    ],
+    "New Kensington, PA": [
+      40.56979,
+      -79.76477
+    ],
     "New London, CT": [
       41.35562,
       -72.09978
@@ -995,6 +1411,10 @@
     "New Milford, CT": [
       41.5771,
       -73.41058
+    ],
+    "New Rochelle, NY": [
+      40.91154,
+      -73.78264
     ],
     "New York City, NY": [
       40.71273,
@@ -1008,9 +1428,17 @@
       40.73566,
       -74.17237
     ],
+    "Newburgh, NY": [
+      41.50008,
+      -74.00983
+    ],
     "Newfield, NY": [
       42.36218,
       -76.59056
+    ],
+    "Newport, RI": [
+      41.48998,
+      -71.31377
     ],
     "Newton Center, MA": [
       42.33003,
@@ -1023,6 +1451,10 @@
     "Newtown Square, PA": [
       39.98681,
       -75.40076
+    ],
+    "Niskayuna, NY": [
+      42.81541,
+      -73.89288
     ],
     "North Berwick, ME": [
       43.30384,
@@ -1052,6 +1484,14 @@
       42.57509,
       -71.07867
     ],
+    "Northborough, MA": [
+      42.3196,
+      -71.64224
+    ],
+    "Norwich, CT": [
+      41.52436,
+      -72.07591
+    ],
     "Norwich, VT": [
       43.71367,
       -72.30815
@@ -1060,9 +1500,17 @@
       44.75161,
       -74.99439
     ],
+    "Nutley, NJ": [
+      40.82232,
+      -74.15987
+    ],
     "Ogdensburg, NY": [
       44.69753,
       -75.49249
+    ],
+    "Old Mystic, CT": [
+      41.39149,
+      -71.96174
     ],
     "Old Westbury, NY": [
       40.78871,
@@ -1076,6 +1524,14 @@
       40.77095,
       -74.22646
     ],
+    "Oyster Bay, NY": [
+      40.76966,
+      -73.49986
+    ],
+    "Ozone Park, NY": [
+      40.67677,
+      -73.84375
+    ],
     "Palmer, MA": [
       42.15745,
       -72.32998
@@ -1088,9 +1544,21 @@
       44.62884,
       -74.81381
     ],
+    "Park Ridge, NJ": [
+      41.03597,
+      -74.04156
+    ],
     "Parsippany, NJ": [
       40.85788,
       -74.42599
+    ],
+    "Passaic, NJ": [
+      40.85669,
+      -74.12863
+    ],
+    "Paterson, NJ": [
+      40.91677,
+      -74.17181
     ],
     "Pawcatuck, CT": [
       41.37783,
@@ -1099,6 +1567,14 @@
     "Pawtucket, RI": [
       41.87895,
       -71.38212
+    ],
+    "Peekskill, NY": [
+      41.28981,
+      -73.92049
+    ],
+    "Penacook, NH": [
+      43.28035,
+      -71.60001
     ],
     "Penfield, NY": [
       43.13011,
@@ -1116,6 +1592,10 @@
       39.95622,
       -75.05795
     ],
+    "Peterborough, NH": [
+      42.87762,
+      -71.94938
+    ],
     "Philadelphia, NY": [
       44.15462,
       -75.70885
@@ -1123,6 +1603,10 @@
     "Philadelphia, PA": [
       39.95272,
       -75.16353
+    ],
+    "Pine Forge, PA": [
+      40.28192,
+      -75.69224
     ],
     "Piscataway, NJ": [
       40.54643,
@@ -1192,6 +1676,10 @@
       42.25099,
       -71.00374
     ],
+    "Rahway, NJ": [
+      40.60816,
+      -74.27765
+    ],
     "Ramsey, NJ": [
       41.05732,
       -74.14098
@@ -1199,6 +1687,10 @@
     "Ravena, NY": [
       42.46841,
       -73.81624
+    ],
+    "Reading, MA": [
+      42.52603,
+      -71.10203
     ],
     "Reading, PA": [
       40.33535,
@@ -1219,6 +1711,10 @@
     "Ridgewood, NJ": [
       40.97967,
       -74.11944
+    ],
+    "Ridgewood, NY": [
+      40.70806,
+      -73.91417
     ],
     "Riverdale, NJ": [
       40.99399,
@@ -1248,9 +1744,25 @@
       40.90135,
       -74.51382
     ],
+    "Rocky Hill, NJ": [
+      40.39983,
+      -74.63432
+    ],
     "Rocky Point, NY": [
       40.9526,
       -72.92538
+    ],
+    "Rome, NY": [
+      43.21022,
+      -75.4584
+    ],
+    "Roxbury Crossing, MA": [
+      42.33065,
+      -71.09116
+    ],
+    "Roxbury, MA": [
+      42.32891,
+      -71.08509
     ],
     "Rutland, VT": [
       43.60848,
@@ -1272,13 +1784,29 @@
       40.87899,
       -73.15678
     ],
+    "Salem, MA": [
+      42.52144,
+      -70.89567
+    ],
     "Salem, NH": [
       42.7885,
       -71.2009
     ],
+    "Salisbury, PA": [
+      39.75286,
+      -79.08086
+    ],
+    "Saltsburg, PA": [
+      40.48646,
+      -79.45143
+    ],
     "Sanford, ME": [
-      43.438720000000004,
+      43.43872,
       -70.77462
+    ],
+    "Saranac Lake, NY": [
+      44.32966,
+      -74.13112
     ],
     "Saxtons River, VT": [
       43.1388,
@@ -1287,6 +1815,10 @@
     "Scarsdale, NY": [
       40.98852,
       -73.80856
+    ],
+    "Schenectady, NY": [
+      42.81424,
+      -73.93957
     ],
     "Scotch Plains, NJ": [
       40.65538,
@@ -1340,6 +1872,14 @@
       44.4643,
       -73.17627
     ],
+    "South Kent, CT": [
+      41.67954,
+      -73.47068
+    ],
+    "South Lancaster, MA": [
+      42.44315,
+      -71.68528
+    ],
     "South Orange, NJ": [
       40.7475,
       -74.26354
@@ -1347,6 +1887,10 @@
     "South Portland, ME": [
       43.63824,
       -70.25292
+    ],
+    "Southampton, NY": [
+      40.88425,
+      -72.38971
     ],
     "Southampton, PA": [
       40.17428,
@@ -1376,6 +1920,10 @@
       41.05343,
       -73.53873
     ],
+    "Stanhope, NJ": [
+      40.90288,
+      -74.70905
+    ],
     "State College, PA": [
       40.79445,
       -77.86164
@@ -1383,6 +1931,10 @@
     "Staten Island, NY": [
       40.58346,
       -74.1496
+    ],
+    "Stony Brook, NY": [
+      40.92565,
+      -73.14094
     ],
     "Stow, MA": [
       42.43659,
@@ -1396,13 +1948,33 @@
       41.98169,
       -72.65066
     ],
+    "Sullivan, ME": [
+      44.52036,
+      -68.19668
+    ],
+    "Summit, NJ": [
+      40.71824,
+      -74.35923
+    ],
+    "Sunnyside, NY": [
+      40.73982,
+      -73.93542
+    ],
     "Swedesboro, NJ": [
       39.74761,
       -75.31047
     ],
+    "Syosset, NY": [
+      40.82621,
+      -73.50207
+    ],
     "Syracuse, NY": [
       43.04812,
       -76.14742
+    ],
+    "Taunton, MA": [
+      41.90193,
+      -71.09315
     ],
     "Tenafly, NJ": [
       40.92538,
@@ -1416,6 +1988,10 @@
       39.95284,
       -74.19674
     ],
+    "Torrington, CT": [
+      41.80065,
+      -73.12122
+    ],
     "Township of Washington, NJ": [
       40.98848,
       -74.06524
@@ -1423,6 +1999,14 @@
     "Trenton, NJ": [
       40.22031,
       -74.7659
+    ],
+    "Troy, NY": [
+      42.72841,
+      -73.69179
+    ],
+    "Trumansburg, NY": [
+      42.54229,
+      -76.66606
     ],
     "Trumbull, CT": [
       41.24287,
@@ -1436,13 +2020,37 @@
       43.62738,
       -75.41153
     ],
+    "Union City, NJ": [
+      40.77955,
+      -74.02375
+    ],
+    "Union Springs, NY": [
+      42.83979,
+      -76.69328
+    ],
+    "Uniondale, NY": [
+      40.70958,
+      -73.59234
+    ],
     "Uniontown, PA": [
       39.90094,
       -79.72593
     ],
+    "Upper St Clair, PA": [
+      40.3359,
+      -80.08339
+    ],
     "Upper St. Clair, PA": [
       40.3359,
       -80.08339
+    ],
+    "Utica, NY": [
+      43.1009,
+      -75.23266
+    ],
+    "Uxbridge, MA": [
+      42.07682,
+      -71.62985
     ],
     "Valley Stream, NY": [
       40.66314,
@@ -1472,6 +2080,10 @@
       40.20678,
       -75.09962
     ],
+    "Warrington, PA": [
+      40.24927,
+      -75.13406
+    ],
     "Warwick, NY": [
       41.25648,
       -74.35988
@@ -1492,9 +2104,17 @@
       42.56774,
       -77.58958
     ],
+    "Wayne, NJ": [
+      40.94917,
+      -74.23768
+    ],
     "Wellsboro, PA": [
       41.74868,
       -77.30053
+    ],
+    "West Babylon, NY": [
+      40.71266,
+      -73.35368
     ],
     "West Chester, PA": [
       39.95974,
@@ -1503,6 +2123,14 @@
     "West Fulton, NY": [
       42.56452,
       -74.46375
+    ],
+    "West Haven, CT": [
+      41.27065,
+      -72.94705
+    ],
+    "West Newbury, MA": [
+      42.80148,
+      -70.98978
     ],
     "West Orange, NJ": [
       40.79871,
@@ -1543,6 +2171,10 @@
     "White Plains, NY": [
       41.03399,
       -73.76291
+    ],
+    "Whitestone, NY": [
+      40.79455,
+      -73.81847
     ],
     "Whitinsville, MA": [
       42.11057,
@@ -1588,9 +2220,21 @@
       41.8526,
       -72.6437
     ],
+    "Winooski, VT": [
+      44.49104,
+      -73.18611
+    ],
+    "Winsted, CT": [
+      41.92121,
+      -73.06011
+    ],
     "Wolcott, CT": [
       41.60232,
       -72.98677
+    ],
+    "Wolcott, VT": [
+      44.54661,
+      -72.45787
     ],
     "Wolfeboro, NH": [
       43.60938,
@@ -1600,9 +2244,25 @@
       41.43621,
       -71.69451
     ],
+    "Wood-Ridge, NJ": [
+      40.84566,
+      -74.08792
+    ],
+    "Woodbury, CT": [
+      41.54454,
+      -73.209
+    ],
+    "Woodbury, NY": [
+      40.82565,
+      -73.46762
+    ],
     "Woodhaven, NY": [
       40.68927,
       -73.85791
+    ],
+    "Woodside, NY": [
+      40.74538,
+      -73.90541
     ],
     "Woonsocket, RI": [
       42.00288,
@@ -1612,12 +2272,33 @@
       42.26256,
       -71.80189
     ],
+    "Wrightsville, PA": [
+      40.02668,
+      -76.53344
+    ],
+    "Wyncote, PA": [
+      40.09455,
+      -75.14879
+    ],
     "York, PA": [
       39.96249,
       -76.7277
+    ],
+    "Yorktown Heights, NY": [
+      41.27093,
+      -73.77763
     ]
   },
   "teams": [
+    {
+      "number": 1,
+      "name": "Team Unlimited",
+      "city": "Sharon",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2007,
+      "place": "Sharon, MA"
+    },
     {
       "number": 18,
       "name": "Techno Chix",
@@ -1754,6 +2435,24 @@
       "place": "Bristol, RI"
     },
     {
+      "number": 654,
+      "name": "Barrington Bionics",
+      "city": "Barrington",
+      "state": "RI",
+      "region": "USRI",
+      "rookie_year": 2007,
+      "place": "Barrington, RI"
+    },
+    {
+      "number": 689,
+      "name": "Avenge Bots",
+      "city": "East Greenwich",
+      "state": "RI",
+      "region": "USRI",
+      "rookie_year": 2007,
+      "place": "East Greenwich, RI"
+    },
+    {
       "number": 701,
       "name": "The GONK Squad",
       "city": "North Kingstown",
@@ -1790,6 +2489,33 @@
       "place": "Fresh Meadows, NY"
     },
     {
+      "number": 3032,
+      "name": "Hyperion",
+      "city": "Wakefield",
+      "state": "RI",
+      "region": "USRI",
+      "rookie_year": 2008,
+      "place": "Wakefield, RI"
+    },
+    {
+      "number": 3221,
+      "name": "Avenge BOTZ",
+      "city": "East Greenwich",
+      "state": "RI",
+      "region": "USRI",
+      "rookie_year": 2008,
+      "place": "East Greenwich, RI"
+    },
+    {
+      "number": 3371,
+      "name": "Bötley Crüe",
+      "city": "Brooklyn",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2008,
+      "place": "Brooklyn, NY"
+    },
+    {
       "number": 3397,
       "name": "HiveMind Robotics",
       "city": "Essex Junction",
@@ -1808,6 +2534,15 @@
       "place": "Livingston, NJ"
     },
     {
+      "number": 3540,
+      "name": "RoboBoogie",
+      "city": "Hewlett",
+      "state": "NY",
+      "region": "USNYLI",
+      "rookie_year": 2009,
+      "place": "Hewlett, NY"
+    },
+    {
       "number": 3565,
       "name": "Ghost Robotics",
       "city": "Westford",
@@ -1815,6 +2550,15 @@
       "region": "USMA",
       "rookie_year": 2009,
       "place": "Westford, MA"
+    },
+    {
+      "number": 3615,
+      "name": "Arlington Automatons",
+      "city": "Arlington",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2009,
+      "place": "Arlington, MA"
     },
     {
       "number": 3737,
@@ -1835,6 +2579,15 @@
       "place": "Henrietta, NY"
     },
     {
+      "number": 3774,
+      "name": "Hive Voltage",
+      "city": "Bayonne",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2009,
+      "place": "Bayonne, NJ"
+    },
+    {
       "number": 3795,
       "name": "JagWired",
       "city": "Glen Mills",
@@ -1853,6 +2606,15 @@
       "place": "Pittsburgh, PA"
     },
     {
+      "number": 3922,
+      "name": "Modibot",
+      "city": "New York",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2009,
+      "place": "New York, NY"
+    },
+    {
       "number": 3944,
       "name": "Team Mercury",
       "city": "Hightstown",
@@ -1860,6 +2622,15 @@
       "region": "USNJ",
       "rookie_year": 2009,
       "place": "Hightstown, NJ"
+    },
+    {
+      "number": 4017,
+      "name": "RoboPandas",
+      "city": "Floral Park",
+      "state": "NY",
+      "region": "USNYLI",
+      "rookie_year": 2009,
+      "place": "Floral Park, NY"
     },
     {
       "number": 4029,
@@ -1934,6 +2705,15 @@
       "place": "Oradell, NJ"
     },
     {
+      "number": 4243,
+      "name": "Iron Devils",
+      "city": "Peekskill",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2010,
+      "place": "Peekskill, NY"
+    },
+    {
       "number": 4326,
       "name": "Basement Lions",
       "city": "Bronx",
@@ -1941,6 +2721,15 @@
       "region": "USNYNY",
       "rookie_year": 2010,
       "place": "Bronx, NY"
+    },
+    {
+      "number": 4328,
+      "name": "C'est la vie",
+      "city": "Englewood",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2010,
+      "place": "Englewood, NJ"
     },
     {
       "number": 4347,
@@ -1959,6 +2748,15 @@
       "region": "USMA",
       "rookie_year": 2010,
       "place": "Andover, MA"
+    },
+    {
+      "number": 4466,
+      "name": "R.A.B.B.I.",
+      "city": "Waltham",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2010,
+      "place": "Waltham, MA"
     },
     {
       "number": 4654,
@@ -1981,6 +2779,15 @@
     {
       "number": 4780,
       "name": "Super Troublemakers",
+      "city": "Fresh Meadows",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2010,
+      "place": "Fresh Meadows, NY"
+    },
+    {
+      "number": 4781,
+      "name": "MechaKnights",
       "city": "Fresh Meadows",
       "state": "NY",
       "region": "USNYNY",
@@ -2024,6 +2831,15 @@
       "place": "Albany, NY"
     },
     {
+      "number": 4890,
+      "name": "AArcHive",
+      "city": "Bayonne",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2010,
+      "place": "Bayonne, NJ"
+    },
+    {
       "number": 4914,
       "name": "SCH Excalibur",
       "city": "Philadelphia",
@@ -2033,6 +2849,24 @@
       "place": "Philadelphia, PA"
     },
     {
+      "number": 4936,
+      "name": "Sparks",
+      "city": "Princeton",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2010,
+      "place": "Princeton, NJ"
+    },
+    {
+      "number": 4946,
+      "name": "Robo Raiders",
+      "city": "East Montpelier",
+      "state": "VT",
+      "region": "USVT",
+      "rookie_year": 2011,
+      "place": "East Montpelier, VT"
+    },
+    {
       "number": 4957,
       "name": "The Metal Stingers",
       "city": "Fayetteville",
@@ -2040,6 +2874,15 @@
       "region": "USNYEX",
       "rookie_year": 2011,
       "place": "Fayetteville, NY"
+    },
+    {
+      "number": 4995,
+      "name": "Titanium Tigers",
+      "city": "Fresh Meadows",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2010,
+      "place": "Fresh Meadows, NY"
     },
     {
       "number": 5060,
@@ -2069,6 +2912,15 @@
       "place": "Dover, MA"
     },
     {
+      "number": 5283,
+      "name": "LAIMO",
+      "city": "Lynbrook",
+      "state": "NY",
+      "region": "USNYLI",
+      "rookie_year": 2011,
+      "place": "Lynbrook, NY"
+    },
+    {
       "number": 5319,
       "name": "BuffSciborgs",
       "city": "Buffalo",
@@ -2087,6 +2939,15 @@
       "place": "Philadelphia, PA"
     },
     {
+      "number": 5321,
+      "name": "TechHeroes",
+      "city": "Philadelphia",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2011,
+      "place": "Philadelphia, PA"
+    },
+    {
       "number": 5356,
       "name": "TARDIS",
       "city": "Corning",
@@ -2094,6 +2955,15 @@
       "region": "USNYEX",
       "rookie_year": 2011,
       "place": "Corning, NY"
+    },
+    {
+      "number": 5361,
+      "name": "Lionotics",
+      "city": "New York",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2011,
+      "place": "New York, NY"
     },
     {
       "number": 5387,
@@ -2121,6 +2991,15 @@
       "region": "USPA",
       "rookie_year": 2011,
       "place": "Glenn Mils, PA"
+    },
+    {
+      "number": 5477,
+      "name": "Innovo",
+      "city": "Hewlett",
+      "state": "NY",
+      "region": "USNYLI",
+      "rookie_year": 2011,
+      "place": "Hewlett, NY"
     },
     {
       "number": 5484,
@@ -2195,6 +3074,15 @@
       "place": "Hinesburg, VT"
     },
     {
+      "number": 5772,
+      "name": "Robo Knights",
+      "city": "Flushing",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2011,
+      "place": "Flushing, NY"
+    },
+    {
       "number": 5897,
       "name": "HackHers",
       "city": "Needham Heights",
@@ -2202,6 +3090,15 @@
       "region": "USMA",
       "rookie_year": 2012,
       "place": "Needham Heights, MA"
+    },
+    {
+      "number": 5919,
+      "name": "RegisOwls",
+      "city": "New York",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2012,
+      "place": "New York, NY"
     },
     {
       "number": 5968,
@@ -2220,6 +3117,15 @@
       "region": "USMA",
       "rookie_year": 2012,
       "place": "Natick, MA"
+    },
+    {
+      "number": 6037,
+      "name": "W.A.G.S. (We Are Girl Scouts) Robotics",
+      "city": "Cherry Hill",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2012,
+      "place": "Cherry Hill, NJ"
     },
     {
       "number": 6040,
@@ -2258,6 +3164,24 @@
       "place": "Basking Ridge, NJ"
     },
     {
+      "number": 6101,
+      "name": "Energized Hazard",
+      "city": "Rockaway",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2012,
+      "place": "Rockaway, NJ"
+    },
+    {
+      "number": 6102,
+      "name": "E=MK2",
+      "city": "Rockaway",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2012,
+      "place": "Rockaway, NJ"
+    },
+    {
       "number": 6152,
       "name": "Oysterminators",
       "city": "Providence",
@@ -2265,6 +3189,15 @@
       "region": "USRI",
       "rookie_year": 2012,
       "place": "Providence, RI"
+    },
+    {
+      "number": 6308,
+      "name": "Bot Mitzvahs",
+      "city": "Waltham",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2012,
+      "place": "Waltham, MA"
     },
     {
       "number": 6347,
@@ -2285,6 +3218,15 @@
       "place": "Bloomsburg, PA"
     },
     {
+      "number": 6402,
+      "name": "Mecha Mariners",
+      "city": "East Greenwich",
+      "state": "RI",
+      "region": "USRI",
+      "rookie_year": 2012,
+      "place": "East Greenwich, RI"
+    },
+    {
       "number": 6454,
       "name": "Saints Robotics",
       "city": "Binghamton",
@@ -2292,6 +3234,15 @@
       "region": "USNYEX",
       "rookie_year": 2012,
       "place": "Binghamton, NY"
+    },
+    {
+      "number": 6460,
+      "name": "RoboWarriors",
+      "city": "Niskayuna",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2012,
+      "place": "Niskayuna, NY"
     },
     {
       "number": 6496,
@@ -2321,6 +3272,15 @@
       "place": "Sewickley, PA"
     },
     {
+      "number": 6552,
+      "name": "Vikings",
+      "city": "Philadelphia",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2012,
+      "place": "Philadelphia, PA"
+    },
+    {
       "number": 6567,
       "name": "RoboRaiders",
       "city": "Red Hook",
@@ -2328,6 +3288,24 @@
       "region": "USNYEX",
       "rookie_year": 2012,
       "place": "Red Hook, NY"
+    },
+    {
+      "number": 6640,
+      "name": "SSA Boltcogs",
+      "city": "Pittsburgh",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2012,
+      "place": "Pittsburgh, PA"
+    },
+    {
+      "number": 6676,
+      "name": "Kaleidoscope",
+      "city": "Philadelphia",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2012,
+      "place": "Philadelphia, PA"
     },
     {
       "number": 6731,
@@ -2339,6 +3317,15 @@
       "place": "Saint Albans, VT"
     },
     {
+      "number": 6934,
+      "name": "The TranSisters",
+      "city": "Farmingdale",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2013,
+      "place": "Farmingdale, NJ"
+    },
+    {
       "number": 6936,
       "name": "CodeRunners",
       "city": "West Orange",
@@ -2346,6 +3333,15 @@
       "region": "USNJ",
       "rookie_year": 2013,
       "place": "West Orange, NJ"
+    },
+    {
+      "number": 6942,
+      "name": "Pandemonium",
+      "city": "West Babylon",
+      "state": "NY",
+      "region": "USNYLI",
+      "rookie_year": 2013,
+      "place": "West Babylon, NY"
     },
     {
       "number": 6945,
@@ -2393,6 +3389,15 @@
       "place": "Penfield, NY"
     },
     {
+      "number": 7026,
+      "name": "JDroids",
+      "city": "Wayne",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2013,
+      "place": "Wayne, NJ"
+    },
+    {
       "number": 7034,
       "name": "Singularity Technology",
       "city": "Wilton",
@@ -2420,6 +3425,15 @@
       "place": "Dunbarton, NH"
     },
     {
+      "number": 7093,
+      "name": "RaiderBots",
+      "city": "Pawtucket",
+      "state": "RI",
+      "region": "USRI",
+      "rookie_year": 2013,
+      "place": "Pawtucket, RI"
+    },
+    {
       "number": 7102,
       "name": "WR Flux Capacitors",
       "city": "Westfield",
@@ -2427,6 +3441,15 @@
       "region": "USNJ",
       "rookie_year": 2013,
       "place": "Westfield, NJ"
+    },
+    {
+      "number": 7120,
+      "name": "Bionica",
+      "city": "Hewlett",
+      "state": "NY",
+      "region": "USNYLI",
+      "rookie_year": 2013,
+      "place": "Hewlett, NY"
     },
     {
       "number": 7135,
@@ -2474,6 +3497,15 @@
       "place": "Deerfield, MA"
     },
     {
+      "number": 7251,
+      "name": "Comets",
+      "city": "Hackensack",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2013,
+      "place": "Hackensack, NJ"
+    },
+    {
       "number": 7350,
       "name": "Watt's NXT?",
       "city": "Edison",
@@ -2481,6 +3513,15 @@
       "region": "USNJ",
       "rookie_year": 2013,
       "place": "Edison, NJ"
+    },
+    {
+      "number": 7407,
+      "name": "Team VEGA",
+      "city": "Huntington",
+      "state": "NY",
+      "region": "USNYLI",
+      "rookie_year": 2013,
+      "place": "Huntington, NY"
     },
     {
       "number": 7414,
@@ -2499,6 +3540,15 @@
       "region": "USNYLI",
       "rookie_year": 2013,
       "place": "Locust Valley, NY"
+    },
+    {
+      "number": 7418,
+      "name": "Batteries Not Included",
+      "city": "South Burlington",
+      "state": "VT",
+      "region": "USVT",
+      "rookie_year": 2013,
+      "place": "South Burlington, VT"
     },
     {
       "number": 7420,
@@ -2564,6 +3614,42 @@
       "place": "Lansing, NY"
     },
     {
+      "number": 7754,
+      "name": "MHSHS4",
+      "city": "New York",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2013,
+      "place": "New York, NY"
+    },
+    {
+      "number": 7786,
+      "name": "MT Blue Streaks",
+      "city": "Lancaster",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2013,
+      "place": "Lancaster, PA"
+    },
+    {
+      "number": 7883,
+      "name": "Iron Patriots",
+      "city": "Lansdowne",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2013,
+      "place": "Lansdowne, PA"
+    },
+    {
+      "number": 7890,
+      "name": "Space Lions",
+      "city": "Bronx",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2013,
+      "place": "Bronx, NY"
+    },
+    {
       "number": 7959,
       "name": "CHS Cougars",
       "city": "Maplewood",
@@ -2582,6 +3668,60 @@
       "place": "Locust Valley, NY"
     },
     {
+      "number": 8087,
+      "name": "Seahorse Stallions",
+      "city": "Brooklyn",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2013,
+      "place": "Brooklyn, NY"
+    },
+    {
+      "number": 8088,
+      "name": "Team Cephalopods",
+      "city": "Brooklyn",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2013,
+      "place": "Brooklyn, NY"
+    },
+    {
+      "number": 8089,
+      "name": "Mainframe Meltdown",
+      "city": "Wolfeboro",
+      "state": "NH",
+      "region": "USNH",
+      "rookie_year": 2013,
+      "place": "Wolfeboro, NH"
+    },
+    {
+      "number": 8108,
+      "name": "Theoretically Impossible",
+      "city": "Dix Hills",
+      "state": "NY",
+      "region": "USNYLI",
+      "rookie_year": 2013,
+      "place": "Dix Hills, NY"
+    },
+    {
+      "number": 8109,
+      "name": "RISE Robotics",
+      "city": "Huntington Station",
+      "state": "NY",
+      "region": "USNYLI",
+      "rookie_year": 2013,
+      "place": "Huntington Station, NY"
+    },
+    {
+      "number": 8110,
+      "name": "Invicta",
+      "city": "Dix Hills",
+      "state": "NY",
+      "region": "USNYLI",
+      "rookie_year": 2013,
+      "place": "Dix Hills, NY"
+    },
+    {
       "number": 8129,
       "name": "Sons of Liberty",
       "city": "Warwick",
@@ -2589,6 +3729,15 @@
       "region": "USRI",
       "rookie_year": 2013,
       "place": "Warwick, RI"
+    },
+    {
+      "number": 8148,
+      "name": "Maccabots",
+      "city": "Waltham",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2013,
+      "place": "Waltham, MA"
     },
     {
       "number": 8227,
@@ -2645,6 +3794,15 @@
       "place": "Plattsburgh, NY"
     },
     {
+      "number": 8405,
+      "name": "Millburn Robotics",
+      "city": "Millburn",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2014,
+      "place": "Millburn, NJ"
+    },
+    {
       "number": 8413,
       "name": "The Bucket Bots",
       "city": "Pawtucket",
@@ -2672,6 +3830,15 @@
       "place": "Mechanicsburg, PA"
     },
     {
+      "number": 8480,
+      "name": "Technabots",
+      "city": "Philadelphia",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2014,
+      "place": "Philadelphia, PA"
+    },
+    {
       "number": 8490,
       "name": "Mamaroneck Tigers",
       "city": "Mamaroneck",
@@ -2679,6 +3846,15 @@
       "region": "USNYEX",
       "rookie_year": 2014,
       "place": "Mamaroneck, NY"
+    },
+    {
+      "number": 8500,
+      "name": "The Generals",
+      "city": "New York",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2014,
+      "place": "New York, NY"
     },
     {
       "number": 8509,
@@ -2697,6 +3873,15 @@
       "region": "USNYEX",
       "rookie_year": 2014,
       "place": "Plattsburgh, NY"
+    },
+    {
+      "number": 8532,
+      "name": "Falcons",
+      "city": "Foxborough",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2014,
+      "place": "Foxborough, MA"
     },
     {
       "number": 8645,
@@ -2789,6 +3974,15 @@
       "place": "Wolcott, CT"
     },
     {
+      "number": 9006,
+      "name": "Austin Prep Crusaders",
+      "city": "Reading",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2014,
+      "place": "Reading, MA"
+    },
+    {
       "number": 9128,
       "name": "Mounties",
       "city": "Woonsocket",
@@ -2825,6 +4019,42 @@
       "place": "York, PA"
     },
     {
+      "number": 9244,
+      "name": "Lenape Valley Robotics",
+      "city": "Stanhope",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2014,
+      "place": "Stanhope, NJ"
+    },
+    {
+      "number": 9293,
+      "name": "KISS",
+      "city": "Buffalo",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2014,
+      "place": "Buffalo, NY"
+    },
+    {
+      "number": 9294,
+      "name": "Knights of the Round Table",
+      "city": "Brooklyn",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2014,
+      "place": "Brooklyn, NY"
+    },
+    {
+      "number": 9295,
+      "name": "Robo Knights",
+      "city": "Brooklyn",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2014,
+      "place": "Brooklyn, NY"
+    },
+    {
       "number": 9326,
       "name": "Liquid Oxygen",
       "city": "Needham",
@@ -2850,6 +4080,42 @@
       "region": "USNYNY",
       "rookie_year": 2014,
       "place": "New York, NY"
+    },
+    {
+      "number": 9384,
+      "name": "Hydraulic Hydras",
+      "city": "Brooklyn",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2014,
+      "place": "Brooklyn, NY"
+    },
+    {
+      "number": 9385,
+      "name": "Team Leviathan",
+      "city": "Brooklyn",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2014,
+      "place": "Brooklyn, NY"
+    },
+    {
+      "number": 9421,
+      "name": "Hydrofluoric Robotics",
+      "city": "Greenlawn",
+      "state": "NY",
+      "region": "USNYLI",
+      "rookie_year": 2014,
+      "place": "Greenlawn, NY"
+    },
+    {
+      "number": 9480,
+      "name": "GNCE Academy",
+      "city": "Weston",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2014,
+      "place": "Weston, MA"
     },
     {
       "number": 9533,
@@ -2879,6 +4145,24 @@
       "place": "Glenside, PA"
     },
     {
+      "number": 9622,
+      "name": "Maple Mechanics",
+      "city": "Rutland",
+      "state": "VT",
+      "region": "USVT",
+      "rookie_year": 2014,
+      "place": "Rutland, VT"
+    },
+    {
+      "number": 9681,
+      "name": "Parallel Lions",
+      "city": "Bronx",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2014,
+      "place": "Bronx, NY"
+    },
+    {
       "number": 9721,
       "name": "Green Mountain Gears",
       "city": "South Burlington",
@@ -2904,6 +4188,24 @@
       "region": "USPA",
       "rookie_year": 2015,
       "place": "Lansdale, PA"
+    },
+    {
+      "number": 9820,
+      "name": "Girls of Steel Hypatia",
+      "city": "Pittsburgh",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2015,
+      "place": "Pittsburgh, PA"
+    },
+    {
+      "number": 9821,
+      "name": "Girls of Steel Hopper",
+      "city": "Pittsburgh",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2015,
+      "place": "Pittsburgh, PA"
     },
     {
       "number": 9848,
@@ -2933,6 +4235,15 @@
       "place": "Philadelphia, PA"
     },
     {
+      "number": 9860,
+      "name": "Cheezits",
+      "city": "Forest Hills",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2015,
+      "place": "Forest Hills, NY"
+    },
+    {
       "number": 9889,
       "name": "Cruise Control",
       "city": "Flanders",
@@ -2940,6 +4251,24 @@
       "region": "USNJ",
       "rookie_year": 2015,
       "place": "Flanders, NJ"
+    },
+    {
+      "number": 9981,
+      "name": "Girls of Steel Lovelace",
+      "city": "Pittsburgh",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2015,
+      "place": "Pittsburgh, PA"
+    },
+    {
+      "number": 9982,
+      "name": "Girls of Steel Rosalind",
+      "city": "Pittsburgh",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2015,
+      "place": "Pittsburgh, PA"
     },
     {
       "number": 10098,
@@ -3014,6 +4343,42 @@
       "place": "Westfield, NJ"
     },
     {
+      "number": 10392,
+      "name": "The Rolling Drones",
+      "city": "Brooklyn",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2015,
+      "place": "Brooklyn, NY"
+    },
+    {
+      "number": 10393,
+      "name": "Pink Droyd",
+      "city": "Brooklyn",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2015,
+      "place": "Brooklyn, NY"
+    },
+    {
+      "number": 10472,
+      "name": "New Bedford Harpooners",
+      "city": "New Bedford",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2015,
+      "place": "New Bedford, MA"
+    },
+    {
+      "number": 10475,
+      "name": "The Spartan Bots",
+      "city": "Greenville",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2015,
+      "place": "Greenville, NY"
+    },
+    {
       "number": 10539,
       "name": "Ultro",
       "city": "New York",
@@ -3021,6 +4386,15 @@
       "region": "USNYNY",
       "rookie_year": 2015,
       "place": "New York, NY"
+    },
+    {
+      "number": 10553,
+      "name": "RaidX",
+      "city": "Nutley",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2015,
+      "place": "Nutley, NJ"
     },
     {
       "number": 10560,
@@ -3039,6 +4413,15 @@
       "region": "USNJ",
       "rookie_year": 2015,
       "place": "Livingston, NJ"
+    },
+    {
+      "number": 10603,
+      "name": "WOOD-CHIPS",
+      "city": "Ridgewood",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2015,
+      "place": "Ridgewood, NJ"
     },
     {
       "number": 10639,
@@ -3066,6 +4449,24 @@
       "region": "USNJ",
       "rookie_year": 2015,
       "place": "Jersey City, NJ"
+    },
+    {
+      "number": 10696,
+      "name": "Syosset Syborgs",
+      "city": "Syosset",
+      "state": "NY",
+      "region": "USNYLI",
+      "rookie_year": 2015,
+      "place": "Syosset, NY"
+    },
+    {
+      "number": 10738,
+      "name": "SBS Bears",
+      "city": "Stony Brook",
+      "state": "NY",
+      "region": "USNYLI",
+      "rookie_year": 2015,
+      "place": "Stony Brook, NY"
     },
     {
       "number": 10771,
@@ -3111,6 +4512,42 @@
       "region": "USCT",
       "rookie_year": 2015,
       "place": "Avon, CT"
+    },
+    {
+      "number": 10847,
+      "name": "Robo Eagles",
+      "city": "Barrington",
+      "state": "RI",
+      "region": "USRI",
+      "rookie_year": 2015,
+      "place": "Barrington, RI"
+    },
+    {
+      "number": 10870,
+      "name": "Ardsley Robotics",
+      "city": "Ardsley",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2015,
+      "place": "Ardsley, NY"
+    },
+    {
+      "number": 10874,
+      "name": "LIONS",
+      "city": "Montclair",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2015,
+      "place": "Montclair, NJ"
+    },
+    {
+      "number": 10899,
+      "name": "Mansfield Mechanics United",
+      "city": "Jericho",
+      "state": "VT",
+      "region": "USVT",
+      "rookie_year": 2015,
+      "place": "Jericho, VT"
     },
     {
       "number": 10912,
@@ -3183,6 +4620,15 @@
       "region": "USNYEX",
       "rookie_year": 2016,
       "place": "Scarsdale, NY"
+    },
+    {
+      "number": 11208,
+      "name": "Kardia Robotics",
+      "city": "Reading",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2016,
+      "place": "Reading, PA"
     },
     {
       "number": 11241,
@@ -3275,6 +4721,33 @@
       "place": "Blairstown, NJ"
     },
     {
+      "number": 11493,
+      "name": "The Green Alliance",
+      "city": "Philadelphia",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2016,
+      "place": "Philadelphia, PA"
+    },
+    {
+      "number": 11536,
+      "name": "Derryfield Fighting Cougars",
+      "city": "Manchester",
+      "state": "NH",
+      "region": "USNH",
+      "rookie_year": 2016,
+      "place": "Manchester, NH"
+    },
+    {
+      "number": 11607,
+      "name": "HazMatrix",
+      "city": "Ballston Spa",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2016,
+      "place": "Ballston Spa, NY"
+    },
+    {
       "number": 11649,
       "name": "Portledge RoboTime",
       "city": "Locust Valley",
@@ -3309,6 +4782,15 @@
       "region": "USNJ",
       "rookie_year": 2016,
       "place": "Somerset, NJ"
+    },
+    {
+      "number": 11780,
+      "name": "BLUE Box",
+      "city": "Windham",
+      "state": "NH",
+      "region": "USNH",
+      "rookie_year": 2016,
+      "place": "Windham, NH"
     },
     {
       "number": 11792,
@@ -3383,6 +4865,51 @@
       "place": "Kingston, NY"
     },
     {
+      "number": 12084,
+      "name": "Really... Simple Machines",
+      "city": "Wyncote",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2016,
+      "place": "Wyncote, PA"
+    },
+    {
+      "number": 12116,
+      "name": "Redbots",
+      "city": "Parsippany",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2016,
+      "place": "Parsippany, NJ"
+    },
+    {
+      "number": 12147,
+      "name": "Shtark Industries",
+      "city": "Brookline",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2016,
+      "place": "Brookline, MA"
+    },
+    {
+      "number": 12195,
+      "name": "Hawkbots",
+      "city": "Bellingham",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2016,
+      "place": "Bellingham, MA"
+    },
+    {
+      "number": 12282,
+      "name": "Cyberdogs",
+      "city": "New York",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2016,
+      "place": "New York, NY"
+    },
+    {
       "number": 12329,
       "name": "Knytes Bytes",
       "city": "Manchester",
@@ -3401,6 +4928,15 @@
       "place": "Scarsdale, NY"
     },
     {
+      "number": 12365,
+      "name": "MATES Robotics",
+      "city": "Manahawkin",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2016,
+      "place": "Manahawkin, NJ"
+    },
+    {
       "number": 12377,
       "name": "Hopkins Schrodinger's Goats",
       "city": "New Haven",
@@ -3408,6 +4944,33 @@
       "region": "USCT",
       "rookie_year": 2016,
       "place": "New Haven, CT"
+    },
+    {
+      "number": 12378,
+      "name": "Dagaz",
+      "city": "Huntington Station",
+      "state": "NY",
+      "region": "USNYLI",
+      "rookie_year": 2016,
+      "place": "Huntington Station, NY"
+    },
+    {
+      "number": 12382,
+      "name": "Syosset Nebula",
+      "city": "Syosset",
+      "state": "NY",
+      "region": "USNYLI",
+      "rookie_year": 2016,
+      "place": "Syosset, NY"
+    },
+    {
+      "number": 12399,
+      "name": "Mechanical Devils",
+      "city": "Peekskill",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2016,
+      "place": "Peekskill, NY"
     },
     {
       "number": 12414,
@@ -3455,6 +5018,24 @@
       "place": "Marlborough, MA"
     },
     {
+      "number": 12578,
+      "name": "Trojanators",
+      "city": "Cranberry Township",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2016,
+      "place": "Cranberry Township, PA"
+    },
+    {
+      "number": 12589,
+      "name": "Pioneer Robotics",
+      "city": "Shrewsbury",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2016,
+      "place": "Shrewsbury, MA"
+    },
+    {
       "number": 12622,
       "name": "Red Spark",
       "city": "Bedford",
@@ -3462,6 +5043,15 @@
       "region": "USNH",
       "rookie_year": 2017,
       "place": "Bedford, NH"
+    },
+    {
+      "number": 12629,
+      "name": "Stingbotics",
+      "city": "Astoria",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2017,
+      "place": "Astoria, NY"
     },
     {
       "number": 12636,
@@ -3491,6 +5081,24 @@
       "place": "Buffalo, NY"
     },
     {
+      "number": 12758,
+      "name": "Derryfield Binary Bots",
+      "city": "Manchester",
+      "state": "NH",
+      "region": "USNH",
+      "rookie_year": 2017,
+      "place": "Manchester, NH"
+    },
+    {
+      "number": 12789,
+      "name": "Hack-Gearz",
+      "city": "Merrimack",
+      "state": "NH",
+      "region": "USNH",
+      "rookie_year": 2017,
+      "place": "Merrimack, NH"
+    },
+    {
       "number": 12792,
       "name": "Sharon High Tiger Techs",
       "city": "Sharon",
@@ -3498,6 +5106,15 @@
       "region": "USPA",
       "rookie_year": 2017,
       "place": "Sharon, PA"
+    },
+    {
+      "number": 12806,
+      "name": "Roboken",
+      "city": "Hoboken",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2017,
+      "place": "Hoboken, NJ"
     },
     {
       "number": 12833,
@@ -3518,6 +5135,24 @@
       "place": "Emerson, NJ"
     },
     {
+      "number": 12866,
+      "name": "Cyber-Fins",
+      "city": "Toms River",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2017,
+      "place": "Toms River, NJ"
+    },
+    {
+      "number": 12870,
+      "name": "ScottieBots",
+      "city": "Ballston Spa",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2017,
+      "place": "Ballston Spa, NY"
+    },
+    {
       "number": 12875,
       "name": "Snyder Tigers",
       "city": "Jersey City",
@@ -3525,6 +5160,15 @@
       "region": "USNJ",
       "rookie_year": 2017,
       "place": "Jersey City, NJ"
+    },
+    {
+      "number": 12899,
+      "name": "Bellport Clippers 1",
+      "city": "Brookhaven",
+      "state": "NY",
+      "region": "USNYLI",
+      "rookie_year": 2017,
+      "place": "Brookhaven, NY"
     },
     {
       "number": 12915,
@@ -3543,6 +5187,15 @@
       "region": "USCT",
       "rookie_year": 2017,
       "place": "Farmington, CT"
+    },
+    {
+      "number": 12968,
+      "name": "Bard RoboRaptors",
+      "city": "Newark",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2017,
+      "place": "Newark, NJ"
     },
     {
       "number": 13048,
@@ -3608,6 +5261,24 @@
       "place": "Westerly, RI"
     },
     {
+      "number": 13212,
+      "name": "Alden Knights",
+      "city": "Alden",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2017,
+      "place": "Alden, NY"
+    },
+    {
+      "number": 13234,
+      "name": "Longwood CSD Jr High FTC",
+      "city": "Middle Island",
+      "state": "NY",
+      "region": "USNYLI",
+      "rookie_year": 2017,
+      "place": "Middle Island, NY"
+    },
+    {
       "number": 13251,
       "name": "CyberSaints",
       "city": "New Milford",
@@ -3635,6 +5306,15 @@
       "place": "New York, NY"
     },
     {
+      "number": 13347,
+      "name": "Project Home Robotics Team",
+      "city": "Philadelphia",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2017,
+      "place": "Philadelphia, PA"
+    },
+    {
       "number": 13357,
       "name": "IR Lightning",
       "city": "Philadelphia",
@@ -3651,6 +5331,15 @@
       "region": "USNYEX",
       "rookie_year": 2017,
       "place": "Brasher Falls, NY"
+    },
+    {
+      "number": 13360,
+      "name": "Franklin Academy",
+      "city": "Malone",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2017,
+      "place": "Malone, NY"
     },
     {
       "number": 13361,
@@ -3743,6 +5432,15 @@
       "place": "Mars, PA"
     },
     {
+      "number": 13475,
+      "name": "Lionotics 2",
+      "city": "New York",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2017,
+      "place": "New York, NY"
+    },
+    {
       "number": 13534,
       "name": "bearBots",
       "city": "Dedham",
@@ -3750,6 +5448,15 @@
       "region": "USMA",
       "rookie_year": 2017,
       "place": "Dedham, MA"
+    },
+    {
+      "number": 13540,
+      "name": "Rhodeberto",
+      "city": "Providence",
+      "state": "RI",
+      "region": "USRI",
+      "rookie_year": 2017,
+      "place": "Providence, RI"
     },
     {
       "number": 13583,
@@ -3797,6 +5504,24 @@
       "place": "Coatesville, PA"
     },
     {
+      "number": 13747,
+      "name": "Techtronic Challengers",
+      "city": "Princeton Junction",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2017,
+      "place": "Princeton Junction, NJ"
+    },
+    {
+      "number": 13847,
+      "name": "At Least It Didn't Explode",
+      "city": "Greenlawn",
+      "state": "NY",
+      "region": "USNYLI",
+      "rookie_year": 2017,
+      "place": "Greenlawn, NY"
+    },
+    {
       "number": 13848,
       "name": "The 'Rock Bots 2.0",
       "city": "Attleboro",
@@ -3804,6 +5529,24 @@
       "region": "USMA",
       "rookie_year": 2017,
       "place": "Attleboro, MA"
+    },
+    {
+      "number": 13867,
+      "name": "BayBots",
+      "city": "Oyster Bay",
+      "state": "NY",
+      "region": "USNYLI",
+      "rookie_year": 2017,
+      "place": "Oyster Bay, NY"
+    },
+    {
+      "number": 13873,
+      "name": "THE FLOCK",
+      "city": "Pittsburgh",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2017,
+      "place": "Pittsburgh, PA"
     },
     {
       "number": 13963,
@@ -3851,6 +5594,33 @@
       "place": "Lansdale, PA"
     },
     {
+      "number": 14156,
+      "name": "Packer Robotics",
+      "city": "Brooklyn",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2017,
+      "place": "Brooklyn, NY"
+    },
+    {
+      "number": 14173,
+      "name": "Syntax Error",
+      "city": "Emerson",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2017,
+      "place": "Emerson, NJ"
+    },
+    {
+      "number": 14212,
+      "name": "Metrobotics",
+      "city": "Forest Hills",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2017,
+      "place": "Forest Hills, NY"
+    },
+    {
       "number": 14237,
       "name": "CHS Pyrotechnics",
       "city": "Cinnaminson",
@@ -3858,6 +5628,15 @@
       "region": "USNJ",
       "rookie_year": 2017,
       "place": "Cinnaminson, NJ"
+    },
+    {
+      "number": 14251,
+      "name": "Capital Robotics",
+      "city": "Montpelier",
+      "state": "VT",
+      "region": "USVT",
+      "rookie_year": 2017,
+      "place": "Montpelier, VT"
     },
     {
       "number": 14273,
@@ -3914,6 +5693,24 @@
       "place": "Exton, PA"
     },
     {
+      "number": 14450,
+      "name": "RoboRebels",
+      "city": "Saddle River",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2018,
+      "place": "Saddle River, NJ"
+    },
+    {
+      "number": 14461,
+      "name": "RoboHawks",
+      "city": "Jericho",
+      "state": "NY",
+      "region": "USNYLI",
+      "rookie_year": 2018,
+      "place": "Jericho, NY"
+    },
+    {
       "number": 14464,
       "name": "BotBusters",
       "city": "Mechanicsburg",
@@ -3932,6 +5729,15 @@
       "place": "Princeton Junction, NJ"
     },
     {
+      "number": 14544,
+      "name": "Pingry Big Blue Robotics",
+      "city": "Basking Ridge",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2018,
+      "place": "Basking Ridge, NJ"
+    },
+    {
       "number": 14639,
       "name": "B3VR",
       "city": "New York",
@@ -3941,8 +5747,26 @@
       "place": "New York, NY"
     },
     {
+      "number": 14666,
+      "name": "Inverse Polarity FTC",
+      "city": "Northborough",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2018,
+      "place": "Northborough, MA"
+    },
+    {
       "number": 14712,
       "name": "Ruckus Robotics",
+      "city": "New York",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2018,
+      "place": "New York, NY"
+    },
+    {
+      "number": 14734,
+      "name": "Envirobots",
       "city": "New York",
       "state": "NY",
       "region": "USNYNY",
@@ -3959,6 +5783,33 @@
       "place": "Philadelphia, PA"
     },
     {
+      "number": 14803,
+      "name": "uKnighted",
+      "city": "New York",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2018,
+      "place": "New York, NY"
+    },
+    {
+      "number": 14819,
+      "name": "Cyber Sirens",
+      "city": "Newark",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2018,
+      "place": "Newark, NJ"
+    },
+    {
+      "number": 14853,
+      "name": "Aquabots",
+      "city": "Holyoke",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2018,
+      "place": "Holyoke, MA"
+    },
+    {
       "number": 14864,
       "name": "Wilmington Wirecats",
       "city": "Wilmington",
@@ -3966,6 +5817,24 @@
       "region": "USMA",
       "rookie_year": 2018,
       "place": "Wilmington, MA"
+    },
+    {
+      "number": 14875,
+      "name": "LightSpeed",
+      "city": "Natick",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2018,
+      "place": "Natick, MA"
+    },
+    {
+      "number": 14903,
+      "name": "SharkBots",
+      "city": "Mamaroneck",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2018,
+      "place": "Mamaroneck, NY"
     },
     {
       "number": 15073,
@@ -3986,6 +5855,24 @@
       "place": "Shirley, MA"
     },
     {
+      "number": 15343,
+      "name": "Blue VIII",
+      "city": "Nashua",
+      "state": "NH",
+      "region": "USNH",
+      "rookie_year": 2018,
+      "place": "Nashua, NH"
+    },
+    {
+      "number": 15374,
+      "name": "Bolts and Bytes",
+      "city": "North Kingstown",
+      "state": "RI",
+      "region": "USRI",
+      "rookie_year": 2018,
+      "place": "North Kingstown, RI"
+    },
+    {
       "number": 15458,
       "name": "Green Machine",
       "city": "Mullica Hill",
@@ -3995,6 +5882,15 @@
       "place": "Mullica Hill, NJ"
     },
     {
+      "number": 15484,
+      "name": "Central High School",
+      "city": "Newark",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2018,
+      "place": "Newark, NJ"
+    },
+    {
       "number": 15534,
       "name": "VERTEX",
       "city": "Exeter",
@@ -4002,6 +5898,15 @@
       "region": "USNH",
       "rookie_year": 2018,
       "place": "Exeter, NH"
+    },
+    {
+      "number": 15626,
+      "name": "A Perplexing Solution",
+      "city": "Reading",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2018,
+      "place": "Reading, MA"
     },
     {
       "number": 15643,
@@ -4040,6 +5945,15 @@
       "place": "Bronx, NY"
     },
     {
+      "number": 15747,
+      "name": "\"El Robo\"",
+      "city": "Providence",
+      "state": "RI",
+      "region": "USRI",
+      "rookie_year": 2018,
+      "place": "Providence, RI"
+    },
+    {
       "number": 15762,
       "name": "Frisch CouGears",
       "city": "Paramus",
@@ -4067,6 +5981,15 @@
       "place": "Hackensack, NJ"
     },
     {
+      "number": 15943,
+      "name": "Eaglebrook Eagles",
+      "city": "Deerfield",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2018,
+      "place": "Deerfield, MA"
+    },
+    {
       "number": 16008,
       "name": "Armored Artemises",
       "city": "Glastonbury",
@@ -4085,6 +6008,15 @@
       "place": "Uniontown, PA"
     },
     {
+      "number": 16021,
+      "name": "Techno Maniacs",
+      "city": "Acton",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2018,
+      "place": "Acton, MA"
+    },
+    {
       "number": 16087,
       "name": "Klinger Klippers",
       "city": "Southampton",
@@ -4092,6 +6024,15 @@
       "region": "USPA",
       "rookie_year": 2018,
       "place": "Southampton, PA"
+    },
+    {
+      "number": 16096,
+      "name": "Raider Bots",
+      "city": "Utica",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2018,
+      "place": "Utica, NY"
     },
     {
       "number": 16102,
@@ -4110,6 +6051,15 @@
       "region": "USNH",
       "rookie_year": 2018,
       "place": "Windham, NH"
+    },
+    {
+      "number": 16209,
+      "name": "The Dread Pirate Robots",
+      "city": "Peterborough",
+      "state": "NH",
+      "region": "USNH",
+      "rookie_year": 2018,
+      "place": "Peterborough, NH"
     },
     {
       "number": 16221,
@@ -4157,6 +6107,24 @@
       "place": "Quincy, MA"
     },
     {
+      "number": 16387,
+      "name": "MV roboPride",
+      "city": "Penacook",
+      "state": "NH",
+      "region": "USNH",
+      "rookie_year": 2019,
+      "place": "Penacook, NH"
+    },
+    {
+      "number": 16466,
+      "name": "Technological Intelligence",
+      "city": "Harrisburg",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2019,
+      "place": "Harrisburg, PA"
+    },
+    {
       "number": 16468,
       "name": "Green Lemons",
       "city": "West Chester",
@@ -4164,6 +6132,24 @@
       "region": "USPA",
       "rookie_year": 2019,
       "place": "West Chester, PA"
+    },
+    {
+      "number": 16507,
+      "name": "West Side High School",
+      "city": "Newark",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2019,
+      "place": "Newark, NJ"
+    },
+    {
+      "number": 16557,
+      "name": "Honey K-Ohms",
+      "city": "Bayonne",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2019,
+      "place": "Bayonne, NJ"
     },
     {
       "number": 16564,
@@ -4175,6 +6161,33 @@
       "place": "Ebensburg, PA"
     },
     {
+      "number": 16568,
+      "name": "Cybernetic Lions",
+      "city": "Bronx",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2019,
+      "place": "Bronx, NY"
+    },
+    {
+      "number": 16575,
+      "name": "Panther Robotics",
+      "city": "Newark",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2019,
+      "place": "Newark, NJ"
+    },
+    {
+      "number": 16622,
+      "name": "Bulldogs",
+      "city": "Bronx",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2019,
+      "place": "Bronx, NY"
+    },
+    {
       "number": 16700,
       "name": "JAYBOTS",
       "city": "Hopewell Junction",
@@ -4182,6 +6195,24 @@
       "region": "USNYEX",
       "rookie_year": 2019,
       "place": "Hopewell Junction, NY"
+    },
+    {
+      "number": 16704,
+      "name": "Nano Hornets",
+      "city": "North Reading",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2019,
+      "place": "North Reading, MA"
+    },
+    {
+      "number": 16712,
+      "name": "RoboGym Jr.",
+      "city": "Glen Head",
+      "state": "NY",
+      "region": "USNYLI",
+      "rookie_year": 2019,
+      "place": "Glen Head, NY"
     },
     {
       "number": 16740,
@@ -4211,6 +6242,15 @@
       "place": "Mars, PA"
     },
     {
+      "number": 16798,
+      "name": "Redhawk Robotics",
+      "city": "Ozone Park",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2019,
+      "place": "Ozone Park, NY"
+    },
+    {
       "number": 16800,
       "name": "Trial and Terror",
       "city": "Philadelphia",
@@ -4227,6 +6267,15 @@
       "region": "USNYEX",
       "rookie_year": 2019,
       "place": "Elmira, NY"
+    },
+    {
+      "number": 16899,
+      "name": "CPUsaders_T",
+      "city": "South Lancaster",
+      "state": "MA",
+      "region": "USARL",
+      "rookie_year": 2019,
+      "place": "South Lancaster, MA"
     },
     {
       "number": 16903,
@@ -4247,6 +6296,15 @@
       "place": "Wilmington, MA"
     },
     {
+      "number": 16938,
+      "name": "BoltStorm",
+      "city": "Mineola",
+      "state": "NY",
+      "region": "USNYLI",
+      "rookie_year": 2019,
+      "place": "Mineola, NY"
+    },
+    {
       "number": 16953,
       "name": "FIRE",
       "city": "Livingston",
@@ -4265,6 +6323,15 @@
       "place": "Riverdale, NJ"
     },
     {
+      "number": 17022,
+      "name": "Middiebots",
+      "city": "Middletown",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2019,
+      "place": "Middletown, NY"
+    },
+    {
       "number": 17036,
       "name": "Robotech Anomaly",
       "city": "Marlton",
@@ -4272,6 +6339,24 @@
       "region": "USNJ",
       "rookie_year": 2019,
       "place": "Marlton, NJ"
+    },
+    {
+      "number": 17126,
+      "name": "Natural Selection",
+      "city": "New York",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2019,
+      "place": "New York, NY"
+    },
+    {
+      "number": 17186,
+      "name": "Falcons",
+      "city": "Mays Landing",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2019,
+      "place": "Mays Landing, NJ"
     },
     {
       "number": 17195,
@@ -4337,6 +6422,15 @@
       "place": "Hellertown, PA"
     },
     {
+      "number": 17345,
+      "name": "Royal Rovers",
+      "city": "Dalton",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2019,
+      "place": "Dalton, MA"
+    },
+    {
       "number": 17377,
       "name": "Pennsauken Robotics",
       "city": "Pennsauken",
@@ -4346,6 +6440,15 @@
       "place": "Pennsauken, NJ"
     },
     {
+      "number": 17384,
+      "name": "Rambam Rambots",
+      "city": "Lawrence",
+      "state": "NY",
+      "region": "USNYLI",
+      "rookie_year": 2019,
+      "place": "Lawrence, NY"
+    },
+    {
       "number": 17388,
       "name": "Red Tornadoes",
       "city": "Lancaster",
@@ -4353,6 +6456,15 @@
       "region": "USPA",
       "rookie_year": 2019,
       "place": "Lancaster, PA"
+    },
+    {
+      "number": 17392,
+      "name": "Tesseract",
+      "city": "Rocky Point",
+      "state": "NY",
+      "region": "USNYLI",
+      "rookie_year": 2019,
+      "place": "Rocky Point, NY"
     },
     {
       "number": 17455,
@@ -4382,6 +6494,33 @@
       "place": "Bensalem, PA"
     },
     {
+      "number": 17496,
+      "name": "The Knight Shift",
+      "city": "Rockaway",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2019,
+      "place": "Rockaway, NJ"
+    },
+    {
+      "number": 17497,
+      "name": "Knight Riders",
+      "city": "Rockaway",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2019,
+      "place": "Rockaway, NJ"
+    },
+    {
+      "number": 17584,
+      "name": "Rambotics1",
+      "city": "Summit",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2019,
+      "place": "Summit, NJ"
+    },
+    {
       "number": 17596,
       "name": "Mainframe Robotics",
       "city": "Wilkes Barre",
@@ -4409,6 +6548,15 @@
       "place": "Scotch Plains, NJ"
     },
     {
+      "number": 17700,
+      "name": "Mechanical Vikings",
+      "city": "New Ipswich",
+      "state": "NH",
+      "region": "USNH",
+      "rookie_year": 2019,
+      "place": "New Ipswich, NH"
+    },
+    {
       "number": 17703,
       "name": "FullMetal Peregrines",
       "city": "Middletown",
@@ -4416,6 +6564,15 @@
       "region": "USCT",
       "rookie_year": 2019,
       "place": "Middletown, CT"
+    },
+    {
+      "number": 17746,
+      "name": "Hanover Park Ottobots",
+      "city": "East Hanover",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2019,
+      "place": "East Hanover, NJ"
     },
     {
       "number": 17837,
@@ -4436,6 +6593,15 @@
       "place": "North Kingstown, RI"
     },
     {
+      "number": 17868,
+      "name": "GRS Cooperative",
+      "city": "Gorham",
+      "state": "NH",
+      "region": "USNH",
+      "rookie_year": 2019,
+      "place": "Gorham, NH"
+    },
+    {
       "number": 17895,
       "name": "The Prodigiously Hemicephalic BrainSTEM Robotics Team",
       "city": "Baden",
@@ -4452,6 +6618,24 @@
       "region": "USPA",
       "rookie_year": 2019,
       "place": "Chambersburg, PA"
+    },
+    {
+      "number": 18061,
+      "name": "Simply Complex 18061",
+      "city": "Plainsboro",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2019,
+      "place": "Plainsboro, NJ"
+    },
+    {
+      "number": 18151,
+      "name": "The Flux Capacitors",
+      "city": "Merrimack",
+      "state": "NH",
+      "region": "USNH",
+      "rookie_year": 2019,
+      "place": "Merrimack, NH"
     },
     {
       "number": 18153,
@@ -4490,6 +6674,15 @@
       "place": "Beverly, MA"
     },
     {
+      "number": 18241,
+      "name": "Outer Galaxy",
+      "city": "Marlton",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2020,
+      "place": "Marlton, NJ"
+    },
+    {
       "number": 18284,
       "name": "Panthera Mu",
       "city": "Hellertown",
@@ -4497,6 +6690,24 @@
       "region": "USPA",
       "rookie_year": 2020,
       "place": "Hellertown, PA"
+    },
+    {
+      "number": 18351,
+      "name": "Robo Raiders III",
+      "city": "East Montpelier",
+      "state": "VT",
+      "region": "USVT",
+      "rookie_year": 2020,
+      "place": "East Montpelier, VT"
+    },
+    {
+      "number": 18366,
+      "name": "Robolution",
+      "city": "Trumbull",
+      "state": "CT",
+      "region": "USCT",
+      "rookie_year": 2020,
+      "place": "Trumbull, CT"
     },
     {
       "number": 18387,
@@ -4589,6 +6800,24 @@
       "place": "Ramsey, NJ"
     },
     {
+      "number": 18758,
+      "name": "Ironmen Sigma",
+      "city": "Ramsey",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2020,
+      "place": "Ramsey, NJ"
+    },
+    {
+      "number": 18759,
+      "name": "Ironmen Tau",
+      "city": "Ramsey",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2020,
+      "place": "Ramsey, NJ"
+    },
+    {
       "number": 18760,
       "name": "Ironmen Upsilon",
       "city": "Ramsey",
@@ -4607,6 +6836,15 @@
       "place": "Middletown, CT"
     },
     {
+      "number": 18843,
+      "name": "FullMetal Merlins",
+      "city": "Middletown",
+      "state": "CT",
+      "region": "USCT",
+      "rookie_year": 2020,
+      "place": "Middletown, CT"
+    },
+    {
       "number": 18849,
       "name": "Panther Pirates",
       "city": "Pocono Summit",
@@ -4616,6 +6854,15 @@
       "place": "Pocono Summit, PA"
     },
     {
+      "number": 18898,
+      "name": "spare_parts",
+      "city": "Brooklyn",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2020,
+      "place": "Brooklyn, NY"
+    },
+    {
       "number": 18925,
       "name": "Astrobots",
       "city": "Ayer",
@@ -4623,6 +6870,15 @@
       "region": "USMA",
       "rookie_year": 2020,
       "place": "Ayer, MA"
+    },
+    {
+      "number": 18927,
+      "name": "Dirty Birds",
+      "city": "Keene",
+      "state": "NH",
+      "region": "USNH",
+      "rookie_year": 2020,
+      "place": "Keene, NH"
     },
     {
       "number": 18978,
@@ -4661,6 +6917,15 @@
       "place": "Parishville, NY"
     },
     {
+      "number": 19397,
+      "name": "Soli Deo Gloria",
+      "city": "Foxboro",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2021,
+      "place": "Foxboro, MA"
+    },
+    {
       "number": 19411,
       "name": "Tech Tigers",
       "city": "Sharon",
@@ -4697,6 +6962,15 @@
       "place": "Westwood, MA"
     },
     {
+      "number": 19462,
+      "name": "Team Beta",
+      "city": "Woodbury",
+      "state": "CT",
+      "region": "USCT",
+      "rookie_year": 2021,
+      "place": "Woodbury, CT"
+    },
+    {
       "number": 19477,
       "name": "Bit by Bit",
       "city": "Tenafly",
@@ -4722,6 +6996,15 @@
       "region": "USNYEX",
       "rookie_year": 2021,
       "place": "Buffalo, NY"
+    },
+    {
+      "number": 19643,
+      "name": "Dragon Droids",
+      "city": "Bedford",
+      "state": "NH",
+      "region": "USNH",
+      "rookie_year": 2021,
+      "place": "Bedford, NH"
     },
     {
       "number": 19667,
@@ -4778,6 +7061,42 @@
       "place": "Wolfeboro, NH"
     },
     {
+      "number": 19783,
+      "name": "Masters Engineering and Robotics",
+      "city": "Dobbs Ferry",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2021,
+      "place": "Dobbs Ferry, NY"
+    },
+    {
+      "number": 19784,
+      "name": "Robotribe",
+      "city": "Rahway",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2021,
+      "place": "Rahway, NJ"
+    },
+    {
+      "number": 19802,
+      "name": "Panther Cub Robotics",
+      "city": "Newark",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2021,
+      "place": "Newark, NJ"
+    },
+    {
+      "number": 19823,
+      "name": "JOLLY BLUE",
+      "city": "Bloomfield",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2021,
+      "place": "Bloomfield, NJ"
+    },
+    {
       "number": 19831,
       "name": "Panthera Gamma",
       "city": "Hellertown",
@@ -4823,6 +7142,15 @@
       "place": "Philadelphia, PA"
     },
     {
+      "number": 20018,
+      "name": "Berlin InvenTeam",
+      "city": "Cherry Plain",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2021,
+      "place": "Cherry Plain, NY"
+    },
+    {
       "number": 20079,
       "name": "MARS: Ingenuity...",
       "city": "Mars",
@@ -4841,8 +7169,53 @@
       "place": "Coatesville, PA"
     },
     {
+      "number": 20099,
+      "name": "Team Inconceivable!",
+      "city": "Peterborough",
+      "state": "NH",
+      "region": "USNH",
+      "rookie_year": 2021,
+      "place": "Peterborough, NH"
+    },
+    {
+      "number": 20141,
+      "name": "Convent of the Sacred Bot",
+      "city": "New York",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2021,
+      "place": "New York, NY"
+    },
+    {
+      "number": 20152,
+      "name": "Battle Bots",
+      "city": "Chalfont",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2021,
+      "place": "Chalfont, PA"
+    },
+    {
+      "number": 20153,
+      "name": "Silver Wolves",
+      "city": "Kennett Square",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2021,
+      "place": "Kennett Square, PA"
+    },
+    {
       "number": 20188,
       "name": "Hotchkiss EFX Gearcats A",
+      "city": "Lakeville",
+      "state": "CT",
+      "region": "USCT",
+      "rookie_year": 2021,
+      "place": "Lakeville, CT"
+    },
+    {
+      "number": 20189,
+      "name": "Hotchkiss EFX Gearcats B",
       "city": "Lakeville",
       "state": "CT",
       "region": "USCT",
@@ -4922,6 +7295,15 @@
       "place": "Metuchen, NJ"
     },
     {
+      "number": 20297,
+      "name": "SLCS Stormbots",
+      "city": "Saranac Lake",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2021,
+      "place": "Saranac Lake, NY"
+    },
+    {
       "number": 20301,
       "name": "VIKINGBOTS",
       "city": "Stamford",
@@ -4931,6 +7313,15 @@
       "place": "Stamford, CT"
     },
     {
+      "number": 20388,
+      "name": "Circuit Breakers",
+      "city": "Newark",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2021,
+      "place": "Newark, NJ"
+    },
+    {
       "number": 20409,
       "name": "The Winsor Wirecats",
       "city": "Boston",
@@ -4938,6 +7329,15 @@
       "region": "USMA",
       "rookie_year": 2021,
       "place": "Boston, MA"
+    },
+    {
+      "number": 20696,
+      "name": "Uxbridge Techtonics",
+      "city": "Uxbridge",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2021,
+      "place": "Uxbridge, MA"
     },
     {
       "number": 20701,
@@ -5003,6 +7403,24 @@
       "place": "Shrub Oak, NY"
     },
     {
+      "number": 20763,
+      "name": "Iron Lions",
+      "city": "Lincoln",
+      "state": "RI",
+      "region": "USRI",
+      "rookie_year": 2021,
+      "place": "Lincoln, RI"
+    },
+    {
+      "number": 20772,
+      "name": "Patriots 3901",
+      "city": "Lincoln",
+      "state": "RI",
+      "region": "USRI",
+      "rookie_year": 2021,
+      "place": "Lincoln, RI"
+    },
+    {
       "number": 20789,
       "name": "Paranoid Androids On Steroids",
       "city": "Bronx",
@@ -5048,6 +7466,15 @@
       "place": "North Dighton, MA"
     },
     {
+      "number": 20841,
+      "name": "Peekskill Pride #1",
+      "city": "Peekskill",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2021,
+      "place": "Peekskill, NY"
+    },
+    {
       "number": 20842,
       "name": "Hilda the Builda",
       "city": "Greenland",
@@ -5064,6 +7491,42 @@
       "region": "USNJ",
       "rookie_year": 2021,
       "place": "Tenafly, NJ"
+    },
+    {
+      "number": 20910,
+      "name": "Buzz Kill",
+      "city": "Andover",
+      "state": "NH",
+      "region": "USNH",
+      "rookie_year": 2021,
+      "place": "Andover, NH"
+    },
+    {
+      "number": 21226,
+      "name": "RoboRaiders",
+      "city": "Hillsborough",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2022,
+      "place": "Hillsborough, NJ"
+    },
+    {
+      "number": 21236,
+      "name": "Sample Text",
+      "city": "Salem",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2022,
+      "place": "Salem, MA"
+    },
+    {
+      "number": 21302,
+      "name": "HCS Robotics (CLEOB@ya)",
+      "city": "Hamilton",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2022,
+      "place": "Hamilton, NY"
     },
     {
       "number": 21324,
@@ -5093,6 +7556,15 @@
       "place": "Pittsburgh, PA"
     },
     {
+      "number": 21364,
+      "name": "Try",
+      "city": "York",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2022,
+      "place": "York, PA"
+    },
+    {
       "number": 21377,
       "name": "Botsworth",
       "city": "Brooklyn",
@@ -5120,6 +7592,33 @@
       "place": "Westerly, RI"
     },
     {
+      "number": 21428,
+      "name": "Silver Eagles",
+      "city": "New Rochelle",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2022,
+      "place": "New Rochelle, NY"
+    },
+    {
+      "number": 21429,
+      "name": "Golden Eagles",
+      "city": "New Rochelle",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2022,
+      "place": "New Rochelle, NY"
+    },
+    {
+      "number": 21437,
+      "name": "Terminal Velocity",
+      "city": "Bethlehem",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2022,
+      "place": "Bethlehem, PA"
+    },
+    {
       "number": 21464,
       "name": "Ramaz Rambots",
       "city": "New York",
@@ -5136,6 +7635,24 @@
       "region": "USNJ",
       "rookie_year": 2022,
       "place": "Elmer, NJ"
+    },
+    {
+      "number": 21577,
+      "name": "Bulldog Robotics",
+      "city": "Burlington",
+      "state": "VT",
+      "region": "USVT",
+      "rookie_year": 2022,
+      "place": "Burlington, VT"
+    },
+    {
+      "number": 21580,
+      "name": "Warwick Wildcats Robotics",
+      "city": "Warwick",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2022,
+      "place": "Warwick, NY"
     },
     {
       "number": 21598,
@@ -5219,6 +7736,15 @@
       "place": "Nashua, NH"
     },
     {
+      "number": 21690,
+      "name": "Power Up",
+      "city": "Forest Hills",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2022,
+      "place": "Forest Hills, NY"
+    },
+    {
       "number": 21727,
       "name": "BattleCorns",
       "city": "Exton",
@@ -5237,6 +7763,15 @@
       "place": "Exton, PA"
     },
     {
+      "number": 21767,
+      "name": "Quadra",
+      "city": "Edison",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2022,
+      "place": "Edison, NJ"
+    },
+    {
       "number": 21782,
       "name": "GRIFFINATORS",
       "city": "Braintree",
@@ -5244,6 +7779,15 @@
       "region": "USMA",
       "rookie_year": 2022,
       "place": "Braintree, MA"
+    },
+    {
+      "number": 21807,
+      "name": "INCINERATORS",
+      "city": "Edison",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2022,
+      "place": "Edison, NJ"
     },
     {
       "number": 21852,
@@ -5300,6 +7844,42 @@
       "place": "Worcester, MA"
     },
     {
+      "number": 22050,
+      "name": "Pirate Robotics",
+      "city": "Egg Harbor City",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2022,
+      "place": "Egg Harbor City, NJ"
+    },
+    {
+      "number": 22053,
+      "name": "Liberty Robotics",
+      "city": "New York",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2022,
+      "place": "New York, NY"
+    },
+    {
+      "number": 22059,
+      "name": "Overclocked",
+      "city": "Florence",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2022,
+      "place": "Florence, MA"
+    },
+    {
+      "number": 22156,
+      "name": "Robo Titans",
+      "city": "Warwick",
+      "state": "RI",
+      "region": "USRI",
+      "rookie_year": 2022,
+      "place": "Warwick, RI"
+    },
+    {
       "number": 22166,
       "name": "Main Street Boulders",
       "city": "New York",
@@ -5309,6 +7889,51 @@
       "place": "New York, NY"
     },
     {
+      "number": 22186,
+      "name": "Knights",
+      "city": "Brooklyn",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2022,
+      "place": "Brooklyn, NY"
+    },
+    {
+      "number": 22205,
+      "name": "Sweet n' Sour",
+      "city": "Long Island City",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2022,
+      "place": "Long Island City, NY"
+    },
+    {
+      "number": 22211,
+      "name": "Gear Shift",
+      "city": "Long Island City",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2022,
+      "place": "Long Island City, NY"
+    },
+    {
+      "number": 22219,
+      "name": "MORT JR",
+      "city": "Budd Lake",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2022,
+      "place": "Budd Lake, NJ"
+    },
+    {
+      "number": 22240,
+      "name": "Rough Estimate",
+      "city": "Trumansburg",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2022,
+      "place": "Trumansburg, NY"
+    },
+    {
       "number": 22261,
       "name": "Hornet Blue",
       "city": "Holmdel",
@@ -5316,6 +7941,24 @@
       "region": "USNJ",
       "rookie_year": 2022,
       "place": "Holmdel, NJ"
+    },
+    {
+      "number": 22262,
+      "name": "Cyber Crusaders",
+      "city": "Bronx",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2022,
+      "place": "Bronx, NY"
+    },
+    {
+      "number": 22277,
+      "name": "Deep Fried Wires",
+      "city": "Cambridge",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2022,
+      "place": "Cambridge, NY"
     },
     {
       "number": 22279,
@@ -5329,6 +7972,33 @@
     {
       "number": 22280,
       "name": "Crash Landing",
+      "city": "Philadelphia",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2022,
+      "place": "Philadelphia, PA"
+    },
+    {
+      "number": 22281,
+      "name": "SLAM Chowder",
+      "city": "Philadelphia",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2022,
+      "place": "Philadelphia, PA"
+    },
+    {
+      "number": 22284,
+      "name": "SLAM GERP",
+      "city": "Philadelphia",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2022,
+      "place": "Philadelphia, PA"
+    },
+    {
+      "number": 22285,
+      "name": "SLAMbastian",
       "city": "Philadelphia",
       "state": "PA",
       "region": "USPA",
@@ -5390,6 +8060,15 @@
       "place": "Robbinsville, NJ"
     },
     {
+      "number": 22358,
+      "name": "Big Data",
+      "city": "Forest Hills",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2022,
+      "place": "Forest Hills, NY"
+    },
+    {
       "number": 22359,
       "name": "Overclock",
       "city": "Forest Hills",
@@ -5408,6 +8087,42 @@
       "place": "Forest Hills, NY"
     },
     {
+      "number": 22435,
+      "name": "Cyber-Tooth Robotics",
+      "city": "Long Island City",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2022,
+      "place": "Long Island City, NY"
+    },
+    {
+      "number": 22437,
+      "name": "Demon Dogs",
+      "city": "Long Island City",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2022,
+      "place": "Long Island City, NY"
+    },
+    {
+      "number": 22482,
+      "name": "Hippobotamus",
+      "city": "Mechanicville",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2022,
+      "place": "Mechanicville, NY"
+    },
+    {
+      "number": 22489,
+      "name": "Galactic Narwhal Chicken Effect - Diamond",
+      "city": "Weston",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2022,
+      "place": "Weston, MA"
+    },
+    {
       "number": 22504,
       "name": "Blue Phoenix Robotics",
       "city": "South Orange",
@@ -5417,6 +8132,24 @@
       "place": "South Orange, NJ"
     },
     {
+      "number": 22518,
+      "name": "The Quackers",
+      "city": "New York",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2022,
+      "place": "New York, NY"
+    },
+    {
+      "number": 22519,
+      "name": "Riptide Riders",
+      "city": "Brooklyn",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2022,
+      "place": "Brooklyn, NY"
+    },
+    {
       "number": 22521,
       "name": "Snyder MS Wingin' It",
       "city": "Bensalem",
@@ -5424,6 +8157,15 @@
       "region": "USPA",
       "rookie_year": 2022,
       "place": "Bensalem, PA"
+    },
+    {
+      "number": 22612,
+      "name": "New Wave",
+      "city": "Syracuse",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2022,
+      "place": "Syracuse, NY"
     },
     {
       "number": 22618,
@@ -5462,6 +8204,33 @@
       "place": "Hoboken, NJ"
     },
     {
+      "number": 22716,
+      "name": "Team R.M.D.S.",
+      "city": "Bronx",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2022,
+      "place": "Bronx, NY"
+    },
+    {
+      "number": 22756,
+      "name": "RoboKnights",
+      "city": "East Providence",
+      "state": "RI",
+      "region": "USRI",
+      "rookie_year": 2022,
+      "place": "East Providence, RI"
+    },
+    {
+      "number": 22760,
+      "name": "HB Cavaliers",
+      "city": "Hollis",
+      "state": "NH",
+      "region": "USNH",
+      "rookie_year": 2022,
+      "place": "Hollis, NH"
+    },
+    {
       "number": 22762,
       "name": "SRA Electron",
       "city": "Pawtucket",
@@ -5469,6 +8238,15 @@
       "region": "USRI",
       "rookie_year": 2022,
       "place": "Pawtucket, RI"
+    },
+    {
+      "number": 22782,
+      "name": "SPARKLE SLAYERS",
+      "city": "Bronx",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2022,
+      "place": "Bronx, NY"
     },
     {
       "number": 22810,
@@ -5487,6 +8265,15 @@
       "region": "USPA",
       "rookie_year": 2022,
       "place": "Lancaster, PA"
+    },
+    {
+      "number": 22990,
+      "name": "Holy Family Academy",
+      "city": "Manchester",
+      "state": "NH",
+      "region": "USNH",
+      "rookie_year": 2022,
+      "place": "Manchester, NH"
     },
     {
       "number": 23076,
@@ -5534,6 +8321,42 @@
       "place": "New York, NY"
     },
     {
+      "number": 23215,
+      "name": "RoboLegion",
+      "city": "Hillsborough",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2023,
+      "place": "Hillsborough, NJ"
+    },
+    {
+      "number": 23216,
+      "name": "Cybernauts",
+      "city": "Hillsborough",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2023,
+      "place": "Hillsborough, NJ"
+    },
+    {
+      "number": 23225,
+      "name": "Metro Joules",
+      "city": "Forest Hills",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2023,
+      "place": "Forest Hills, NY"
+    },
+    {
+      "number": 23227,
+      "name": "Escape Velocity",
+      "city": "Bethlehem",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2023,
+      "place": "Bethlehem, PA"
+    },
+    {
       "number": 23248,
       "name": "Cosmic Loop",
       "city": "Longmeadow",
@@ -5568,6 +8391,15 @@
       "region": "USNJ",
       "rookie_year": 2023,
       "place": "Hackettstown, NJ"
+    },
+    {
+      "number": 23275,
+      "name": "Gigabots",
+      "city": "Brooklyn",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2023,
+      "place": "Brooklyn, NY"
     },
     {
       "number": 23286,
@@ -5633,6 +8465,60 @@
       "place": "Fair Lawn, NJ"
     },
     {
+      "number": 23403,
+      "name": "C{}de C<>nduct<>rs",
+      "city": "Forest Hills",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2023,
+      "place": "Forest Hills, NY"
+    },
+    {
+      "number": 23409,
+      "name": "Apeiro",
+      "city": "Bronx",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2023,
+      "place": "Bronx, NY"
+    },
+    {
+      "number": 23436,
+      "name": "Talos",
+      "city": "Staten Island",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2023,
+      "place": "Staten Island, NY"
+    },
+    {
+      "number": 23437,
+      "name": "Helios",
+      "city": "Staten Island",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2023,
+      "place": "Staten Island, NY"
+    },
+    {
+      "number": 23438,
+      "name": "Ares",
+      "city": "Staten Island",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2023,
+      "place": "Staten Island, NY"
+    },
+    {
+      "number": 23457,
+      "name": "Sacred Heart Academy Lady Bots-US",
+      "city": "Bryn Mawr",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2023,
+      "place": "Bryn Mawr, PA"
+    },
+    {
       "number": 23461,
       "name": "Isotech",
       "city": "Boston",
@@ -5667,6 +8553,15 @@
       "region": "USNJ",
       "rookie_year": 2023,
       "place": "Princeton Junction, NJ"
+    },
+    {
+      "number": 23513,
+      "name": "I.N.T. Robotics",
+      "city": "New York",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2023,
+      "place": "New York, NY"
     },
     {
       "number": 23535,
@@ -5705,6 +8600,15 @@
       "place": "Boonville, NY"
     },
     {
+      "number": 23575,
+      "name": "Probots 2022 FTC",
+      "city": "Edison",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2023,
+      "place": "Edison, NJ"
+    },
+    {
       "number": 23598,
       "name": "Warwick Warrior Pretzels",
       "city": "Lititz",
@@ -5723,6 +8627,15 @@
       "place": "Revere, MA"
     },
     {
+      "number": 23650,
+      "name": "MillburnX",
+      "city": "Millburn",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2023,
+      "place": "Millburn, NJ"
+    },
+    {
       "number": 23658,
       "name": "Robodevils",
       "city": "Durham",
@@ -5732,6 +8645,15 @@
       "place": "Durham, CT"
     },
     {
+      "number": 23671,
+      "name": "Salisbury Elk Lick FTC",
+      "city": "Salisbury",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2023,
+      "place": "Salisbury, PA"
+    },
+    {
       "number": 23694,
       "name": "GEARHEADS",
       "city": "Ramsey",
@@ -5739,6 +8661,15 @@
       "region": "USNJ",
       "rookie_year": 2023,
       "place": "Ramsey, NJ"
+    },
+    {
+      "number": 23701,
+      "name": "The Saints",
+      "city": "Fitchburg",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2023,
+      "place": "Fitchburg, MA"
     },
     {
       "number": 23707,
@@ -5768,6 +8699,15 @@
       "place": "Closter, NJ"
     },
     {
+      "number": 23742,
+      "name": "Insufficient Power",
+      "city": "South Burlington",
+      "state": "VT",
+      "region": "USVT",
+      "rookie_year": 2023,
+      "place": "South Burlington, VT"
+    },
+    {
       "number": 23743,
       "name": "Hornet Hive",
       "city": "Holmdel",
@@ -5795,6 +8735,15 @@
       "place": "Edison, NJ"
     },
     {
+      "number": 23789,
+      "name": "Rust Belt Robotics",
+      "city": "Buffalo",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2023,
+      "place": "Buffalo, NY"
+    },
+    {
       "number": 23790,
       "name": "Ride the Robot",
       "city": "Dover",
@@ -5804,6 +8753,51 @@
       "place": "Dover, NH"
     },
     {
+      "number": 23806,
+      "name": "ATOM",
+      "city": "New York",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2023,
+      "place": "New York, NY"
+    },
+    {
+      "number": 23811,
+      "name": "Prometheus",
+      "city": "Staten Island",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2023,
+      "place": "Staten Island, NY"
+    },
+    {
+      "number": 23850,
+      "name": "Maximum Velocity",
+      "city": "Bethlehem",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2023,
+      "place": "Bethlehem, PA"
+    },
+    {
+      "number": 23851,
+      "name": "Milliones Mini Mechatronic Wildcats",
+      "city": "Pittsburgh",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2023,
+      "place": "Pittsburgh, PA"
+    },
+    {
+      "number": 23852,
+      "name": "3 Rivers Hydra",
+      "city": "Pittsburgh",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2023,
+      "place": "Pittsburgh, PA"
+    },
+    {
       "number": 23872,
       "name": "The Hippopotomonstrosesquipedalian Tetartocephalic BrainSTEM Robotics Team",
       "city": "Baden",
@@ -5811,6 +8805,24 @@
       "region": "USPA",
       "rookie_year": 2023,
       "place": "Baden, PA"
+    },
+    {
+      "number": 23882,
+      "name": "Peregrine Spirit",
+      "city": "Bristol",
+      "state": "CT",
+      "region": "USCT",
+      "rookie_year": 2023,
+      "place": "Bristol, CT"
+    },
+    {
+      "number": 23915,
+      "name": "Metallic Panthers",
+      "city": "New York",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2023,
+      "place": "New York, NY"
     },
     {
       "number": 23932,
@@ -5831,6 +8843,15 @@
       "place": "Watchung, NJ"
     },
     {
+      "number": 23972,
+      "name": "The Metal Moose v.1",
+      "city": "West Chester",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2023,
+      "place": "West Chester, PA"
+    },
+    {
       "number": 23983,
       "name": "Electric Eagles",
       "city": "New York",
@@ -5840,6 +8861,15 @@
       "place": "New York, NY"
     },
     {
+      "number": 23984,
+      "name": "AMSA Eagles Blue",
+      "city": "Marlborough",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2023,
+      "place": "Marlborough, MA"
+    },
+    {
       "number": 23985,
       "name": "HARE BEARS",
       "city": "Amherst",
@@ -5847,6 +8877,24 @@
       "region": "USMA",
       "rookie_year": 2023,
       "place": "Amherst, MA"
+    },
+    {
+      "number": 24018,
+      "name": "Avant-Garde",
+      "city": "Nashua",
+      "state": "NH",
+      "region": "USNH",
+      "rookie_year": 2023,
+      "place": "Nashua, NH"
+    },
+    {
+      "number": 24020,
+      "name": "The Kiski School",
+      "city": "Saltsburg",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2023,
+      "place": "Saltsburg, PA"
     },
     {
       "number": 24027,
@@ -5867,6 +8915,15 @@
       "place": "Long Island City, NY"
     },
     {
+      "number": 24043,
+      "name": "Magnabots",
+      "city": "Union Springs",
+      "state": "NY",
+      "region": "USARL",
+      "rookie_year": 2023,
+      "place": "Union Springs, NY"
+    },
+    {
       "number": 24047,
       "name": "Roboctopus",
       "city": "New York",
@@ -5883,6 +8940,15 @@
       "region": "USPA",
       "rookie_year": 2023,
       "place": "Southampton, PA"
+    },
+    {
+      "number": 24096,
+      "name": "2 Train Robotics",
+      "city": "Bronx",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2023,
+      "place": "Bronx, NY"
     },
     {
       "number": 24107,
@@ -5912,6 +8978,15 @@
       "place": "Atlantic City, NJ"
     },
     {
+      "number": 24144,
+      "name": "ForgeX Robotics",
+      "city": "Pine Forge",
+      "state": "PA",
+      "region": "USARL",
+      "rookie_year": 2023,
+      "place": "Pine Forge, PA"
+    },
+    {
       "number": 24173,
       "name": "E.Z. (Electric Zebras)",
       "city": "Concord",
@@ -5928,6 +9003,15 @@
       "region": "USNYEX",
       "rookie_year": 2023,
       "place": "Chatham, NY"
+    },
+    {
+      "number": 24184,
+      "name": "iSTEAM",
+      "city": "Burlington",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2023,
+      "place": "Burlington, MA"
     },
     {
       "number": 24217,
@@ -5966,6 +9050,24 @@
       "place": "Revere, MA"
     },
     {
+      "number": 24284,
+      "name": "Hammerhead Turtles",
+      "city": "Revere",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2023,
+      "place": "Revere, MA"
+    },
+    {
+      "number": 24285,
+      "name": "BananaBots",
+      "city": "Revere",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2023,
+      "place": "Revere, MA"
+    },
+    {
       "number": 24318,
       "name": "Bubbles the blue axylotyl",
       "city": "State College",
@@ -5975,6 +9077,33 @@
       "place": "State College, PA"
     },
     {
+      "number": 24346,
+      "name": "Sweet Resistance",
+      "city": "Bayonne",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2023,
+      "place": "Bayonne, NJ"
+    },
+    {
+      "number": 24350,
+      "name": "ROBOT 404",
+      "city": "Plattsburgh",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2023,
+      "place": "Plattsburgh, NY"
+    },
+    {
+      "number": 24353,
+      "name": "Servo Breaker",
+      "city": "Nashua",
+      "state": "NH",
+      "region": "USNH",
+      "rookie_year": 2023,
+      "place": "Nashua, NH"
+    },
+    {
       "number": 24357,
       "name": "Teleop Tigers",
       "city": "Lexington",
@@ -5982,6 +9111,33 @@
       "region": "USMA",
       "rookie_year": 2023,
       "place": "Lexington, MA"
+    },
+    {
+      "number": 24410,
+      "name": "Everett High School FTC",
+      "city": "Everett",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2023,
+      "place": "Everett, MA"
+    },
+    {
+      "number": 24413,
+      "name": "GNCE Argon",
+      "city": "Weston",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2023,
+      "place": "Weston, MA"
+    },
+    {
+      "number": 24415,
+      "name": "Taunton High Robotics",
+      "city": "Taunton",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2023,
+      "place": "Taunton, MA"
     },
     {
       "number": 24416,
@@ -6002,6 +9158,15 @@
       "place": "Piscataway, NJ"
     },
     {
+      "number": 24467,
+      "name": "Robodemons",
+      "city": "Durham",
+      "state": "CT",
+      "region": "USCT",
+      "rookie_year": 2023,
+      "place": "Durham, CT"
+    },
+    {
       "number": 24483,
       "name": "Failure Management",
       "city": "King of Prussia",
@@ -6020,6 +9185,15 @@
       "place": "Hollis, NH"
     },
     {
+      "number": 24507,
+      "name": "Beak Bots",
+      "city": "Barrington",
+      "state": "RI",
+      "region": "USRI",
+      "rookie_year": 2023,
+      "place": "Barrington, RI"
+    },
+    {
       "number": 24513,
       "name": "APEX",
       "city": "Exeter",
@@ -6027,6 +9201,15 @@
       "region": "USNH",
       "rookie_year": 2023,
       "place": "Exeter, NH"
+    },
+    {
+      "number": 24517,
+      "name": "Potato Box",
+      "city": "Windham",
+      "state": "NH",
+      "region": "USNH",
+      "rookie_year": 2023,
+      "place": "Windham, NH"
     },
     {
       "number": 24526,
@@ -6047,6 +9230,24 @@
       "place": "Edison, NJ"
     },
     {
+      "number": 24560,
+      "name": "FontBots",
+      "city": "Brooklyn",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2023,
+      "place": "Brooklyn, NY"
+    },
+    {
+      "number": 24595,
+      "name": "The Admirals",
+      "city": "Lagrangeville",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2023,
+      "place": "Lagrangeville, NY"
+    },
+    {
       "number": 24605,
       "name": "Phantom Robotics",
       "city": "Westford",
@@ -6054,6 +9255,33 @@
       "region": "USMA",
       "rookie_year": 2023,
       "place": "Westford, MA"
+    },
+    {
+      "number": 24611,
+      "name": "Robothletes",
+      "city": "Farmington",
+      "state": "CT",
+      "region": "USCT",
+      "rookie_year": 2023,
+      "place": "Farmington, CT"
+    },
+    {
+      "number": 24625,
+      "name": "HYDRA",
+      "city": "Bronx",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2023,
+      "place": "Bronx, NY"
+    },
+    {
+      "number": 24651,
+      "name": "RaidX2",
+      "city": "Nutley",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2023,
+      "place": "Nutley, NJ"
     },
     {
       "number": 24661,
@@ -6092,6 +9320,33 @@
       "place": "Whitinsville, MA"
     },
     {
+      "number": 24758,
+      "name": "Robo-Cardinals",
+      "city": "Fort Washington",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2023,
+      "place": "Fort Washington, PA"
+    },
+    {
+      "number": 24761,
+      "name": "ENGINE MINDS BLASS ROBOTICS",
+      "city": "East Hartford",
+      "state": "CT",
+      "region": "USCT",
+      "rookie_year": 2023,
+      "place": "East Hartford, CT"
+    },
+    {
+      "number": 24782,
+      "name": "Robo Raiders II",
+      "city": "Montpelier",
+      "state": "VT",
+      "region": "USVT",
+      "rookie_year": 2023,
+      "place": "Montpelier, VT"
+    },
+    {
       "number": 24787,
       "name": "AMSA Eagles Orange",
       "city": "Marlborough",
@@ -6101,6 +9356,15 @@
       "place": "Marlborough, MA"
     },
     {
+      "number": 24847,
+      "name": "Ellipse",
+      "city": "Merrimack",
+      "state": "NH",
+      "region": "USNH",
+      "rookie_year": 2023,
+      "place": "Merrimack, NH"
+    },
+    {
       "number": 24998,
       "name": "Robot with a Smile",
       "city": "Goffstown",
@@ -6108,6 +9372,15 @@
       "region": "USNH",
       "rookie_year": 2023,
       "place": "Goffstown, NH"
+    },
+    {
+      "number": 25003,
+      "name": "St. Mary's Makers",
+      "city": "Manhasset",
+      "state": "NY",
+      "region": "USNYLI",
+      "rookie_year": 2023,
+      "place": "Manhasset, NY"
     },
     {
       "number": 25016,
@@ -6137,6 +9410,15 @@
       "place": "Cortlandt Manor, NY"
     },
     {
+      "number": 25123,
+      "name": "Windward Robotics",
+      "city": "Cape Ann",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2023,
+      "place": "Cape Ann, MA"
+    },
+    {
       "number": 25237,
       "name": "Real Steel",
       "city": "Farmington",
@@ -6155,6 +9437,15 @@
       "place": "Lowville, NY"
     },
     {
+      "number": 25542,
+      "name": "The Resistance",
+      "city": "Wolfeboro",
+      "state": "NH",
+      "region": "USNH",
+      "rookie_year": 2023,
+      "place": "Wolfeboro, NH"
+    },
+    {
       "number": 25633,
       "name": "The Montrobots",
       "city": "Medfield",
@@ -6162,6 +9453,15 @@
       "region": "USMA",
       "rookie_year": 2024,
       "place": "Medfield, MA"
+    },
+    {
+      "number": 25635,
+      "name": "Halsey Bulldogs Robotics Team",
+      "city": "Forest Hills",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2024,
+      "place": "Forest Hills, NY"
     },
     {
       "number": 25649,
@@ -6191,6 +9491,15 @@
       "place": "Harmony, PA"
     },
     {
+      "number": 25661,
+      "name": "Beyond Grad Greyhounds",
+      "city": "Monessen",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2024,
+      "place": "Monessen, PA"
+    },
+    {
       "number": 25671,
       "name": "Purple Dragon",
       "city": "Souderton",
@@ -6207,6 +9516,15 @@
       "region": "USNH",
       "rookie_year": 2024,
       "place": "Greenfield, NH"
+    },
+    {
+      "number": 25687,
+      "name": "TechnoBolts",
+      "city": "Fairfield",
+      "state": "CT",
+      "region": "USCT",
+      "rookie_year": 2024,
+      "place": "Fairfield, CT"
     },
     {
       "number": 25700,
@@ -6236,6 +9554,15 @@
       "place": "Scarsdale, NY"
     },
     {
+      "number": 25708,
+      "name": "Deus Et Machina",
+      "city": "Hyde Park",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2024,
+      "place": "Hyde Park, MA"
+    },
+    {
       "number": 25710,
       "name": "ALPINE ROBOTICS",
       "city": "Princeton Junction",
@@ -6252,6 +9579,15 @@
       "region": "USMA",
       "rookie_year": 2024,
       "place": "Ashland, MA"
+    },
+    {
+      "number": 25728,
+      "name": "Lynx",
+      "city": "West Newbury",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2024,
+      "place": "West Newbury, MA"
     },
     {
       "number": 25730,
@@ -6272,6 +9608,15 @@
       "place": "Jersey City, NJ"
     },
     {
+      "number": 25738,
+      "name": "Delta",
+      "city": "New York",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2024,
+      "place": "New York, NY"
+    },
+    {
       "number": 25795,
       "name": "Architechs",
       "city": "Mechanicsburg",
@@ -6290,6 +9635,15 @@
       "place": "Center Valley, PA"
     },
     {
+      "number": 25849,
+      "name": "Beluga Bots",
+      "city": "Princeton Junction",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2024,
+      "place": "Princeton Junction, NJ"
+    },
+    {
       "number": 25856,
       "name": "Shapleigh Cyber Sharks",
       "city": "Kittery",
@@ -6297,6 +9651,15 @@
       "region": "USNH",
       "rookie_year": 2024,
       "place": "Kittery, ME"
+    },
+    {
+      "number": 25898,
+      "name": "Dublin Robocats",
+      "city": "Dublin",
+      "state": "NH",
+      "region": "USNH",
+      "rookie_year": 2024,
+      "place": "Dublin, NH"
     },
     {
       "number": 25907,
@@ -6308,6 +9671,15 @@
       "place": "Edison, NJ"
     },
     {
+      "number": 25978,
+      "name": "Aerospace RoboJets",
+      "city": "Windsor",
+      "state": "CT",
+      "region": "USCT",
+      "rookie_year": 2024,
+      "place": "Windsor, CT"
+    },
+    {
       "number": 26001,
       "name": "V-HOWL Prime",
       "city": "East Lansdowne",
@@ -6315,6 +9687,24 @@
       "region": "USPA",
       "rookie_year": 2024,
       "place": "East Lansdowne, PA"
+    },
+    {
+      "number": 26014,
+      "name": "Ninjabotics",
+      "city": "Edison",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2024,
+      "place": "Edison, NJ"
+    },
+    {
+      "number": 26029,
+      "name": "GummiBears",
+      "city": "Foxboro",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2024,
+      "place": "Foxboro, MA"
     },
     {
       "number": 26035,
@@ -6326,6 +9716,15 @@
       "place": "Columbus, NJ"
     },
     {
+      "number": 26039,
+      "name": "αsymptote",
+      "city": "Woodbury",
+      "state": "NY",
+      "region": "USNYLI",
+      "rookie_year": 2024,
+      "place": "Woodbury, NY"
+    },
+    {
       "number": 26050,
       "name": "CyberSurge",
       "city": "Southington",
@@ -6333,6 +9732,15 @@
       "region": "USCT",
       "rookie_year": 2024,
       "place": "Southington, CT"
+    },
+    {
+      "number": 26065,
+      "name": "HSHCS Trojans",
+      "city": "New York",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2024,
+      "place": "New York, NY"
     },
     {
       "number": 26103,
@@ -6344,6 +9752,15 @@
       "place": "Jersey City, NJ"
     },
     {
+      "number": 26111,
+      "name": "GNCE Electrified Chickens",
+      "city": "Weston",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2024,
+      "place": "Weston, MA"
+    },
+    {
       "number": 26112,
       "name": "GNCE Organized Anarchy",
       "city": "Weston",
@@ -6353,6 +9770,42 @@
       "place": "Weston, MA"
     },
     {
+      "number": 26125,
+      "name": "MLK JR. BLASS ROBOTICS",
+      "city": "Hartford",
+      "state": "CT",
+      "region": "USCT",
+      "rookie_year": 2024,
+      "place": "Hartford, CT"
+    },
+    {
+      "number": 26148,
+      "name": "T-town TetraBots",
+      "city": "Torrington",
+      "state": "CT",
+      "region": "USCT",
+      "rookie_year": 2024,
+      "place": "Torrington, CT"
+    },
+    {
+      "number": 26152,
+      "name": "InOrbit",
+      "city": "East Williston",
+      "state": "NY",
+      "region": "USNYLI",
+      "rookie_year": 2024,
+      "place": "East Williston, NY"
+    },
+    {
+      "number": 26155,
+      "name": "MacDuffie Mechanical Mustangs",
+      "city": "Granby",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2024,
+      "place": "Granby, MA"
+    },
+    {
       "number": 26168,
       "name": "Rochambotics",
       "city": "White Plains",
@@ -6360,6 +9813,15 @@
       "region": "USNYEX",
       "rookie_year": 2024,
       "place": "White Plains, NY"
+    },
+    {
+      "number": 26178,
+      "name": "HARTFORD BLASS ROBOTICS TEAM",
+      "city": "Hartford",
+      "state": "CT",
+      "region": "USCT",
+      "rookie_year": 2024,
+      "place": "Hartford, CT"
     },
     {
       "number": 26181,
@@ -6398,6 +9860,15 @@
       "place": "Springfield, MA"
     },
     {
+      "number": 26224,
+      "name": "Inox",
+      "city": "Edison",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2024,
+      "place": "Edison, NJ"
+    },
+    {
       "number": 26234,
       "name": "Logicool",
       "city": "York",
@@ -6405,6 +9876,33 @@
       "region": "USPA",
       "rookie_year": 2024,
       "place": "York, PA"
+    },
+    {
+      "number": 26270,
+      "name": "Astro Box",
+      "city": "Windham",
+      "state": "NH",
+      "region": "USNH",
+      "rookie_year": 2024,
+      "place": "Windham, NH"
+    },
+    {
+      "number": 26274,
+      "name": "Not In Use",
+      "city": "Dover",
+      "state": "NH",
+      "region": "USNH",
+      "rookie_year": 2024,
+      "place": "Dover, NH"
+    },
+    {
+      "number": 26341,
+      "name": "Tech Dynamite",
+      "city": "Parsippany",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2024,
+      "place": "Parsippany, NJ"
     },
     {
       "number": 26413,
@@ -6425,6 +9923,15 @@
       "place": "Geigertown, PA"
     },
     {
+      "number": 26424,
+      "name": "Collegiate Dutchmen MS",
+      "city": "New York",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2024,
+      "place": "New York, NY"
+    },
+    {
       "number": 26427,
       "name": "Metcaticals",
       "city": "Old Westbury",
@@ -6434,6 +9941,51 @@
       "place": "Old Westbury, NY"
     },
     {
+      "number": 26432,
+      "name": "Southeast Delco Knights (MS)",
+      "city": "Glenolden",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2024,
+      "place": "Glenolden, PA"
+    },
+    {
+      "number": 26444,
+      "name": "GearShifters",
+      "city": "Morris Plains",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2024,
+      "place": "Morris Plains, NJ"
+    },
+    {
+      "number": 26446,
+      "name": "ROGO Rose",
+      "city": "Upper St Clair",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2024,
+      "place": "Upper St Clair, PA"
+    },
+    {
+      "number": 26453,
+      "name": "MechAgoge",
+      "city": "Burnt Hills",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2024,
+      "place": "Burnt Hills, NY"
+    },
+    {
+      "number": 26455,
+      "name": "Thundering Roar",
+      "city": "Hartford",
+      "state": "CT",
+      "region": "USCT",
+      "rookie_year": 2024,
+      "place": "Hartford, CT"
+    },
+    {
       "number": 26459,
       "name": "ECR Third Power",
       "city": "North Haledon",
@@ -6441,6 +9993,15 @@
       "region": "USNJ",
       "rookie_year": 2024,
       "place": "North Haledon, NJ"
+    },
+    {
+      "number": 26527,
+      "name": "Speed of the Bombers",
+      "city": "Bloomfield",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2024,
+      "place": "Bloomfield, NY"
     },
     {
       "number": 26532,
@@ -6461,6 +10022,15 @@
       "place": "Wayland, NY"
     },
     {
+      "number": 26545,
+      "name": "Winners' Circle Circuit Breakers",
+      "city": "Providence",
+      "state": "RI",
+      "region": "USRI",
+      "rookie_year": 2024,
+      "place": "Providence, RI"
+    },
+    {
       "number": 26566,
       "name": "Teletubbies",
       "city": "Kennett Square",
@@ -6468,6 +10038,24 @@
       "region": "USPA",
       "rookie_year": 2024,
       "place": "Kennett Square, PA"
+    },
+    {
+      "number": 26576,
+      "name": "RoboHornets",
+      "city": "North Reading",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2024,
+      "place": "North Reading, MA"
+    },
+    {
+      "number": 26582,
+      "name": "Overclocked Robotics",
+      "city": "Dallastown",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2024,
+      "place": "Dallastown, PA"
     },
     {
       "number": 26594,
@@ -6479,6 +10067,15 @@
       "place": "Staten Island, NY"
     },
     {
+      "number": 26623,
+      "name": "Be the B's",
+      "city": "Melrose",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2024,
+      "place": "Melrose, MA"
+    },
+    {
       "number": 26624,
       "name": "Metal Pretzel",
       "city": "Melrose",
@@ -6486,6 +10083,15 @@
       "region": "USMA",
       "rookie_year": 2024,
       "place": "Melrose, MA"
+    },
+    {
+      "number": 26634,
+      "name": "Cor(e)2 Tech",
+      "city": "Reading",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2024,
+      "place": "Reading, PA"
     },
     {
       "number": 26656,
@@ -6497,6 +10103,24 @@
       "place": "Suffield, CT"
     },
     {
+      "number": 26668,
+      "name": "Argosy Navigators",
+      "city": "Fall River",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2024,
+      "place": "Fall River, MA"
+    },
+    {
+      "number": 26720,
+      "name": "Bulls",
+      "city": "New York",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2024,
+      "place": "New York, NY"
+    },
+    {
       "number": 26726,
       "name": "Lamoille Robotics",
       "city": "Hyde Park",
@@ -6504,6 +10128,24 @@
       "region": "USVT",
       "rookie_year": 2024,
       "place": "Hyde Park, VT"
+    },
+    {
+      "number": 26730,
+      "name": "Panther B0Ts",
+      "city": "Roxbury Crossing",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2024,
+      "place": "Roxbury Crossing, MA"
+    },
+    {
+      "number": 26844,
+      "name": "Newton",
+      "city": "Newton",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2024,
+      "place": "Newton, MA"
     },
     {
       "number": 26867,
@@ -6533,6 +10175,15 @@
       "place": "Exton, PA"
     },
     {
+      "number": 26898,
+      "name": "Duxbury Dragonbots",
+      "city": "Duxbury",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2024,
+      "place": "Duxbury, MA"
+    },
+    {
       "number": 26910,
       "name": "Mud Head Car",
       "city": "Princeton",
@@ -6549,6 +10200,87 @@
       "region": "USNJ",
       "rookie_year": 2024,
       "place": "Riverside, NJ"
+    },
+    {
+      "number": 26986,
+      "name": "The Innovators",
+      "city": "Sewickley",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2024,
+      "place": "Sewickley, PA"
+    },
+    {
+      "number": 27003,
+      "name": "Churchill Hawks 2.0",
+      "city": "New York",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2024,
+      "place": "New York, NY"
+    },
+    {
+      "number": 27018,
+      "name": "LREI Knights",
+      "city": "New York",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2024,
+      "place": "New York, NY"
+    },
+    {
+      "number": 27032,
+      "name": "Scarlet Knightmares",
+      "city": "Rockaway",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2024,
+      "place": "Rockaway, NJ"
+    },
+    {
+      "number": 27033,
+      "name": "Tech Titans",
+      "city": "Mattapan",
+      "state": "MA",
+      "region": "USARL",
+      "rookie_year": 2024,
+      "place": "Mattapan, MA"
+    },
+    {
+      "number": 27034,
+      "name": "匚尺乇山 ㄒ乇匚卄乂",
+      "city": "Bronx",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2024,
+      "place": "Bronx, NY"
+    },
+    {
+      "number": 27037,
+      "name": "PINK SNUFFLE",
+      "city": "Bronx",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2024,
+      "place": "Bronx, NY"
+    },
+    {
+      "number": 27039,
+      "name": "Black Knights",
+      "city": "Bronx",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2024,
+      "place": "Bronx, NY"
+    },
+    {
+      "number": 27040,
+      "name": "Tech Titans",
+      "city": "Bronx",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2024,
+      "place": "Bronx, NY"
     },
     {
       "number": 27050,
@@ -6569,6 +10301,33 @@
       "place": "Vernon Rockville, CT"
     },
     {
+      "number": 27073,
+      "name": "Hillside Robotics",
+      "city": "South Kent",
+      "state": "CT",
+      "region": "USCT",
+      "rookie_year": 2024,
+      "place": "South Kent, CT"
+    },
+    {
+      "number": 27084,
+      "name": "Tech Titans",
+      "city": "Nashua",
+      "state": "NH",
+      "region": "USNH",
+      "rookie_year": 2024,
+      "place": "Nashua, NH"
+    },
+    {
+      "number": 27108,
+      "name": "Sumner RoboTigers",
+      "city": "Sullivan",
+      "state": "ME",
+      "region": null,
+      "rookie_year": 2024,
+      "place": "Sullivan, ME"
+    },
+    {
       "number": 27132,
       "name": "Raiderbots³",
       "city": "Coatesville",
@@ -6587,6 +10346,24 @@
       "place": "Brooklyn, NY"
     },
     {
+      "number": 27168,
+      "name": "RoboPhantoms",
+      "city": "Bayport",
+      "state": "NY",
+      "region": "USNYLI",
+      "rookie_year": 2024,
+      "place": "Bayport, NY"
+    },
+    {
+      "number": 27186,
+      "name": "Citizenship Atoms",
+      "city": "Liverpool",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2024,
+      "place": "Liverpool, NY"
+    },
+    {
       "number": 27239,
       "name": "West Fulton Firebots",
       "city": "West Fulton",
@@ -6596,6 +10373,15 @@
       "place": "West Fulton, NY"
     },
     {
+      "number": 27250,
+      "name": "Pixelated",
+      "city": "Chester Springs",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2024,
+      "place": "Chester Springs, PA"
+    },
+    {
       "number": 27254,
       "name": "Steel Surge",
       "city": "Kennett Square",
@@ -6603,6 +10389,24 @@
       "region": "USPA",
       "rookie_year": 2024,
       "place": "Kennett Square, PA"
+    },
+    {
+      "number": 27297,
+      "name": "Collegiate FTC 7/8 Team 2",
+      "city": "New York",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2024,
+      "place": "New York, NY"
+    },
+    {
+      "number": 27298,
+      "name": "Collegiate Dutchmen HS 2",
+      "city": "New York",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2024,
+      "place": "New York, NY"
     },
     {
       "number": 27310,
@@ -6623,6 +10427,15 @@
       "place": "Mamaroneck, NY"
     },
     {
+      "number": 27325,
+      "name": "Roxbury Prep Wolves",
+      "city": "Roxbury",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2024,
+      "place": "Roxbury, MA"
+    },
+    {
       "number": 27334,
       "name": "Monty Robotics",
       "city": "Montgomery Township",
@@ -6630,6 +10443,51 @@
       "region": "USNJ",
       "rookie_year": 2024,
       "place": "Montgomery Township, NJ"
+    },
+    {
+      "number": 27341,
+      "name": "neXus",
+      "city": "Hewlett",
+      "state": "NY",
+      "region": "USNYLI",
+      "rookie_year": 2024,
+      "place": "Hewlett, NY"
+    },
+    {
+      "number": 27354,
+      "name": "Falcons Encoded",
+      "city": "Turin",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2024,
+      "place": "Turin, NY"
+    },
+    {
+      "number": 27360,
+      "name": "Power Surge",
+      "city": "South Burlington",
+      "state": "VT",
+      "region": "USVT",
+      "rookie_year": 2024,
+      "place": "South Burlington, VT"
+    },
+    {
+      "number": 27364,
+      "name": "Battery Battalion",
+      "city": "Rome",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2024,
+      "place": "Rome, NY"
+    },
+    {
+      "number": 27368,
+      "name": "Ti Titans",
+      "city": "Canonsburg",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2024,
+      "place": "Canonsburg, PA"
     },
     {
       "number": 27369,
@@ -6643,6 +10501,42 @@
     {
       "number": 27441,
       "name": "Metallic Panthers",
+      "city": "New York",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2024,
+      "place": "New York, NY"
+    },
+    {
+      "number": 27457,
+      "name": "PHI-ters",
+      "city": "Warrington",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2024,
+      "place": "Warrington, PA"
+    },
+    {
+      "number": 27484,
+      "name": "Daedalus Dynamics",
+      "city": "Morristown",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2024,
+      "place": "Morristown, NJ"
+    },
+    {
+      "number": 27485,
+      "name": "Noctua Mechanica",
+      "city": "Lynbrook",
+      "state": "NY",
+      "region": "USNYLI",
+      "rookie_year": 2024,
+      "place": "Lynbrook, NY"
+    },
+    {
+      "number": 27499,
+      "name": "Harvest Robotics Team",
       "city": "New York",
       "state": "NY",
       "region": "USNYNY",
@@ -6668,6 +10562,15 @@
       "place": "Nashua, NH"
     },
     {
+      "number": 27552,
+      "name": "Ori-Gen",
+      "city": "Brooklyn",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2024,
+      "place": "Brooklyn, NY"
+    },
+    {
       "number": 27556,
       "name": "Starburst",
       "city": "Shirley",
@@ -6675,6 +10578,51 @@
       "region": "USMA",
       "rookie_year": 2024,
       "place": "Shirley, MA"
+    },
+    {
+      "number": 27581,
+      "name": "Valkyrie RoboHawks",
+      "city": "Hinesburg",
+      "state": "VT",
+      "region": "USVT",
+      "rookie_year": 2024,
+      "place": "Hinesburg, VT"
+    },
+    {
+      "number": 27596,
+      "name": "Team Blackstone",
+      "city": "Pawtucket",
+      "state": "RI",
+      "region": "USRI",
+      "rookie_year": 2024,
+      "place": "Pawtucket, RI"
+    },
+    {
+      "number": 27598,
+      "name": "Saint John's Shogun",
+      "city": "Shrewsbury",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2024,
+      "place": "Shrewsbury, MA"
+    },
+    {
+      "number": 27599,
+      "name": "Mechanical Pioneers",
+      "city": "Mullica Hill",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2024,
+      "place": "Mullica Hill, NJ"
+    },
+    {
+      "number": 27642,
+      "name": "Limitless Robotic3",
+      "city": "Jamaica",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2024,
+      "place": "Jamaica, NY"
     },
     {
       "number": 27686,
@@ -6686,6 +10634,15 @@
       "place": "New York, NY"
     },
     {
+      "number": 27705,
+      "name": "Brooklyn ByteKnights",
+      "city": "Brooklyn",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2024,
+      "place": "Brooklyn, NY"
+    },
+    {
       "number": 27707,
       "name": "Byte Brigade",
       "city": "Narragansett",
@@ -6693,6 +10650,15 @@
       "region": "USRI",
       "rookie_year": 2024,
       "place": "Narragansett, RI"
+    },
+    {
+      "number": 27708,
+      "name": "ISBots",
+      "city": "Cambridge",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2024,
+      "place": "Cambridge, MA"
     },
     {
       "number": 27710,
@@ -6740,6 +10706,42 @@
       "place": "Clifton, NJ"
     },
     {
+      "number": 27842,
+      "name": "AMS Robotics",
+      "city": "Amherst",
+      "state": "NH",
+      "region": "USNH",
+      "rookie_year": 2024,
+      "place": "Amherst, NH"
+    },
+    {
+      "number": 27857,
+      "name": "Copper Cubs",
+      "city": "Lincoln",
+      "state": "RI",
+      "region": "USRI",
+      "rookie_year": 2024,
+      "place": "Lincoln, RI"
+    },
+    {
+      "number": 28016,
+      "name": "Clinton Robo Hawks",
+      "city": "New York",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2024,
+      "place": "New York, NY"
+    },
+    {
+      "number": 28017,
+      "name": "SPARTECHS",
+      "city": "Winooski",
+      "state": "VT",
+      "region": "USVT",
+      "rookie_year": 2024,
+      "place": "Winooski, VT"
+    },
+    {
       "number": 28021,
       "name": "Steel Titans",
       "city": "Bronx",
@@ -6747,6 +10749,24 @@
       "region": "USNYNY",
       "rookie_year": 2024,
       "place": "Bronx, NY"
+    },
+    {
+      "number": 28022,
+      "name": "Tinkering Bots",
+      "city": "Brooklyn",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2024,
+      "place": "Brooklyn, NY"
+    },
+    {
+      "number": 28052,
+      "name": "Hunters",
+      "city": "New York",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2024,
+      "place": "New York, NY"
     },
     {
       "number": 28066,
@@ -6767,6 +10787,60 @@
       "place": "New York, NY"
     },
     {
+      "number": 28138,
+      "name": "Techneeetics",
+      "city": "Brooklyn",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2024,
+      "place": "Brooklyn, NY"
+    },
+    {
+      "number": 28170,
+      "name": "PARC Gearillas",
+      "city": "Andover",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2024,
+      "place": "Andover, MA"
+    },
+    {
+      "number": 28211,
+      "name": "Lee High School Robotics",
+      "city": "Lee",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2024,
+      "place": "Lee, MA"
+    },
+    {
+      "number": 28232,
+      "name": "MV roboPride2",
+      "city": "Concord",
+      "state": "NH",
+      "region": "USNH",
+      "rookie_year": 2024,
+      "place": "Concord, NH"
+    },
+    {
+      "number": 28237,
+      "name": "STEMETS",
+      "city": "Newport",
+      "state": "RI",
+      "region": "USRI",
+      "rookie_year": 2024,
+      "place": "Newport, RI"
+    },
+    {
+      "number": 28244,
+      "name": "The Garage",
+      "city": "Kennett Square",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2024,
+      "place": "Kennett Square, PA"
+    },
+    {
       "number": 28252,
       "name": "Vertus Robotics",
       "city": "Rochester",
@@ -6774,6 +10848,42 @@
       "region": "USNYEX",
       "rookie_year": 2024,
       "place": "Rochester, NY"
+    },
+    {
+      "number": 28294,
+      "name": "TechPanthers",
+      "city": "Uniondale",
+      "state": "NY",
+      "region": "USNYLI",
+      "rookie_year": 2024,
+      "place": "Uniondale, NY"
+    },
+    {
+      "number": 28332,
+      "name": "CPU",
+      "city": "York",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2024,
+      "place": "York, PA"
+    },
+    {
+      "number": 28383,
+      "name": "Thunder",
+      "city": "Belle Mead",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2024,
+      "place": "Belle Mead, NJ"
+    },
+    {
+      "number": 28390,
+      "name": "PantherBots",
+      "city": "Moultonborough",
+      "state": "NH",
+      "region": "USNH",
+      "rookie_year": 2024,
+      "place": "Moultonborough, NH"
     },
     {
       "number": 28391,
@@ -6785,6 +10895,15 @@
       "place": "Sewickley, PA"
     },
     {
+      "number": 28392,
+      "name": "PantherBots",
+      "city": "Moultonborough",
+      "state": "NH",
+      "region": "USNH",
+      "rookie_year": 2024,
+      "place": "Moultonborough, NH"
+    },
+    {
       "number": 28432,
       "name": "Launch Robotics",
       "city": "New York",
@@ -6792,6 +10911,33 @@
       "region": "USNYNY",
       "rookie_year": 2024,
       "place": "New York, NY"
+    },
+    {
+      "number": 28492,
+      "name": "PantherBots",
+      "city": "Moultonborough",
+      "state": "NH",
+      "region": "USNH",
+      "rookie_year": 2024,
+      "place": "Moultonborough, NH"
+    },
+    {
+      "number": 28496,
+      "name": "JIBE",
+      "city": "Mountain Lakes",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2024,
+      "place": "Mountain Lakes, NJ"
+    },
+    {
+      "number": 28516,
+      "name": "Robotics Revolution",
+      "city": "Woodbury",
+      "state": "NY",
+      "region": "USNYLI",
+      "rookie_year": 2024,
+      "place": "Woodbury, NY"
     },
     {
       "number": 28608,
@@ -6803,6 +10949,24 @@
       "place": "New Hyde Park, NY"
     },
     {
+      "number": 28624,
+      "name": "Toro Tech",
+      "city": "Philadelphia",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2024,
+      "place": "Philadelphia, PA"
+    },
+    {
+      "number": 28680,
+      "name": "Millstone Middle School",
+      "city": "Millstone Township",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2024,
+      "place": "Millstone Township, NJ"
+    },
+    {
       "number": 28830,
       "name": "Flameforge",
       "city": "Swedesboro",
@@ -6810,6 +10974,15 @@
       "region": "USNJ",
       "rookie_year": 2024,
       "place": "Swedesboro, NJ"
+    },
+    {
+      "number": 28873,
+      "name": "Eagle SEQ",
+      "city": "Jamaica",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2024,
+      "place": "Jamaica, NY"
     },
     {
       "number": 29403,
@@ -6846,6 +11019,15 @@
       "region": "USPA",
       "rookie_year": 2025,
       "place": "Philadelphia, PA"
+    },
+    {
+      "number": 30356,
+      "name": "RSS",
+      "city": "New York",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2025,
+      "place": "New York, NY"
     },
     {
       "number": 30371,
@@ -6911,6 +11093,15 @@
       "place": "Trumbull, CT"
     },
     {
+      "number": 30457,
+      "name": "RoboQuips",
+      "city": "Aliquippa",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2025,
+      "place": "Aliquippa, PA"
+    },
+    {
       "number": 30468,
       "name": "Random Robot Revelers",
       "city": "North Berwick",
@@ -6918,6 +11109,24 @@
       "region": "USNH",
       "rookie_year": 2025,
       "place": "North Berwick, ME"
+    },
+    {
+      "number": 30518,
+      "name": "Esther Salas Academy",
+      "city": "Union City",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2025,
+      "place": "Union City, NJ"
+    },
+    {
+      "number": 30535,
+      "name": "CTRL Queens",
+      "city": "East Elmhurst",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2025,
+      "place": "East Elmhurst, NY"
     },
     {
       "number": 30537,
@@ -6936,6 +11145,15 @@
       "region": "USNH",
       "rookie_year": 2025,
       "place": "Portsmouth, NH"
+    },
+    {
+      "number": 30553,
+      "name": "Cog.Native",
+      "city": "Bryn Mawr",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2025,
+      "place": "Bryn Mawr, PA"
     },
     {
       "number": 30565,
@@ -6965,6 +11183,42 @@
       "place": "Dedham, MA"
     },
     {
+      "number": 30656,
+      "name": "The Interns",
+      "city": "South Burlington",
+      "state": "VT",
+      "region": "USVT",
+      "rookie_year": 2025,
+      "place": "South Burlington, VT"
+    },
+    {
+      "number": 30668,
+      "name": "SSC Library",
+      "city": "Corning",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2025,
+      "place": "Corning, NY"
+    },
+    {
+      "number": 30674,
+      "name": "ManalapanMasterMinds",
+      "city": "Manalapan",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2025,
+      "place": "Manalapan, NJ"
+    },
+    {
+      "number": 30680,
+      "name": "Tech BnB",
+      "city": "Lawrence Township",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2025,
+      "place": "Lawrence Township, NJ"
+    },
+    {
       "number": 30682,
       "name": "NanoGurus 2.0",
       "city": "Morris Plains",
@@ -6983,6 +11237,42 @@
       "place": "South Berwick, ME"
     },
     {
+      "number": 30719,
+      "name": "Princeton Waldorf Robotics",
+      "city": "Princeton",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2025,
+      "place": "Princeton, NJ"
+    },
+    {
+      "number": 30721,
+      "name": "Titans 2.0",
+      "city": "Willington",
+      "state": "CT",
+      "region": "USCT",
+      "rookie_year": 2025,
+      "place": "Willington, CT"
+    },
+    {
+      "number": 30722,
+      "name": "Titans 3.0",
+      "city": "Willington",
+      "state": "CT",
+      "region": "USCT",
+      "rookie_year": 2025,
+      "place": "Willington, CT"
+    },
+    {
+      "number": 30728,
+      "name": "JSEC ROBOTICS1",
+      "city": "Providence",
+      "state": "RI",
+      "region": "USRI",
+      "rookie_year": 2025,
+      "place": "Providence, RI"
+    },
+    {
       "number": 30730,
       "name": "Borobots",
       "city": "Freehold",
@@ -6990,6 +11280,15 @@
       "region": "USNJ",
       "rookie_year": 2025,
       "place": "Freehold, NJ"
+    },
+    {
+      "number": 30740,
+      "name": "Lupus",
+      "city": "West Point",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2025,
+      "place": "West Point, NY"
     },
     {
       "number": 30765,
@@ -7035,6 +11334,15 @@
       "region": "USMA",
       "rookie_year": 2025,
       "place": "Shrewsbury, MA"
+    },
+    {
+      "number": 31051,
+      "name": "NightHawks",
+      "city": "Edison",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2025,
+      "place": "Edison, NJ"
     },
     {
       "number": 31074,
@@ -7109,6 +11417,15 @@
       "place": "Warminster, PA"
     },
     {
+      "number": 31186,
+      "name": "iLearning Challenger",
+      "city": "Little Neck",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2025,
+      "place": "Little Neck, NY"
+    },
+    {
       "number": 31246,
       "name": "Cyber Knights",
       "city": "Lisbon",
@@ -7152,6 +11469,15 @@
       "region": "USNJ",
       "rookie_year": 2025,
       "place": "Princeton Junction, NJ"
+    },
+    {
+      "number": 31436,
+      "name": "Brookline Firecrackers",
+      "city": "Brookline",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2025,
+      "place": "Brookline, MA"
     },
     {
       "number": 31567,
@@ -7199,6 +11525,15 @@
       "place": "Mechanicsburg, PA"
     },
     {
+      "number": 31639,
+      "name": "Rose City Robotics",
+      "city": "Norwich",
+      "state": "CT",
+      "region": "USCT",
+      "rookie_year": 2025,
+      "place": "Norwich, CT"
+    },
+    {
       "number": 31646,
       "name": "Zero divided by Zero",
       "city": "Hull",
@@ -7217,6 +11552,15 @@
       "place": "New York, NY"
     },
     {
+      "number": 31685,
+      "name": "Wires and Pliers",
+      "city": "Natick",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2025,
+      "place": "Natick, MA"
+    },
+    {
       "number": 31719,
       "name": "Flying Tigers",
       "city": "Middlebury",
@@ -7224,6 +11568,51 @@
       "region": "USVT",
       "rookie_year": 2025,
       "place": "Middlebury, VT"
+    },
+    {
+      "number": 31790,
+      "name": "Code Crushers",
+      "city": "Newburgh",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2025,
+      "place": "Newburgh, NY"
+    },
+    {
+      "number": 31802,
+      "name": "SILVER STARS",
+      "city": "Bronx",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2025,
+      "place": "Bronx, NY"
+    },
+    {
+      "number": 31805,
+      "name": "Soaring Circuits",
+      "city": "Gilford",
+      "state": "NH",
+      "region": "USNH",
+      "rookie_year": 2025,
+      "place": "Gilford, NH"
+    },
+    {
+      "number": 31806,
+      "name": "TECHAWESOME",
+      "city": "Bronx",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2025,
+      "place": "Bronx, NY"
+    },
+    {
+      "number": 31809,
+      "name": "The Constructors",
+      "city": "Bronx",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2025,
+      "place": "Bronx, NY"
     },
     {
       "number": 31814,
@@ -7244,6 +11633,15 @@
       "place": "Parsippany, NJ"
     },
     {
+      "number": 31865,
+      "name": "Lykos",
+      "city": "Beverly",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2025,
+      "place": "Beverly, MA"
+    },
+    {
       "number": 31874,
       "name": "T.I.M.B.E.R. Bots",
       "city": "Wilmington",
@@ -7251,6 +11649,33 @@
       "region": "USNYEX",
       "rookie_year": 2025,
       "place": "Wilmington, NY"
+    },
+    {
+      "number": 31883,
+      "name": "Gear 2 Go",
+      "city": "Philadelphia",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2025,
+      "place": "Philadelphia, PA"
+    },
+    {
+      "number": 31889,
+      "name": "Snacks First",
+      "city": "Contoocook",
+      "state": "NH",
+      "region": "USNH",
+      "rookie_year": 2025,
+      "place": "Contoocook, NH"
+    },
+    {
+      "number": 31890,
+      "name": "More Snacks",
+      "city": "Contoocook",
+      "state": "NH",
+      "region": "USNH",
+      "rookie_year": 2025,
+      "place": "Contoocook, NH"
     },
     {
       "number": 31943,
@@ -7262,6 +11687,15 @@
       "place": "Atlantic City, NJ"
     },
     {
+      "number": 31947,
+      "name": "Ctrl+Alt+Elite",
+      "city": "Harrisburg",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2025,
+      "place": "Harrisburg, PA"
+    },
+    {
       "number": 31950,
       "name": "PHNX Robotics",
       "city": "East Haddam",
@@ -7269,6 +11703,42 @@
       "region": "USCT",
       "rookie_year": 2025,
       "place": "East Haddam, CT"
+    },
+    {
+      "number": 32032,
+      "name": "Rocsci-Borgs",
+      "city": "Rochester",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2025,
+      "place": "Rochester, NY"
+    },
+    {
+      "number": 32048,
+      "name": "Robo Warriors",
+      "city": "Floral Park",
+      "state": "NY",
+      "region": "USNYLI",
+      "rookie_year": 2025,
+      "place": "Floral Park, NY"
+    },
+    {
+      "number": 32054,
+      "name": "LREI Knights",
+      "city": "New York",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2025,
+      "place": "New York, NY"
+    },
+    {
+      "number": 32137,
+      "name": "Team MAX 2",
+      "city": "Wolcott",
+      "state": "CT",
+      "region": "USCT",
+      "rookie_year": 2025,
+      "place": "Wolcott, CT"
     },
     {
       "number": 32141,
@@ -7289,6 +11759,15 @@
       "place": "Pittsburgh, PA"
     },
     {
+      "number": 32143,
+      "name": "Brashear FTC 3",
+      "city": "Pittsburgh",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2025,
+      "place": "Pittsburgh, PA"
+    },
+    {
       "number": 32144,
       "name": "Obamatronics",
       "city": "Pittsburgh",
@@ -7298,6 +11777,42 @@
       "place": "Pittsburgh, PA"
     },
     {
+      "number": 32150,
+      "name": "Circuit Breaker'S",
+      "city": "Farmington",
+      "state": "CT",
+      "region": "USCT",
+      "rookie_year": 2025,
+      "place": "Farmington, CT"
+    },
+    {
+      "number": 32194,
+      "name": "The U School",
+      "city": "Philadelphia",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2025,
+      "place": "Philadelphia, PA"
+    },
+    {
+      "number": 32211,
+      "name": "RADIOATLAS",
+      "city": "Long Island City",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2025,
+      "place": "Long Island City, NY"
+    },
+    {
+      "number": 32262,
+      "name": "Léman",
+      "city": "New York",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2025,
+      "place": "New York, NY"
+    },
+    {
       "number": 32270,
       "name": "Ladybugs",
       "city": "South Portland",
@@ -7305,6 +11820,15 @@
       "region": "USNH",
       "rookie_year": 2025,
       "place": "South Portland, ME"
+    },
+    {
+      "number": 32279,
+      "name": "PulseDrive",
+      "city": "Edison",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2025,
+      "place": "Edison, NJ"
     },
     {
       "number": 32289,
@@ -7325,6 +11849,33 @@
       "place": "Englishtown, NJ"
     },
     {
+      "number": 32302,
+      "name": "Toasted Breadboards",
+      "city": "Harvard",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2025,
+      "place": "Harvard, MA"
+    },
+    {
+      "number": 32325,
+      "name": "St. Paul School Lions",
+      "city": "Hingham",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2025,
+      "place": "Hingham, MA"
+    },
+    {
+      "number": 32339,
+      "name": "Carle Place FROGS",
+      "city": "Carle Place",
+      "state": "NY",
+      "region": "USNYLI",
+      "rookie_year": 2025,
+      "place": "Carle Place, NY"
+    },
+    {
       "number": 32347,
       "name": "R.A.D ROBOTICS",
       "city": "New York",
@@ -7332,6 +11883,15 @@
       "region": "USNYNY",
       "rookie_year": 2025,
       "place": "New York, NY"
+    },
+    {
+      "number": 32365,
+      "name": "Knights of Polaris",
+      "city": "Irvington",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2025,
+      "place": "Irvington, NJ"
     },
     {
       "number": 32384,
@@ -7379,6 +11939,15 @@
       "place": "Bennington, VT"
     },
     {
+      "number": 32489,
+      "name": "GNCE Emerald",
+      "city": "Weston",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2025,
+      "place": "Weston, MA"
+    },
+    {
       "number": 32496,
       "name": "MARS: Spirit :)",
       "city": "Mars",
@@ -7415,6 +11984,15 @@
       "place": "Astoria, NY"
     },
     {
+      "number": 32540,
+      "name": "Robotics Royal",
+      "city": "Woodside",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2025,
+      "place": "Woodside, NY"
+    },
+    {
       "number": 32563,
       "name": "Butler REAP: Buzzkillers",
       "city": "Butler",
@@ -7424,6 +12002,15 @@
       "place": "Butler, PA"
     },
     {
+      "number": 32582,
+      "name": "Turbo Tron",
+      "city": "Woodside",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2025,
+      "place": "Woodside, NY"
+    },
+    {
       "number": 32583,
       "name": "Dough",
       "city": "Bronx",
@@ -7431,6 +12018,15 @@
       "region": "USNYNY",
       "rookie_year": 2025,
       "place": "Bronx, NY"
+    },
+    {
+      "number": 32584,
+      "name": "Mecha Tigers",
+      "city": "New York",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2025,
+      "place": "New York, NY"
     },
     {
       "number": 32594,
@@ -7451,6 +12047,15 @@
       "place": "Canonsburg, PA"
     },
     {
+      "number": 32652,
+      "name": "Voyagers - Gold",
+      "city": "Clayton",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2025,
+      "place": "Clayton, NJ"
+    },
+    {
       "number": 32672,
       "name": "Cosmo Bots",
       "city": "New Hartford",
@@ -7458,6 +12063,33 @@
       "region": "USNYEX",
       "rookie_year": 2025,
       "place": "New Hartford, NY"
+    },
+    {
+      "number": 32693,
+      "name": "Blue Knights Robotics",
+      "city": "Kingston",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2025,
+      "place": "Kingston, PA"
+    },
+    {
+      "number": 32697,
+      "name": "Argonauts",
+      "city": "Bronx",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2025,
+      "place": "Bronx, NY"
+    },
+    {
+      "number": 32702,
+      "name": "Paterson Wildcats",
+      "city": "Paterson",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2025,
+      "place": "Paterson, NJ"
     },
     {
       "number": 32703,
@@ -7487,6 +12119,15 @@
       "place": "New York, NY"
     },
     {
+      "number": 32751,
+      "name": "ULC Robotics",
+      "city": "Brooklyn",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2025,
+      "place": "Brooklyn, NY"
+    },
+    {
       "number": 32755,
       "name": "SRA Proton",
       "city": "Pawtucket",
@@ -7494,6 +12135,24 @@
       "region": "USRI",
       "rookie_year": 2025,
       "place": "Pawtucket, RI"
+    },
+    {
+      "number": 32783,
+      "name": "Steel Fangs",
+      "city": "Bronx",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2025,
+      "place": "Bronx, NY"
+    },
+    {
+      "number": 32792,
+      "name": "OB Robotics Team",
+      "city": "Boston",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2025,
+      "place": "Boston, MA"
     },
     {
       "number": 32818,
@@ -7505,6 +12164,15 @@
       "place": "Saxtons River, VT"
     },
     {
+      "number": 32822,
+      "name": "Via Veritas Voltage",
+      "city": "Hyde Park",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2025,
+      "place": "Hyde Park, MA"
+    },
+    {
       "number": 32830,
       "name": "Cyberdogs",
       "city": "Bridgeton",
@@ -7514,8 +12182,116 @@
       "place": "Bridgeton, NJ"
     },
     {
+      "number": 32831,
+      "name": "Chimerlings",
+      "city": "Braintree",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2025,
+      "place": "Braintree, MA"
+    },
+    {
+      "number": 32837,
+      "name": "GoldenKnights",
+      "city": "Wrightsville",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2025,
+      "place": "Wrightsville, PA"
+    },
+    {
+      "number": 32840,
+      "name": "PantherBots",
+      "city": "Moultonborough",
+      "state": "NH",
+      "region": "USNH",
+      "rookie_year": 2025,
+      "place": "Moultonborough, NH"
+    },
+    {
+      "number": 32841,
+      "name": "PantherBots",
+      "city": "Moultonborough",
+      "state": "NH",
+      "region": "USNH",
+      "rookie_year": 2025,
+      "place": "Moultonborough, NH"
+    },
+    {
+      "number": 32859,
+      "name": "Sense & Sound Robotics Cheetah",
+      "city": "Franklin",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2025,
+      "place": "Franklin, MA"
+    },
+    {
+      "number": 32863,
+      "name": "RoHawklings2Gold",
+      "city": "New York",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2025,
+      "place": "New York, NY"
+    },
+    {
+      "number": 32876,
+      "name": "The Resistables",
+      "city": "Wolfeboro",
+      "state": "NH",
+      "region": "USNH",
+      "rookie_year": 2025,
+      "place": "Wolfeboro, NH"
+    },
+    {
+      "number": 32898,
+      "name": "Deus Et Machina II",
+      "city": "Hyde Park",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2025,
+      "place": "Hyde Park, MA"
+    },
+    {
+      "number": 32904,
+      "name": "Panthers",
+      "city": "Passaic",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2025,
+      "place": "Passaic, NJ"
+    },
+    {
+      "number": 32907,
+      "name": "Tech Annex",
+      "city": "Brooklyn",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2025,
+      "place": "Brooklyn, NY"
+    },
+    {
+      "number": 32908,
+      "name": "Tech Saratoga",
+      "city": "Brooklyn",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2025,
+      "place": "Brooklyn, NY"
+    },
+    {
       "number": 32909,
       "name": "Tech Bay Ridge",
+      "city": "Brooklyn",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2025,
+      "place": "Brooklyn, NY"
+    },
+    {
+      "number": 32910,
+      "name": "Tech Kings Hwy",
       "city": "Brooklyn",
       "state": "NY",
       "region": "USNYNY",
@@ -7541,6 +12317,15 @@
       "place": "Jamaica, NY"
     },
     {
+      "number": 33411,
+      "name": "WONDER",
+      "city": "Bronx",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2025,
+      "place": "Bronx, NY"
+    },
+    {
       "number": 33461,
       "name": "MFS Foxes",
       "city": "Moorestown",
@@ -7548,6 +12333,24 @@
       "region": "USNJ",
       "rookie_year": 2025,
       "place": "Moorestown, NJ"
+    },
+    {
+      "number": 33484,
+      "name": "Bamboozlers",
+      "city": "Floral Park",
+      "state": "NY",
+      "region": "USNYLI",
+      "rookie_year": 2025,
+      "place": "Floral Park, NY"
+    },
+    {
+      "number": 33488,
+      "name": "Apex Robotic3",
+      "city": "Jamaica",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2025,
+      "place": "Jamaica, NY"
     },
     {
       "number": 33513,
@@ -7577,6 +12380,33 @@
       "place": "New York, NY"
     },
     {
+      "number": 33598,
+      "name": "Error 505",
+      "city": "Ridgewood",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2025,
+      "place": "Ridgewood, NY"
+    },
+    {
+      "number": 33626,
+      "name": "IS429Q Sunnyside Middle School",
+      "city": "Sunnyside",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2025,
+      "place": "Sunnyside, NY"
+    },
+    {
+      "number": 33662,
+      "name": "UTechtonics",
+      "city": "Brooklyn",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2025,
+      "place": "Brooklyn, NY"
+    },
+    {
       "number": 33679,
       "name": "Dallas HS Mountaineers",
       "city": "Dallas",
@@ -7595,6 +12425,15 @@
       "place": "Wilbraham, MA"
     },
     {
+      "number": 33862,
+      "name": "RoboKnights",
+      "city": "East Providence",
+      "state": "RI",
+      "region": "USRI",
+      "rookie_year": 2025,
+      "place": "East Providence, RI"
+    },
+    {
       "number": 33950,
       "name": "First Street Kids",
       "city": "Ridgewood",
@@ -7602,6 +12441,15 @@
       "region": "USNJ",
       "rookie_year": 2025,
       "place": "Ridgewood, NJ"
+    },
+    {
+      "number": 34050,
+      "name": "MPT Tigers",
+      "city": "Newark",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2025,
+      "place": "Newark, NJ"
     },
     {
       "number": 34199,
@@ -7640,6 +12488,15 @@
       "place": "Hershey, PA"
     },
     {
+      "number": 35701,
+      "name": "765fv",
+      "city": "New York",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2026,
+      "place": "New York, NY"
+    },
+    {
       "number": 35707,
       "name": "Nox",
       "city": "Queens",
@@ -7665,6 +12522,15 @@
       "region": "USPA",
       "rookie_year": 2026,
       "place": "Kennett Square, PA"
+    },
+    {
+      "number": 35745,
+      "name": "STEAMCo USA",
+      "city": "East Hampton",
+      "state": "NY",
+      "region": "USNYLI",
+      "rookie_year": 2026,
+      "place": "East Hampton, NY"
     },
     {
       "number": 35762,
@@ -7721,6 +12587,33 @@
       "place": "Nashua, NH"
     },
     {
+      "number": 35993,
+      "name": "Toast",
+      "city": "Princeton Junction",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2026,
+      "place": "Princeton Junction, NJ"
+    },
+    {
+      "number": 35996,
+      "name": "Omlettes",
+      "city": "Princeton Junction",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2026,
+      "place": "Princeton Junction, NJ"
+    },
+    {
+      "number": 36004,
+      "name": "Solaris",
+      "city": "Princeton Junction",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2026,
+      "place": "Princeton Junction, NJ"
+    },
+    {
       "number": 36043,
       "name": "Marshwood Middle School",
       "city": "Eliot",
@@ -7775,6 +12668,33 @@
       "place": "Groton, CT"
     },
     {
+      "number": 36080,
+      "name": "Citizenship Protons",
+      "city": "Liverpool",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2026,
+      "place": "Liverpool, NY"
+    },
+    {
+      "number": 36085,
+      "name": "Jericho Bots",
+      "city": "Jericho",
+      "state": "NY",
+      "region": "USNYLI",
+      "rookie_year": 2026,
+      "place": "Jericho, NY"
+    },
+    {
+      "number": 36116,
+      "name": "Lumen",
+      "city": "Old Mystic",
+      "state": "CT",
+      "region": "USCT",
+      "rookie_year": 2026,
+      "place": "Old Mystic, CT"
+    },
+    {
       "number": 36142,
       "name": "NOVA Robotics",
       "city": "Jersey City",
@@ -7802,6 +12722,15 @@
       "place": "Saint James, NY"
     },
     {
+      "number": 36186,
+      "name": "Equinox Valley Transformers",
+      "city": "Manchester Center",
+      "state": "VT",
+      "region": "USVT",
+      "rookie_year": 2026,
+      "place": "Manchester Center, VT"
+    },
+    {
       "number": 36375,
       "name": "PROTOBOTS",
       "city": "Rutland",
@@ -7811,6 +12740,24 @@
       "place": "Rutland, VT"
     },
     {
+      "number": 36376,
+      "name": "Golden Tornadoes",
+      "city": "Malden",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2026,
+      "place": "Malden, MA"
+    },
+    {
+      "number": 36383,
+      "name": "Honeybees1",
+      "city": "King of Prussia",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2026,
+      "place": "King of Prussia, PA"
+    },
+    {
       "number": 36410,
       "name": "Athens Wildcats Tech Ed",
       "city": "Athens",
@@ -7818,6 +12765,24 @@
       "region": "USPA",
       "rookie_year": 2026,
       "place": "Athens, PA"
+    },
+    {
+      "number": 36415,
+      "name": "Robo Jragon - LaserKnight",
+      "city": "Stamford",
+      "state": "CT",
+      "region": "USCT",
+      "rookie_year": 2026,
+      "place": "Stamford, CT"
+    },
+    {
+      "number": 36418,
+      "name": "KinetIQ",
+      "city": "Hillsborough",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2026,
+      "place": "Hillsborough, NJ"
     },
     {
       "number": 36433,
@@ -7955,6 +12920,24 @@
       "place": "Vernon Rockville, CT"
     },
     {
+      "number": 36655,
+      "name": "WILLOW",
+      "city": "Wolcott",
+      "state": "VT",
+      "region": "USVT",
+      "rookie_year": 2026,
+      "place": "Wolcott, VT"
+    },
+    {
+      "number": 36664,
+      "name": "USB6880",
+      "city": "Yorktown Heights",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2026,
+      "place": "Yorktown Heights, NY"
+    },
+    {
       "number": 36682,
       "name": "Camels Hump Coders",
       "city": "Huntington",
@@ -8009,6 +12992,15 @@
       "place": "South Burlington, VT"
     },
     {
+      "number": 36706,
+      "name": "Cyber Falcons",
+      "city": "Bridgewater",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2026,
+      "place": "Bridgewater, NJ"
+    },
+    {
       "number": 36745,
       "name": "Celeris Robotics",
       "city": "Princeton Junction",
@@ -8045,6 +13037,15 @@
       "place": "New York, NY"
     },
     {
+      "number": 36838,
+      "name": "FTC Team",
+      "city": "Pittsburgh",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2026,
+      "place": "Pittsburgh, PA"
+    },
+    {
       "number": 36851,
       "name": "Dragon PALadins",
       "city": "Philadelphia",
@@ -8052,6 +13053,15 @@
       "region": "USPA",
       "rookie_year": 2026,
       "place": "Philadelphia, PA"
+    },
+    {
+      "number": 36894,
+      "name": "V.I.P. CPP",
+      "city": "Bridgeport",
+      "state": "CT",
+      "region": "USCT",
+      "rookie_year": 2026,
+      "place": "Bridgeport, CT"
     },
     {
       "number": 36967,
@@ -8070,6 +13080,33 @@
       "region": "USNJ",
       "rookie_year": 2026,
       "place": "Pennington, NJ"
+    },
+    {
+      "number": 36991,
+      "name": "Testing Team",
+      "city": "Manchester",
+      "state": "NH",
+      "region": "USNH",
+      "rookie_year": 2026,
+      "place": "Manchester, NH"
+    },
+    {
+      "number": 36992,
+      "name": "Minions",
+      "city": "Corona",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2026,
+      "place": "Corona, NY"
+    },
+    {
+      "number": 36993,
+      "name": "Test Mijal",
+      "city": "Manchester",
+      "state": "NH",
+      "region": "USNH",
+      "rookie_year": 2026,
+      "place": "Manchester, NH"
     },
     {
       "number": 36997,
@@ -8108,6 +13145,24 @@
       "place": "Adams, MA"
     },
     {
+      "number": 37023,
+      "name": "SDTESTFTC",
+      "city": "Lowell",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2026,
+      "place": "Lowell, MA"
+    },
+    {
+      "number": 37067,
+      "name": "AIS Dragon Force",
+      "city": "Bloomfield",
+      "state": "CT",
+      "region": "USCT",
+      "rookie_year": 2026,
+      "place": "Bloomfield, CT"
+    },
+    {
       "number": 37069,
       "name": "NCDS Robotics",
       "city": "Newton",
@@ -8144,6 +13199,33 @@
       "place": "Lancaster, MA"
     },
     {
+      "number": 37075,
+      "name": "USC1",
+      "city": "Upper St Clair",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2026,
+      "place": "Upper St Clair, PA"
+    },
+    {
+      "number": 37076,
+      "name": "USC2",
+      "city": "Upper St Clair",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2026,
+      "place": "Upper St Clair, PA"
+    },
+    {
+      "number": 37077,
+      "name": "USC3",
+      "city": "Upper St Clair",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2026,
+      "place": "Upper St Clair, PA"
+    },
+    {
       "number": 37085,
       "name": "Engineered Chaos",
       "city": "Farmington",
@@ -8171,6 +13253,15 @@
       "place": "North Reading, MA"
     },
     {
+      "number": 37099,
+      "name": "Stamford High",
+      "city": "Stamford",
+      "state": "CT",
+      "region": "USCT",
+      "rookie_year": 2026,
+      "place": "Stamford, CT"
+    },
+    {
       "number": 37121,
       "name": "GNCE Obsidian",
       "city": "Weston",
@@ -8189,8 +13280,44 @@
       "place": "Weston, MA"
     },
     {
+      "number": 37128,
+      "name": "team test",
+      "city": "Gray",
+      "state": "ME",
+      "region": null,
+      "rookie_year": 2026,
+      "place": "Gray, ME"
+    },
+    {
+      "number": 37129,
+      "name": "Test Team",
+      "city": "Philadelphia",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2026,
+      "place": "Philadelphia, PA"
+    },
+    {
+      "number": 37143,
+      "name": "Wolves",
+      "city": "Cross River",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2026,
+      "place": "Cross River, NY"
+    },
+    {
       "number": 37152,
       "name": "Team Universal Genesis",
+      "city": "Bensalem",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2026,
+      "place": "Bensalem, PA"
+    },
+    {
+      "number": 37153,
+      "name": "test",
       "city": "Bensalem",
       "state": "PA",
       "region": "USPA",
@@ -8205,6 +13332,15 @@
       "region": "USPA",
       "rookie_year": 2026,
       "place": "Harmony, PA"
+    },
+    {
+      "number": 37164,
+      "name": "unopiece",
+      "city": "Lexington",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2026,
+      "place": "Lexington, MA"
     },
     {
       "number": 37183,
@@ -8223,6 +13359,15 @@
       "region": "USMA",
       "rookie_year": 2026,
       "place": "Acton, MA"
+    },
+    {
+      "number": 37195,
+      "name": "CLC Spare Parts",
+      "city": "State College",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2026,
+      "place": "State College, PA"
     },
     {
       "number": 37228,
@@ -8252,6 +13397,42 @@
       "place": "Belmont, MA"
     },
     {
+      "number": 37244,
+      "name": "StuyTown",
+      "city": "New York",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2026,
+      "place": "New York, NY"
+    },
+    {
+      "number": 37245,
+      "name": "StuyPoofs",
+      "city": "New York",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2026,
+      "place": "New York, NY"
+    },
+    {
+      "number": 37246,
+      "name": "StuyTide",
+      "city": "New York",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2026,
+      "place": "New York, NY"
+    },
+    {
+      "number": 37247,
+      "name": "Blayzing Bulldogs",
+      "city": "New York",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2026,
+      "place": "New York, NY"
+    },
+    {
       "number": 37252,
       "name": "Essex Middle School 1",
       "city": "Essex Junction",
@@ -8268,6 +13449,24 @@
       "region": "USMA",
       "rookie_year": 2026,
       "place": "Lexington, MA"
+    },
+    {
+      "number": 37304,
+      "name": "Boston Vector Axolotls 04",
+      "city": "Boston",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2026,
+      "place": "Boston, MA"
+    },
+    {
+      "number": 37332,
+      "name": "Codman-Crew",
+      "city": "Dorchester",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2026,
+      "place": "Dorchester, MA"
     },
     {
       "number": 37344,
@@ -8288,6 +13487,51 @@
       "place": "South Burlington, VT"
     },
     {
+      "number": 37364,
+      "name": "DELETE ME WRONG TYPE OF TEAM",
+      "city": "Melrose",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2026,
+      "place": "Melrose, MA"
+    },
+    {
+      "number": 37370,
+      "name": "Forgemasters",
+      "city": "Rocky Hill",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2026,
+      "place": "Rocky Hill, NJ"
+    },
+    {
+      "number": 37394,
+      "name": "test",
+      "city": "Rochester",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2026,
+      "place": "Rochester, NY"
+    },
+    {
+      "number": 37397,
+      "name": "Boston Kinetic Hawks 02",
+      "city": "Boston",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2026,
+      "place": "Boston, MA"
+    },
+    {
+      "number": 37401,
+      "name": "ADL Charger Robotics",
+      "city": "Essex Junction",
+      "state": "VT",
+      "region": "USVT",
+      "rookie_year": 2026,
+      "place": "Essex Junction, VT"
+    },
+    {
       "number": 37414,
       "name": "Potential Error",
       "city": "Ballston Spa",
@@ -8297,6 +13541,42 @@
       "place": "Ballston Spa, NY"
     },
     {
+      "number": 37471,
+      "name": "Inverse Polarity FTC 2",
+      "city": "Northborough",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2026,
+      "place": "Northborough, MA"
+    },
+    {
+      "number": 37472,
+      "name": "Inverse Polarity FTC 3",
+      "city": "Northborough",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2026,
+      "place": "Northborough, MA"
+    },
+    {
+      "number": 37473,
+      "name": "Robotigers",
+      "city": "New York",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2026,
+      "place": "New York, NY"
+    },
+    {
+      "number": 37485,
+      "name": "T.A.Z.E. 3",
+      "city": "Clifton Park",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2026,
+      "place": "Clifton Park, NY"
+    },
+    {
       "number": 37486,
       "name": "The Maize Runners",
       "city": "Exton",
@@ -8304,6 +13584,15 @@
       "region": "USPA",
       "rookie_year": 2026,
       "place": "Exton, PA"
+    },
+    {
+      "number": 37487,
+      "name": "Franklin County 4-H Robotics",
+      "city": "Malone",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2026,
+      "place": "Malone, NY"
     },
     {
       "number": 37509,
@@ -8342,6 +13631,33 @@
       "place": "Penfield, NY"
     },
     {
+      "number": 37527,
+      "name": "Oncoming Storm - Gray",
+      "city": "Penfield",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2026,
+      "place": "Penfield, NY"
+    },
+    {
+      "number": 37528,
+      "name": "Oncoming Storm - Blue",
+      "city": "Penfield",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2026,
+      "place": "Penfield, NY"
+    },
+    {
+      "number": 37542,
+      "name": "Dans Test Team2",
+      "city": "Schenectady",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2026,
+      "place": "Schenectady, NY"
+    },
+    {
       "number": 37546,
       "name": "Cool Name Found",
       "city": "Princeton Junction",
@@ -8349,6 +13665,33 @@
       "region": "USNJ",
       "rookie_year": 2026,
       "place": "Princeton Junction, NJ"
+    },
+    {
+      "number": 37547,
+      "name": "Zeta Robotics",
+      "city": "New York",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2026,
+      "place": "New York, NY"
+    },
+    {
+      "number": 37592,
+      "name": "TWarriors",
+      "city": "Mechanicsburg",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2026,
+      "place": "Mechanicsburg, PA"
+    },
+    {
+      "number": 37597,
+      "name": "7th Grade Robotics",
+      "city": "Brooklyn",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2026,
+      "place": "Brooklyn, NY"
     },
     {
       "number": 37622,
@@ -8405,6 +13748,15 @@
       "place": "Rochester, MA"
     },
     {
+      "number": 37774,
+      "name": "Boston Gear Lynx 29",
+      "city": "Boston",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2026,
+      "place": "Boston, MA"
+    },
+    {
       "number": 37778,
       "name": "Loose Screws",
       "city": "Brooklyn",
@@ -8412,6 +13764,15 @@
       "region": "USNYNY",
       "rookie_year": 2026,
       "place": "Brooklyn, NY"
+    },
+    {
+      "number": 37792,
+      "name": "RADIOATLAS",
+      "city": "Long Island City",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2026,
+      "place": "Long Island City, NY"
     },
     {
       "number": 37801,
@@ -8459,6 +13820,15 @@
       "place": "Furlong, PA"
     },
     {
+      "number": 37937,
+      "name": "Roboknights",
+      "city": "New Kensington",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2026,
+      "place": "New Kensington, PA"
+    },
+    {
       "number": 37938,
       "name": "ElectroBOTS",
       "city": "Chalfont",
@@ -8495,6 +13865,51 @@
       "place": "Bedford, NH"
     },
     {
+      "number": 37995,
+      "name": "Woodland",
+      "city": "New York",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2026,
+      "place": "New York, NY"
+    },
+    {
+      "number": 37996,
+      "name": "Woodland",
+      "city": "New York",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2026,
+      "place": "New York, NY"
+    },
+    {
+      "number": 37997,
+      "name": "Woodland3",
+      "city": "New York",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2026,
+      "place": "New York, NY"
+    },
+    {
+      "number": 37999,
+      "name": "Wood 4",
+      "city": "New York",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2026,
+      "place": "New York, NY"
+    },
+    {
+      "number": 38031,
+      "name": "Blue Devil Bots",
+      "city": "Wood-Ridge",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2026,
+      "place": "Wood-Ridge, NJ"
+    },
+    {
       "number": 38032,
       "name": "MMT First",
       "city": "New York",
@@ -8502,6 +13917,15 @@
       "region": "USNYNY",
       "rookie_year": 2026,
       "place": "New York, NY"
+    },
+    {
+      "number": 38034,
+      "name": "Harkness Humans",
+      "city": "Nashua",
+      "state": "NH",
+      "region": "USNH",
+      "rookie_year": 2026,
+      "place": "Nashua, NH"
     },
     {
       "number": 38035,
@@ -8576,6 +14000,60 @@
       "place": "Syracuse, NY"
     },
     {
+      "number": 38162,
+      "name": "Times2",
+      "city": "Providence",
+      "state": "RI",
+      "region": "USRI",
+      "rookie_year": 2026,
+      "place": "Providence, RI"
+    },
+    {
+      "number": 38187,
+      "name": "AB1",
+      "city": "Acton",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2026,
+      "place": "Acton, MA"
+    },
+    {
+      "number": 38191,
+      "name": "AB2",
+      "city": "Acton",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2026,
+      "place": "Acton, MA"
+    },
+    {
+      "number": 38192,
+      "name": "AB3",
+      "city": "Acton",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2026,
+      "place": "Acton, MA"
+    },
+    {
+      "number": 38193,
+      "name": "AB4",
+      "city": "Acton",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2026,
+      "place": "Acton, MA"
+    },
+    {
+      "number": 38197,
+      "name": "Millis Dynamics",
+      "city": "Millis",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2026,
+      "place": "Millis, MA"
+    },
+    {
       "number": 38255,
       "name": "BRAINSTORMERS",
       "city": "Bayport",
@@ -8648,6 +14126,15 @@
       "place": "Mechanicsburg, PA"
     },
     {
+      "number": 38321,
+      "name": "Voyagers - Silver",
+      "city": "Clayton",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2026,
+      "place": "Clayton, NJ"
+    },
+    {
       "number": 38341,
       "name": "City Poly",
       "city": "Brooklyn",
@@ -8684,6 +14171,15 @@
       "place": "Dedham, MA"
     },
     {
+      "number": 38395,
+      "name": "Northwestern Regional Gearheads",
+      "city": "Winsted",
+      "state": "CT",
+      "region": "USCT",
+      "rookie_year": 2026,
+      "place": "Winsted, CT"
+    },
+    {
       "number": 38424,
       "name": "LREI Knights",
       "city": "New York",
@@ -8691,6 +14187,42 @@
       "region": "USNYNY",
       "rookie_year": 2026,
       "place": "New York, NY"
+    },
+    {
+      "number": 38428,
+      "name": "Test Kristina FG FTC Team 1",
+      "city": "Philadelphia",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2026,
+      "place": "Philadelphia, PA"
+    },
+    {
+      "number": 38429,
+      "name": "Test Brigid FG FTC Team 1",
+      "city": "Philadelphia",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2026,
+      "place": "Philadelphia, PA"
+    },
+    {
+      "number": 38430,
+      "name": "Test Brigid FG FTC Team 2- no purchasing authority",
+      "city": "Philadelphia",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2026,
+      "place": "Philadelphia, PA"
+    },
+    {
+      "number": 38438,
+      "name": "Test Brigid FG FTC Team 4",
+      "city": "Philadelphia",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2026,
+      "place": "Philadelphia, PA"
     },
     {
       "number": 38442,
@@ -8702,6 +14234,24 @@
       "place": "Weston, MA"
     },
     {
+      "number": 38457,
+      "name": "Just ScienceProdigy",
+      "city": "Sharon",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2026,
+      "place": "Sharon, MA"
+    },
+    {
+      "number": 38489,
+      "name": "dont know",
+      "city": "Great Neck",
+      "state": "NY",
+      "region": "USNYLI",
+      "rookie_year": 2026,
+      "place": "Great Neck, NY"
+    },
+    {
       "number": 38511,
       "name": "UA Maker Academy",
       "city": "New York",
@@ -8709,6 +14259,15 @@
       "region": "USNYNY",
       "rookie_year": 2026,
       "place": "New York, NY"
+    },
+    {
+      "number": 38533,
+      "name": "Robo Ninjas",
+      "city": "Manchester",
+      "state": "CT",
+      "region": "USCT",
+      "rookie_year": 2026,
+      "place": "Manchester, CT"
     },
     {
       "number": 38549,
@@ -8729,6 +14288,15 @@
       "place": "Wellsboro, PA"
     },
     {
+      "number": 38610,
+      "name": "ACS Eagle Techs",
+      "city": "Rockaway",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2026,
+      "place": "Rockaway, NJ"
+    },
+    {
       "number": 38612,
       "name": "Highland Titans",
       "city": "Saddle River",
@@ -8736,6 +14304,15 @@
       "region": "USNJ",
       "rookie_year": 2026,
       "place": "Saddle River, NJ"
+    },
+    {
+      "number": 38628,
+      "name": "Prowlers",
+      "city": "Park Ridge",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2026,
+      "place": "Park Ridge, NJ"
     },
     {
       "number": 38632,
@@ -8763,6 +14340,15 @@
       "region": "USNYLI",
       "rookie_year": 2026,
       "place": "Hewlett, NY"
+    },
+    {
+      "number": 38707,
+      "name": "AMS4AOE1",
+      "city": "Jamaica",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2026,
+      "place": "Jamaica, NY"
     },
     {
       "number": 38711,
@@ -8855,6 +14441,15 @@
       "place": "Lexington, MA"
     },
     {
+      "number": 38758,
+      "name": "Penguin FTC Lex 6",
+      "city": "Lexington",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2026,
+      "place": "Lexington, MA"
+    },
+    {
       "number": 38759,
       "name": "Space Puffins",
       "city": "Lexington",
@@ -8898,6 +14493,15 @@
       "region": "USNYNY",
       "rookie_year": 2026,
       "place": "Cambria Heights, NY"
+    },
+    {
+      "number": 38783,
+      "name": "Marblehead Commanders",
+      "city": "Marblehead",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2026,
+      "place": "Marblehead, MA"
     },
     {
       "number": 38794,
@@ -8945,6 +14549,24 @@
       "place": "Attleboro, MA"
     },
     {
+      "number": 38822,
+      "name": "Yellow Jackets",
+      "city": "Brooklyn",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2026,
+      "place": "Brooklyn, NY"
+    },
+    {
+      "number": 38831,
+      "name": "Tech Valley Sprockets",
+      "city": "Troy",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2026,
+      "place": "Troy, NY"
+    },
+    {
       "number": 38844,
       "name": "Specter",
       "city": "Westford",
@@ -8963,6 +14585,42 @@
       "place": "Westford, MA"
     },
     {
+      "number": 38846,
+      "name": "Morris Tech Devils",
+      "city": "Denville",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2026,
+      "place": "Denville, NJ"
+    },
+    {
+      "number": 38847,
+      "name": "Overpowered Spicy Robot",
+      "city": "Bethpage",
+      "state": "NY",
+      "region": "USNYLI",
+      "rookie_year": 2026,
+      "place": "Bethpage, NY"
+    },
+    {
+      "number": 38892,
+      "name": "Braves",
+      "city": "Central Falls",
+      "state": "RI",
+      "region": "USRI",
+      "rookie_year": 2026,
+      "place": "Central Falls, RI"
+    },
+    {
+      "number": 38934,
+      "name": "4564 Jellyfish",
+      "city": "Port Chester",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2026,
+      "place": "Port Chester, NY"
+    },
+    {
       "number": 38938,
       "name": "Orange Wave",
       "city": "Brooklyn",
@@ -8970,6 +14628,33 @@
       "region": "USNYNY",
       "rookie_year": 2026,
       "place": "Brooklyn, NY"
+    },
+    {
+      "number": 38941,
+      "name": "Snacks A Lot",
+      "city": "Contoocook",
+      "state": "NH",
+      "region": "USNH",
+      "rookie_year": 2026,
+      "place": "Contoocook, NH"
+    },
+    {
+      "number": 38942,
+      "name": "Lots'a Snacks",
+      "city": "Contoocook",
+      "state": "NH",
+      "region": "USNH",
+      "rookie_year": 2026,
+      "place": "Contoocook, NH"
+    },
+    {
+      "number": 38945,
+      "name": "GFORCE STEM Robotics",
+      "city": "West Haven",
+      "state": "CT",
+      "region": "USCT",
+      "rookie_year": 2026,
+      "place": "West Haven, CT"
     },
     {
       "number": 38952,
@@ -9008,6 +14693,15 @@
       "place": "Cortlandt Manor, NY"
     },
     {
+      "number": 39046,
+      "name": "JHS 194",
+      "city": "Whitestone",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2026,
+      "place": "Whitestone, NY"
+    },
+    {
       "number": 39047,
       "name": "KINET!CS",
       "city": "New York",
@@ -9044,6 +14738,42 @@
       "place": "New York, NY"
     },
     {
+      "number": 39084,
+      "name": "Buffalo Regional Robotics",
+      "city": "Alden",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2026,
+      "place": "Alden, NY"
+    },
+    {
+      "number": 39087,
+      "name": "Reed Robotics",
+      "city": "Central Islip",
+      "state": "NY",
+      "region": "USNYLI",
+      "rookie_year": 2026,
+      "place": "Central Islip, NY"
+    },
+    {
+      "number": 39100,
+      "name": "Essex Middle School 2",
+      "city": "Essex Junction",
+      "state": "VT",
+      "region": "USVT",
+      "rookie_year": 2026,
+      "place": "Essex Junction, VT"
+    },
+    {
+      "number": 39154,
+      "name": "ROBO WARRIORS 270K",
+      "city": "Brooklyn",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2026,
+      "place": "Brooklyn, NY"
+    },
+    {
       "number": 39160,
       "name": "Robo Ninjas",
       "city": "Kendall Park",
@@ -9051,6 +14781,33 @@
       "region": "USNJ",
       "rookie_year": 2026,
       "place": "Kendall Park, NJ"
+    },
+    {
+      "number": 39174,
+      "name": "Rogue Bots",
+      "city": "Woodside",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2026,
+      "place": "Woodside, NY"
+    },
+    {
+      "number": 39180,
+      "name": "West Babylon Eagles",
+      "city": "West Babylon",
+      "state": "NY",
+      "region": "USNYLI",
+      "rookie_year": 2026,
+      "place": "West Babylon, NY"
+    },
+    {
+      "number": 39206,
+      "name": "Cyberdogs",
+      "city": "New York",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2026,
+      "place": "New York, NY"
     },
     {
       "number": 39207,
@@ -9062,6 +14819,15 @@
       "place": "Amherst, MA"
     },
     {
+      "number": 39210,
+      "name": "Beacon HS Robotics",
+      "city": "New York",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2026,
+      "place": "New York, NY"
+    },
+    {
       "number": 39244,
       "name": "QIRT Bots",
       "city": "Far Rockaway",
@@ -9069,6 +14835,24 @@
       "region": "USNYNY",
       "rookie_year": 2026,
       "place": "Far Rockaway, NY"
+    },
+    {
+      "number": 39252,
+      "name": "HSMSE Dragotronics",
+      "city": "New York",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2026,
+      "place": "New York, NY"
+    },
+    {
+      "number": 39253,
+      "name": "Tidal Torque",
+      "city": "Southampton",
+      "state": "NY",
+      "region": "USNYLI",
+      "rookie_year": 2026,
+      "place": "Southampton, NY"
     },
     {
       "number": 39257,
@@ -9080,6 +14864,15 @@
       "place": "Bayside, NY"
     },
     {
+      "number": 39279,
+      "name": "Belbots",
+      "city": "Bronx",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2026,
+      "place": "Bronx, NY"
+    },
+    {
       "number": 39297,
       "name": "Pathfinder Tech",
       "city": "Palmer",
@@ -9087,6 +14880,69 @@
       "region": "USMA",
       "rookie_year": 2026,
       "place": "Palmer, MA"
+    },
+    {
+      "number": 39346,
+      "name": "Glitch Gods",
+      "city": "Mount Laurel",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2026,
+      "place": "Mount Laurel, NJ"
+    },
+    {
+      "number": 39369,
+      "name": "*THIS IS NOT A REAL TEAM*FINANCE & OPS NEED TO TEST in PRODUCTION",
+      "city": "Forest Hills",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2026,
+      "place": "Forest Hills, NY"
+    },
+    {
+      "number": 39379,
+      "name": "Keystone Dynamics",
+      "city": "Pittsburgh",
+      "state": "PA",
+      "region": "USPA",
+      "rookie_year": 2026,
+      "place": "Pittsburgh, PA"
+    },
+    {
+      "number": 39380,
+      "name": "MORT Junior Part Deux",
+      "city": "Flanders",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2026,
+      "place": "Flanders, NJ"
+    },
+    {
+      "number": 39404,
+      "name": "Knight Botz",
+      "city": "New York",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2026,
+      "place": "New York, NY"
+    },
+    {
+      "number": 39416,
+      "name": "Panther BOTs Too",
+      "city": "Boston",
+      "state": "MA",
+      "region": "USMA",
+      "rookie_year": 2026,
+      "place": "Boston, MA"
+    },
+    {
+      "number": 39426,
+      "name": "BISNY BULLDOGS (UPPER)",
+      "city": "New York",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2026,
+      "place": "New York, NY"
     }
   ]
 }
