@@ -15,11 +15,10 @@ require 'net/http'
 require 'time'
 require_relative 'lib/ftc_api'
 
-STATES = %w[CT MA ME NH RI VT NY NJ PA].freeze
+STATES = %w[CT MA ME NH RI VT NY NJ].freeze
 STATE_NAMES = {
   'CT' => 'Connecticut', 'MA' => 'Massachusetts', 'ME' => 'Maine', 'NH' => 'New Hampshire',
-  'RI' => 'Rhode Island', 'VT' => 'Vermont', 'NY' => 'New York', 'NJ' => 'New Jersey',
-  'PA' => 'Pennsylvania'
+  'RI' => 'Rhode Island', 'VT' => 'Vermont', 'NY' => 'New York', 'NJ' => 'New Jersey'
 }.freeze
 USER_AGENT = 'robotics.bamvt.com ftc-teams refresh (https://robotics.bamvt.com/events/map/)'
 

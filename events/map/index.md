@@ -1,12 +1,12 @@
 ---
-last_modified_at: 2026-11-05T03:14:33Z
+last_modified_at: 2026-11-05T03:32:26Z
 layout: default
 nav_section: /events/
 redirect_from:
   - /seasons/biobuzz/events/map/
 title: Northeast FTC Events and Teams Map, 2026–2027
 season: "2026-2027"
-description: Map of 2026–2027 BIOBUZZ FIRST Tech Challenge events and teams in New England, New York, New Jersey, and Pennsylvania, with distances from Bennington, Vermont.
+description: Map of 2026–2027 BIOBUZZ FIRST Tech Challenge events and teams in New England, New York, and New Jersey, with distances from Bennington, Vermont.
 ---
 {% assign ftc = site.data.ftc_events["2026-2027"] %}
 {% assign ftc_teams = site.data.ftc_teams["2026-2027"] %}
@@ -15,7 +15,7 @@ description: Map of 2026–2027 BIOBUZZ FIRST Tech Challenge events and teams in
 
 [All events](/events/)
 
-This map shows {{ ftc.events | size }} FIRST Tech Challenge events in New England, New York, New Jersey, and Pennsylvania for the 2026–2027 BIOBUZZ season. Distances are straight-line miles from Bennington; driving distances are longer. Event details come from FIRST's [FTC Events API](https://ftc-events.firstinspires.org/services/API){:target="_blank"}, retrieved {{ ftc.retrieved | date: "%B %-d, %Y" }}. Confirm dates and registration with each event before planning travel: league meets and league tournaments are generally limited to teams in that league, and qualifiers may give priority to teams from their own region.
+This map shows {{ ftc.events | size }} FIRST Tech Challenge events in New England, New York, and New Jersey for the 2026–2027 BIOBUZZ season. Distances are straight-line miles from Bennington; driving distances are longer. The map starts with events within 200 miles; change **Within** to see the rest. Event details come from FIRST's [FTC Events API](https://ftc-events.firstinspires.org/services/API){:target="_blank"}, retrieved {{ ftc.retrieved | date: "%B %-d, %Y" }}. Confirm dates and registration with each event before planning travel: league meets and league tournaments are generally limited to teams in that league, and qualifiers may give priority to teams from their own region.
 
 Turn on **Show teams** (or open [this link](#teams)) to add the {{ ftc_teams.teams | size }} teams that FIRST lists in the same states for this season, also from the FTC Events API (retrieved {{ ftc_teams.retrieved | date: "%B %-d, %Y" }}). FIRST lists each team's town rather than an address, so teams appear at the center of their town.
 
@@ -57,7 +57,7 @@ Turn on **Show teams** (or open [this link](#teams)) to add the {{ ftc_teams.tea
         <option value="50">50 miles</option>
         <option value="100">100 miles</option>
         <option value="150">150 miles</option>
-        <option value="200">200 miles</option>
+        <option value="200" selected>200 miles</option>
         <option value="300">300 miles</option>
       </select>
     </label>
@@ -121,7 +121,7 @@ Teams matching the state and distance filters, nearest first. Distances are meas
   ];
   var typeColor = {}, typeRank = {};
   types.forEach(function (t, i) { typeColor[t.name] = t.color; typeRank[t.name] = i; });
-  var states = ['VT', 'NH', 'ME', 'MA', 'CT', 'RI', 'NY', 'NJ', 'PA'];
+  var states = ['VT', 'NH', 'ME', 'MA', 'CT', 'RI', 'NY', 'NJ'];
   // Covered events are all in Eastern time; keep same-day events visible until local midnight there.
   var today = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/New_York' }).format(new Date());
   var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
