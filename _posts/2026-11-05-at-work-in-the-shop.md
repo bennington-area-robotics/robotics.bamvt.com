@@ -1,21 +1,22 @@
 ---
-last_modified_at: 2026-11-05T01:31:58Z
+last_modified_at: 2026-11-05T02:30:54Z
 layout: default
 season: "2026-2027"
 nav_section: /blog/
 title: At work in the shop
 date: 2026-11-05
 author: Peter Radocchia, Head Coach
-description: Students build prototypes for collecting, storing, and launching game pieces while testing code for movement and tracking.
+description: Students on both teams build prototypes for collecting, storing, and launching game pieces while testing code for movement and tracking.
 og_image: https://assets.bamvt.com/robotics.bamvt.com/blog/at-work-in-the-shop/images/practice-field.jpg
 ---
 
 # At work in the shop
 
-Students are building prototypes for collecting, storing, and launching game
+Students on both teams, 18650 Cookie Clickers and 32473 Bennington Bolts and
+Biscuits, are building prototypes for collecting, storing, and launching game
 pieces, while others test code for movement and tracking on the practice field.
 
-{% include figure.html src="https://assets.bamvt.com/robotics.bamvt.com/blog/at-work-in-the-shop/images/build-table.jpg" alt="Students and a mentor working along a build table covered with aluminum channel, intake wheels, belting, and hand tools, below a Cookie Clickers banner" caption="Prototype assembly at the Cookie Clickers build table." %}
+{% include figure.html src="https://assets.bamvt.com/robotics.bamvt.com/blog/at-work-in-the-shop/images/build-table.jpg" alt="Students and a mentor working along a build table covered with aluminum channel, intake wheels, belting, and hand tools, below a Cookie Clickers banner" caption="Prototype assembly at the build tables." %}
 
 ## Prototypes
 
@@ -37,3 +38,5 @@ programming does not wait for the new mechanisms to be finished.
 
 Students interested in joining can find our [meeting schedule](/#meeting-schedule)
 and [membership information](/#student-membership) on the homepage.
+
+*Photos by Althea.*
