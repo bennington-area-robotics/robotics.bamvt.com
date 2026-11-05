@@ -151,6 +151,9 @@ contact information, or internal code-of-conduct review notes into this reposito
   placeholders and print flyers also carry `noindex: true`. Remove `noindex: true`
   and `sitemap: false` from placeholders only when they have substantial original
   content. See **Sitemap inclusion** in the README for current exclusions.
+- `bin/indexnow` submits deployed pages to IndexNow (Bing and partners, not
+  Google) using the root `<key>.txt` file. Do not rename or remove the key file;
+  see **IndexNow** in the README.
 - Markdown uses kramdown syntax. External links normally use
   `{:target="_blank"}`; internal links do not.
 - Shared styles and scripts are kept in the relevant layout rather than separate

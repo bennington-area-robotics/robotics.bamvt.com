@@ -418,3 +418,25 @@ content timestamp hook described above. Pages without a recorded content timesta
 omit `lastmod`; static files never use filesystem modification times. Do not add a
 fallback to post dates, file modification times, or build time. Existing sitemap
 exclusions and redirect behavior remain unchanged.
+
+### IndexNow
+
+`bin/indexnow` submits published pages to IndexNow, which shares submissions with
+Bing, Yandex, Seznam, Naver, and Yep. Google does not use IndexNow; request
+indexing for important pages through URL Inspection in Search Console instead.
+Run the script after GitHub Pages has deployed a change:
+
+```bash
+bin/indexnow --dry-run --since 2026-11-01  # list sitemap pages changed since a date
+bin/indexnow --since 2026-11-01            # submit them
+bin/indexnow /events/ /blog/some-post/     # submit specific paths or URLs
+bin/indexnow --all                         # submit every sitemap URL
+```
+
+The key is the single `<key>.txt` file in the repository root, published
+unchanged at the site root; the script reads it and takes the host from `CNAME`.
+This site's key differs from www.bamvt.com's. `--since` uses the sitemap's
+`lastmod` dates, which the content timestamp hook maintains.
+Submit only changed pages; repeated submissions of unchanged URLs can
+be throttled. The same script is kept in `robotics.bamvt.com` and
+`www.bamvt.com`; keep the copies identical.
