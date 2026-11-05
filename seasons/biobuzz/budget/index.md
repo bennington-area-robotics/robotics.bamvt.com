@@ -1,6 +1,7 @@
 ---
-last_modified_at: 2026-10-10T17:39:59Z
+last_modified_at: 2026-11-04T22:07:13Z
 sitemap: false
+noindex: true
 redirect_from:
   - /budget/2026-2027/
   - /seasons/2026-2027/budget/

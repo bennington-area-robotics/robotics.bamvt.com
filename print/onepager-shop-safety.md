@@ -1,5 +1,6 @@
 ---
 sitemap: false
+noindex: true
 layout: flier
 title: Shop Safety
 flier_type: safety

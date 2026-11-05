@@ -396,7 +396,16 @@ Season and budget indexes, seasonal blog listings, the BIOBUZZ events listing,
 BIOBUZZ budget/sponsor/portfolio placeholders, and the 2025 state championship
 page are currently excluded. Remove `sitemap: false` when these pages contain
 substantial original content. Root budget/sponsor/portfolio copies and generated
-legacy redirects remain excluded as before. No `noindex` directive is needed.
+legacy redirects remain excluded as before.
+
+Unfinished placeholders and printable copies also carry `noindex: true`, which
+the default and flyer layouts render as `<meta name="robots" content="noindex">`
+so search engines do not index thin or duplicate pages they reach through links.
+This currently covers the BIOBUZZ budget, sponsor, portfolio, and blog pages, the
+root budget/sponsor/portfolio copies, and both print flyers. The sitemap also skips
+any `noindex` page. Remove `noindex: true` together with `sitemap: false` when a
+placeholder gains substantial original content. Generated redirect stubs already
+include `noindex` from `jekyll-redirect-from`.
 
 The root `favicon.ico` is derived from the existing 180px round chip logo and
 contains 48px and 96px images. The layout retains the existing PNG and Apple icons

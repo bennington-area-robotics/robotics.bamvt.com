@@ -139,8 +139,9 @@ contact information, or internal code-of-conduct review notes into this reposito
 - `sitemap.xml` overrides the plugin template and uses only explicit
   `last_modified_at` values for `lastmod`; do not substitute post dates, filesystem
   modification times, or build time. Keep duplicate root pages, redirects,
-  printable copies, PDFs, and verification files out of the sitemap. Remove
-  `sitemap: false` from placeholders only when they have substantial original
+  printable copies, PDFs, and verification files out of the sitemap. Unfinished
+  placeholders and print flyers also carry `noindex: true`. Remove `noindex: true`
+  and `sitemap: false` from placeholders only when they have substantial original
   content. See **Sitemap inclusion** in the README for current exclusions.
 - Markdown uses kramdown syntax. External links normally use
   `{:target="_blank"}`; internal links do not.
