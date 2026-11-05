@@ -13,7 +13,7 @@ latitude is 100 units and distances are roughly true near 42°N (100 miles ≈ 1
   <text class="ring-label" x="550.1" y="368">100 mi</text>
   <text class="ring-label" x="550.1" y="513">200 mi</text>
   {%- for e in ftc.events -%}
-    {%- if e.lat and e.remote != true and e.end >= today and e.type != "Kickoff" -%}
+    {%- if e.lat and e.remote != true and e.end >= today and e.type != "Kickoff" and e.type != "Demo" -%}
       {%- assign x = e.lon | plus: 80.6 | times: 74.3 | round: 1 -%}
       {%- assign y = 45.2 | minus: e.lat | times: 100 | round: 1 %}
   <circle class="dot dot--{{ e.type | slugify }}" cx="{{ x }}" cy="{{ y }}" r="7"/>

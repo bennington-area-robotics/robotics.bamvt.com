@@ -1,6 +1,6 @@
 ---
 name: update-ftc-events
-description: Refresh the northeast FTC events data behind /events/map/ (_data/ftc_events/YYYY-YYYY.json) from the public FTC event listing, review what changed, fix missing locations, and check related event pages. Use when asked to update, refresh, re-pull, or check the FTC events map or event data, or when starting a new season's events map.
+description: Refresh the northeast FTC events and teams data behind /events/map/ (_data/ftc_events/ and _data/ftc_teams/) from the FTC Events API, review what changed, fix missing locations, and check related event pages. Use when asked to update, refresh, re-pull, or check the FTC events map or event data, or when starting a new season's events map.
 ---
 
 # Update FTC Events Data
@@ -22,21 +22,39 @@ belong in the script so they survive the next refresh.
 
 ## 2. Refresh
 
+Both scripts use FIRST's [FTC Events API](https://ftc-events.firstinspires.org/services/API),
+the route FIRST's terms allow (its website terms prohibit scripts and scrapers, so
+never fetch the event or region web pages with a script). They read
+`FTC_API_USERNAME` and `FTC_API_TOKEN` from the repository's `.env` (ignored by Git)
+or the environment; never print, log, or commit those values. If they are missing,
+the user registers at https://ftc-events.firstinspires.org/services/API/register.
+API data is for non-commercial use, and pages that show it must keep the link back
+to the API page (the credits on `/events/map/` and `/events/`).
+
 ```sh
 bin/ftc-events            # current season (2026 -> 2026-2027.json)
+bin/ftc-teams             # teams in the same states
 ```
 
-- To parse a saved copy instead of fetching (offline, or to reproduce a run), pass
-  the season and file: `bin/ftc-events 2026 path/to/listing.html`. Save downloaded
-  pages in their own scratch directory.
-- If the script aborts with `window.<Name> not found`, FIRST has changed the page
-  layout. Inspect the page for the embedded `window.*Events` arrays and update
-  `embedded`/`groups` in the script; do not fall back to scraping rendered HTML
-  without telling the user.
-- Unknown `eventType` numbers appear as `Other (<n>)`. Infer the label from event
-  names and add it to `TYPES`; also add it, with a color, to the `types` list in
-  `events/map/index.md`, and a `.dot--<type>` color to the event styles in
+- Event types come from the API's `typeName`; `TYPE_NAMES` renames a few
+  (`Non-Advancement` → Scrimmage, `Demo / Exhibition` → Demo). A new type shows up
+  under its API name. Add it, with a color, to the `types` list in
+  `events/map/index.md` and a `.dot--<type>` color to the event styles in
   `_layouts/default.html`.
+- An `HTTP 401` means the credentials are wrong or expired; ask the user to check
+  `.env` rather than retrying.
+
+### Teams layer
+
+`bin/ftc-teams` asks the API for each state's teams and keeps only the number,
+short name, town, home region, and rookie year. It looks up only towns that are
+not already in the file's `places` table (about one second each, from
+OpenStreetMap), rejects matches outside the expected state, and warns about
+free-text matches to check. If it warns `No location found for <Town, ST>`, add
+`"Town, ST": [lat, lon]` to `places` by hand and rerun. The API lists more teams
+than FIRST's region web pages (which seem to show only teams that have finished
+registering), so counts are higher than those pages; report the change in team
+count after each refresh.
 
 ## 3. Review the changes
 

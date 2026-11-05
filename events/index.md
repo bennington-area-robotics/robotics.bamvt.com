@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-11-04T21:32:21Z
+last_modified_at: 2026-11-05T03:14:33Z
 description: "Events Bennington Area Robotics hosts and competes in, season by season, with results, plus a map of FTC events across the northeast."
 layout: default
 title: Events
@@ -38,4 +38,4 @@ Bennington Area Robotics competes in FIRST Tech Challenge events across Vermont 
 </section>
 {% endfor %}
 
-<p class="event-photo-credit">Banner: Bennington Bolts and Biscuits and Cookie Clickers robots on the field at the 2026 Vermont Championship. Photo courtesy of UVM.</p>
+<p class="event-photo-credit">Banner: Bennington Bolts and Biscuits and Cookie Clickers robots on the field at the 2026 Vermont Championship. Photo courtesy of UVM. Map preview: event data from the <a href="https://ftc-events.firstinspires.org/services/API" target="_blank">FIRST Tech Challenge Events API</a>; venue locations &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap contributors</a> (ODbL).</p>
