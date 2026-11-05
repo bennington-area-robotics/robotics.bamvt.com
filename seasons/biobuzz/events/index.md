@@ -1,19 +1,7 @@
 ---
-last_modified_at: 2026-11-04T20:25:52Z
-sitemap: false
+# Season event listings moved to the events hub; keep these URLs working.
 redirect_from:
   - /seasons/2026-2027/events/
-layout: default
-nav_section: /events/
-title: 2026–2027 BIOBUZZ Events
-season: "2026-2027"
-description: Events for Bennington Area Robotics's 2026–2027 BIOBUZZ season.
+redirect_to: /events/#biobuzz
+sitemap: false
 ---
-
-# 2026–2027 BIOBUZZ Events
-
-[Season overview](/seasons/biobuzz/)
-
-{% include season-events/2026-2027.md %}
-
-[Map of northeast FTC events](/seasons/biobuzz/events/map/) · [All seasons' events](/events/)

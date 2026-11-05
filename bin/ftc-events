@@ -7,7 +7,8 @@
 #
 # The listing at https://ftc-events.firstinspires.org/<season> embeds every
 # event as JSON. This keeps New England, New York, New Jersey, and Pennsylvania
-# events, normalizes field names, and fills missing coordinates from FALLBACK.
+# events, normalizes field names, fills missing coordinates from VENUES, and
+# applies CORRECTIONS confirmed against regional organizers.
 require 'json'
 require 'net/http'
 require 'time'
@@ -21,18 +22,40 @@ TYPES = {
   1004 => 'Qualifier',
   1007 => 'Super Qualifier',
   1010 => 'Championship',
-  1016 => 'Kickoff'
+  1016 => 'Kickoff',
+  1017 => 'Premier Event'
 }.freeze
 
-# City-level coordinates for events published without a location.
-FALLBACK = {
-  'Windham, NH' => [42.8007, -71.3042],
-  'Basking Ridge, NJ' => [40.7062, -74.5493],
-  'Bayonne, NJ' => [40.6687, -74.1143],
-  'Corning, NY' => [42.1429, -77.0547],
-  'Utica, NY' => [43.0798, -75.2696],
-  'Potsdam, NY' => [44.6634, -74.9988]
+# Venue coordinates for events FIRST publishes without a location, keyed by
+# "<season>/<code>" because codes repeat across seasons. Sources: OpenStreetMap
+# (Nominatim) venue lookups, 2026-11-04.
+VENUES = {
+  '2026/USNJCENM5' => [40.62012, -74.56772], # The Pingry School, Basking Ridge
+  '2026/USNJNEM5' => [40.67173, -74.12247],  # Bayonne High School
+  '2026/USNHWIN' => [42.79910, -71.30701],   # Windham Center School
+  '2026/USNHWIQ' => [42.79910, -71.30701],   # Windham Center School
+  '2026/USNYEXCOKO' => [42.17537, -76.88200], # Corning Robot Room, 3504 Chambers Rd, Big Flats
+  '2026/USNYEXUTQ' => [43.07520, -75.21688], # MVCC Jorgensen Athletic Center
+  '2026/USNYEXCMP' => [43.07520, -75.21688], # MVCC Jorgensen Athletic Center
+  '2026/USNYEXPOQ' => [44.66232, -74.99868]  # Clarkson University Schuler ERC
 }.freeze
+
+# City-level coordinates when no venue location is known. Events placed this way
+# are flagged location_approximate.
+FALLBACK = {}.freeze
+
+# Corrections where the regional organizer's published details differ from
+# FIRST's record, keyed like VENUES.
+CORRECTIONS = {
+  # https://www.ftcpenn.org/ftc-events/2026-2027-season/pennsylvania-ftc-season-kickoff-exton
+  '2026/USPAEXKO' => {
+    'venue' => 'Downingtown Area Robotics Meeting Space',
+    'address' => '241 Welsh Pool Rd, Suite 110',
+    'lat' => 40.06214, 'lon' => -75.64403
+  }
+}.freeze
+
+VIRTUAL = /\A(virtual|remote|online)\b/i
 
 season = Integer(ARGV[0] || 2026)
 url = "https://ftc-events.firstinspires.org/#{season}"
@@ -76,17 +99,24 @@ events = raw.filter_map do |e|
   next if seen[e['Tc']]
 
   seen[e['Tc']] = true
+  key = "#{season}/#{e['Tc']}"
   city = e['Ec'].to_s.strip
   state = e['Es']
+  # FIRST sometimes appends " ()  City, ST" or a trailing comma to venue names.
+  venue = e['Ev'].to_s.sub(/\s*\(\s*\).*\z/, '').strip.sub(/,\z/, '').squeeze(' ')
+  address = e['Ea'].to_s.strip.sub(/,\z/, '').squeeze(' ')
   # The listing stores longitude in "lat" and latitude in "lon".
   lat = e['lon']
   lon = e['lat']
-  approximate = false
+  # Without a published venue, FIRST's coordinates are only a city centroid.
+  approximate = venue.empty? || venue == '-'
   if lat.nil? || lon.nil?
-    lat, lon = FALLBACK["#{city}, #{state}"]
-    approximate = true
-    warn "No coordinates for #{e['Tc']} (#{city}, #{state}); add it to FALLBACK" if lat.nil?
+    lat, lon = VENUES[key]
+    approximate = lat.nil?
+    lat, lon = FALLBACK["#{city}, #{state}"] if lat.nil?
+    warn "No coordinates for #{key} (#{city}, #{state}); add the venue to VENUES" if lat.nil?
   end
+  correction = CORRECTIONS.fetch(key, {})
   website = e['Ew'].to_s.strip
   {
     'code' => e['Tc'],
@@ -94,8 +124,8 @@ events = raw.filter_map do |e|
     'type' => TYPES.fetch(e['eventType'], "Other (#{e['eventType']})"),
     'start' => e['Sd'][0, 10],
     'end' => e['Ed'][0, 10],
-    'venue' => e['Ev'].to_s.strip.sub(/,\z/, ''),
-    'address' => e['Ea'].to_s.strip.sub(/,\z/, ''),
+    'venue' => venue,
+    'address' => address,
     'city' => city,
     'state' => state,
     'region' => e['Rn'],
@@ -104,9 +134,14 @@ events = raw.filter_map do |e|
     'lat' => lat,
     'lon' => lon,
     'location_approximate' => approximate,
-    'remote' => e['Isr'],
+    'remote' => e['Isr'] || venue.match?(VIRTUAL),
     'hybrid' => e['IsHybrid']
-  }
+  }.merge(correction)
+end
+
+used = events.map { |e| "#{season}/#{e['code']}" }
+(VENUES.keys + CORRECTIONS.keys).select { |k| k.start_with?("#{season}/") && !used.include?(k) }.each do |k|
+  warn "#{k} is in VENUES or CORRECTIONS but no longer in the listing; remove it"
 end
 
 events.sort_by! { |e| [e['start'], e['state'], e['name']] }

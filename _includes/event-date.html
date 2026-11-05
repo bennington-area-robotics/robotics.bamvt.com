@@ -1,0 +1,15 @@
+{%- comment -%}
+Calendar-style date tile for an event. Parameters: event (an _data/events.yml entry).
+{%- endcomment -%}
+{%- assign e = include.event -%}
+{%- assign m1 = e.start | date: "%b" -%}{%- assign m2 = e.end | date: "%b" -%}
+{%- assign d1 = e.start | date: "%-d" -%}{%- assign d2 = e.end | date: "%-d" -%}
+{%- assign w1 = e.start | date: "%a" -%}{%- assign w2 = e.end | date: "%a" -%}
+{%- assign full = e.start | date: "%A, %B %-d, %Y" -%}
+{%- if e.end != e.start -%}{%- assign full_end = e.end | date: "%A, %B %-d, %Y" -%}{%- assign full = full | append: " to " | append: full_end -%}{%- endif -%}
+<time class="event-date{% if e.end != e.start %} event-date--range{% endif %}" datetime="{{ e.start }}" title="{{ full }}">
+  <span class="event-date-month">{{ m1 }}{% if m2 != m1 %}–{{ m2 }}{% endif %}</span>
+  <span class="event-date-day">{{ d1 }}{% if e.end != e.start %}–{{ d2 }}{% endif %}</span>
+  <span class="event-date-weekday">{{ w1 }}{% if e.end != e.start %}–{{ w2 }}{% endif %}</span>
+  <span class="event-date-year">{{ e.end | date: "%Y" }}</span>
+</time>

@@ -1,7 +1,9 @@
 ---
-last_modified_at: 2026-11-04T20:44:18Z
+last_modified_at: 2026-11-04T21:33:05Z
 layout: default
 nav_section: /events/
+redirect_from:
+  - /seasons/biobuzz/events/map/
 title: Northeast FTC Events Map, 2026–2027
 season: "2026-2027"
 description: Map of 2026–2027 BIOBUZZ FIRST Tech Challenge events in New England, New York, New Jersey, and Pennsylvania, with distances from Bennington, Vermont.
@@ -10,7 +12,7 @@ description: Map of 2026–2027 BIOBUZZ FIRST Tech Challenge events in New Engla
 
 # Northeast FTC Events Map
 
-[2026–2027 BIOBUZZ events](/seasons/biobuzz/events/)
+[All events](/events/)
 
 This map shows {{ ftc.events | size }} FIRST Tech Challenge events in New England, New York, New Jersey, and Pennsylvania for the 2026–2027 BIOBUZZ season. Distances are straight-line miles from Bennington; driving distances are longer. Event details come from the [FTC event listing]({{ ftc.source }}){:target="_blank"}, retrieved {{ ftc.retrieved | date: "%B %-d, %Y" }}. Confirm dates and registration with each event before planning travel: league meets and league tournaments are generally limited to teams in that league, and qualifiers may give priority to teams from their own region.
 
@@ -33,6 +35,7 @@ This map shows {{ ftc.events | size }} FIRST Tech Challenge events in New Englan
 .event-map-list tbody tr { cursor: pointer; }
 .event-map-list .event-type { display: inline-flex; align-items: center; gap: 0.3rem; white-space: nowrap; }
 .event-map-list .event-place { color: var(--muted); font-size: 0.82rem; }
+.event-map-ours { display: inline-block; padding: 0 0.35rem; border-radius: 3px; background: #fff3c4; color: #5a4500; font-size: 0.72rem; font-weight: 700; white-space: nowrap; }
 </style>
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
@@ -71,11 +74,16 @@ This map shows {{ ftc.events | size }} FIRST Tech Challenge events in New Englan
 <script>
 (function () {
   var data = {{ ftc | jsonify }};
+  // FTC codes of events on our own calendar (_data/events.yml) for this season.
+  {%- assign our_season = site.data.events.seasons | where: "id", ftc.season | first -%}
+  {%- assign our_codes = our_season.events | map: "ftc" | compact %}
+  var ours = {{ our_codes | jsonify }};
   var home = { name: 'Bennington, VT', lat: 42.8781, lon: -73.1968 };
   var types = [
     { name: 'Qualifier', color: '#e63946', on: true },
     { name: 'Super Qualifier', color: '#f4a261', on: true },
     { name: 'Championship', color: '#405c85', on: true },
+    { name: 'Premier Event', color: '#1d3557', on: true },
     { name: 'Scrimmage', color: '#2a9d8f', on: true },
     { name: 'League Meet', color: '#9b72cf', on: false },
     { name: 'League Tournament', color: '#5e3c99', on: false },
@@ -114,6 +122,7 @@ This map shows {{ ftc.events | size }} FIRST Tech Challenge events in New Englan
   events.forEach(function (e) {
     e.miles = miles(e.lat, e.lon);
     e.key = e.lat.toFixed(3) + ',' + e.lon.toFixed(3);
+    e.ours = ours.indexOf(e.code) >= 0;
     if (!(e.type in typeColor)) { typeColor[e.type] = '#666666'; typeRank[e.type] = 99; }
   });
 
@@ -146,14 +155,16 @@ This map shows {{ ftc.events | size }} FIRST Tech Challenge events in New Englan
   }
 
   function placeOf(e) {
-    return esc(e.venue) + '<br>' + esc(e.address) + (e.address ? ', ' : '') + esc(e.city) + ', ' + esc(e.state) +
+    var street = [e.address, e.city + ', ' + e.state].filter(Boolean).join(', ');
+    return (e.venue ? esc(e.venue) + '<br>' : '') + esc(street) +
       (e.location_approximate ? '<br><em>Approximate location (city only)</em>' : '');
   }
 
   function popupItem(e, showPlace) {
     var links = '<a href="' + esc(e.ftc_events_url) + '" target="_blank">FTC event page</a>';
     if (e.website) links += ' · <a href="' + esc(e.website) + '" target="_blank">Event website</a>';
-    return '<li>' + swatch(e.type) + ' <strong>' + esc(e.name) + '</strong><br>' + esc(when(e)) + ' · ' + esc(e.type) +
+    return '<li>' + swatch(e.type) + ' <strong>' + esc(e.name) + '</strong>' +
+      (e.ours ? ' <span class="event-map-ours">On our calendar</span>' : '') + '<br>' + esc(when(e)) + ' · ' + esc(e.type) +
       (e.remote ? ' (remote)' : e.hybrid ? ' (hybrid)' : '') + (showPlace ? '<br>' + placeOf(e) : '') + '<br>' + links + '</li>';
   }
 
@@ -172,12 +183,14 @@ This map shows {{ ftc.events | size }} FIRST Tech Challenge events in New Englan
     shown.forEach(function (e) { (groups[e.key] = groups[e.key] || []).push(e); });
     Object.keys(groups).forEach(function (key) {
       var list = groups[key];
+      var mine = list.some(function (e) { return e.ours; });
       var lead = list.slice().sort(function (a, b) { return typeRank[a.type] - typeRank[b.type]; })[0];
       var first = list[0];
       // Events can share coordinates but use different buildings; give each its own venue then.
       var sameVenue = list.every(function (e) { return e.venue === first.venue && e.address === first.address; });
       var m = L.circleMarker([first.lat, first.lon], {
-        radius: list.length > 1 ? 9 : 7, color: '#222', weight: 1, fillColor: typeColor[lead.type], fillOpacity: 0.9
+        radius: list.length > 1 ? 9 : 7, color: mine ? '#e9b600' : '#222', weight: mine ? 4 : 1,
+        fillColor: typeColor[lead.type], fillOpacity: 0.9
       }).bindPopup('<div class="event-map-popup"><h4>' + esc(first.city) + ', ' + esc(first.state) + ' · ' +
         Math.round(first.miles) + ' mi</h4>' + (sameVenue ? placeOf(first) : '') + '<ul>' +
         list.map(function (e) { return popupItem(e, !sameVenue); }).join('') + '</ul></div>', { maxWidth: 320 });
@@ -188,14 +201,15 @@ This map shows {{ ftc.events | size }} FIRST Tech Challenge events in New Englan
 
     var rows = shown.map(function (e, i) {
       return '<tr data-key="' + e.key + '"><td class="when">' + esc(when(e)) + '</td><td><a href="' + esc(e.ftc_events_url) +
-        '" target="_blank">' + esc(e.name) + '</a><br><span class="event-place">' + esc(e.venue) + ', ' + esc(e.city) + ', ' + esc(e.state) +
+        '" target="_blank">' + esc(e.name) + '</a>' +
+        (e.ours ? ' <span class="event-map-ours">On our calendar</span>' : '') + '<br><span class="event-place">' + esc(e.venue) + ', ' + esc(e.city) + ', ' + esc(e.state) +
         '</span></td><td><span class="event-type">' + swatch(e.type) + esc(e.type) + '</span></td><td class="miles">' +
         Math.round(e.miles) + '</td></tr>';
     });
     document.getElementById('event-map-rows').innerHTML = rows.join('') ||
       '<tr><td colspan="4">No events match these filters.</td></tr>';
     document.getElementById('event-map-count').textContent = 'Showing ' + shown.length + ' of ' + events.length +
-      ' events. Larger circles mark venues with more than one event.';
+      ' events. Larger circles mark venues with more than one event; gold rings mark events on our calendar.';
 
     if (fit && shown.length) {
       var bounds = L.latLngBounds(shown.map(function (e) { return [e.lat, e.lon]; })).extend([home.lat, home.lon]);

@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-10-17T14:50:57Z
+last_modified_at: 2026-11-04T21:32:21Z
 redirect_from:
   - /seasons/2025-2026/
 layout: default
@@ -16,7 +16,9 @@ description: Results, finances, sponsors, and engineering work from Bennington A
 
 Team 18650 Cookie Clickers won the Vermont Championship and Inspire Award and advanced to the FIRST Championship in Houston. In their first season, Team 32473 Bennington Bolts and Biscuits placed seventh at the Vermont Championship and advanced to the New England Premier Event.
 
-{% include season-events/2025-2026.md %}
+## Events {#events}
+
+{% include event-timeline.html season="2025-2026" %}
 
 ## Budget and Supporters
 
