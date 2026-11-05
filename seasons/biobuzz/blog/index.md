@@ -1,7 +1,6 @@
 ---
-last_modified_at: 2026-11-05T02:33:24Z
+last_modified_at: 2026-11-05T03:55:34Z
 sitemap: false
-noindex: true
 redirect_from:
   - /seasons/2026-2027/blog/
 layout: default

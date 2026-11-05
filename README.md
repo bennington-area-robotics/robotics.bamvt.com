@@ -402,7 +402,7 @@ legacy redirects remain excluded as before.
 Unfinished placeholders and printable copies also carry `noindex: true`, which
 the default and flyer layouts render as `<meta name="robots" content="noindex">`
 so search engines do not index thin or duplicate pages they reach through links.
-This currently covers the BIOBUZZ budget, sponsor, portfolio, and blog pages, the
+This currently covers the BIOBUZZ budget, sponsor, and portfolio pages, the
 root budget/sponsor/portfolio copies, and both print flyers. The sitemap also skips
 any `noindex` page. Remove `noindex: true` together with `sitemap: false` when a
 placeholder gains substantial original content. Generated redirect stubs already
