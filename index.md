@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-11-05T02:33:24Z
+last_modified_at: 2026-11-04T21:32:21Z
 layout: default
 title: Home
 seo_title: Bennington Area Robotics | Youth Robotics in Bennington, VT

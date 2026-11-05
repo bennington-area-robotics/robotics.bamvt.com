@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-11-05T02:33:24Z
+last_modified_at: 2026-11-04T22:07:13Z
 sitemap: false
 layout: default
 title: Budgets
