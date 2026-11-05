@@ -1,0 +1,150 @@
+# Events Bennington Area Robotics hosts or attends, newest season first.
+# Rendered by _includes/event-timeline.html (events hub and season overviews) and
+# _includes/event-next.html. Dates are quoted ISO strings; list events in date order.
+#
+# Event fields:
+#   title, start, end (same as start for one-day events), type
+#   type: Kickoff | Qualifier | Championship | Premier Event | World Championship
+#   url: internal event page, or external_url when there is no page here
+#   venue, place (city and state), directions (optional map link)
+#   ftc: FTC event code; ftc_season: FTC season year used in its URL
+#   host: hosting note, when we host or co-host
+#   teams: team numbers that competed, when not every team attended
+#   results: short highlights, shown once the event is over
+#   links: extra links, each with label and url
+
+seasons:
+  - id: "2026-2027"
+    label: 2026–2027
+    game: BIOBUZZ
+    anchor: biobuzz
+    url: /seasons/biobuzz/
+    summary: Both teams are competing in BIOBUZZ, and we co-host the Southern Vermont Qualifier in Bennington on January 23.
+    events:
+      - title: BIOBUZZ Season Kickoff
+        start: "2026-09-12"
+        end: "2026-09-12"
+        type: Kickoff
+        url: /events/season-kickoff-2026/
+        venue: Manchester Community Library
+        place: Manchester Center, VT
+        ftc: USVTMAKO
+        ftc_season: 2026
+        host: Co-hosted with Manchester Machine Makers
+        links:
+          - label: Videos and slides
+            url: /events/season-kickoff-2026/#kickoff-materials
+      - title: Southern Vermont Qualifier
+        start: "2027-01-23"
+        end: "2027-01-23"
+        type: Qualifier
+        url: /events/southern-vermont-qualifier-2027/
+        venue: Mount Anthony Union Middle School (MAUMS)
+        place: Bennington, VT
+        directions: https://maps.app.goo.gl/zE9WbCbWNENq3pGUA
+        ftc: USVTBEQ
+        ftc_season: 2026
+        host: Co-hosted with Manchester Machine Makers
+      - title: Northfield Qualifier
+        start: "2027-02-13"
+        end: "2027-02-13"
+        type: Qualifier
+        venue: Norwich University
+        place: Northfield, VT
+        ftc: USVTNOQ
+        ftc_season: 2026
+      - title: Vermont Championship
+        start: "2027-03-06"
+        end: "2027-03-06"
+        type: Championship
+        venue: South Burlington High School
+        place: South Burlington, VT
+        ftc: USVTCMP
+        ftc_season: 2026
+
+  - id: "2025-2026"
+    label: 2025–2026
+    game: DECODE
+    anchor: decode
+    url: /seasons/decode/
+    summary: Cookie Clickers won the Vermont Championship and Inspire Award and competed at the FIRST Championship in Houston. Bennington Bolts and Biscuits placed seventh in its first season and advanced to the New England Premier Event.
+    events:
+      - title: Bennington Qualifier
+        start: "2026-01-31"
+        end: "2026-01-31"
+        type: Qualifier
+        url: /events/bennington-qualifier-2026/
+        venue: Mount Anthony Union Middle School (MAUMS)
+        place: Bennington, VT
+        ftc: USVTBEQ
+        ftc_season: 2025
+        host: Hosted with Manchester Machine Makers · 11 teams
+      - title: Northfield Qualifier
+        start: "2026-02-15"
+        end: "2026-02-15"
+        type: Qualifier
+        url: /events/northfield-qualifier-2026/
+        venue: Norwich University
+        place: Northfield, VT
+        ftc: USVTNOQ
+        ftc_season: 2025
+      - title: Vermont Championship
+        start: "2026-03-07"
+        end: "2026-03-07"
+        type: Championship
+        url: /events/state-championship-2026/
+        venue: South Burlington High School
+        place: South Burlington, VT
+        ftc: USVTCMP
+        ftc_season: 2025
+        results:
+          - "18650 Cookie Clickers: Inspire Award (State Champion), advanced to the FIRST Championship"
+          - "32473 Bennington Bolts and Biscuits: seventh place, advanced to the New England Premier Event"
+        links:
+          - label: Championship video
+            url: /events/state-championship-2026/#watch-the-championship
+          - label: Photos
+            url: /seasons/decode/photos/#vermont-championship
+      - title: New England Premier Event
+        start: "2026-04-17"
+        end: "2026-04-18"
+        type: Premier Event
+        external_url: https://www.nefirst.org/premier
+        venue: The Big E
+        place: West Springfield, MA
+        teams: [32473]
+      - title: FIRST Championship
+        start: "2026-04-29"
+        end: "2026-05-02"
+        type: World Championship
+        url: /events/first-championship-2026/
+        venue: George R. Brown Convention Center
+        place: Houston, TX
+        ftc: FTCCMP1
+        ftc_season: 2025
+        teams: [18650]
+        results:
+          - The first FTC team from southwestern Vermont to compete at the FIRST Championship
+        links:
+          - label: Read about the trip
+            url: /blog/houston-2026/
+
+  - id: "2024-2025"
+    label: 2024–2025
+    game: INTO THE DEEP
+    anchor: into-the-deep
+    summary: Cookie Clickers competed at the Vermont Championship.
+    events:
+      - title: Vermont Championship
+        start: "2025-02-08"
+        end: "2025-02-08"
+        type: Championship
+        url: /events/state-championship-2025/
+        venue: South Burlington High School
+        place: South Burlington, VT
+        ftc: USVTCMP
+        ftc_season: 2024
+        teams: [18650]
+        links:
+          - label: Match videos
+            url: /events/state-championship-2025/#18650-cookie-clickers-matches

@@ -53,9 +53,9 @@ Some edits affect several pages. Check the consumers when changing these sources
 | Source | Used by / editing notes |
 |--------|-------------------------|
 | `_data/navigation.yml` | `_includes/navigation.html` and `nav-link.html`: season groups and program links in the header and mobile footer. |
-| `_includes/season-events/*.md` | All-season events page, season event pages, and season overviews. The homepage event list is maintained separately. |
+| `_data/events.yml` | Events we host or attend, grouped by season, newest season first. `_includes/event-timeline.html` renders each season on `/events/` and on the season overviews; `_includes/event-next.html` picks the next upcoming event for the card at the top of `/events/`. Past/upcoming status is set at build time and refreshed in the browser by the event-status script in the default layout. The homepage's next-event summary is maintained separately. |
 | Post `season` front matter | `_includes/season-posts.html`: season-specific blog listings. Assign by subject, not publication date. |
-| `_data/ftc_events/2026-2027.json` | `seasons/biobuzz/events/map/index.md`: public FTC events in New England, New York, New Jersey, and Pennsylvania. Regenerate with `bin/ftc-events` (season year as an optional argument) rather than editing by hand; add city coordinates to its `FALLBACK` table when an event is published without a location. |
+| `_data/ftc_events/2026-2027.json` | `events/map/index.md` and the `_includes/event-dot-map.html` preview on `/events/`: public FTC events in New England, New York, New Jersey, and Pennsylvania. Regenerate with `bin/ftc-events` (season year as an optional argument) rather than editing by hand; add venue coordinates to its `VENUES` table when an event is published without a location, and confirmed organizer corrections to `CORRECTIONS`. The map rings events whose `ftc` code appears in `_data/events.yml`. |
 | `_data/budgets/2025-2026.json` | `seasons/decode/budget/index.md`: regular-season income and expenses, plus post-season budgets and actual expenses. |
 | `_includes/season-content/biobuzz/*.md` | Shared body copy for `/budget/`, `/sponsors/`, `/portfolio/`, and their permanent BIOBUZZ counterparts. Edit these includes rather than duplicating copy. |
 | Budget page front matter | `seasons/budgets/index.md` and `_includes/budget-seasons.html`: season listings, newest first, from `budget_season`, `budget_label`, and `budget_status`. |
@@ -67,9 +67,9 @@ Some edits affect several pages. Check the consumers when changing these sources
 | `_includes/photo-gallery.html` | Album thumbnail grids with lazy-loaded images and full-image links; the main layout adds a shared photo viewer. |
 | `code-of-conduct.md` front matter | `principles`, `shop_safety`, and `flier_copy` supply the conduct page and printable flyers. Keep the long-form explanations consistent with the short copy. |
 
-The homepage's next-event summary in `index.md` and full listings in
-`_includes/season-events/` are maintained separately; update both when the next
-event changes. Past events stay in the full listings. The program fee amount appears in
+The homepage's next-event summary in `index.md` and the event listings from
+`_data/events.yml` are maintained separately; update both when the next event
+changes. Past events stay in `_data/events.yml`. The program fee amount appears in
 `code-of-conduct.md` and `program-fee.md`; `index.md` links to the fee page from
 the Joining paragraph. The receipt form in
 `print/program-fee-receipt.html` names the season. Financial summaries in page prose are also
@@ -149,9 +149,9 @@ current-season placeholder linking to the previous season.
 Published year-based season paths and older `/budget/YYYY-YYYY/` paths redirect
 directly to the corresponding permanent seasonal pages via `redirect_from`.
 These are Jekyll HTML redirects, not HTTP 301 or 302 responses. Seasonal blog
-listings select posts by their `season` metadata. Seasonal event listings and
-landing pages share `_includes/season-events/YYYY-YYYY.md` with the all-season
-events page. The summer 2026 planning post belongs to BIOBUZZ; the Houston
+listings select posts by their `season` metadata. `/events/` is the only event listing;
+season overviews render the same `_data/events.yml` entries, and the former
+`/seasons/<season>/events/` pages redirect to the season's section of `/events/`. The summer 2026 planning post belongs to BIOBUZZ; the Houston
 retrospective belongs to DECODE. The all-season blog, event, and budget indexes
 remain accessible from the season overviews.
 
@@ -396,7 +396,16 @@ Season and budget indexes, seasonal blog listings, the BIOBUZZ events listing,
 BIOBUZZ budget/sponsor/portfolio placeholders, and the 2025 state championship
 page are currently excluded. Remove `sitemap: false` when these pages contain
 substantial original content. Root budget/sponsor/portfolio copies and generated
-legacy redirects remain excluded as before. No `noindex` directive is needed.
+legacy redirects remain excluded as before.
+
+Unfinished placeholders and printable copies also carry `noindex: true`, which
+the default and flyer layouts render as `<meta name="robots" content="noindex">`
+so search engines do not index thin or duplicate pages they reach through links.
+This currently covers the BIOBUZZ budget, sponsor, portfolio, and blog pages, the
+root budget/sponsor/portfolio copies, and both print flyers. The sitemap also skips
+any `noindex` page. Remove `noindex: true` together with `sitemap: false` when a
+placeholder gains substantial original content. Generated redirect stubs already
+include `noindex` from `jekyll-redirect-from`.
 
 The root `favicon.ico` is derived from the existing 180px round chip logo and
 contains 48px and 96px images. The layout retains the existing PNG and Apple icons

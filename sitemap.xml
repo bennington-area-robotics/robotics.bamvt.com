@@ -6,7 +6,7 @@ sitemap: false
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   {% assign collections = site.collections | where_exp: 'collection', 'collection.output != false' %}
   {% for collection in collections %}
-    {% assign docs = collection.docs | where_exp: 'doc', 'doc.sitemap != false' %}
+    {% assign docs = collection.docs | where_exp: 'doc', 'doc.sitemap != false' | where_exp: 'doc', 'doc.noindex != true' %}
     {% for doc in docs %}
   <url>
     <loc>{{ doc.url | replace: '/index.html', '/' | absolute_url | xml_escape }}</loc>
@@ -14,7 +14,7 @@ sitemap: false
   </url>
     {% endfor %}
   {% endfor %}
-  {% assign pages = site.html_pages | where_exp: 'page', 'page.sitemap != false' | where_exp: 'page', 'page.url != "/404.html"' %}
+  {% assign pages = site.html_pages | where_exp: 'page', 'page.sitemap != false' | where_exp: 'page', 'page.noindex != true' | where_exp: 'page', 'page.url != "/404.html"' %}
   {% for page in pages %}
   <url>
     <loc>{{ page.url | replace: '/index.html', '/' | absolute_url | xml_escape }}</loc>

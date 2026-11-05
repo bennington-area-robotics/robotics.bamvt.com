@@ -1,5 +1,6 @@
 ---
 sitemap: false
+noindex: true
 layout: flier
 title: Code of Conduct
 flier_type: principles

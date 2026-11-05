@@ -1,18 +1,7 @@
 ---
-last_modified_at: 2026-10-10T10:35:16-04:00
+# Season event listings moved to the events hub; keep these URLs working.
 redirect_from:
   - /seasons/2025-2026/events/
-layout: default
-nav_section: /events/
-title: 2025–2026 DECODE Events
-season: "2025-2026"
-description: Events for Bennington Area Robotics's 2025–2026 DECODE season.
+redirect_to: /events/#decode
+sitemap: false
 ---
-
-# 2025–2026 DECODE Events
-
-[Season overview](/seasons/decode/)
-
-{% include season-events/2025-2026.md %}
-
-[All seasons' events](/events/)

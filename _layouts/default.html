@@ -14,6 +14,7 @@
   <title>{{ page_title | escape }}</title>
   <meta name="description" content="{{ page_desc | escape }}">
   <link rel="canonical" href="{{ canonical_url | absolute_url }}">
+  {% if page.noindex %}<meta name="robots" content="noindex">{% endif %}
   <meta property="og:site_name" content="{{ site.title | escape }}">
   <meta property="og:title" content="{{ page_title | escape }}">
   <meta property="og:description" content="{{ page_desc | escape }}">
@@ -1051,6 +1052,288 @@
       color: #888;
       font-size: 0.85rem;
     }
+
+    /* Event listings: _includes/event-timeline.html, event-next.html, event-dot-map.html.
+       Type colors match the map at /events/map/. */
+    .event-season-jump {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin: 1.25rem 0 1.75rem;
+    }
+    .event-season-jump a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      min-height: 2.5rem;
+      padding: 0.35rem 0.95rem;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: white;
+      color: var(--text);
+      font-size: 0.9rem;
+      text-decoration: none;
+    }
+    .event-season-jump a strong { color: var(--heading); letter-spacing: 0.02em; }
+    .event-season-jump a:hover { border-color: var(--sidebar); color: var(--sidebar); }
+    .event-hub-top {
+      display: grid;
+      gap: 1rem;
+      margin: 0 0 1rem;
+    }
+    .event-next {
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+      padding: 1.25rem 1.4rem;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #405c85 0%, #2b4263 100%);
+      color: white;
+      box-shadow: 0 6px 18px rgba(43, 66, 99, 0.25);
+    }
+    .event-next[hidden] { display: none; }
+    .event-next a { color: white; }
+    .event-next-label {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 0.5rem;
+      margin: 0;
+      color: #cfdcef;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .event-next-countdown {
+      padding: 0.1rem 0.6rem;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.16);
+      color: white;
+      letter-spacing: 0.02em;
+      text-transform: none;
+    }
+    .event-next-countdown:empty { display: none; }
+    .event-next-body {
+      display: flex;
+      gap: 1.1rem;
+      align-items: center;
+    }
+    .event-next .event-date {
+      min-width: 5.25rem;
+      border: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+    .event-next-title {
+      margin: 0;
+      font-size: 1.45rem;
+      font-weight: 800;
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+    }
+    .event-next-title a { text-decoration: none; }
+    .event-next-title a:hover { text-decoration: underline; color: white; }
+    .event-next-place { margin: 0.35rem 0 0; color: #dbe5f2; line-height: 1.4; }
+    .event-next-host { margin: 0.35rem 0 0; color: #cfdcef; font-size: 0.88rem; }
+    .event-next-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem 1.1rem;
+      margin: auto 0 0;
+      font-size: 0.92rem;
+    }
+    .event-next a.event-button {
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      background: white;
+      color: var(--sidebar);
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .event-next a.event-button:hover { background: #eaf0f7; color: #2b4263; }
+    .event-map-callout {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem 1.15rem 1.15rem;
+      border: 1px solid #d5e0ee;
+      border-radius: 10px;
+      background: #eaf0f7;
+      color: var(--text);
+      text-decoration: none;
+      transition: box-shadow 0.15s, border-color 0.15s;
+    }
+    .event-map-callout:hover {
+      border-color: var(--primary);
+      box-shadow: 0 6px 18px rgba(64, 92, 133, 0.18);
+      color: var(--text);
+    }
+    .event-map-callout-text { display: block; margin-top: 0.4rem; font-size: 0.92rem; line-height: 1.45; }
+    .event-map-callout-text strong {
+      display: block;
+      margin-bottom: 0.15rem;
+      color: var(--heading);
+      font-size: 1.1rem;
+    }
+    .event-map-callout-cta {
+      display: inline-block;
+      margin-top: 0.5rem;
+      color: var(--sidebar);
+      font-weight: 700;
+    }
+    .event-map-callout-cta::after { content: " \2192"; }
+    .event-map-callout:hover .event-map-callout-cta { color: var(--accent); }
+    .event-dot-map { display: block; width: 100%; height: auto; max-height: 11rem; }
+    .event-dot-map .ring { fill: none; stroke: #9fb3cf; stroke-width: 2; stroke-dasharray: 7 7; }
+    .event-dot-map .ring-label { fill: #6c84a8; font-size: 22px; text-anchor: middle; }
+    .event-dot-map .dot { fill: #999; fill-opacity: 0.85; stroke: white; stroke-width: 1.5; }
+    .event-dot-map .dot--qualifier { fill: #e63946; }
+    .event-dot-map .dot--super-qualifier { fill: #f4a261; }
+    .event-dot-map .dot--championship { fill: #405c85; }
+    .event-dot-map .dot--premier-event { fill: #1d3557; }
+    .event-dot-map .dot--scrimmage { fill: #2a9d8f; }
+    .event-dot-map .dot--league-meet { fill: #9b72cf; }
+    .event-dot-map .dot--league-tournament { fill: #5e3c99; }
+    .event-dot-map .dot-home { fill: #f2c200; stroke: #5a4500; stroke-width: 2; }
+    .event-dot-map .dot-home-label { fill: var(--heading); font-size: 24px; font-weight: 700; }
+    .event-season { margin-top: 2.5rem; }
+    .event-season h2 { margin-bottom: 0.4rem; }
+    .event-season-summary { max-width: 75ch; margin: 0 0 1.25rem; color: var(--muted); }
+    .event-timeline {
+      position: relative;
+      margin: 1rem 0 2rem;
+      padding: 0;
+      list-style: none;
+    }
+    .event-timeline::before {
+      content: "";
+      position: absolute;
+      top: 0.75rem;
+      bottom: 0.75rem;
+      left: 2.25rem;
+      width: 2px;
+      background: var(--border);
+    }
+    .event-item {
+      position: relative;
+      display: grid;
+      grid-template-columns: 4.5rem minmax(0, 1fr);
+      gap: 1rem;
+      margin: 0 0 1rem;
+    }
+    .event-date {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-self: start;
+      padding: 0.45rem 0.2rem 0.4rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: white;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+      line-height: 1.15;
+      text-align: center;
+      white-space: nowrap;
+    }
+    .event-date-month {
+      color: var(--accent);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .event-date-day {
+      color: var(--heading);
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+    .event-date--range .event-date-day { font-size: 1.1rem; padding: 0.2rem 0; }
+    .event-date-weekday { color: var(--muted); font-size: 0.72rem; }
+    .event-date-year { color: #999; font-size: 0.65rem; }
+    .event-item.is-upcoming .event-date { border-color: #b7c6dc; }
+    .event-item.is-next .event-date { border-color: var(--sidebar); background: var(--sidebar); }
+    .event-item.is-next .event-date span { color: white; }
+    .event-item.is-next .event-date-month { color: #ffd0d4; }
+    .event-item.is-past .event-date { background: #f4f4f4; box-shadow: none; }
+    .event-item.is-past .event-date-day { color: #6b6b6b; }
+    .event-item.is-past .event-date-month { color: #b0585f; }
+    .event-card {
+      min-width: 0;
+      padding: 0.8rem 1.1rem 0.9rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: white;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+      transition: box-shadow 0.15s, border-color 0.15s;
+    }
+    .event-card:hover { border-color: #c4cfde; box-shadow: 0 4px 14px rgba(64, 92, 133, 0.12); }
+    .event-item.is-hosted .event-card { border-left: 4px solid #2a9d8f; }
+    .event-item.is-next .event-card { border-color: var(--sidebar); }
+    .event-item.is-next.is-hosted .event-card { border-left-color: #2a9d8f; }
+    .event-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+      margin: 0;
+    }
+    .event-tag {
+      display: inline-block;
+      padding: 0.12rem 0.5rem;
+      border-radius: 999px;
+      background: #eee;
+      color: #555;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      line-height: 1.5;
+      text-transform: uppercase;
+    }
+    .event-tag--qualifier { background: #fde4e6; color: #9b1c26; }
+    .event-tag--championship { background: #e1e8f2; color: #2b3f5e; }
+    .event-tag--premier-event { background: #dbe2ee; color: #1d3557; }
+    .event-tag--world-championship { background: #fff1c9; color: #6b4e00; }
+    .event-tag--kickoff { background: #ececec; color: #555; }
+    .event-tag--host { background: #d8f0ec; color: #1d5c54; }
+    .event-tag--team { border: 1px solid var(--border); background: white; color: var(--text); text-transform: none; letter-spacing: 0; }
+    .event-tag--next { display: none; background: var(--accent); color: white; }
+    .event-item.is-next .event-tag--next { display: inline-block; }
+    main .event-title { margin: 0.35rem 0 0.15rem; font-size: 1.15rem; }
+    main .event-title a:hover { color: var(--accent); }
+    .event-place { margin: 0; color: var(--muted); font-size: 0.92rem; }
+    .event-host { margin: 0.25rem 0 0; color: #1d5c54; font-size: 0.88rem; }
+    .event-results {
+      margin: 0.65rem 0 0;
+      padding: 0.5rem 0.75rem;
+      border-radius: 6px;
+      background: #fff8e1;
+      font-size: 0.9rem;
+      list-style: none;
+    }
+    .event-results li { position: relative; margin: 0.15rem 0; padding-left: 1.35rem; }
+    .event-results li::before { content: "\2605"; position: absolute; left: 0; color: #d69e00; }
+    .event-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.25rem 1.1rem;
+      margin: 0.6rem 0 0;
+      font-size: 0.88rem;
+      font-weight: 600;
+    }
+    .event-photo-credit { margin-top: 2.5rem; color: var(--muted); font-size: 0.8rem; }
+    @media (min-width: 48rem) {
+      .event-hub-top { grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); }
+      .event-hub-top:has(.event-next[hidden]) { grid-template-columns: minmax(0, 1fr); }
+    }
+    @media (max-width: 30rem) {
+      .event-item { grid-template-columns: 3.75rem minmax(0, 1fr); gap: 0.65rem; }
+      .event-timeline::before { left: 1.875rem; }
+      .event-date-day { font-size: 1.3rem; }
+      .event-card { padding: 0.7rem 0.85rem 0.8rem; }
+      .event-next-title { font-size: 1.25rem; }
+    }
   </style>
   <script data-goatcounter="https://bamvt.goatcounter.com/count"
           async src="//gc.zgo.at/count.js"></script>
@@ -1496,6 +1779,32 @@
     addLightboxHandler(firstClone.querySelector('img'), 0);
 
     scheduleAdvance();
+  });
+})();
+
+// Event listings: refresh past/upcoming status and the next-event card between
+// site builds, using the Eastern-time calendar date.
+(function() {
+  var items = document.querySelectorAll('[data-event-list] .event-item, .event-next[data-event-end]');
+  if (!items.length) return;
+  var today = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/New_York' }).format(new Date());
+  document.querySelectorAll('[data-event-list]').forEach(function(list) {
+    var nextFound = false;
+    list.querySelectorAll('.event-item').forEach(function(item) {
+      var past = item.getAttribute('data-event-end') < today;
+      var next = !past && !nextFound;
+      if (next) nextFound = true;
+      item.classList.toggle('is-past', past);
+      item.classList.toggle('is-upcoming', !past);
+      item.classList.toggle('is-next', next);
+    });
+  });
+  document.querySelectorAll('.event-next[data-event-end]').forEach(function(card) {
+    if (card.getAttribute('data-event-end') < today) { card.hidden = true; return; }
+    var countdown = card.querySelector('[data-countdown]');
+    if (!countdown) return;
+    var days = Math.round((Date.parse(countdown.getAttribute('data-countdown')) - Date.parse(today)) / 864e5);
+    countdown.textContent = days > 1 ? 'in ' + days + ' days' : days === 1 ? 'tomorrow' : 'today';
   });
 })();
 </script>
