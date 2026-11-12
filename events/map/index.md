@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-11-12T00:11:26Z
+last_modified_at: 2026-11-12T01:19:36Z
 layout: default
 nav_section: /events/
 redirect_from:
@@ -279,9 +279,10 @@ Teams matching the state and distance filters, nearest first. Distances are meas
       });
       if (list.length > tipMax) tipLines.push('+' + (list.length - tipMax) + ' more');
       var tipPlace = esc([sameVenue ? first.venue : null, first.city, first.state].filter(Boolean).join(', '));
-      m.bindTooltip(list.length > 1 ?
+      m.bindTooltip((list.length > 1 ?
         '<strong>' + list.length + ' events</strong> · ' + tipPlace + '<br>' + tipLines.join('<br>') :
-        '<strong>' + esc(first.name) + '</strong><br>' + esc(when(first)) + '<br>' + tipPlace);
+        '<strong>' + esc(first.name) + '</strong><br>' + esc(when(first)) + '<br>' + tipPlace) +
+        '<br><em>Click for event links</em>');
       m.addTo(layer);
       markers[key] = m;
     });
