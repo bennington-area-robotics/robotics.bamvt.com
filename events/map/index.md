@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-11-12T01:19:36Z
+last_modified_at: 2026-11-12T01:31:19Z
 layout: default
 nav_section: /events/
 redirect_from:
@@ -15,9 +15,9 @@ description: Map of 2026–2027 BIOBUZZ FIRST Tech Challenge events and teams in
 
 [All events](/events/)
 
-This map shows {{ ftc.events | size }} FIRST Tech Challenge events in New England, New York, and New Jersey for the 2026–2027 BIOBUZZ season. Distances are straight-line miles from Bennington; driving distances are longer. The map starts with events within 200 miles; change **Within** to see the rest. Event details come from FIRST's [FTC Events API](https://ftc-events.firstinspires.org/services/API){:target="_blank"}, retrieved {{ ftc.retrieved | date: "%B %-d, %Y" }}. Confirm dates and registration with each event before planning travel: league meets and league tournaments are generally limited to teams in that league, and qualifiers may give priority to teams from their own region.
+This map shows {{ ftc.events | size }} FIRST Tech Challenge events in New England, New York, and New Jersey for the 2026–2027 BIOBUZZ season. Distances are straight-line miles from Bennington; driving distances are longer. The map starts with events within 200 miles; change **Within** to see the rest. Click or tap a dot for dates, locations, and links to each event's page. Event details come from FIRST's [FTC Events API](https://ftc-events.firstinspires.org/services/API){:target="_blank"}, retrieved {{ ftc.retrieved | date: "%B %-d, %Y" }}. Confirm dates and registration with each event before planning travel: league meets and league tournaments are generally limited to teams in that league, and qualifiers may give priority to teams from their own region.
 
-Turn on **Show teams** (or open [this link](#teams)) to add the {{ ftc_teams.teams | size }} teams that FIRST lists in the same states for this season, also from the FTC Events API (retrieved {{ ftc_teams.retrieved | date: "%B %-d, %Y" }}). FIRST lists each team's town rather than an address, so teams appear at the center of their town.
+Turn on **Show teams** (or open [this link](#teams)) to add the {{ ftc_teams.teams | size }} teams that FIRST lists in the same states for this season, also from the FTC Events API (retrieved {{ ftc_teams.retrieved | date: "%B %-d, %Y" }}). FIRST lists each team's town rather than an address, so teams appear at the center of their town. Click or tap a team dot to list the teams there.
 
 <style>
 .event-map-filters { display: flex; flex-wrap: wrap; gap: 0.75rem 1.5rem; margin: 1.25rem 0 0.75rem; font-size: 0.9rem; }
@@ -211,6 +211,14 @@ Teams matching the state and distance filters, nearest first. Distances are meas
       (e.remote ? ' (remote)' : e.hybrid ? ' (hybrid)' : '') + (showPlace ? '<br>' + placeOf(e) : '') + '<br>' + links + '</li>';
   }
 
+  // Dots carry no hover tooltip: the click popup holds the details, and a thicker
+  // outline on hover shows that the dot can be clicked.
+  function hoverOutline(m) {
+    var w = m.options.weight;
+    m.on('mouseover', function () { m.setStyle({ weight: w + 2 }); });
+    m.on('mouseout', function () { m.setStyle({ weight: w }); });
+  }
+
   function teamUrl(t) { return 'https://ftc-events.firstinspires.org/' + rookieYear + '/team/' + t.number; }
 
   function renderTeams(showStates, maxMiles) {
@@ -234,7 +242,7 @@ Teams matching the state and distance filters, nearest first. Distances are meas
           return '<li><a href="' + teamUrl(t) + '" target="_blank">' + t.number + '</a> ' + esc(t.name) +
             ' <span class="event-place">since ' + t.rookie_year + '</span></li>';
         }).join('') + '</ul></div>', { maxWidth: 320 });
-      m.bindTooltip(esc(place) + ': ' + list.length + (list.length === 1 ? ' team' : ' teams'));
+      hoverOutline(m);
       m.addTo(teamLayer);
       teamMarkers[place] = m;
     });
@@ -273,16 +281,7 @@ Teams matching the state and distance filters, nearest first. Distances are meas
       }).bindPopup('<div class="event-map-popup"><h4>' + esc(first.city) + ', ' + esc(first.state) + ' · ' +
         Math.round(first.miles) + ' mi</h4>' + (sameVenue ? placeOf(first) : '') + '<ul>' +
         list.map(function (e) { return popupItem(e, !sameVenue); }).join('') + '</ul></div>', { maxWidth: 320 });
-      // Hover summary: dates and locations, so visitors need not open the popup.
-      var tipMax = 6, tipLines = list.slice(0, tipMax).map(function (e) {
-        return esc(when(e)) + ' · ' + esc(e.name) + (sameVenue || !e.venue ? '' : ' (' + esc(e.venue) + ')');
-      });
-      if (list.length > tipMax) tipLines.push('+' + (list.length - tipMax) + ' more');
-      var tipPlace = esc([sameVenue ? first.venue : null, first.city, first.state].filter(Boolean).join(', '));
-      m.bindTooltip((list.length > 1 ?
-        '<strong>' + list.length + ' events</strong> · ' + tipPlace + '<br>' + tipLines.join('<br>') :
-        '<strong>' + esc(first.name) + '</strong><br>' + esc(when(first)) + '<br>' + tipPlace) +
-        '<br><em>Click for event links</em>');
+      hoverOutline(m);
       m.addTo(layer);
       markers[key] = m;
     });
