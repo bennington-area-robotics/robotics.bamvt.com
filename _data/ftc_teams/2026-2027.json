@@ -1,7 +1,7 @@
 {
   "season": "2026-2027",
   "source": "https://ftc-events.firstinspires.org/services/API",
-  "retrieved": "2026-11-04",
+  "retrieved": "2026-11-11",
   "note": "Team locations are town centers from OpenStreetMap, not team addresses.",
   "places": {
     "Acton, MA": [
@@ -1071,6 +1071,10 @@
     "Middle Island, NY": [
       40.88427,
       -72.93733
+    ],
+    "Middle Village, NY": [
+      40.71799,
+      -73.87879
     ],
     "Middlebury, VT": [
       44.0143,
@@ -3129,7 +3133,7 @@
     },
     {
       "number": 7754,
-      "name": "MHSHS4",
+      "name": "FermiParabots",
       "city": "New York",
       "state": "NY",
       "region": "USNYNY",
@@ -3534,7 +3538,7 @@
     },
     {
       "number": 9421,
-      "name": "Hydrofluoric Robotics",
+      "name": "Hydrofluoric Robotics 9421",
       "city": "Greenlawn",
       "state": "NY",
       "region": "USNYLI",
@@ -10131,7 +10135,7 @@
     },
     {
       "number": 32751,
-      "name": "ULC Robotics",
+      "name": "Steel Lions",
       "city": "Brooklyn",
       "state": "NY",
       "region": "USNYNY",
@@ -11517,7 +11521,7 @@
     },
     {
       "number": 37627,
-      "name": "TBD",
+      "name": "Fire in the Hole",
       "city": "Glastonbury",
       "state": "CT",
       "region": "USCT",
@@ -11660,15 +11664,6 @@
       "place": "New York, NY"
     },
     {
-      "number": 37999,
-      "name": "Wood 4",
-      "city": "New York",
-      "state": "NY",
-      "region": "USNYNY",
-      "rookie_year": 2026,
-      "place": "New York, NY"
-    },
-    {
       "number": 38031,
       "name": "Blue Devil Bots",
       "city": "Wood-Ridge",
@@ -11769,7 +11764,7 @@
     },
     {
       "number": 38187,
-      "name": "AB1",
+      "name": "AB Clankers",
       "city": "Acton",
       "state": "MA",
       "region": "USMA",
@@ -11778,7 +11773,7 @@
     },
     {
       "number": 38191,
-      "name": "AB2",
+      "name": "Rev Swarm",
       "city": "Acton",
       "state": "MA",
       "region": "USMA",
@@ -11787,7 +11782,7 @@
     },
     {
       "number": 38192,
-      "name": "AB3",
+      "name": "AB Bricks",
       "city": "Acton",
       "state": "MA",
       "region": "USMA",
@@ -11796,7 +11791,7 @@
     },
     {
       "number": 38193,
-      "name": "AB4",
+      "name": "Rev Rampage",
       "city": "Acton",
       "state": "MA",
       "region": "USMA",
@@ -12621,6 +12616,60 @@
       "region": "USNYNY",
       "rookie_year": 2026,
       "place": "New York, NY"
+    },
+    {
+      "number": 39451,
+      "name": "Virgo",
+      "city": "East Brunswick",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2026,
+      "place": "East Brunswick, NJ"
+    },
+    {
+      "number": 39452,
+      "name": "Virgo",
+      "city": "East Brunswick",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2026,
+      "place": "East Brunswick, NJ"
+    },
+    {
+      "number": 39458,
+      "name": "Lux",
+      "city": "Queens",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2026,
+      "place": "Queens, NY"
+    },
+    {
+      "number": 39462,
+      "name": "Royals Robotics",
+      "city": "Middle Village",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2026,
+      "place": "Middle Village, NY"
+    },
+    {
+      "number": 39473,
+      "name": "The Bees Knees",
+      "city": "Long Island City",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2026,
+      "place": "Long Island City, NY"
+    },
+    {
+      "number": 39505,
+      "name": "Cyber Penguins",
+      "city": "Bedford",
+      "state": "NH",
+      "region": "USNH",
+      "rookie_year": 2026,
+      "place": "Bedford, NH"
     }
   ]
 }
