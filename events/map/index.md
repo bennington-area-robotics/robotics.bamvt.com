@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-11-05T03:32:26Z
+last_modified_at: 2026-11-12T00:11:26Z
 layout: default
 nav_section: /events/
 redirect_from:
@@ -273,7 +273,15 @@ Teams matching the state and distance filters, nearest first. Distances are meas
       }).bindPopup('<div class="event-map-popup"><h4>' + esc(first.city) + ', ' + esc(first.state) + ' · ' +
         Math.round(first.miles) + ' mi</h4>' + (sameVenue ? placeOf(first) : '') + '<ul>' +
         list.map(function (e) { return popupItem(e, !sameVenue); }).join('') + '</ul></div>', { maxWidth: 320 });
-      m.bindTooltip(list.length > 1 ? esc(first.city) + ': ' + list.length + ' events' : esc(first.name));
+      // Hover summary: dates and locations, so visitors need not open the popup.
+      var tipMax = 6, tipLines = list.slice(0, tipMax).map(function (e) {
+        return esc(when(e)) + ' · ' + esc(e.name) + (sameVenue || !e.venue ? '' : ' (' + esc(e.venue) + ')');
+      });
+      if (list.length > tipMax) tipLines.push('+' + (list.length - tipMax) + ' more');
+      var tipPlace = esc([sameVenue ? first.venue : null, first.city, first.state].filter(Boolean).join(', '));
+      m.bindTooltip(list.length > 1 ?
+        '<strong>' + list.length + ' events</strong> · ' + tipPlace + '<br>' + tipLines.join('<br>') :
+        '<strong>' + esc(first.name) + '</strong><br>' + esc(when(first)) + '<br>' + tipPlace);
       m.addTo(layer);
       markers[key] = m;
     });
