@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-11-12T01:31:19Z
+last_modified_at: 2026-11-12T02:02:21Z
 layout: default
 nav_section: /events/
 redirect_from:
@@ -33,6 +33,11 @@ Turn on **Show teams** (or open [this link](#teams)) to add the {{ ftc_teams.tea
 .event-map-popup h4 { margin: 0 0 0.15rem; font-size: 0.9rem; color: var(--heading); }
 .event-map-popup ul { margin: 0.35rem 0 0; padding-left: 1rem; }
 .event-map-popup li { margin-bottom: 0.4rem; }
+.event-pop + .event-pop { margin-top: 0.5rem; padding-top: 0.5rem; border-top: 1px solid var(--border); }
+.event-pop h4 .event-swatch { margin-right: 0.3rem; vertical-align: -0.05rem; }
+.event-pop-place { margin-top: 0.3rem; color: var(--muted); }
+.event-pop-shared { margin-top: 0.5rem; padding-top: 0.5rem; border-top: 1px solid var(--border); }
+.event-pop-links { margin-top: 0.3rem; }
 .event-map-list { font-size: 0.88rem; width: 100%; }
 .event-map-list td.when, .event-map-list td.miles { white-space: nowrap; }
 .event-map-list td.miles { text-align: right; }
@@ -197,18 +202,21 @@ Teams matching the state and distance filters, nearest first. Distances are meas
     return Array.prototype.map.call(document.querySelectorAll('input[name="' + name + '"]:checked'), function (i) { return i.value; });
   }
 
+  // Venue, address, and distance: supporting detail beneath the event name.
   function placeOf(e) {
     var street = [e.address, e.city + ', ' + e.state].filter(Boolean).join(', ');
-    return (e.venue ? esc(e.venue) + '<br>' : '') + esc(street) +
+    return (e.venue ? esc(e.venue) + '<br>' : '') + esc(street) + ' · ' + Math.round(e.miles) + ' mi' +
       (e.location_approximate ? '<br><em>Approximate location (city only)</em>' : '');
   }
 
-  function popupItem(e, showPlace) {
+  function popupEvent(e, place) {
     var links = '<a href="' + esc(e.ftc_events_url) + '" target="_blank">FTC event page</a>';
     if (e.website) links += ' · <a href="' + esc(e.website) + '" target="_blank">Event website</a>';
-    return '<li>' + swatch(e.type) + ' <strong>' + esc(e.name) + '</strong>' +
-      (e.ours ? ' <span class="event-map-ours">On our calendar</span>' : '') + '<br>' + esc(when(e)) + ' · ' + esc(e.type) +
-      (e.remote ? ' (remote)' : e.hybrid ? ' (hybrid)' : '') + (showPlace ? '<br>' + placeOf(e) : '') + '<br>' + links + '</li>';
+    return '<div class="event-pop"><h4>' + swatch(e.type) + esc(e.name) +
+      (e.ours ? ' <span class="event-map-ours">On our calendar</span>' : '') + '</h4>' + esc(when(e)) + ' · ' + esc(e.type) +
+      (e.remote ? ' (remote)' : e.hybrid ? ' (hybrid)' : '') +
+      (place ? '<div class="event-pop-place">' + place + '</div>' : '') +
+      '<div class="event-pop-links">' + links + '</div></div>';
   }
 
   // Dots carry no hover tooltip: the click popup holds the details, and a thicker
@@ -278,9 +286,10 @@ Teams matching the state and distance filters, nearest first. Distances are meas
       var m = L.circleMarker([first.lat, first.lon], {
         radius: list.length > 1 ? 9 : 7, color: mine ? '#e9b600' : '#222', weight: mine ? 4 : 1,
         fillColor: typeColor[lead.type], fillOpacity: 0.9
-      }).bindPopup('<div class="event-map-popup"><h4>' + esc(first.city) + ', ' + esc(first.state) + ' · ' +
-        Math.round(first.miles) + ' mi</h4>' + (sameVenue ? placeOf(first) : '') + '<ul>' +
-        list.map(function (e) { return popupItem(e, !sameVenue); }).join('') + '</ul></div>', { maxWidth: 320 });
+      }).bindPopup('<div class="event-map-popup">' + (list.length === 1 ? popupEvent(first, placeOf(first)) :
+        list.map(function (e) { return popupEvent(e, sameVenue ? '' : placeOf(e)); }).join('') +
+        (sameVenue ? '<div class="event-pop-place event-pop-shared">' + placeOf(first) + '</div>' : '')) +
+        '</div>', { maxWidth: 320 });
       hoverOutline(m);
       m.addTo(layer);
       markers[key] = m;
