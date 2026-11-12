@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-11-05T03:32:26Z
+last_modified_at: 2026-11-12T02:02:21Z
 layout: default
 nav_section: /events/
 redirect_from:
@@ -15,9 +15,9 @@ description: Map of 2026–2027 BIOBUZZ FIRST Tech Challenge events and teams in
 
 [All events](/events/)
 
-This map shows {{ ftc.events | size }} FIRST Tech Challenge events in New England, New York, and New Jersey for the 2026–2027 BIOBUZZ season. Distances are straight-line miles from Bennington; driving distances are longer. The map starts with events within 200 miles; change **Within** to see the rest. Event details come from FIRST's [FTC Events API](https://ftc-events.firstinspires.org/services/API){:target="_blank"}, retrieved {{ ftc.retrieved | date: "%B %-d, %Y" }}. Confirm dates and registration with each event before planning travel: league meets and league tournaments are generally limited to teams in that league, and qualifiers may give priority to teams from their own region.
+This map shows {{ ftc.events | size }} FIRST Tech Challenge events in New England, New York, and New Jersey for the 2026–2027 BIOBUZZ season. Distances are straight-line miles from Bennington; driving distances are longer. The map starts with events within 200 miles; change **Within** to see the rest. Click or tap a dot for dates, locations, and links to each event's page. Event details come from FIRST's [FTC Events API](https://ftc-events.firstinspires.org/services/API){:target="_blank"}, retrieved {{ ftc.retrieved | date: "%B %-d, %Y" }}. Confirm dates and registration with each event before planning travel: league meets and league tournaments are generally limited to teams in that league, and qualifiers may give priority to teams from their own region.
 
-Turn on **Show teams** (or open [this link](#teams)) to add the {{ ftc_teams.teams | size }} teams that FIRST lists in the same states for this season, also from the FTC Events API (retrieved {{ ftc_teams.retrieved | date: "%B %-d, %Y" }}). FIRST lists each team's town rather than an address, so teams appear at the center of their town.
+Turn on **Show teams** (or open [this link](#teams)) to add the {{ ftc_teams.teams | size }} teams that FIRST lists in the same states for this season, also from the FTC Events API (retrieved {{ ftc_teams.retrieved | date: "%B %-d, %Y" }}). FIRST lists each team's town rather than an address, so teams appear at the center of their town. Click or tap a team dot to list the teams there.
 
 <style>
 .event-map-filters { display: flex; flex-wrap: wrap; gap: 0.75rem 1.5rem; margin: 1.25rem 0 0.75rem; font-size: 0.9rem; }
@@ -33,6 +33,11 @@ Turn on **Show teams** (or open [this link](#teams)) to add the {{ ftc_teams.tea
 .event-map-popup h4 { margin: 0 0 0.15rem; font-size: 0.9rem; color: var(--heading); }
 .event-map-popup ul { margin: 0.35rem 0 0; padding-left: 1rem; }
 .event-map-popup li { margin-bottom: 0.4rem; }
+.event-pop + .event-pop { margin-top: 0.5rem; padding-top: 0.5rem; border-top: 1px solid var(--border); }
+.event-pop h4 .event-swatch { margin-right: 0.3rem; vertical-align: -0.05rem; }
+.event-pop-place { margin-top: 0.3rem; color: var(--muted); }
+.event-pop-shared { margin-top: 0.5rem; padding-top: 0.5rem; border-top: 1px solid var(--border); }
+.event-pop-links { margin-top: 0.3rem; }
 .event-map-list { font-size: 0.88rem; width: 100%; }
 .event-map-list td.when, .event-map-list td.miles { white-space: nowrap; }
 .event-map-list td.miles { text-align: right; }
@@ -197,18 +202,29 @@ Teams matching the state and distance filters, nearest first. Distances are meas
     return Array.prototype.map.call(document.querySelectorAll('input[name="' + name + '"]:checked'), function (i) { return i.value; });
   }
 
+  // Venue, address, and distance: supporting detail beneath the event name.
   function placeOf(e) {
     var street = [e.address, e.city + ', ' + e.state].filter(Boolean).join(', ');
-    return (e.venue ? esc(e.venue) + '<br>' : '') + esc(street) +
+    return (e.venue ? esc(e.venue) + '<br>' : '') + esc(street) + ' · ' + Math.round(e.miles) + ' mi' +
       (e.location_approximate ? '<br><em>Approximate location (city only)</em>' : '');
   }
 
-  function popupItem(e, showPlace) {
+  function popupEvent(e, place) {
     var links = '<a href="' + esc(e.ftc_events_url) + '" target="_blank">FTC event page</a>';
     if (e.website) links += ' · <a href="' + esc(e.website) + '" target="_blank">Event website</a>';
-    return '<li>' + swatch(e.type) + ' <strong>' + esc(e.name) + '</strong>' +
-      (e.ours ? ' <span class="event-map-ours">On our calendar</span>' : '') + '<br>' + esc(when(e)) + ' · ' + esc(e.type) +
-      (e.remote ? ' (remote)' : e.hybrid ? ' (hybrid)' : '') + (showPlace ? '<br>' + placeOf(e) : '') + '<br>' + links + '</li>';
+    return '<div class="event-pop"><h4>' + swatch(e.type) + esc(e.name) +
+      (e.ours ? ' <span class="event-map-ours">On our calendar</span>' : '') + '</h4>' + esc(when(e)) + ' · ' + esc(e.type) +
+      (e.remote ? ' (remote)' : e.hybrid ? ' (hybrid)' : '') +
+      (place ? '<div class="event-pop-place">' + place + '</div>' : '') +
+      '<div class="event-pop-links">' + links + '</div></div>';
+  }
+
+  // Dots carry no hover tooltip: the click popup holds the details, and a thicker
+  // outline on hover shows that the dot can be clicked.
+  function hoverOutline(m) {
+    var w = m.options.weight;
+    m.on('mouseover', function () { m.setStyle({ weight: w + 2 }); });
+    m.on('mouseout', function () { m.setStyle({ weight: w }); });
   }
 
   function teamUrl(t) { return 'https://ftc-events.firstinspires.org/' + rookieYear + '/team/' + t.number; }
@@ -234,7 +250,7 @@ Teams matching the state and distance filters, nearest first. Distances are meas
           return '<li><a href="' + teamUrl(t) + '" target="_blank">' + t.number + '</a> ' + esc(t.name) +
             ' <span class="event-place">since ' + t.rookie_year + '</span></li>';
         }).join('') + '</ul></div>', { maxWidth: 320 });
-      m.bindTooltip(esc(place) + ': ' + list.length + (list.length === 1 ? ' team' : ' teams'));
+      hoverOutline(m);
       m.addTo(teamLayer);
       teamMarkers[place] = m;
     });
@@ -270,10 +286,11 @@ Teams matching the state and distance filters, nearest first. Distances are meas
       var m = L.circleMarker([first.lat, first.lon], {
         radius: list.length > 1 ? 9 : 7, color: mine ? '#e9b600' : '#222', weight: mine ? 4 : 1,
         fillColor: typeColor[lead.type], fillOpacity: 0.9
-      }).bindPopup('<div class="event-map-popup"><h4>' + esc(first.city) + ', ' + esc(first.state) + ' · ' +
-        Math.round(first.miles) + ' mi</h4>' + (sameVenue ? placeOf(first) : '') + '<ul>' +
-        list.map(function (e) { return popupItem(e, !sameVenue); }).join('') + '</ul></div>', { maxWidth: 320 });
-      m.bindTooltip(list.length > 1 ? esc(first.city) + ': ' + list.length + ' events' : esc(first.name));
+      }).bindPopup('<div class="event-map-popup">' + (list.length === 1 ? popupEvent(first, placeOf(first)) :
+        list.map(function (e) { return popupEvent(e, sameVenue ? '' : placeOf(e)); }).join('') +
+        (sameVenue ? '<div class="event-pop-place event-pop-shared">' + placeOf(first) + '</div>' : '')) +
+        '</div>', { maxWidth: 320 });
+      hoverOutline(m);
       m.addTo(layer);
       markers[key] = m;
     });
