@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-11-19T03:37:20Z
+last_modified_at: 2026-11-19T03:38:34Z
 layout: default
 season: "2026-2027"
 nav_section: /events/
@@ -7,7 +7,7 @@ title: Equinox Valley Scrimmage
 description: The Equinox Valley Scrimmage is a FIRST Tech Challenge practice event on December 19, 2026 at Equinox Valley Middle School in Manchester Center, Vermont.
 ---
 
-# Equinox Valley Scrimmage 2026
+# Equinox Valley Scrimmage
 
 Join Southern Vermont FIRST Tech Challenge teams for the **Equinox Valley Scrimmage**, a low-pressure, mid-season practice event hosted at Equinox Valley Middle School (EVMS) in collaboration with Bennington Area Robotics and Manchester Machine Makers.
 
