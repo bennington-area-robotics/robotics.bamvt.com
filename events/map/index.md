@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-11-12T03:15:37Z
+last_modified_at: 2026-11-19T01:33:36Z
 layout: default
 nav_section: /events/
 redirect_from:
@@ -76,7 +76,7 @@ Turn on **Show teams** (or open [this link](#teams)) to add the {{ ftc_teams.tea
 
 <div id="event-map" role="region" aria-label="Map of northeast FTC events and teams"></div>
 <p class="event-map-count" id="event-map-count" aria-live="polite"></p>
-<p class="event-map-credit">Event and team data: <a href="https://ftc-events.firstinspires.org/services/API" target="_blank">FIRST Tech Challenge Events API</a>. Venue and town locations: &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap contributors</a>, available under the Open Database License, via Nominatim. Map tiles: &copy; OpenStreetMap contributors.</p>
+<p class="event-map-credit">Event and team data: <a href="https://ftc-events.firstinspires.org/services/API" target="_blank">FIRST Tech Challenge Events API</a>, refreshed {% if ftc.retrieved == ftc_teams.retrieved %}{{ ftc.retrieved | date: "%B %-d, %Y" }}{% else %}{{ ftc.retrieved | date: "%B %-d, %Y" }} (events) and {{ ftc_teams.retrieved | date: "%B %-d, %Y" }} (teams){% endif %}. Venue and town locations: &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap contributors</a>, available under the Open Database License, via Nominatim. Map tiles: &copy; OpenStreetMap contributors.</p>
 
 ## Event List {#event-list}
 

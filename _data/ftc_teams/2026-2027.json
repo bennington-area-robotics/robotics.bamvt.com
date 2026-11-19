@@ -1,7 +1,7 @@
 {
   "season": "2026-2027",
   "source": "https://ftc-events.firstinspires.org/services/API",
-  "retrieved": "2026-11-11",
+  "retrieved": "2026-11-18",
   "note": "Team locations are town centers from OpenStreetMap, not team addresses.",
   "places": {
     "Acton, MA": [
@@ -353,7 +353,7 @@
       -71.53748
     ],
     "Contoocook, NH": [
-      43.222410000000004,
+      43.22241,
       -71.71355
     ],
     "Corning, NY": [
@@ -940,6 +940,10 @@
       40.79593,
       -74.31487
     ],
+    "Lockport, NY": [
+      43.16871,
+      -78.69657
+    ],
     "Locust Valley, NY": [
       40.87577,
       -73.59719
@@ -1332,9 +1336,9 @@
       44.62884,
       -74.81381
     ],
-    "Park Ridge, NJ": [
-      41.03597,
-      -74.04156
+    "Park Ridge, NY": [
+      42.74024,
+      -73.66476
     ],
     "Parsippany, NJ": [
       40.85788,
@@ -1553,7 +1557,7 @@
       -71.2009
     ],
     "Sanford, ME": [
-      43.438720000000004,
+      43.43872,
       -70.77462
     ],
     "Saranac Lake, NY": [
@@ -6238,7 +6242,7 @@
     },
     {
       "number": 20701,
-      "name": "Team Lovelace",
+      "name": "Lovelace",
       "city": "New York",
       "state": "NY",
       "region": "USNYNY",
@@ -6355,7 +6359,7 @@
     },
     {
       "number": 20841,
-      "name": "Peekskill Pride #1",
+      "name": "Crimson Devils",
       "city": "Peekskill",
       "state": "NY",
       "region": "USNYEX",
@@ -7444,7 +7448,7 @@
     },
     {
       "number": 23985,
-      "name": "HARE BEARS",
+      "name": "HARE BEARS 26",
       "city": "Amherst",
       "state": "MA",
       "region": "USMA",
@@ -8956,7 +8960,7 @@
     },
     {
       "number": 27791,
-      "name": "Pier School Robotics",
+      "name": "Mariner Robotics",
       "city": "Narragansett",
       "state": "RI",
       "region": "USRI",
@@ -9379,7 +9383,7 @@
     },
     {
       "number": 30668,
-      "name": "SSC Library",
+      "name": "SourceCats",
       "city": "Corning",
       "state": "NY",
       "region": "USNYEX",
@@ -10918,7 +10922,7 @@
     },
     {
       "number": 36689,
-      "name": "Critical Hit Robotics",
+      "name": "Darwin",
       "city": "New York",
       "state": "NY",
       "region": "USNYNY",
@@ -12000,10 +12004,10 @@
       "number": 38628,
       "name": "Prowlers",
       "city": "Park Ridge",
-      "state": "NJ",
+      "state": "NY",
       "region": "USNJ",
       "rookie_year": 2026,
-      "place": "Park Ridge, NJ"
+      "place": "Park Ridge, NY"
     },
     {
       "number": 38632,
@@ -12151,7 +12155,7 @@
     },
     {
       "number": 38760,
-      "name": "Snack Snakes",
+      "name": "Snake Snacks",
       "city": "Lexington",
       "state": "MA",
       "region": "USMA",
@@ -12670,6 +12674,51 @@
       "region": "USNH",
       "rookie_year": 2026,
       "place": "Bedford, NH"
+    },
+    {
+      "number": 39635,
+      "name": "Sublight",
+      "city": "Lockport",
+      "state": "NY",
+      "region": "USNYEX",
+      "rookie_year": 2026,
+      "place": "Lockport, NY"
+    },
+    {
+      "number": 39669,
+      "name": "Thinkers & Makers STEAM",
+      "city": "Columbus",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2026,
+      "place": "Columbus, NJ"
+    },
+    {
+      "number": 39671,
+      "name": "Thambi Bots",
+      "city": "Parsippany",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2026,
+      "place": "Parsippany, NJ"
+    },
+    {
+      "number": 39672,
+      "name": "Pandelligence",
+      "city": "Floral Park",
+      "state": "NY",
+      "region": "USNYLI",
+      "rookie_year": 2026,
+      "place": "Floral Park, NY"
+    },
+    {
+      "number": 39673,
+      "name": "Gourmet Pandas",
+      "city": "Floral Park",
+      "state": "NY",
+      "region": "USNYLI",
+      "rookie_year": 2026,
+      "place": "Floral Park, NY"
     }
   ]
 }
