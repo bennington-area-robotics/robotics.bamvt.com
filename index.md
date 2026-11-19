@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-11-04T21:32:21Z
+last_modified_at: 2026-11-19T02:07:07Z
 layout: default
 title: Home
 seo_title: Bennington Area Robotics | Youth Robotics in Bennington, VT
@@ -73,8 +73,8 @@ Students and families are expected to follow our [Code of Conduct](/code-of-cond
 <div class="home-season-details" markdown="1">
 <div markdown="1">
 
-**Next event: [Southern Vermont Qualifier](/events/southern-vermont-qualifier-2027/)**<br>
-Saturday, January 23, 2027 · MAUMS, Bennington
+**Next event: [Equinox Valley Scrimmage](/events/equinox-valley-scrimmage-2026/)**<br>
+Saturday, December 19, 2026 · Equinox Valley Middle School, Manchester Center
 
 </div>
 <div markdown="1">
