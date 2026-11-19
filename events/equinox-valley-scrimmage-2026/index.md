@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-11-19T03:36:02Z
+last_modified_at: 2026-11-19T03:37:20Z
 layout: default
 season: "2026-2027"
 nav_section: /events/
@@ -9,7 +9,7 @@ description: The Equinox Valley Scrimmage is a FIRST Tech Challenge practice eve
 
 # Equinox Valley Scrimmage 2026
 
-Join Southern Vermont FIRST Tech Challenge teams for the **Equinox Valley Scrimmage**, a low-pressure, mid-season practice event hosted at Equinox Valley Middle School in collaboration with Bennington Area Robotics and Manchester Machine Makers.
+Join Southern Vermont FIRST Tech Challenge teams for the **Equinox Valley Scrimmage**, a low-pressure, mid-season practice event hosted at Equinox Valley Middle School (EVMS) in collaboration with Bennington Area Robotics and Manchester Machine Makers.
 
 Designed as a collaborative dry run ahead of January's Vermont qualifiers, this official FTC scrimmage gives student teams (grades 7–12) hands-on match experience in this season's game, BIOBUZZ, using the official FTC scoring system—without the pressure of advancement stakes or formal judging. Teams will run timed, scored matches, test robot reliability, review rules and inspection standards, and get feedback in a supportive environment rooted in FIRST's standard of Gracious Professionalism.
 
