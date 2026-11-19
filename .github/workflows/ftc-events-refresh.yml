@@ -1,0 +1,114 @@
+name: FTC events data refresh
+
+# Nightly refresh of the data behind /events/map/ via the FTC Events API.
+# Opens (or updates) a pull request for review when the data changed; the
+# review steps live in .claude/skills/update-ftc-events/SKILL.md.
+#
+# Needs the FTC_API_USERNAME and FTC_API_TOKEN repository secrets, and the
+# repository setting "Allow GitHub Actions to create and approve pull
+# requests" (Settings -> Actions -> General).
+
+on:
+  schedule:
+    - cron: '17 7 * * *' # nightly, 07:17 UTC (overnight Eastern)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: ftc-events-refresh
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      # Resume an open refresh branch rather than rebuilding it from main, so
+      # review fixes pushed to its PR (VENUES entries, town coordinates) survive
+      # the next run and shape that run's regenerated data. A failed merge here
+      # means the branch conflicts with main and needs a human.
+      - name: Continue any open refresh branch
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          if git ls-remote --exit-code --heads origin ftc-events-auto-refresh > /dev/null; then
+            git checkout -B ftc-events-auto-refresh origin/ftc-events-auto-refresh
+            git merge --no-edit origin/main
+          fi
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+      - name: Refresh event and team data
+        shell: bash
+        env:
+          FTC_API_USERNAME: ${{ secrets.FTC_API_USERNAME }}
+          FTC_API_TOKEN: ${{ secrets.FTC_API_TOKEN }}
+        # Keep the scripts' stderr warnings (missing coordinates, stale VENUES
+        # entries, failed town lookups) for the pull request body.
+        run: |
+          bin/ftc-events 2> >(tee "$RUNNER_TEMP/events-warnings.log" >&2)
+          bin/ftc-teams 2> >(tee "$RUNNER_TEMP/teams-warnings.log" >&2)
+      - name: Open or update the refresh pull request
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          git add _data/ftc_events _data/ftc_teams
+          if git diff --cached --quiet; then
+            echo 'No data changes; nothing to do.'
+            exit 0
+          fi
+
+          body="$RUNNER_TEMP/pr-body.md"
+          {
+            echo 'Scheduled refresh of the FTC events and teams data behind [/events/map/](https://robotics.bamvt.com/events/map/).'
+            echo
+            echo '```'
+            # Summarize against main, not the branch tip, so the body covers
+            # the whole PR rather than only the latest night's delta.
+            for f in $(git diff --cached --name-only --diff-filter=M -- _data/ftc_events); do
+              if git show "origin/main:$f" > "$RUNNER_TEMP/base.json" 2>/dev/null; then
+                .claude/skills/update-ftc-events/scripts/diff-events "$RUNNER_TEMP/base.json" "$f"
+              else
+                .claude/skills/update-ftc-events/scripts/diff-events "$f"
+              fi
+            done
+            for f in $(git diff --cached --name-only --diff-filter=M -- _data/ftc_teams); do
+              base="HEAD:$f"
+              git show "origin/main:$f" > /dev/null 2>&1 && base="origin/main:$f"
+              old=$(git show "$base" | ruby -rjson -e 'puts JSON.parse($stdin.read)["teams"].size')
+              new=$(ruby -rjson -e 'puts JSON.parse(File.read(ARGV[0]))["teams"].size' "$f")
+              echo "Teams ($f): $old -> $new"
+            done
+            echo '```'
+            for log in "$RUNNER_TEMP"/events-warnings.log "$RUNNER_TEMP"/teams-warnings.log; do
+              if [ -s "$log" ]; then
+                echo
+                echo "**Script warnings (${log##*/}):** fix these in the script per the skill, not in the JSON."
+                echo '```'
+                cat "$log"
+                echo '```'
+              fi
+            done
+            echo
+            echo 'Review per `.claude/skills/update-ftc-events/SKILL.md`: check removed events against FIRST before calling them cancelled, look at approximate locations, and compare changed dates and venues against our own listings in `_data/events.yml`, `index.md`, and `events/`.'
+            echo
+            echo 'Timestamps were updated by `bin/last-modified --staged` in the workflow; checks do not run automatically on pull requests opened by Actions.'
+          } > "$body"
+
+          ruby bin/last-modified --staged
+          date=$(date -u +%Y-%m-%d)
+          git checkout -B ftc-events-auto-refresh
+          git commit -m "Refresh FTC events and teams data ($date)"
+          ruby bin/last-modified --check "$(git merge-base origin/main HEAD)" HEAD
+          git push origin ftc-events-auto-refresh
+          gh pr create --base main --head ftc-events-auto-refresh \
+            --title "Refresh FTC events and teams data ($date)" --body-file "$body" ||
+            gh pr edit ftc-events-auto-refresh \
+              --title "Refresh FTC events and teams data ($date)" --body-file "$body"
