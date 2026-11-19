@@ -11,7 +11,7 @@ The map at `/events/map/` and the dot-map preview on `/events/` render
 `https://ftc-events.firstinspires.org/<season>`. Never edit the JSON by hand: fixes
 belong in the script so they survive the next refresh.
 
-A weekly GitHub Action (`.github/workflows/ftc-events-refresh.yml`) runs both
+A nightly GitHub Action (`.github/workflows/ftc-events-refresh.yml`) runs both
 scripts and opens a PR on `ftc-events-auto-refresh` when the data changed, with
 the diff summary and script warnings in the PR body. When asked to review one of
 those PRs, skip to step 3 and work from the PR's branch; warnings in the body

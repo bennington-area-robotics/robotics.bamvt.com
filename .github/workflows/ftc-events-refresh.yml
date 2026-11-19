@@ -1,6 +1,6 @@
 name: FTC events data refresh
 
-# Weekly refresh of the data behind /events/map/ via the FTC Events API.
+# Nightly refresh of the data behind /events/map/ via the FTC Events API.
 # Opens (or updates) a pull request for review when the data changed; the
 # review steps live in .claude/skills/update-ftc-events/SKILL.md.
 #
@@ -10,7 +10,7 @@ name: FTC events data refresh
 
 on:
   schedule:
-    - cron: '17 11 * * 1' # Mondays, 11:17 UTC (morning Eastern)
+    - cron: '17 7 * * *' # nightly, 07:17 UTC (overnight Eastern)
   workflow_dispatch:
 
 permissions:
