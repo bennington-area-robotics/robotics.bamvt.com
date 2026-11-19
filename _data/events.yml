@@ -4,7 +4,7 @@
 #
 # Event fields:
 #   title, start, end (same as start for one-day events), type
-#   type: Kickoff | Qualifier | Championship | Premier Event | World Championship
+#   type: Kickoff | Scrimmage | Qualifier | Championship | Premier Event | World Championship
 #   url: internal event page, or external_url when there is no page here
 #   venue, place (city and state), directions (optional map link)
 #   ftc: FTC event code; ftc_season: FTC season year used in its URL
@@ -19,7 +19,7 @@ seasons:
     game: BIOBUZZ
     anchor: biobuzz
     url: /seasons/biobuzz/
-    summary: Both teams are competing in BIOBUZZ, and we co-host the Southern Vermont Qualifier in Bennington on January 23.
+    summary: Both teams are competing in BIOBUZZ. We host the Equinox Valley Scrimmage in Manchester Center on December 19 and co-host the Southern Vermont Qualifier in Bennington on January 23.
     events:
       - title: BIOBUZZ Season Kickoff
         start: "2026-09-12"
@@ -34,6 +34,14 @@ seasons:
         links:
           - label: Videos and slides
             url: /events/season-kickoff-2026/#kickoff-materials
+      - title: Equinox Valley Scrimmage
+        start: "2026-12-19"
+        end: "2026-12-19"
+        type: Scrimmage
+        url: /events/equinox-valley-scrimmage-2026/
+        venue: Equinox Valley Middle School
+        place: Manchester Center, VT
+        host: Hosted by Bennington Area Robotics
       - title: Southern Vermont Qualifier
         start: "2027-01-23"
         end: "2027-01-23"
