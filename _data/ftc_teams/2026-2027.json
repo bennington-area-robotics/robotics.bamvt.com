@@ -1,7 +1,7 @@
 {
   "season": "2026-2027",
   "source": "https://ftc-events.firstinspires.org/services/API",
-  "retrieved": "2026-11-19",
+  "retrieved": "2026-11-20",
   "note": "Team locations are town centers from OpenStreetMap, not team addresses.",
   "places": {
     "Acton, MA": [
@@ -10886,7 +10886,7 @@
     },
     {
       "number": 36664,
-      "name": "USB6880",
+      "name": "Universal Serial Brawlers",
       "city": "Yorktown Heights",
       "state": "NY",
       "region": "USNYEX",
@@ -12719,6 +12719,15 @@
       "region": "USNYLI",
       "rookie_year": 2026,
       "place": "Floral Park, NY"
+    },
+    {
+      "number": 39747,
+      "name": "Graybees",
+      "city": "Newark",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2026,
+      "place": "Newark, NJ"
     }
   ]
 }
