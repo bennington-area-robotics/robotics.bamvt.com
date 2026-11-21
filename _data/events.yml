@@ -7,6 +7,9 @@
 #   type: Kickoff | Scrimmage | Qualifier | Championship | Premier Event | World Championship
 #   url: internal event page, or external_url when there is no page here
 #   venue, place (city and state), directions (optional map link)
+#   address: street address, shown on the event page header and used for directions
+#   time: display text for the event hours, once announced (event page header)
+#   contact: email for questions on the event page header (default info@bamvt.com)
 #   ftc: FTC event code; ftc_season: FTC season year used in its URL
 #   host: hosting note, when we host or co-host
 #   teams: team numbers that competed, when not every team attended
@@ -41,6 +44,7 @@ seasons:
         url: /events/equinox-valley-scrimmage-2026/
         venue: Equinox Valley Middle School
         place: Manchester Center, VT
+        address: 80 Memorial Ave, Manchester Center, VT 05255
         host: Hosted by Bennington Area Robotics
       - title: Southern Vermont Qualifier
         start: "2027-01-23"

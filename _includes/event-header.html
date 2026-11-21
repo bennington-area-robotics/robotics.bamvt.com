@@ -1,0 +1,98 @@
+{%- comment -%}
+Header for an individual event page: type and season tags, the page title, and a
+details panel with the date, time, venue, and actions. Details come from the
+_data/events.yml entry whose url matches this page, so the page, the /events/
+timeline, and the next-event card stay in agreement.
+
+Use it in place of the page's `# Title` line and bold Date/Venue/Contact lines:
+  {% include event-header.html %}
+
+Event fields used here, beyond those the timeline uses:
+  address  street address, shown under the venue and used for directions
+  time     display text such as "8:00 AM – 4:00 PM"; omitted means not yet announced
+  contact  email address for questions (defaults to info@bamvt.com)
+An "Add to calendar" button appears when calendar.ics exists beside the page
+(see events/equinox-valley-scrimmage-2026/calendar.ics and _includes/event-ics.txt).
+Past/upcoming status is set at build time and refreshed in the browser by the
+event-status script in _layouts/default.html.
+{%- endcomment -%}
+{%- assign ev = nil -%}
+{%- assign ev_season = nil -%}
+{%- for s in site.data.events.seasons -%}
+  {%- for e in s.events -%}
+    {%- if e.url == page.url -%}{%- assign ev = e -%}{%- assign ev_season = s -%}{%- endif -%}
+  {%- endfor -%}
+{%- endfor -%}
+{%- if ev == nil %}
+<h1>{{ page.title }}</h1>
+{%- else -%}
+{%- assign today = site.time | date: "%Y-%m-%d" -%}
+{%- if ev.end < today -%}{%- assign status = "past" -%}{%- else -%}{%- assign status = "upcoming" -%}{%- endif -%}
+{%- assign full_date = ev.start | date: "%A, %B %-d, %Y" -%}
+{%- if ev.end != ev.start -%}
+  {%- assign start_year = ev.start | date: "%Y" -%}{%- assign end_year = ev.end | date: "%Y" -%}
+  {%- if start_year == end_year -%}{%- assign full_date = ev.start | date: "%A, %B %-d" -%}{%- endif -%}
+  {%- assign full_end = ev.end | date: "%A, %B %-d, %Y" -%}
+  {%- assign full_date = full_date | append: " – " | append: full_end -%}
+{%- endif -%}
+{%- assign destination = ev.venue -%}
+{%- if ev.address -%}{%- assign destination = destination | append: ", " | append: ev.address -%}{%- elsif ev.place -%}{%- assign destination = destination | append: ", " | append: ev.place -%}{%- endif -%}
+{%- if ev.directions -%}
+  {%- assign directions = ev.directions -%}
+{%- else -%}
+  {%- assign directions = destination | url_encode | prepend: "https://www.google.com/maps/dir/?api=1&destination=" -%}
+{%- endif -%}
+{%- if ev.host contains "Co-hosted with " -%}
+  {%- assign hosts = ev.host | remove_first: "Co-hosted with " | prepend: "Bennington Area Robotics and " -%}
+{%- else -%}
+  {%- assign hosts = ev.host | remove_first: "Hosted by " -%}
+{%- endif -%}
+{%- assign contact = ev.contact | default: "info@bamvt.com" -%}
+{%- assign ics_url = page.url | append: "calendar.ics" -%}
+{%- assign ics = site.pages | where: "url", ics_url | first -%}
+<header class="event-page-header{% if ev.host %} is-hosted{% endif %} is-{{ status }}" data-event-end="{{ ev.end }}">
+  <p class="event-tags">
+    <span class="event-tag event-tag--{{ ev.type | slugify }}">{{ ev.type }}</span>
+    {%- if ev.host %} <span class="event-tag event-tag--host">{% if ev.host contains "Co-hosted" %}Co-host{% else %}Host{% endif %}</span>{% endif -%}
+    {%- if ev_season.url %} <a class="event-tag event-tag--season" href="{{ ev_season.url | relative_url }}">{{ ev_season.game }} {{ ev_season.label }}</a>{% endif %}
+    <span class="event-tag event-tag--completed">Completed</span>
+  </p>
+  <h1 class="event-page-title">{{ page.title }}</h1>
+  <div class="event-page-panel">
+    {% include event-date.html event=ev %}
+    <dl class="event-page-facts">
+      <div>
+        <dt>When</dt>
+        <dd>
+          <strong>{{ full_date }}</strong>
+          {%- if ev.time %}<br>{{ ev.time }}{% else %}<br><span class="event-page-tba">Times to be announced</span>{% endif %}
+          <span class="event-page-countdown" data-countdown="{{ ev.start }}"></span>
+        </dd>
+      </div>
+      <div>
+        <dt>Where</dt>
+        <dd>
+          <strong>{{ ev.venue }}</strong>
+          {%- if ev.address %}<br>{{ ev.address }}{% elsif ev.place %}<br>{{ ev.place }}{% endif %}
+        </dd>
+      </div>
+      {%- if ev.host %}
+      <div>
+        <dt>Host</dt>
+        <dd>{{ hosts }}</dd>
+      </div>
+      {%- endif %}
+      <div>
+        <dt>Questions</dt>
+        <dd><a href="mailto:{{ contact }}?subject={{ ev.title | uri_escape }}">{{ contact }}</a></dd>
+      </div>
+    </dl>
+    <p class="event-page-actions">
+      {%- if ics %}<a class="event-button event-page-calendar" href="{{ ics.url | relative_url }}" download>Add to calendar</a>{% endif -%}
+      <a href="{{ directions }}" target="_blank">Directions</a>
+      {%- if ev.ftc %}<a href="https://ftc-events.firstinspires.org/{{ ev.ftc_season }}/{{ ev.ftc }}" target="_blank">FTC event page</a>{% endif -%}
+      <a href="{{ '/events/' | relative_url }}{% if ev_season.anchor %}#{{ ev_season.anchor }}{% endif %}">All events</a>
+    </p>
+  </div>
+</header>
+{%- endif -%}
