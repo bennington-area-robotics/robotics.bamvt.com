@@ -53,7 +53,7 @@ event-status script in _layouts/default.html.
 <header class="event-page-header{% if ev.host %} is-hosted{% endif %} is-{{ status }}" data-event-end="{{ ev.end }}">
   <p class="event-tags">
     <span class="event-tag event-tag--{{ ev.type | slugify }}">{{ ev.type }}</span>
-    {%- if ev.host %} <span class="event-tag event-tag--host">{% if ev.host contains "Co-hosted" %}Co-host{% else %}Host{% endif %}</span>{% endif -%}
+    {%- if ev.host %} <span class="event-tag event-tag--host">{% if ev.host contains "with support from" %}Support{% elsif ev.host contains "Co-hosted" %}Co-host{% else %}Host{% endif %}</span>{% endif -%}
     {%- if ev_season.url %} <a class="event-tag event-tag--season" href="{{ ev_season.url | relative_url }}">{{ ev_season.game }} {{ ev_season.label }}</a>{% endif %}
     <span class="event-tag event-tag--completed">Completed</span>
   </p>

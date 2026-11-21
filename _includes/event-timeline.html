@@ -17,7 +17,7 @@ event-status script in _layouts/default.html.
     <div class="event-card">
       <p class="event-tags">
         <span class="event-tag event-tag--{{ e.type | slugify }}">{{ e.type }}</span>
-        {%- if e.host %} <span class="event-tag event-tag--host">{% if e.host contains "Co-hosted" %}Co-host{% else %}Host{% endif %}</span>{% endif -%}
+        {%- if e.host %} <span class="event-tag event-tag--host">{% if e.host contains "with support from" %}Support{% elsif e.host contains "Co-hosted" %}Co-host{% else %}Host{% endif %}</span>{% endif -%}
         {%- for t in e.teams %} <span class="event-tag event-tag--team">{{ t }}{% if t == 18650 %} Cookie Clickers{% elsif t == 32473 %} Bolts and Biscuits{% endif %}</span>{% endfor -%}
         <span class="event-tag event-tag--next" aria-hidden="true">Next</span>
       </p>
