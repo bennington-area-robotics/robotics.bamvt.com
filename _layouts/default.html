@@ -1324,6 +1324,88 @@
       font-weight: 600;
     }
     .event-photo-credit { margin-top: 2.5rem; color: var(--muted); font-size: 0.8rem; }
+    /* Individual event pages: _includes/event-header.html */
+    .event-page-header { margin: 0 0 2.25rem; }
+    .event-page-header .event-tags { margin: 0 0 0.75rem; }
+    a.event-tag--season { background: #e8edf5; color: var(--sidebar); text-decoration: none; }
+    a.event-tag--season:hover { background: var(--sidebar); color: white; }
+    .event-tag--completed { display: none; }
+    .event-page-header.is-past .event-tag--completed { display: inline-block; }
+    main h1.event-page-title { margin: 0 0 1.25rem; }
+    .event-page-panel {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      gap: 1.1rem 1.5rem;
+      align-items: start;
+      padding: 1.3rem 1.5rem;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: white;
+      box-shadow: 0 2px 12px rgba(64, 92, 133, 0.08);
+    }
+    .event-page-header.is-hosted .event-page-panel { border-left: 4px solid #2a9d8f; }
+    .event-page-panel .event-date { min-width: 5.5rem; padding: 0.6rem 0.35rem 0.5rem; }
+    .event-page-panel .event-date-month { font-size: 0.78rem; }
+    .event-page-panel .event-date-day { font-size: 2.1rem; line-height: 1.1; }
+    .event-page-panel .event-date--range .event-date-day { font-size: 1.35rem; }
+    .event-page-header.is-upcoming .event-date {
+      border-color: var(--sidebar);
+      background: var(--sidebar);
+      box-shadow: 0 2px 6px rgba(43, 66, 99, 0.3);
+    }
+    .event-page-header.is-upcoming .event-date span { color: white; }
+    .event-page-header.is-upcoming .event-date-month { color: #ffd0d4; }
+    .event-page-header.is-past .event-date { background: #f4f4f4; box-shadow: none; }
+    .event-page-header.is-past .event-date-day { color: #6b6b6b; }
+    .event-page-facts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+      gap: 1rem 1.75rem;
+      margin: 0;
+    }
+    .event-page-facts dt {
+      color: var(--muted);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .event-page-facts dd { margin: 0.15rem 0 0; line-height: 1.45; }
+    .event-page-facts strong { color: var(--heading); }
+    .event-page-tba { color: var(--muted); }
+    .event-page-countdown {
+      display: block;
+      width: fit-content;
+      margin-top: 0.4rem;
+      padding: 0.05rem 0.65rem;
+      border-radius: 999px;
+      background: #fde4e6;
+      color: #9b1c26;
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+    .event-page-countdown:empty { display: none; }
+    .event-page-actions {
+      grid-column: 1 / -1;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.6rem 1.25rem;
+      margin: 0;
+      padding-top: 1rem;
+      border-top: 1px solid #eceff3;
+      font-size: 0.92rem;
+      font-weight: 600;
+    }
+    .event-page-actions a.event-button {
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      background: var(--sidebar);
+      color: white;
+      text-decoration: none;
+    }
+    .event-page-actions a.event-button:hover { background: #2b4263; color: white; }
+    .event-page-header.is-past :is(.event-page-calendar, .event-page-tba, .event-page-countdown) { display: none; }
     @media (min-width: 48rem) {
       .event-hub-top { grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); }
       .event-hub-top:has(.event-next[hidden]) { grid-template-columns: minmax(0, 1fr); }
@@ -1334,6 +1416,9 @@
       .event-date-day { font-size: 1.3rem; }
       .event-card { padding: 0.7rem 0.85rem 0.8rem; }
       .event-next-title { font-size: 1.25rem; }
+      .event-page-panel { gap: 1rem; padding: 1rem 1rem 1.1rem; }
+      .event-page-panel .event-date { min-width: 4.4rem; }
+      .event-page-panel .event-date-day { font-size: 1.7rem; }
     }
   </style>
   <script data-goatcounter="https://bamvt.goatcounter.com/count"
@@ -1786,9 +1871,20 @@
 // Event listings: refresh past/upcoming status and the next-event card between
 // site builds, using the Eastern-time calendar date.
 (function() {
-  var items = document.querySelectorAll('[data-event-list] .event-item, .event-next[data-event-end]');
+  var items = document.querySelectorAll('[data-event-list] .event-item, .event-next[data-event-end], .event-page-header[data-event-end]');
   if (!items.length) return;
   var today = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/New_York' }).format(new Date());
+  function setCountdown(el) {
+    if (!el) return;
+    var days = Math.round((Date.parse(el.getAttribute('data-countdown')) - Date.parse(today)) / 864e5);
+    el.textContent = days > 1 ? 'in ' + days + ' days' : days === 1 ? 'tomorrow' : 'today';
+  }
+  document.querySelectorAll('.event-page-header[data-event-end]').forEach(function(header) {
+    var past = header.getAttribute('data-event-end') < today;
+    header.classList.toggle('is-past', past);
+    header.classList.toggle('is-upcoming', !past);
+    if (!past) setCountdown(header.querySelector('[data-countdown]'));
+  });
   document.querySelectorAll('[data-event-list]').forEach(function(list) {
     var nextFound = false;
     list.querySelectorAll('.event-item').forEach(function(item) {
@@ -1802,10 +1898,7 @@
   });
   document.querySelectorAll('.event-next[data-event-end]').forEach(function(card) {
     if (card.getAttribute('data-event-end') < today) { card.hidden = true; return; }
-    var countdown = card.querySelector('[data-countdown]');
-    if (!countdown) return;
-    var days = Math.round((Date.parse(countdown.getAttribute('data-countdown')) - Date.parse(today)) / 864e5);
-    countdown.textContent = days > 1 ? 'in ' + days + ' days' : days === 1 ? 'tomorrow' : 'today';
+    setCountdown(card.querySelector('[data-countdown]'));
   });
 })();
 </script>

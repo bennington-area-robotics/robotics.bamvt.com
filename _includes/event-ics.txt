@@ -1,0 +1,32 @@
+{%- comment -%}
+iCalendar file for one _data/events.yml entry, rendered as an all-day event.
+Parameters: url (the event's page URL in _data/events.yml).
+Used by events/<event-name>/calendar.ics; _includes/event-header.html links to it.
+The end date is exclusive in iCalendar, so it is the day after the event ends;
+adding 36 hours avoids daylight-saving shifts landing on the same day.
+{%- endcomment -%}
+{%- assign ev = nil -%}
+{%- for s in site.data.events.seasons -%}{%- for e in s.events -%}
+{%- if e.url == include.url -%}{%- assign ev = e -%}{%- endif -%}
+{%- endfor -%}{%- endfor -%}
+{%- assign location = ev.venue -%}
+{%- if ev.address -%}{%- assign location = location | append: ", " | append: ev.address -%}{%- elsif ev.place -%}{%- assign location = location | append: ", " | append: ev.place -%}{%- endif -%}
+{%- assign page_link = ev.url | absolute_url -%}
+{%- assign slug = ev.url | remove: "/events/" | remove: "/" -%}
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Bennington Area Robotics//robotics.bamvt.com//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:{{ slug }}@robotics.bamvt.com
+DTSTAMP:{{ site.time | date: "%Y%m%d" }}T000000Z
+DTSTART;VALUE=DATE:{{ ev.start | date: "%Y%m%d" }}
+DTEND;VALUE=DATE:{{ ev.end | date: "%s" | plus: 129600 | date: "%Y%m%d" }}
+SUMMARY:{{ ev.title | replace: ",", "\," | replace: ";", "\;" }}
+LOCATION:{{ location | replace: ",", "\," | replace: ";", "\;" }}
+DESCRIPTION:FIRST Tech Challenge {{ ev.type | downcase }}.{% if ev.time %} {{ ev.time | replace: ",", "\," }}.{% else %} Times to be announced.{% endif %} Details: {{ page_link }}
+URL:{{ page_link }}
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

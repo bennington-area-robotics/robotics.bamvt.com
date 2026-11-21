@@ -7,8 +7,12 @@
 #   type: Kickoff | Scrimmage | Qualifier | Championship | Premier Event | World Championship
 #   url: internal event page, or external_url when there is no page here
 #   venue, place (city and state), directions (optional map link)
+#   address: street address, shown on the event page header and used for directions
+#   time: display text for the event hours, once announced (event page header)
+#   contact: email for questions on the event page header (default info@bamvt.com)
 #   ftc: FTC event code; ftc_season: FTC season year used in its URL
-#   host: hosting note, when we host or co-host
+#   host: hosting note, when we host, co-host, or support the event
+#     ("Co-hosted" shows a Co-host tag, "with support from" a Support tag)
 #   teams: team numbers that competed, when not every team attended
 #   results: short highlights, shown once the event is over
 #   links: extra links, each with label and url
@@ -19,7 +23,7 @@ seasons:
     game: BIOBUZZ
     anchor: biobuzz
     url: /seasons/biobuzz/
-    summary: Both teams are competing in BIOBUZZ. We host the Equinox Valley Scrimmage in Manchester Center on December 19 and co-host the Southern Vermont Qualifier in Bennington on January 23.
+    summary: Both teams are competing in BIOBUZZ. We support the Equinox Valley Scrimmage, hosted by Equinox Valley Middle School in Manchester Center, on December 19, and co-host the Southern Vermont Qualifier in Bennington on January 23.
     events:
       - title: BIOBUZZ Season Kickoff
         start: "2026-09-12"
@@ -41,7 +45,8 @@ seasons:
         url: /events/equinox-valley-scrimmage-2026/
         venue: Equinox Valley Middle School
         place: Manchester Center, VT
-        host: Hosted by Bennington Area Robotics
+        address: 80 Memorial Ave, Manchester Center, VT 05255
+        host: Hosted by Equinox Valley Middle School, with support from Bennington Area Robotics and Manchester Machine Makers
         ftc: USVTMCN
         ftc_season: 2026
       - title: Southern Vermont Qualifier
