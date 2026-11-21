@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-11-19T02:07:07Z
+last_modified_at: 2026-11-21T15:36:59Z
 sitemap: false
 layout: default
 title: Seasons
