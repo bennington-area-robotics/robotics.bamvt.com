@@ -42,6 +42,8 @@ seasons:
         venue: Equinox Valley Middle School
         place: Manchester Center, VT
         host: Hosted by Bennington Area Robotics
+        ftc: USVTMCN
+        ftc_season: 2026
       - title: Southern Vermont Qualifier
         start: "2027-01-23"
         end: "2027-01-23"

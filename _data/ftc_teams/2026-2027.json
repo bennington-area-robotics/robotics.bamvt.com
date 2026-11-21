@@ -1,7 +1,7 @@
 {
   "season": "2026-2027",
   "source": "https://ftc-events.firstinspires.org/services/API",
-  "retrieved": "2026-11-18",
+  "retrieved": "2026-11-21",
   "note": "Team locations are town centers from OpenStreetMap, not team addresses.",
   "places": {
     "Acton, MA": [
@@ -1451,6 +1451,10 @@
     "Ramsey, NJ": [
       41.05732,
       -74.14098
+    ],
+    "Randolph, NJ": [
+      40.84427,
+      -74.58572
     ],
     "Ravena, NY": [
       42.46841,
@@ -9644,7 +9648,7 @@
     },
     {
       "number": 31591,
-      "name": "Ai Future - Premium Rice Cookers",
+      "name": "Ai Future",
       "city": "Woodhaven",
       "state": "NY",
       "region": "USNYNY",
@@ -10886,7 +10890,7 @@
     },
     {
       "number": 36664,
-      "name": "USB6880",
+      "name": "Universal Serial Brawlers",
       "city": "Yorktown Heights",
       "state": "NY",
       "region": "USNYEX",
@@ -12137,7 +12141,7 @@
     },
     {
       "number": 38758,
-      "name": "Penguin FTC Lex 6",
+      "name": "Space Puffins 2",
       "city": "Lexington",
       "state": "MA",
       "region": "USMA",
@@ -12719,6 +12723,33 @@
       "region": "USNYLI",
       "rookie_year": 2026,
       "place": "Floral Park, NY"
+    },
+    {
+      "number": 39747,
+      "name": "Graybees",
+      "city": "Newark",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2026,
+      "place": "Newark, NJ"
+    },
+    {
+      "number": 39757,
+      "name": "Bad News Bots",
+      "city": "Staten Island",
+      "state": "NY",
+      "region": "USNYNY",
+      "rookie_year": 2026,
+      "place": "Staten Island, NY"
+    },
+    {
+      "number": 39760,
+      "name": "Titanium Devils",
+      "city": "Randolph",
+      "state": "NJ",
+      "region": "USNJ",
+      "rookie_year": 2026,
+      "place": "Randolph, NJ"
     }
   ]
 }
