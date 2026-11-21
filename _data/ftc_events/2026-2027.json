@@ -1,7 +1,7 @@
 {
   "season": "2026-2027",
   "source": "https://ftc-events.firstinspires.org/services/API",
-  "retrieved": "2026-11-18",
+  "retrieved": "2026-11-21",
   "states": [
     "CT",
     "MA",
@@ -1282,6 +1282,25 @@
       "ftc_events_url": "https://ftc-events.firstinspires.org/2026/USNYLIBEQ1",
       "lat": 40.75475,
       "lon": -73.48305,
+      "location_approximate": false,
+      "remote": false,
+      "hybrid": false
+    },
+    {
+      "code": "USVTMCN",
+      "name": "Equinox Valley Scrimmage",
+      "type": "Scrimmage",
+      "start": "2026-12-19",
+      "end": "2026-12-19",
+      "venue": "Equinox Valley Middle School",
+      "address": "80 Memorial Ave.",
+      "city": "Manchester Center",
+      "state": "VT",
+      "region": "USVT",
+      "website": "https://robotics.bamvt.com/events/equinox-valley-scrimmage-2026",
+      "ftc_events_url": "https://ftc-events.firstinspires.org/2026/USVTMCN",
+      "lat": 43.17873,
+      "lon": -73.05373,
       "location_approximate": false,
       "remote": false,
       "hybrid": false

@@ -47,6 +47,8 @@ seasons:
         place: Manchester Center, VT
         address: 80 Memorial Ave, Manchester Center, VT 05255
         host: Hosted by Equinox Valley Middle School, with support from Bennington Area Robotics and Manchester Machine Makers
+        ftc: USVTMCN
+        ftc_season: 2026
       - title: Southern Vermont Qualifier
         start: "2027-01-23"
         end: "2027-01-23"

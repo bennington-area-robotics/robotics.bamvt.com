@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-11-21T15:38:22Z
+last_modified_at: 2026-11-21T15:47:32Z
 description: "Events Bennington Area Robotics hosts and competes in, season by season, with results, plus a map of FTC events across the northeast."
 layout: default
 title: Events
