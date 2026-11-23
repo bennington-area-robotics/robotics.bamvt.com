@@ -1,7 +1,7 @@
 {
   "season": "2026-2027",
   "source": "https://ftc-events.firstinspires.org/services/API",
-  "retrieved": "2026-11-22",
+  "retrieved": "2026-11-23",
   "states": [
     "CT",
     "MA",
@@ -1155,8 +1155,8 @@
     },
     {
       "code": "USVTHIQ",
-      "name": "Qualifier- CVU",
-      "type": "Qualifier",
+      "name": "CVU Scrimmage",
+      "type": "Scrimmage",
       "start": "2026-12-12",
       "end": "2026-12-12",
       "venue": "CVU High School",
@@ -2029,7 +2029,7 @@
     },
     {
       "code": "USMAAUQ",
-      "name": "Lasell University Qualifier",
+      "name": "Lasell Penguin Qualifier",
       "type": "Qualifier",
       "start": "2027-02-06",
       "end": "2027-02-06",
