@@ -220,7 +220,7 @@ the shop-safety flyer have independent version metadata.
 | `print/onepager-principles.md` | Principles flyer entry point and metadata |
 | `print/onepager-shop-safety.md` | Shop-safety flyer entry point and metadata |
 | `seasons/` | Season archive and landing pages |
-| `_data/events.yml` | Events we host or attend; feeds `/events/` and season overviews |
+| `_data/events.yml` | Events we host or attend, plus other Vermont events (`attending: false`); feeds `/events/` and season overviews |
 | `events/map/index.md` | Map of northeast FTC events from `_data/ftc_events/` |
 | `budget.md`, `sponsors.md`, `portfolio.md` | Current-season entry points (rendered directly) |
 | `_includes/season-content/` | Shared bodies for current and permanent seasonal pages |

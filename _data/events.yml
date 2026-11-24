@@ -16,6 +16,8 @@
 #   teams: team numbers that competed, when not every team attended
 #   results: short highlights, shown once the event is over
 #   links: extra links, each with label and url
+#   attending: false for other Vermont events neither team is attending; they get an
+#     "Other Vermont event" tag and are never shown as the next event
 
 seasons:
   - id: "2026-2027"
@@ -38,6 +40,25 @@ seasons:
         links:
           - label: Videos and slides
             url: /events/season-kickoff-2026/#kickoff-materials
+      - title: BIOBUZZ Season Kickoff (North)
+        start: "2026-09-12"
+        end: "2026-09-12"
+        type: Kickoff
+        venue: University of Vermont, Discovery Hall
+        place: Burlington, VT
+        ftc: USVTBUN
+        ftc_season: 2026
+        attending: false
+      - title: CVU Scrimmage
+        start: "2026-12-12"
+        end: "2026-12-12"
+        type: Scrimmage
+        venue: Champlain Valley Union High School
+        place: Hinesburg, VT
+        address: 369 CVU Rd, Hinesburg, VT 05461
+        ftc: USVTHIQ
+        ftc_season: 2026
+        attending: false
       - title: Equinox Valley Scrimmage
         start: "2026-12-19"
         end: "2026-12-19"

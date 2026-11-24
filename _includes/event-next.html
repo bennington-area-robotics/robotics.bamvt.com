@@ -6,7 +6,7 @@ The event-status script hides it after the event ends until the site is rebuilt.
 {%- assign soonest = nil -%}
 {%- for s in site.data.events.seasons -%}
   {%- for e in s.events -%}
-    {%- if e.end >= today -%}
+    {%- if e.end >= today and e.attending != false -%}
       {%- if soonest == nil or e.start < soonest.start -%}{%- assign soonest = e -%}{%- endif -%}
     {%- endif -%}
   {%- endfor -%}
