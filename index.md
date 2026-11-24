@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-11-19T02:07:07Z
+last_modified_at: 2026-11-24T20:19:59Z
 layout: default
 title: Home
 seo_title: Bennington Area Robotics | Youth Robotics in Bennington, VT
@@ -90,7 +90,7 @@ Saturday, December 19, 2026 · Equinox Valley Middle School, Manchester Center
 
 ## Our Teams {#teams}
 
-- **[18650 Cookie Clickers](https://ftc-events.firstinspires.org/team/18650){:target="_blank"}** — Founded in 2019. First-ranked team and Inspire Award winner at the 2026 Vermont Championship; competed at FIRST Championship in Houston.
+- **[18650 Cookie Clickers](https://ftc-events.firstinspires.org/team/18650){:target="_blank"}** — Founded in 2019. Inspire Award winner and first-ranked team after qualification matches at the 2026 Vermont Championship; competed at FIRST Championship in Houston.
 - **[32473 Bennington Bolts and Biscuits](https://ftc-events.firstinspires.org/team/32473){:target="_blank"}** — Founded in 2025. Seventh of 25 teams at the 2026 Vermont Championship; advanced to the New England Premier Event.
 
 [Explore the 2025–26 season](/seasons/decode/) for results, the engineering portfolio, and team reflections.

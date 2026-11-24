@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-10-17T14:24:07Z
+last_modified_at: 2026-11-24T20:19:59Z
 layout: default
 season: "2025-2026"
 nav_section: /events/
@@ -29,7 +29,9 @@ The official FIRST Tech Challenge Regional Championship for Vermont.
 
 ## Results
 
-**Inspire Award (State Champion):** 18650 Cookie Clickers – advanced to the [FIRST Championship](/events/first-championship-2026) in Houston TX, April 29 – May 2 \| [Engineering Portfolio](https://drive.google.com/file/d/1XD6NRXbu9tq8MP7e6Mqw6j0jJrjJnnw3/view?usp=sharing){:target="_blank"} \| [Read about the trip](/blog/houston-2026/)
+**Inspire Award:** 18650 Cookie Clickers – advanced to the [FIRST Championship](/events/first-championship-2026) in Houston TX, April 29 – May 2 \| [Engineering Portfolio](https://drive.google.com/file/d/1XD6NRXbu9tq8MP7e6Mqw6j0jJrjJnnw3/view?usp=sharing){:target="_blank"} \| [Read about the trip](/blog/houston-2026/)
+
+**Winning Alliance:** 5741 RoboHawks and 8304 Wired Cats \| [All event awards](https://ftc-events.firstinspires.org/2025/USVTCMP/awards){:target="_blank"}
 
 **Advanced to New England Premier Event** (April 17–18, Big E, West Springfield MA)**:** 32473 Bennington Bolts and Biscuits
 
