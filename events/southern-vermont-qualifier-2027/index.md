@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-10-26T01:01:46Z
+last_modified_at: 2026-11-24T03:55:35Z
 layout: default
 season: "2026-2027"
 nav_section: /events/
@@ -23,7 +23,28 @@ The event schedule, including team arrival and match times, will be posted here 
 
 ## Registered Teams
 
-The registered team list will be posted here when available.
+18 teams are assigned to this qualifier: 17 from Vermont and one from Massachusetts. Assignments come from FIRST in Vermont and may change before the event.
+
+| Team | Name | Location |
+|------|------|----------|
+| 4946 | Robo Raiders | East Montpelier, VT |
+| 5741 | RoboHawks | Hinesburg, VT |
+| 7418 | Batteries Not Included | South Burlington, VT |
+| 8227 | Enginuity | Lenox, MA |
+| 8304 | Wired Cats | Saxtons River, VT |
+| 14251 | Capital Robotics | Montpelier, VT |
+| 16221 | Manchester Machine Makers | Manchester, VT |
+| 18616 | River Valley RADinators | Springfield, VT |
+| 18650 | Cookie Clickers | Bennington, VT |
+| 22683 | DEVO Hawks | Hinesburg, VT |
+| 24782 | Robo Raiders II | Montpelier, VT |
+| 31719 | Flying Tigers | Middlebury, VT |
+| 32473 | Bennington Bolts and Biscuits | Bennington, VT |
+| 32818 | Wired Cats Devo | Saxtons River, VT |
+| 36186 | Equinox Valley Transformers | Manchester Center, VT |
+| 36697 | Rice Memorial High School | South Burlington, VT |
+| 37347 | Ctrl+Alt+Defeat | South Burlington, VT |
+| 37401 | ADL Charger Robotics | Essex Junction, VT |
 
 ## What is FTC?
 
