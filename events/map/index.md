@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-11-24T18:53:45Z
+last_modified_at: 2026-11-24T20:01:58Z
 layout: default
 nav_section: /events/
 redirect_from:
@@ -108,9 +108,11 @@ Teams matching the state and distance filters, nearest first. Distances are meas
   var data = {{ ftc | jsonify }};
   var teamData = {{ ftc_teams | jsonify }};
   var ourTeams = [18650, 32473];
-  // FTC codes of events on our own calendar (_data/events.yml) for this season.
+  // FTC codes of events on our own calendar (_data/events.yml) for this season,
+  // leaving out other Vermont events listed with attending: false.
   {%- assign our_season = site.data.events.seasons | where: "id", ftc.season | first -%}
-  {%- assign our_codes = our_season.events | map: "ftc" | compact %}
+  {%- assign our_events = our_season.events | where_exp: "e", "e.attending != false" -%}
+  {%- assign our_codes = our_events | map: "ftc" | compact %}
   var ours = {{ our_codes | jsonify }};
   var home = { name: 'Bennington, VT', lat: 42.8781, lon: -73.1968 };
   var types = [
