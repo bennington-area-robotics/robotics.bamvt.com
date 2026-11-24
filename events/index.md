@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-11-23T19:14:41Z
+last_modified_at: 2026-11-24T19:54:09Z
 description: "Events Bennington Area Robotics hosts and competes in, season by season, with results, plus a map of FTC events across the northeast."
 layout: default
 title: Events
@@ -9,7 +9,7 @@ banner_position_mobile: 42% 62%
 og_image: https://assets.bamvt.com/robotics.bamvt.com/events/state-championship-2026/images/2026_FTC-136.jpg
 ---
 
-Bennington Area Robotics competes in FIRST Tech Challenge events across Vermont and co-hosts a qualifier in Bennington each season. Event pages have schedules, team lists, results, and video.
+Bennington Area Robotics competes in FIRST Tech Challenge events across Vermont and co-hosts a qualifier in Bennington each season. Other Vermont FTC events are listed for reference. Event pages have schedules, team lists, results, and video.
 
 <nav class="event-season-jump" aria-label="Seasons on this page">
 {%- for s in site.data.events.seasons %}

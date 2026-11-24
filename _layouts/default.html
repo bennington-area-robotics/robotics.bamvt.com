@@ -1298,6 +1298,8 @@
     .event-tag--world-championship { background: #fff1c9; color: #6b4e00; }
     .event-tag--kickoff { background: #ececec; color: #555; }
     .event-tag--host { background: #d8f0ec; color: #1d5c54; }
+    .event-tag--other { border: 1px dashed #b7c6dc; background: white; color: var(--muted); }
+    .event-item.is-other .event-card { background: #fafbfc; box-shadow: none; }
     .event-tag--team { border: 1px solid var(--border); background: white; color: var(--text); text-transform: none; letter-spacing: 0; }
     .event-tag--next { display: none; background: var(--accent); color: white; }
     .event-item.is-next .event-tag--next { display: inline-block; }
@@ -1889,7 +1891,7 @@
     var nextFound = false;
     list.querySelectorAll('.event-item').forEach(function(item) {
       var past = item.getAttribute('data-event-end') < today;
-      var next = !past && !nextFound;
+      var next = !past && !nextFound && !item.classList.contains('is-other');
       if (next) nextFound = true;
       item.classList.toggle('is-past', past);
       item.classList.toggle('is-upcoming', !past);
