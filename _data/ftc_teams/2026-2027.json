@@ -1,7 +1,7 @@
 {
   "season": "2026-2027",
   "source": "https://ftc-events.firstinspires.org/services/API",
-  "retrieved": "2026-11-21",
+  "retrieved": "2026-11-23",
   "note": "Team locations are town centers from OpenStreetMap, not team addresses.",
   "places": {
     "Acton, MA": [
@@ -10854,7 +10854,7 @@
     },
     {
       "number": 36610,
-      "name": "Bento Bots",
+      "name": "Yaki Bits",
       "city": "Longmeadow",
       "state": "MA",
       "region": "USMA",
