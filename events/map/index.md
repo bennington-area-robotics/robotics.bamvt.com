@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-11-24T19:53:29Z
+last_modified_at: 2026-11-24T20:01:58Z
 layout: default
 nav_section: /events/
 redirect_from:
