@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-11-21T15:47:32Z
+last_modified_at: 2026-11-24T03:55:35Z
 layout: default
 season: "2026-2027"
 nav_section: /events/
@@ -19,7 +19,14 @@ The event schedule, including team arrival and match times, will be posted here 
 
 ## Participating Teams
 
-The team list will be posted here when available.
+The scrimmage has room for eight teams. Four Southern Vermont teams are pre-registered; registration for the remaining spots will open soon.
+
+| Team | Name | Location |
+|------|------|----------|
+| 16221 | Manchester Machine Makers | Manchester, VT |
+| 18650 | Cookie Clickers | Bennington, VT |
+| 32473 | Bennington Bolts and Biscuits | Bennington, VT |
+| 36186 | Equinox Valley Transformers | Manchester Center, VT |
 
 ## What is FTC?
 
