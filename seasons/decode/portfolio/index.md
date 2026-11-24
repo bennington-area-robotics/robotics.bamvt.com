@@ -1,5 +1,5 @@
 ---
-last_modified_at: 2026-10-10T17:01:22Z
+last_modified_at: 2026-11-24T20:19:59Z
 redirect_from:
   - /seasons/2025-2026/portfolio/
 layout: default
@@ -14,7 +14,7 @@ Part of our [2025–2026 DECODE season](/seasons/decode/).
 
 In FIRST Tech Challenge, an Engineering Portfolio documents a team's journey through the season: the design process, engineering decisions, outreach, and growth along the way. It's a key part of the **Inspire Award**, FTC's top award, given to the team that best serves as a role model and ambassador for the FIRST program.
 
-At the 2026 Vermont FTC State Championship, Team 18650 Cookie Clickers won the Inspire Award and the state championship title, advancing to the [FIRST Championship](/events/first-championship-2026) in Houston TX.
+At the 2026 Vermont FTC State Championship, Team 18650 Cookie Clickers won the Inspire Award, advancing to the [FIRST Championship](/events/first-championship-2026) in Houston TX.
 
 Their Engineering Portfolio covers the full season: game strategy, iterative mechanical design, CAD and 3D printing, autonomous and teleop software, community outreach, and reflections from each team member.
 

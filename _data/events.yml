@@ -103,7 +103,7 @@ seasons:
     game: DECODE
     anchor: decode
     url: /seasons/decode/
-    summary: Cookie Clickers won the Vermont Championship and Inspire Award and competed at the FIRST Championship in Houston. Bennington Bolts and Biscuits placed seventh in its first season and advanced to the New England Premier Event.
+    summary: Cookie Clickers won the Inspire Award at the Vermont Championship and competed at the FIRST Championship in Houston. Bennington Bolts and Biscuits placed seventh in its first season and advanced to the New England Premier Event.
     events:
       - title: Bennington Qualifier
         start: "2026-01-31"
@@ -134,7 +134,7 @@ seasons:
         ftc: USVTCMP
         ftc_season: 2025
         results:
-          - "18650 Cookie Clickers: Inspire Award (State Champion), advanced to the FIRST Championship"
+          - "18650 Cookie Clickers: Inspire Award, advanced to the FIRST Championship"
           - "32473 Bennington Bolts and Biscuits: seventh place, advanced to the New England Premier Event"
         links:
           - label: Championship video
