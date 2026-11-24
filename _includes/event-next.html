@@ -13,7 +13,7 @@ The event-status script hides it after the event ends until the site is rebuilt.
 {%- endfor -%}
 {%- if soonest -%}
 <section class="event-next" data-event-end="{{ soonest.end }}" aria-labelledby="event-next-title">
-  <p class="event-next-label">Next event <span class="event-next-countdown" data-countdown="{{ soonest.start }}"></span></p>
+  <p class="event-next-label">Next Bennington Area Robotics event <span class="event-next-countdown" data-countdown="{{ soonest.start }}"></span></p>
   <div class="event-next-body">
     {% include event-date.html event=soonest %}
     <div>
