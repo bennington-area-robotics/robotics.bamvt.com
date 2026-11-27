@@ -1,7 +1,7 @@
 {
   "season": "2026-2027",
   "source": "https://ftc-events.firstinspires.org/services/API",
-  "retrieved": "2026-11-24",
+  "retrieved": "2026-11-27",
   "note": "Team locations are town centers from OpenStreetMap, not team addresses.",
   "places": {
     "Acton, MA": [
@@ -4176,7 +4176,7 @@
     },
     {
       "number": 12116,
-      "name": "Redbots",
+      "name": "RedBots",
       "city": "Parsippany",
       "state": "NJ",
       "region": "USNJ",
@@ -10872,7 +10872,7 @@
     },
     {
       "number": 36654,
-      "name": "Titans Budew",
+      "name": "Proto-Titans",
       "city": "Vernon Rockville",
       "state": "CT",
       "region": "USCT",
@@ -11547,7 +11547,7 @@
     },
     {
       "number": 37670,
-      "name": "All Girls Team",
+      "name": "Sonic Sirens",
       "city": "Ravena",
       "state": "NY",
       "region": "USNYEX",
